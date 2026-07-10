@@ -4,19 +4,21 @@
   overflow: hidden;
 }
 
-/* 天空：顶部蓝色 → 底部慢慢过渡到白 */
+/* 天空：顶部一点深蓝 → 大面积浅蓝 → 更早过渡到白 */
 .sky {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    #75c1f0 0%,
-    #87cbf2 14%,
-    #9dd4f4 28%,
-    #b5dff7 42%,
-    #cce9f9 56%,
-    #e0f2fb 70%,
-    #f0f8fd 84%,
+    #6eb8ea 0%,
+    #8ecbf2 8%,
+    #a8daf5 18%,
+    #c0e5f8 32%,
+    #d8eef9 46%,
+    #eaf4fb 58%,
+    #f4f9fd 70%,
+    #fbfdfe 82%,
+    #ffffff 92%,
     #ffffff 100%
   );
 }
@@ -355,10 +357,11 @@
   background: linear-gradient(
     180deg,
     transparent 0%,
-    rgb(255 255 255 / 0.04) 22%,
-    rgb(255 255 255 / 0.18) 42%,
-    rgb(255 255 255 / 0.42) 62%,
-    rgb(255 255 255 / 0.72) 80%,
+    rgb(255 255 255 / 0.02) 28%,
+    rgb(255 255 255 / 0.1) 48%,
+    rgb(255 255 255 / 0.28) 66%,
+    rgb(255 255 255 / 0.58) 80%,
+    #ffffff 92%,
     #ffffff 100%
   );
 }
