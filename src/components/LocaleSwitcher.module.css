@@ -1,0 +1,21 @@
+.switcher {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.link {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8125rem;
+  color: #666;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.link:hover {
+  color: #111;
+}
+
+.linkActive {
+  color: #111;
+  font-weight: 500;
+}

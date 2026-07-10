@@ -1,0 +1,24 @@
+.header {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.brand {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.brand:hover {
+  color: #333;
+}
