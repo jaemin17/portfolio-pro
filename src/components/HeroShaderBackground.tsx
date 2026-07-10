@@ -1,44 +1,30 @@
 "use client";
 
-import { SmokeRing } from "@paper-design/shaders-react";
+import { Warp } from "@paper-design/shaders-react";
 import styles from "./HeroShaderBackground.module.css";
 
-const SKY_BLUE = "#75c1f0";
+/** Transparent → soft white → dense white, layered over CSS sky. */
+const CLOUD_COLORS = ["#ffffff00", "#ffffff55", "#ffffffee", "#ffffff"] as const;
 
 export function HeroShaderBackground() {
   return (
     <div className={styles.background} aria-hidden="true">
       <div className={styles.sky} />
-      <div className={styles.cloudsWrap}>
-        <SmokeRing
-          className={styles.clouds}
-          colorBack={SKY_BLUE}
-          colors={["#ffffff"]}
-          radius={0.48}
-          thickness={0.82}
-          innerShape={0.74}
-          noiseScale={2.3}
-          noiseIterations={8}
-          scale={2.35}
-          speed={0.35}
-          originY={0.36}
-          fit="cover"
-        />
-        <SmokeRing
-          className={styles.cloudsSecondary}
-          colorBack={SKY_BLUE}
-          colors={["#ffffff"]}
-          radius={0.44}
-          thickness={0.58}
-          innerShape={0.68}
-          noiseScale={2.6}
-          noiseIterations={8}
-          scale={2.5}
-          speed={0.22}
-          originY={0.36}
-          fit="cover"
-        />
-      </div>
+      <Warp
+        className={styles.warpClouds}
+        colors={[...CLOUD_COLORS]}
+        speed={0.2}
+        scale={1}
+        rotation={0}
+        proportion={0.28}
+        softness={0.9}
+        distortion={0.16}
+        swirl={0.45}
+        swirlIterations={10}
+        shapeScale={0.08}
+        shape="edge"
+        fit="cover"
+      />
       <div className={styles.skyLighten} aria-hidden="true" />
     </div>
   );

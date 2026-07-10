@@ -4,97 +4,54 @@
   overflow: hidden;
 }
 
-/* 天空：顶部一点深蓝 → 大面积浅蓝 → 更早过渡到白 */
+/* 天空：更饱和的蓝色，白过渡推迟到底部 */
 .sky {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    #6eb8ea 0%,
-    #8ecbf2 8%,
-    #a8daf5 18%,
-    #c0e5f8 32%,
-    #d0ebf9 48%,
-    #deeffa 62%,
-    #ecf5fc 78%,
-    #f6fafe 90%,
+    #4a9fd8 0%,
+    #58abe3 6%,
+    #68b6eb 14%,
+    #75c1f0 24%,
+    #82c8f2 36%,
+    #8ecff4 48%,
+    #9bd5f5 58%,
+    #a8dbf6 68%,
+    #b8e3f8 78%,
+    #ccecf9 88%,
+    #e4f4fb 95%,
     #ffffff 100%
   );
 }
 
-.cloudsWrap {
-  position: absolute;
-  inset: -4% -14%;
-  overflow: hidden;
-  transform: scaleX(1.22);
-  transform-origin: 50% 36%;
-}
-
-.clouds,
-.cloudsSecondary {
+.warpClouds {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+  opacity: 0.86;
+  filter: brightness(1.14) contrast(1.1);
 }
 
-.clouds {
-  opacity: 0.92;
-  filter: brightness(1.04) saturate(0.94);
-  -webkit-mask-image: radial-gradient(
-    ellipse 135% 82% at 50% 36%,
-    #000 0%,
-    rgb(0 0 0 / 0.96) 42%,
-    rgb(0 0 0 / 0.72) 64%,
-    rgb(0 0 0 / 0.32) 84%,
-    transparent 100%
-  );
-  mask-image: radial-gradient(
-    ellipse 135% 82% at 50% 36%,
-    #000 0%,
-    rgb(0 0 0 / 0.96) 42%,
-    rgb(0 0 0 / 0.72) 64%,
-    rgb(0 0 0 / 0.32) 84%,
-    transparent 100%
-  );
-}
-
-.cloudsSecondary {
-  opacity: 0.42;
-  mix-blend-mode: screen;
-  filter: brightness(1.02);
-}
-
-/* 中间柔和提亮，文字区更白；底部只做轻微过渡到内容区 */
 .skyLighten {
   pointer-events: none;
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(
-      ellipse 108% 74% at 50% 36%,
-      rgb(255 255 255 / 0.78) 0%,
-      rgb(255 255 255 / 0.52) 26%,
-      rgb(255 255 255 / 0.28) 48%,
-      rgb(255 255 255 / 0.1) 68%,
-      transparent 86%
-    ),
-    linear-gradient(
-      180deg,
-      transparent 0%,
-      transparent 72%,
-      rgb(255 255 255 / 0.06) 84%,
-      rgb(255 255 255 / 0.28) 94%,
-      #ffffff 100%
-    );
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgb(255 255 255 / 0.02) 32%,
+    rgb(255 255 255 / 0.1) 52%,
+    rgb(255 255 255 / 0.28) 72%,
+    rgb(255 255 255 / 0.58) 86%,
+    #ffffff 96%,
+    #ffffff 100%
+  );
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .clouds {
-    opacity: 0.86;
-  }
-
-  .cloudsSecondary {
-    opacity: 0.34;
+  .warpClouds {
+    opacity: 0.85;
   }
 }
