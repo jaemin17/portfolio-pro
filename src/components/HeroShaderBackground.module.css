@@ -4,58 +4,54 @@
   overflow: hidden;
 }
 
-.shaderFlip {
-  width: 100%;
-  height: 100%;
-  transform: rotate(180deg);
-  filter: blur(8px);
-  opacity: 0.4;
-}
-
-.topFade,
-.bottomFade {
-  pointer-events: none;
+/* 天空：更饱和的蓝色，白过渡推迟到底部 */
+.sky {
   position: absolute;
-  left: 0;
-  width: 100%;
-}
-
-/* 顶部多掺一些白，但蓝色仍可延伸到最上方；左上再略多白 */
-.topFade {
-  top: 0;
-  height: 22%;
-  background:
-    radial-gradient(
-      ellipse 78% 88% at 0% 0%,
-      rgb(255 255 255 / 0.72) 0%,
-      rgb(255 255 255 / 0.38) 52%,
-      transparent 100%
-    ),
-    linear-gradient(
-      to bottom,
-      rgb(255 255 255 / 0.48) 0%,
-      rgb(255 255 255 / 0.3) 45%,
-      rgb(255 255 255 / 0.08) 82%,
-      transparent 100%
-    );
-}
-
-/* 从下方推白，压成一条带，上方仍保留蓝色延伸 */
-.bottomFade {
-  bottom: 0;
-  height: 74%;
+  inset: 0;
   background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgb(255 255 255 / 0.22) 12%,
-    rgb(255 255 255 / 0.68) 28%,
-    rgb(255 255 255 / 0.94) 40%,
-    #fff 50%,
-    #fff 100%
+    180deg,
+    #4a9fd8 0%,
+    #58abe3 6%,
+    #68b6eb 14%,
+    #75c1f0 24%,
+    #82c8f2 36%,
+    #8ecff4 48%,
+    #9bd5f5 58%,
+    #a8dbf6 68%,
+    #b8e3f8 78%,
+    #ccecf9 88%,
+    #e4f4fb 95%,
+    #ffffff 100%
   );
 }
 
-.shader {
+.warpClouds {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  opacity: 0.86;
+  filter: brightness(1.14) contrast(1.1);
+}
+
+.skyLighten {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgb(255 255 255 / 0.02) 32%,
+    rgb(255 255 255 / 0.1) 52%,
+    rgb(255 255 255 / 0.28) 72%,
+    rgb(255 255 255 / 0.58) 86%,
+    #ffffff 96%,
+    #ffffff 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .warpClouds {
+    opacity: 0.85;
+  }
 }

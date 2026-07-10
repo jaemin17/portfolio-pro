@@ -3,29 +3,29 @@
 import { Warp } from "@paper-design/shaders-react";
 import styles from "./HeroShaderBackground.module.css";
 
-const SHADER_COLORS = ["#ffffff", "#75c1f0", "#ffffff"] as const;
+/** Transparent → soft white → dense white, layered over CSS sky. */
+const CLOUD_COLORS = ["#ffffff00", "#ffffff55", "#ffffffee", "#ffffff"] as const;
 
 export function HeroShaderBackground() {
   return (
     <div className={styles.background} aria-hidden="true">
-      <div className={styles.shaderFlip}>
-        <Warp
-          className={styles.shader}
-          colors={[...SHADER_COLORS]}
-          speed={0.2}
-          scale={1}
-          rotation={0}
-          proportion={0.35}
-          softness={1}
-          distortion={0.25}
-          swirl={0.8}
-          swirlIterations={10}
-          shapeScale={0.1}
-          shape="checks"
-        />
-      </div>
-      <div className={styles.topFade} aria-hidden="true" />
-      <div className={styles.bottomFade} aria-hidden="true" />
+      <div className={styles.sky} />
+      <Warp
+        className={styles.warpClouds}
+        colors={[...CLOUD_COLORS]}
+        speed={0.2}
+        scale={1}
+        rotation={0}
+        proportion={0.28}
+        softness={0.9}
+        distortion={0.16}
+        swirl={0.45}
+        swirlIterations={10}
+        shapeScale={0.08}
+        shape="edge"
+        fit="cover"
+      />
+      <div className={styles.skyLighten} aria-hidden="true" />
     </div>
   );
 }
