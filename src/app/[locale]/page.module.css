@@ -1,37 +1,119 @@
-.shell {
+.page {
+  position: relative;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow-x: clip;
+  background: #fff;
+}
+
+.heroBand {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  /* Abhishek .framer-1lecwys-container: fixed 599px, opacity applied on shader layer */
+  height: 37.4375rem;
+  overflow: hidden;
 }
 
 .main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 960px;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: min(var(--content-max), calc(100% - var(--page-gutter) * 2));
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 0 0 4rem;
 }
 
-.eyebrow {
-  margin: 0 0 0.75rem;
-  font-size: 0.875rem;
-  color: #666;
-  letter-spacing: 0.02em;
+.hero {
+  /* 文字落在色带下方，与 Abhishek 一致 */
+  margin-bottom: 0;
+  padding: clamp(7.5rem, 16vw, 12.8125rem) 0 clamp(5.5rem, 16vw, 12.5rem);
 }
 
-.title {
+.contentShell {
+  position: relative;
+  background: #fff;
+}
+
+.name {
   margin: 0 0 1rem;
-  font-size: clamp(2rem, 5vw, 2.75rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
+  font-size: clamp(1.375rem, 4vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
 }
 
-.subtitle {
-  margin: 0;
-  max-width: 28rem;
+.lead {
+  margin: 0 0 0.875rem;
   font-size: 1rem;
-  color: #555;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.body {
+  margin: 0 0 1.25rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.email {
+  display: inline-block;
+  font-size: 0.9375rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.sectionLabel {
+  margin: 0 0 1rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.emptyNote {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.footerRole {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --page-gutter: 2rem;
+  }
+
+  .main {
+    padding: 0 0 5rem;
+  }
 }
