@@ -27,7 +27,7 @@ export function HeroShaderBackground() {
         softness={0.9}
         distortion={0.16}
         swirl={0.45}
-        swirlIterations={10}
+        swirlIterations={5}
         shapeScale={0.08}
         shape="edge"
         fit="cover"

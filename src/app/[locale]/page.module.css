@@ -12,8 +12,8 @@
   left: 0;
   z-index: 0;
   width: 100%;
-  /* Abhishek .framer-1lecwys-container: fixed 599px, opacity applied on shader layer */
-  height: 37.4375rem;
+  /* 背景带高度：略低于原 599px */
+  height: 28rem;
   overflow: hidden;
 }
 
@@ -29,7 +29,7 @@
 .hero {
   /* 文字落在色带下方，与 Abhishek 一致 */
   margin-bottom: 0;
-  padding: clamp(7.5rem, 16vw, 12.8125rem) 0 clamp(5.5rem, 16vw, 12.5rem);
+  padding: clamp(8.5rem, 18vw, 13.5rem) 0 clamp(4rem, 12vw, 9rem);
 }
 
 .contentShell {
