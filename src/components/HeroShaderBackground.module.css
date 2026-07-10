@@ -4,53 +4,58 @@
   overflow: hidden;
 }
 
-/* 天空：顶部一点深蓝 → 大面积浅蓝 → 更早过渡到白 */
-.sky {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    #6eb8ea 0%,
-    #8ecbf2 8%,
-    #a8daf5 18%,
-    #c0e5f8 32%,
-    #e2f2fa 46%,
-    #eef7fc 58%,
-    #f7fbfe 70%,
-    #fcfdfe 82%,
-    #ffffff 90%,
-    #ffffff 100%
-  );
-}
-
-.clouds {
-  position: absolute;
-  inset: 0;
+.shaderFlip {
   width: 100%;
   height: 100%;
-  opacity: 0.94;
-  filter: brightness(1.08) saturate(0.92);
+  transform: rotate(180deg);
+  filter: blur(8px);
+  opacity: 0.4;
 }
 
-.skyLighten {
+.topFade,
+.bottomFade {
   pointer-events: none;
   position: absolute;
-  inset: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* 顶部多掺一些白，但蓝色仍可延伸到最上方；左上再略多白 */
+.topFade {
+  top: 0;
+  height: 22%;
+  background:
+    radial-gradient(
+      ellipse 78% 88% at 0% 0%,
+      rgb(255 255 255 / 0.72) 0%,
+      rgb(255 255 255 / 0.38) 52%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(255 255 255 / 0.48) 0%,
+      rgb(255 255 255 / 0.3) 45%,
+      rgb(255 255 255 / 0.08) 82%,
+      transparent 100%
+    );
+}
+
+/* 从下方推白，压成一条带，上方仍保留蓝色延伸 */
+.bottomFade {
+  bottom: 0;
+  height: 74%;
   background: linear-gradient(
-    180deg,
+    to bottom,
     transparent 0%,
-    rgb(255 255 255 / 0.06) 22%,
-    rgb(255 255 255 / 0.18) 42%,
-    rgb(255 255 255 / 0.38) 58%,
-    rgb(255 255 255 / 0.62) 72%,
-    rgb(255 255 255 / 0.82) 84%,
-    #ffffff 92%,
-    #ffffff 100%
+    rgb(255 255 255 / 0.22) 12%,
+    rgb(255 255 255 / 0.68) 28%,
+    rgb(255 255 255 / 0.94) 40%,
+    #fff 50%,
+    #fff 100%
   );
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .clouds {
-    opacity: 0.82;
-  }
+.shader {
+  width: 100%;
+  height: 100%;
 }
