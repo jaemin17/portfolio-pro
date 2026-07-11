@@ -4,23 +4,16 @@
   overflow: hidden;
 }
 
-/* 天空：更饱和的蓝色，白过渡推迟到底部 */
+/* 天空：保留 5 段结构；饱和度介于克制与过亮之间 */
 .sky {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
     #4a9fd8 0%,
-    #58abe3 6%,
-    #68b6eb 14%,
-    #75c1f0 24%,
-    #82c8f2 36%,
-    #8ecff4 48%,
-    #9bd5f5 58%,
-    #a8dbf6 68%,
-    #b8e3f8 78%,
-    #ccecf9 88%,
-    #e4f4fb 95%,
+    #5fafeb 28%,
+    #8bcff5 58%,
+    #c2e6fa 82%,
     #ffffff 100%
   );
 }
