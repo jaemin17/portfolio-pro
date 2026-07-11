@@ -45,6 +45,11 @@
   line-height: 1.35;
 }
 
+.wave {
+  font-size: 1.25em;
+  line-height: 1;
+}
+
 .lead {
   margin: 0 0 0.875rem;
   font-size: 1rem;

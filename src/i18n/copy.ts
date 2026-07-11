@@ -20,7 +20,7 @@ export type HomeCopy = {
 
 const copy: Record<Locale, HomeCopy> = {
   zh: {
-    name: "我是 Jiamin Li。",
+    name: "Hey visitor，我是 Jiamin Li。",
     lead: "偏产品型的 UX/UI 设计师，关注独立产品开发与 B2B 工具体验。",
     body: "项目与 case study 正在整理中，稍后更新。",
     email: "lijiaemin1993@gmail.com",
@@ -41,7 +41,7 @@ const copy: Record<Locale, HomeCopy> = {
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },
   en: {
-    name: "I'm Jiamin Li.",
+    name: "Hey visitor, I'm Jiamin Li.",
     lead: "A product-minded UX/UI designer focused on indie apps and B2B tool experiences.",
     body: "Projects and case studies are being prepared and will be updated soon.",
     email: "lijiaemin1993@gmail.com",

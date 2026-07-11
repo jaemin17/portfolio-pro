@@ -40,7 +40,13 @@ export default async function HomePage({ params }: HomePageProps) {
 
       <main className={styles.main}>
         <section className={styles.hero} aria-label="Intro">
-          <h1 className={styles.name}>{copy.name}</h1>
+          <h1 className={styles.name}>
+            <span className={styles.wave} aria-hidden="true">
+              👋
+            </span>
+            {"\u00A0\u00A0"}
+            {copy.name}
+          </h1>
           <p className={styles.lead}>{copy.lead}</p>
           <p className={styles.body}>{copy.body}</p>
           <CopyEmail
