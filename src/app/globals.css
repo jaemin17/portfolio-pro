@@ -5,9 +5,9 @@
 }
 
 :root {
-  --text-primary: #111;
+  --text-primary: rgb(0 0 0 / 90%);
   --text-secondary: rgb(0 0 0 / 60%);
-  --text-muted: #888;
+  --text-muted: rgb(0 0 0 / 40%);
   --border: #eee;
   --accent: #2b7cff;
   --accent-glow: rgba(43, 124, 255, 0.14);
