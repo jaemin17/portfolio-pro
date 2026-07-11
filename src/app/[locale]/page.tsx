@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { isLocale, type Locale } from "@/i18n/config";
@@ -42,9 +43,11 @@ export default async function HomePage({ params }: HomePageProps) {
           <h1 className={styles.name}>{copy.name}</h1>
           <p className={styles.lead}>{copy.lead}</p>
           <p className={styles.body}>{copy.body}</p>
-          <a className={styles.email} href={`mailto:${copy.email}`}>
-            {copy.email}
-          </a>
+          <CopyEmail
+            email={copy.email}
+            copyLabel={copy.copyEmail}
+            copiedLabel={copy.copiedEmail}
+          />
         </section>
 
         <div className={styles.contentShell}>

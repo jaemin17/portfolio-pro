@@ -6,7 +6,7 @@
 
 :root {
   --text-primary: #111;
-  --text-secondary: #555;
+  --text-secondary: rgb(0 0 0 / 60%);
   --text-muted: #888;
   --border: #eee;
   --accent: #2b7cff;
@@ -23,9 +23,12 @@ body {
 
 body {
   font-family:
+    var(--font-inter-display),
     system-ui,
     -apple-system,
     "Segoe UI",
+    "PingFang SC",
+    "Microsoft YaHei",
     sans-serif;
   font-size: 16px;
   line-height: 1.5;

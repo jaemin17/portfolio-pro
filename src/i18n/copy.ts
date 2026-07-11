@@ -10,6 +10,8 @@ export type HomeCopy = {
   lead: string;
   body: string;
   email: string;
+  copyEmail: string;
+  copiedEmail: string;
   selectedWork: HomeSection;
   caseStudies: HomeSection;
   about: HomeSection;
@@ -22,6 +24,8 @@ const copy: Record<Locale, HomeCopy> = {
     lead: "偏产品型的 UX/UI 设计师，关注独立产品开发与 B2B 工具体验。",
     body: "项目与 case study 正在整理中，稍后更新。",
     email: "lijiaemin1993@gmail.com",
+    copyEmail: "复制邮箱",
+    copiedEmail: "已复制",
     selectedWork: {
       label: "精选项目",
       empty: "暂无项目，稍后更新。",
@@ -41,6 +45,8 @@ const copy: Record<Locale, HomeCopy> = {
     lead: "A product-minded UX/UI designer focused on indie apps and B2B tool experiences.",
     body: "Projects and case studies are being prepared and will be updated soon.",
     email: "lijiaemin1993@gmail.com",
+    copyEmail: "Copy email",
+    copiedEmail: "Copied",
     selectedWork: {
       label: "Selected Work",
       empty: "No projects yet. Coming soon.",
