@@ -48,7 +48,6 @@ export default async function HomePage({ params }: HomePageProps) {
             {copy.name}
           </h1>
           <p className={styles.lead}>{copy.lead}</p>
-          <p className={styles.lead}>{copy.body}</p>
           <p className={styles.body}>{copy.focus}</p>
           <CopyEmail
             email={copy.email}

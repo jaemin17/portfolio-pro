@@ -8,7 +8,6 @@ type HomeSection = {
 export type HomeCopy = {
   name: string;
   lead: string;
-  body: string;
   focus: string;
   email: string;
   copyEmail: string;
@@ -22,9 +21,8 @@ export type HomeCopy = {
 const copy: Record<Locale, HomeCopy> = {
   zh: {
     name: "Hi，我是 Jiamin。",
-    lead: "一名专注于 UI/UX 与产品体验的设计师。",
-    body: "我设计、开发，并持续打磨真正有人愿意长期使用的产品。",
-    focus: "最近正在独立开发 Selfly，同时探索 AI 工作流和 Web 交互体验。",
+    lead: "我设计、构建并持续打磨值得长期使用的产品，专注于 UI/UX 与产品体验。",
+    focus: "最近正在开发 Selfly，并探索 AI 的更多可能。",
     email: "lijiaemin1993@gmail.com",
     copyEmail: "复制邮箱",
     copiedEmail: "已复制",
@@ -44,9 +42,8 @@ const copy: Record<Locale, HomeCopy> = {
   },
   en: {
     name: "Hi, I'm Jiamin.",
-    lead: "A designer focused on UI/UX and product experience.",
-    body: "I design, build, and keep refining products that people actually want to use for the long term.",
-    focus: "I've been independently building Selfly lately, while exploring AI workflows and web interaction experiences.",
+    lead: "I design, build, and keep refining products worth using for the long term, with a focus on UI/UX and product experience.",
+    focus: "I've been building Selfly lately, and exploring more possibilities with AI.",
     email: "lijiaemin1993@gmail.com",
     copyEmail: "Copy email",
     copiedEmail: "Copied",
