@@ -5,13 +5,18 @@ type HomeSection = {
   empty: string;
 };
 
-export type CurrentlyBuilding = {
-  label: string;
+export type CurrentlyBuildingItem = {
   title: string;
   description: string;
   meta: string;
   iconSrc: string;
   iconAlt: string;
+  href?: string;
+};
+
+export type CurrentlyBuilding = {
+  label: string;
+  items: CurrentlyBuildingItem[];
 };
 
 export type HomeCopy = {
@@ -38,11 +43,23 @@ const copy: Record<Locale, HomeCopy> = {
     copiedEmail: "已复制",
     currentlyBuilding: {
       label: "正在构建",
-      title: "Selfly",
-      description: "正在开发中的产品",
-      meta: "iOS",
-      iconSrc: "/selfly-icon.png",
-      iconAlt: "Selfly",
+      items: [
+        {
+          title: "Selfly",
+          description: "正在开发中的产品",
+          meta: "iOS",
+          iconSrc: "/selfly-icon.png",
+          iconAlt: "Selfly",
+        },
+        {
+          title: "Sticky Notes",
+          description: "实验性的便签网站",
+          meta: "Web",
+          iconSrc: "/sticky-notes-icon.svg",
+          iconAlt: "Sticky Notes",
+          href: "https://jaemin17.github.io/sticky-notes/",
+        },
+      ],
     },
     selectedWork: {
       label: "精选项目",
@@ -67,11 +84,23 @@ const copy: Record<Locale, HomeCopy> = {
     copiedEmail: "Copied",
     currentlyBuilding: {
       label: "Currently building",
-      title: "Selfly",
-      description: "Product in progress",
-      meta: "iOS",
-      iconSrc: "/selfly-icon.png",
-      iconAlt: "Selfly",
+      items: [
+        {
+          title: "Selfly",
+          description: "Product in progress",
+          meta: "iOS",
+          iconSrc: "/selfly-icon.png",
+          iconAlt: "Selfly",
+        },
+        {
+          title: "Sticky Notes",
+          description: "An experimental sticky-notes site",
+          meta: "Web",
+          iconSrc: "/sticky-notes-icon.svg",
+          iconAlt: "Sticky Notes",
+          href: "https://jaemin17.github.io/sticky-notes/",
+        },
+      ],
     },
     selectedWork: {
       label: "Selected Work",

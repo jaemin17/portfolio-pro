@@ -80,11 +80,27 @@
   color: var(--text-secondary);
 }
 
+.buildingList {
+  display: flex;
+  flex-direction: column;
+}
+
 .buildingItem {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  padding: 0.25rem 0 0.5rem;
+  padding: 1.25rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.buildingItem + .buildingItem {
+  border-top: 1px solid var(--border);
+}
+
+.buildingItemLink:hover .buildingTitle {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .buildingIcon {

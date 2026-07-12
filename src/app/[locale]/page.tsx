@@ -2,12 +2,16 @@ import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { isLocale, type Locale } from "@/i18n/config";
-import { getHomeCopy } from "@/i18n/copy";
+import { getHomeCopy, type CurrentlyBuildingItem } from "@/i18n/copy";
 import styles from "./page.module.css";
 
 type HomePageProps = {
   params: Promise<{ locale: string }>;
 };
+
+function assetSrc(path: string): string {
+  return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
+}
 
 function Section({
   label,
@@ -22,6 +26,40 @@ function Section({
       <p className={styles.emptyNote}>{empty}</p>
     </section>
   );
+}
+
+function BuildingItem({ item }: { item: CurrentlyBuildingItem }) {
+  const content = (
+    <>
+      <img
+        className={styles.buildingIcon}
+        src={assetSrc(item.iconSrc)}
+        alt={item.iconAlt}
+        width={72}
+        height={72}
+      />
+      <div className={styles.buildingText}>
+        <p className={styles.buildingTitle}>{item.title}</p>
+        <p className={styles.buildingDescription}>{item.description}</p>
+        <p className={styles.buildingMeta}>{item.meta}</p>
+      </div>
+    </>
+  );
+
+  if (item.href) {
+    return (
+      <a
+        className={`${styles.buildingItem} ${styles.buildingItemLink}`}
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return <div className={styles.buildingItem}>{content}</div>;
 }
 
 export default async function HomePage({ params }: HomePageProps) {
@@ -58,21 +96,10 @@ export default async function HomePage({ params }: HomePageProps) {
         <div className={styles.contentShell}>
           <section className={styles.section} aria-label={copy.currentlyBuilding.label}>
             <h2 className={styles.sectionLabel}>{copy.currentlyBuilding.label}</h2>
-            <div className={styles.buildingItem}>
-              <img
-                className={styles.buildingIcon}
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${copy.currentlyBuilding.iconSrc}`}
-                alt={copy.currentlyBuilding.iconAlt}
-                width={72}
-                height={72}
-              />
-              <div className={styles.buildingText}>
-                <p className={styles.buildingTitle}>{copy.currentlyBuilding.title}</p>
-                <p className={styles.buildingDescription}>
-                  {copy.currentlyBuilding.description}
-                </p>
-                <p className={styles.buildingMeta}>{copy.currentlyBuilding.meta}</p>
-              </div>
+            <div className={styles.buildingList}>
+              {copy.currentlyBuilding.items.map((item) => (
+                <BuildingItem key={item.title} item={item} />
+              ))}
             </div>
           </section>
 
