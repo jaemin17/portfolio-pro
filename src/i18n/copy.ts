@@ -5,6 +5,15 @@ type HomeSection = {
   empty: string;
 };
 
+export type CurrentlyBuilding = {
+  label: string;
+  title: string;
+  description: string;
+  meta: string;
+  iconSrc: string;
+  iconAlt: string;
+};
+
 export type HomeCopy = {
   name: string;
   lead: string;
@@ -12,6 +21,7 @@ export type HomeCopy = {
   email: string;
   copyEmail: string;
   copiedEmail: string;
+  currentlyBuilding: CurrentlyBuilding;
   selectedWork: HomeSection;
   caseStudies: HomeSection;
   about: HomeSection;
@@ -26,6 +36,14 @@ const copy: Record<Locale, HomeCopy> = {
     email: "lijiaemin1993@gmail.com",
     copyEmail: "复制邮箱",
     copiedEmail: "已复制",
+    currentlyBuilding: {
+      label: "正在构建",
+      title: "Selfly",
+      description: "正在开发中的产品",
+      meta: "iOS",
+      iconSrc: "/selfly-icon.png",
+      iconAlt: "Selfly",
+    },
     selectedWork: {
       label: "精选项目",
       empty: "暂无项目，稍后更新。",
@@ -47,6 +65,14 @@ const copy: Record<Locale, HomeCopy> = {
     email: "lijiaemin1993@gmail.com",
     copyEmail: "Copy email",
     copiedEmail: "Copied",
+    currentlyBuilding: {
+      label: "Currently building",
+      title: "Selfly",
+      description: "Product in progress",
+      meta: "iOS",
+      iconSrc: "/selfly-icon.png",
+      iconAlt: "Selfly",
+    },
     selectedWork: {
       label: "Selected Work",
       empty: "No projects yet. Coming soon.",

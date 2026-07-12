@@ -56,6 +56,26 @@ export default async function HomePage({ params }: HomePageProps) {
         </section>
 
         <div className={styles.contentShell}>
+          <section className={styles.section} aria-label={copy.currentlyBuilding.label}>
+            <h2 className={styles.sectionLabel}>{copy.currentlyBuilding.label}</h2>
+            <div className={styles.buildingItem}>
+              <img
+                className={styles.buildingIcon}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${copy.currentlyBuilding.iconSrc}`}
+                alt={copy.currentlyBuilding.iconAlt}
+                width={72}
+                height={72}
+              />
+              <div className={styles.buildingText}>
+                <p className={styles.buildingTitle}>{copy.currentlyBuilding.title}</p>
+                <p className={styles.buildingDescription}>
+                  {copy.currentlyBuilding.description}
+                </p>
+                <p className={styles.buildingMeta}>{copy.currentlyBuilding.meta}</p>
+              </div>
+            </div>
+          </section>
+
           <Section label={copy.selectedWork.label} empty={copy.selectedWork.empty} />
           <Section label={copy.caseStudies.label} empty={copy.caseStudies.empty} />
           <Section label={copy.about.label} empty={copy.about.empty} />

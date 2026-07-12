@@ -68,7 +68,6 @@
 
 .section {
   padding-top: 2rem;
-  border-top: 1px solid var(--border);
 }
 
 .sectionLabel {
@@ -76,7 +75,56 @@
   font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.12em;
+  word-spacing: 0.35em;
   text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.buildingItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.buildingIcon {
+  flex-shrink: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1.125rem;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  background: #fff;
+}
+
+.buildingText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+  padding-top: 0.35rem;
+}
+
+.buildingTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+.buildingDescription {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.buildingMeta {
+  margin: 0.15rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
   color: var(--text-muted);
 }
 
