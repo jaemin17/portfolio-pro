@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
-import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getHomeCopy } from "@/i18n/copy";
 import styles from "./page.module.css";
@@ -63,7 +62,6 @@ export default async function HomePage({ params }: HomePageProps) {
 
           <footer className={styles.footer}>
             <p className={styles.footerRole}>{copy.footerRole}</p>
-            <LocaleSwitcher locale={locale} />
           </footer>
         </div>
       </main>

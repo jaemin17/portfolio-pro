@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { SiteHeader } from "@/components/SiteHeader";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 
 export function generateStaticParams() {
@@ -16,5 +17,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
   const locale: Locale = localeParam;
 
-  return <div lang={locale}>{children}</div>;
+  return (
+    <div lang={locale}>
+      <SiteHeader locale={locale} />
+      {children}
+    </div>
+  );
 }

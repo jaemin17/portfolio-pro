@@ -8,5 +8,5 @@ export function isLocale(value: string): value is Locale {
 
 export const localeLabels: Record<Locale, string> = {
   zh: "中文",
-  en: "EN",
+  en: "en",
 };
