@@ -1,27 +1,36 @@
 import type { Metadata } from "next";
+import { Noto_Sans_SC } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const interDisplay = localFont({
+const geistSans = localFont({
   src: [
     {
-      path: "../fonts/InterDisplay-Regular.woff2",
+      path: "../fonts/Geist-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../fonts/InterDisplay-Medium.woff2",
+      path: "../fonts/Geist-Medium.woff2",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../fonts/InterDisplay-SemiBold.woff2",
+      path: "../fonts/Geist-SemiBold.woff2",
       weight: "600",
       style: "normal",
     },
   ],
-  variable: "--font-inter-display",
+  variable: "--font-geist-sans",
   display: "swap",
+});
+
+const notoSansSC = Noto_Sans_SC({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-noto-sans-sc",
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -35,7 +44,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={interDisplay.variable}>
+    <html
+      lang="zh-CN"
+      className={`${geistSans.variable} ${notoSansSC.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

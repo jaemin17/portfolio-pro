@@ -23,7 +23,8 @@ body {
 
 body {
   font-family:
-    var(--font-inter-display),
+    var(--font-geist-sans),
+    var(--font-noto-sans-sc),
     system-ui,
     -apple-system,
     "Segoe UI",
