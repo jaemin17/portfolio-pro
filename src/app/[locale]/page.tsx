@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
+import { RevealOnView } from "@/components/RevealOnView";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getHomeCopy, type CurrentlyBuildingItem } from "@/i18n/copy";
 import styles from "./page.module.css";
@@ -8,6 +9,13 @@ import styles from "./page.module.css";
 type HomePageProps = {
   params: Promise<{ locale: string }>;
 };
+
+const revealDelays = [
+  styles.revealDelay1,
+  styles.revealDelay2,
+  styles.revealDelay3,
+  styles.revealDelay4,
+] as const;
 
 function assetSrc(path: string): string {
   return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
@@ -22,13 +30,31 @@ function Section({
 }) {
   return (
     <section className={styles.section}>
-      <h2 className={styles.sectionLabel}>{label}</h2>
-      <p className={styles.emptyNote}>{empty}</p>
+      <RevealOnView className={styles.scrollReveal}>
+        <h2
+          className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
+        >
+          {label}
+        </h2>
+        <p
+          className={`${styles.emptyNote} ${styles.revealItem} ${styles.revealDelay2}`}
+        >
+          {empty}
+        </p>
+      </RevealOnView>
     </section>
   );
 }
 
-function BuildingItem({ item }: { item: CurrentlyBuildingItem }) {
+function BuildingItem({
+  item,
+  className,
+}: {
+  item: CurrentlyBuildingItem;
+  className?: string;
+}) {
+  const classes = [styles.buildingItem, className].filter(Boolean).join(" ");
+
   const content = (
     <>
       <img
@@ -49,7 +75,7 @@ function BuildingItem({ item }: { item: CurrentlyBuildingItem }) {
   if (item.href) {
     return (
       <a
-        className={`${styles.buildingItem} ${styles.buildingItemLink}`}
+        className={`${classes} ${styles.buildingItemLink}`}
         href={item.href}
         target="_blank"
         rel="noopener noreferrer"
@@ -59,7 +85,7 @@ function BuildingItem({ item }: { item: CurrentlyBuildingItem }) {
     );
   }
 
-  return <div className={styles.buildingItem}>{content}</div>;
+  return <div className={classes}>{content}</div>;
 }
 
 export default async function HomePage({ params }: HomePageProps) {
@@ -95,21 +121,33 @@ export default async function HomePage({ params }: HomePageProps) {
 
         <div className={styles.contentShell}>
           <section className={styles.section} aria-label={copy.currentlyBuilding.label}>
-            <h2 className={styles.sectionLabel}>{copy.currentlyBuilding.label}</h2>
-            <div className={styles.buildingList}>
-              {copy.currentlyBuilding.items.map((item) => (
-                <BuildingItem key={item.title} item={item} />
-              ))}
-            </div>
+            <RevealOnView className={styles.scrollReveal}>
+              <h2
+                className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
+              >
+                {copy.currentlyBuilding.label}
+              </h2>
+              <div className={styles.buildingList}>
+                {copy.currentlyBuilding.items.map((item, index) => (
+                  <BuildingItem
+                    key={item.title}
+                    item={item}
+                    className={`${styles.revealItem} ${revealDelays[index + 1] ?? styles.revealDelay4}`}
+                  />
+                ))}
+              </div>
+            </RevealOnView>
           </section>
 
           <Section label={copy.selectedWork.label} empty={copy.selectedWork.empty} />
           <Section label={copy.caseStudies.label} empty={copy.caseStudies.empty} />
           <Section label={copy.about.label} empty={copy.about.empty} />
 
-          <footer className={styles.footer}>
-            <p className={styles.footerRole}>{copy.footerRole}</p>
-          </footer>
+          <RevealOnView className={styles.scrollReveal}>
+            <footer className={`${styles.footer} ${styles.revealItem} ${styles.revealDelay1}`}>
+              <p className={styles.footerRole}>{copy.footerRole}</p>
+            </footer>
+          </RevealOnView>
         </div>
       </main>
     </div>

@@ -32,6 +32,81 @@
   padding: clamp(8.5rem, 18vw, 13.5rem) 0 clamp(4rem, 12vw, 9rem);
 }
 
+.hero > * {
+  animation: heroReveal 0.55s ease both;
+}
+
+.hero > *:nth-child(1) {
+  animation-delay: 0.06s;
+}
+
+.hero > *:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.hero > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.hero > *:nth-child(4) {
+  animation-delay: 0.42s;
+}
+
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero > * {
+    animation: none;
+  }
+}
+
+.scrollReveal[data-reveal="pending"] .revealItem {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.scrollReveal[data-reveal="in"] .revealItem {
+  animation: heroReveal 0.55s ease both;
+  animation-delay: var(--reveal-delay, 0.06s);
+}
+
+.revealDelay1 {
+  --reveal-delay: 0.06s;
+}
+
+.revealDelay2 {
+  --reveal-delay: 0.18s;
+}
+
+.revealDelay3 {
+  --reveal-delay: 0.3s;
+}
+
+.revealDelay4 {
+  --reveal-delay: 0.42s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrollReveal[data-reveal="pending"] .revealItem {
+    opacity: 1;
+    transform: none;
+  }
+
+  .scrollReveal[data-reveal="in"] .revealItem {
+    animation: none;
+  }
+}
+
 .contentShell {
   position: relative;
   background: #fff;
