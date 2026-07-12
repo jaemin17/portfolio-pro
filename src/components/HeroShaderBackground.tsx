@@ -20,7 +20,7 @@ export function HeroShaderBackground() {
       <Warp
         className={styles.warpClouds}
         colors={[...CLOUD_COLORS]}
-        speed={0.38}
+        speed={0.7}
         scale={1}
         rotation={0}
         proportion={0.3}
