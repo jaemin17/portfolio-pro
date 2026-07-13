@@ -98,7 +98,6 @@ function ToolProjectCard({
       {showCaption ? (
         <div className={styles.toolCaption}>
           <p className={styles.toolTitle}>{item.title}</p>
-          <p className={styles.toolDescription}>{item.description}</p>
         </div>
       ) : null}
     </article>

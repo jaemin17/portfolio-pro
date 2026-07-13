@@ -11,6 +11,8 @@ type SnapshotMarqueeProps = {
 };
 
 const rotations = [-3, 2, -4, 3, -2, 4] as const;
+const sequenceRepeats = 4;
+const baseDurationSeconds = 42;
 
 function assetSrc(path: string): string {
   return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
@@ -47,23 +49,48 @@ function MarqueeItem({
   );
 }
 
+function MarqueeGroup({
+  items,
+  ariaHidden,
+}: {
+  items: SnapshotMarqueeItem[];
+  ariaHidden?: boolean;
+}) {
+  return (
+    <div className={styles.group} aria-hidden={ariaHidden}>
+      {Array.from({ length: sequenceRepeats }).map((_, repeatIndex) =>
+        items.map((item, itemIndex) => {
+          const index = repeatIndex * items.length + itemIndex;
+
+          return (
+            <MarqueeItem
+              key={`${repeatIndex}-${item.alt}`}
+              item={item}
+              index={index}
+            />
+          );
+        }),
+      )}
+    </div>
+  );
+}
+
 export function SnapshotMarquee({ items }: SnapshotMarqueeProps) {
   if (items.length === 0) return null;
 
   return (
     <section className={styles.section} aria-label="Snapshots">
       <div className={styles.viewport}>
-        <div className={styles.track}>
-          <div className={styles.group}>
-            {items.map((item, index) => (
-              <MarqueeItem key={`a-${item.alt}`} item={item} index={index} />
-            ))}
-          </div>
-          <div className={styles.group} aria-hidden="true">
-            {items.map((item, index) => (
-              <MarqueeItem key={`b-${item.alt}`} item={item} index={index} />
-            ))}
-          </div>
+        <div
+          className={styles.track}
+          style={
+            {
+              "--snapshot-marquee-duration": `${baseDurationSeconds * sequenceRepeats}s`,
+            } as CSSProperties
+          }
+        >
+          <MarqueeGroup items={items} />
+          <MarqueeGroup items={items} ariaHidden />
         </div>
       </div>
     </section>

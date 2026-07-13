@@ -77,7 +77,7 @@ const toolVideos = {
 } as const;
 
 const toolFrameColors = {
-  model: "#f3f3f3",
+  model: "#f8f8f8",
   xrScript: "#d7e8ff",
   ppt: "#efe6ff",
   syncSpace: "#2f2f2f",

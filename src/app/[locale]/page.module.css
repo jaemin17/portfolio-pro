@@ -259,7 +259,7 @@
 .toolList {
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 3rem;
 }
 
 .visualList {
@@ -311,23 +311,14 @@
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  padding: 0 0.125rem;
+  padding: 0 0.125rem 0 0.25rem;
 }
 
 .toolTitle {
   margin: 0;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  line-height: 1.35;
-  color: var(--text-primary);
-}
-
-.toolDescription {
-  margin: 0;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.45;
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 .emptyNote {
