@@ -1,0 +1,98 @@
+.section {
+  width: 100vw;
+  margin-top: 2rem;
+  margin-left: calc(50% - 50vw);
+}
+
+.viewport {
+  overflow: hidden;
+  padding: 1.5rem 0 2rem;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 12%,
+    #000 88%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 12%,
+    #000 88%,
+    transparent 100%
+  );
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: snapshotMarquee 42s linear infinite;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+  /* Match internal gap so rotated items don't overlap at group seams */
+  padding-right: 1.25rem;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+.item {
+  flex-shrink: 0;
+  transform: rotate(var(--item-rotate, 0deg));
+}
+
+.image,
+.placeholder {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0.5rem;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.placeholder {
+  background: #e8e8e8;
+}
+
+@keyframes snapshotMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    padding: 0 var(--page-gutter);
+  }
+
+  .group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .viewport {
+    overflow: visible;
+  }
+}

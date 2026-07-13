@@ -35,6 +35,24 @@ export type ToolProjects = {
   items: ToolProjectItem[];
 };
 
+export type SnapshotItem = {
+  alt: string;
+  imageSrc?: string;
+};
+
+export type Snapshots = {
+  items: SnapshotItem[];
+};
+
+const snapshotPlaceholders: SnapshotItem[] = [
+  { alt: "Snapshot 1" },
+  { alt: "Snapshot 2" },
+  { alt: "Snapshot 3" },
+  { alt: "Snapshot 4" },
+  { alt: "Snapshot 5" },
+  { alt: "Snapshot 6" },
+];
+
 export type HomeCopy = {
   name: string;
   lead: string;
@@ -47,6 +65,7 @@ export type HomeCopy = {
   visualProjects: ToolProjects;
   caseStudies: HomeSection;
   about: HomeSection;
+  snapshots: Snapshots;
   footerRole: string;
 };
 
@@ -176,6 +195,9 @@ const copy: Record<Locale, HomeCopy> = {
       label: "About",
       empty: "个人介绍稍后更新。",
     },
+    snapshots: {
+      items: snapshotPlaceholders,
+    },
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },
   en: {
@@ -280,6 +302,9 @@ const copy: Record<Locale, HomeCopy> = {
     about: {
       label: "About",
       empty: "Bio coming soon.",
+    },
+    snapshots: {
+      items: snapshotPlaceholders,
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },

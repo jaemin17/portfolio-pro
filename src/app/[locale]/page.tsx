@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { RevealOnView } from "@/components/RevealOnView";
+import { SnapshotMarquee } from "@/components/SnapshotMarquee";
 import { isLocale, type Locale } from "@/i18n/config";
 import {
   getHomeCopy,
@@ -244,6 +245,8 @@ export default async function HomePage({ params }: HomePageProps) {
 
           <Section label={copy.caseStudies.label} empty={copy.caseStudies.empty} />
           <Section label={copy.about.label} empty={copy.about.empty} />
+
+          <SnapshotMarquee items={copy.snapshots.items} />
 
           <RevealOnView className={styles.scrollReveal}>
             <footer className={`${styles.footer} ${styles.revealItem} ${styles.revealDelay1}`}>
