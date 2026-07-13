@@ -45,12 +45,34 @@ export type Snapshots = {
 };
 
 const snapshotPlaceholders: SnapshotItem[] = [
-  { alt: "Snapshot 1" },
-  { alt: "Snapshot 2" },
-  { alt: "Snapshot 3" },
-  { alt: "Snapshot 4" },
-  { alt: "Snapshot 5" },
-  { alt: "Snapshot 6" },
+  {
+    alt: "Photo with flowers",
+    imageSrc: "/images/snapshots/snapshot-06.jpg",
+  },
+  {
+    alt: "Illustrated portrait with smile pin",
+    imageSrc: "/images/snapshots/snapshot-07.jpg",
+  },
+  {
+    alt: "Portrait in orange flowers",
+    imageSrc: "/images/snapshots/snapshot-08.jpg",
+  },
+  {
+    alt: "Beaded flower bracelets",
+    imageSrc: "/images/snapshots/snapshot-09.jpg",
+  },
+  {
+    alt: "Cat portrait",
+    imageSrc: "/images/snapshots/snapshot-10.png",
+  },
+  {
+    alt: "Forest garden path",
+    imageSrc: "/images/snapshots/snapshot-11.jpg",
+  },
+  {
+    alt: "Temple ruins portrait",
+    imageSrc: "/images/snapshots/snapshot-12.jpg",
+  },
 ];
 
 export type HomeCopy = {
