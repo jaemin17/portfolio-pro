@@ -26,6 +26,8 @@ export type ToolProjectItem = {
   imageSrc?: string;
   /** Outer frame color behind the media */
   frameColor?: string;
+  /** When false, media sits flush with no colored frame */
+  framed?: boolean;
 };
 
 export type ToolProjects = {
@@ -68,14 +70,6 @@ const visualMedia = {
   biomedical: "/videos/visual/highmodes.mp4",
   game: "/images/visual/cosmic-blaze-hero.png",
   arAirbnb: "/images/visual/ar-airbnb-scene-1.png",
-} as const;
-
-const visualFrameColors = {
-  manufacturing: "#f3f3f3",
-  automotive: "#eef7f2",
-  biomedical: "#dcefff",
-  game: "#f3f3f3",
-  arAirbnb: "#f3f3f3",
 } as const;
 
 const copy: Record<Locale, HomeCopy> = {
@@ -139,38 +133,38 @@ const copy: Record<Locale, HomeCopy> = {
       label: "视觉类项目",
       items: [
         {
+          title: "生物医疗VR",
+          description:
+            "动物模型、解剖训练、手术步骤和课程资源相关的 VR 教育软件界面。",
+          videoSrc: visualMedia.biomedical,
+          framed: false,
+        },
+        {
           title: "智能制造 VR",
           description:
             "变速器、工业机器人、注塑模具等工业设备实训画面和教学操作界面。",
           videoSrc: visualMedia.manufacturing,
-          frameColor: visualFrameColors.manufacturing,
+          framed: false,
         },
         {
           title: "车载UI",
           description:
             "车载娱乐与控制系统界面，包含驾驶、音乐、收音机和车辆设置等功能模块。",
           imageSrc: visualMedia.automotive,
-          frameColor: visualFrameColors.automotive,
-        },
-        {
-          title: "生物医疗VR",
-          description:
-            "动物模型、解剖训练、手术步骤和课程资源相关的 VR 教育软件界面。",
-          videoSrc: visualMedia.biomedical,
-          frameColor: visualFrameColors.biomedical,
+          framed: false,
         },
         {
           title: "游戏概念",
           description: "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
           imageSrc: visualMedia.game,
-          frameColor: visualFrameColors.game,
+          framed: false,
         },
         {
           title: "AR Airbnb",
           description:
             "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
           imageSrc: visualMedia.arAirbnb,
-          frameColor: visualFrameColors.arAirbnb,
+          framed: false,
         },
       ],
     },
@@ -244,38 +238,38 @@ const copy: Record<Locale, HomeCopy> = {
       label: "Visual Projects",
       items: [
         {
+          title: "Biomedical VR",
+          description:
+            "VR education software for animal models, anatomy training, surgical steps, and course resources.",
+          videoSrc: visualMedia.biomedical,
+          framed: false,
+        },
+        {
           title: "Smart Manufacturing VR",
           description:
             "Training views and teaching UI for industrial equipment such as transmissions, robots, and injection molds.",
           videoSrc: visualMedia.manufacturing,
-          frameColor: visualFrameColors.manufacturing,
+          framed: false,
         },
         {
           title: "Automotive UI",
           description:
             "In-vehicle entertainment and control interfaces covering driving, music, radio, and vehicle settings.",
           imageSrc: visualMedia.automotive,
-          frameColor: visualFrameColors.automotive,
-        },
-        {
-          title: "Biomedical VR",
-          description:
-            "VR education software for animal models, anatomy training, surgical steps, and course resources.",
-          videoSrc: visualMedia.biomedical,
-          frameColor: visualFrameColors.biomedical,
+          framed: false,
         },
         {
           title: "Game Concept",
           description: "UI visual design for a VR/AR desk-device experience game.",
           imageSrc: visualMedia.game,
-          frameColor: visualFrameColors.game,
+          framed: false,
         },
         {
           title: "AR Airbnb",
           description:
             "AR experience design that blends digital information into real lodging spaces.",
           imageSrc: visualMedia.arAirbnb,
-          frameColor: visualFrameColors.arAirbnb,
+          framed: false,
         },
       ],
     },

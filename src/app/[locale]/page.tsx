@@ -53,18 +53,24 @@ function Section({
 function ToolProjectCard({
   item,
   className,
+  showCaption = true,
 }: {
   item: ToolProjectItem;
   className?: string;
+  showCaption?: boolean;
 }) {
   const classes = [styles.toolCard, className].filter(Boolean).join(" ");
+  const framed = item.framed !== false;
+  const frameClass = framed
+    ? styles.toolFrame
+    : `${styles.toolFrame} ${styles.toolFrameBare}`;
 
   return (
     <article className={classes}>
       <div
-        className={styles.toolFrame}
+        className={frameClass}
         style={
-          item.frameColor
+          framed && item.frameColor
             ? { backgroundColor: item.frameColor }
             : undefined
         }
@@ -88,10 +94,12 @@ function ToolProjectCard({
           />
         ) : null}
       </div>
-      <div className={styles.toolCaption}>
-        <p className={styles.toolTitle}>{item.title}</p>
-        <p className={styles.toolDescription}>{item.description}</p>
-      </div>
+      {showCaption ? (
+        <div className={styles.toolCaption}>
+          <p className={styles.toolTitle}>{item.title}</p>
+          <p className={styles.toolDescription}>{item.description}</p>
+        </div>
+      ) : null}
     </article>
   );
 }
@@ -221,11 +229,12 @@ export default async function HomePage({ params }: HomePageProps) {
               >
                 {copy.visualProjects.label}
               </h2>
-              <div className={styles.toolList}>
+              <div className={styles.visualList}>
                 {copy.visualProjects.items.map((item, index) => (
                   <ToolProjectCard
                     key={item.title}
                     item={item}
+                    showCaption={false}
                     className={`${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
                   />
                 ))}

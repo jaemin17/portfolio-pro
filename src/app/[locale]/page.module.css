@@ -231,6 +231,12 @@
   gap: 3.5rem;
 }
 
+.visualList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .toolCard {
   display: flex;
   flex-direction: column;
@@ -246,6 +252,13 @@
   padding: 1.5rem 1.125rem 0;
 }
 
+.toolFrameBare {
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 0.75rem;
+}
+
 .toolVideo {
   display: block;
   width: 100%;
@@ -253,6 +266,14 @@
   object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
   background: #e8e8e8;
+}
+
+.toolFrameBare .toolVideo {
+  aspect-ratio: 3 / 2;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  background: transparent;
 }
 
 .toolCaption {
