@@ -11,6 +11,7 @@ const basePath =
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
+  allowedDevOrigins: ["192.168.31.115"],
   images: {
     unoptimized: true,
   },

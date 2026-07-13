@@ -48,3 +48,24 @@
     opacity: 0.85;
   }
 }
+
+@supports (-webkit-touch-callout: none) {
+  @media (hover: none) and (pointer: coarse) {
+    .warpClouds {
+      opacity: 0.82;
+      filter: none;
+    }
+
+    .skyLighten {
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgb(255 255 255 / 0.02) 36%,
+        rgb(255 255 255 / 0.08) 58%,
+        rgb(255 255 255 / 0.22) 78%,
+        rgb(255 255 255 / 0.48) 90%,
+        #ffffff 100%
+      );
+    }
+  }
+}

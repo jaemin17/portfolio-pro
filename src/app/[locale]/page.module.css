@@ -107,9 +107,38 @@
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .scrollReveal[data-reveal="pending"] .revealItem {
+    opacity: 1;
+    transform: none;
+  }
+
+  .scrollReveal[data-reveal="in"] .revealItem {
+    animation: none;
+  }
+}
+
 .contentShell {
   position: relative;
   background: #fff;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .contentShell {
+    isolation: isolate;
+  }
+
+  .contentShell::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: #fff;
+  }
 }
 
 .name {
