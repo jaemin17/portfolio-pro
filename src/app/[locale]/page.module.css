@@ -21,7 +21,8 @@
   position: relative;
   z-index: 1;
   box-sizing: border-box;
-  width: min(var(--content-max), calc(100% - var(--page-gutter) * 2));
+  --main-gutter: var(--page-gutter);
+  width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
   margin: 0 auto;
   padding: 0 0 4rem;
 }
@@ -351,6 +352,27 @@
   margin: 0;
   font-size: 0.8125rem;
   color: var(--text-muted);
+}
+
+@media (max-width: 767px) {
+  .main {
+    --main-gutter: 3rem;
+    width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
+  }
+
+  .hero {
+    padding-top: 14rem;
+    padding-bottom: 8rem;
+  }
+
+  .name {
+    font-size: 1.125rem;
+  }
+
+  .lead,
+  .body {
+    font-size: 0.9375rem;
+  }
 }
 
 @media (min-width: 640px) {
