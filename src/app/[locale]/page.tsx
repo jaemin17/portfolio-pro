@@ -69,16 +69,24 @@ function ToolProjectCard({
             : undefined
         }
       >
-        <video
-          className={styles.toolVideo}
-          src={assetSrc(item.videoSrc)}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label={item.title}
-        />
+        {item.videoSrc ? (
+          <video
+            className={styles.toolVideo}
+            src={assetSrc(item.videoSrc)}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label={item.title}
+          />
+        ) : item.imageSrc ? (
+          <img
+            className={styles.toolVideo}
+            src={assetSrc(item.imageSrc)}
+            alt={item.title}
+          />
+        ) : null}
       </div>
       <div className={styles.toolCaption}>
         <p className={styles.toolTitle}>{item.title}</p>
@@ -193,6 +201,28 @@ export default async function HomePage({ params }: HomePageProps) {
               </h2>
               <div className={styles.toolList}>
                 {copy.toolProjects.items.map((item, index) => (
+                  <ToolProjectCard
+                    key={item.title}
+                    item={item}
+                    className={`${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
+                  />
+                ))}
+              </div>
+            </RevealOnView>
+          </section>
+
+          <section
+            className={styles.section}
+            aria-label={copy.visualProjects.label}
+          >
+            <RevealOnView className={styles.scrollReveal}>
+              <h2
+                className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
+              >
+                {copy.visualProjects.label}
+              </h2>
+              <div className={styles.toolList}>
+                {copy.visualProjects.items.map((item, index) => (
                   <ToolProjectCard
                     key={item.title}
                     item={item}
