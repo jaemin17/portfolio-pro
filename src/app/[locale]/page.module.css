@@ -190,7 +190,8 @@
   height: 4.5rem;
   border-radius: 1.125rem;
   border: 1px solid var(--border);
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   background: #fff;
 }
 
