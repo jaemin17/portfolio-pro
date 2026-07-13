@@ -242,7 +242,8 @@
   border-radius: 1.25rem;
   border: 1px solid var(--border);
   background: #f3f3f3;
-  padding: 0.875rem;
+  /* Top slightly larger than sides; flush to bottom */
+  padding: 1.5rem 1.125rem 0;
 }
 
 .toolVideo {
@@ -250,7 +251,7 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 0.875rem;
+  border-radius: 0.5rem 0.5rem 0 0;
   background: #e8e8e8;
 }
 
