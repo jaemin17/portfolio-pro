@@ -3,7 +3,11 @@ import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { RevealOnView } from "@/components/RevealOnView";
 import { isLocale, type Locale } from "@/i18n/config";
-import { getHomeCopy, type CurrentlyBuildingItem } from "@/i18n/copy";
+import {
+  getHomeCopy,
+  type CurrentlyBuildingItem,
+  type ToolProjectItem,
+} from "@/i18n/copy";
 import styles from "./page.module.css";
 
 type HomePageProps = {
@@ -43,6 +47,37 @@ function Section({
         </p>
       </RevealOnView>
     </section>
+  );
+}
+
+function ToolProjectCard({
+  item,
+  className,
+}: {
+  item: ToolProjectItem;
+  className?: string;
+}) {
+  const classes = [styles.toolCard, className].filter(Boolean).join(" ");
+
+  return (
+    <article className={classes}>
+      <div className={styles.toolFrame}>
+        <video
+          className={styles.toolVideo}
+          src={assetSrc(item.videoSrc)}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label={item.title}
+        />
+      </div>
+      <div className={styles.toolCaption}>
+        <p className={styles.toolTitle}>{item.title}</p>
+        <p className={styles.toolDescription}>{item.description}</p>
+      </div>
+    </article>
   );
 }
 
@@ -139,7 +174,28 @@ export default async function HomePage({ params }: HomePageProps) {
             </RevealOnView>
           </section>
 
-          <Section label={copy.selectedWork.label} empty={copy.selectedWork.empty} />
+          <section
+            className={styles.section}
+            aria-label={copy.toolProjects.label}
+          >
+            <RevealOnView className={styles.scrollReveal}>
+              <h2
+                className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
+              >
+                {copy.toolProjects.label}
+              </h2>
+              <div className={styles.toolList}>
+                {copy.toolProjects.items.map((item, index) => (
+                  <ToolProjectCard
+                    key={item.title}
+                    item={item}
+                    className={`${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
+                  />
+                ))}
+              </div>
+            </RevealOnView>
+          </section>
+
           <Section label={copy.caseStudies.label} empty={copy.caseStudies.empty} />
           <Section label={copy.about.label} empty={copy.about.empty} />
 

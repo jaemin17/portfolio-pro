@@ -19,6 +19,17 @@ export type CurrentlyBuilding = {
   items: CurrentlyBuildingItem[];
 };
 
+export type ToolProjectItem = {
+  title: string;
+  description: string;
+  videoSrc: string;
+};
+
+export type ToolProjects = {
+  label: string;
+  items: ToolProjectItem[];
+};
+
 export type HomeCopy = {
   name: string;
   lead: string;
@@ -27,11 +38,18 @@ export type HomeCopy = {
   copyEmail: string;
   copiedEmail: string;
   currentlyBuilding: CurrentlyBuilding;
-  selectedWork: HomeSection;
+  toolProjects: ToolProjects;
   caseStudies: HomeSection;
   about: HomeSection;
   footerRole: string;
 };
+
+const toolVideos = {
+  model: "/videos/tools/model.mp4",
+  xrScript: "/videos/tools/xr-script.mp4",
+  ppt: "/videos/tools/ppt.mp4",
+  syncSpace: "/videos/tools/sync-space.mp4",
+} as const;
 
 const copy: Record<Locale, HomeCopy> = {
   zh: {
@@ -61,9 +79,30 @@ const copy: Record<Locale, HomeCopy> = {
         },
       ],
     },
-    selectedWork: {
-      label: "精选项目",
-      empty: "暂无项目，稍后更新。",
+    toolProjects: {
+      label: "工具类项目",
+      items: [
+        {
+          title: "模型编辑器",
+          description: "材质、颜色和模型结构编辑",
+          videoSrc: toolVideos.model,
+        },
+        {
+          title: "XR交互剧本设计引擎",
+          description: "模型资源浏览与预览",
+          videoSrc: toolVideos.xrScript,
+        },
+        {
+          title: "XR课件",
+          description: "3D 内容播放与课件演示",
+          videoSrc: toolVideos.ppt,
+        },
+        {
+          title: "Sync Space",
+          description: "多端课堂协同与设备管理",
+          videoSrc: toolVideos.syncSpace,
+        },
+      ],
     },
     caseStudies: {
       label: "Case Studies",
@@ -102,9 +141,30 @@ const copy: Record<Locale, HomeCopy> = {
         },
       ],
     },
-    selectedWork: {
-      label: "Selected Work",
-      empty: "No projects yet. Coming soon.",
+    toolProjects: {
+      label: "Tool Projects",
+      items: [
+        {
+          title: "Model Editor",
+          description: "Edit materials, colors, and model structure",
+          videoSrc: toolVideos.model,
+        },
+        {
+          title: "XR Interactive Script Engine",
+          description: "Browse and preview model assets",
+          videoSrc: toolVideos.xrScript,
+        },
+        {
+          title: "XR Courseware",
+          description: "3D content playback and course demos",
+          videoSrc: toolVideos.ppt,
+        },
+        {
+          title: "Sync Space",
+          description: "Multi-device classroom collaboration and device management",
+          videoSrc: toolVideos.syncSpace,
+        },
+      ],
     },
     caseStudies: {
       label: "Case Studies",
