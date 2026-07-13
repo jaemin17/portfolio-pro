@@ -23,6 +23,8 @@ export type ToolProjectItem = {
   title: string;
   description: string;
   videoSrc: string;
+  /** Outer frame color behind the video */
+  frameColor?: string;
 };
 
 export type ToolProjects = {
@@ -49,6 +51,13 @@ const toolVideos = {
   xrScript: "/videos/tools/xr-script.mp4",
   ppt: "/videos/tools/ppt.mp4",
   syncSpace: "/videos/tools/sync-space.mp4",
+} as const;
+
+const toolFrameColors = {
+  model: "#f3f3f3",
+  xrScript: "#d7e8ff",
+  ppt: "#efe6ff",
+  syncSpace: "#2f2f2f",
 } as const;
 
 const copy: Record<Locale, HomeCopy> = {
@@ -86,21 +95,25 @@ const copy: Record<Locale, HomeCopy> = {
           title: "模型编辑器",
           description: "材质、颜色和模型结构编辑",
           videoSrc: toolVideos.model,
+          frameColor: toolFrameColors.model,
         },
         {
           title: "XR交互剧本设计引擎",
           description: "模型资源浏览与预览",
           videoSrc: toolVideos.xrScript,
+          frameColor: toolFrameColors.xrScript,
         },
         {
           title: "XR课件",
           description: "3D 内容播放与课件演示",
           videoSrc: toolVideos.ppt,
+          frameColor: toolFrameColors.ppt,
         },
         {
           title: "Sync Space",
           description: "多端课堂协同与设备管理",
           videoSrc: toolVideos.syncSpace,
+          frameColor: toolFrameColors.syncSpace,
         },
       ],
     },
@@ -148,21 +161,25 @@ const copy: Record<Locale, HomeCopy> = {
           title: "Model Editor",
           description: "Edit materials, colors, and model structure",
           videoSrc: toolVideos.model,
+          frameColor: toolFrameColors.model,
         },
         {
           title: "XR Interactive Script Engine",
           description: "Browse and preview model assets",
           videoSrc: toolVideos.xrScript,
+          frameColor: toolFrameColors.xrScript,
         },
         {
           title: "XR Courseware",
           description: "3D content playback and course demos",
           videoSrc: toolVideos.ppt,
+          frameColor: toolFrameColors.ppt,
         },
         {
           title: "Sync Space",
           description: "Multi-device classroom collaboration and device management",
           videoSrc: toolVideos.syncSpace,
+          frameColor: toolFrameColors.syncSpace,
         },
       ],
     },

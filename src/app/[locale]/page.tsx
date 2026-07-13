@@ -61,7 +61,14 @@ function ToolProjectCard({
 
   return (
     <article className={classes}>
-      <div className={styles.toolFrame}>
+      <div
+        className={styles.toolFrame}
+        style={
+          item.frameColor
+            ? { backgroundColor: item.frameColor }
+            : undefined
+        }
+      >
         <video
           className={styles.toolVideo}
           src={assetSrc(item.videoSrc)}
