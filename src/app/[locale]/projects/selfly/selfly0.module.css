@@ -68,7 +68,7 @@
   margin-top: 12px;
   color: var(--muted);
   font-size: 13px;
-  font-family: var(--font-ibm-plex-mono), "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .metaDot {
@@ -114,9 +114,10 @@
 
 /* Positioning Diagram (coded replacement for positioning.png) */
 .positioningDiagram {
+  margin: 0;
   width: 100%;
-  background: #f6f7fa;
-  border: 1px solid rgba(17, 18, 23, 0.1);
+  background: #000000;
+  border: 0;
   border-radius: 24px;
   padding: 56px 60px 0;
   box-sizing: border-box;
@@ -161,9 +162,9 @@
 
 .positioningDiagramPhase {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04em;
-  color: var(--text-primary);
+  color: #d4956a;
 }
 
 .positioningDiagramCopy {
@@ -178,8 +179,8 @@
 .positioningDiagramCaption {
   margin: 0;
   font-size: 14px;
-  font-weight: 400;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
   text-align: center;
   line-height: 1.45;
 }
@@ -187,8 +188,8 @@
 .positioningDiagramDescription {
   margin: 0;
   font-size: 13px;
-  font-weight: 400;
-  color: var(--text-secondary);
+  font-weight: 500;
+  color: #e8dfd3;
   text-align: center;
   line-height: 1.5;
   max-width: 260px;
@@ -199,50 +200,13 @@
   width: 100%;
   max-width: 220px;
   max-height: 392px;
-  border-radius: 14px;
+  border-radius: 32px;
   overflow: hidden;
-  background: transparent;
-  border: 0.5px solid rgba(17, 18, 23, 0.16);
-  box-shadow: none;
+  background: #000;
+  border: 6px solid #2a2a2a;
+  border-bottom: none;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-}
-
-.positioningPhaseCompare {
-  padding: 0;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  overflow: visible;
-}
-
-.positioningPhaseCompare .positioningDiagramFlow {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
-  gap: 28px;
-}
-
-.positioningPhaseCompare .positioningDiagramCol {
-  gap: 18px;
-  background: #f6f7fa;
-  padding: 44px 32px 28px;
-}
-
-.positioningPhaseCompare .positioningPhoneFrame {
-  max-width: 270px;
-  max-height: none;
-  border: 8px solid #1f1f1f;
-  border-radius: 34px;
-  background: #1f1f1f;
-  box-shadow: 0 2px 4px rgba(17, 18, 23, 0.12);
-}
-
-.positioningPhaseCompare .positioningDiagramCaption {
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
 }
 
 .exploreCreateDiagram .positioningPhoneFrame {
@@ -393,24 +357,20 @@
   }
 
   .positioningPhaseCompare {
-    padding: 0;
-  }
-
-  .positioningPhaseCompare .positioningDiagramFlow {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+    padding: 16px 16px 0;
   }
 
   .positioningPhaseCompare .positioningDiagramCol {
-    gap: 10px;
-    padding: 24px 12px 16px;
+    gap: 4px;
   }
 
   .positioningPhaseCompare .positioningPhoneFrame {
-    max-width: min(38vw, 160px);
-    max-height: none;
-    border-width: 5px;
-    border-radius: 22px;
+    max-width: 136px;
+    max-height: 210px;
+  }
+
+  .positioningPhaseCompare .positioningDiagramArrow {
+    margin-top: 8px;
   }
 
   .todayTop3Carousel {
@@ -756,8 +716,8 @@
 .selfly0ChapterIntro {
   margin: 72px calc(50% - 50vw) 72px;
   padding: 0;
-  background: transparent;
-  color: var(--text-primary);
+  background: #000;
+  color: #f7f7f7;
   scroll-margin-top: 24px;
 }
 
@@ -765,10 +725,7 @@
   max-width: 1200px;
   min-height: 480px;
   margin: 0 auto;
-  padding: 0 48px;
-  background: #ffffff;
-  border: 1px solid rgba(17, 18, 23, 0.1);
-  border-radius: 24px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -811,7 +768,7 @@
 .selfly0ChapterIntro p {
   max-width: 760px;
   margin-top: 0;
-  color: var(--text-primary);
+  color: rgba(255, 255, 255, 0.9);
   font-size: clamp(28px, 2.8vw, 38px);
   line-height: 1.42;
   font-weight: 400;
@@ -1009,7 +966,7 @@
   font-size: 26px;
   font-weight: 500;
   line-height: 1.65;
-  padding-top: 0;
+  padding-top: 24px;
 }
 
 .selfly0PositioningHeadingLight {
@@ -1157,7 +1114,7 @@
   display: block;
   margin-bottom: 8px;
   color: var(--text-secondary);
-  font-family: var(--font-ibm-plex-mono), "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -1193,8 +1150,8 @@
   margin: 0;
   padding: 32px 24px 28px;
   text-align: center;
-  background: #ffffff;
-  border: 1px solid rgba(17, 18, 23, 0.1);
+  background: #000000;
+  border: 0;
   border-radius: 24px;
   box-shadow: none;
   box-sizing: border-box;
@@ -1207,7 +1164,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-secondary);
+  color: #ffbc6e;
 }
 
 .tabStructureTrack {
@@ -1253,14 +1210,14 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: var(--text-primary);
+  color: #ffbc6e;
   line-height: 1;
 }
 
 .tabStructureTitleSep {
   font-size: 12px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: rgba(255, 188, 110, 0.55);
   line-height: 1;
 }
 
@@ -1268,8 +1225,8 @@
   width: 64px;
   height: 64px;
   border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid rgba(17, 18, 23, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1288,7 +1245,7 @@
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: var(--text-primary);
+  color: #e8e8ec;
   line-height: 1.2;
 }
 
@@ -1297,7 +1254,7 @@
   font-size: 13px;
   font-weight: 500;
   line-height: 1.45;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.68);
   max-width: 168px;
 }
 
@@ -1323,7 +1280,7 @@
   gap: 16px;
   margin: 16px 0 0;
   padding-top: 16px;
-  border-top: 1px dashed rgba(17, 18, 23, 0.12);
+  border-top: 1px dashed rgba(255, 255, 255, 0.16);
 }
 
 .tabStructureCycle {
@@ -1631,7 +1588,7 @@
 .todayRhythmSystemPanelTitle {
   color: #ffbc6e;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.3;
 }
 
@@ -1639,7 +1596,7 @@
   max-width: 260px;
   color: rgba(255, 255, 255, 0.68);
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
 }
 
@@ -1698,10 +1655,6 @@
 
 .todayTaskSemanticFigure .positioningDiagramCol {
   justify-content: flex-start;
-}
-
-.todayTaskSemanticFigure .positioningPhoneFrame {
-  box-shadow: 0 18px 34px rgba(49, 116, 153, 0.16);
 }
 
 .todayTaskSemanticScreenshotFrame {
@@ -1772,7 +1725,7 @@
 }
 
 .exploreModulesAfterPending code {
-  font-family: var(--font-ibm-plex-mono), "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     monospace;
   font-size: 10px;
   line-height: 1.45;
@@ -2156,7 +2109,7 @@
 
 .selfly0ImagePendingPhone code,
 .selfly0ImagePendingWide code {
-  font-family: var(--font-ibm-plex-mono), "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     monospace;
   font-size: 10px;
   line-height: 1.45;
@@ -2434,105 +2387,6 @@
 .diaryEmojiEvidence .designPoints strong {
   color: #e8e8ec;
   font-weight: 600;
-}
-
-.todayRhythmSystemFigure,
-.todayTaskSemanticFigure,
-.exploreCreateDiagram,
-.diaryEmojiEvidence {
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  overflow: visible;
-}
-
-.todayRhythmSystemFigure {
-  padding: 0;
-}
-
-.todayRhythmSystemGrid,
-.todayTaskSemanticFigure .positioningDiagramFlow,
-.exploreCreateDiagram .positioningDiagramFlow,
-.diaryEmojiEvidence .positioningDiagramFlow {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
-  gap: 28px;
-}
-
-.todayRhythmSystemPanel,
-.todayTaskSemanticFigure .positioningDiagramCol,
-.exploreCreateDiagram .positioningDiagramCol,
-.diaryEmojiEvidence .positioningDiagramCol {
-  background: #f6f7fa;
-  padding: 44px 32px 28px;
-  min-width: 0;
-}
-
-.todayTaskSemanticFigure .positioningDiagramArrow,
-.exploreCreateDiagram .positioningDiagramArrow,
-.diaryEmojiEvidence .positioningDiagramArrow {
-  display: none;
-}
-
-.todayRhythmSystemPanelTitle,
-.todayTaskSemanticFigure .positioningDiagramPhase,
-.exploreCreateDiagram .positioningDiagramPhase,
-.diaryEmojiEvidence .positioningDiagramPhase {
-  color: var(--text-primary);
-}
-
-.todayRhythmSystemPanelDescription,
-.todayTaskSemanticFigure .positioningDiagramDescription,
-.exploreCreateDiagram .positioningDiagramCaption,
-.diaryEmojiEvidence .positioningDiagramCaption,
-.diaryEmojiEvidence .positioningDiagramDescription {
-  color: var(--text-muted);
-}
-
-.todayRhythmSystemFigure .todayTop3PhoneBezel,
-.todayTaskSemanticFigure .positioningPhoneFrame,
-.exploreCreateDiagram .positioningPhoneFrame,
-.diaryEmojiEvidence .positioningPhoneFrame,
-.diaryEmojiEvidence .selfly0PhoneSlotShell {
-  max-height: none;
-  border: 8px solid #1f1f1f;
-  border-radius: 34px;
-  background: #1f1f1f;
-  box-shadow: 0 2px 4px rgba(17, 18, 23, 0.12);
-}
-
-.todayRhythmSystemFigure .todayTop3PhoneBezel {
-  padding: 4px;
-  border: 0;
-  background: #1f1f1f;
-}
-
-.todayTaskSemanticScreenshotFrame {
-  border: 8px solid #1f1f1f;
-  border-radius: 34px;
-  box-shadow: 0 2px 4px rgba(17, 18, 23, 0.12);
-}
-
-.todayRhythmSystemTabs {
-  color: var(--text-secondary);
-}
-
-.todayRhythmSystemTab {
-  border-color: rgba(17, 18, 23, 0.1);
-  background: #ffffff;
-  color: var(--text-muted);
-}
-
-.todayRhythmSystemTab:hover {
-  border-color: rgba(17, 18, 23, 0.16);
-  color: var(--text-secondary);
-}
-
-.todayRhythmSystemTabActive {
-  border-color: rgba(255, 168, 74, 0.5);
-  background: rgba(255, 168, 74, 0.12);
-  color: #f45f24;
 }
 
 .diaryInputFlowDiagram {
@@ -3570,7 +3424,7 @@
   letter-spacing: normal;
   color: unset;
   margin-bottom: 0;
-  padding-top: 0;
+  padding-top: 24px;
 }
 
 .selfly0Page .caseText {
@@ -3631,7 +3485,7 @@
   display: inline-block;
   margin-bottom: 14px;
   color: #f45f24;
-  font-family: var(--font-ibm-plex-mono), "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -3909,7 +3763,7 @@
 .shiftCompactNode span,
 .shiftCompactRows span {
   color: var(--text-secondary);
-  font-family: var(--font-ibm-plex-mono), "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -4754,7 +4608,7 @@
   }
 
   .todayRhythmSystemFigure {
-    padding: 0;
+    padding: 24px 16px 20px;
   }
 
   .todayRhythmSystemGrid {
@@ -4765,7 +4619,6 @@
 
   .todayRhythmSystemPanel {
     gap: 10px;
-    padding: 24px 12px 16px;
   }
 
   .todayRhythmSystemPanelCopy {
@@ -4787,11 +4640,11 @@
     width: min(100%, 140px);
     max-width: 140px;
     padding: 4px;
-    border-radius: 22px;
+    border-radius: 20px;
   }
 
   .todayRhythmSystemFigure .todayTop3PhoneFrame {
-    border-radius: 18px;
+    border-radius: 16px;
   }
 
   .todayRhythmSystemTabs {
@@ -4804,18 +4657,17 @@
   }
 
   .todayTaskSemanticFigure {
-    padding: 0;
+    padding: 24px 16px 20px;
   }
 
   .todayTaskSemanticFigure .positioningDiagramFlow {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+    align-items: flex-start;
   }
 
   .todayTaskSemanticFigure .positioningDiagramCol {
     gap: 6px;
     min-width: 0;
-    padding: 24px 12px 16px;
   }
 
   .todayTaskSemanticFigure .positioningDiagramPhase {
@@ -4829,29 +4681,34 @@
   }
 
   .todayTaskSemanticFigure .positioningDiagramArrow {
-    display: none;
+    margin-top: 8px;
+    transform: none;
+    padding: 0;
+  }
+
+  .todayTaskSemanticFigure .positioningDiagramArrow svg {
+    width: 32px;
   }
 
   .todayTaskSemanticScreenshotFrame {
     width: min(100%, 136px);
     margin-top: 4px;
-    border-width: 5px;
-    border-radius: 22px;
+    border-width: 3px;
+    border-radius: 18px;
   }
 
   .exploreCreateDiagram {
-    padding: 0;
+    padding: 24px 16px 0;
   }
 
   .exploreCreateDiagram .positioningDiagramFlow {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    gap: 24px;
+    align-items: flex-start;
   }
 
   .exploreCreateDiagram .positioningDiagramCol {
     gap: 6px;
     min-width: 0;
-    padding: 24px 12px 16px;
   }
 
   .exploreCreateDiagram .positioningDiagramPhase,
@@ -4860,25 +4717,22 @@
   }
 
   .exploreCreateDiagram .positioningPhoneFrame {
-    max-width: min(38vw, 160px);
-    max-height: none;
-    border-width: 5px;
-    border-radius: 22px;
+    max-width: 108px;
+    max-height: 210px;
   }
 
   .diaryEmojiEvidence {
-    padding: 0;
+    padding: 24px 16px 20px;
   }
 
   .diaryEmojiEvidence .positioningDiagramFlow {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+    align-items: flex-start;
   }
 
   .diaryEmojiEvidence .positioningDiagramCol {
     gap: 6px;
     min-width: 0;
-    padding: 24px 12px 16px;
   }
 
   .diaryEmojiEvidence .positioningDiagramPhase,
@@ -4893,14 +4747,19 @@
   }
 
   .diaryEmojiEvidence .positioningDiagramArrow {
-    display: none;
+    margin-top: 8px;
+    transform: none;
+  }
+
+  .diaryEmojiEvidence .positioningDiagramArrow svg {
+    width: 32px;
   }
 
   .diaryEmojiEvidence .positioningPhoneFrame,
   .diaryEmojiEvidence .selfly0PhoneSlotShell {
-    max-width: min(38vw, 160px);
-    border-width: 5px;
-    border-radius: 22px;
+    max-width: 136px;
+    border-width: 4px;
+    border-radius: 16px;
   }
 
   .todayRhythmAnnotated {
