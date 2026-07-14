@@ -19,37 +19,9 @@ const finalVersions = [
   },
 ] as const;
 
-function FinalVersionsShowcase() {
-  return (
-    <div className={styles.iconDesignFinalPicker}>
-      <div className={styles.iconDesignFinalDual} aria-label="最终图标：浅色与深色两版并排展示">
-        {finalVersions.map((version) => (
-          <figure key={version.id} className={styles.iconDesignFinalCard}>
-            <Image
-              src={version.src}
-              alt={version.alt}
-              width={200}
-              height={200}
-              className={styles.iconDesignFinalIcon}
-              priority={version.id === "flat"}
-            />
-            <figcaption>
-              <span className={styles.iconDesignFinalCardTitle}>
-                <strong>{version.title}</strong>
-              </span>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 export function AppIconDesignShowcase() {
   return (
     <figure className={styles.iconDesignShowcase} aria-label="Selfly 应用图标设计演变">
-      <FinalVersionsShowcase />
-
       <div className={styles.iconDesignEvolutionSection}>
         <div className={styles.iconDesignEvolutionBoard}>
           {/* Row 1 — images + arrows */}
@@ -82,11 +54,12 @@ export function AppIconDesignShowcase() {
 
           <figure className={styles.iconDesignEvolutionSketch}>
             <Image
-              src={assetPath("/images/selfly0/icon-design/final-flat.webp")}
-              alt="Selfly 最终图标：不闭合橙色边框与双色蝴蝶"
+              src={finalVersions[0].src}
+              alt={finalVersions[0].alt}
               width={200}
               height={200}
               className={styles.iconDesignEvolutionIcon}
+              priority
             />
           </figure>
 

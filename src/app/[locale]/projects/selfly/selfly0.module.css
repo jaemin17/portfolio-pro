@@ -1607,6 +1607,16 @@
   min-width: 0;
 }
 
+.todayRhythmSystemFigure .todayTop3PhoneBezel {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.todayRhythmSystemFigure .todayTop3PhoneFrame {
+  background: transparent;
+}
+
 .todayRhythmSystemTabs {
   display: flex;
   flex-wrap: wrap;
@@ -2905,18 +2915,18 @@
 }
 
 .iconDesignEvolutionSection {
-  margin-top: 24px;
-  padding-top: 28px;
-  border-top: 1px solid rgba(255, 188, 110, 0.22);
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .iconDesignEvolutionBoard {
   display: grid;
-  grid-template-columns: minmax(0, 0.65fr) auto minmax(0, 1.5fr) auto minmax(0, 0.65fr);
+  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr);
   grid-template-rows: auto auto;
   align-items: center;
   row-gap: 20px;
-  column-gap: 12px;
+  column-gap: 18px;
   margin: 0;
   padding: 0;
 }
@@ -2948,7 +2958,7 @@
 
 .iconDesignEvolutionIcon {
   display: block;
-  width: 62%;
+  width: min(100%, 94px);
   height: auto;
   margin: auto;
   border-radius: 22%;
@@ -2983,7 +2993,7 @@
 
 .iconDesignExplorationWallImage {
   display: block;
-  width: min(100%, 660px);
+  width: min(100%, 320px);
   height: auto;
   margin-inline: auto;
   opacity: 1;
@@ -4639,11 +4649,14 @@
   .todayRhythmSystemFigure .todayTop3PhoneBezel {
     width: min(100%, 140px);
     max-width: 140px;
-    padding: 4px;
+    padding: 0;
+    background: transparent;
     border-radius: 20px;
+    box-shadow: none;
   }
 
   .todayRhythmSystemFigure .todayTop3PhoneFrame {
+    background: transparent;
     border-radius: 16px;
   }
 
@@ -4903,8 +4916,8 @@
   }
 
   .iconDesignEvolutionSection {
-    margin-top: 12px;
-    padding-top: 12px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .iconDesignFinalPicker {
@@ -4912,7 +4925,7 @@
   }
 
   .iconDesignEvolutionBoard {
-    grid-template-columns: minmax(0, 0.65fr) auto minmax(0, 1.5fr) auto minmax(0, 0.65fr);
+    grid-template-columns: minmax(0, 1fr) 16px minmax(0, 1fr) 16px minmax(0, 1fr);
     row-gap: 10px;
     column-gap: 6px;
   }
@@ -4931,8 +4944,8 @@
   }
 
   .iconDesignExplorationWallImage {
-    width: 100%;
-    max-width: none;
+    width: min(100%, 160px);
+    max-width: 100%;
   }
 
   .iconDesignEvolutionStepNumber {
