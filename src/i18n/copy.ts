@@ -47,31 +47,31 @@ export type Snapshots = {
 const snapshotPlaceholders: SnapshotItem[] = [
   {
     alt: "Photo with flowers",
-    imageSrc: "/images/snapshots/snapshot-06.jpg",
+    imageSrc: "/images/snapshots/snapshot-06.webp",
   },
   {
     alt: "Illustrated portrait with smile pin",
-    imageSrc: "/images/snapshots/snapshot-07.jpg",
+    imageSrc: "/images/snapshots/snapshot-07.webp",
   },
   {
     alt: "Portrait in orange flowers",
-    imageSrc: "/images/snapshots/snapshot-08.jpg",
+    imageSrc: "/images/snapshots/snapshot-08.webp",
   },
   {
     alt: "Beaded flower bracelets",
-    imageSrc: "/images/snapshots/snapshot-09.jpg",
+    imageSrc: "/images/snapshots/snapshot-09.webp",
   },
   {
     alt: "Cat portrait",
-    imageSrc: "/images/snapshots/snapshot-10.png",
+    imageSrc: "/images/snapshots/snapshot-10.webp",
   },
   {
     alt: "Forest garden path",
-    imageSrc: "/images/snapshots/snapshot-11.jpg",
+    imageSrc: "/images/snapshots/snapshot-11.webp",
   },
   {
     alt: "Temple ruins portrait",
-    imageSrc: "/images/snapshots/snapshot-12.jpg",
+    imageSrc: "/images/snapshots/snapshot-12.webp",
   },
 ];
 
@@ -107,10 +107,10 @@ const toolFrameColors = {
 
 const visualMedia = {
   manufacturing: "/videos/visual/immersive.mp4",
-  automotive: "/images/visual/desay-sv-hero.png",
+  automotive: "/images/visual/desay-sv-hero.webp",
   biomedical: "/videos/visual/highmodes.mp4",
-  game: "/images/visual/cosmic-blaze-hero.png",
-  arAirbnb: "/images/visual/ar-airbnb-scene-1.png",
+  game: "/images/visual/cosmic-blaze-hero.webp",
+  arAirbnb: "/images/visual/ar-airbnb-scene-1.webp",
 } as const;
 
 const copy: Record<Locale, HomeCopy> = {
@@ -128,7 +128,7 @@ const copy: Record<Locale, HomeCopy> = {
           title: "Selfly",
           description: "正在开发中的产品",
           meta: "iOS",
-          iconSrc: "/selfly-icon.png",
+          iconSrc: "/selfly-icon.webp",
           iconAlt: "Selfly",
         },
         {
@@ -236,7 +236,7 @@ const copy: Record<Locale, HomeCopy> = {
           title: "Selfly",
           description: "Product in progress",
           meta: "iOS",
-          iconSrc: "/selfly-icon.png",
+          iconSrc: "/selfly-icon.webp",
           iconAlt: "Selfly",
         },
         {
