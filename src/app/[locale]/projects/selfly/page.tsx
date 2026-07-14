@@ -17,7 +17,6 @@ import {
 } from "./DiaryEmojiInputShowcase";
 import { AppIconDesignShowcase } from "./AppIconDesignShowcase";
 import { TodayRhythmSystem } from "./TodayRhythmSystem";
-import { TodayTaskCardInteraction } from "./TodayTaskCardInteraction";
 
 const appDownloadUrl = "https://apps.apple.com/cn/app/selfly%E6%97%A5%E8%AE%B0/id6762545235";
 
@@ -180,9 +179,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <TabStructureDiagram />
         </section>
-        <ChapterIntro id="today" icon="🎯" title="Today：降低任务压力">
-          今日不是为了收集更多任务，而是帮助用户判断今天真正重要的事。
-        </ChapterIntro>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>每日任务节奏</h2>
@@ -218,44 +214,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <TodayRhythmSystem />
         </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
-          <div className={styles.selfly0StructureSection}>
-            <h2 className={styles.selfly0PositioningLabel}>任务卡片交互</h2>
-            <div className={styles.caseText}>
-              <h3 className={styles.selfly0StructureHeading}>
-                <span className={styles.selfly0PositioningHeadingLight}>平衡低压力视觉与</span>
-                <br />
-                <span className={styles.selfly0PositioningHeadingDark}>明确操作</span>
-              </h3>
-              <div className={styles.selfly0Body}>
-                <p>
-                  早期版本中，我有意<strong className={styles.selfly0Emphasis}>弱化未完成状态</strong>，避免 Today 像传统待办列表一样，用醒目的 Checkbox 持续提醒用户「还有任务没完成」。
-                  我将完成操作隐藏在任务卡片中，让未完成任务更像<strong className={styles.selfly0Emphasis}>「今日关注」</strong>，而非压力清单。
-                </p>
-                <p>
-                  但在真实反馈中，用户编辑任务时容易<strong className={styles.selfly0Emphasis}>误触完成</strong>；完成结果被收起后，用户也更容易失去对「我今天已经完成了什么」的<strong className={styles.selfly0Emphasis}>确认感</strong>。
-                </p>
-                <p>
-                  最终，我重新引入了<strong className={styles.selfly0Emphasis}>用户熟悉的完成交互</strong>：卡片主体用于编辑，右侧完成方块负责状态操作。同时完成控件保持克制，只提供明确操作，<strong className={styles.selfly0Emphasis}>不成为视觉主角</strong>，在减少压力与保留完成反馈之间取得平衡。
-                </p>
-                <div className={styles.designPoints}>
-                  <h4>设计取舍</h4>
-                  <ul>
-                    <li><strong>降低压力感</strong>：未完成状态不成为视觉主角</li>
-                    <li><strong>回到用户习惯</strong>：点击内容进入编辑，点击方块改变状态</li>
-                    <li><strong>保留确认感</strong>：完成结果可见，但不打断继续专注</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
-          <TodayTaskCardInteraction />
-        </section>
-        <ChapterIntro id="explore" icon="🧩" title="Explore：降低开始记录的成本">
-          通过不同记录容器，承接不同用户、不同内容状态下的自我发现方式。
-        </ChapterIntro>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>模块化记录</h2>
@@ -366,9 +324,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <DiaryEmojiInputPolish />
         </section>
-        <ChapterIntro id="review" icon="🕰️" title="Review：让旧内容重新出现">
-          回顾不是数据统计，而是把过去的记录轻量地带回用户面前。
-        </ChapterIntro>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>低压力回顾</h2>
@@ -399,16 +354,16 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <ReviewRedistribution />
         </section>
-        <ChapterIntro id="brand" icon="✨" title="应用图标：记录与成长的视觉隐喻">
-          图标需要在极小尺寸下讲清楚产品气质——我围绕「书」与「蝴蝶」做了多轮迭代，最终收敛为开放边框与双色蝴蝶。
-        </ChapterIntro>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>应用图标</h2>
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
-                <span className={styles.selfly0PositioningHeadingLight}>从书本隐喻到</span>
-                <span className={styles.selfly0PositioningHeadingDark}>开放边框</span>
+                <span className={styles.selfly0PositioningHeadingLight}>围绕</span>
+                <span className={styles.selfly0PositioningHeadingDark}>「书」</span>
+                <span className={styles.selfly0PositioningHeadingLight}>与</span>
+                <span className={styles.selfly0PositioningHeadingDark}>「蝴蝶」</span>
+                <span className={styles.selfly0PositioningHeadingLight}>多轮迭代</span>
               </h3>
               <div className={styles.selfly0Body}>
                 <p>
@@ -432,9 +387,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <AppIconDesignShowcase />
         </section>
-        <ChapterIntro id="launch" icon="🚀" title="iOS 落地与上线">
-          这个项目不只停留在设计方案，我也把它实现为可下载、可使用、可订阅的 iOS 产品。
-        </ChapterIntro>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>产品化落地</h2>
@@ -463,39 +415,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <ProductLaunchEvidence />
-        </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
-          <div className={styles.selfly0StructureSection}>
-            <h2 className={styles.selfly0PositioningLabel}>App Store 上线</h2>
-            <div className={styles.caseText}>
-              <h3 className={styles.selfly0StructureHeading}><span className={styles.selfly0PositioningHeadingLight}>从内部版本到</span><span className={styles.selfly0PositioningHeadingDark}>可下载的公开产品</span></h3>
-              <div className={styles.selfly0Body}>
-                <p>
-                  我独立完成了 App Store Connect 配置、审核材料、隐私与订阅说明，以及提审反馈处理，让 Selfly
-                  成为可公开下载的 iOS 应用。
-                </p>
-                <div className={styles.designPoints}>
-                  <h4>上架清单</h4>
-                  <ul>
-                    <li><strong>App Store Connect 配置</strong></li>
-                    <li>审核材料与产品描述</li>
-                    <li>隐私、订阅与权限说明</li>
-                    <li>提审反馈处理与版本发布</li>
-                  </ul>
-                </div>
-                <p className={styles.p}>
-                  <a
-                    className="buttonSticker buttonStickerOrange"
-                    href={appDownloadUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    在 App Store 查看 Selfly
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
