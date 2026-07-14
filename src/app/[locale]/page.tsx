@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
+import { LazyVideo } from "@/components/LazyVideo";
 import { RevealOnView } from "@/components/RevealOnView";
 import { SnapshotMarquee } from "@/components/SnapshotMarquee";
 import { isLocale, type Locale } from "@/i18n/config";
@@ -76,16 +77,12 @@ function ToolProjectCard({
             : undefined
         }
       >
-        {item.videoSrc ? (
-          <video
+        {item.videoSrc && item.posterSrc ? (
+          <LazyVideo
             className={styles.toolVideo}
             src={assetSrc(item.videoSrc)}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            aria-label={item.title}
+            posterSrc={assetSrc(item.posterSrc)}
+            label={item.title}
           />
         ) : item.imageSrc ? (
           <img

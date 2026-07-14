@@ -23,6 +23,7 @@ export type ToolProjectItem = {
   title: string;
   description: string;
   videoSrc?: string;
+  posterSrc?: string;
   imageSrc?: string;
   /** Outer frame color behind the media */
   frameColor?: string;
@@ -98,6 +99,13 @@ const toolVideos = {
   syncSpace: "/videos/tools/sync-space.mp4",
 } as const;
 
+const toolPosters = {
+  model: "/images/posters/tools/model.webp",
+  xrScript: "/images/posters/tools/xr-script.webp",
+  ppt: "/images/posters/tools/ppt.webp",
+  syncSpace: "/images/posters/tools/sync-space.webp",
+} as const;
+
 const toolFrameColors = {
   model: "#f8f8f8",
   xrScript: "#d7e8ff",
@@ -111,6 +119,11 @@ const visualMedia = {
   biomedical: "/videos/visual/highmodes.mp4",
   game: "/images/visual/cosmic-blaze-hero.webp",
   arAirbnb: "/images/visual/ar-airbnb-scene-1.webp",
+} as const;
+
+const visualPosters = {
+  manufacturing: "/images/posters/visual/immersive.webp",
+  biomedical: "/images/posters/visual/highmodes.webp",
 } as const;
 
 const copy: Record<Locale, HomeCopy> = {
@@ -148,24 +161,28 @@ const copy: Record<Locale, HomeCopy> = {
           title: "模型编辑器",
           description: "材质、颜色和模型结构编辑",
           videoSrc: toolVideos.model,
+          posterSrc: toolPosters.model,
           frameColor: toolFrameColors.model,
         },
         {
           title: "XR交互剧本设计引擎",
           description: "模型资源浏览与预览",
           videoSrc: toolVideos.xrScript,
+          posterSrc: toolPosters.xrScript,
           frameColor: toolFrameColors.xrScript,
         },
         {
           title: "XR课件",
           description: "3D 内容播放与课件演示",
           videoSrc: toolVideos.ppt,
+          posterSrc: toolPosters.ppt,
           frameColor: toolFrameColors.ppt,
         },
         {
           title: "Sync Space",
           description: "多端课堂协同与设备管理",
           videoSrc: toolVideos.syncSpace,
+          posterSrc: toolPosters.syncSpace,
           frameColor: toolFrameColors.syncSpace,
         },
       ],
@@ -178,6 +195,7 @@ const copy: Record<Locale, HomeCopy> = {
           description:
             "动物模型、解剖训练、手术步骤和课程资源相关的 VR 教育软件界面。",
           videoSrc: visualMedia.biomedical,
+          posterSrc: visualPosters.biomedical,
           framed: false,
         },
         {
@@ -185,6 +203,7 @@ const copy: Record<Locale, HomeCopy> = {
           description:
             "变速器、工业机器人、注塑模具等工业设备实训画面和教学操作界面。",
           videoSrc: visualMedia.manufacturing,
+          posterSrc: visualPosters.manufacturing,
           framed: false,
         },
         {
@@ -256,24 +275,28 @@ const copy: Record<Locale, HomeCopy> = {
           title: "Model Editor",
           description: "Edit materials, colors, and model structure",
           videoSrc: toolVideos.model,
+          posterSrc: toolPosters.model,
           frameColor: toolFrameColors.model,
         },
         {
           title: "XR Interactive Script Engine",
           description: "Browse and preview model assets",
           videoSrc: toolVideos.xrScript,
+          posterSrc: toolPosters.xrScript,
           frameColor: toolFrameColors.xrScript,
         },
         {
           title: "XR Courseware",
           description: "3D content playback and course demos",
           videoSrc: toolVideos.ppt,
+          posterSrc: toolPosters.ppt,
           frameColor: toolFrameColors.ppt,
         },
         {
           title: "Sync Space",
           description: "Multi-device classroom collaboration and device management",
           videoSrc: toolVideos.syncSpace,
+          posterSrc: toolPosters.syncSpace,
           frameColor: toolFrameColors.syncSpace,
         },
       ],
@@ -286,6 +309,7 @@ const copy: Record<Locale, HomeCopy> = {
           description:
             "VR education software for animal models, anatomy training, surgical steps, and course resources.",
           videoSrc: visualMedia.biomedical,
+          posterSrc: visualPosters.biomedical,
           framed: false,
         },
         {
@@ -293,6 +317,7 @@ const copy: Record<Locale, HomeCopy> = {
           description:
             "Training views and teaching UI for industrial equipment such as transmissions, robots, and injection molds.",
           videoSrc: visualMedia.manufacturing,
+          posterSrc: visualPosters.manufacturing,
           framed: false,
         },
         {
