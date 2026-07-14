@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
@@ -10,6 +11,7 @@ import {
   type CurrentlyBuildingItem,
   type ToolProjectItem,
 } from "@/i18n/copy";
+import { localePath } from "@/i18n/paths";
 import styles from "./page.module.css";
 
 type HomePageProps = {
@@ -103,9 +105,11 @@ function ToolProjectCard({
 
 function BuildingItem({
   item,
+  locale,
   className,
 }: {
   item: CurrentlyBuildingItem;
+  locale: Locale;
   className?: string;
 }) {
   const classes = [styles.buildingItem, className].filter(Boolean).join(" ");
@@ -126,6 +130,17 @@ function BuildingItem({
       </div>
     </>
   );
+
+  if (item.href?.startsWith("/")) {
+    return (
+      <Link
+        className={`${classes} ${styles.buildingItemLink}`}
+        href={localePath(locale, item.href)}
+      >
+        {content}
+      </Link>
+    );
+  }
 
   if (item.href) {
     return (
@@ -187,6 +202,7 @@ export default async function HomePage({ params }: HomePageProps) {
                   <BuildingItem
                     key={item.title}
                     item={item}
+                    locale={locale}
                     className={`${styles.revealItem} ${revealDelays[index + 1] ?? styles.revealDelay4}`}
                   />
                 ))}

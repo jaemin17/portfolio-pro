@@ -143,6 +143,7 @@ const copy: Record<Locale, HomeCopy> = {
           meta: "iOS",
           iconSrc: "/selfly-icon.webp",
           iconAlt: "Selfly",
+          href: "/projects/selfly",
         },
         {
           title: "Sticky Notes",
@@ -257,6 +258,7 @@ const copy: Record<Locale, HomeCopy> = {
           meta: "iOS",
           iconSrc: "/selfly-icon.webp",
           iconAlt: "Selfly",
+          href: "/projects/selfly",
         },
         {
           title: "Sticky Notes",

@@ -23,8 +23,8 @@ export function LazyVideo({
     if (!element || shouldLoad) return;
 
     if (!("IntersectionObserver" in window)) {
-      setShouldLoad(true);
-      return;
+      const fallbackTimer = globalThis.setTimeout(() => setShouldLoad(true), 0);
+      return () => globalThis.clearTimeout(fallbackTimer);
     }
 
     const observer = new IntersectionObserver(

@@ -40,4 +40,40 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+}
+
+.buttonSticker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  transition: transform 150ms ease;
+}
+
+.buttonSticker:hover {
+  transform: translate3d(0, -2px, 0);
+}
+
+.buttonStickerOrange {
+  background: #f6682f;
+}
+
+.buttonStickerBlue {
+  background: #2f7bff;
+}
+
+.buttonStickerPurple {
+  background: #7c3aed;
 }
