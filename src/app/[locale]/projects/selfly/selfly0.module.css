@@ -714,40 +714,45 @@
 }
 
 .selfly0ChapterIntro {
-  margin: 72px calc(50% - 50vw) 72px;
+  max-width: 840px;
+  margin: 72px auto;
   padding: 0;
-  background: #000;
-  color: #f7f7f7;
+  background: #f3f3f3;
+  border: 0;
+  border-radius: 24px;
+  color: var(--text-primary);
+  overflow: hidden;
   scroll-margin-top: 24px;
 }
 
 .selfly0ChapterInner {
-  max-width: 1200px;
-  min-height: 480px;
+  max-width: 840px;
+  min-height: 360px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 56px 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 54px;
+  gap: 0;
 }
 
 .selfly0ChapterCopy {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
-  align-items: center;
-  gap: 28px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 22px;
   width: 100%;
-  max-width: 940px;
+  max-width: 700px;
+  text-align: center;
 }
 
 .selfly0ChapterIcon {
   display: inline-block;
   min-width: 0;
-  font-size: 96px;
+  font-size: 56px;
   line-height: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .selfly0ChapterIntro h2 {
@@ -766,11 +771,11 @@
 }
 
 .selfly0ChapterIntro p {
-  max-width: 760px;
+  max-width: 680px;
   margin-top: 0;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(28px, 2.8vw, 38px);
-  line-height: 1.42;
+  color: var(--text-primary);
+  font-size: clamp(22px, 2.1vw, 28px);
+  line-height: 1.5;
   font-weight: 400;
 }
 
@@ -4489,17 +4494,17 @@
 
   .selfly0ChapterInner {
     min-height: 260px;
-    padding: 52px 20px;
+    padding: 42px 24px;
     gap: 0;
   }
 
   .selfly0ChapterCopy {
-    grid-template-columns: 64px minmax(0, 1fr);
-    justify-items: start;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
-    gap: 16px;
+    gap: 18px;
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 
   .selfly0ChapterIntro h2 {
@@ -4507,15 +4512,15 @@
   }
 
   .selfly0ChapterIntro p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.48;
   }
 
   .selfly0ChapterIcon {
     min-width: 0;
     padding-top: 0;
-    font-size: 48px;
-    text-align: left;
+    font-size: 40px;
+    text-align: center;
   }
 
   .selfly0ContactSection {
