@@ -2159,20 +2159,10 @@
   margin-right: auto;
 }
 
-.selfly0EvidenceCard .reviewSettingsCarouselDot {
-  background: rgba(255, 255, 255, 0.28);
-}
-
-.selfly0EvidenceCard .reviewSettingsCarouselDotActive {
-  background: #ffbc6e;
-}
-
 .reviewRedistributionLayout {
   --review-phone-size: min(100%, 260px);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 20px 24px;
-  align-items: start;
+  display: flex;
+  justify-content: center;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -2701,19 +2691,6 @@
   text-align: center;
 }
 
-.reviewSettingsCarousel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 0;
-}
-
-.reviewSettingsCarousel .selfly0PhoneSlotStage {
-  margin-top: 0;
-  width: 100%;
-}
-
-.reviewRedistributionLayout .reviewSettingsPhoneShell,
 .reviewRedistributionLayout .selfly0PhoneSlotShell {
   position: relative;
   width: min(100%, 260px);
@@ -2735,83 +2712,6 @@
   height: 100%;
   object-fit: cover;
   object-position: top center;
-}
-
-.reviewSettingsPhoneShell {
-  position: relative;
-  width: min(100%, 300px);
-  margin: 0 auto;
-  aspect-ratio: 470 / 1024;
-  border-radius: 32px;
-  overflow: hidden;
-  background: #000;
-  border: 6px solid #2a2a2a;
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
-}
-
-.reviewSettingsPhoneScreen {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-
-.reviewSettingsPhoneShell .positioningDynamicIsland {
-  z-index: 3;
-}
-
-.reviewSettingsPhoneShell .selfly0PhoneHomeIndicator {
-  z-index: 3;
-}
-
-.reviewSettingsCarouselImage {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  opacity: 0;
-  transition: opacity 0.55s ease;
-  z-index: 0;
-}
-
-.reviewSettingsCarouselImageActive {
-  opacity: 1;
-  z-index: 1;
-}
-
-.reviewSettingsCarouselDots {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 12px;
-}
-
-.reviewSettingsCarouselDot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.28);
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease;
-}
-
-.reviewSettingsCarouselDotActive {
-  background: #ffbc6e;
-  transform: scale(1.2);
-}
-
-.reviewSettingsCarouselLive {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 /* Product launch — capabilities + demo + evidence */
@@ -2852,36 +2752,12 @@
 }
 
 .productLaunchLayout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.75fr);
-  gap: 16px 20px;
-  align-items: center;
-}
-
-.productLaunchDemo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.productLaunchDemo .selfly0PhoneSlotStage {
-  margin-top: 0;
-}
-
-.productLaunchDemo .selfly0EvidenceCaption {
-  margin-top: 12px;
-}
-
-.productLaunchSupplements {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 12px;
-  align-items: start;
-  margin: 0;
-  text-align: left;
+  justify-content: center;
 }
 
 .productLaunchSupplement {
+  width: min(100%, 640px);
   margin: 0;
 }
 
@@ -2904,6 +2780,7 @@
   font-size: 11px;
   font-weight: 500;
   line-height: 1.4;
+  text-align: center;
   color: rgba(255, 255, 255, 0.58);
 }
 
@@ -2927,12 +2804,13 @@
 
 .iconDesignEvolutionBoard {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr);
+  grid-template-columns: 140px 28px 140px;
   grid-template-rows: auto auto;
   align-items: center;
   row-gap: 20px;
-  column-gap: 18px;
-  margin: 0;
+  column-gap: 14px;
+  justify-content: center;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -2988,29 +2866,6 @@
   align-self: start;
   text-align: center;
   padding-top: 4px;
-}
-
-.iconDesignExplorationWall {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-.iconDesignExplorationWallImage {
-  display: block;
-  width: min(100%, 320px);
-  height: auto;
-  margin-inline: auto;
-  opacity: 1;
-}
-
-.iconDesignEvolutionStepNumber {
-  align-self: center;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  line-height: 1;
-  color: rgba(255, 205, 145, 0.88);
 }
 
 .iconDesignEvolutionIndex {
@@ -4948,15 +4803,6 @@
     width: min(20vw, 56px);
   }
 
-  .iconDesignExplorationWallImage {
-    width: min(100%, 160px);
-    max-width: 100%;
-  }
-
-  .iconDesignEvolutionStepNumber {
-    font-size: 12px;
-  }
-
   .iconDesignEvolutionIndex {
     font-size: 11px;
   }
@@ -4979,12 +4825,9 @@
 
   .reviewRedistributionLayout {
     --review-phone-size: 140px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
     max-width: none;
   }
 
-  .reviewRedistributionLayout .reviewSettingsPhoneShell,
   .reviewRedistributionLayout .selfly0PhoneSlotShell {
     width: min(100%, 140px);
     max-width: 140px;
@@ -5113,17 +4956,6 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
     max-width: none;
-  }
-
-  .productLaunchDemo {
-    order: 0;
-  }
-
-  .productLaunchLayout .selfly0PhoneSlotShell {
-    width: min(100%, 140px);
-    max-width: 140px;
-    border-width: 4px;
-    border-radius: 16px;
   }
 
   .productLaunchSupplementCaption {

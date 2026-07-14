@@ -1,7 +1,6 @@
+import styles from "./selfly0.module.css";
 import { assetPath } from "@/i18n/assets";
 import Image from "next/image";
-import styles from "./selfly0.module.css";
-import { Selfly0PhoneVideoSlot } from "./Selfly0PhoneVideoSlot";
 
 const capabilities = [
   {
@@ -67,20 +66,13 @@ export function ProductLaunchEvidence() {
               width={1200}
               height={800}
               className={styles.productLaunchSupplementImage}
-              sizes="(max-width: 760px) 92vw, 420px"
+              sizes="(max-width: 760px) 92vw, 560px"
             />
           </div>
           <figcaption className={styles.productLaunchSupplementCaption}>
             自定义 Symbol · 与 Tab / 模块入口语义一致
           </figcaption>
         </figure>
-
-        <div className={styles.productLaunchDemo}>
-          <Selfly0PhoneVideoSlot
-            src={assetPath("/videos/selfly0/launch-implementation.mp4")}
-            ariaLabel="Selfly 设置页：订阅、iCloud 同步与多语言切换演示"
-          />
-        </div>
       </div>
     </figure>
   );

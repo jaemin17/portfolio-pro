@@ -1,5 +1,4 @@
 import styles from "./selfly0.module.css";
-import { ReviewSettingsCarousel } from "./ReviewSettingsCarousel";
 import { Selfly0PhoneVideoSlot } from "./Selfly0PhoneVideoSlot";
 
 export function ReviewRedistribution() {
@@ -16,8 +15,6 @@ export function ReviewRedistribution() {
       </figcaption>
 
       <div className={styles.reviewRedistributionLayout}>
-        <ReviewSettingsCarousel />
-
         <div className={styles.reviewRedistributionDemo}>
           <Selfly0PhoneVideoSlot
             src="/videos/selfly0/review-redistribution.mp4"

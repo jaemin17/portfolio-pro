@@ -31,10 +31,6 @@ export const selfly0Screenshots = {
       legacy: "/images/selfly0/explore-modules-after.webp",
     },
   },
-  reviewSettings: {
-    module: { zh: "/images/selfly0/review-settings-module-zh.webp", en: null },
-    category: { zh: "/images/selfly0/review-settings-category-zh.webp", en: null },
-  },
   exploreTemplatesTabs: {
     list: { zh: null, en: "/images/selfly0/explore-templates-list-en.webp", legacy: "/images/selfly0/explore-templates-list.webp" },
     plan: { zh: null, en: "/images/selfly0/explore-templates-plan-en.webp", legacy: "/images/selfly0/explore-templates-plan.webp" },

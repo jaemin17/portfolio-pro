@@ -11,10 +11,7 @@ import { ExploreRecordContainers } from "./ExploreRecordContainers";
 import { ExploreTemplatesSwitcher } from "./ExploreTemplatesSwitcher";
 import { ReviewRedistribution } from "./ReviewRedistribution";
 import { ProductLaunchEvidence } from "./ProductLaunchEvidence";
-import {
-  DiaryEmojiInputPolish,
-  DiaryEmojiPickerCompare,
-} from "./DiaryEmojiInputShowcase";
+import { DiaryEmojiInputPolish } from "./DiaryEmojiInputShowcase";
 import { AppIconDesignShowcase } from "./AppIconDesignShowcase";
 import { TodayRhythmSystem } from "./TodayRhythmSystem";
 
@@ -273,37 +270,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
-            <h2 className={styles.selfly0PositioningLabel}>日记输入体验</h2>
-            <div className={styles.caseText}>
-              <h3 className={styles.selfly0StructureHeading}>
-                <span className={styles.selfly0PositioningHeadingLight}>从内联展开条，</span>
-                <span className={styles.selfly0PositioningHeadingDark}>到可扩展的 Sheet 系统</span>
-              </h3>
-              <div className={styles.selfly0Body}>
-                <p>
-                  日记记录同时包含情绪与文字：用户用 emoji 标记当下状态，再补充具体感受。最早的表情选择是在输入框上方展开一条横向滚动条——轻量、不打断输入流，适合选项较少的阶段。
-                  但随着候选 emoji 增加，横向扫完所有选项也不现实。
-                </p>
-                <p>
-                  我把选择器改成<strong className={styles.selfly0Emphasis}>半屏 Sheet + 网格布局</strong>。
-                </p>
-                <div className={styles.designPoints}>
-                  <h4>设计决策</h4>
-                  <ul>
-                    <li><strong>范式切换</strong>：横向条在选项增多后难以浏览，改为半屏 Sheet 网格，并统一了 App 内的选择器交互</li>
-                    <li><strong>分组 IA</strong>：emoji 扩至 40+ 后，按表情 / 爱心 / 天气 / 自然分组，替代扁平盲扫</li>
-                    <li><strong>稳定目录</strong>：撤销 MRU 动态排序；固定分组顺序 + 记住上次选择 + 条目 emoji 快捷修改</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
-          <DiaryEmojiPickerCompare />
-        </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
-          <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>体验抛光</h2>
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
@@ -311,9 +277,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 <span className={styles.selfly0PositioningHeadingDark}>成为一条连贯路径</span>
               </h3>
               <div className={styles.selfly0Body}>
-                <p>
-                  在测试过程中，我发现用户选择完表情并关闭 Sheet 后，键盘会自动收起，必须再次点击输入框才能继续记录。虽然只是一次额外操作，却打断了原本连续的输入流程。
-                </p>
                 <p>
                   由于发送按钮始终依附于文本输入区域，用户最终仍需要回到文字输入完成发布。因此，我在表情选择完成后<strong className={styles.selfly0Emphasis}>自动恢复输入框焦点</strong>，让「选情绪 → 写内容 → 发布」能够在同一次输入会话中自然完成，进一步<strong className={styles.selfly0Emphasis}>减少记录过程中的操作摩擦</strong>。
                 </p>
@@ -334,10 +297,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   如果记录只停留在各个模块里，<u>内容分散在不同模块中，回顾依赖用户主动进入</u>。我把回顾设计成一个跨模块的内容再分发机制：
                   清单、计划、日记、图册里的内容都可以进入每日卡片流，用户也可以选择全部、指定模块或指定分类。
                   这样，<u>系统每天从真实记录中抽取卡片，让旧内容重新出现</u>，不再依赖用户主动寻找。
-                </p>
-                <p>
-                  我没有把回顾页做成数据中心，而是刻意弱化连续打卡、完成统计和趋势分析带来的焦虑。
-                  回顾更接近翻阅旧笔记：用户可以轻量浏览过去的记录，并重新理解当时在意的内容。
                 </p>
                 <div className={styles.designPoints}>
                   <h4>机制设计</h4>
@@ -363,14 +322,10 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 <span className={styles.selfly0PositioningHeadingDark}>「书」</span>
                 <span className={styles.selfly0PositioningHeadingLight}>与</span>
                 <span className={styles.selfly0PositioningHeadingDark}>「蝴蝶」</span>
-                <span className={styles.selfly0PositioningHeadingLight}>多轮迭代</span>
               </h3>
               <div className={styles.selfly0Body}>
                 <p>
                   Selfly 的核心是「记录自己、看见变化」。我在图标设计里用<strong className={styles.selfly0Emphasis}>打开的书</strong>表达记录容器，用<strong className={styles.selfly0Emphasis}>蝴蝶</strong>表达成长与蜕变——两者叠加，传达「在记录中持续变化」的产品叙事。
-                </p>
-                <p>
-                  过程中我尝试过更强的手绘感，也尝试过更精致、曲线更多的书本轮廓；但这些方向在小尺寸下容易变复杂。最后我把书本收敛成<strong className={styles.selfly0Emphasis}>不闭合的橙色边框</strong>：既保留记录空间的隐喻，也让蝴蝶飞出边界，暗示记录不是封闭容器，而是持续展开的过程。
                 </p>
                 <div className={styles.designPoints}>
                   <h4>设计决策</h4>
@@ -396,10 +351,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 <p>
                   除了体验设计，我也独立完成了 Selfly 的 iOS 实现，包括 SwiftUI 界面、SwiftData
                   数据模型、iCloud 同步、StoreKit 订阅、多语言和数据重置等能力，让设计方案能够在真实交互和上线环境中成立。
-                </p>
-                <p>
-                  在实现过程中，我也持续校准真实使用中的体验边界，例如长文本承载、多语言显示、交互状态、内容清晰度和页面反馈，
-                  确保产品在不同内容和使用场景下依然稳定、清楚、可用。
                 </p>
                 <div className={styles.designPoints}>
                   <h4>落地能力</h4>

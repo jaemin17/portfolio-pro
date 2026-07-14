@@ -135,11 +135,11 @@ const copy: Record<Locale, HomeCopy> = {
     copyEmail: "复制邮箱",
     copiedEmail: "已复制",
     currentlyBuilding: {
-      label: "正在构建",
+      label: "Side Projects",
       items: [
         {
           title: "Selfly",
-          description: "正在开发中的产品",
+          description: "记录、回看与自我探索",
           meta: "iOS",
           iconSrc: "/selfly-icon.webp",
           iconAlt: "Selfly",

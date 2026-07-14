@@ -24,7 +24,7 @@ export function AppIconDesignShowcase() {
     <figure className={styles.iconDesignShowcase} aria-label="Selfly 应用图标设计演变">
       <div className={styles.iconDesignEvolutionSection}>
         <div className={styles.iconDesignEvolutionBoard}>
-          {/* Row 1 — images + arrows */}
+          {/* Row 1 — images + arrow */}
           <figure className={styles.iconDesignEvolutionSketch}>
             <Image
               src={assetPath("/images/selfly0/icon-design/draft-01-sketch.webp")}
@@ -32,21 +32,6 @@ export function AppIconDesignShowcase() {
               width={200}
               height={200}
               className={styles.iconDesignEvolutionIcon}
-            />
-          </figure>
-
-          <span className={styles.iconDesignEvolutionArrow} aria-hidden="true">→</span>
-
-          <figure
-            className={styles.iconDesignExplorationWall}
-            aria-label="精稿阶段同期探索：多种书本与蝴蝶组合方案"
-          >
-            <Image
-              src={assetPath("/images/selfly0/icon-design/exploration-wall.webp")}
-              alt="Selfly 图标精稿探索墙：书本比例、蝴蝶位置与开放框等多方案并列"
-              width={1024}
-              height={341}
-              className={styles.iconDesignExplorationWallImage}
             />
           </figure>
 
@@ -63,23 +48,14 @@ export function AppIconDesignShowcase() {
             />
           </figure>
 
-          {/* Row 2 — notes (same 5-column order: note, empty, note, empty, note) */}
+          {/* Row 2 — notes (same 3-column order: note, empty, note) */}
           <div className={styles.iconDesignEvolutionNote}>
-            <span className={styles.iconDesignEvolutionStepNumber}>01</span>
             <span className={styles.iconDesignEvolutionIndex}>草图捕捉第一直觉</span>
           </div>
 
           <span aria-hidden="true" />
 
           <div className={styles.iconDesignEvolutionNote}>
-            <span className={styles.iconDesignEvolutionStepNumber}>02</span>
-            <span className={styles.iconDesignEvolutionIndex}>平衡手绘与精稿</span>
-          </div>
-
-          <span aria-hidden="true" />
-
-          <div className={styles.iconDesignEvolutionNote}>
-            <span className={styles.iconDesignEvolutionStepNumber}>03</span>
             <span className={styles.iconDesignEvolutionIndex}>最终版本</span>
           </div>
         </div>
