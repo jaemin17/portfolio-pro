@@ -118,11 +118,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             <div className={styles.selfly0PositioningGrid}>
               <h3 className={styles.selfly0PositioningHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>
-                  {t(locale, "从独立功能集合，", "From a collection of standalone features")}
+                  {t(locale, "从独立功能集合，", "From scattered features")}
                 </span>
                 <br className={styles.desktopLineBreak} aria-hidden="true" />
                 <span className={styles.selfly0PositioningHeadingDark}>
-                  {t(locale, "到可持续自我记录系统", "to a sustainable self-journaling system")}
+                  {t(locale, "到可持续自我记录系统", "to a sustainable self-recording system")}
                 </span>
               </h3>
               <div className={styles.selfly0PositioningBody}>
