@@ -232,25 +232,6 @@ export default async function HomePage({ params }: HomePageProps) {
             </RevealOnView>
           </section>
 
-          <section className={styles.section} aria-label={copy.caseStudies.label}>
-            <RevealOnView className={styles.scrollReveal}>
-              <h2
-                className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
-              >
-                {copy.caseStudies.label}
-              </h2>
-              <div className={styles.visualList}>
-                {[0, 1, 2].map((index) => (
-                  <div
-                    key={index}
-                    className={`${styles.placeholderTile} ${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
-                    aria-hidden="true"
-                  />
-                ))}
-              </div>
-            </RevealOnView>
-          </section>
-
           <SnapshotMarquee items={copy.snapshots.items} />
 
           <RevealOnView className={styles.scrollReveal}>
