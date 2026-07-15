@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Noto_Sans_SC } from "next/font/google";
 import localFont from "next/font/local";
+import { CustomCursor } from "@/components/CustomCursor";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -55,7 +56,10 @@ export default function RootLayout({
       lang="zh-CN"
       className={`${geistSans.variable} ${ibmPlexMono.variable} ${notoSansSC.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <CustomCursor />
+      </body>
     </html>
   );
 }
