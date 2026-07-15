@@ -18,6 +18,7 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
 
   const normalized = pathname.replace(/\/+$/, "") || "/";
   const isWorkActive = normalized === `/${locale}`;
+  const isAboutActive = normalized === `/${locale}/about`;
 
   return (
     <header className={styles.header}>
@@ -32,12 +33,22 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
         >
           work
         </Link>
-        <span className={`${styles.tab} ${styles.tabDisabled}`} aria-disabled="true">
+        <Link
+          className={`${styles.tab} ${isAboutActive ? styles.tabActive : ""}`}
+          href={localePath(locale, "/about")}
+          data-tab="about"
+        >
           about
-        </span>
-        <span className={`${styles.tab} ${styles.tabDisabled}`} aria-disabled="true">
+        </Link>
+        <a
+          className={styles.tab}
+          href="https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-tab="resume"
+        >
           resume
-        </span>
+        </a>
         <Link
           className={`${styles.tab} ${styles.tabLocale}`}
           href={localeHref}

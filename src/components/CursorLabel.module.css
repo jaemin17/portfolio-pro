@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+  cursor: none;
+}
+
+.pill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: #3b6ef6;
+  color: #fff;
+  font-family:
+    var(--font-ibm-plex-mono),
+    var(--font-noto-sans-sc),
+    ui-monospace,
+    monospace;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  will-change: transform, opacity;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .wrapper {
+    cursor: auto;
+  }
+
+  .pill {
+    display: none;
+  }
+}

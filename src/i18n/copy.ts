@@ -2,7 +2,6 @@ import type { Locale } from "./config";
 
 type HomeSection = {
   label: string;
-  empty: string;
 };
 
 export type CurrentlyBuildingItem = {
@@ -42,6 +41,7 @@ export type SnapshotItem = {
 };
 
 export type Snapshots = {
+  label: string;
   items: SnapshotItem[];
 };
 
@@ -87,7 +87,6 @@ export type HomeCopy = {
   toolProjects: ToolProjects;
   visualProjects: ToolProjects;
   caseStudies: HomeSection;
-  about: HomeSection;
   snapshots: Snapshots;
   footerRole: string;
 };
@@ -156,7 +155,7 @@ const copy: Record<Locale, HomeCopy> = {
       ],
     },
     toolProjects: {
-      label: "工具类项目",
+      label: "Designed to Use",
       items: [
         {
           title: "模型编辑器",
@@ -189,7 +188,7 @@ const copy: Record<Locale, HomeCopy> = {
       ],
     },
     visualProjects: {
-      label: "视觉类项目",
+      label: "Visual Works",
       items: [
         {
           title: "生物医疗VR",
@@ -231,13 +230,9 @@ const copy: Record<Locale, HomeCopy> = {
     },
     caseStudies: {
       label: "Case Studies",
-      empty: "暂无 case study，稍后更新。",
-    },
-    about: {
-      label: "About",
-      empty: "个人介绍稍后更新。",
     },
     snapshots: {
+      label: "Snapshots",
       items: snapshotPlaceholders,
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
@@ -271,7 +266,7 @@ const copy: Record<Locale, HomeCopy> = {
       ],
     },
     toolProjects: {
-      label: "Tool Projects",
+      label: "Designed to Use",
       items: [
         {
           title: "Model Editor",
@@ -304,7 +299,7 @@ const copy: Record<Locale, HomeCopy> = {
       ],
     },
     visualProjects: {
-      label: "Visual Projects",
+      label: "Visual Works",
       items: [
         {
           title: "Biomedical VR",
@@ -346,13 +341,9 @@ const copy: Record<Locale, HomeCopy> = {
     },
     caseStudies: {
       label: "Case Studies",
-      empty: "No case studies yet. Coming soon.",
-    },
-    about: {
-      label: "About",
-      empty: "Bio coming soon.",
     },
     snapshots: {
+      label: "Snapshots",
       items: snapshotPlaceholders,
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
@@ -361,4 +352,136 @@ const copy: Record<Locale, HomeCopy> = {
 
 export function getHomeCopy(locale: Locale): HomeCopy {
   return copy[locale];
+}
+
+export type AboutStrengthItem = {
+  title: string;
+  description: string;
+};
+
+export type AboutWorkItem = {
+  company: string;
+  role: string;
+  period: string;
+};
+
+export type AboutCopy = {
+  greeting: string;
+  tagline: string;
+  bio: string[];
+  whatIDo: {
+    label: string;
+    items: string[];
+  };
+  strengths: {
+    label: string;
+    items: AboutStrengthItem[];
+  };
+  workExperience: {
+    label: string;
+    summary: string;
+    items: AboutWorkItem[];
+  };
+  closing: string;
+};
+
+const aboutCopy: Record<Locale, AboutCopy> = {
+  zh: {
+    greeting: "About",
+    tagline: "我是一个喜欢**从真实问题出发**做产品的 UI/UX 设计师。",
+    bio: [
+      "我喜欢**先把东西做出来**，**在真实体验中寻找答案**。我喜欢尝试不同的解决方案。每次设计对我来说，都是一次重新理解用户和产品的过程。我希望做出的产品**让人感到自然和舒服**。我喜欢和别人讨论想法，在交流中发现新的可能。",
+      "在日常生活中，我喜欢**亲手制作喜欢的东西、探索不同材质**，把脑海中的想法一点点变成真实的作品。",
+    ],
+    whatIDo: {
+      label: "我做什么",
+      items: [
+        "产品体验设计",
+        "UI / UX 设计",
+        "设计系统搭建",
+        "Web & App Design",
+        "视觉与创意表达",
+      ],
+    },
+    strengths: {
+      label: "我擅长",
+      items: [
+        {
+          title: "长期视角",
+          description: "我更关注产品为什么能被持续使用，而不只是短暂吸引用户。",
+        },
+        {
+          title: "简化复杂",
+          description: "我喜欢整理混乱的信息与想法，把复杂的问题变成清晰自然的体验。",
+        },
+        {
+          title: "自驱落地",
+          description: "我享受从 0 开始打磨产品，并持续迭代直到真正上线。",
+        },
+      ],
+    },
+    workExperience: {
+      label: "工作经历",
+      summary:
+        "我曾为中国移动、海尔、德赛西威、美国通用家电 GE Appliance 等品牌设计产品，也主导过 VR 教育平台与软件设计。",
+      items: [
+        { company: "深圳希夷微象科技", role: "产品体验设计师", period: "2023 – 2025" },
+        { company: "KMAX 科骏-深圳", role: "产品体验设计师", period: "2019 – 2023" },
+        { company: "VIA 广州威纳", role: "UI 设计师", period: "2017 – 2019" },
+        { company: "ISAR 伊飒尔-广州", role: "UIUE 实验室设计师", period: "2016 – 2017" },
+      ],
+    },
+    closing: "很高兴认识你 :) ✰",
+  },
+  en: {
+    greeting: "About",
+    tagline: "I'm a UI/UX designer who **starts from real problems**.",
+    bio: [
+      "I like to **build things first** and **find answers through real experience**. I enjoy trying different solutions — every design is a chance to re-understand users and the product. I want what I make to **feel natural and comfortable**. I like discussing ideas with others and finding new possibilities through conversation.",
+      "In everyday life, I like **making things with my hands and exploring different materials**, slowly turning ideas in my head into real objects.",
+    ],
+    whatIDo: {
+      label: "What I do",
+      items: [
+        "Product experience design",
+        "UI / UX design",
+        "Design systems",
+        "Web & App design",
+        "Visual & creative expression",
+      ],
+    },
+    strengths: {
+      label: "What I'm good at",
+      items: [
+        {
+          title: "Long-term thinking",
+          description: "I care more about why a product keeps getting used than a brief moment of attention.",
+        },
+        {
+          title: "Simplifying complexity",
+          description: "I like untangling messy information and ideas into a clear, natural experience.",
+        },
+        {
+          title: "Self-driven execution",
+          description: "I enjoy building products from zero and iterating until they truly ship.",
+        },
+      ],
+    },
+    workExperience: {
+      label: "Work experience",
+      summary:
+        "I've designed products for brands like China Mobile, Haier, Desay SV, and GE Appliances, and led VR education platform and software design.",
+      items: [
+        { company: "Shenzhen Xiyi Micro-Elephant Tech", role: "Product Experience Designer", period: "2023 – 2025" },
+        { company: "KMAX — Shenzhen", role: "Product Experience Designer", period: "2019 – 2023" },
+        { company: "VIA — Guangzhou", role: "UI Designer", period: "2017 – 2019" },
+        { company: "ISAR — Guangzhou", role: "UIUE Lab Designer", period: "2016 – 2017" },
+      ],
+    },
+    closing: "Nice to meet you :) ✰",
+  },
+};
+
+export function getAboutCopy(locale: Locale): AboutCopy {
+  return aboutCopy[locale];
 }

@@ -1,0 +1,277 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: clip;
+  background: #fff;
+  --main-gutter: var(--page-gutter);
+}
+
+.heroBand {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 28rem;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.heroInner {
+  box-sizing: border-box;
+  width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
+  margin: 0 auto;
+  padding: clamp(8.5rem, 18vw, 13.5rem) 0 clamp(1rem, 3vw, 1.5rem);
+}
+
+.heroInner > * {
+  animation: heroReveal 0.55s ease both;
+}
+
+.heroInner > *:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.heroInner > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.heroInner > *:nth-child(4) {
+  animation-delay: 0.42s;
+}
+
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroInner > * {
+    animation: none;
+  }
+}
+
+.greeting {
+  margin: 0 0 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+.tagline {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.65;
+  color: rgb(0 0 0 / 40%);
+}
+
+.emphasis {
+  color: rgb(0 0 0 / 90%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
+  margin: 0 auto;
+  padding: 0 0 5rem;
+}
+
+.scrollReveal[data-reveal="pending"] .revealItem,
+.scrollReveal[data-reveal="pending"] {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.scrollReveal[data-reveal="in"] {
+  animation: heroReveal 0.55s ease both;
+}
+
+.bioParagraph {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgb(0 0 0 / 40%);
+}
+
+.bioParagraph:last-child {
+  margin-bottom: 0;
+}
+
+:global([lang="zh"]) .tagline,
+:global([lang="zh"]) .bioParagraph,
+:global([lang="zh"]) .workSummary,
+:global([lang="zh"]) .strengthDescription,
+:global([lang="zh"]) .closing {
+  line-height: 1.9;
+}
+
+:global([lang="zh"]) .tagline {
+  margin-bottom: 2rem;
+}
+
+:global([lang="zh"]) .bioParagraph {
+  margin-bottom: 1.75rem;
+}
+
+:global([lang="zh"]) .bioParagraph:last-child {
+  margin-bottom: 0;
+}
+
+.section {
+  padding-top: calc(clamp(4rem, 12vw, 9rem) + 1rem);
+}
+
+.sectionLabel {
+  margin: 0 0 1rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  word-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+:global([lang="zh"]) .sectionLabel {
+  letter-spacing: 0.1em;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 0.5rem 0.875rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+.strengthList {
+  display: flex;
+  flex-direction: column;
+}
+
+.strengthItem {
+  padding: 1.25rem 0;
+}
+
+.strengthItem + .strengthItem {
+  border-top: 1px solid var(--border);
+}
+
+.strengthTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.strengthDescription {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgb(0 0 0 / 40%);
+}
+
+.workSummary {
+  margin: 0 0 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: rgb(0 0 0 / 40%);
+}
+
+.workList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.workItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  padding: 1.5rem 0;
+}
+
+.workItem + .workItem {
+  border-top: 1px solid var(--border);
+}
+
+.workCompany {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.workRole {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.workPeriod {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.footer {
+  margin-top: 5rem;
+  padding-top: 3rem;
+}
+
+.closing {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 767px) {
+  .page {
+    --main-gutter: 3rem;
+  }
+
+  .heroInner {
+    padding-top: 14rem;
+    padding-bottom: 2rem;
+  }
+
+  .greeting {
+    font-size: 1.125rem;
+  }
+
+  .tagline {
+    font-size: 0.9375rem;
+  }
+
+  .workPeriod {
+    margin-left: 0;
+  }
+}
+

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
+import { CursorLabel } from "@/components/CursorLabel";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { LazyVideo } from "@/components/LazyVideo";
 import { RevealOnView } from "@/components/RevealOnView";
@@ -29,31 +30,6 @@ function assetSrc(path: string): string {
   return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
 }
 
-function Section({
-  label,
-  empty,
-}: {
-  label: string;
-  empty: string;
-}) {
-  return (
-    <section className={styles.section}>
-      <RevealOnView className={styles.scrollReveal}>
-        <h2
-          className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
-        >
-          {label}
-        </h2>
-        <p
-          className={`${styles.emptyNote} ${styles.revealItem} ${styles.revealDelay2}`}
-        >
-          {empty}
-        </p>
-      </RevealOnView>
-    </section>
-  );
-}
-
 function ToolProjectCard({
   item,
   className,
@@ -71,7 +47,8 @@ function ToolProjectCard({
 
   return (
     <article className={classes}>
-      <div
+      <CursorLabel
+        label="View"
         className={frameClass}
         style={
           framed && item.frameColor
@@ -93,7 +70,7 @@ function ToolProjectCard({
             alt={item.title}
           />
         ) : null}
-      </div>
+      </CursorLabel>
       {showCaption ? (
         <div className={styles.toolCaption}>
           <p className={styles.toolTitle}>{item.title}</p>
@@ -255,8 +232,24 @@ export default async function HomePage({ params }: HomePageProps) {
             </RevealOnView>
           </section>
 
-          <Section label={copy.caseStudies.label} empty={copy.caseStudies.empty} />
-          <Section label={copy.about.label} empty={copy.about.empty} />
+          <section className={styles.section} aria-label={copy.caseStudies.label}>
+            <RevealOnView className={styles.scrollReveal}>
+              <h2
+                className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
+              >
+                {copy.caseStudies.label}
+              </h2>
+              <div className={styles.visualList}>
+                {[0, 1, 2].map((index) => (
+                  <div
+                    key={index}
+                    className={`${styles.placeholderTile} ${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
+                    aria-hidden="true"
+                  />
+                ))}
+              </div>
+            </RevealOnView>
+          </section>
 
           <SnapshotMarquee items={copy.snapshots.items} />
 
