@@ -2154,9 +2154,15 @@
 
 .selfly0EvidenceCard_review .selfly0EvidenceCaption {
   max-width: 900px;
-  margin-bottom: 20px;
+  margin-top: 16px;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.58);
 }
 
 .reviewRedistributionLayout {
@@ -2804,38 +2810,56 @@
 
 .iconDesignEvolutionBoard {
   display: grid;
-  grid-template-columns: 140px 28px 140px;
-  grid-template-rows: auto auto;
+  grid-template-columns: 140px 36px minmax(280px, 320px);
   align-items: center;
-  row-gap: 20px;
-  column-gap: 14px;
+  column-gap: 22px;
   justify-content: center;
   margin: 0 auto;
   padding: 0;
 }
 
-.iconDesignEvolutionPhase {
-  position: relative;
+.iconDesignEvolutionGroup {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0;
+  gap: 12px;
   min-width: 0;
-  height: 100%;
-  padding: 8px 4px 58px;
 }
 
-.iconDesignEvolutionPhase + .iconDesignEvolutionPhase {
-  justify-content: center;
+.iconDesignEvolutionGroupFinal {
+  width: 100%;
 }
 
-.iconDesignEvolutionPhase:first-child {
-  justify-content: center;
+.iconDesignEvolutionGroupLabel {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.58);
+  text-align: center;
+}
+
+.iconDesignFinalVariants {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+}
+
+.iconDesignEvolutionLargeArrow {
+  align-self: center;
+  justify-self: center;
+  color: rgba(255, 188, 110, 0.82);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0 0 14px rgba(255, 188, 110, 0.24);
 }
 
 .iconDesignEvolutionSketch {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   margin: 0;
 }
 
@@ -2848,39 +2872,12 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
 }
 
-.iconDesignEvolutionArrow {
-  align-self: center;
-  color: rgba(255, 188, 110, 0.82);
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1;
-  text-shadow: 0 0 14px rgba(255, 188, 110, 0.24);
-}
-
-.iconDesignEvolutionNote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  align-self: start;
-  text-align: center;
-  padding-top: 4px;
-}
-
 .iconDesignEvolutionIndex {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.25;
-  color: #ffbc6e;
-}
-
-.iconDesignEvolutionNote p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.68);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.58);
 }
 
 .iconDesignPhases {
@@ -4785,18 +4782,20 @@
   }
 
   .iconDesignEvolutionBoard {
-    grid-template-columns: minmax(0, 1fr) 16px minmax(0, 1fr) 16px minmax(0, 1fr);
-    row-gap: 10px;
-    column-gap: 6px;
+    grid-template-columns: minmax(0, 0.8fr) 16px minmax(0, 1.6fr);
+    column-gap: 8px;
   }
 
-  .iconDesignEvolutionNote {
-    padding-top: 0;
-    gap: 6px;
+  .iconDesignEvolutionGroup {
+    gap: 8px;
   }
 
-  .iconDesignEvolutionArrow {
-    font-size: 14px;
+  .iconDesignFinalVariants {
+    gap: 8px;
+  }
+
+  .iconDesignEvolutionLargeArrow {
+    font-size: 16px;
   }
 
   .iconDesignEvolutionIcon {

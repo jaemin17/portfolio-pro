@@ -190,11 +190,6 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   这个限制不是功能缺失，而是刻意把「收集更多任务」转成
                   <strong className={styles.selfly0Emphasis}>判断今天真正重要的事</strong>。
                 </p>
-                <p>
-                  仅限制今日任务还不够，用户仍然需要处理那些暂时不属于今天、但仍需要保留的事项。
-                  因此我把今日页拆成 Today / Tomorrow / Backlog：今天要做的进入 Top 3，提前想好的进入 Tomorrow，暂不处理的进入 Backlog。
-                  这个结构让今日页保持轻量，同时给未来事项一个明确去处。
-                </p>
                 <div className={styles.designPoints}>
                   <h4>设计取舍</h4>
                   <ul>

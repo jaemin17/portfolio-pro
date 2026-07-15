@@ -7,13 +7,6 @@ export function ReviewRedistribution() {
       className={`${styles.selfly0EvidenceCard} ${styles.selfly0EvidenceCard_review}`}
       aria-label="Review 低压力回顾：回顾范围设置与每日卡片"
     >
-      <p className={styles.selfly0EvidenceTitle}>跨模块再分发</p>
-
-      <figcaption className={styles.selfly0EvidenceCaption}>
-        <span className={styles.selfly0EvidenceCaptionAccent}>低压力回顾</span>
-        <span>像翻阅旧笔记，而非数据中心</span>
-      </figcaption>
-
       <div className={styles.reviewRedistributionLayout}>
         <div className={styles.reviewRedistributionDemo}>
           <Selfly0PhoneVideoSlot
@@ -22,6 +15,10 @@ export function ReviewRedistribution() {
           />
         </div>
       </div>
+
+      <figcaption className={styles.selfly0EvidenceCaption}>
+        <span>跨模块回顾</span>
+      </figcaption>
     </figure>
   );
 }

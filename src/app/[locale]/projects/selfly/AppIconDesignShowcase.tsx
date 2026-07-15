@@ -24,39 +24,39 @@ export function AppIconDesignShowcase() {
     <figure className={styles.iconDesignShowcase} aria-label="Selfly 应用图标设计演变">
       <div className={styles.iconDesignEvolutionSection}>
         <div className={styles.iconDesignEvolutionBoard}>
-          {/* Row 1 — images + arrow */}
-          <figure className={styles.iconDesignEvolutionSketch}>
-            <Image
-              src={assetPath("/images/selfly0/icon-design/draft-01-sketch.webp")}
-              alt="Selfly 图标草图：橙色手绘书本与紫色蝴蝶"
-              width={200}
-              height={200}
-              className={styles.iconDesignEvolutionIcon}
-            />
-          </figure>
-
-          <span className={styles.iconDesignEvolutionArrow} aria-hidden="true">→</span>
-
-          <figure className={styles.iconDesignEvolutionSketch}>
-            <Image
-              src={finalVersions[0].src}
-              alt={finalVersions[0].alt}
-              width={200}
-              height={200}
-              className={styles.iconDesignEvolutionIcon}
-              priority
-            />
-          </figure>
-
-          {/* Row 2 — notes (same 3-column order: note, empty, note) */}
-          <div className={styles.iconDesignEvolutionNote}>
-            <span className={styles.iconDesignEvolutionIndex}>草图捕捉第一直觉</span>
+          <div className={styles.iconDesignEvolutionGroup}>
+            <span className={styles.iconDesignEvolutionGroupLabel}>草图</span>
+            <figure className={styles.iconDesignEvolutionSketch}>
+              <Image
+                src={assetPath("/images/selfly0/icon-design/draft-01-sketch.webp")}
+                alt="Selfly 图标草图：橙色手绘书本与紫色蝴蝶"
+                width={200}
+                height={200}
+                className={styles.iconDesignEvolutionIcon}
+              />
+              <figcaption className={styles.iconDesignEvolutionIndex}>捕捉第一直觉</figcaption>
+            </figure>
           </div>
 
-          <span aria-hidden="true" />
+          <span className={styles.iconDesignEvolutionLargeArrow} aria-hidden="true">→</span>
 
-          <div className={styles.iconDesignEvolutionNote}>
-            <span className={styles.iconDesignEvolutionIndex}>最终版本</span>
+          <div className={`${styles.iconDesignEvolutionGroup} ${styles.iconDesignEvolutionGroupFinal}`}>
+            <span className={styles.iconDesignEvolutionGroupLabel}>最终方案</span>
+            <div className={styles.iconDesignFinalVariants}>
+              {finalVersions.map((version) => (
+                <figure key={version.id} className={styles.iconDesignEvolutionSketch}>
+                  <Image
+                    src={version.src}
+                    alt={version.alt}
+                    width={200}
+                    height={200}
+                    className={styles.iconDesignEvolutionIcon}
+                    priority={version.id === "flat"}
+                  />
+                  <figcaption className={styles.iconDesignEvolutionIndex}>{version.title}</figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -41,13 +41,6 @@ export function ProductLaunchEvidence() {
       className={`${styles.selfly0EvidenceCard} ${styles.selfly0EvidenceCard_launch}`}
       aria-label="Selfly iOS 产品化落地能力"
     >
-      <p className={styles.selfly0EvidenceTitle}>从设计到可运行产品</p>
-
-      <figcaption className={styles.selfly0EvidenceCaption}>
-        <span className={styles.selfly0EvidenceCaptionAccent}>产品化落地</span>
-        <span>订阅、同步与多语言在真机设置中可用</span>
-      </figcaption>
-
       <ul className={styles.productLaunchGrid}>
         {capabilities.map((item) => (
           <li key={item.id} className={styles.productLaunchCard}>
