@@ -6,15 +6,13 @@ const finalVersions = [
   {
     id: "flat",
     src: assetPath("/images/selfly0/icon-design/final-flat.webp"),
-    title: "浅色扁平版",
-    detail: "白底高对比，适合 App Store 展示",
+    title: "最终方案",
     alt: "Selfly 最终图标：浅色扁平版",
   },
   {
     id: "gradient",
     src: assetPath("/images/selfly0/icon-design/final-gradient.webp"),
-    title: "暗黑模式版",
-    detail: "深色底高对比，适配暗黑模式",
+    title: "暗黑模式",
     alt: "Selfly 最终图标：暗黑模式版",
   },
 ] as const;
@@ -25,7 +23,6 @@ export function AppIconDesignShowcase() {
       <div className={styles.iconDesignEvolutionSection}>
         <div className={styles.iconDesignEvolutionBoard}>
           <div className={styles.iconDesignEvolutionGroup}>
-            <span className={styles.iconDesignEvolutionGroupLabel}>草图</span>
             <figure className={styles.iconDesignEvolutionSketch}>
               <Image
                 src={assetPath("/images/selfly0/icon-design/draft-01-sketch.webp")}
@@ -34,14 +31,13 @@ export function AppIconDesignShowcase() {
                 height={200}
                 className={styles.iconDesignEvolutionIcon}
               />
-              <figcaption className={styles.iconDesignEvolutionIndex}>捕捉第一直觉</figcaption>
+              <figcaption className={styles.iconDesignEvolutionIndex}>草图</figcaption>
             </figure>
           </div>
 
           <span className={styles.iconDesignEvolutionLargeArrow} aria-hidden="true">→</span>
 
           <div className={`${styles.iconDesignEvolutionGroup} ${styles.iconDesignEvolutionGroupFinal}`}>
-            <span className={styles.iconDesignEvolutionGroupLabel}>最终方案</span>
             <div className={styles.iconDesignFinalVariants}>
               {finalVersions.map((version) => (
                 <figure key={version.id} className={styles.iconDesignEvolutionSketch}>

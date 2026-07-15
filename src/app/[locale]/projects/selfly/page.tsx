@@ -355,6 +355,16 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     <li>真实使用场景下的体验边界校准</li>
                   </ul>
                 </div>
+                <div style={{ marginTop: "24px" }}>
+                  <a
+                    className="buttonSticker buttonStickerOrange"
+                    href={appDownloadUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    在 App Store 查看 Selfly
+                  </a>
+                </div>
               </div>
             </div>
           </div>
