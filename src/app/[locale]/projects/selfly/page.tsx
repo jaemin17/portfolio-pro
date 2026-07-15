@@ -75,7 +75,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             <span className={styles.titleEn}>Selfly</span>
             <span className={styles.titleSep}>{t(locale, "：", ": ")}</span>
             <span className={styles.titleZh}>
-              {t(locale, "让记录不再变成", "No more turning journaling into")}
+              {t(locale, "让记录不再变成", "Journaling without the")}
               <span className={styles.strikeWord}>{t(locale, "压力", "pressure")}</span>
             </span>
           </h1>
