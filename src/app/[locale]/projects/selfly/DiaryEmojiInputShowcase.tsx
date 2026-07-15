@@ -1,4 +1,5 @@
 import { assetPath } from "@/i18n/assets";
+import type { Locale } from "@/i18n/config";
 import styles from "./selfly0.module.css";
 import { Selfly0ImageSlot } from "./Selfly0ImageSlot";
 import { Selfly0PhoneVideoSlot } from "./Selfly0PhoneVideoSlot";
@@ -88,17 +89,32 @@ export function DiaryEmojiQuickEdit() {
   );
 }
 
-export function DiaryEmojiInputPolish() {
+const diaryEmojiInputPolishCopy = {
+  zh: {
+    figureLabel: "日记输入：选完表情后自动聚焦文本输入",
+    title: "输入连贯性",
+    jumpLabel: "改造后：① 选完表情后自动聚焦 → 直接进入 ③",
+  },
+  en: {
+    figureLabel: "Diary input: auto-focus on text after picking an emoji",
+    title: "Input continuity",
+    jumpLabel: "After: ① pick a mood → auto-focus → straight to ③",
+  },
+} as const;
+
+export function DiaryEmojiInputPolish({ locale = "zh" }: { locale?: Locale }) {
+  const c = diaryEmojiInputPolishCopy[locale];
+
   return (
     <figure
       className={`${styles.selfly0EvidenceCard} ${styles.selfly0EvidenceCard_diary} ${styles.selfly0EvidenceCard_diaryPolish}`}
-      aria-label="日记输入：选完表情后自动聚焦文本输入"
+      aria-label={c.figureLabel}
     >
-      <p className={styles.selfly0EvidenceTitle}>输入连贯性</p>
-      <p className={styles.diaryFlowJumpLabel}>改造后：① 选完表情后自动聚焦 → 直接进入 ③</p>
+      <p className={styles.selfly0EvidenceTitle}>{c.title}</p>
+      <p className={styles.diaryFlowJumpLabel}>{c.jumpLabel}</p>
 
       <div className={styles.diaryInputPolishLayout}>
-        <DiaryInputFlowDiagram />
+        <DiaryInputFlowDiagram locale={locale} />
       </div>
     </figure>
   );
