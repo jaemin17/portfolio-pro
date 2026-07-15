@@ -390,19 +390,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             </div>
           </div>
         </section>
-        <hr className={styles.selfly0SectionDivider} aria-hidden="true" />
-        <section className={styles.selfly0ContactSection} aria-labelledby="selfly0-contact-title">
+        <section className={styles.selfly0ContactSection} aria-label="结语">
           <div className={styles.selfly0ContactInner}>
-            <h2 id="selfly0-contact-title">想了解更多细节？</h2>
-            <p>欢迎联系我聊聊这个项目。</p>
-            <a href="mailto:lijaemin1993@gmail.com?subject=Selfly%20project" className={styles.selfly0ContactLink}>
-              lijaemin1993@gmail.com
-            </a>
-            <div style={{ marginTop: "24px" }}>
-              <Link className="buttonSticker buttonStickerOrange" href={localePath(locale, "/")}>
-                返回首页
-              </Link>
-            </div>
+            <p className={styles.selfly0ContactClosing}>感谢你看到这里 :) ✰</p>
+            <Link className={styles.selfly0ContactBack} href={localePath(locale, "/")}>
+              ← 返回首页
+            </Link>
           </div>
         </section>
       </main>
