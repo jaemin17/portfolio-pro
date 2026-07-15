@@ -83,7 +83,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             {t(
               locale,
               "帮助用户每日聚焦、自我记录与长期回看的 iOS 产品",
-              "An iOS app that helps you focus daily, keep a personal record, and look back over time",
+              "An iOS app that helps you focus daily, record yourself, and look back over time",
             )}
           </p>
           <div className={styles.headerCta}>
@@ -240,7 +240,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   {t(locale, "用 Top 3、Tomorrow 和 Backlog", "Using Top 3, Tomorrow, and Backlog")}
                 </span>
                 <span className={styles.selfly0PositioningHeadingDark}>
-                  {t(locale, "控制任务压力", "to keep task pressure in check")}
+                  {t(locale, "控制任务压力", "to keep the day from overflowing")}
                 </span>
               </h3>
               <div className={styles.selfly0Body}>
@@ -291,7 +291,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>
-                  {t(locale, "把自我发现方式，", "Turning ways of self-discovery")}
+                  {t(locale, "把自我发现方式，", "Distilling self-discovery")}
                   <br className={styles.desktopLineBreak} aria-hidden="true" />
                   {t(locale, "抽象成", "into")}
                 </span>
