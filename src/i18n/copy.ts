@@ -158,21 +158,21 @@ const copy: Record<Locale, HomeCopy> = {
       label: "Designed to Use",
       items: [
         {
-          title: "模型编辑器",
+          title: "Model Editor",
           description: "材质、颜色和模型结构编辑",
           videoSrc: toolVideos.model,
           posterSrc: toolPosters.model,
           frameColor: toolFrameColors.model,
         },
         {
-          title: "XR交互剧本设计引擎",
+          title: "XR Interactive Script Engine",
           description: "模型资源浏览与预览",
           videoSrc: toolVideos.xrScript,
           posterSrc: toolPosters.xrScript,
           frameColor: toolFrameColors.xrScript,
         },
         {
-          title: "XR课件",
+          title: "XR Courseware",
           description: "3D 内容播放与课件演示",
           videoSrc: toolVideos.ppt,
           posterSrc: toolPosters.ppt,
