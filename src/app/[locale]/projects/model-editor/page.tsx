@@ -32,11 +32,16 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
       <main className={selflyStyles.main}>
         <header className={`${selflyStyles.featuredHero} ${selflyStyles.projectOneHero}`}>
           <h1 className={selflyStyles.title}>
-            <span className={selflyStyles.titleEn}>Model Editor</span>
-            <span className={selflyStyles.titleSep}>{t(locale, "：", ": ")}</span>
-            <span className={selflyStyles.titleZh}>
-              {t(locale, "面向教学的 3D 模型编辑器", "A 3D Model Editor for Teaching")}
-            </span>
+            {t(
+              locale,
+              <>
+                面向教学的{" "}
+                <span className={styles.conceptHeadlineEmphasis}>3D 模型编辑器</span>
+              </>,
+              <>
+                A <span className={styles.conceptHeadlineEmphasis}>3D Model Editor</span> for Teaching
+              </>,
+            )}
           </h1>
           <p className={selflyStyles.subtitle}>
             {t(
