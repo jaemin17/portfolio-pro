@@ -1,5 +1,4 @@
 export const modelEditorAssets = {
-  heroVideo: "/videos/model-editor/overview.mp4",
   prototype: "/images/model-editor/原型5.webp",
   layoutComparison: "/images/model-editor/layout-comparison.svg",
   previewMaximized: "/images/model-editor/hero-editor-1.webp",

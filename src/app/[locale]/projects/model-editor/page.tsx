@@ -46,14 +46,13 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
             )}
           </p>
           <div className={selflyStyles.headerCta}>
-            <video
-              className={`${selflyStyles.appPreviewImage} ${styles.projectHeroCoverVideo}`}
-              src={assetPath(modelEditorAssets.heroVideo)}
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
+            <Image
+              src={assetPath(modelEditorAssets.previewOverlay)}
+              alt={tStr(locale, "Model Editor 界面预览", "Model Editor interface preview")}
+              width={1440}
+              height={778}
+              className={styles.projectHeroCoverImage}
+              priority
             />
             <div className={selflyStyles.meta}>
               <span className={selflyStyles.metaItem}>2023–2024</span>
