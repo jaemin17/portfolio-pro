@@ -246,8 +246,18 @@
   font-size: 1.35rem;
   font-weight: 500;
   color: #1a1a1a;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
   line-height: 1.4;
+}
+
+.capabilityStack {
+  display: grid;
+  gap: 56px;
+  margin-top: 8px;
+}
+
+.capabilityItem .video {
+  margin-top: 0;
 }
 .conceptHeadlineEmphasis {
   font-style: italic;

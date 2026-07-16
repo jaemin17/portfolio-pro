@@ -9,8 +9,6 @@ export const modelEditorAssets = {
   shortcutsHint: "/images/model-editor/shortcuts-hint.png",
   operationVideo: "/videos/model-editor/模型编辑器章节操作归属-视频.mp4",
   materialDemo: "/videos/tools/model.mp4",
-  explodeDemo: "/videos/model-editor/explode-view.mp4",
   transparencyDemo: "/videos/model-editor/transparency-visibility.mp4",
-  animationDemo: "/videos/model-editor/animation.mp4",
   labelsDemo: "/videos/model-editor/overview.mp4",
 } as const;
