@@ -51,14 +51,16 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
             )}
           </p>
           <div className={selflyStyles.headerCta}>
-            <Image
-              src={assetPath(modelEditorAssets.previewMaximized)}
-              alt={tStr(locale, "Model Editor 界面预览", "Model Editor interface preview")}
-              width={1440}
-              height={778}
-              className={styles.projectHeroCoverImage}
-              priority
-            />
+            <div className={styles.projectHeroCoverFrame}>
+              <Image
+                src={assetPath(modelEditorAssets.previewMaximized)}
+                alt={tStr(locale, "Model Editor 界面预览", "Model Editor interface preview")}
+                width={1440}
+                height={778}
+                className={styles.projectHeroCoverImage}
+                priority
+              />
+            </div>
             <div className={selflyStyles.meta}>
               <span className={selflyStyles.metaItem}>2023–2024</span>
               <span className={selflyStyles.metaDot} aria-hidden="true">

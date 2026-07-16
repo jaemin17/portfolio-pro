@@ -2,14 +2,16 @@
   margin-top: 48px;
   padding: 16px 16px 20px;
   border-radius: 22px;
-  border: 0;
+  border: 3px solid #93c5fd;
   background: #eef2f5;
   display: grid;
   gap: 28px;
+  box-sizing: border-box;
 }
 
 .stackDark {
   background: #030303;
+  border: 0;
 }
 
 .stackDark .media {
