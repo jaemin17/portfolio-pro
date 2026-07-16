@@ -47,7 +47,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           </p>
           <div className={selflyStyles.headerCta}>
             <Image
-              src={assetPath(modelEditorAssets.previewOverlay)}
+              src={assetPath(modelEditorAssets.previewMaximized)}
               alt={tStr(locale, "Model Editor 界面预览", "Model Editor interface preview")}
               width={1440}
               height={778}
@@ -273,41 +273,6 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 <FinalLayoutCarousel
                   slides={[
                     {
-                      label: tStr(
-                        locale,
-                        "早期原型：面板环绕，预览受挤压",
-                        "Early prototype: panels surround the model, preview is squeezed",
-                      ),
-                      content: (
-                        <div className={styles.protoEvidenceCanvas}>
-                          <Image
-                            className={styles.protoEvidenceImage}
-                            src={assetPath(modelEditorAssets.prototype)}
-                            alt={tStr(locale, "Model Editor 开发原型", "Model Editor development prototype")}
-                            width={1440}
-                            height={900}
-                            style={{ width: "100%", height: "auto" }}
-                          />
-                          <div className={`${styles.protoAnnotation} ${styles.protoAnnotationTop}`}>
-                            <strong>{t(locale, "顶部", "Top")}</strong>
-                            {t(locale, "模型文件相关的全局功能入口", "Global file-related entry points")}
-                          </div>
-                          <div className={`${styles.protoAnnotation} ${styles.protoAnnotationLeft}`}>
-                            <strong>{t(locale, "左侧", "Left")}</strong>
-                            {t(locale, "当前全局功能下展开的编辑面板", "Editing panel expanded from global functions")}
-                          </div>
-                          <div className={`${styles.protoAnnotation} ${styles.protoAnnotationCenter}`}>
-                            <strong>{t(locale, "中间", "Center")}</strong>
-                            {t(locale, "模型的展示和交互空间", "Model display and interaction space")}
-                          </div>
-                          <div className={`${styles.protoAnnotation} ${styles.protoAnnotationRight}`}>
-                            <strong>{t(locale, "右侧", "Right")}</strong>
-                            {t(locale, "模型工具与参数调整区", "Model tools and parameter controls")}
-                          </div>
-                        </div>
-                      ),
-                    },
-                    {
                       label: tStr(locale, "空间对比", "Space comparison"),
                       content: (
                         <div className={styles.comparisonOnWhite}>
@@ -320,14 +285,31 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                       ),
                     },
                     {
-                      src: assetPath(modelEditorAssets.previewMaximized),
-                      alt: tStr(locale, "3D 教学工坊模型编辑器界面 1", "3D workshop model editor interface 1"),
-                      label: tStr(locale, "最大化预览", "Maximized preview"),
-                    },
-                    {
-                      src: assetPath(modelEditorAssets.previewOverlay),
-                      alt: tStr(locale, "3D 教学工坊模型编辑器界面 3", "3D workshop model editor interface 3"),
-                      label: tStr(locale, "参数浮层", "Parameter overlay"),
+                      layout: "row",
+                      slides: [
+                        {
+                          label: tStr(
+                            locale,
+                            "早期原型：面板环绕，预览受挤压",
+                            "Early prototype: panels surround the model, preview is squeezed",
+                          ),
+                          content: (
+                            <Image
+                              className={styles.protoEvidenceImage}
+                              src={assetPath(modelEditorAssets.prototype)}
+                              alt={tStr(locale, "Model Editor 开发原型", "Model Editor development prototype")}
+                              width={1440}
+                              height={778}
+                              sizes="(max-width: 840px) 50vw, 420px"
+                            />
+                          ),
+                        },
+                        {
+                          src: assetPath(modelEditorAssets.previewOverlay),
+                          alt: tStr(locale, "3D 教学工坊模型编辑器界面 3", "3D workshop model editor interface 3"),
+                          label: tStr(locale, "调整后", "After"),
+                        },
+                      ],
                     },
                   ]}
                 />
@@ -486,18 +468,6 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                           <img
                             src={assetPath(modelEditorAssets.themeCompare)}
                             alt={tStr(locale, "黑色与白色版本对比", "Light and dark theme comparison")}
-                          />
-                        </div>
-                      ),
-                    },
-                    {
-                      label: tStr(locale, "文字提示", "Text hints"),
-                      content: (
-                        <div className={styles.carouselSlideFrame}>
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={assetPath(modelEditorAssets.shortcutsHint)}
-                            alt={tStr(locale, "线性图标与快捷键设计", "Line icons and shortcut hints")}
                           />
                         </div>
                       ),

@@ -5,7 +5,6 @@ export const modelEditorAssets = {
   previewOverlay: "/images/model-editor/3D教学工坊-模型编辑器3.webp",
   enlargedControls: "/images/model-editor/放大按钮.webp",
   themeCompare: "/images/model-editor/黑色和白色对比.webp",
-  shortcutsHint: "/images/model-editor/shortcuts-hint.png",
   operationVideo: "/videos/model-editor/模型编辑器章节操作归属-视频.mp4",
   materialDemo: "/videos/tools/model.mp4",
   transparencyDemo: "/videos/model-editor/transparency-visibility.mp4",
