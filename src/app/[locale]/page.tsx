@@ -32,10 +32,12 @@ function assetSrc(path: string): string {
 
 function ToolProjectCard({
   item,
+  locale,
   className,
   showCaption = true,
 }: {
   item: ToolProjectItem;
+  locale: Locale;
   className?: string;
   showCaption?: boolean;
 }) {
@@ -45,32 +47,53 @@ function ToolProjectCard({
     ? styles.toolFrame
     : `${styles.toolFrame} ${styles.toolFrameBare}`;
 
+  const media = item.videoSrc && item.posterSrc ? (
+    <LazyVideo
+      className={styles.toolVideo}
+      src={assetSrc(item.videoSrc)}
+      posterSrc={assetSrc(item.posterSrc)}
+      label={item.title}
+    />
+  ) : item.imageSrc ? (
+    <img
+      className={styles.toolVideo}
+      src={assetSrc(item.imageSrc)}
+      alt={item.title}
+    />
+  ) : null;
+
+  const cardBody = (
+    <CursorLabel
+      label="View"
+      className={frameClass}
+      style={
+        framed && item.frameColor
+          ? { backgroundColor: item.frameColor }
+          : undefined
+      }
+    >
+      {media}
+    </CursorLabel>
+  );
+
   return (
     <article className={classes}>
-      <CursorLabel
-        label="View"
-        className={frameClass}
-        style={
-          framed && item.frameColor
-            ? { backgroundColor: item.frameColor }
-            : undefined
-        }
-      >
-        {item.videoSrc && item.posterSrc ? (
-          <LazyVideo
-            className={styles.toolVideo}
-            src={assetSrc(item.videoSrc)}
-            posterSrc={assetSrc(item.posterSrc)}
-            label={item.title}
-          />
-        ) : item.imageSrc ? (
-          <img
-            className={styles.toolVideo}
-            src={assetSrc(item.imageSrc)}
-            alt={item.title}
-          />
-        ) : null}
-      </CursorLabel>
+      {item.href?.startsWith("/") ? (
+        <Link href={localePath(locale, item.href)} className={styles.toolCardLink}>
+          {cardBody}
+        </Link>
+      ) : item.href ? (
+        <a
+          className={styles.toolCardLink}
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {cardBody}
+        </a>
+      ) : (
+        cardBody
+      )}
       {showCaption ? (
         <div className={styles.toolCaption}>
           <p className={styles.toolTitle}>{item.title}</p>
@@ -202,6 +225,7 @@ export default async function HomePage({ params }: HomePageProps) {
                   <ToolProjectCard
                     key={item.title}
                     item={item}
+                    locale={locale}
                     className={`${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
                   />
                 ))}
@@ -224,6 +248,7 @@ export default async function HomePage({ params }: HomePageProps) {
                   <ToolProjectCard
                     key={item.title}
                     item={item}
+                    locale={locale}
                     showCaption={false}
                     className={`${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
                   />

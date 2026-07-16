@@ -1,0 +1,1457 @@
+.page {
+  background: #fafbff;
+  min-height: 100vh;
+}
+
+.cover {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.coverPlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.titleSection {
+  padding: 60px 140px 40px;
+}
+
+.titleSection h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  margin: 0 0 8px;
+  color: #1a1a1a;
+}
+
+.titleSection .subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Overview Section - content aligned to right side */
+.section {
+  padding: 60px 30px 80px;
+}
+
+.sectionInner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.overviewContent {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.overviewLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2f7df4;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.overviewHeadline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.overviewBody {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.roleBlock {
+  margin-bottom: 32px;
+}
+
+.roleLabel {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.roleText {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Research / Insights sections - two column */
+.sectionLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 24px;
+}
+
+.gridLeftRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  margin-bottom: 32px;
+}
+
+.gridLeftRight .lrHeadline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.gridLeftRight .lrText {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.detailImage {
+  width: 100%;
+  border: 3px solid #93c5fd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f5f5f5;
+  border: 3px solid #93c5fd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 0.875rem;
+  margin-top: 16px;
+}
+
+.video {
+  width: 100%;
+  border: 3px solid #93c5fd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 16px;
+}
+
+.coverVideo {
+  width: 100%;
+  box-sizing: border-box;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  display: block;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.imageGridItem {
+  aspect-ratio: 4 / 3;
+  background: #f5f5f5;
+  border: 3px solid #93c5fd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 0.8rem;
+}
+
+.imageGridCaption {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Dark divider with design goals */
+.divider {
+  background: #1a1a1a;
+  padding: 80px 30px;
+  text-align: center;
+}
+
+.dividerInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dividerTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 24px;
+}
+
+.dividerGoals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.dividerGoals p {
+  font-size: 1.125rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* Concept / Solution sections */
+.conceptSection {
+  padding: 60px 30px 80px;
+}
+
+.conceptInner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.conceptLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.conceptHeadline {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.conceptHeadlineEmphasis {
+  font-style: italic;
+  color: #3b82f6;
+}
+.positioningInnerCentered {
+  text-align: center;
+}
+.positioningInnerCentered .conceptValue {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* Contact */
+.contact {
+  margin: 100px auto 0;
+  padding: 0 24px 200px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.contactDivider {
+  margin: 0 calc(50% - 50vw) 64px;
+  padding: 0;
+  border: 0;
+  border-top: 1px dashed rgba(17, 18, 23, 0.16);
+  height: 0;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.contact h2 {
+  margin: 10px 0;
+  color: #1a1b1f;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 400;
+}
+
+.contact p {
+  margin: 0 0 10px;
+  color: #171614;
+  opacity: 0.88;
+  font-size: 17px;
+  line-height: 1.85;
+  font-weight: 400;
+}
+
+.contactLink {
+  display: inline-block;
+  width: fit-content;
+  margin: 15px auto;
+  color: #1a1b1f;
+  font-size: 64px;
+  line-height: 88px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.contactLink:hover {
+  opacity: 0.8;
+}
+
+.contactLink:active {
+  opacity: 0.7;
+}
+
+.contact :global(.buttonSticker) {
+  display: flex;
+  width: fit-content;
+  margin: 8px auto 0;
+}
+
+/* ─── Project Hero (like selfly0 featuredHero) ─────────── */
+.projectHero {
+  padding: 72px 30px 0;
+  text-align: center;
+}
+.projectHeroInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.projectHeroTitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: rgba(0, 0, 0, 0.9);
+  max-width: 720px;
+  margin: 0 auto 30px;
+}
+.projectHeroTitleLight {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.75);
+}
+.projectHeroTitleHighlight {
+  font-style: italic;
+  color: #3b82f6;
+}
+.projectHeroSubtitle {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.85;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+.projectHeroMeta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+  font-family: "Roboto Mono", "SFMono-Regular", Menlo, monospace;
+}
+.projectHeroMetaDot {
+  opacity: 0.65;
+}
+.projectHeroMedia {
+  margin-top: 52px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.projectHeroCoverVideo {
+  width: min(100%, 940px);
+  height: auto;
+  aspect-ratio: 1500 / 844;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  border: 0;
+}
+
+/* ─── Positioning Section (selfly0-style) ──────────────── */
+.positioningSection {
+  padding: 60px 30px 80px;
+}
+/* Sections stacked directly under another block (no divider above) — collapse the large top spacing */
+.stackedSection {
+  padding-top: 0;
+}
+.stackedSection .protoEvidence {
+  margin-top: 0;
+}
+.stackedSection .protoIntroLabel {
+  margin-top: 0;
+}
+.positioningInner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.positioningLabel {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3b82f6;
+  margin-bottom: 12px;
+}
+.positioningGrid {
+  display: grid;
+  grid-template-columns: 2.5fr 4fr;
+  gap: 100px;
+  align-items: start;
+}
+.positioningHeading {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.65;
+  padding-top: 24px;
+  margin: 0;
+}
+.positioningHeadingLight {
+  color: #888;
+  font-weight: 400;
+}
+.positioningHeadingDark {
+  color: #333;
+  font-style: italic;
+}
+.positioningBody {
+  line-height: 1.8;
+  color: #444;
+  font-size: 16px;
+}
+.positioningBody p:first-child {
+  margin-top: 0;
+}
+.positioningBody p {
+  margin-bottom: 28px;
+  line-height: 1.75;
+}
+.positioningBody .roleLabel {
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+.protoEvidence {
+  margin: 40px 0 24px;
+}
+.protoEvidenceLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px;
+}
+.protoEvidenceFrame {
+  margin-top: 48px;
+  padding: 16px 16px 0;
+  border-radius: 22px;
+  border: 2px solid #2563eb;
+  background: #030303;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.protoEvidenceCaption {
+  margin: 20px 0 24px;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.protoEvidenceCanvas {
+  position: relative;
+  width: 100%;
+}
+.protoEvidenceImage {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  box-sizing: border-box;
+}
+.protoAnnotation {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: rgba(3, 3, 3, 0.82);
+  border: 1px solid rgba(96, 165, 250, 0.55);
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 180px;
+  box-sizing: border-box;
+}
+.protoAnnotation strong {
+  color: #60a5fa;
+  font-size: 14px;
+  font-weight: 700;
+}
+.protoAnnotationTop {
+  top: 1.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: row;
+  gap: 8px;
+  white-space: nowrap;
+  max-width: none;
+}
+.protoAnnotationLeft {
+  top: 50%;
+  left: 1.5%;
+  transform: translateY(-50%);
+  max-width: 150px;
+}
+.protoAnnotationCenter {
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.protoAnnotationRight {
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  max-width: 150px;
+}
+.protoIntroLabel {
+  margin: 64px 0 0;
+  text-align: left;
+}
+.protoIntroRow {
+  display: grid;
+  grid-template-columns: 2.5fr 4fr;
+  gap: 100px;
+  align-items: start;
+  margin: 12px 0 8px;
+  text-align: left;
+}
+.protoIntroTitle {
+  font-size: 26px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.65;
+  padding-top: 24px;
+  margin: 0;
+}
+.protoIntroBody {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+.protoProblems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  margin-top: 16px;
+}
+.protoProblemItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.protoProblemNum {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+.protoProblemText {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.55;
+}
+.protoProblemText strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.protoAreas {
+  margin-top: 20px;
+}
+.protoAreas h4 {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  color: #3b82f6;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+.protoAreas p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.75;
+  margin: 0 0 8px;
+}
+.protoAreas p + p {
+  margin-top: 28px;
+}
+.protoAreas ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 17px;
+  color: #555;
+  line-height: 1.85;
+  font-weight: 400;
+}
+.protoAreas ul + p {
+  margin-top: 20px;
+}
+.protoAreas ul strong {
+  color: #333;
+  font-weight: 700;
+}
+.directionPanel {
+  margin-top: 52px;
+  text-align: left;
+}
+.directionCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 48px;
+  border: 2px solid #2563eb;
+  border-radius: 22px;
+  background: #030303;
+  padding: 34px 48px 30px;
+  box-sizing: border-box;
+}
+.directionPanelHeader {
+  grid-column: 1 / -1;
+  padding: 0;
+}
+.directionPanelHeader h4 {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  color: #3b82f6;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  margin: 0 0 16px;
+}
+.directionPanelHeader p {
+  max-width: 620px;
+  font-size: 16px;
+  color: #3b82f6;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.85;
+  margin: 0 auto;
+  text-align: center;
+}
+.directionCard {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.directionCard p {
+  width: 176px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: center;
+  margin: 0;
+}
+.directionCardVisual {
+  width: 176px;
+  padding-top: 68px;
+  justify-self: center;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+  box-shadow: none;
+}
+.directionCardVisual::before {
+  content: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: #171717;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transform: translateX(-50%);
+}
+.directionIcon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 42px;
+  height: 42px;
+  transform: translateX(-50%);
+  fill: #2f7df4;
+  stroke: none;
+  z-index: 1;
+}
+.directionCardVisual {
+  position: relative;
+}
+.directionCardVisual span {
+  display: flex;
+  min-height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  color: #f7f1ea;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.goalCard {
+  width: 100%;
+  margin: 4px 0 0;
+  padding: 32px 24px 36px;
+  text-align: center;
+  background: #000;
+  border: 2px solid rgba(59, 130, 246, 0.35);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.goalCardLabel {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3b82f6;
+  margin: 0 0 28px;
+}
+.goalCardGrid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  align-items: start;
+}
+.goalCardDivider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 4px;
+}
+.goalCardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+}
+.goalCardTitle {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #e8e8ec;
+  line-height: 1.4;
+}
+.goalCardDesc {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.85;
+}
+
+.positioningEmphasis {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  font-weight: inherit;
+}
+
+/* ─── Design Challenge (dark section) ─────────────────── */
+.challengeSection {
+  padding: 80px 30px;
+  background: #1a1a1a;
+}
+.challengeInner {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.challengeLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+}
+.challengeRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+.challengeIcon {
+  font-size: 56px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+.challengeHeadline {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0;
+}
+.challengeBody {
+  font-size: 1rem;
+  color: #888;
+  line-height: 1.8;
+  max-width: 580px;
+  margin: 28px 0 0 84px;
+}
+
+/* ─── Chapter Intro (selfly0 dark style) ───────────────── */
+.chapterIntro {
+  background: #000;
+  color: #f7f7f7;
+  margin: 0;
+}
+.chapterIntroInner {
+  max-width: 1200px;
+  min-height: 360px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.chapterCopy {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 940px;
+}
+.chapterIcon {
+  font-size: 96px;
+  line-height: 1;
+  display: inline-block;
+  text-align: left;
+}
+.chapterLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.chapterTitle {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #f7f7f7;
+  line-height: 1.3;
+  margin: 0 0 10px;
+}
+.chapterDesc {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(28px, 2.8vw, 38px);
+  line-height: 1.42;
+  font-weight: 400;
+  margin: 0;
+  max-width: 760px;
+}
+
+/* ─── Closing Note ─────────────────────────────────────── */
+.closingNote {
+  background: #000;
+  color: #f7f7f7;
+  margin: 0;
+}
+.closingNoteInner {
+  max-width: 1200px;
+  min-height: 280px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closingNoteCopy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.closingNoteIcon {
+  font-size: 96px;
+  line-height: 1;
+}
+.closingNoteText {
+  font-size: clamp(22px, 2.2vw, 32px);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.55;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+.closingNoteText strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ─── Narrative Section ────────────────────────────────── */
+.narrativeSection {
+  padding: 60px 30px 80px;
+}
+.narrativeInner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.narrativeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.narrativeHeadline {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.narrativeHeadlineLight {
+  color: #888;
+  font-weight: 400;
+}
+.narrativeHeadlineDark {
+  color: #333;
+  font-style: italic;
+}
+.narrativeBody {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+.narrativeBody p + p {
+  margin-top: 28px;
+}
+.narrativeDesignPoints {
+  margin-top: 24px;
+}
+.narrativeDesignPoints h4 {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  color: #3b82f6;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+.narrativeDesignPoints ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.92rem;
+  color: #1a1a1a;
+  line-height: 1.75;
+  font-weight: 600;
+}
+.narrativeDesignPoints ul strong {
+  font-weight: 800;
+}
+
+.controlExploration {
+  margin-top: 28px;
+}
+
+.controlExplorationHeader {
+  max-width: 640px;
+  margin-bottom: 18px;
+}
+
+.controlExplorationHeader span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #3b82f6;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.controlExplorationHeader p {
+  margin: 0;
+  color: #555;
+  font-size: 0.96rem;
+  line-height: 1.8;
+}
+
+.controlExplorationGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.controlExplorationCard {
+  padding: 12px;
+  border: 1px solid #e6eaf2;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.controlExplorationPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  background: #f3f6fa;
+  color: #9aa4b2;
+  font-size: 0.82rem;
+}
+
+.controlExplorationPlaceholderDark {
+  background: #16181c;
+  color: #8b95a4;
+}
+
+.controlExplorationCard h4 {
+  margin: 14px 0 6px;
+  color: #222;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.controlExplorationCard p {
+  margin: 0;
+  color: #5f6673;
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.explorationCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 8px 0 36px;
+}
+
+.explorationCard {
+  min-height: 180px;
+  padding: 22px;
+  border: 1px solid #e6eaf2;
+  border-radius: 8px;
+  background: #f8fbff;
+}
+
+.explorationCard h4 {
+  margin: 0 0 12px;
+  color: #1a1a1a;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.explorationCard p {
+  margin: 0;
+  color: #555;
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+/* ─── Before / After ───────────────────────────────────── */
+.beforeAfter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+.beforeAfterLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.afterLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.schemeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  display: block;
+}
+
+/* ─── Iteration Grid ───────────────────────────────────── */
+.iterationGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.iterationImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  display: block;
+}
+.iterationCaption {
+  font-size: 0.78rem;
+  color: #888;
+  text-align: center;
+  margin-top: 8px;
+}
+.iterationFinalCaption {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #3b82f6;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ─── Asset Placeholder ────────────────────────────────── */
+.assetPlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  background: #fafafa;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #bbb;
+  font-size: 1rem;
+}
+.assetPlaceholderLabel {
+  font-size: 0.78rem;
+  color: #ccc;
+}
+
+.finalLayoutEvidence {
+  display: grid;
+  gap: 20px;
+}
+
+.finalLayoutImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  display: block;
+}
+.finalLayoutCarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1440 / 778;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  background: #eef3f7;
+}
+.finalLayoutCarouselImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: finalLayoutCarouselFade 9s infinite;
+}
+.finalLayoutCarouselImageOne {
+  animation-delay: 0s;
+}
+.finalLayoutCarouselImageTwo {
+  animation-delay: 3s;
+}
+.finalLayoutCarouselImageThree {
+  animation-delay: 6s;
+}
+
+@keyframes finalLayoutCarouselFade {
+  0%,
+  30% {
+    opacity: 1;
+  }
+  36%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .finalLayoutCarouselImage {
+    animation: none;
+  }
+
+  .finalLayoutCarouselImageOne {
+    opacity: 1;
+  }
+}
+
+.layoutPrinciples {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.layoutPrinciples p {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: #f0f5ff;
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.layoutPrinciples strong {
+  display: block;
+  color: #3b82f6;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.conceptValue {
+  max-width: 760px;
+  margin: 0 0 22px;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+@media (max-width: 768px) {
+  .gridLeftRight {
+    grid-template-columns: 1fr;
+  }
+
+  .imageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dividerGoals {
+    grid-template-columns: 1fr;
+  }
+
+  .overviewContent {
+    max-width: 100%;
+  }
+
+  .narrativeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .iterationGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .explorationCards {
+    grid-template-columns: 1fr;
+  }
+
+  .controlExplorationGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .layoutPrinciples {
+    grid-template-columns: 1fr;
+  }
+
+  .challengeBody {
+    margin-left: 0;
+  }
+
+  .chapterCopy {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .chapterIcon {
+    font-size: 58px;
+  }
+
+  .chapterDesc {
+    font-size: 23px;
+    line-height: 1.44;
+  }
+
+  .projectHeroTitle {
+    font-size: 28px;
+  }
+
+  .positioningSection {
+    padding: 0 20px;
+    margin: 32px auto 40px;
+  }
+
+  .positioningGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .positioningLabel {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .positioningHeading,
+  .protoIntroTitle {
+    font-size: 24px;
+    line-height: 1.5;
+    padding-top: 12px;
+    margin-bottom: 4px;
+  }
+
+  .positioningBody {
+    font-size: 15px;
+    color: #777;
+  }
+
+  .positioningBody p {
+    margin-bottom: 20px;
+    line-height: 1.75;
+    color: #777;
+  }
+
+  .positioningBody .roleLabel {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #4a5568;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .positioningEmphasis {
+    color: #444;
+  }
+
+  .protoIntroRow {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin: 8px 0;
+  }
+
+  .protoIntroLabel {
+    margin-top: 32px;
+  }
+
+  .stackedSection .protoIntroLabel {
+    margin-top: 0;
+  }
+
+  .protoIntroBody {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #777;
+  }
+
+  .protoAreas {
+    margin-top: 12px;
+  }
+
+  .protoAreas p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #777;
+  }
+
+  .protoAreas p + p {
+    margin-top: 20px;
+  }
+
+  .protoProblems {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    margin: 120px auto 0;
+    padding: 0 20px 120px;
+  }
+
+  .contactDivider {
+    margin-bottom: 48px;
+  }
+
+  .contact h2 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .contact p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .contactLink {
+    font-size: 22px;
+    line-height: 1.35;
+    margin: 12px auto;
+  }
+
+  .directionCards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.carouselSlideFrame {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+}
+
+.carouselSlideFrame img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}

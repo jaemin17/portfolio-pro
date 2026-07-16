@@ -21,6 +21,7 @@ export type CurrentlyBuilding = {
 export type ToolProjectItem = {
   title: string;
   description: string;
+  href?: string;
   videoSrc?: string;
   posterSrc?: string;
   imageSrc?: string;
@@ -160,6 +161,7 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Model Editor",
           description: "材质、颜色和模型结构编辑",
+          href: "/projects/model-editor",
           videoSrc: toolVideos.model,
           posterSrc: toolPosters.model,
           frameColor: toolFrameColors.model,
@@ -271,6 +273,7 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Model Editor",
           description: "Edit materials, colors, and model structure",
+          href: "/projects/model-editor",
           videoSrc: toolVideos.model,
           posterSrc: toolPosters.model,
           frameColor: toolFrameColors.model,

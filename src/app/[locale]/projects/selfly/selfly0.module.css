@@ -4150,6 +4150,10 @@
     content: "Selfly: ";
   }
 
+  :global([data-page="model-editor"]) .projectOneHero .subtitle::before {
+    content: none;
+  }
+
   .projectOneHero .headerCta {
     margin-top: 32px;
     gap: 12px;
