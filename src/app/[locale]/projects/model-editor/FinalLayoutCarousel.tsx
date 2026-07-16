@@ -11,6 +11,7 @@ type Entry = Slide | Row;
 type FinalLayoutCarouselProps = {
   slides: Entry[];
   caption?: string;
+  tone?: "light" | "dark";
 };
 
 function isRow(entry: Entry): entry is Row {
@@ -39,9 +40,13 @@ function SlideFigure({ slide }: { slide: Slide }) {
   );
 }
 
-export function FinalLayoutCarousel({ slides, caption }: FinalLayoutCarouselProps) {
+export function FinalLayoutCarousel({
+  slides,
+  caption,
+  tone = "light",
+}: FinalLayoutCarouselProps) {
   return (
-    <div className={styles.stack}>
+    <div className={`${styles.stack} ${tone === "dark" ? styles.stackDark : ""}`}>
       {slides.map((entry, index) =>
         isRow(entry) ? (
           <div key={`row-${index}`} className={styles.row}>

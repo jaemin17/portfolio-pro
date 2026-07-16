@@ -452,6 +452,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
               </div>
               <div className={styles.controlExploration}>
                 <FinalLayoutCarousel
+                  tone="dark"
                   slides={[
                     {
                       label: tStr(locale, "放大点击目标", "Larger targets"),
