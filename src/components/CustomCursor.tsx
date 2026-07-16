@@ -12,7 +12,9 @@ export function CustomCursor() {
 
     function handleMouseMove(event: MouseEvent) {
       const target = event.target as HTMLElement | null;
-      const interactive = target?.closest("a, button, [role='button'], input, textarea, select");
+      const interactive = target?.closest(
+        "a, button, [role='button'], input, textarea, select, [data-hide-cursor-dot]",
+      );
       dot!.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0) translate(-50%, -50%)`;
       dot!.style.opacity = interactive ? "0" : "1";
     }

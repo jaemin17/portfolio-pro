@@ -28,6 +28,7 @@ export function CursorLabel({ label, children, className, style }: CursorLabelPr
       ref={wrapperRef}
       className={classes}
       style={style}
+      data-hide-cursor-dot
       onMouseEnter={() => setVisible(true)}
       onMouseLeave={() => setVisible(false)}
       onMouseMove={handleMouseMove}
