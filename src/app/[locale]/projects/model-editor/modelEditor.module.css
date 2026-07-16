@@ -1451,7 +1451,6 @@
 
 .carouselSlideFrame {
   width: 100%;
-  height: 100%;
   background: #000;
   display: flex;
   align-items: center;
@@ -1460,8 +1459,24 @@
 }
 
 .carouselSlideFrame img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
   object-fit: contain;
   border-radius: 8px;
+}
+
+.comparisonOnWhite {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+
+.comparisonOnWhite img {
+  width: 100%;
+  height: auto;
+  display: block;
 }

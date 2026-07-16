@@ -270,54 +270,54 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 </div>
               </div>
 
-              <div className={styles.protoEvidenceFrame}>
-                <div className={styles.protoEvidenceCanvas}>
-                  <Image
-                    className={styles.protoEvidenceImage}
-                    src={assetPath(modelEditorAssets.prototype)}
-                    alt={tStr(locale, "Model Editor 开发原型", "Model Editor development prototype")}
-                    width={1440}
-                    height={900}
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                  <div className={`${styles.protoAnnotation} ${styles.protoAnnotationTop}`}>
-                    <strong>{t(locale, "顶部", "Top")}</strong>
-                    {t(locale, "模型文件相关的全局功能入口", "Global file-related entry points")}
-                  </div>
-                  <div className={`${styles.protoAnnotation} ${styles.protoAnnotationLeft}`}>
-                    <strong>{t(locale, "左侧", "Left")}</strong>
-                    {t(locale, "当前全局功能下展开的编辑面板", "Editing panel expanded from global functions")}
-                  </div>
-                  <div className={`${styles.protoAnnotation} ${styles.protoAnnotationCenter}`}>
-                    <strong>{t(locale, "中间", "Center")}</strong>
-                    {t(locale, "模型的展示和交互空间", "Model display and interaction space")}
-                  </div>
-                  <div className={`${styles.protoAnnotation} ${styles.protoAnnotationRight}`}>
-                    <strong>{t(locale, "右侧", "Right")}</strong>
-                    {t(locale, "模型工具与参数调整区", "Model tools and parameter controls")}
-                  </div>
-                </div>
-                <p className={styles.protoEvidenceCaption}>
-                  {t(
-                    locale,
-                    "早期原型：面板环绕，预览受挤压",
-                    "Early prototype: panels surround the model, preview is squeezed",
-                  )}
-                </p>
-              </div>
-
               <div className={styles.finalLayoutEvidence}>
                 <FinalLayoutCarousel
                   slides={[
                     {
+                      label: tStr(
+                        locale,
+                        "早期原型：面板环绕，预览受挤压",
+                        "Early prototype: panels surround the model, preview is squeezed",
+                      ),
+                      content: (
+                        <div className={styles.protoEvidenceCanvas}>
+                          <Image
+                            className={styles.protoEvidenceImage}
+                            src={assetPath(modelEditorAssets.prototype)}
+                            alt={tStr(locale, "Model Editor 开发原型", "Model Editor development prototype")}
+                            width={1440}
+                            height={900}
+                            style={{ width: "100%", height: "auto" }}
+                          />
+                          <div className={`${styles.protoAnnotation} ${styles.protoAnnotationTop}`}>
+                            <strong>{t(locale, "顶部", "Top")}</strong>
+                            {t(locale, "模型文件相关的全局功能入口", "Global file-related entry points")}
+                          </div>
+                          <div className={`${styles.protoAnnotation} ${styles.protoAnnotationLeft}`}>
+                            <strong>{t(locale, "左侧", "Left")}</strong>
+                            {t(locale, "当前全局功能下展开的编辑面板", "Editing panel expanded from global functions")}
+                          </div>
+                          <div className={`${styles.protoAnnotation} ${styles.protoAnnotationCenter}`}>
+                            <strong>{t(locale, "中间", "Center")}</strong>
+                            {t(locale, "模型的展示和交互空间", "Model display and interaction space")}
+                          </div>
+                          <div className={`${styles.protoAnnotation} ${styles.protoAnnotationRight}`}>
+                            <strong>{t(locale, "右侧", "Right")}</strong>
+                            {t(locale, "模型工具与参数调整区", "Model tools and parameter controls")}
+                          </div>
+                        </div>
+                      ),
+                    },
+                    {
                       label: tStr(locale, "空间对比", "Space comparison"),
                       content: (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          src={assetPath(modelEditorAssets.layoutComparison)}
-                          alt={tStr(locale, "布局对比示意图", "Layout comparison diagram")}
-                          style={{ width: "100%", height: "100%", objectFit: "contain" }}
-                        />
+                        <div className={styles.comparisonOnWhite}>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={assetPath(modelEditorAssets.layoutComparison)}
+                            alt={tStr(locale, "布局对比示意图", "Layout comparison diagram")}
+                          />
+                        </div>
                       ),
                     },
                     {
