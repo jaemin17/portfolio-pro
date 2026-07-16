@@ -1794,6 +1794,9 @@
   justify-content: center;
   align-content: flex-start;
   gap: 6px;
+  /* Keep header height consistent across cards (prevents phone section from shifting). */
+  height: 52px;
+  overflow: hidden;
 }
 
 .exploreRecordContainersPrinciple {
@@ -1809,6 +1812,9 @@
   font-weight: 600;
   line-height: 1.25;
   box-shadow: inset 0 0 0 1px rgba(255, 188, 110, 0.24);
+  /* Clamp height so long titles don't push the phone section downward. */
+  height: 26px;
+  overflow: hidden;
 }
 
 .exploreRecordContainerAction {
