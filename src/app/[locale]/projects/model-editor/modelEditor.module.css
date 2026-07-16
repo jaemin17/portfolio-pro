@@ -271,6 +271,13 @@
   margin-right: auto;
   text-align: center;
 }
+/* Match narrative/concept horizontal inset so closing aligns with body copy */
+.contactAlign {
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
 /* Contact */
 .contact {
   margin: 100px auto 0;

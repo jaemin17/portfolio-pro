@@ -539,7 +539,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
         </section>
 
         <section className={selflyStyles.selfly0ContactSection} aria-label={tStr(locale, "结语", "Closing")}>
-          <div className={selflyStyles.selfly0ContactInner}>
+          <div className={`${selflyStyles.selfly0ContactInner} ${styles.contactAlign}`}>
             <p className={selflyStyles.selfly0ContactClosing}>
               {t(locale, "感谢你看到这里 :) ✰", "Thanks for reading this far :) ✰")}
             </p>
