@@ -38,11 +38,9 @@ Prefer `var(--fs-*)`. Do **not** invent in-between sizes.
 
 | Token | ≈px | Use |
 |-------|-----|-----|
-| `--fs-caption` | 12 | Captions, platform tags, locale |
-| `--fs-meta` | 13 | SiteHeader, secondary notes, job roles |
-| `--fs-label` | 14 | Case section labels, tool titles, `.buttonSticker` |
-| `--fs-body` | 16 | Default body / case copy |
-| `--fs-title-s` | 18 | Home name, About greeting, small titles |
+| `--fs-caption` | 12 | Captions, platform tags, secondary notes, job roles |
+| `--fs-label` | 14 | Nav, buttons, case section labels, design-point pills |
+| `--fs-body` | 16 | Default body / case copy; home name, About greeting, closings |
 | `--fs-title` | 26 | Chapter / narrative headlines; mobile hero |
 | `--fs-display` | 42 | Case hero titles |
 

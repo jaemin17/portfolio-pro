@@ -65,7 +65,7 @@
 
 .greeting {
   margin: 0 0 2.5rem;
-  font-size: var(--fs-title-s);
+  font-size: var(--fs-body);
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.35;
@@ -163,7 +163,7 @@
   padding: 0.5rem 0.875rem;
   border: 1px solid var(--border);
   border-radius: 999px;
-  font-size: var(--fs-meta);
+  font-size: var(--fs-label);
   line-height: 1;
   color: var(--text-primary);
 }
@@ -230,7 +230,7 @@
 }
 
 .workRole {
-  font-size: var(--fs-meta);
+  font-size: var(--fs-caption);
   color: var(--text-secondary);
 }
 
@@ -259,10 +259,6 @@
   .heroInner {
     padding-top: 14rem;
     padding-bottom: 2rem;
-  }
-
-  .greeting {
-    font-size: var(--fs-title-s);
   }
 
   .tagline {

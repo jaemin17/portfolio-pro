@@ -16,10 +16,8 @@
 
   /* Type scale — content (prefer these over raw px/rem) */
   --fs-caption: 0.75rem; /* 12 */
-  --fs-meta: 0.8125rem; /* 13 */
   --fs-label: 0.875rem; /* 14 */
   --fs-body: 1rem; /* 16 */
-  --fs-title-s: 1.125rem; /* 18 */
   --fs-title: 1.625rem; /* 26 */
   --fs-display: 2.625rem; /* 42 */
 }
