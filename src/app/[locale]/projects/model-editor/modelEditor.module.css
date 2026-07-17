@@ -54,7 +54,7 @@
 
 .overviewLabel {
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #2f7df4;
   font-style: italic;
   margin-bottom: 20px;
@@ -81,7 +81,7 @@
 
 .roleLabel {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #1a1a1a;
   margin-bottom: 8px;
 }
@@ -95,7 +95,7 @@
 /* Research / Insights sections - two column */
 .sectionLabel {
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #3b82f6;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -207,7 +207,7 @@
 
 .dividerTitle {
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #3b82f6;
   margin-bottom: 24px;
 }
@@ -236,7 +236,7 @@
 
 .conceptLabel {
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #3b82f6;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -351,7 +351,7 @@
 }
 .projectHeroTitle {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.12;
   letter-spacing: -0.02em;
   color: rgba(0, 0, 0, 0.9);
@@ -430,7 +430,7 @@
 }
 .positioningLabel {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #3b82f6;
@@ -478,7 +478,7 @@
 }
 .protoEvidenceLabel {
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #aaa;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -531,7 +531,7 @@
 .protoAnnotation strong {
   color: #60a5fa;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .protoAnnotationTop {
   top: 1.2%;
@@ -604,7 +604,7 @@
   background: #fee2e2;
   color: #dc2626;
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -657,7 +657,7 @@
 }
 .protoAreas ul strong {
   color: #333;
-  font-weight: 700;
+  font-weight: 600;
 }
 .directionPanel {
   margin-top: 52px;
@@ -693,7 +693,7 @@
   max-width: 620px;
   font-size: 16px;
   color: #3b82f6;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.06em;
   line-height: 1.85;
   margin: 0 auto;
@@ -761,7 +761,7 @@
   padding: 0 12px;
   color: #f7f1ea;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.3;
   text-align: center;
 }
@@ -804,7 +804,7 @@
 }
 .goalCardTitle {
   font-size: 0.92rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #e8e8ec;
   line-height: 1.4;
 }
@@ -833,7 +833,7 @@
 }
 .challengeLabel {
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #3b82f6;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -899,7 +899,7 @@
 }
 .chapterLabel {
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #3b82f6;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1017,10 +1017,10 @@
   font-size: 0.92rem;
   color: #1a1a1a;
   line-height: 1.75;
-  font-weight: 600;
+  font-weight: 400;
 }
 .narrativeDesignPoints ul strong {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .controlExploration {
@@ -1037,7 +1037,7 @@
   margin-bottom: 8px;
   color: #3b82f6;
   font-size: 0.86rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.04em;
 }
 
@@ -1081,7 +1081,7 @@
   margin: 14px 0 6px;
   color: #222;
   font-size: 0.94rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .controlExplorationCard p {
@@ -1128,7 +1128,7 @@
 }
 .beforeAfterLabel {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #999;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1136,7 +1136,7 @@
 }
 .afterLabel {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #3b82f6;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1385,7 +1385,7 @@
 
   .positioningBody .roleLabel {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.03em;
     color: #4a5568;
     margin-top: 4px;

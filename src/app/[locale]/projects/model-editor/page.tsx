@@ -115,8 +115,8 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                   <p>
                     {t(
                       locale,
-                      "在已有功能框架上继续推进体验设计，围绕编辑器的操作流程、界面层级与视觉一致性完善全量界面，并与开发对接推动方案落地上线。",
-                      "I continued experience design on top of an existing functional framework — refining the full interface around workflow, hierarchy, and visual consistency, and working with engineering to ship the solution.",
+                      "全流程界面设计 · 设计系统与规范搭建 · 交互体验优化",
+                      "End-to-end interface design · Design system & guidelines · Interaction experience optimization",
                     )}
                   </p>
                 </div>

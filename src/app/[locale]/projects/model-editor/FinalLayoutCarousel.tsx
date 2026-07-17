@@ -28,8 +28,8 @@ function SlideFigure({ slide }: { slide: Slide }) {
           <Image
             src={slide.src}
             alt={slide.alt}
-            width={1440}
-            height={778}
+            width={1024}
+            height={596}
             className={styles.image}
             sizes="(max-width: 840px) 100vw, 840px"
           />
