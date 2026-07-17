@@ -65,7 +65,7 @@
 
 .greeting {
   margin: 0 0 2.5rem;
-  font-size: 18px;
+  font-size: var(--fs-title-s);
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.35;
@@ -73,7 +73,7 @@
 
 .tagline {
   margin: 0 0 1.5rem;
-  font-size: 1rem;
+  font-size: var(--fs-body);
   letter-spacing: 0;
   line-height: 1.65;
   color: rgb(0 0 0 / 40%);
@@ -104,7 +104,7 @@
 
 .bioParagraph {
   margin: 0 0 1rem;
-  font-size: 1rem;
+  font-size: var(--fs-body);
   line-height: 1.75;
   color: rgb(0 0 0 / 40%);
 }
@@ -139,7 +139,7 @@
 
 .sectionLabel {
   margin: 0 0 1rem;
-  font-size: 0.6875rem;
+  font-size: var(--fs-xs);
   font-weight: 500;
   letter-spacing: 0;
   word-spacing: 0.35em;
@@ -164,7 +164,7 @@
   padding: 0.5rem 0.875rem;
   border: 1px solid var(--border);
   border-radius: 999px;
-  font-size: 0.8125rem;
+  font-size: var(--fs-meta);
   line-height: 1;
   color: var(--text-primary);
 }
@@ -184,7 +184,7 @@
 
 .strengthTitle {
   margin: 0 0 0.35rem;
-  font-size: 1rem;
+  font-size: var(--fs-body);
   font-weight: 400;
   letter-spacing: -0.02em;
   color: var(--text-primary);
@@ -192,14 +192,14 @@
 
 .strengthDescription {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: var(--fs-label);
   line-height: 1.6;
   color: rgb(0 0 0 / 40%);
 }
 
 .workSummary {
   margin: 0 0 1.5rem;
-  font-size: 0.9375rem;
+  font-size: var(--fs-body-s);
   line-height: 1.65;
   color: rgb(0 0 0 / 40%);
 }
@@ -225,19 +225,19 @@
 }
 
 .workCompany {
-  font-size: 0.9375rem;
+  font-size: var(--fs-body-s);
   font-weight: 400;
   color: var(--text-primary);
 }
 
 .workRole {
-  font-size: 0.8125rem;
+  font-size: var(--fs-meta);
   color: var(--text-secondary);
 }
 
 .workPeriod {
   margin-left: auto;
-  font-size: 0.75rem;
+  font-size: var(--fs-caption);
   color: var(--text-muted);
 }
 
@@ -248,7 +248,7 @@
 
 .closing {
   margin: 0;
-  font-size: 0.9375rem;
+  font-size: var(--fs-body-s);
   color: var(--text-secondary);
 }
 
@@ -263,11 +263,11 @@
   }
 
   .greeting {
-    font-size: 18px;
+    font-size: var(--fs-title-s);
   }
 
   .tagline {
-    font-size: 0.9375rem;
+    font-size: var(--fs-body-s);
   }
 
   .workPeriod {

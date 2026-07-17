@@ -7,7 +7,7 @@
   border: 0;
   background: none;
   font: inherit;
-  font-size: 1rem;
+  font-size: var(--fs-body);
   letter-spacing: 0.04em;
   line-height: 1.65;
   color: rgb(0 0 0 / 60%);

@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   color: #bbb;
-  font-size: 1rem;
+  font-size: var(--fs-body);
 }
 
 .titleSection {
@@ -25,14 +25,14 @@
 }
 
 .titleSection h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: var(--fs-display-fluid);
   font-weight: 400;
   margin: 0 0 8px;
   color: #1a1a1a;
 }
 
 .titleSection .subtitle {
-  font-size: 1rem;
+  font-size: var(--fs-body);
   color: #666;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .overviewLabel {
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 500;
   color: #2f7df4;
   font-style: italic;
@@ -61,7 +61,7 @@
 }
 
 .overviewHeadline {
-  font-size: 26px;
+  font-size: var(--fs-title);
   font-weight: 500;
   color: #1a1a1a;
   line-height: 1.4;
@@ -69,7 +69,7 @@
 }
 
 .overviewBody {
-  font-size: 1rem;
+  font-size: var(--fs-body);
   color: #444;
   line-height: 1.8;
   margin-bottom: 48px;
@@ -80,21 +80,21 @@
 }
 
 .roleLabel {
-  font-size: 1rem;
+  font-size: var(--fs-body);
   font-weight: 500;
   color: #1a1a1a;
   margin-bottom: 8px;
 }
 
 .roleText {
-  font-size: 1rem;
+  font-size: var(--fs-body);
   color: #444;
   line-height: 1.8;
 }
 
 /* Research / Insights sections - two column */
 .sectionLabel {
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 500;
   color: #3b82f6;
   text-transform: uppercase;
@@ -110,14 +110,14 @@
 }
 
 .gridLeftRight .lrHeadline {
-  font-size: 26px;
+  font-size: var(--fs-title);
   font-weight: 500;
   color: #1a1a1a;
   line-height: 1.4;
 }
 
 .gridLeftRight .lrText {
-  font-size: 1rem;
+  font-size: var(--fs-body);
   color: #444;
   line-height: 1.8;
 }
@@ -145,7 +145,7 @@
   align-items: center;
   justify-content: center;
   color: #bbb;
-  font-size: 0.875rem;
+  font-size: var(--fs-label);
   margin-top: 16px;
 }
 
@@ -184,11 +184,11 @@
   align-items: center;
   justify-content: center;
   color: #bbb;
-  font-size: 13px;
+  font-size: var(--fs-meta);
 }
 
 .imageGridCaption {
-  font-size: 14px;
+  font-size: var(--fs-label);
   color: #666;
   text-align: center;
   margin-top: 8px;
@@ -207,7 +207,7 @@
 }
 
 .dividerTitle {
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 500;
   color: #3b82f6;
   margin-bottom: 24px;
@@ -220,7 +220,7 @@
 }
 
 .dividerGoals p {
-  font-size: 18px;
+  font-size: var(--fs-title-s);
   color: #fff;
   line-height: 1.5;
 }
@@ -236,7 +236,7 @@
 }
 
 .conceptLabel {
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 500;
   color: #3b82f6;
   text-transform: uppercase;
@@ -244,7 +244,7 @@
 }
 
 .conceptHeadline {
-  font-size: 22px;
+  font-size: var(--fs-title-m);
   font-weight: 500;
   color: #1a1a1a;
   margin: 0 0 16px;
@@ -299,7 +299,7 @@
 .contact h2 {
   margin: 10px 0;
   color: #1a1b1f;
-  font-size: 28px;
+  font-size: var(--fs-title-l);
   line-height: 46px;
   font-weight: 400;
 }
@@ -308,7 +308,7 @@
   margin: 0 0 10px;
   color: #171614;
   opacity: 0.88;
-  font-size: 16px;
+  font-size: var(--fs-body);
   line-height: 1.85;
   font-weight: 400;
 }
@@ -318,7 +318,7 @@
   width: fit-content;
   margin: 15px auto;
   color: #1a1b1f;
-  font-size: 64px;
+  font-size: var(--icon-type-xl);
   line-height: 88px;
   font-weight: 400;
   text-align: center;
@@ -351,7 +351,7 @@
   margin: 0 auto;
 }
 .projectHeroTitle {
-  font-size: 48px;
+  font-size: var(--fs-display-lg);
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -0.02em;
@@ -368,7 +368,7 @@
   color: #3b82f6;
 }
 .projectHeroSubtitle {
-  font-size: 16px;
+  font-size: var(--fs-body);
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.85;
   max-width: 60ch;
@@ -379,7 +379,7 @@
   align-items: center;
   gap: 8px;
   color: rgba(0, 0, 0, 0.45);
-  font-size: 13px;
+  font-size: var(--fs-meta);
   font-family:
     var(--font-ibm-plex-mono),
     var(--font-noto-sans-sc),
@@ -434,7 +434,7 @@
   margin: 0 auto;
 }
 .positioningLabel {
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -448,7 +448,7 @@
   align-items: start;
 }
 .positioningHeading {
-  font-size: 26px;
+  font-size: var(--fs-title);
   font-weight: 500;
   line-height: 1.65;
   padding-top: 24px;
@@ -465,7 +465,7 @@
 .positioningBody {
   line-height: 1.8;
   color: #444;
-  font-size: 16px;
+  font-size: var(--fs-body);
 }
 .positioningBody p:first-child {
   margin-top: 0;
@@ -482,7 +482,7 @@
   margin: 40px 0 24px;
 }
 .protoEvidenceLabel {
-  font-size: 12px;
+  font-size: var(--fs-caption);
   font-weight: 500;
   color: #aaa;
   text-transform: uppercase;
@@ -501,7 +501,7 @@
 }
 .protoEvidenceCaption {
   margin: 20px 0 24px;
-  font-size: 12px;
+  font-size: var(--fs-caption);
   color: rgba(255, 255, 255, 0.55);
   letter-spacing: 0.04em;
   text-align: center;
@@ -527,7 +527,7 @@
   border-radius: 10px;
   padding: 10px 14px;
   color: rgba(255, 255, 255, 0.85);
-  font-size: 13px;
+  font-size: var(--fs-meta);
   line-height: 1.5;
   text-align: center;
   max-width: 180px;
@@ -535,7 +535,7 @@
 }
 .protoAnnotation strong {
   color: #60a5fa;
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 500;
 }
 .protoAnnotationTop {
@@ -577,7 +577,7 @@
   text-align: left;
 }
 .protoIntroTitle {
-  font-size: 26px;
+  font-size: var(--fs-title);
   font-weight: 500;
   color: #333;
   line-height: 1.65;
@@ -585,7 +585,7 @@
   margin: 0;
 }
 .protoIntroBody {
-  font-size: 16px;
+  font-size: var(--fs-body);
   color: #555;
   line-height: 1.8;
   margin: 0;
@@ -608,7 +608,7 @@
   border-radius: 50%;
   background: #fee2e2;
   color: #dc2626;
-  font-size: 11px;
+  font-size: var(--fs-xs);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -616,7 +616,7 @@
   margin-top: 1px;
 }
 .protoProblemText {
-  font-size: 13px;
+  font-size: var(--fs-meta);
   color: #555;
   line-height: 1.55;
 }
@@ -634,14 +634,14 @@
   border: 1px solid #3b82f6;
   border-radius: 6px;
   color: #3b82f6;
-  font-size: 13px;
+  font-size: var(--fs-meta);
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1.4;
   margin: 0 0 10px;
 }
 .protoAreas p {
-  font-size: 16px;
+  font-size: var(--fs-body);
   color: #555;
   line-height: 1.75;
   margin: 0 0 8px;
@@ -652,7 +652,7 @@
 .protoAreas ul {
   margin: 0;
   padding-left: 18px;
-  font-size: 16px;
+  font-size: var(--fs-body);
   color: #555;
   line-height: 1.85;
   font-weight: 400;
@@ -688,7 +688,7 @@
   border: 1px solid #3b82f6;
   border-radius: 6px;
   color: #3b82f6;
-  font-size: 13px;
+  font-size: var(--fs-meta);
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1.4;
@@ -696,7 +696,7 @@
 }
 .directionPanelHeader p {
   max-width: 620px;
-  font-size: 16px;
+  font-size: var(--fs-body);
   color: #3b82f6;
   font-weight: 500;
   letter-spacing: 0.06em;
@@ -715,7 +715,7 @@
 .directionCard p {
   width: 176px;
   color: rgba(255, 255, 255, 0.68);
-  font-size: 14px;
+  font-size: var(--fs-label);
   line-height: 1.55;
   text-align: center;
   margin: 0;
@@ -765,7 +765,7 @@
   justify-content: center;
   padding: 0 12px;
   color: #f7f1ea;
-  font-size: 18px;
+  font-size: var(--fs-title-s);
   font-weight: 500;
   line-height: 1.3;
   text-align: center;
@@ -782,7 +782,7 @@
   box-sizing: border-box;
 }
 .goalCardLabel {
-  font-size: 13px;
+  font-size: var(--fs-meta);
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -808,13 +808,13 @@
   padding: 0 16px;
 }
 .goalCardTitle {
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 500;
   color: #e8e8ec;
   line-height: 1.4;
 }
 .goalCardDesc {
-  font-size: 16px;
+  font-size: var(--fs-body);
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.85;
 }
@@ -837,7 +837,7 @@
   margin: 0 auto;
 }
 .challengeLabel {
-  font-size: 13px;
+  font-size: var(--fs-meta);
   font-weight: 500;
   color: #3b82f6;
   text-transform: uppercase;
@@ -850,13 +850,13 @@
   gap: 28px;
 }
 .challengeIcon {
-  font-size: 56px;
+  font-size: var(--icon-type-md);
   line-height: 1;
   flex-shrink: 0;
   margin-top: 6px;
 }
 .challengeHeadline {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: var(--fs-title-fluid);
   font-weight: 500;
   color: #fff;
   line-height: 1.5;
@@ -864,7 +864,7 @@
   margin: 0;
 }
 .challengeBody {
-  font-size: 1rem;
+  font-size: var(--fs-body);
   color: #888;
   line-height: 1.8;
   max-width: 580px;
@@ -897,13 +897,13 @@
   max-width: 940px;
 }
 .chapterIcon {
-  font-size: 96px;
+  font-size: var(--icon-type-2xl);
   line-height: 1;
   display: inline-block;
   text-align: left;
 }
 .chapterLabel {
-  font-size: 12px;
+  font-size: var(--fs-caption);
   font-weight: 500;
   color: #3b82f6;
   text-transform: uppercase;
@@ -911,7 +911,7 @@
   margin-bottom: 6px;
 }
 .chapterTitle {
-  font-size: 28px;
+  font-size: var(--fs-title-l);
   font-weight: 500;
   color: #f7f7f7;
   line-height: 1.3;
@@ -919,7 +919,7 @@
 }
 .chapterDesc {
   color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(28px, 2.8vw, 38px);
+  font-size: var(--fs-title-l-fluid);
   line-height: 1.42;
   font-weight: 400;
   margin: 0;
@@ -948,11 +948,11 @@
   gap: 24px;
 }
 .closingNoteIcon {
-  font-size: 96px;
+  font-size: var(--icon-type-2xl);
   line-height: 1;
 }
 .closingNoteText {
-  font-size: clamp(22px, 2.2vw, 32px);
+  font-size: var(--fs-title-fluid);
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.55;
   font-weight: 400;
@@ -979,7 +979,7 @@
   margin-bottom: 40px;
 }
 .narrativeHeadline {
-  font-size: 26px;
+  font-size: var(--fs-title);
   font-weight: 500;
   line-height: 1.65;
   letter-spacing: -0.01em;
@@ -994,7 +994,7 @@
   font-style: italic;
 }
 .narrativeBody {
-  font-size: 1rem;
+  font-size: var(--fs-body);
   color: #444;
   line-height: 1.8;
 }
@@ -1010,7 +1010,7 @@
   border: 1px solid #3b82f6;
   border-radius: 6px;
   color: #3b82f6;
-  font-size: 13px;
+  font-size: var(--fs-meta);
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1.4;
@@ -1019,7 +1019,7 @@
 .narrativeDesignPoints ul {
   margin: 0;
   padding-left: 18px;
-  font-size: 16px;
+  font-size: var(--fs-body);
   color: #1a1a1a;
   line-height: 1.75;
   font-weight: 400;
@@ -1041,7 +1041,7 @@
   display: inline-block;
   margin-bottom: 8px;
   color: #3b82f6;
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 500;
   letter-spacing: 0.04em;
 }
@@ -1049,7 +1049,7 @@
 .controlExplorationHeader p {
   margin: 0;
   color: #555;
-  font-size: 16px;
+  font-size: var(--fs-body);
   line-height: 1.8;
 }
 
@@ -1074,7 +1074,7 @@
   border-radius: 6px;
   background: #f3f6fa;
   color: #9aa4b2;
-  font-size: 13px;
+  font-size: var(--fs-meta);
 }
 
 .controlExplorationPlaceholderDark {
@@ -1085,14 +1085,14 @@
 .controlExplorationCard h4 {
   margin: 14px 0 6px;
   color: #222;
-  font-size: 16px;
+  font-size: var(--fs-body);
   font-weight: 500;
 }
 
 .controlExplorationCard p {
   margin: 0;
   color: #5f6673;
-  font-size: 13px;
+  font-size: var(--fs-meta);
   line-height: 1.65;
 }
 
@@ -1114,7 +1114,7 @@
 .explorationCard h4 {
   margin: 0 0 12px;
   color: #1a1a1a;
-  font-size: 1rem;
+  font-size: var(--fs-body);
   font-weight: 500;
   line-height: 1.4;
 }
@@ -1122,7 +1122,7 @@
 .explorationCard p {
   margin: 0;
   color: #555;
-  font-size: 16px;
+  font-size: var(--fs-body);
   line-height: 1.8;
 }
 
@@ -1133,7 +1133,7 @@
   gap: 28px;
 }
 .beforeAfterLabel {
-  font-size: 0.75rem;
+  font-size: var(--fs-caption);
   font-weight: 500;
   color: #999;
   text-transform: uppercase;
@@ -1141,7 +1141,7 @@
   margin-bottom: 8px;
 }
 .afterLabel {
-  font-size: 0.75rem;
+  font-size: var(--fs-caption);
   font-weight: 500;
   color: #3b82f6;
   text-transform: uppercase;
@@ -1170,13 +1170,13 @@
   display: block;
 }
 .iterationCaption {
-  font-size: 12px;
+  font-size: var(--fs-caption);
   color: #888;
   text-align: center;
   margin-top: 8px;
 }
 .iterationFinalCaption {
-  font-size: 12px;
+  font-size: var(--fs-caption);
   font-weight: 500;
   color: #3b82f6;
   text-align: center;
@@ -1196,10 +1196,10 @@
   justify-content: center;
   gap: 8px;
   color: #bbb;
-  font-size: 1rem;
+  font-size: var(--fs-body);
 }
 .assetPlaceholderLabel {
-  font-size: 12px;
+  font-size: var(--fs-caption);
   color: #ccc;
 }
 
@@ -1276,14 +1276,14 @@
   border-radius: 8px;
   background: #f0f5ff;
   color: #4b5563;
-  font-size: 14px;
+  font-size: var(--fs-label);
   line-height: 1.6;
 }
 
 .layoutPrinciples strong {
   display: block;
   color: #3b82f6;
-  font-size: 12px;
+  font-size: var(--fs-caption);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -1292,7 +1292,7 @@
   max-width: 760px;
   margin: 0 0 22px;
   color: #555;
-  font-size: 16px;
+  font-size: var(--fs-body);
   line-height: 1.85;
 }
 
@@ -1343,16 +1343,16 @@
   }
 
   .chapterIcon {
-    font-size: 58px;
+    font-size: var(--icon-type-lg);
   }
 
   .chapterDesc {
-    font-size: 22px;
+    font-size: var(--fs-title-m);
     line-height: 1.44;
   }
 
   .projectHeroTitle {
-    font-size: 28px;
+    font-size: var(--fs-title-l);
   }
 
   .positioningSection {
@@ -1366,20 +1366,20 @@
   }
 
   .positioningLabel {
-    font-size: 14px;
+    font-size: var(--fs-label);
     margin-bottom: 8px;
   }
 
   .positioningHeading,
   .protoIntroTitle {
-    font-size: 26px;
+    font-size: var(--fs-title);
     line-height: 1.5;
     padding-top: 12px;
     margin-bottom: 4px;
   }
 
   .positioningBody {
-    font-size: 15px;
+    font-size: var(--fs-body-s);
     color: #777;
   }
 
@@ -1390,7 +1390,7 @@
   }
 
   .positioningBody .roleLabel {
-    font-size: 12px;
+    font-size: var(--fs-caption);
     font-weight: 500;
     letter-spacing: 0.03em;
     color: #4a5568;
@@ -1417,7 +1417,7 @@
   }
 
   .protoIntroBody {
-    font-size: 15px;
+    font-size: var(--fs-body-s);
     line-height: 1.75;
     color: #777;
   }
@@ -1427,7 +1427,7 @@
   }
 
   .protoAreas p {
-    font-size: 15px;
+    font-size: var(--fs-body-s);
     line-height: 1.75;
     color: #777;
   }
@@ -1450,17 +1450,17 @@
   }
 
   .contact h2 {
-    font-size: 22px;
+    font-size: var(--fs-title-m);
     line-height: 1.4;
   }
 
   .contact p {
-    font-size: 15px;
+    font-size: var(--fs-body-s);
     line-height: 1.65;
   }
 
   .contactLink {
-    font-size: 22px;
+    font-size: var(--fs-title-m);
     line-height: 1.35;
     margin: 12px auto;
   }

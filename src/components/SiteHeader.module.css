@@ -31,7 +31,7 @@
     var(--font-noto-sans-sc),
     ui-monospace,
     monospace;
-  font-size: 0.8125rem;
+  font-size: var(--fs-meta);
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1;
@@ -65,7 +65,7 @@
 
 .tabLocale {
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: var(--fs-caption);
   font-weight: 400;
 }
 
