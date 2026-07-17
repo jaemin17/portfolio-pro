@@ -87,13 +87,21 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             )}
           </p>
           <div className={styles.headerCta}>
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element -- static export: manual srcset replaces next/image */}
+            <img
               src={assetPath("/images/selfly0/hero.webp")}
+              srcSet={[
+                `${assetPath("/images/selfly0/hero-750w.webp")} 750w`,
+                `${assetPath("/images/selfly0/hero-1200w.webp")} 1200w`,
+                `${assetPath("/images/selfly0/hero.webp")} 1664w`,
+              ].join(", ")}
+              sizes="(max-width: 980px) 100vw, 940px"
               alt="Selfly app preview showing Today, My Journal, and Review screens"
-              width={1500}
-              height={844}
+              width={1664}
+              height={899}
               className={styles.appPreviewImage}
-              priority
+              fetchPriority="high"
+              decoding="async"
             />
             <div className={styles.meta}>
               <span className={styles.metaItem}>2025–2026</span>

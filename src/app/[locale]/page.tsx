@@ -58,7 +58,13 @@ function ToolProjectCard({
     <img
       className={styles.toolVideo}
       src={assetSrc(item.imageSrc)}
+      srcSet={item.imageVariants
+        ?.map((variant) => `${assetSrc(variant.src)} ${variant.width}w`)
+        .join(", ")}
+      sizes={item.imageVariants ? "(max-width: 480px) 100vw, 416px" : undefined}
       alt={item.title}
+      loading="lazy"
+      decoding="async"
     />
   ) : null;
 
@@ -122,6 +128,8 @@ function BuildingItem({
         alt={item.iconAlt}
         width={72}
         height={72}
+        loading="lazy"
+        decoding="async"
       />
       <div className={styles.buildingText}>
         <p className={styles.buildingTitle}>{item.title}</p>

@@ -52,13 +52,20 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           </p>
           <div className={selflyStyles.headerCta}>
             <div className={styles.projectHeroCoverFrame}>
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element -- static export: manual srcset replaces next/image */}
+              <img
                 src={assetPath(modelEditorAssets.previewMaximized)}
+                srcSet={[
+                  `${assetPath("/images/model-editor/hero-editor-1-750w.webp")} 750w`,
+                  `${assetPath(modelEditorAssets.previewMaximized)} 1440w`,
+                ].join(", ")}
+                sizes="(max-width: 980px) 100vw, 940px"
                 alt={tStr(locale, "Model Editor 界面预览", "Model Editor interface preview")}
                 width={1440}
                 height={778}
                 className={styles.projectHeroCoverImage}
-                priority
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
             <div className={selflyStyles.meta}>

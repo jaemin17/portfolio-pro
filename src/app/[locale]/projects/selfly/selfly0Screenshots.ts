@@ -9,7 +9,7 @@ import type { Locale } from "@/i18n/config";
 export const selfly0Screenshots = {
   exploreCreate: {
     before: {
-      zh: "/images/selfly0/explore-create-before-zh.png",
+      zh: "/images/selfly0/explore-create-before-zh.webp",
       en: null,
       legacy: "/images/selfly0/explore-create-before.webp",
     },

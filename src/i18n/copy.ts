@@ -25,6 +25,8 @@ export type ToolProjectItem = {
   videoSrc?: string;
   posterSrc?: string;
   imageSrc?: string;
+  /** Optional narrower variants for responsive loading, e.g. [{ src, width }] */
+  imageVariants?: { src: string; width: number }[];
   /** Outer frame color behind the media */
   frameColor?: string;
   /** When false, media sits flush with no colored frame */
@@ -121,6 +123,23 @@ const visualMedia = {
   arAirbnb: "/images/visual/ar-airbnb-scene-1.webp",
 } as const;
 
+/* Home cards render at ≤416 CSS px (--content-max), so the 832w variant
+   covers 2x displays; the 1440w original is only needed beyond that. */
+const visualImageVariants = {
+  automotive: [
+    { src: "/images/visual/desay-sv-hero-832w.webp", width: 832 },
+    { src: "/images/visual/desay-sv-hero.webp", width: 1440 },
+  ],
+  game: [
+    { src: "/images/visual/cosmic-blaze-hero-832w.webp", width: 832 },
+    { src: "/images/visual/cosmic-blaze-hero.webp", width: 1440 },
+  ],
+  arAirbnb: [
+    { src: "/images/visual/ar-airbnb-scene-1-832w.webp", width: 832 },
+    { src: "/images/visual/ar-airbnb-scene-1.webp", width: 1440 },
+  ],
+} as const;
+
 const visualPosters = {
   manufacturing: "/images/posters/visual/immersive.webp",
   biomedical: "/images/posters/visual/highmodes.webp",
@@ -213,12 +232,14 @@ const copy: Record<Locale, HomeCopy> = {
           description:
             "车载娱乐与控制系统界面，包含驾驶、音乐、收音机和车辆设置等功能模块。",
           imageSrc: visualMedia.automotive,
+          imageVariants: [...visualImageVariants.automotive],
           framed: false,
         },
         {
           title: "游戏概念",
           description: "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
           imageSrc: visualMedia.game,
+          imageVariants: [...visualImageVariants.game],
           framed: false,
         },
         {
@@ -226,6 +247,7 @@ const copy: Record<Locale, HomeCopy> = {
           description:
             "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
           imageSrc: visualMedia.arAirbnb,
+          imageVariants: [...visualImageVariants.arAirbnb],
           framed: false,
         },
       ],
@@ -325,12 +347,14 @@ const copy: Record<Locale, HomeCopy> = {
           description:
             "In-vehicle entertainment and control interfaces covering driving, music, radio, and vehicle settings.",
           imageSrc: visualMedia.automotive,
+          imageVariants: [...visualImageVariants.automotive],
           framed: false,
         },
         {
           title: "Game Concept",
           description: "UI visual design for a VR/AR desk-device experience game.",
           imageSrc: visualMedia.game,
+          imageVariants: [...visualImageVariants.game],
           framed: false,
         },
         {
@@ -338,6 +362,7 @@ const copy: Record<Locale, HomeCopy> = {
           description:
             "AR experience design that blends digital information into real lodging spaces.",
           imageSrc: visualMedia.arAirbnb,
+          imageVariants: [...visualImageVariants.arAirbnb],
           framed: false,
         },
       ],
