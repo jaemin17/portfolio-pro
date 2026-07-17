@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import { LazyAutoVideo } from "@/components/LazyAutoVideo";
 import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/paths";
@@ -390,14 +391,14 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
 
               <div className={styles.protoEvidenceFrame}>
                 <div className={styles.protoEvidenceCanvas}>
-                  <video
+                  <LazyAutoVideo
                     className={styles.protoEvidenceImage}
                     src={assetPath(modelEditorAssets.operationVideo)}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="auto"
+                    aria-label={tStr(
+                      locale,
+                      "模型编辑器操作归属演示",
+                      "Model editor operation ownership demo",
+                    )}
                   />
                 </div>
               </div>
@@ -540,14 +541,10 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         sizes="(max-width: 840px) 100vw, 840px"
                       />
                     ) : (
-                      <video
+                      <LazyAutoVideo
                         className={styles.video}
                         src={assetPath(demo.video!)}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="auto"
+                        aria-label={String(demo.headline)}
                       />
                     )}
                   </div>

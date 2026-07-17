@@ -34,7 +34,7 @@ export function LazyVideo({
           observer.disconnect();
         }
       },
-      { rootMargin: "700px 0px", threshold: 0.01 },
+      { rootMargin: "250px 0px", threshold: 0.01 },
     );
 
     observer.observe(element);

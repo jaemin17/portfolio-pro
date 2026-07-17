@@ -59,12 +59,6 @@ a {
   text-decoration: none;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  body {
-    cursor: none;
-  }
-}
-
 button {
   color: inherit;
 }

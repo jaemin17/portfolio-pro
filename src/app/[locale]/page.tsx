@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
-import { CursorLabel } from "@/components/CursorLabel";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { LazyVideo } from "@/components/LazyVideo";
 import { RevealOnView } from "@/components/RevealOnView";
@@ -69,8 +68,7 @@ function ToolProjectCard({
   ) : null;
 
   const cardBody = (
-    <CursorLabel
-      label="View"
+    <div
       className={frameClass}
       style={
         framed && item.frameColor
@@ -79,7 +77,7 @@ function ToolProjectCard({
       }
     >
       {media}
-    </CursorLabel>
+    </div>
   );
 
   return (

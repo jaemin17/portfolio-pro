@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Noto_Sans_SC } from "next/font/google";
 import localFont from "next/font/local";
-import { CustomCursor } from "@/components/CustomCursor";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -22,7 +21,7 @@ const geistSans = localFont({
 });
 
 const ibmPlexMono = IBM_Plex_Mono({
-  weight: ["400", "500"],
+  weight: "400",
   subsets: ["latin"],
   variable: "--font-ibm-plex-mono",
   display: "swap",
@@ -53,7 +52,6 @@ export default function RootLayout({
     >
       <body>
         {children}
-        <CustomCursor />
       </body>
     </html>
   );

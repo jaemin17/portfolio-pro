@@ -1,37 +1,50 @@
 "use client";
 
-import { Warp } from "@paper-design/shaders-react";
+import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 import styles from "./HeroShaderBackground.module.css";
 
-/** Transparent → soft white → dense white, layered over CSS sky. */
-const CLOUD_COLORS = [
-  "#ffffff00",
-  "#ffffff00",
-  "#ffffff40",
-  "#ffffffcc",
-  "#ffffff",
-  "#ffffff",
-] as const;
+const HeroWarpClouds = dynamic(
+  () =>
+    import("./HeroWarpClouds").then((module) => module.HeroWarpClouds),
+  { ssr: false },
+);
+
+function canUseHeroShader(): boolean {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return false;
+  }
+
+  const connection = (
+    navigator as Navigator & {
+      connection?: { saveData?: boolean };
+    }
+  ).connection;
+  if (connection?.saveData) {
+    return false;
+  }
+
+  try {
+    const canvas = document.createElement("canvas");
+    const gl =
+      canvas.getContext("webgl") ?? canvas.getContext("experimental-webgl");
+    return Boolean(gl);
+  } catch {
+    return false;
+  }
+}
 
 export function HeroShaderBackground() {
+  const [enableShader, setEnableShader] = useState(false);
+
+  useEffect(() => {
+    setEnableShader(canUseHeroShader());
+  }, []);
+
   return (
     <div className={styles.background} aria-hidden="true">
       <div className={styles.sky} />
-      <Warp
-        className={styles.warpClouds}
-        colors={[...CLOUD_COLORS]}
-        speed={0.7}
-        scale={1}
-        rotation={0}
-        proportion={0.3}
-        softness={0.9}
-        distortion={0.16}
-        swirl={0.45}
-        swirlIterations={5}
-        shapeScale={0.08}
-        shape="edge"
-        fit="cover"
-      />
+      {enableShader ? <HeroWarpClouds /> : null}
       <div className={styles.skyLighten} aria-hidden="true" />
     </div>
   );
