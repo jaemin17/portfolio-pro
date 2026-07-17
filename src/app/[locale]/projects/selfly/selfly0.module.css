@@ -56,7 +56,7 @@
 
 .subtitle {
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   max-width: 75ch;
 }
@@ -664,7 +664,7 @@
 .caseLead blockquote {
   margin-top: 20px;
   color: var(--text-primary);
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   font-weight: 500;
@@ -885,7 +885,7 @@
 .selfly0ContactClosing {
   margin: 0 0 1.5rem;
   color: var(--text-secondary);
-  font-size: 1.25rem;
+  font-size: 18px;
 }
 
 .selfly0ContactBack {
@@ -893,7 +893,7 @@
   align-items: center;
   gap: 0.35rem;
   color: var(--text-secondary);
-  font-size: 0.9375rem;
+  font-size: 15px;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -1089,7 +1089,7 @@
 
 .beforeAfterCard p {
   color: var(--text-primary);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
   opacity: 0.92;
 }
@@ -1328,7 +1328,7 @@
 }
 
 .todayTop3LabelPhase {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: #ffbc6e;
@@ -1743,7 +1743,7 @@
 .exploreRecordContainersTitle {
   margin: 0;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.35;
 }
@@ -1895,7 +1895,7 @@
 
 .exploreTemplatesSwitcherTitle {
   margin: 0 0 16px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #e8e8ec;
@@ -2001,7 +2001,7 @@
 
 .selfly0EvidenceTitle {
   margin: 0 0 6px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: #e8e8ec;
@@ -2341,7 +2341,7 @@
 
 .diaryEmojiEvidence .selfly0EvidenceTitle {
   margin: 0 0 24px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: #e8e8ec;
@@ -2885,7 +2885,7 @@
 .iconDesignPhaseCopy strong {
   display: block;
   margin-bottom: 6px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: #e8e8ec;
 }
@@ -3343,7 +3343,7 @@
 
 .mergedProjectHeader p {
   color: var(--fg);
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.75;
   opacity: 0.84;
   max-width: 820px;
@@ -3380,7 +3380,7 @@
 
 .mergedContentGrid h3 {
   color: var(--text-secondary);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.45;
 }
@@ -3450,7 +3450,7 @@
 }
 
 .mergedStrategyCard p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
 }
 
@@ -3572,7 +3572,7 @@
 
 .challengeNode b {
   color: var(--text-primary);
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.25;
 }
 
@@ -3649,14 +3649,14 @@
 
 .shiftBeforeAfter span {
   color: var(--text-primary);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.55;
   font-weight: 500;
 }
 
 .shiftBeforeAfter strong {
   color: #ff8b73;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1;
 }
 
@@ -3678,7 +3678,7 @@
 }
 
 .shiftCompactHeader b {
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: -0.02em;
 }
 
@@ -3708,7 +3708,7 @@
   transform: translateY(-50%);
   color: #ff8b73;
   font-style: normal;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   z-index: 2;
 }
@@ -3844,7 +3844,7 @@
 
 .blankForm span {
   color: var(--text-primary);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -3870,7 +3870,7 @@
   place-items: center;
   padding: 12px;
   color: var(--text-primary);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
   border-color: #ff8b73;
@@ -4147,7 +4147,7 @@
   }
 
   .featuredHero .title {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .projectOneHero .title {
@@ -4165,7 +4165,7 @@
 
   .featuredHero .titleZh,
   .projectOneHero .titleZh {
-    font-size: 23px;
+    font-size: 26px;
     line-height: 1.35;
     max-width: 12em;
   }
@@ -4240,7 +4240,7 @@
   .selfly0PositioningHeading,
   .selfly0StructureHeading,
   .caseText .selfly0StructureHeading {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.45;
     padding-top: 4px;
     margin-bottom: 16px;
@@ -4347,7 +4347,7 @@
   }
 
   .selfly0ChapterIntro p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.48;
   }
 
@@ -4951,7 +4951,7 @@
   }
 
   .caseLead blockquote {
-    font-size: 21px;
+    font-size: 22px;
   }
 
   .visualCaption {
@@ -5000,7 +5000,7 @@
   }
 
   .shiftCompactHeader b {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .beforeCluster,
@@ -5074,7 +5074,7 @@
   }
 
   .titleZh {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .evidenceHero .meta {
@@ -5224,7 +5224,7 @@
 }
 
 .v2SubLabel {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-primary);
 }

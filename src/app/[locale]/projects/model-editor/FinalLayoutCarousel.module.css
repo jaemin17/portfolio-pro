@@ -76,7 +76,7 @@
 
 .caption {
   margin: 14px 0 0;
-  font-size: 0.78rem;
+  font-size: 12px;
   font-weight: 500;
   color: rgba(30, 41, 59, 0.55);
   letter-spacing: 0.04em;
@@ -85,7 +85,7 @@
 
 .stackCaption {
   margin: 0 0 12px;
-  font-size: 0.78rem;
+  font-size: 12px;
   color: rgba(30, 41, 59, 0.45);
   letter-spacing: 0.04em;
   text-align: center;
