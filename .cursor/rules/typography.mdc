@@ -48,8 +48,7 @@ Prefer `var(--fs-*)` / `var(--icon-type-*)`. Do **not** invent in-between sizes.
 | `--fs-title-m` | 22 | Section / narrative headlines |
 | `--fs-title` | 26 | Primary chapter headlines |
 | `--fs-title-l` | 28 | Larger chapter titles |
-| `--fs-display-zh` | 38 | Case hero (Chinese) |
-| `--fs-display` | 42 | Case hero (English) |
+| `--fs-display` | 42 | Case hero titles |
 | `--fs-display-lg` | 48 | Large fixed hero |
 
 Fluid (display / large titles only):

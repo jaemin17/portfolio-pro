@@ -20,22 +20,6 @@
   font-size: var(--fs-body);
 }
 
-.titleSection {
-  padding: 60px 140px 40px;
-}
-
-.titleSection h1 {
-  font-size: var(--fs-display-fluid);
-  font-weight: 400;
-  margin: 0 0 8px;
-  color: #1a1a1a;
-}
-
-.titleSection .subtitle {
-  font-size: var(--fs-body);
-  color: #666;
-}
-
 /* Overview Section - content aligned to right side */
 .section {
   padding: 60px 30px 80px;
@@ -279,124 +263,6 @@
   box-sizing: border-box;
 }
 
-/* Contact */
-.contact {
-  margin: 100px auto 0;
-  padding: 0 24px 200px;
-  text-align: center;
-  box-sizing: border-box;
-}
-.contactDivider {
-  margin: 0 calc(50% - 50vw) 64px;
-  padding: 0;
-  border: 0;
-  border-top: 1px dashed rgba(17, 18, 23, 0.16);
-  height: 0;
-  width: 100vw;
-  max-width: 100vw;
-}
-
-.contact h2 {
-  margin: 10px 0;
-  color: #1a1b1f;
-  font-size: var(--fs-title-l);
-  line-height: 46px;
-  font-weight: 400;
-}
-
-.contact p {
-  margin: 0 0 10px;
-  color: #171614;
-  opacity: 0.88;
-  font-size: var(--fs-body);
-  line-height: 1.85;
-  font-weight: 400;
-}
-
-.contactLink {
-  display: inline-block;
-  width: fit-content;
-  margin: 15px auto;
-  color: #1a1b1f;
-  font-size: var(--icon-type-xl);
-  line-height: 88px;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: opacity 0.2s;
-}
-
-.contactLink:hover {
-  opacity: 0.8;
-}
-
-.contactLink:active {
-  opacity: 0.7;
-}
-
-.contact :global(.buttonSticker) {
-  display: flex;
-  width: fit-content;
-  margin: 8px auto 0;
-}
-
-/* ─── Project Hero (like selfly0 featuredHero) ─────────── */
-.projectHero {
-  padding: 72px 30px 0;
-  text-align: center;
-}
-.projectHeroInner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.projectHeroTitle {
-  font-size: var(--fs-display-lg);
-  font-weight: 500;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
-  color: rgba(0, 0, 0, 0.9);
-  max-width: 720px;
-  margin: 0 auto 30px;
-}
-.projectHeroTitleLight {
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.75);
-}
-.projectHeroTitleHighlight {
-  font-style: italic;
-  color: #3b82f6;
-}
-.projectHeroSubtitle {
-  font-size: var(--fs-body);
-  color: rgba(0, 0, 0, 0.7);
-  line-height: 1.85;
-  max-width: 60ch;
-  margin: 0 auto;
-}
-.projectHeroMeta {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: rgba(0, 0, 0, 0.45);
-  font-size: var(--fs-meta);
-  font-family:
-    var(--font-ibm-plex-mono),
-    var(--font-noto-sans-sc),
-    ui-monospace,
-    monospace;
-}
-.projectHeroMetaDot {
-  opacity: 0.65;
-}
-.projectHeroMedia {
-  margin-top: 52px;
-  margin-bottom: 96px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 28px;
-}
 .projectHeroCoverFrame {
   width: min(100%, 940px);
   border-radius: 22px;
@@ -608,7 +474,7 @@
   border-radius: 50%;
   background: #fee2e2;
   color: #dc2626;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-caption);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -825,143 +691,6 @@
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   font-weight: inherit;
-}
-
-/* ─── Design Challenge (dark section) ─────────────────── */
-.challengeSection {
-  padding: 80px 30px;
-  background: #1a1a1a;
-}
-.challengeInner {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-.challengeLabel {
-  font-size: var(--fs-meta);
-  font-weight: 500;
-  color: #3b82f6;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 16px;
-}
-.challengeRow {
-  display: flex;
-  align-items: flex-start;
-  gap: 28px;
-}
-.challengeIcon {
-  font-size: var(--icon-type-md);
-  line-height: 1;
-  flex-shrink: 0;
-  margin-top: 6px;
-}
-.challengeHeadline {
-  font-size: var(--fs-title-fluid);
-  font-weight: 500;
-  color: #fff;
-  line-height: 1.5;
-  max-width: 680px;
-  margin: 0;
-}
-.challengeBody {
-  font-size: var(--fs-body);
-  color: #888;
-  line-height: 1.8;
-  max-width: 580px;
-  margin: 28px 0 0 84px;
-}
-
-/* ─── Chapter Intro (selfly0 dark style) ───────────────── */
-.chapterIntro {
-  background: #000;
-  color: #f7f7f7;
-  margin: 0;
-}
-.chapterIntroInner {
-  max-width: 1200px;
-  min-height: 360px;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-}
-.chapterCopy {
-  display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
-  align-items: center;
-  gap: 28px;
-  width: 100%;
-  max-width: 940px;
-}
-.chapterIcon {
-  font-size: var(--icon-type-2xl);
-  line-height: 1;
-  display: inline-block;
-  text-align: left;
-}
-.chapterLabel {
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  color: #3b82f6;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 6px;
-}
-.chapterTitle {
-  font-size: var(--fs-title-l);
-  font-weight: 500;
-  color: #f7f7f7;
-  line-height: 1.3;
-  margin: 0 0 10px;
-}
-.chapterDesc {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: var(--fs-title-l-fluid);
-  line-height: 1.42;
-  font-weight: 400;
-  margin: 0;
-  max-width: 760px;
-}
-
-/* ─── Closing Note ─────────────────────────────────────── */
-.closingNote {
-  background: #000;
-  color: #f7f7f7;
-  margin: 0;
-}
-.closingNoteInner {
-  max-width: 1200px;
-  min-height: 280px;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.closingNoteCopy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-.closingNoteIcon {
-  font-size: var(--icon-type-2xl);
-  line-height: 1;
-}
-.closingNoteText {
-  font-size: var(--fs-title-fluid);
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.55;
-  font-weight: 400;
-  margin: 0;
-  text-align: center;
-}
-.closingNoteText strong {
-  color: #fff;
-  font-weight: 500;
 }
 
 /* ─── Narrative Section ────────────────────────────────── */
@@ -1333,28 +1062,6 @@
     grid-template-columns: 1fr;
   }
 
-  .challengeBody {
-    margin-left: 0;
-  }
-
-  .chapterCopy {
-    grid-template-columns: 64px minmax(0, 1fr);
-    gap: 20px;
-  }
-
-  .chapterIcon {
-    font-size: var(--icon-type-lg);
-  }
-
-  .chapterDesc {
-    font-size: var(--fs-title-m);
-    line-height: 1.44;
-  }
-
-  .projectHeroTitle {
-    font-size: var(--fs-title-l);
-  }
-
   .positioningSection {
     padding: 0 20px;
     margin: 32px auto 40px;
@@ -1379,7 +1086,7 @@
   }
 
   .positioningBody {
-    font-size: var(--fs-body-s);
+    font-size: var(--fs-body);
     color: #777;
   }
 
@@ -1417,7 +1124,7 @@
   }
 
   .protoIntroBody {
-    font-size: var(--fs-body-s);
+    font-size: var(--fs-body);
     line-height: 1.75;
     color: #777;
   }
@@ -1427,7 +1134,7 @@
   }
 
   .protoAreas p {
-    font-size: var(--fs-body-s);
+    font-size: var(--fs-body);
     line-height: 1.75;
     color: #777;
   }
@@ -1438,31 +1145,6 @@
 
   .protoProblems {
     grid-template-columns: 1fr;
-  }
-
-  .contact {
-    margin: 120px auto 0;
-    padding: 0 20px 120px;
-  }
-
-  .contactDivider {
-    margin-bottom: 48px;
-  }
-
-  .contact h2 {
-    font-size: var(--fs-title-m);
-    line-height: 1.4;
-  }
-
-  .contact p {
-    font-size: var(--fs-body-s);
-    line-height: 1.65;
-  }
-
-  .contactLink {
-    font-size: var(--fs-title-m);
-    line-height: 1.35;
-    margin: 12px auto;
   }
 
   .directionCards {

@@ -29,39 +29,6 @@ function tStr(locale: Locale, zh: string, en: string): string {
   return locale === "en" ? en : zh;
 }
 
-function ChapterIntro({
-  id,
-  icon,
-  title,
-  children,
-}: {
-  id: string;
-  icon: string;
-  title: string;
-  children: ReactNode;
-}) {
-  return (
-    <section
-      id={id}
-      className={styles.selfly0ChapterIntro}
-      aria-labelledby={`selfly0-chapter-${id}`}
-    >
-      <div className={styles.selfly0ChapterInner}>
-        <div className={styles.selfly0ChapterCopy}>
-          <span className={styles.selfly0ChapterIcon} aria-hidden="true">
-            {icon}
-          </span>
-          <div>
-            <h2 id={`selfly0-chapter-${id}`}>{title}</h2>
-            <p>{children}</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  );
-}
-
 export default async function Selfly0Page({ params }: Selfly0PageProps) {
   const { locale: localeParam } = await params;
   if (!isLocale(localeParam)) notFound();
