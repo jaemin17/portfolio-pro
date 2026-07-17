@@ -2120,7 +2120,7 @@
   .selfly0PositioningLabel {
     font-size: var(--fs-label);
     margin-bottom: 8px;
-    text-align: center;
+    text-align: left;
   }
 
   .selfly0PositioningHeading, .selfly0StructureHeading, .caseText .selfly0StructureHeading {
@@ -2128,7 +2128,7 @@
     line-height: 1.45;
     padding-top: 4px;
     margin-bottom: 16px;
-    text-align: center;
+    text-align: left;
   }
 
   .caseText h2 {
