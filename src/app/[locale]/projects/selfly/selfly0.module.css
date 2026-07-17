@@ -1232,7 +1232,7 @@
 
 .exploreRecordContainerSectionLabel {
   color: rgba(255, 255, 255, 0.42);
-  font-size: var(--fs-title-s);
+  font-size: var(--fs-body);
   font-weight: 400;
   letter-spacing: 0.1em;
   line-height: 1.2;
