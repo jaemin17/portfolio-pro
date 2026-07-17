@@ -1,136 +1,8 @@
-.page {
-  background: #fafbff;
-  min-height: 100vh;
-}
-
-.cover {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-}
-
-.coverPlaceholder {
-  width: 100%;
-  aspect-ratio: 16 / 7;
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #bbb;
-  font-size: var(--fs-body);
-}
-
-/* Overview Section - content aligned to right side */
-.section {
-  padding: 60px 30px 80px;
-}
-
-.sectionInner {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-.overviewContent {
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.overviewLabel {
-  font-size: var(--fs-label);
-  font-weight: 500;
-  color: #2f7df4;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.overviewHeadline {
-  font-size: var(--fs-title);
-  font-weight: 500;
-  color: #1a1a1a;
-  line-height: 1.4;
-  margin-bottom: 24px;
-}
-
-.overviewBody {
-  font-size: var(--fs-body);
-  color: #444;
-  line-height: 1.8;
-  margin-bottom: 48px;
-}
-
-.roleBlock {
-  margin-bottom: 32px;
-}
-
 .roleLabel {
   font-size: var(--fs-body);
   font-weight: 500;
   color: #1a1a1a;
   margin-bottom: 8px;
-}
-
-.roleText {
-  font-size: var(--fs-body);
-  color: #444;
-  line-height: 1.8;
-}
-
-/* Research / Insights sections - two column */
-.sectionLabel {
-  font-size: var(--fs-label);
-  font-weight: 500;
-  color: #3b82f6;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 24px;
-}
-
-.gridLeftRight {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px 40px;
-  margin-bottom: 32px;
-}
-
-.gridLeftRight .lrHeadline {
-  font-size: var(--fs-title);
-  font-weight: 500;
-  color: #1a1a1a;
-  line-height: 1.4;
-}
-
-.gridLeftRight .lrText {
-  font-size: var(--fs-body);
-  color: #444;
-  line-height: 1.8;
-}
-
-.highlight {
-  color: #3b82f6;
-}
-
-.detailImage {
-  width: 100%;
-  border: 3px solid #93c5fd;
-  border-radius: 8px;
-  box-sizing: border-box;
-  margin-top: 16px;
-}
-
-.imagePlaceholder {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #f5f5f5;
-  border: 3px solid #93c5fd;
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #bbb;
-  font-size: var(--fs-label);
-  margin-top: 16px;
 }
 
 .video {
@@ -143,72 +15,6 @@
   margin-top: 16px;
 }
 
-.coverVideo {
-  width: 100%;
-  box-sizing: border-box;
-  aspect-ratio: 16 / 7;
-  object-fit: cover;
-  display: block;
-}
-
-.imageGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.imageGridItem {
-  aspect-ratio: 4 / 3;
-  background: #f5f5f5;
-  border: 3px solid #93c5fd;
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #bbb;
-  font-size: var(--fs-meta);
-}
-
-.imageGridCaption {
-  font-size: var(--fs-label);
-  color: #666;
-  text-align: center;
-  margin-top: 8px;
-}
-
-/* Dark divider with design goals */
-.divider {
-  background: #1a1a1a;
-  padding: 80px 30px;
-  text-align: center;
-}
-
-.dividerInner {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.dividerTitle {
-  font-size: var(--fs-label);
-  font-weight: 500;
-  color: #3b82f6;
-  margin-bottom: 24px;
-}
-
-.dividerGoals {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.dividerGoals p {
-  font-size: var(--fs-title-s);
-  color: #fff;
-  line-height: 1.5;
-}
-
 /* Concept / Solution sections */
 .conceptSection {
   padding: 60px 30px 80px;
@@ -217,14 +23,6 @@
 .conceptInner {
   max-width: 840px;
   margin: 0 auto;
-}
-
-.conceptLabel {
-  font-size: var(--fs-label);
-  font-weight: 500;
-  color: #3b82f6;
-  text-transform: uppercase;
-  margin-bottom: 12px;
 }
 
 .conceptHeadline {
@@ -251,11 +49,7 @@
 .positioningInnerCentered {
   text-align: center;
 }
-.positioningInnerCentered .conceptValue {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
+
 /* Match narrative/concept horizontal inset so closing aligns with body copy */
 .contactAlign {
   padding-left: 30px;
@@ -347,14 +141,7 @@
 .protoEvidence {
   margin: 40px 0 24px;
 }
-.protoEvidenceLabel {
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  color: #aaa;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 0 0 10px;
-}
+
 .protoEvidenceFrame {
   margin-top: 48px;
   padding: 16px 16px 0;
@@ -365,13 +152,7 @@
   flex-direction: column;
   align-items: center;
 }
-.protoEvidenceCaption {
-  margin: 20px 0 24px;
-  font-size: var(--fs-caption);
-  color: rgba(255, 255, 255, 0.55);
-  letter-spacing: 0.04em;
-  text-align: center;
-}
+
 .protoEvidenceCanvas {
   position: relative;
   width: 100%;
@@ -382,54 +163,7 @@
   display: block;
   box-sizing: border-box;
 }
-.protoAnnotation {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  background: rgba(3, 3, 3, 0.82);
-  border: 1px solid rgba(96, 165, 250, 0.55);
-  border-radius: 10px;
-  padding: 10px 14px;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: var(--fs-meta);
-  line-height: 1.5;
-  text-align: center;
-  max-width: 180px;
-  box-sizing: border-box;
-}
-.protoAnnotation strong {
-  color: #60a5fa;
-  font-size: var(--fs-label);
-  font-weight: 500;
-}
-.protoAnnotationTop {
-  top: 1.2%;
-  left: 50%;
-  transform: translateX(-50%);
-  flex-direction: row;
-  gap: 8px;
-  white-space: nowrap;
-  max-width: none;
-}
-.protoAnnotationLeft {
-  top: 50%;
-  left: 1.5%;
-  transform: translateY(-50%);
-  max-width: 150px;
-}
-.protoAnnotationCenter {
-  top: 74%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.protoAnnotationRight {
-  top: 50%;
-  right: 1%;
-  transform: translateY(-50%);
-  max-width: 150px;
-}
+
 .protoIntroLabel {
   margin: 64px 0 0;
   text-align: left;
@@ -449,46 +183,6 @@
   line-height: 1.65;
   padding-top: 24px;
   margin: 0;
-}
-.protoIntroBody {
-  font-size: var(--fs-body);
-  color: #555;
-  line-height: 1.8;
-  margin: 0;
-}
-.protoProblems {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 20px;
-  margin-top: 16px;
-}
-.protoProblemItem {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-.protoProblemNum {
-  flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #fee2e2;
-  color: #dc2626;
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1px;
-}
-.protoProblemText {
-  font-size: var(--fs-meta);
-  color: #555;
-  line-height: 1.55;
-}
-.protoProblemText strong {
-  color: #1a1a1a;
-  font-weight: 500;
 }
 
 .protoAreas {
@@ -544,32 +238,7 @@
   padding: 34px 48px 30px;
   box-sizing: border-box;
 }
-.directionPanelHeader {
-  grid-column: 1 / -1;
-  padding: 0;
-}
-.directionPanelHeader h4 {
-  display: inline-block;
-  padding: 2px 8px;
-  border: 1px solid #3b82f6;
-  border-radius: 6px;
-  color: #3b82f6;
-  font-size: var(--fs-meta);
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  line-height: 1.4;
-  margin: 0 0 16px;
-}
-.directionPanelHeader p {
-  max-width: 620px;
-  font-size: var(--fs-body);
-  color: #3b82f6;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  line-height: 1.85;
-  margin: 0 auto;
-  text-align: center;
-}
+
 .directionCard {
   position: relative;
   min-width: 0;
@@ -635,54 +304,6 @@
   font-weight: 500;
   line-height: 1.3;
   text-align: center;
-}
-
-.goalCard {
-  width: 100%;
-  margin: 4px 0 0;
-  padding: 32px 24px 36px;
-  text-align: center;
-  background: #000;
-  border: 2px solid rgba(59, 130, 246, 0.35);
-  border-radius: 20px;
-  box-sizing: border-box;
-}
-.goalCardLabel {
-  font-size: var(--fs-meta);
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #3b82f6;
-  margin: 0 0 28px;
-}
-.goalCardGrid {
-  display: grid;
-  grid-template-columns: 1fr 1px 1fr 1px 1fr;
-  align-items: start;
-}
-.goalCardDivider {
-  width: 1px;
-  align-self: stretch;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 0 4px;
-}
-.goalCardItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 0 16px;
-}
-.goalCardTitle {
-  font-size: var(--fs-label);
-  font-weight: 500;
-  color: #e8e8ec;
-  line-height: 1.4;
-}
-.goalCardDesc {
-  font-size: var(--fs-body);
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.85;
 }
 
 .positioningEmphasis {
@@ -761,304 +382,13 @@
   margin-top: 28px;
 }
 
-.controlExplorationHeader {
-  max-width: 640px;
-  margin-bottom: 18px;
-}
-
-.controlExplorationHeader span {
-  display: inline-block;
-  margin-bottom: 8px;
-  color: #3b82f6;
-  font-size: var(--fs-label);
-  font-weight: 500;
-  letter-spacing: 0.04em;
-}
-
-.controlExplorationHeader p {
-  margin: 0;
-  color: #555;
-  font-size: var(--fs-body);
-  line-height: 1.8;
-}
-
-.controlExplorationGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.controlExplorationCard {
-  padding: 12px;
-  border: 1px solid #e6eaf2;
-  border-radius: 8px;
-  background: #fff;
-}
-
-.controlExplorationPlaceholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 4 / 3;
-  border-radius: 6px;
-  background: #f3f6fa;
-  color: #9aa4b2;
-  font-size: var(--fs-meta);
-}
-
-.controlExplorationPlaceholderDark {
-  background: #16181c;
-  color: #8b95a4;
-}
-
-.controlExplorationCard h4 {
-  margin: 14px 0 6px;
-  color: #222;
-  font-size: var(--fs-body);
-  font-weight: 500;
-}
-
-.controlExplorationCard p {
-  margin: 0;
-  color: #5f6673;
-  font-size: var(--fs-meta);
-  line-height: 1.65;
-}
-
-.explorationCards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin: 8px 0 36px;
-}
-
-.explorationCard {
-  min-height: 180px;
-  padding: 22px;
-  border: 1px solid #e6eaf2;
-  border-radius: 8px;
-  background: #f8fbff;
-}
-
-.explorationCard h4 {
-  margin: 0 0 12px;
-  color: #1a1a1a;
-  font-size: var(--fs-body);
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.explorationCard p {
-  margin: 0;
-  color: #555;
-  font-size: var(--fs-body);
-  line-height: 1.8;
-}
-
-/* ─── Before / After ───────────────────────────────────── */
-.beforeAfter {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
-}
-.beforeAfterLabel {
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  color: #999;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 8px;
-}
-.afterLabel {
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  color: #3b82f6;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 8px;
-}
-.schemeImage {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #e8e8e8;
-  display: block;
-}
-
-/* ─── Iteration Grid ───────────────────────────────────── */
-.iterationGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.iterationImage {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #e8e8e8;
-  display: block;
-}
-.iterationCaption {
-  font-size: var(--fs-caption);
-  color: #888;
-  text-align: center;
-  margin-top: 8px;
-}
-.iterationFinalCaption {
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  color: #3b82f6;
-  text-align: center;
-  margin-top: 8px;
-}
-
-/* ─── Asset Placeholder ────────────────────────────────── */
-.assetPlaceholder {
-  width: 100%;
-  aspect-ratio: 16 / 7;
-  background: #fafafa;
-  border: 2px dashed #ddd;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: #bbb;
-  font-size: var(--fs-body);
-}
-.assetPlaceholderLabel {
-  font-size: var(--fs-caption);
-  color: #ccc;
-}
-
 .finalLayoutEvidence {
   display: grid;
   gap: 20px;
 }
 
-.finalLayoutImage {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #e8e8e8;
-  display: block;
-}
-.finalLayoutCarousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  aspect-ratio: 1440 / 778;
-  border-radius: 8px;
-  border: 1px solid #e8e8e8;
-  background: #eef3f7;
-}
-.finalLayoutCarouselImage {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  animation: finalLayoutCarouselFade 9s infinite;
-}
-.finalLayoutCarouselImageOne {
-  animation-delay: 0s;
-}
-.finalLayoutCarouselImageTwo {
-  animation-delay: 3s;
-}
-.finalLayoutCarouselImageThree {
-  animation-delay: 6s;
-}
-
-@keyframes finalLayoutCarouselFade {
-  0%,
-  30% {
-    opacity: 1;
-  }
-  36%,
-  100% {
-    opacity: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .finalLayoutCarouselImage {
-    animation: none;
-  }
-
-  .finalLayoutCarouselImageOne {
-    opacity: 1;
-  }
-}
-
-.layoutPrinciples {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-
-.layoutPrinciples p {
-  margin: 0;
-  padding: 14px 16px;
-  border-radius: 8px;
-  background: #f0f5ff;
-  color: #4b5563;
-  font-size: var(--fs-label);
-  line-height: 1.6;
-}
-
-.layoutPrinciples strong {
-  display: block;
-  color: #3b82f6;
-  font-size: var(--fs-caption);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.conceptValue {
-  max-width: 760px;
-  margin: 0 0 22px;
-  color: #555;
-  font-size: var(--fs-body);
-  line-height: 1.85;
-}
-
 @media (max-width: 768px) {
-  .gridLeftRight {
-    grid-template-columns: 1fr;
-  }
-
-  .imageGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .dividerGoals {
-    grid-template-columns: 1fr;
-  }
-
-  .overviewContent {
-    max-width: 100%;
-  }
-
   .narrativeGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .iterationGrid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .explorationCards {
-    grid-template-columns: 1fr;
-  }
-
-  .controlExplorationGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .layoutPrinciples {
     grid-template-columns: 1fr;
   }
 
@@ -1077,8 +407,7 @@
     margin-bottom: 8px;
   }
 
-  .positioningHeading,
-  .protoIntroTitle {
+  .positioningHeading, .protoIntroTitle {
     font-size: var(--fs-title);
     line-height: 1.5;
     padding-top: 12px;
@@ -1123,12 +452,6 @@
     margin-top: 0;
   }
 
-  .protoIntroBody {
-    font-size: var(--fs-body);
-    line-height: 1.75;
-    color: #777;
-  }
-
   .protoAreas {
     margin-top: 12px;
   }
@@ -1141,10 +464,6 @@
 
   .protoAreas p + p {
     margin-top: 20px;
-  }
-
-  .protoProblems {
-    grid-template-columns: 1fr;
   }
 
   .directionCards {

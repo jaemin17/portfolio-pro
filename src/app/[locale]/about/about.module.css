@@ -92,7 +92,6 @@
   padding: 0 0 5rem;
 }
 
-.scrollReveal[data-reveal="pending"] .revealItem,
 .scrollReveal[data-reveal="pending"] {
   opacity: 0;
   transform: translateY(10px);
