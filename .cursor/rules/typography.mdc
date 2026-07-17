@@ -1,0 +1,40 @@
+---
+description: Portfolio Pro typography — fonts, weights, bilingual stack
+globs: "**/*.{css,tsx,ts}"
+alwaysApply: false
+---
+
+# Typography
+
+## Font stack
+
+- **Sans (default):** Geist Sans → Noto Sans SC → system-ui / PingFang SC / Microsoft YaHei
+- **Mono (nav / tool labels):** IBM Plex Mono → Noto Sans SC → ui-monospace
+- Geist Sans loads **400 + 500 only** (no SemiBold). Do not introduce new font families without an explicit request.
+- Prefer CSS vars: `var(--font-geist-sans)`, `var(--font-noto-sans-sc)`, `var(--font-ibm-plex-mono)`. Do not hardcode mono family names.
+
+## Weights (only these)
+
+| Weight | Use |
+|--------|-----|
+| **400** | Body, captions, muted copy, light headline segments |
+| **500** | Titles, section labels, h1–h4, emphasis, buttons (incl. `.buttonSticker`) |
+
+- Do **not** add `600`, `700`, or other weights in new CSS.
+- Noto Sans SC is loaded at 400/500 only — heavier values fake-bold and look inconsistent across platforms.
+- Always set `font-weight` on headings (`h1`–`h4`). Browser default bold is 700 and will look too heavy.
+- Global baseline: `globals.css` sets `h1–h6 { font-weight: 500 }`. Override to `400` only for intentionally light segments. Never rely on the browser default.
+
+## Patterns
+
+- Section eyebrows: ~12–14px, weight 500, `uppercase`, letter-spacing ~0.08–0.12em
+- Decision / design-point pills: weight 500, accent border + matching text color
+- Body: ~15–16px, weight 400, line-height ~1.75–1.8
+- Italic is OK for headline emphasis segments; do not use weight to fake emphasis when italic/color already does
+
+## Checklist when editing type
+
+1. New text styles use only 400 or 500
+2. Headings explicitly set `font-weight: 500` (or 400 for intentionally light segments)
+3. Chinese and English share the same weight scale
+4. Mono only for nav / code-like UI chrome, not for case-study body copy

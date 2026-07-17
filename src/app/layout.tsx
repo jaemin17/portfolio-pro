@@ -16,11 +16,6 @@ const geistSans = localFont({
       weight: "500",
       style: "normal",
     },
-    {
-      path: "../fonts/Geist-SemiBold.woff2",
-      weight: "600",
-      style: "normal",
-    },
   ],
   variable: "--font-geist-sans",
   display: "swap",

@@ -68,7 +68,11 @@
   margin-top: 12px;
   color: var(--muted);
   font-size: 13px;
-  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:
+    var(--font-ibm-plex-mono),
+    var(--font-noto-sans-sc),
+    ui-monospace,
+    monospace;
 }
 
 .metaDot {
@@ -126,7 +130,7 @@
 
 .positioningDiagramLabel {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.06em;
   color: #d4956a;
   margin-bottom: 14px;
@@ -134,7 +138,7 @@
 
 .positioningDiagramTitle {
   font-size: clamp(22px, 2.6vw, 30px);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   color: #e8e8ec;
   margin: 0 0 48px;
@@ -162,7 +166,7 @@
 
 .positioningDiagramPhase {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: #d4956a;
 }
@@ -179,7 +183,7 @@
 .positioningDiagramCaption {
   margin: 0;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.88);
   text-align: center;
   line-height: 1.45;
@@ -432,6 +436,7 @@
 
 .h2 {
   font-size: 16px;
+  font-weight: 500;
   margin-bottom: 10px;
   letter-spacing: -0.02em;
 }
@@ -474,7 +479,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .featuredHero .title {
@@ -619,7 +624,7 @@
 .evidencePhone span {
   color: var(--text-primary);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .evidencePhone i {
@@ -662,7 +667,7 @@
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .caseSection {
@@ -695,7 +700,8 @@
 
 .selfly0Page h1,
 .selfly0Page h2,
-.selfly0Page h3 {
+.selfly0Page h3,
+.selfly0Page h4 {
   font-weight: 500;
 }
 
@@ -830,6 +836,7 @@
 .caseReflection h2 {
   color: var(--text-secondary);
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.45;
   letter-spacing: 0.04em;
 }
@@ -837,6 +844,7 @@
 .caseText h3 {
   color: var(--text-primary);
   font-size: 22px;
+  font-weight: 500;
   line-height: 1.35;
   letter-spacing: -0.02em;
   margin-bottom: 12px;
@@ -902,7 +910,7 @@
 
 .selfly0PositioningLabel {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accentA, #c0392b);
@@ -1004,7 +1012,7 @@
 }
 
 .selfly0Body strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .selfly0Body .selfly0Label {
@@ -1035,7 +1043,7 @@
   color: var(--text-primary);
   font-size: 16px;
   line-height: 1.75;
-  font-weight: 600;
+  font-weight: 500;
   max-width: none;
 }
 
@@ -1068,9 +1076,13 @@
   display: block;
   margin-bottom: 8px;
   color: var(--text-secondary);
-  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:
+    var(--font-ibm-plex-mono),
+    var(--font-noto-sans-sc),
+    ui-monospace,
+    monospace;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -1089,6 +1101,7 @@
 .designPoints h4 {
   color: var(--text-secondary);
   font-size: 13px;
+  font-weight: 500;
   line-height: 1.4;
   margin-bottom: 8px;
 }
@@ -1115,7 +1128,7 @@
 .tabStructureLabel {
   margin: 0 0 28px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #ffbc6e;
@@ -1157,12 +1170,13 @@
   justify-content: center;
   gap: 6px;
   margin: 0;
+  font-weight: 500;
   line-height: 1.2;
 }
 
 .tabStructureRole {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
   color: #ffbc6e;
   line-height: 1;
@@ -1197,7 +1211,7 @@
 .tabStructureName {
   margin: 0;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.01em;
   color: #e8e8ec;
   line-height: 1.2;
@@ -1248,7 +1262,7 @@
 
 .tabStructureCycleLabel {
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #d4956a;
@@ -1256,7 +1270,7 @@
 
 .tabStructureCyclePath {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8e8ec;
   letter-spacing: 0.02em;
 }
@@ -1315,7 +1329,7 @@
 
 .todayTop3LabelPhase {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: #ffbc6e;
 }
@@ -1442,7 +1456,7 @@
 .selfly0PhoneStatusTime {
   justify-self: start;
   font-size: clamp(11px, 3.4vw, 13px);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.02em;
   color: var(--text-primary);
   font-variant-numeric: tabular-nums;
@@ -1542,7 +1556,7 @@
 .todayRhythmSystemPanelTitle {
   color: #ffbc6e;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.3;
 }
 
@@ -1588,7 +1602,7 @@
   color: rgba(255, 255, 255, 0.62);
   font: inherit;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   cursor: pointer;
   transition:
@@ -1654,7 +1668,7 @@
 .todayRhythmCarouselTitle {
   margin: 0 0 20px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.45;
   text-align: center;
   color: #e8e8ec;
@@ -1684,12 +1698,15 @@
 
 .exploreModulesAfterPending span {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
 }
 
 .exploreModulesAfterPending code {
-  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+  font-family:
+    var(--font-ibm-plex-mono),
+    var(--font-noto-sans-sc),
+    ui-monospace,
     monospace;
   font-size: 10px;
   line-height: 1.45;
@@ -1719,7 +1736,7 @@
   margin: 0 0 8px;
   color: #d4956a;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
 }
 
@@ -1727,7 +1744,7 @@
   margin: 0;
   color: #ffffff;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.35;
 }
 
@@ -1744,7 +1761,7 @@
   border-radius: 999px;
   color: rgba(255, 255, 255, 0.68);
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.2;
 }
@@ -1809,7 +1826,7 @@
   background: rgba(255, 188, 110, 0.13);
   color: #ffe0ba;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.25;
   box-shadow: inset 0 0 0 1px rgba(255, 188, 110, 0.24);
   /* Clamp height so long titles don't push the phone section downward. */
@@ -1821,7 +1838,7 @@
   margin-top: -2px;
   color: rgba(255, 255, 255, 0.48);
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
 }
 
@@ -1833,14 +1850,14 @@
 .exploreRecordContainerName {
   color: #ffbc6e;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.3;
 }
 
 .exploreRecordContainerDescription {
   color: rgba(255, 255, 255, 0.74);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.4;
 }
 
@@ -1879,7 +1896,7 @@
 .exploreTemplatesSwitcherTitle {
   margin: 0 0 16px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.02em;
   color: #e8e8ec;
 }
@@ -1901,7 +1918,7 @@
   padding: 8px 18px;
   font-family: inherit;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   color: rgba(255, 255, 255, 0.55);
   background: transparent;
@@ -1963,7 +1980,7 @@
 }
 
 .exploreTemplatesCaptionLabel {
-  font-weight: 600;
+  font-weight: 500;
   color: #ffbc6e;
   letter-spacing: 0.03em;
 }
@@ -1985,7 +2002,7 @@
 .selfly0EvidenceTitle {
   margin: 0 0 6px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: #e8e8ec;
 }
@@ -2003,7 +2020,7 @@
 }
 
 .selfly0EvidenceCaptionAccent {
-  font-weight: 600;
+  font-weight: 500;
   color: #ffbc6e;
   letter-spacing: 0.03em;
 }
@@ -2063,7 +2080,7 @@
 .selfly0ImagePendingPhone span,
 .selfly0ImagePendingWide span {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: #e8e8ec;
 }
@@ -2079,7 +2096,10 @@
 
 .selfly0ImagePendingPhone code,
 .selfly0ImagePendingWide code {
-  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+  font-family:
+    var(--font-ibm-plex-mono),
+    var(--font-noto-sans-sc),
+    ui-monospace,
     monospace;
   font-size: 10px;
   line-height: 1.45;
@@ -2257,7 +2277,7 @@
   display: inline-block;
   margin-bottom: 8px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.55);
 }
@@ -2276,7 +2296,7 @@
 .diaryInputFlowArrow {
   align-self: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(255, 188, 110, 0.75);
 }
 
@@ -2322,7 +2342,7 @@
 .diaryEmojiEvidence .selfly0EvidenceTitle {
   margin: 0 0 24px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: #e8e8ec;
   text-align: center;
@@ -2352,7 +2372,7 @@
 
 .diaryEmojiEvidence .designPoints strong {
   color: #e8e8ec;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .diaryInputFlowDiagram {
@@ -2383,7 +2403,7 @@
   align-items: center;
   gap: 8px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.68);
 }
 
@@ -2450,7 +2470,7 @@
   border: 1px solid rgba(255, 176, 216, 0.62);
   color: #ffe4f1;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.35;
   letter-spacing: 0.02em;
 }
@@ -2469,7 +2489,7 @@
   background: #ffbc6e;
   color: #1a1208;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   box-shadow: 0 4px 12px rgba(255, 140, 42, 0.35);
 }
@@ -2523,7 +2543,7 @@
 
 .diaryFlowStepCopy strong {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8e8ec;
 }
 
@@ -2593,7 +2613,7 @@
   max-width: 520px;
   padding: 4px 0;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.45;
   color: #ffbc6e;
   text-align: center;
@@ -2646,7 +2666,7 @@
   background: rgba(255, 188, 110, 0.1);
   border: 1px solid rgba(255, 188, 110, 0.28);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   color: #ffbc6e;
   text-align: center;
@@ -2702,7 +2722,7 @@
 
 .productLaunchCard strong {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8e8ec;
 }
 
@@ -2797,7 +2817,7 @@
   justify-self: center;
   color: rgba(255, 188, 110, 0.82);
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   text-shadow: 0 0 14px rgba(255, 188, 110, 0.24);
 }
@@ -2857,7 +2877,7 @@
 .iconDesignPhaseIndex {
   flex-shrink: 0;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.06em;
   color: #ffbc6e;
 }
@@ -2866,7 +2886,7 @@
   display: block;
   margin-bottom: 6px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8e8ec;
 }
 
@@ -2943,7 +2963,7 @@
   background: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.72);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition:
     background 0.2s ease,
@@ -2997,7 +3017,7 @@
 
 .iconDesignFinalHeroMini span {
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.45);
   font-variant-numeric: tabular-nums;
 }
@@ -3009,7 +3029,7 @@
 .iconDesignSizePreviewLabel {
   margin: 0 0 12px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.55);
 }
@@ -3040,7 +3060,7 @@
 
 .iconDesignSizePreviewGrid li span:nth-of-type(1) {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8e8ec;
 }
 
@@ -3061,7 +3081,7 @@
   margin: 8px 0 28px;
   color: rgba(255, 255, 255, 0.45);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -3106,7 +3126,7 @@
 .iconDesignFinalCard figcaption strong,
 .iconDesignFinalHero figcaption strong {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8e8ec;
 }
 
@@ -3156,7 +3176,7 @@
   display: block;
   margin-bottom: 2px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8e8ec;
 }
 
@@ -3210,7 +3230,7 @@
   height: 26px;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text-primary);
   background: #ffbc6e;
 }
@@ -3218,7 +3238,7 @@
 .appStorePipelineStep strong {
   display: block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e8e8ec;
   line-height: 1.3;
 }
@@ -3253,6 +3273,7 @@
   border-radius: 6px;
   color: #f45f24;
   font-size: 0.92em;
+  font-weight: 500;
   line-height: 1.3;
 }
 
@@ -3299,9 +3320,13 @@
   display: inline-block;
   margin-bottom: 14px;
   color: #f45f24;
-  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:
+    var(--font-ibm-plex-mono),
+    var(--font-noto-sans-sc),
+    ui-monospace,
+    monospace;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -3309,6 +3334,7 @@
 .mergedProjectHeader h2 {
   color: var(--text-primary);
   font-size: clamp(36px, 6vw, 72px);
+  font-weight: 500;
   line-height: 0.98;
   letter-spacing: -0.03em;
   max-width: 860px;
@@ -3341,7 +3367,7 @@
   color: var(--text-secondary);
   padding: 8px 12px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -3355,6 +3381,7 @@
 .mergedContentGrid h3 {
   color: var(--text-secondary);
   font-size: 15px;
+  font-weight: 500;
   line-height: 1.45;
 }
 
@@ -3376,7 +3403,7 @@
   padding-left: 18px;
   border-left: 3px solid #ff8b73;
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .mergedContentGrid ul {
@@ -3385,7 +3412,7 @@
   color: var(--text-primary);
   font-size: 16px;
   line-height: 1.75;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .mergedContentGrid li + li {
@@ -3411,12 +3438,13 @@
   margin-bottom: 12px;
   color: #f45f24;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .mergedStrategyCard h4 {
   color: var(--text-primary);
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.28;
   margin-bottom: 10px;
 }
@@ -3434,7 +3462,7 @@
   color: var(--text-secondary);
   font-size: 18px;
   line-height: 1.35;
-  font-weight: 600;
+  font-weight: 500;
   z-index: 1;
 }
 
@@ -3457,7 +3485,7 @@
 .mockPhoneTilt span {
   color: var(--text-primary);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .mockPhoneTall i,
@@ -3539,7 +3567,7 @@
 .completionStep span {
   color: var(--text-secondary);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .challengeNode b {
@@ -3577,9 +3605,13 @@
 .shiftCompactNode span,
 .shiftCompactRows span {
   color: var(--text-secondary);
-  font-family: "Roboto Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:
+    var(--font-ibm-plex-mono),
+    var(--font-noto-sans-sc),
+    ui-monospace,
+    monospace;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -3598,7 +3630,7 @@
   color: var(--text-secondary);
   font-size: 14px;
   line-height: 1.55;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .shiftBeforeAfter {
@@ -3619,7 +3651,7 @@
   color: var(--text-primary);
   font-size: 15px;
   line-height: 1.55;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .shiftBeforeAfter strong {
@@ -3677,7 +3709,7 @@
   color: #ff8b73;
   font-style: normal;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   z-index: 2;
 }
 
@@ -3731,7 +3763,7 @@
   padding: 10px;
   color: var(--text-primary);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -3748,7 +3780,7 @@
 .flowArrow {
   color: var(--text-primary);
   font-size: 34px;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   z-index: 1;
 }
@@ -3758,7 +3790,7 @@
   display: grid;
   place-items: center;
   color: var(--text-secondary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .flowNode::after {
@@ -3785,7 +3817,7 @@
 .topCard span {
   color: var(--text-secondary);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .topCard i {
@@ -3813,7 +3845,7 @@
 .blankForm span {
   color: var(--text-primary);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .blankForm i {
@@ -3839,7 +3871,7 @@
   padding: 12px;
   color: var(--text-primary);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   border-color: #ff8b73;
   background: rgba(255, 248, 240, 0.94);
@@ -3861,7 +3893,7 @@
 .rhythmColumn span {
   color: var(--text-primary);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .rhythmColumn i {
@@ -3895,7 +3927,7 @@
   display: grid;
   place-items: center;
   color: var(--text-secondary);
-  font-weight: 600;
+  font-weight: 500;
   background: rgba(255, 255, 255, 0.82);
 }
 
@@ -3986,7 +4018,7 @@
   display: grid;
   place-items: center;
   color: var(--text-secondary);
-  font-weight: 600;
+  font-weight: 500;
   background: rgba(255, 255, 255, 0.84);
 }
 
@@ -4880,7 +4912,7 @@
 
   .diaryInputPolishLayout .diaryFlowSkipLabel {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.08em;
     paint-order: stroke fill;
     stroke: #1a1208;
@@ -5162,7 +5194,7 @@
 /* Section label (like yuha's "Context", "Research") */
 .v2Label {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accentA, #e8613c);
@@ -5185,7 +5217,7 @@
 
 .v2Heading {
   font-size: clamp(22px, 3vw, 28px);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.35;
   margin: 0;
   letter-spacing: -0.01em;
@@ -5193,7 +5225,7 @@
 
 .v2SubLabel {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text-primary);
 }
 
@@ -5209,7 +5241,7 @@
 
 .v2Body strong {
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .v2List {
@@ -5226,7 +5258,7 @@
 
 .v2List strong {
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Image placeholders inside v2 sections */
@@ -5251,7 +5283,7 @@
 
 .v2Contact h2 {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 0 8px;
 }
 
@@ -5263,7 +5295,7 @@
 
 .v2ContactLink {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--accentA, #e8613c);
   text-decoration: none;
   border-bottom: 2px solid transparent;
