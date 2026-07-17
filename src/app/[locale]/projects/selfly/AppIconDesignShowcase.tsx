@@ -65,7 +65,6 @@ export function AppIconDesignShowcase({ locale = "zh" }: AppIconDesignShowcasePr
                     width={200}
                     height={200}
                     className={styles.iconDesignEvolutionIcon}
-                    priority={version.id === "flat"}
                   />
                   <figcaption className={styles.iconDesignEvolutionIndex}>{version.title}</figcaption>
                 </figure>

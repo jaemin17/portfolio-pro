@@ -742,9 +742,8 @@
 
 .tabStructureIcon {
   width: 26px;
-  height: 26px;
+  height: auto;
   display: block;
-  object-fit: contain;
 }
 
 .tabStructureName {
@@ -2225,7 +2224,7 @@
 
   .tabStructureIcon {
     width: 20px;
-    height: 20px;
+    height: auto;
   }
 
   .tabStructureTitle {
