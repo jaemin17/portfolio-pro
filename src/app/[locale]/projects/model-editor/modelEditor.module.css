@@ -228,7 +228,7 @@
 }
 
 .conceptHeadline {
-  font-size: var(--fs-title-m);
+  font-size: var(--fs-title);
   font-weight: 500;
   color: #1a1a1a;
   margin: 0 0 16px;
