@@ -517,20 +517,32 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                       "为模型部件添加标注，清晰传达结构与功能信息",
                       "Part labels that convey structure and function",
                     ),
-                    video: modelEditorAssets.labelsDemo,
+                    image: modelEditorAssets.labelsDemo,
+                    imageAlt: tStr(locale, "模型部件标注界面", "Part labeling interface"),
                   },
                 ].map((demo) => (
                   <div key={String(demo.headline)} className={styles.capabilityItem}>
                     <p className={styles.conceptHeadline}>{demo.headline}</p>
-                    <video
-                      className={styles.video}
-                      src={assetPath(demo.video)}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      preload="auto"
-                    />
+                    {"image" in demo && demo.image ? (
+                      <Image
+                        className={styles.video}
+                        src={assetPath(demo.image)}
+                        alt={demo.imageAlt}
+                        width={1024}
+                        height={645}
+                        sizes="(max-width: 840px) 100vw, 840px"
+                      />
+                    ) : (
+                      <video
+                        className={styles.video}
+                        src={assetPath(demo.video!)}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                      />
+                    )}
                   </div>
                 ))}
               </div>

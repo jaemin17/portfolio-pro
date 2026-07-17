@@ -8,5 +8,5 @@ export const modelEditorAssets = {
   operationVideo: "/videos/model-editor/模型编辑器章节操作归属-视频.mp4",
   materialDemo: "/videos/tools/model.mp4",
   transparencyDemo: "/videos/model-editor/transparency-visibility.mp4",
-  labelsDemo: "/videos/model-editor/overview.mp4",
+  labelsDemo: "/images/model-editor/labels-demo.webp",
 } as const;

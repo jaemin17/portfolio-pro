@@ -151,6 +151,7 @@
 
 .video {
   width: 100%;
+  height: auto;
   border: 3px solid #93c5fd;
   border-radius: 8px;
   box-sizing: border-box;
