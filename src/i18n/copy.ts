@@ -92,6 +92,11 @@ export type HomeCopy = {
   visualProjects: ToolProjects;
   caseStudies: HomeSection;
   snapshots: Snapshots;
+  envelopeMail: {
+    label: string;
+    cta: string;
+    copied: string;
+  };
   footerRole: string;
 };
 
@@ -249,6 +254,11 @@ const copy: Record<Locale, HomeCopy> = {
       label: "Snapshots",
       items: snapshotPlaceholders,
     },
+    envelopeMail: {
+      label: "Let's work together",
+      cta: "给我写信",
+      copied: "已复制！",
+    },
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },
   en: {
@@ -357,6 +367,11 @@ const copy: Record<Locale, HomeCopy> = {
     snapshots: {
       label: "Snapshots",
       items: snapshotPlaceholders,
+    },
+    envelopeMail: {
+      label: "Let's work together",
+      cta: "write me a mail",
+      copied: "mail copied!",
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },

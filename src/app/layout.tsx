@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Noto_Sans_SC } from "next/font/google";
+import { Caveat, IBM_Plex_Mono, Noto_Sans_SC } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -27,6 +27,13 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
+const caveat = Caveat({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-caveat",
+  display: "swap",
+});
+
 const notoSansSC = Noto_Sans_SC({
   weight: ["400", "500"],
   subsets: ["latin"],
@@ -48,7 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={`${geistSans.variable} ${ibmPlexMono.variable} ${notoSansSC.variable}`}
+      className={`${geistSans.variable} ${ibmPlexMono.variable} ${caveat.variable} ${notoSansSC.variable}`}
     >
       <body>
         {children}

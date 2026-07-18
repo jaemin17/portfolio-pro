@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
+import { EnvelopeMail } from "@/components/EnvelopeMail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { RevealOnView } from "@/components/RevealOnView";
 import { SnapshotMarquee } from "@/components/SnapshotMarquee";
@@ -178,6 +179,17 @@ export default async function HomePage({ params }: HomePageProps) {
           </section>
 
           <SnapshotMarquee items={copy.snapshots.items} />
+
+          <RevealOnView className={styles.scrollReveal}>
+            <div className={`${styles.revealItem} ${styles.revealDelay1}`}>
+              <EnvelopeMail
+                copy={{
+                  ...copy.envelopeMail,
+                  email: copy.email,
+                }}
+              />
+            </div>
+          </RevealOnView>
 
           <RevealOnView className={styles.scrollReveal}>
             <footer className={`${styles.footer} ${styles.revealItem} ${styles.revealDelay1}`}>

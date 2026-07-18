@@ -1,0 +1,168 @@
+.section {
+  width: 100%;
+  margin-top: clamp(3.5rem, 10vw, 6.5rem);
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.label {
+  margin: 0;
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.stage {
+  --envelope: #efd070;
+  width: min(22.5rem, 100%);
+  perspective: 1400px;
+}
+
+.envelope {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 668 / 488;
+  border-radius: clamp(1.6rem, 6.7%, 2.8rem);
+  background: var(--envelope);
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  transform-style: preserve-3d;
+}
+
+.envelope:hover,
+.envelope:focus-within {
+  overflow: visible;
+}
+
+.envelope:hover .letter,
+.envelope:focus-within .letter {
+  transform: translate3d(0, -28%, 0) rotate(-9deg);
+}
+
+.letter {
+  position: absolute;
+  left: 12%;
+  right: 10%;
+  top: 6%;
+  z-index: 1;
+  height: 96%;
+  border-radius: 1.35rem;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 14%;
+  /* Deep tuck when closed — yellow diamond stays visible */
+  transform: translate3d(0, 58%, 0) rotate(-2deg);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.letterLines {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 12%;
+  bottom: 14%;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 1.55rem,
+    #ececec 1.55rem,
+    #ececec calc(1.55rem + 1px)
+  );
+  pointer-events: none;
+}
+
+.cta {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0.35rem 0.75rem;
+  border: none;
+  background: transparent;
+  font-family:
+    var(--font-caveat),
+    var(--font-noto-sans-sc),
+    cursive;
+  font-size: clamp(1.65rem, 5.8vw, 2.15rem);
+  line-height: 1;
+  color: #111;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.cta > span {
+  grid-area: 1 / 1;
+}
+
+.ctaHidden {
+  opacity: 0;
+}
+
+.ctaCopied {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ctaCopiedVisible {
+  opacity: 1;
+}
+
+.flaps {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.flapLeft,
+.flapRight,
+.flapBottom {
+  position: absolute;
+  display: block;
+}
+
+.flapLeft {
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.flapRight {
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.flapBottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .stage {
+    width: min(19rem, 100%);
+  }
+
+  .envelope:hover .letter,
+  .envelope:focus-within .letter {
+    transform: translate3d(0, -20%, 0) rotate(-7deg);
+  }
+}
