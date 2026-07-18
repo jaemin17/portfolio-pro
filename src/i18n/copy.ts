@@ -118,7 +118,6 @@ const toolFrameColors = {
 
 const visualMedia = {
   manufacturing: "/videos/visual/immersive.mp4",
-  automotive: "/images/visual/desay-sv-hero.webp",
   biomedical: "/videos/visual/highmodes.mp4",
   game: "/images/visual/cosmic-blaze-hero.webp",
   arAirbnb: "/images/visual/ar-airbnb-scene-1.webp",
@@ -127,10 +126,6 @@ const visualMedia = {
 /* Home cards render at ≤416 CSS px (--content-max), so the 832w variant
    covers 2x displays; the 1440w original is only needed beyond that. */
 const visualImageVariants = {
-  automotive: [
-    { src: "/images/visual/desay-sv-hero-832w.webp", width: 832 },
-    { src: "/images/visual/desay-sv-hero.webp", width: 1440 },
-  ],
   game: [
     { src: "/images/visual/cosmic-blaze-hero-832w.webp", width: 832 },
     { src: "/images/visual/cosmic-blaze-hero.webp", width: 1440 },
@@ -228,14 +223,6 @@ const copy: Record<Locale, HomeCopy> = {
             "变速器、工业机器人、注塑模具等工业设备实训画面和教学操作界面。",
           videoSrc: visualMedia.manufacturing,
           posterSrc: visualPosters.manufacturing,
-          framed: false,
-        },
-        {
-          title: "车载UI",
-          description:
-            "车载娱乐与控制系统界面，包含驾驶、音乐、收音机和车辆设置等功能模块。",
-          imageSrc: visualMedia.automotive,
-          imageVariants: [...visualImageVariants.automotive],
           framed: false,
         },
         {
@@ -345,14 +332,6 @@ const copy: Record<Locale, HomeCopy> = {
             "Training views and teaching UI for industrial equipment such as transmissions, robots, and injection molds.",
           videoSrc: visualMedia.manufacturing,
           posterSrc: visualPosters.manufacturing,
-          framed: false,
-        },
-        {
-          title: "Automotive UI",
-          description:
-            "In-vehicle entertainment and control interfaces covering driving, music, radio, and vehicle settings.",
-          imageSrc: visualMedia.automotive,
-          imageVariants: [...visualImageVariants.automotive],
           framed: false,
         },
         {
