@@ -57,6 +57,7 @@
   color: var(--text-muted);
   font-size: var(--fs-caption);
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .tabLocale:hover {
