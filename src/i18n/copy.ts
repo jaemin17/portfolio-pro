@@ -35,6 +35,7 @@ export type ToolProjectItem = {
 
 export type ToolProjects = {
   label: string;
+  loadMore?: string;
   items: ToolProjectItem[];
 };
 
@@ -176,6 +177,7 @@ const copy: Record<Locale, HomeCopy> = {
     },
     toolProjects: {
       label: "Designed to Use",
+      loadMore: "加载更多",
       items: [
         {
           title: "Model Editor",
@@ -210,6 +212,7 @@ const copy: Record<Locale, HomeCopy> = {
     },
     visualProjects: {
       label: "Visual Works",
+      loadMore: "加载更多",
       items: [
         {
           title: "生物医疗VR",
@@ -291,6 +294,7 @@ const copy: Record<Locale, HomeCopy> = {
     },
     toolProjects: {
       label: "Designed to Use",
+      loadMore: "Load more",
       items: [
         {
           title: "Model Editor",
@@ -325,6 +329,7 @@ const copy: Record<Locale, HomeCopy> = {
     },
     visualProjects: {
       label: "Visual Works",
+      loadMore: "Load more",
       items: [
         {
           title: "Biomedical VR",

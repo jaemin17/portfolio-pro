@@ -2,16 +2,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
-import { LazyVideo } from "@/components/LazyVideo";
 import { RevealOnView } from "@/components/RevealOnView";
 import { SnapshotMarquee } from "@/components/SnapshotMarquee";
 import { isLocale, type Locale } from "@/i18n/config";
 import {
   getHomeCopy,
   type CurrentlyBuildingItem,
-  type ToolProjectItem,
 } from "@/i18n/copy";
 import { localePath } from "@/i18n/paths";
+import { ToolProjectList } from "./ToolProjectList";
 import styles from "./page.module.css";
 
 type HomePageProps = {
@@ -27,84 +26,6 @@ const revealDelays = [
 
 function assetSrc(path: string): string {
   return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
-}
-
-function ToolProjectCard({
-  item,
-  locale,
-  className,
-  showCaption = true,
-}: {
-  item: ToolProjectItem;
-  locale: Locale;
-  className?: string;
-  showCaption?: boolean;
-}) {
-  const classes = [styles.toolCard, className].filter(Boolean).join(" ");
-  const framed = item.framed !== false;
-  const frameClass = framed
-    ? styles.toolFrame
-    : `${styles.toolFrame} ${styles.toolFrameBare}`;
-
-  const media = item.videoSrc && item.posterSrc ? (
-    <LazyVideo
-      className={styles.toolVideo}
-      src={assetSrc(item.videoSrc)}
-      posterSrc={assetSrc(item.posterSrc)}
-      label={item.title}
-    />
-  ) : item.imageSrc ? (
-    <img
-      className={styles.toolVideo}
-      src={assetSrc(item.imageSrc)}
-      srcSet={item.imageVariants
-        ?.map((variant) => `${assetSrc(variant.src)} ${variant.width}w`)
-        .join(", ")}
-      sizes={item.imageVariants ? "(max-width: 480px) 100vw, 416px" : undefined}
-      alt={item.title}
-      loading="lazy"
-      decoding="async"
-    />
-  ) : null;
-
-  const cardBody = (
-    <div
-      className={frameClass}
-      style={
-        framed && item.frameColor
-          ? { backgroundColor: item.frameColor }
-          : undefined
-      }
-    >
-      {media}
-    </div>
-  );
-
-  return (
-    <article className={classes}>
-      {item.href?.startsWith("/") ? (
-        <Link href={localePath(locale, item.href)} className={styles.toolCardLink}>
-          {cardBody}
-        </Link>
-      ) : item.href ? (
-        <a
-          className={styles.toolCardLink}
-          href={item.href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {cardBody}
-        </a>
-      ) : (
-        cardBody
-      )}
-      {showCaption ? (
-        <div className={styles.toolCaption}>
-          <p className={styles.toolTitle}>{item.title}</p>
-        </div>
-      ) : null}
-    </article>
-  );
 }
 
 function BuildingItem({
@@ -226,16 +147,12 @@ export default async function HomePage({ params }: HomePageProps) {
               >
                 {copy.toolProjects.label}
               </h2>
-              <div className={styles.toolList}>
-                {copy.toolProjects.items.map((item, index) => (
-                  <ToolProjectCard
-                    key={item.title}
-                    item={item}
-                    locale={locale}
-                    className={`${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
-                  />
-                ))}
-              </div>
+              <ToolProjectList
+                className={`${styles.toolList} ${styles.revealItem} ${styles.revealDelay2}`}
+                items={copy.toolProjects.items}
+                locale={locale}
+                loadMoreLabel={copy.toolProjects.loadMore}
+              />
             </RevealOnView>
           </section>
 
@@ -249,17 +166,14 @@ export default async function HomePage({ params }: HomePageProps) {
               >
                 {copy.visualProjects.label}
               </h2>
-              <div className={styles.visualList}>
-                {copy.visualProjects.items.map((item, index) => (
-                  <ToolProjectCard
-                    key={item.title}
-                    item={item}
-                    locale={locale}
-                    showCaption={false}
-                    className={`${styles.revealItem} ${revealDelays[Math.min(index + 1, 3)]}`}
-                  />
-                ))}
-              </div>
+              <ToolProjectList
+                className={`${styles.visualList} ${styles.revealItem} ${styles.revealDelay2}`}
+                items={copy.visualProjects.items}
+                locale={locale}
+                loadMoreLabel={copy.visualProjects.loadMore}
+                initialCount={3}
+                showCaption={false}
+              />
             </RevealOnView>
           </section>
 

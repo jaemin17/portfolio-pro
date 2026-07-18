@@ -262,6 +262,24 @@
   gap: 3rem;
 }
 
+.loadMore {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: var(--fs-caption);
+  line-height: 1.45;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.loadMore:hover {
+  color: var(--text-secondary);
+}
+
 .visualList {
   display: flex;
   flex-direction: column;
