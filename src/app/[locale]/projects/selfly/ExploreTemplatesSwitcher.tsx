@@ -12,15 +12,15 @@ type ExploreTemplatesSwitcherProps = {
 
 const zhInspirationSlides = [
   {
-    src: "/images/selfly0/explore-create-inspiration-list-zh.png",
+    src: "/images/selfly0/explore-create-inspiration-list-zh.webp",
     alt: "从场景开始：清单模板展示我的价值观、核心优势、喜好、边界等记录灵感",
   },
   {
-    src: "/images/selfly0/explore-create-inspiration-plan-zh.png",
+    src: "/images/selfly0/explore-create-inspiration-plan-zh.webp",
     alt: "从场景开始：计划模板展示周目标、想去的地方、年度目标、月目标等记录灵感",
   },
   {
-    src: "/images/selfly0/explore-create-inspiration-diary-zh.png",
+    src: "/images/selfly0/explore-create-inspiration-diary-zh.webp",
     alt: "从场景开始：日记模板展示幸福日记、情绪日记、灵感日记、感恩日记等记录灵感",
   },
 ] as const;
