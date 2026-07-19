@@ -5,99 +5,116 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
+  gap: 0.625rem;
 }
 
 .label {
   margin: 0;
-  font-size: var(--fs-caption);
+  font-size: 0.6875rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.0825rem;
+  line-height: 1.2375rem;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: #3a3a3a;
 }
 
 .stage {
   --envelope: #efd070;
-  width: min(22.5rem, 100%);
-  perspective: 1400px;
+  width: min(41.75rem, 100%);
+  perspective: 1200px;
+  perspective-origin: 50% 40%;
+  overflow: visible;
 }
 
 .envelope {
   position: relative;
   width: 100%;
   aspect-ratio: 668 / 488;
-  border-radius: clamp(1.6rem, 6.7%, 2.8rem);
-  background: var(--envelope);
-  overflow: hidden;
+  border-radius: 6.74%;
+  overflow: visible;
   cursor: pointer;
   outline: none;
+  transform: translateZ(0);
   transform-style: preserve-3d;
 }
 
-.envelope:hover,
-.envelope:focus-within {
-  overflow: visible;
-}
-
-.envelope:hover .letter,
-.envelope:focus-within .letter {
-  transform: translate3d(0, -28%, 0) rotate(-9deg);
+.body {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  background: var(--envelope);
+  overflow: hidden;
 }
 
 .letter {
   position: absolute;
-  left: 12%;
-  right: 10%;
-  top: 6%;
-  z-index: 1;
-  height: 96%;
-  border-radius: 1.35rem;
+  z-index: 0;
+  width: 90.42%;
+  height: 103.7%;
+  right: -2.4%;
+  bottom: -26.4%;
+  border-radius: 1.375rem;
   background: #fff;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 14%;
-  /* Deep tuck when closed — yellow diamond stays visible */
-  transform: translate3d(0, 58%, 0) rotate(-2deg);
-  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: rotate(-9deg);
+  transform-origin: center center;
+  transition:
+    bottom 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    right 0.55s cubic-bezier(0.22, 1, 0.36, 1);
   overflow: hidden;
-  box-shadow: none;
+  pointer-events: none;
+}
+
+.envelope:hover .letter,
+.envelope:focus-within .letter {
+  bottom: -12.1%;
+  right: -0.9%;
+  pointer-events: auto;
 }
 
 .letterLines {
   position: absolute;
-  left: 8%;
-  right: 8%;
-  top: 12%;
-  bottom: 14%;
+  left: 1.5%;
+  right: 1.5%;
+  top: 0.25%;
+  bottom: 3.5%;
   background: repeating-linear-gradient(
     to bottom,
     transparent 0,
-    transparent 1.55rem,
-    #ececec 1.55rem,
-    #ececec calc(1.55rem + 1px)
+    transparent 3.5rem,
+    #ececec 3.5rem,
+    #ececec calc(3.5rem + 1px)
   );
   pointer-events: none;
 }
 
 .cta {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  z-index: 0;
+  top: 10.9%;
+  left: 49%;
+  transform: translateX(-50%);
   margin: 0;
-  padding: 0.35rem 0.75rem;
+  padding: 0.625rem;
   border: none;
   background: transparent;
   font-family:
     var(--font-caveat),
     var(--font-noto-sans-sc),
     cursive;
-  font-size: clamp(1.65rem, 5.8vw, 2.15rem);
+  font-size: 2.25rem;
   line-height: 1;
   color: #111;
   cursor: pointer;
   display: grid;
   place-items: center;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.envelope:hover .cta,
+.envelope:focus-within .cta {
+  pointer-events: auto;
 }
 
 .cta > span {
@@ -128,23 +145,28 @@
 
 .flapLeft,
 .flapRight,
-.flapBottom {
+.flapBottom,
+.flapTopWrap,
+.flapTop {
   position: absolute;
   display: block;
+  pointer-events: none;
 }
 
 .flapLeft {
   left: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
+  top: -9%;
+  width: 49.85%;
+  height: 109%;
+  overflow: visible;
 }
 
 .flapRight {
   right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
+  top: -9%;
+  width: 50.15%;
+  height: 109%;
+  overflow: visible;
 }
 
 .flapBottom {
@@ -156,13 +178,58 @@
   z-index: 1;
 }
 
-@media (max-width: 480px) {
+.flapTopWrap {
+  z-index: 10;
+  top: 0;
+  left: 6.75%;
+  width: 86.7%;
+  height: 53.9%;
+  transform-origin: 50% 0%;
+  transform: translateZ(2px) scaleY(1);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.envelope:hover .flapTopWrap,
+.envelope:focus-within .flapTopWrap {
+  transform: translateZ(2px) translateY(2.25%) scaleY(-1);
+}
+
+.flapTop {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flapTopWrap,
+  .letter {
+    transition: none;
+  }
+}
+
+@media (max-width: 809px) {
   .stage {
-    width: min(19rem, 100%);
+    width: min(20rem, 100%);
+  }
+
+  .cta {
+    font-size: clamp(1.125rem, 5.4vw, 1.5rem);
+    top: 11.5%;
+  }
+
+  .letterLines {
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 2.5rem,
+      #ececec 2.5rem,
+      #ececec calc(2.5rem + 1px)
+    );
   }
 
   .envelope:hover .letter,
   .envelope:focus-within .letter {
-    transform: translate3d(0, -20%, 0) rotate(-7deg);
+    bottom: -13.7%;
+    right: -2.5%;
   }
 }
