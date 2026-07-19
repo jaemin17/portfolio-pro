@@ -31,10 +31,6 @@ function SideFlapFilter({ id }: { id: string }) {
       <feComposite in="offset" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="composite" />
       <feFlood floodColor="rgba(235, 204, 106, 0.75)" result="flood" />
       <feComposite in="flood" in2="composite" operator="in" result="shadow" />
-      <feMerge>
-        <feMergeNode in="shadow" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
     </filter>
   );
 }
@@ -54,10 +50,6 @@ function BottomFlapFilter({ id }: { id: string }) {
       <feComposite in="offset" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="composite" />
       <feFlood floodColor="rgba(235, 204, 106, 0.5)" result="flood" />
       <feComposite in="flood" in2="composite" operator="in" result="shadow" />
-      <feMerge>
-        <feMergeNode in="shadow" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
     </filter>
   );
 }
@@ -66,6 +58,7 @@ export function EnvelopeMail({ copy }: EnvelopeMailProps) {
   const [copied, setCopied] = useState(false);
   const uid = useId().replace(/:/g, "");
   const sideFilterId = `env-side-${uid}`;
+  const sideFilterRightId = `env-side-r-${uid}`;
   const bottomFilterId = `env-bottom-${uid}`;
 
   async function handleCopy() {
@@ -105,35 +98,49 @@ export function EnvelopeMail({ copy }: EnvelopeMailProps) {
           </div>
 
           <div className={styles.flaps} aria-hidden="true">
-            <svg className={styles.flapLeft} viewBox="0 0 333 532.125" preserveAspectRatio="none">
+            <svg
+              className={styles.flapLeft}
+              viewBox="0 0 333 532.125"
+              preserveAspectRatio="none"
+              overflow="visible"
+            >
               <defs>
                 <SideFlapFilter id={sideFilterId} />
               </defs>
-              <path
-                d="M0 0 L0 532.125 L333 288 Z"
-                fill={FLAP_FILL}
-                filter={`url(#${sideFilterId})`}
-              />
+              <path d="M0 0 L0 532.125 L333 288 Z" fill={FLAP_FILL} />
+              <path d="M0 0 L0 532.125 L333 288 Z" fill="black" filter={`url(#${sideFilterId})`} />
             </svg>
 
-            <svg className={styles.flapRight} viewBox="0 0 333.75 532.125" preserveAspectRatio="none">
+            <svg
+              className={styles.flapRight}
+              viewBox="0 0 333.75 532.125"
+              preserveAspectRatio="none"
+              overflow="visible"
+            >
               <defs>
-                <SideFlapFilter id={`${sideFilterId}-r`} />
+                <SideFlapFilter id={sideFilterRightId} />
               </defs>
+              <path d="M333.75 0 L0 288 L333.75 532.125 Z" fill={FLAP_FILL} />
               <path
                 d="M333.75 0 L0 288 L333.75 532.125 Z"
-                fill={FLAP_FILL}
-                filter={`url(#${sideFilterId}-r)`}
+                fill="black"
+                filter={`url(#${sideFilterRightId})`}
               />
             </svg>
 
-            <svg className={styles.flapBottom} viewBox="-4 -2 675.5 248.125" preserveAspectRatio="none">
+            <svg
+              className={styles.flapBottom}
+              viewBox="0 0 667.5 244.125"
+              preserveAspectRatio="none"
+              overflow="visible"
+            >
               <defs>
                 <BottomFlapFilter id={bottomFilterId} />
               </defs>
+              <path d="M0 244.125 L333 0 L667.5 244.125 Z" fill={FLAP_FILL} />
               <path
-                d="M -4 246.125 L 333.75 -2 L 671.5 246.125 Z"
-                fill={FLAP_FILL}
+                d="M0 244.125 L333 0 L667.5 244.125 Z"
+                fill="black"
                 filter={`url(#${bottomFilterId})`}
               />
             </svg>
