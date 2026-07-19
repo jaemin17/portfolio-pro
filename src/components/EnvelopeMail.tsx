@@ -127,12 +127,12 @@ export function EnvelopeMail({ copy }: EnvelopeMailProps) {
               />
             </svg>
 
-            <svg className={styles.flapBottom} viewBox="0 0 667.5 244.125" preserveAspectRatio="none">
+            <svg className={styles.flapBottom} viewBox="-4 -2 675.5 248.125" preserveAspectRatio="none">
               <defs>
                 <BottomFlapFilter id={bottomFilterId} />
               </defs>
               <path
-                d="M0 244.125 L333 0 L667.5 244.125 Z"
+                d="M -4 246.125 L 333.75 -2 L 671.5 246.125 Z"
                 fill={FLAP_FILL}
                 filter={`url(#${bottomFilterId})`}
               />
