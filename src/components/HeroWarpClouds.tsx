@@ -19,7 +19,7 @@ export function HeroWarpClouds() {
     <Warp
       className={styles.warpClouds}
       colors={[...CLOUD_COLORS]}
-      speed={0.7}
+      speed={1.4}
       scale={1}
       rotation={0}
       proportion={0.3}
