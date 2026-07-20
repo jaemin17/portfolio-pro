@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import styles from "./LazyVideo.module.css";
 
 type LazyVideoProps = {
   className?: string;
@@ -17,6 +18,11 @@ export function LazyVideo({
 }: LazyVideoProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
+  const [isVideoReady, setIsVideoReady] = useState(false);
+
+  useEffect(() => {
+    setIsVideoReady(false);
+  }, [src]);
 
   useEffect(() => {
     const element = containerRef.current;
@@ -41,29 +47,30 @@ export function LazyVideo({
     return () => observer.disconnect();
   }, [shouldLoad]);
 
+  const mediaClass = [styles.media, className].filter(Boolean).join(" ");
+
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className={styles.shell}>
+      <img
+        className={`${mediaClass} ${isVideoReady ? styles.posterHidden : ""}`}
+        src={posterSrc}
+        alt={label}
+        loading="lazy"
+        decoding="async"
+      />
       {shouldLoad ? (
         <video
-          className={className}
+          className={`${mediaClass} ${isVideoReady ? "" : styles.videoPending}`}
           src={src}
-          poster={posterSrc}
           autoPlay
           muted
           loop
           playsInline
-          preload="none"
+          preload="auto"
           aria-label={label}
+          onCanPlay={() => setIsVideoReady(true)}
         />
-      ) : (
-        <img
-          className={className}
-          src={posterSrc}
-          alt={label}
-          loading="lazy"
-          decoding="async"
-        />
-      )}
+      ) : null}
     </div>
   );
 }
