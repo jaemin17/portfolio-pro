@@ -137,9 +137,12 @@ export function EnvelopeMail({ copy }: EnvelopeMailProps) {
               <defs>
                 <BottomFlapFilter id={bottomFilterId} />
               </defs>
-              <path d="M0 244.125 L333 0 L667.5 244.125 Z" fill={FLAP_FILL} />
               <path
-                d="M0 244.125 L333 0 L667.5 244.125 Z"
+                d="M0 244.125 L311 16 Q333 0 355 16 L667.5 244.125 Z"
+                fill={FLAP_FILL}
+              />
+              <path
+                d="M0 244.125 L311 16 Q333 0 355 16 L667.5 244.125 Z"
                 fill="black"
                 filter={`url(#${bottomFilterId})`}
               />
