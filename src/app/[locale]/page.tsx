@@ -183,6 +183,7 @@ export default async function HomePage({ params }: HomePageProps) {
           <RevealOnView className={styles.scrollReveal}>
             <div className={`${styles.revealItem} ${styles.revealDelay1}`}>
               <EnvelopeMail
+                locale={locale}
                 copy={{
                   ...copy.envelopeMail,
                   email: copy.email,

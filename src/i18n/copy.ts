@@ -256,7 +256,7 @@ const copy: Record<Locale, HomeCopy> = {
     },
     envelopeMail: {
       label: "Let's work together",
-      cta: "给我写信",
+      cta: "找我聊聊",
       copied: "已复制！",
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
@@ -370,7 +370,7 @@ const copy: Record<Locale, HomeCopy> = {
     },
     envelopeMail: {
       label: "Let's work together",
-      cta: "write me a mail",
+      cta: "let's chat",
       copied: "mail copied!",
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",

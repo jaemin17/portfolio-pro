@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import type { Locale } from "@/i18n/config";
 import styles from "./EnvelopeMail.module.css";
 
 export type EnvelopeMailCopy = {
@@ -12,6 +13,7 @@ export type EnvelopeMailCopy = {
 
 type EnvelopeMailProps = {
   copy: EnvelopeMailCopy;
+  locale: Locale;
 };
 
 const FLAP_FILL = "#f6e3a7";
@@ -54,7 +56,7 @@ function BottomFlapFilter({ id }: { id: string }) {
   );
 }
 
-export function EnvelopeMail({ copy }: EnvelopeMailProps) {
+export function EnvelopeMail({ copy, locale }: EnvelopeMailProps) {
   const [copied, setCopied] = useState(false);
   const uid = useId().replace(/:/g, "");
   const sideFilterId = `env-side-${uid}`;
@@ -82,7 +84,7 @@ export function EnvelopeMail({ copy }: EnvelopeMailProps) {
               <div className={styles.letterLines} aria-hidden="true" />
               <button
                 type="button"
-                className={styles.cta}
+                className={`${styles.cta} ${locale === "zh" ? styles.ctaZh : ""}`}
                 onClick={handleCopy}
                 aria-label={`${copy.cta}: ${copy.email}`}
               >

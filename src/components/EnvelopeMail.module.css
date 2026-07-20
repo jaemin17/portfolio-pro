@@ -121,6 +121,10 @@
   grid-area: 1 / 1;
 }
 
+.ctaZh {
+  font-size: 1.875rem;
+}
+
 .ctaHidden {
   opacity: 0;
 }
@@ -216,6 +220,10 @@
   .cta {
     font-size: clamp(1.125rem, 5.4vw, 1.5rem);
     top: 11.5%;
+  }
+
+  .ctaZh {
+    font-size: clamp(1rem, 4.8vw, 1.35rem);
   }
 
   .letterLines {
