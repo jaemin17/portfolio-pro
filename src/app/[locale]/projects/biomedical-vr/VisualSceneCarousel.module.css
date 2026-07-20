@@ -1,0 +1,80 @@
+.root {
+  width: 100%;
+}
+
+.viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  box-sizing: border-box;
+  border: 3px solid #99f6e4;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+}
+
+.slideActive {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 0 0;
+}
+
+.controlBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(30, 41, 59, 0.72);
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.controlBtn:hover {
+  border-color: rgba(15, 23, 42, 0.32);
+  color: rgba(30, 41, 59, 0.92);
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  background: rgba(15, 23, 42, 0.18);
+  cursor: pointer;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.dotActive {
+  background: #14b8a6;
+  transform: scale(1.25);
+}

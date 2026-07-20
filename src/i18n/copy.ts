@@ -218,6 +218,7 @@ const copy: Record<Locale, HomeCopy> = {
           title: "生物医疗VR",
           description:
             "动物模型、解剖训练、手术步骤和课程资源相关的 VR 教育软件界面。",
+          href: "/projects/biomedical-vr",
           videoSrc: visualMedia.biomedical,
           posterSrc: visualPosters.biomedical,
           framed: false,
@@ -332,6 +333,7 @@ const copy: Record<Locale, HomeCopy> = {
           title: "Biomedical VR",
           description:
             "VR education software for animal models, anatomy training, surgical steps, and course resources.",
+          href: "/projects/biomedical-vr",
           videoSrc: visualMedia.biomedical,
           posterSrc: visualPosters.biomedical,
           framed: false,

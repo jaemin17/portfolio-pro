@@ -1,0 +1,192 @@
+.projectHeroCoverFrame {
+  width: min(100%, 940px);
+}
+
+.mediaBorder {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid #99f6e4;
+  border-radius: 12px;
+}
+
+.projectHeroCoverImage {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.conceptHeadlineEmphasis {
+  font-style: italic;
+  color: #14b8a6;
+}
+
+.positioningSection {
+  padding: 60px 30px 80px;
+}
+
+.stackedSection {
+  padding-top: 0;
+}
+
+.positioningInner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.positioningLabel {
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #14b8a6;
+  margin-bottom: 12px;
+}
+
+.positioningGrid {
+  display: grid;
+  grid-template-columns: 2.5fr 4fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.positioningHeading {
+  font-size: var(--fs-title);
+  font-weight: 500;
+  line-height: 1.65;
+  padding-top: 24px;
+  margin: 0;
+}
+
+.positioningHeadingLight {
+  color: #888;
+  font-weight: 400;
+}
+
+.positioningHeadingDark {
+  color: #333;
+  font-style: italic;
+}
+
+.positioningBody {
+  line-height: 1.8;
+  color: #444;
+  font-size: var(--fs-body);
+}
+
+.positioningBody p:first-child {
+  margin-top: 0;
+}
+
+.positioningBody p {
+  margin-bottom: 28px;
+  line-height: 1.75;
+}
+
+.positioningEmphasis {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.narrativeSection {
+  padding: 60px 30px 80px;
+}
+
+.narrativeInner {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.narrativeGrid {
+  display: grid;
+  grid-template-columns: 2.5fr 4fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.narrativeHeadline {
+  font-size: var(--fs-title);
+  font-weight: 500;
+  line-height: 1.65;
+  padding-top: 24px;
+  margin: 0;
+}
+
+.narrativeHeadlineLight {
+  color: #888;
+  font-weight: 400;
+}
+
+.narrativeHeadlineDark {
+  color: #333;
+  font-style: italic;
+}
+
+.narrativeBody {
+  line-height: 1.8;
+  color: #444;
+  font-size: var(--fs-body);
+}
+
+.narrativeBody p {
+  margin: 0 0 28px;
+  line-height: 1.75;
+}
+
+.sceneStack {
+  display: grid;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+.sceneBlock {
+  margin: 0;
+}
+
+.sceneTitle {
+  margin: 0 0 16px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.sceneTitleAccent {
+  color: #64748b;
+  font-weight: 400;
+}
+
+.evidenceImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.subsectionHeroImage {
+  margin-top: 48px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.contactAlign {
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+  .positioningGrid,
+  .narrativeGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .positioningHeading,
+  .narrativeHeadline {
+    padding-top: 0;
+  }
+}
