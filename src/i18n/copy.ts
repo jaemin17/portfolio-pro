@@ -215,20 +215,21 @@ const copy: Record<Locale, HomeCopy> = {
       loadMore: "加载更多",
       items: [
         {
+          title: "智能制造 VR",
+          description:
+            "变速器、工业机器人、注塑模具等工业设备实训画面和教学操作界面。",
+          href: "/projects/smart-manufacturing",
+          videoSrc: visualMedia.manufacturing,
+          posterSrc: visualPosters.manufacturing,
+          framed: false,
+        },
+        {
           title: "生物医疗VR",
           description:
             "动物模型、解剖训练、手术步骤和课程资源相关的 VR 教育软件界面。",
           href: "/projects/biomedical-vr",
           videoSrc: visualMedia.biomedical,
           posterSrc: visualPosters.biomedical,
-          framed: false,
-        },
-        {
-          title: "智能制造 VR",
-          description:
-            "变速器、工业机器人、注塑模具等工业设备实训画面和教学操作界面。",
-          videoSrc: visualMedia.manufacturing,
-          posterSrc: visualPosters.manufacturing,
           framed: false,
         },
         {
@@ -330,20 +331,21 @@ const copy: Record<Locale, HomeCopy> = {
       loadMore: "Load more",
       items: [
         {
+          title: "Smart Manufacturing VR",
+          description:
+            "Training views and teaching UI for industrial equipment such as transmissions, robots, and injection molds.",
+          href: "/projects/smart-manufacturing",
+          videoSrc: visualMedia.manufacturing,
+          posterSrc: visualPosters.manufacturing,
+          framed: false,
+        },
+        {
           title: "Biomedical VR",
           description:
             "VR education software for animal models, anatomy training, surgical steps, and course resources.",
           href: "/projects/biomedical-vr",
           videoSrc: visualMedia.biomedical,
           posterSrc: visualPosters.biomedical,
-          framed: false,
-        },
-        {
-          title: "Smart Manufacturing VR",
-          description:
-            "Training views and teaching UI for industrial equipment such as transmissions, robots, and injection molds.",
-          videoSrc: visualMedia.manufacturing,
-          posterSrc: visualPosters.manufacturing,
           framed: false,
         },
         {
