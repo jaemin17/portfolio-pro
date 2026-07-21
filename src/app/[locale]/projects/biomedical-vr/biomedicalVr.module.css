@@ -178,6 +178,46 @@
   box-sizing: border-box;
 }
 
+.chapterNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chapterNavLink {
+  font-size: var(--fs-body);
+  color: #14b8a6;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.chapterNavLink:hover {
+  border-bottom-color: #14b8a6;
+}
+
+.chapterAnchor {
+  scroll-margin-top: 88px;
+}
+
+.chapterHeading {
+  font-size: var(--fs-title);
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0 0 12px;
+  color: #1a1a1a;
+}
+
+.chapterLead {
+  margin: 0 0 32px;
+  line-height: 1.75;
+  color: #444;
+  font-size: var(--fs-body);
+  max-width: 52ch;
+}
+
 @media (max-width: 860px) {
   .positioningGrid,
   .narrativeGrid {
