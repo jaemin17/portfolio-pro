@@ -13,7 +13,7 @@ export default function RootPage() {
       />
       <main style={{ fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
         <p>
-          <a href={target}>进入作品集 →</a>
+          <a href={target}>Enter portfolio →</a>
         </p>
       </main>
     </>

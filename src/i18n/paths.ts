@@ -4,13 +4,13 @@ function basePathPrefix(): string {
   return process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 }
 
-/** Home URL for the default locale (`/zh/`, or `/{repo}/zh/` on GitHub Pages). */
+/** Home URL for the default locale (`/en/`, or `/{repo}/en/` on GitHub Pages). */
 export function defaultLocaleHome(): string {
   const base = basePathPrefix();
   return `${base}/${defaultLocale}/`;
 }
 
-/** Prefix an app path with `/{locale}` (e.g. `/about` → `/zh/about`). */
+/** Prefix an app path with `/{locale}` (e.g. `/about` → `/en/about`). */
 export function localePath(locale: Locale, path: string): string {
   const normalized = path.startsWith("/") ? path : `/${path}`;
   if (normalized === "/") return `/${locale}/`;
