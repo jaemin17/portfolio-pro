@@ -92,6 +92,10 @@
   padding: 60px 30px 80px;
 }
 
+.processSection {
+  padding-top: 20px;
+}
+
 .narrativeInner {
   max-width: 840px;
   margin: 0 auto;
@@ -131,6 +135,71 @@
 .narrativeBody p {
   margin: 0 0 28px;
   line-height: 1.75;
+}
+
+.processTagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.processTag {
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid rgba(20, 184, 166, 0.28);
+  border-radius: 999px;
+  color: #0f766e;
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: 1.4;
+  background: rgba(153, 246, 228, 0.16);
+}
+
+.processImagePlaceholder {
+  margin: 48px 0 0;
+}
+
+.processImagePlaceholderFrame {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  padding: 32px;
+  border: 2px dashed rgba(20, 184, 166, 0.45);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(153, 246, 228, 0.18), rgba(14, 116, 144, 0.08)),
+    #f8fffd;
+  text-align: center;
+}
+
+.processImagePlaceholderKicker {
+  display: block;
+  margin-bottom: 10px;
+  color: #14b8a6;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.processImagePlaceholderText {
+  max-width: 48ch;
+  margin: 0;
+  color: #334155;
+  font-size: var(--fs-body);
+  line-height: 1.7;
+}
+
+.processImagePlaceholderCaption {
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: var(--fs-caption);
+  line-height: 1.6;
 }
 
 .sceneStack {
