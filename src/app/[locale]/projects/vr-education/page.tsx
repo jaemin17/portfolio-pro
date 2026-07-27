@@ -31,6 +31,46 @@ function tStr(locale: Locale, zh: string, en: string): string {
   return locale === "en" ? en : zh;
 }
 
+const cattleBackgroundProcessImages = [
+  {
+    src: "/images/visual/vr-education/process/barn-exploration.png",
+    step: "01",
+    label: { zh: "主题定位", en: "Subject cue" },
+    caption: { zh: "牛解剖对应牧场与牛舍", en: "Cattle anatomy mapped to barn-like spaces" },
+  },
+  {
+    src: "/images/visual/vr-education/process/barn-clean-space.png",
+    step: "02",
+    label: { zh: "空间筛选", en: "Spatial selection" },
+    caption: { zh: "保留纵深，减少写实杂物", en: "Keeping depth while reducing literal clutter" },
+  },
+  {
+    src: "/images/visual/vr-education/process/cattle-background-final.png",
+    step: "03",
+    label: { zh: "调色清理", en: "Color refinement" },
+    caption: { zh: "统一蓝色调，降低背景存在感", en: "Unifying the blue tone and lowering background presence" },
+  },
+  {
+    src: "/images/visual/vr-education/process/cattle-interface-final.png",
+    step: "04",
+    label: { zh: "界面应用", en: "Interface application" },
+    caption: { zh: "背景退后，模型和入口信息前置", en: "Background recedes while model and entry points lead" },
+  },
+] as const;
+
+const backgroundTransferImages = [
+  {
+    src: "/images/visual/vr-education/process/tunnel-background.png",
+    label: { zh: "汽车传动背景", en: "Automotive transmission background" },
+    caption: { zh: "用隧道建立机械与交通联想", en: "A tunnel cue suggests mechanics and mobility" },
+  },
+  {
+    src: "/images/visual/vr-education/process/cochlea-background.png",
+    label: { zh: "耳部结构背景", en: "Ear anatomy background" },
+    caption: { zh: "将耳蜗结构转译为空间轮廓", en: "Cochlea forms translated into spatial contours" },
+  },
+] as const;
+
 export default async function VrEducationPage({ params }: VrEducationPageProps) {
   const { locale: localeParam } = await params;
   if (!isLocale(localeParam)) notFound();
@@ -119,60 +159,196 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     )}
                   </p>
                   <div className={styles.designPoints}>
-                    <h4>{t(locale, "设计难点", "Design Challenge")}</h4>
+                    <h4>
+                      {t(
+                        locale,
+                        "从教学对象提取空间隐喻",
+                        "Extracting spatial metaphors from learning subjects",
+                      )}
+                    </h4>
                     <p>
                       {t(
                         locale,
-                        "在 3D 场景中，要把操作、说明与反馈收进同一套教学界面，且不抢模型焦点。",
-                        "In the 3D scene, operations, explanations, and feedback had to live in one teaching interface—without stealing focus from the model.",
+                        "我没有把背景当作装饰图处理，而是根据不同实训内容提取对应的空间隐喻：牛解剖对应牧场与牛舍，汽车传动结构对应隧道空间，耳部结构则转译为类似耳蜗的弧形场景。",
+                        "Instead of treating backgrounds as decoration, I translated each training subject into a restrained spatial metaphor: a barn-like space for cattle anatomy, a tunnel-like scene for automotive transmission, and cochlea-inspired curves for ear anatomy.",
                       )}
                     </p>
                     <p>
                       {t(
                         locale,
-                        "背景不能只是装饰——它要营造可进入的虚拟空间，同时保持干净、克制，让 3D 模型预览和教学信息始终清晰。",
-                        "The background cannot be just decoration—it needs to create an accessible virtual space while staying clean and restrained, keeping the 3D model preview and teaching content clear.",
-                      )}
-                    </p>
-                    <p>
-                      {t(
-                        locale,
-                        "我用 Midjourney 做前期空间探索，再通过筛选、调色和清理，把生成结果转化成可服务模型展示的背景系统。",
-                        "I used Midjourney for early spatial exploration, then turned selected generations into background systems through curation, color refinement, and cleanup.",
+                        "经过 AI 关键词探索和 Figma 后期调色，我保留主题联想与空间纵深，同时压低细节、对比和材质干扰，让 3D 模型和教学信息始终成为界面的视觉重点。",
+                        "Through AI prompt exploration and Figma color refinement, I kept the thematic association and depth while reducing detail, contrast, and texture noise, so the 3D model and learning content remained visually dominant.",
                       )}
                     </p>
                     <ul className={styles.processTagList}>
                       <li className={styles.processTag}>
-                        {t(locale, "空间感但不杂乱", "Depth without clutter")}
+                        {t(locale, "从对象提取空间隐喻", "Spatial metaphors from subjects")}
                       </li>
                       <li className={styles.processTag}>
-                        {t(locale, "主题相关但不写实堆叠", "Relevant but not literal")}
+                        {t(locale, "主题相关但不直白堆叠", "Relevant without literal clutter")}
                       </li>
                       <li className={styles.processTag}>
-                        {t(locale, "颜色干净且层级可读", "Clean color with readable hierarchy")}
+                        {t(locale, "低干扰地承托模型", "Low-noise support for models")}
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <figure className={styles.processImagePlaceholder}>
-                <div className={styles.processImagePlaceholderFrame}>
-                  <span className={styles.processImagePlaceholderKicker}>
-                    {t(locale, "配图占位", "Image placeholder")}
-                  </span>
-                  <p className={styles.processImagePlaceholderText}>
+              <section className={styles.promptStrategyBlock}>
+                <div>
+                  <p className={styles.promptStrategyKicker}>
+                    {t(locale, "主题词选择", "Prompt Strategy")}
+                  </p>
+                  <h3 className={styles.promptStrategyHeading}>
                     {t(
                       locale,
-                      "这里将放 Midjourney 关键词迭代、背景筛选和最终界面应用对比。",
-                      "Midjourney prompt iterations, selected backgrounds, and final in-interface examples will be placed here.",
+                      "用关键词约束背景方向",
+                      "Using prompts to guide background direction",
+                    )}
+                  </h3>
+                  <p className={styles.promptStrategyLead}>
+                    {t(
+                      locale,
+                      "在 AI 探索阶段，我将关键词拆成五类：主题线索决定背景与课程对象的关系；空间构图为 3D 模型预留展示位置；空间抽象减少写实杂物；界面适配控制信息层级；色彩与光影统一整体氛围。",
+                      "During AI exploration, I grouped prompts into five categories: subject cues define the relationship to the course topic; composition reserves space for the 3D model; spatial abstraction reduces literal clutter; interface fit controls information hierarchy; color and lighting unify the overall mood.",
                     )}
                   </p>
+                </div>
+                <div className={styles.promptKeywordGrid}>
+                  <div className={styles.promptKeywordCard}>
+                    <span>{t(locale, "主题线索", "Subject Cue")}</span>
+                    <p className={styles.promptKeywordPurpose}>
+                      {t(
+                        locale,
+                        "作用：让背景与课程对象建立关联。",
+                        "Role: connect the background to the course subject.",
+                      )}
+                    </p>
+                    <p className={styles.promptKeywordExamples}>
+                      farm / pig house / laboratory / animal habitat / futuristic space
+                    </p>
+                  </div>
+                  <div className={styles.promptKeywordCard}>
+                    <span>{t(locale, "空间构图", "Composition")}</span>
+                    <p className={styles.promptKeywordPurpose}>
+                      {t(
+                        locale,
+                        "作用：为 3D 模型预留展示位置。",
+                        "Role: reserve display space for the 3D model.",
+                      )}
+                    </p>
+                    <p className={styles.promptKeywordExamples}>
+                      empty space / large negative space / stage-like environment / frontal perspective
+                    </p>
+                  </div>
+                  <div className={styles.promptKeywordCard}>
+                    <span>{t(locale, "空间抽象", "Spatial Abstraction")}</span>
+                    <p className={styles.promptKeywordPurpose}>
+                      {t(
+                        locale,
+                        "作用：减少写实杂物，保留空间轮廓。",
+                        "Role: reduce literal clutter while keeping spatial contours.",
+                      )}
+                    </p>
+                    <p className={styles.promptKeywordExamples}>
+                      flattened perspective / simplified spatial structure / graphic 3D composition
+                    </p>
+                  </div>
+                  <div className={styles.promptKeywordCard}>
+                    <span>{t(locale, "界面适配", "Interface Fit")}</span>
+                    <p className={styles.promptKeywordPurpose}>
+                      {t(
+                        locale,
+                        "作用：让背景退后，保持信息层级清晰。",
+                        "Role: push the background back and keep hierarchy clear.",
+                      )}
+                    </p>
+                    <p className={styles.promptKeywordExamples}>
+                      sparse backgrounds / clean background / subdued minimalism / restrained aesthetic
+                    </p>
+                  </div>
+                  <div className={styles.promptKeywordCard}>
+                    <span>{t(locale, "色彩与光影", "Color & Lighting")}</span>
+                    <p className={styles.promptKeywordPurpose}>
+                      {t(
+                        locale,
+                        "作用：统一视觉氛围，降低对比刺激。",
+                        "Role: unify the mood and reduce contrast intensity.",
+                      )}
+                    </p>
+                    <p className={styles.promptKeywordExamples}>
+                      soft cyan tones / muted colors / subtle color variations / diffused lighting
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <figure className={styles.processImagePlaceholder}>
+                <h3 className={styles.backgroundProcessHeading}>
+                  {t(
+                    locale,
+                    "牛解剖背景探索流程",
+                    "Cattle Anatomy Background Exploration",
+                  )}
+                </h3>
+                <div className={styles.backgroundProcessGrid}>
+                  {cattleBackgroundProcessImages.map((image) => (
+                    <div className={styles.backgroundProcessCard} key={image.src}>
+                      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+                      <img
+                        src={assetPath(image.src)}
+                        alt={tStr(locale, image.caption.zh, image.caption.en)}
+                        width={1920}
+                        height={1080}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div className={styles.backgroundProcessOverlay}>
+                        <div className={styles.backgroundProcessStep}>
+                          <span className={styles.backgroundProcessNumber}>
+                            {image.step}
+                          </span>
+                          <span className={styles.backgroundProcessTitle}>
+                            {t(locale, image.label.zh, image.label.en)}
+                          </span>
+                        </div>
+                        <p>{t(locale, image.caption.zh, image.caption.en)}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className={styles.backgroundTransferBlock}>
+                  <p className={styles.backgroundTransferIntro}>
+                    {t(
+                      locale,
+                      "同一方法也延展到其他课程模块：",
+                      "The same method was extended to other course modules:",
+                    )}
+                  </p>
+                  <div className={styles.backgroundTransferGrid}>
+                    {backgroundTransferImages.map((image) => (
+                      <div className={styles.backgroundProcessCard} key={image.src}>
+                        {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+                        <img
+                          src={assetPath(image.src)}
+                          alt={tStr(locale, image.caption.zh, image.caption.en)}
+                          width={1920}
+                          height={1080}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <div className={styles.backgroundProcessOverlay}>
+                          <span>{t(locale, image.label.zh, image.label.en)}</span>
+                          <p>{t(locale, image.caption.zh, image.caption.en)}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <figcaption className={styles.processImagePlaceholderCaption}>
                   {t(
                     locale,
-                    "计划展示：AI 原图探索 → 筛选标准 → 调色清理 → 放入界面后的效果。",
-                    "Planned evidence: AI explorations -> selection criteria -> color refinement -> in-interface result.",
+                    "主线展示牛解剖背景从主题定位到界面应用的闭环；补充图说明同一背景方法可迁移到汽车传动与耳部结构模块。",
+                    "The main sequence shows the cattle anatomy background from subject cue to interface application; supporting examples show how the same method transfers to automotive transmission and ear anatomy modules.",
                   )}
                 </figcaption>
               </figure>

@@ -183,8 +183,182 @@
   background: rgba(153, 246, 228, 0.16);
 }
 
+.promptStrategyBlock {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 32px;
+  margin: 48px 0 0;
+  padding: 28px;
+  border: 1px solid rgba(20, 184, 166, 0.22);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(153, 246, 228, 0.14), rgba(241, 245, 249, 0.56));
+}
+
+.promptStrategyKicker {
+  margin: 0 0 10px;
+  color: #14b8a6;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.promptStrategyHeading {
+  margin: 0 0 14px;
+  color: #1a1a1a;
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.promptStrategyLead {
+  margin: 0;
+  color: #475569;
+  font-size: var(--fs-caption);
+  line-height: 1.75;
+}
+
+.promptKeywordGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.promptKeywordCard {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.promptKeywordCard span {
+  display: block;
+  margin-bottom: 8px;
+  color: #0f766e;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.promptKeywordPurpose {
+  margin: 0 0 10px;
+  color: #475569;
+  font-size: var(--fs-caption);
+  line-height: 1.6;
+}
+
+.promptKeywordExamples {
+  margin: 0;
+  color: #334155;
+  font-family: var(--font-geist-mono);
+  font-size: var(--fs-caption);
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
 .processImagePlaceholder {
   margin: 48px 0 0;
+}
+
+.backgroundProcessHeading {
+  margin: 0 0 16px;
+  color: #1a1a1a;
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.backgroundProcessGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.backgroundProcessCard {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 3px solid #99f6e4;
+  border-radius: 12px;
+  background: #0f766e;
+}
+
+.backgroundProcessCard img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.backgroundProcessOverlay {
+  position: absolute;
+  inset: auto 0 0;
+  box-sizing: border-box;
+  padding: 44px 16px 14px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(3, 37, 45, 0), rgba(3, 37, 45, 0.82));
+}
+
+.backgroundProcessOverlay > span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.backgroundProcessStep {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.backgroundProcessNumber {
+  color: #fff;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.backgroundProcessTitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.backgroundProcessOverlay p {
+  margin: 0;
+  font-size: var(--fs-caption);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.backgroundTransferBlock {
+  margin-top: 28px;
+}
+
+.backgroundTransferIntro {
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: var(--fs-caption);
+  line-height: 1.6;
+}
+
+.backgroundTransferGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.backgroundTransferGrid .backgroundProcessCard {
+  border-color: rgba(153, 246, 228, 0.65);
 }
 
 .processImagePlaceholderFrame {
@@ -322,5 +496,18 @@
   .positioningHeading,
   .narrativeHeadline {
     padding-top: 0;
+  }
+
+  .promptStrategyBlock,
+  .promptKeywordGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .backgroundProcessGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .backgroundTransferGrid {
+    grid-template-columns: 1fr;
   }
 }

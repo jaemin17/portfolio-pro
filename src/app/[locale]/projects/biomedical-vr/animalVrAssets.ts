@@ -35,7 +35,7 @@ export const structureModuleShots: readonly VisualShot[] = [
   {
     title: { zh: "耳蜗结构", en: "Cochlea structure" },
     subtitle: { zh: "结构说明", en: "Structure overview" },
-    src: "/images/visual/animal-vr/ear-detail-1.webp",
+    src: "/images/visual/animal-vr/ear-detail-structure.png",
   },
 ];
 
