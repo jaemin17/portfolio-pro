@@ -99,103 +99,60 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
               <div className={styles.positioningGrid}>
                 <h2 className={styles.positioningHeading}>
                   <span className={styles.positioningHeadingLight}>
-                    {t(locale, "从 3D 模型展示，", "From 3D model presentation")}
+                    {t(locale, "让 3D 模型，", "Making 3D models")}
                   </span>
                   <br />
                   <span className={styles.positioningHeadingDark}>
-                    {t(locale, "到可教学的 VR 界面系统", "to teachable VR interface systems")}
+                    {t(
+                      locale,
+                      "在清晰的教学界面中被理解",
+                      "understandable through clear teaching interfaces",
+                    )}
                   </span>
                 </h2>
                 <div className={styles.positioningBody}>
                   <p>
                     {t(
                       locale,
-                      "我参与了一系列面向职业教育的 VR 仿真软件设计，覆盖智能制造、生物医疗等多个教学场景。每个软件都需要把课程入口、模型展示、结构说明、操作引导和反馈状态整合进 3D 学习环境中。",
-                      "I worked on a series of VR simulation products for vocational education, spanning smart manufacturing, biomedical learning, and other teaching scenarios. Each product needed to integrate course entry points, model presentation, structure notes, operation guidance, and feedback states into 3D learning environments.",
+                      "我参与了一系列面向职业教育的 VR 仿真软件设计，覆盖智能制造、生物医疗等多个教学场景。",
+                      "I worked on a series of VR simulation products for vocational education, spanning smart manufacturing, biomedical learning, and other teaching scenarios.",
                     )}
                   </p>
-                  <p>
-                    {t(
-                      locale,
-                      <>
-                        我负责多个模块的
-                        <strong className={styles.positioningEmphasis}>UI 与视觉设计</strong>
-                        ，将不同学科内容整理成统一、可阅读、可操作的 VR 教学界面。
-                      </>,
-                      <>
-                        I worked across multiple modules on{" "}
-                        <strong className={styles.positioningEmphasis}>UI and visual design</strong>,
-                        turning different subject materials into consistent, readable, and operable VR
-                        teaching interfaces.
-                      </>,
-                    )}
-                  </p>
-                  <nav aria-label={tStr(locale, "章节导航", "Chapter navigation")}>
-                    <ul className={styles.chapterNav}>
-                      <li>
-                        <a className={styles.chapterNavLink} href="#smart-manufacturing">
-                          {t(locale, "智能制造 VR", "Smart Manufacturing VR")}
-                        </a>
+                  <div className={styles.designPoints}>
+                    <h4>{t(locale, "设计难点", "Design Challenge")}</h4>
+                    <p>
+                      {t(
+                        locale,
+                        "在 3D 场景中，要把操作、说明与反馈收进同一套教学界面，且不抢模型焦点。",
+                        "In the 3D scene, operations, explanations, and feedback had to live in one teaching interface—without stealing focus from the model.",
+                      )}
+                    </p>
+                    <p>
+                      {t(
+                        locale,
+                        "背景不能只是装饰——它要营造可进入的虚拟空间，同时保持干净、克制，让 3D 模型预览和教学信息始终清晰。",
+                        "The background cannot be just decoration—it needs to create an accessible virtual space while staying clean and restrained, keeping the 3D model preview and teaching content clear.",
+                      )}
+                    </p>
+                    <p>
+                      {t(
+                        locale,
+                        "我用 Midjourney 做前期空间探索，再通过筛选、调色和清理，把生成结果转化成可服务模型展示的背景系统。",
+                        "I used Midjourney for early spatial exploration, then turned selected generations into background systems through curation, color refinement, and cleanup.",
+                      )}
+                    </p>
+                    <ul className={styles.processTagList}>
+                      <li className={styles.processTag}>
+                        {t(locale, "空间感但不杂乱", "Depth without clutter")}
                       </li>
-                      <li>
-                        <a className={styles.chapterNavLink} href="#biomedical">
-                          {t(locale, "生物医疗 VR", "Biomedical VR")}
-                        </a>
+                      <li className={styles.processTag}>
+                        {t(locale, "主题相关但不写实堆叠", "Relevant but not literal")}
+                      </li>
+                      <li className={styles.processTag}>
+                        {t(locale, "颜色干净且层级可读", "Clean color with readable hierarchy")}
                       </li>
                     </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
-          <div className={`${styles.narrativeSection} ${styles.processSection}`}>
-            <div className={styles.narrativeInner}>
-              <p className={styles.positioningLabel}>
-                {t(locale, "设计难点", "Design Challenge")}
-              </p>
-              <div className={styles.narrativeGrid}>
-                <h2 className={styles.narrativeHeadline}>
-                  <span className={styles.narrativeHeadlineLight}>
-                    {t(locale, "在虚拟空间里建立深度，", "Creating spatial depth")}
-                  </span>
-                  <br />
-                  <span className={styles.narrativeHeadlineDark}>
-                    {t(
-                      locale,
-                      "但不抢走模型焦点",
-                      "without taking focus from the 3D model",
-                    )}
-                  </span>
-                </h2>
-                <div className={styles.narrativeBody}>
-                  <p>
-                    {t(
-                      locale,
-                      "VR 实训界面的背景不能只是装饰。它需要营造可进入的虚拟空间，同时保持干净、克制，让 3D 模型预览和教学信息始终清晰。",
-                      "The background in a VR training interface cannot be just decoration. It needs to create an accessible virtual space while staying clean and restrained, keeping the 3D model preview and teaching content clear.",
-                    )}
-                  </p>
-                  <p>
-                    {t(
-                      locale,
-                      "我用 Midjourney 做前期空间探索，再通过筛选、调色和清理，把生成结果转化成可服务模型展示的背景系统。",
-                      "I used Midjourney for early spatial exploration, then turned selected generations into background systems through curation, color refinement, and cleanup.",
-                    )}
-                  </p>
-                  <ul className={styles.processTagList}>
-                    <li className={styles.processTag}>
-                      {t(locale, "空间感但不杂乱", "Depth without clutter")}
-                    </li>
-                    <li className={styles.processTag}>
-                      {t(locale, "主题相关但不写实堆叠", "Relevant but not literal")}
-                    </li>
-                    <li className={styles.processTag}>
-                      {t(locale, "颜色干净且层级可读", "Clean color with readable hierarchy")}
-                    </li>
-                  </ul>
+                  </div>
                 </div>
               </div>
               <figure className={styles.processImagePlaceholder}>
