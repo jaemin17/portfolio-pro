@@ -87,20 +87,20 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
             {t(
               locale,
               <>
-                VR 教育与{" "}
-                <span className={styles.conceptHeadlineEmphasis}>实训界面</span>
+                VR{" "}
+                <span className={styles.conceptHeadlineEmphasis}>实训软件界面系统设计</span>
               </>,
               <>
-                VR Education &{" "}
-                <span className={styles.conceptHeadlineEmphasis}>Training UI</span>
+                VR{" "}
+                <span className={styles.conceptHeadlineEmphasis}>training UI design</span>
               </>,
             )}
           </h1>
           <p className={selflyStyles.subtitle}>
             {t(
               locale,
-              "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
-              "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+              "工业设备实训与生物医疗解剖等 VR 仿真软件的界面、场景背景与教学流程设计。",
+              "Interface, scene background, and learning-flow design for VR simulation software across industrial training and biomedical anatomy.",
             )}
           </p>
           <div className={selflyStyles.headerCta}>
@@ -154,10 +154,36 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   <p>
                     {t(
                       locale,
-                      "我参与了一系列面向职业教育的 VR 仿真软件设计，覆盖智能制造、生物医疗等多个教学场景。",
-                      "I worked on a series of VR simulation products for vocational education, spanning smart manufacturing, biomedical learning, and other teaching scenarios.",
+                      "我负责将一组职业教育 VR 模块整理成稳定的界面与视觉方法，覆盖智能制造设备、生物医疗结构训练和动物解剖教学等场景。",
+                      "I shaped a consistent interface and visual method for a set of vocational VR modules, covering smart manufacturing equipment, biomedical structure training, and animal anatomy learning.",
                     )}
                   </p>
+                  <section className={styles.challengeBlock}>
+                    <h3>{t(locale, "设计挑战", "Design Challenges")}</h3>
+                    <ul>
+                      <li>
+                        {t(
+                          locale,
+                          "3D 模型是主角，界面不能抢视觉",
+                          "The 3D model had to stay dominant while the UI stayed quiet.",
+                        )}
+                      </li>
+                      <li>
+                        {t(
+                          locale,
+                          "不同学科内容需要统一但可区分的场景语言",
+                          "Different subjects needed a shared visual language without looking identical.",
+                        )}
+                      </li>
+                      <li>
+                        {t(
+                          locale,
+                          "教学阅读和实操引导需要不同信息层级",
+                          "Teaching, reading, and hands-on guidance needed separate hierarchy rules.",
+                        )}
+                      </li>
+                    </ul>
+                  </section>
                   <div className={styles.designPoints}>
                     <h4>
                       {t(
@@ -197,13 +223,13 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
               <section className={styles.promptStrategyBlock}>
                 <div>
                   <p className={styles.promptStrategyKicker}>
-                    {t(locale, "主题词选择", "Prompt Strategy")}
+                    {t(locale, "关键词探索", "Keyword Exploration")}
                   </p>
                   <h3 className={styles.promptStrategyHeading}>
                     {t(
                       locale,
-                      "用关键词约束背景方向",
-                      "Using prompts to guide background direction",
+                      "拆解五类背景关键词",
+                      "Breaking down five background prompt groups",
                     )}
                   </h3>
                   <p className={styles.promptStrategyLead}>
@@ -372,8 +398,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
               <p className={styles.chapterLead}>
                 {t(
                   locale,
-                  "变速器、工业机器人、注塑模具等工业设备实训画面和教学操作界面。",
-                  "Training views and teaching UI for industrial equipment such as transmissions, robots, and injection molds.",
+                  "变速器、工业机器人、注塑模具等工业设备实训画面和教学操作界面。我将首页用于对象识别，子页面用于结构说明和操作反馈，避免单屏同时承载导览、教学和实操任务。",
+                  "Training views and teaching UI for industrial equipment such as transmissions, robots, and injection molds. I used home screens for object recognition, then moved structure notes and operation feedback into subpages so one screen did not carry browsing, teaching, and practice at once.",
                 )}
               </p>
 
@@ -417,8 +443,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   <p>
                     {t(
                       locale,
-                      "工业机器人与注塑模具模块需要同时呈现首页导览、机构说明和装配操作。界面需在深色 3D 场景中保持信息层级清晰，并区分教学阅读与实操引导。",
-                      "Robot and mold modules must present home tours, mechanism notes, and assembly operations together — keeping hierarchy clear on dark 3D scenes while separating teaching reading from hands-on guidance.",
+                      "工业机器人与注塑模具模块需要同时呈现首页导览、机构说明和装配操作。我的处理方式是把可浏览的设备选择、可阅读的结构说明、可执行的装配步骤拆成不同界面状态，并用高亮、面板和底部操作入口建立稳定层级。",
+                      "Robot and mold modules had to present home tours, mechanism notes, and assembly operations together. I separated browsable equipment selection, readable structure notes, and executable assembly steps into distinct UI states, using highlights, panels, and bottom actions as stable hierarchy anchors.",
                     )}
                   </p>
                 </div>
@@ -453,8 +479,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
               <p className={styles.chapterLead}>
                 {t(
                   locale,
-                  "动物模型、解剖训练、手术步骤和课程资源相关的 VR 仿真软件界面。",
-                  "UI design for VR simulation software covering animal models, anatomy training, surgical steps, and course resources.",
+                  "动物模型、解剖训练、手术步骤和课程资源相关的 VR 仿真软件界面。这个方向的重点是从单一结构展示扩展为完整解剖教学流程，让学习者能在模型观察、结构讲解、课程选择和引导弹窗之间顺畅切换。",
+                  "UI design for VR simulation software covering animal models, anatomy training, surgical steps, and course resources. The focus was expanding from single-structure views into a full anatomy learning flow, so learners could move between model observation, structure explanation, course selection, and onboarding.",
                 )}
               </p>
 
@@ -497,8 +523,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   <p>
                     {t(
                       locale,
-                      "动物解剖模块需要同时呈现结构教学、交互状态、课程列表与新手指引。界面需在深色 3D 场景中保持信息层级清晰，并区分不同动物与不同学习阶段。",
-                      "Animal anatomy modules must present structure teaching, interaction states, course lists, and onboarding together — keeping hierarchy clear on dark 3D scenes while distinguishing animals and learning stages.",
+                      "动物解剖模块需要同时呈现结构教学、交互状态、课程列表与新手指引。我保留蓝色空间基底作为统一场景语言，再用动物主体、课程卡片、状态按钮和引导面板区分不同学习阶段。",
+                      "Animal anatomy modules had to present structure teaching, interaction states, course lists, and onboarding together. I kept the blue spatial base as a shared scene language, then used animal subjects, course cards, state buttons, and guidance panels to separate learning stages.",
                     )}
                   </p>
                 </div>
