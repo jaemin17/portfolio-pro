@@ -263,6 +263,10 @@
   line-height: 1.75;
 }
 
+.promptStrategyLead + .promptStrategyLead {
+  margin-top: 10px;
+}
+
 .promptKeywordGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -398,6 +402,45 @@
   font-size: var(--fs-caption);
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.82);
+}
+
+.backgroundProcessNotes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 18px;
+  margin-top: 16px;
+}
+
+.backgroundProcessNote {
+  min-width: 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(14, 165, 233, 0.28);
+}
+
+.backgroundProcessNote .backgroundProcessStep {
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.backgroundProcessNote .backgroundProcessNumber {
+  color: #0ea5e9;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.backgroundProcessNote .backgroundProcessTitle {
+  color: #0369a1;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.backgroundProcessNote p {
+  margin: 0;
+  color: #475569;
+  font-size: var(--fs-caption);
+  line-height: 1.65;
 }
 
 .backgroundTransferBlock {
@@ -583,5 +626,11 @@
 
   .challengeNode p {
     max-width: 260px;
+  }
+}
+
+@media (max-width: 640px) {
+  .backgroundProcessNotes {
+    grid-template-columns: 1fr;
   }
 }

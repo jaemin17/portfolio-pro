@@ -81,26 +81,38 @@ const cattleBackgroundProcessImages = [
   {
     src: "/images/visual/vr-education/process/barn-exploration.png",
     step: "01",
-    label: { zh: "主题定位", en: "Subject cue" },
-    caption: { zh: "牛解剖对应牧场与牛舍", en: "Cattle anatomy mapped to barn-like spaces" },
+    label: { zh: "主题线索", en: "Subject cue" },
+    caption: {
+      zh: "牛解剖对应牧场 / 牛舍，先确定背景要指向的课程对象。",
+      en: "Cattle anatomy maps to barn-like cues, defining which course subject the background should point to.",
+    },
   },
   {
     src: "/images/visual/vr-education/process/barn-clean-space.png",
     step: "02",
-    label: { zh: "空间筛选", en: "Spatial selection" },
-    caption: { zh: "保留纵深，减少写实杂物", en: "Keeping depth while reducing literal clutter" },
+    label: { zh: "空间抽象", en: "Spatial abstraction" },
+    caption: {
+      zh: "保留棚舍的纵深和轮廓，但减少写实杂物。",
+      en: "Keep the depth and outline of the barn space while reducing literal clutter.",
+    },
   },
   {
     src: "/images/visual/vr-education/process/cattle-background-final.png",
     step: "03",
-    label: { zh: "调色清理", en: "Color refinement" },
-    caption: { zh: "统一蓝色调，降低背景存在感", en: "Unifying the blue tone and lowering background presence" },
+    label: { zh: "低干扰处理", en: "Low-noise treatment" },
+    caption: {
+      zh: "统一青蓝色调，压低材质、对比和细节噪音。",
+      en: "Unify the cyan-blue tone and reduce texture, contrast, and detail noise.",
+    },
   },
   {
     src: "/images/visual/vr-education/process/cattle-interface-final.png",
     step: "04",
-    label: { zh: "界面应用", en: "Interface application" },
-    caption: { zh: "背景退后，模型和入口信息前置", en: "Background recedes while model and entry points lead" },
+    label: { zh: "界面验证", en: "Interface validation" },
+    caption: {
+      zh: "放回实训首页，确认模型、标题和入口信息仍然是视觉主位。",
+      en: "Place the background back into the training home screen and confirm the model, title, and entry points still lead.",
+    },
   },
 ] as const;
 
@@ -299,19 +311,41 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   <h3 className={styles.promptStrategyHeading}>
                     {t(
                       locale,
-                      "拆解五类背景关键词",
-                      "Breaking down five background prompt groups",
+                      "高频关键词如何控制背景",
+                      "How recurring prompts controlled the background",
                     )}
                   </h3>
                   <p className={styles.promptStrategyLead}>
                     {t(
                       locale,
-                      "在 AI 探索阶段，我主要使用一组偏空间方法的关键词：抽象空间、模型展示、低干扰背景和视觉氛围控制占主导；Cochlea 则作为少量具体课程主题线索。",
-                      "During AI exploration, I mainly used spatial-method prompts: abstract space, model display, low-noise backgrounds, and visual atmosphere control were the core; Cochlea stayed as a small subject cue.",
+                      "我先从课程对象提取主题线索，再把它转译成抽象空间；随后用模型展示、低干扰背景和视觉质感控制画面，让背景既能指向具体课程，又不会抢走 3D 模型和教学信息的视觉主位。",
+                      "I first extracted subject cues from the course object, then translated them into abstract space. Model display, low-noise backgrounds, and visual texture then controlled the composition, so the background could point to a specific course without competing with the 3D model or learning content.",
+                    )}
+                  </p>
+                  <p className={styles.promptStrategyLead}>
+                    {t(
+                      locale,
+                      "常用关键词：an abstract 3d environment, Empty space, Sparse backgrounds, Subdued minimalism, Flattened perspective, Flatness of space, expansive spaces, Stage-like environments, Subtle color variations, Realistic lighting, Perspective rendering, Frontal perspective",
+                      "Recurring prompts: an abstract 3d environment, Empty space, Sparse backgrounds, Subdued minimalism, Flattened perspective, Flatness of space, expansive spaces, Stage-like environments, Subtle color variations, Realistic lighting, Perspective rendering, Frontal perspective",
                     )}
                   </p>
                 </div>
                 <div className={styles.promptKeywordGrid}>
+                  <div className={styles.promptKeywordCard}>
+                    <span>{t(locale, "主题线索", "Subject Cues")}</span>
+                    <p className={styles.promptKeywordPurpose}>
+                      {t(
+                        locale,
+                        "从课程对象提取空间联想。",
+                        "Extract spatial associations from the course subject.",
+                      )}
+                    </p>
+                    <KeywordPills
+                      locale={locale}
+                      zh={["耳蜗结构", "机械通道", "动物栖息空间"]}
+                      en={["cochlea structure", "mechanical tunnel", "animal habitat"]}
+                    />
+                  </div>
                   <div className={styles.promptKeywordCard}>
                     <span>{t(locale, "抽象空间", "Abstract Space")}</span>
                     <p className={styles.promptKeywordPurpose}>
@@ -372,21 +406,6 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                       en={["cyan", "realistic lighting", "perspective rendering"]}
                     />
                   </div>
-                  <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "主题线索", "Subject Cues")}</span>
-                    <p className={styles.promptKeywordPurpose}>
-                      {t(
-                        locale,
-                        "根据课程对象补充主题联想。",
-                        "Add thematic associations from the course subject.",
-                      )}
-                    </p>
-                    <KeywordPills
-                      locale={locale}
-                      zh={["耳蜗结构", "机械通道", "动物栖息空间"]}
-                      en={["cochlea structure", "mechanical tunnel", "animal habitat"]}
-                    />
-                  </div>
                 </div>
               </section>
               <figure className={styles.processImagePlaceholder}>
@@ -409,18 +428,22 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         loading="lazy"
                         decoding="async"
                       />
-                      <div className={styles.backgroundProcessOverlay}>
-                        <div className={styles.backgroundProcessStep}>
-                          <span className={styles.backgroundProcessNumber}>
-                            {image.step}
-                          </span>
-                          <span className={styles.backgroundProcessTitle}>
-                            {t(locale, image.label.zh, image.label.en)}
-                          </span>
-                        </div>
-                        <p>{t(locale, image.caption.zh, image.caption.en)}</p>
-                      </div>
                     </div>
+                  ))}
+                </div>
+                <div className={styles.backgroundProcessNotes}>
+                  {cattleBackgroundProcessImages.map((image) => (
+                    <article className={styles.backgroundProcessNote} key={`${image.step}-${image.label.zh}`}>
+                      <div className={styles.backgroundProcessStep}>
+                        <span className={styles.backgroundProcessNumber}>
+                          {image.step}
+                        </span>
+                        <span className={styles.backgroundProcessTitle}>
+                          {t(locale, image.label.zh, image.label.en)}
+                        </span>
+                      </div>
+                      <p>{t(locale, image.caption.zh, image.caption.en)}</p>
+                    </article>
                   ))}
                 </div>
                 <div className={styles.backgroundTransferBlock}>
