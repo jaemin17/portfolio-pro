@@ -31,6 +31,52 @@ function tStr(locale: Locale, zh: string, en: string): string {
   return locale === "en" ? en : zh;
 }
 
+function ChallengeIcon({ type }: { type: "model" | "language" | "hierarchy" }) {
+  if (type === "model") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2.75 20.25 7.25V16.75L12 21.25 3.75 16.75V7.25L12 2.75ZM6.75 8.24 12 11.1 17.25 8.24 12 5.38 6.75 8.24ZM5.75 10.04V15.57L10.9 18.38V12.85L5.75 10.04ZM13.1 18.38 18.25 15.57V10.04L13.1 12.85V18.38Z" />
+      </svg>
+    );
+  }
+
+  if (type === "language") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 5.5H19V8.25H5V5.5ZM7 10.6H17V13.35H7V10.6ZM9 15.7H15V18.45H9V15.7Z" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M10.85 3H13.15V7.9H19V10.15H13.15V21H10.85V10.15H5V7.9H10.85V3ZM6.35 14.1H9.55V16.35H6.35V14.1ZM14.45 14.1H17.65V16.35H14.45V14.1ZM7.8 18.25H9.55V20.5H7.8V18.25ZM14.45 18.25H16.2V20.5H14.45V18.25Z" />
+    </svg>
+  );
+}
+
+function KeywordPills({
+  locale,
+  zh,
+  en,
+}: {
+  locale: Locale;
+  zh: string[];
+  en: string[];
+}) {
+  const keywords = locale === "en" ? en : zh;
+
+  return (
+    <ul className={styles.promptKeywordPills}>
+      {keywords.map((keyword) => (
+        <li className={styles.promptKeywordPill} key={keyword}>
+          {keyword}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 const cattleBackgroundProcessImages = [
   {
     src: "/images/visual/vr-education/process/barn-exploration.png",
@@ -87,8 +133,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
             {t(
               locale,
               <>
-                VR{" "}
-                <span className={styles.conceptHeadlineEmphasis}>实训软件界面系统设计</span>
+                <span className={styles.conceptHeadlineEmphasis}>VR 实训软件</span>{" "}
+                界面系统设计
               </>,
               <>
                 VR{" "}
@@ -154,44 +200,69 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   <p>
                     {t(
                       locale,
-                      "我负责将一组职业教育 VR 模块整理成稳定的界面与视觉方法，覆盖智能制造设备、生物医疗结构训练和动物解剖教学等场景。",
-                      "I shaped a consistent interface and visual method for a set of vocational VR modules, covering smart manufacturing equipment, biomedical structure training, and animal anatomy learning.",
+                      "我负责将一组职业教育 VR 模块整理成稳定的界面与视觉方法，覆盖智能制造设备、生物医疗结构训练和动物解剖教学等场景。项目需要在不同课程之间保持一致的操作体验，同时让每个学科对象具备清晰的视觉识别。",
+                      "I shaped a consistent interface and visual method for a set of vocational VR modules, covering smart manufacturing equipment, biomedical structure training, and animal anatomy learning. The project needed consistent operation across courses while keeping each subject visually recognizable.",
                     )}
                   </p>
-                  <section className={styles.challengeBlock}>
-                    <h3>{t(locale, "设计挑战", "Design Challenges")}</h3>
-                    <ul>
-                      <li>
-                        {t(
-                          locale,
-                          "3D 模型是主角，界面不能抢视觉",
-                          "The 3D model had to stay dominant while the UI stayed quiet.",
-                        )}
-                      </li>
-                      <li>
-                        {t(
-                          locale,
-                          "不同学科内容需要统一但可区分的场景语言",
-                          "Different subjects needed a shared visual language without looking identical.",
-                        )}
-                      </li>
-                      <li>
-                        {t(
-                          locale,
-                          "教学阅读和实操引导需要不同信息层级",
-                          "Teaching, reading, and hands-on guidance needed separate hierarchy rules.",
-                        )}
-                      </li>
-                    </ul>
-                  </section>
-                  <div className={styles.designPoints}>
-                    <h4>
+                </div>
+              </div>
+              <section className={styles.challengeBlock}>
+                <h3>{t(locale, "设计挑战", "Design Challenges")}</h3>
+                <div className={styles.challengeTrack}>
+                  <article className={styles.challengeNode}>
+                    <span className={styles.challengeIcon}>
+                      <ChallengeIcon type="model" />
+                    </span>
+                    <h4>{t(locale, "模型主位", "Model-first focus")}</h4>
+                    <p>
                       {t(
                         locale,
-                        "从教学对象提取空间隐喻",
-                        "Extracting spatial metaphors from learning subjects",
+                        "降低界面、背景和材质干扰，让学习者先看到需要理解的 3D 对象。",
+                        "Reduce UI, background, and material noise so learners first see the 3D object they need to understand.",
                       )}
-                    </h4>
+                    </p>
+                  </article>
+                  <article className={styles.challengeNode}>
+                    <span className={styles.challengeIcon}>
+                      <ChallengeIcon type="language" />
+                    </span>
+                    <h4>{t(locale, "学科辨识", "Subject identity")}</h4>
+                    <p>
+                      {t(
+                        locale,
+                        "保持统一的操作和视觉规则，同时让制造、解剖等课程具备各自识别度。",
+                        "Keep shared interaction and visual rules while giving manufacturing, anatomy, and other courses recognizable identities.",
+                      )}
+                    </p>
+                  </article>
+                  <article className={styles.challengeNode}>
+                    <span className={styles.challengeIcon}>
+                      <ChallengeIcon type="hierarchy" />
+                    </span>
+                    <h4>{t(locale, "信息分层", "Information hierarchy")}</h4>
+                    <p>
+                      {t(
+                        locale,
+                        "把教学说明、模型观察和实操引导拆出层级，避免单屏信息互相抢占。",
+                        "Separate teaching notes, model observation, and operation guidance so one screen does not compete with itself.",
+                      )}
+                    </p>
+                  </article>
+                </div>
+              </section>
+              <section className={styles.strategySection}>
+                <p className={styles.positioningLabel}>{t(locale, "设计策略", "Design Strategy")}</p>
+                <div className={styles.positioningGrid}>
+                  <h2 className={styles.positioningHeading}>
+                    <span className={styles.positioningHeadingLight}>
+                      {t(locale, "从教学对象，", "From learning subjects")}
+                    </span>
+                    <br />
+                    <span className={styles.positioningHeadingDark}>
+                      {t(locale, "提取空间隐喻", "to spatial metaphors")}
+                    </span>
+                  </h2>
+                  <div className={styles.positioningBody}>
                     <p>
                       {t(
                         locale,
@@ -219,7 +290,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     </ul>
                   </div>
                 </div>
-              </div>
+              </section>
               <section className={styles.promptStrategyBlock}>
                 <div>
                   <p className={styles.promptStrategyKicker}>
@@ -235,76 +306,86 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   <p className={styles.promptStrategyLead}>
                     {t(
                       locale,
-                      "在 AI 探索阶段，我将关键词拆成五类：主题线索决定背景与课程对象的关系；空间构图为 3D 模型预留展示位置；空间抽象减少写实杂物；界面适配控制信息层级；色彩与光影统一整体氛围。",
-                      "During AI exploration, I grouped prompts into five categories: subject cues define the relationship to the course topic; composition reserves space for the 3D model; spatial abstraction reduces literal clutter; interface fit controls information hierarchy; color and lighting unify the overall mood.",
+                      "在 AI 探索阶段，我主要使用一组偏空间方法的关键词：抽象空间、模型展示、低干扰背景和视觉氛围控制占主导；Cochlea 则作为少量具体课程主题线索。",
+                      "During AI exploration, I mainly used spatial-method prompts: abstract space, model display, low-noise backgrounds, and visual atmosphere control were the core; Cochlea stayed as a small subject cue.",
                     )}
                   </p>
                 </div>
                 <div className={styles.promptKeywordGrid}>
                   <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "主题线索", "Subject Cue")}</span>
+                    <span>{t(locale, "抽象空间", "Abstract Space")}</span>
                     <p className={styles.promptKeywordPurpose}>
                       {t(
                         locale,
-                        "作用：让背景与课程对象建立关联。",
-                        "Role: connect the background to the course subject.",
+                        "建立可复用的非写实教学空间。",
+                        "Create reusable, non-literal teaching spaces.",
                       )}
                     </p>
-                    <p className={styles.promptKeywordExamples}>
-                      farm / pig house / laboratory / animal habitat / futuristic space
-                    </p>
+                    <KeywordPills
+                      locale={locale}
+                      zh={["抽象 3D 环境", "扁平化透视", "空间平面感"]}
+                      en={["an abstract 3D environment", "flattened perspective", "flatness of space"]}
+                    />
                   </div>
                   <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "空间构图", "Composition")}</span>
+                    <span>{t(locale, "模型展示", "Model Display")}</span>
                     <p className={styles.promptKeywordPurpose}>
                       {t(
                         locale,
-                        "作用：为 3D 模型预留展示位置。",
-                        "Role: reserve display space for the 3D model.",
+                        "为 3D 模型预留清晰展示位置。",
+                        "Reserve clear display space for the 3D model.",
                       )}
                     </p>
-                    <p className={styles.promptKeywordExamples}>
-                      empty space / large negative space / stage-like environment / frontal perspective
-                    </p>
+                    <KeywordPills
+                      locale={locale}
+                      zh={["留白空间", "开阔空间", "舞台式环境", "正面视角"]}
+                      en={["empty space", "expansive spaces", "stage-like environments", "frontal perspective"]}
+                    />
                   </div>
                   <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "空间抽象", "Spatial Abstraction")}</span>
+                    <span>{t(locale, "低干扰背景", "Low-noise Background")}</span>
                     <p className={styles.promptKeywordPurpose}>
                       {t(
                         locale,
-                        "作用：减少写实杂物，保留空间轮廓。",
-                        "Role: reduce literal clutter while keeping spatial contours.",
+                        "减少细节噪音，让背景退后。",
+                        "Reduce detail noise and push the background back.",
                       )}
                     </p>
-                    <p className={styles.promptKeywordExamples}>
-                      flattened perspective / simplified spatial structure / graphic 3D composition
-                    </p>
+                    <KeywordPills
+                      locale={locale}
+                      zh={["稀疏背景", "克制的极简感", "细微色彩变化"]}
+                      en={["sparse backgrounds", "subdued minimalism", "subtle color variations"]}
+                    />
                   </div>
                   <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "界面适配", "Interface Fit")}</span>
+                    <span>{t(locale, "视觉质感", "Visual Texture")}</span>
                     <p className={styles.promptKeywordPurpose}>
                       {t(
                         locale,
-                        "作用：让背景退后，保持信息层级清晰。",
-                        "Role: push the background back and keep hierarchy clear.",
+                        "控制色彩、光照和空间可信度。",
+                        "Control color, lighting, and spatial credibility.",
                       )}
                     </p>
-                    <p className={styles.promptKeywordExamples}>
-                      sparse backgrounds / clean background / subdued minimalism / restrained aesthetic
-                    </p>
+                    <KeywordPills
+                      locale={locale}
+                      zh={["青蓝色", "真实光照", "透视渲染"]}
+                      en={["cyan", "realistic lighting", "perspective rendering"]}
+                    />
                   </div>
                   <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "色彩与光影", "Color & Lighting")}</span>
+                    <span>{t(locale, "主题线索", "Subject Cues")}</span>
                     <p className={styles.promptKeywordPurpose}>
                       {t(
                         locale,
-                        "作用：统一视觉氛围，降低对比刺激。",
-                        "Role: unify the mood and reduce contrast intensity.",
+                        "根据课程对象补充主题联想。",
+                        "Add thematic associations from the course subject.",
                       )}
                     </p>
-                    <p className={styles.promptKeywordExamples}>
-                      soft cyan tones / muted colors / subtle color variations / diffused lighting
-                    </p>
+                    <KeywordPills
+                      locale={locale}
+                      zh={["耳蜗结构", "机械通道", "动物栖息空间"]}
+                      en={["cochlea structure", "mechanical tunnel", "animal habitat"]}
+                    />
                   </div>
                 </div>
               </section>
