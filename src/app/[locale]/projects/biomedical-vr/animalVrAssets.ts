@@ -11,11 +11,7 @@ export const structureModuleShots: readonly VisualShot[] = [
   {
     title: { zh: "犬体结构", en: "Canine body structure" },
     subtitle: { zh: "骨骼 / 肌肉 / 外观", en: "Skeleton / muscle / surface" },
-    src: "/images/visual/animal-vr/dog-layer-overview.webp",
-    carousel: [
-      "/images/visual/animal-vr/dog-layer-overview.webp",
-      "/images/visual/animal-vr/dog-muscle-detail.webp",
-    ],
+    src: "/images/visual/animal-vr/dog-muscle-highlight.png",
   },
   {
     title: { zh: "小脑结构", en: "Cerebellum structure" },

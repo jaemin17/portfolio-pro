@@ -183,10 +183,6 @@ const appIconItems = [
     src: "/images/visual/vr-education/icons/electromechanical.png",
     label: { zh: "机电", en: "Mechatronics" },
   },
-  {
-    src: "/images/visual/vr-education/icons/teaching-pendant.png",
-    label: { zh: "示教", en: "Pendant" },
-  },
 ] as const;
 
 export default async function VrEducationPage({ params }: VrEducationPageProps) {
@@ -770,27 +766,27 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     </article>
                   </div>
                 </div>
-              </div>
 
-              <div className={styles.appIconScroller} aria-label={tStr(locale, "VR 实训应用图标横向列表", "VR training app icon horizontal list")}>
-                <div className={styles.appIconStrip}>
-                  {appIconItems.map((item) => (
-                    <figure className={styles.appIconTile} key={item.src}>
-                      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-                      <img
-                        src={assetPath(item.src)}
-                        alt={tStr(
-                          locale,
-                          `${item.label.zh} VR 实训应用图标`,
-                          `${item.label.en} VR training app icon`,
-                        )}
-                        width={1024}
-                        height={1024}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </figure>
-                  ))}
+                <div className={styles.appIconScroller} aria-label={tStr(locale, "VR 实训应用图标横向列表", "VR training app icon horizontal list")}>
+                  <div className={styles.appIconStrip}>
+                    {appIconItems.map((item) => (
+                      <figure className={styles.appIconTile} key={item.src}>
+                        {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+                        <img
+                          src={assetPath(item.src)}
+                          alt={tStr(
+                            locale,
+                            `${item.label.zh} VR 实训应用图标`,
+                            `${item.label.en} VR training app icon`,
+                          )}
+                          width={1024}
+                          height={1024}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </figure>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

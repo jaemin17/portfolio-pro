@@ -152,7 +152,6 @@ const requiredCopy = [
   "vr-education/icons/cattle.png",
   "vr-education/icons/position.png",
   "vr-education/icons/electromechanical.png",
-  "vr-education/icons/teaching-pendant.png",
   "vr-education/icons/dog.png",
   "vr-education/icons/cat.png",
   "vr-education/icons/pig-icon.png",
@@ -160,6 +159,7 @@ const requiredCopy = [
   "补充 UI 界面",
   "课程列表 / 引导弹窗",
   "pig-course-list.png",
+  "dog-muscle-highlight.png",
 ];
 
 for (const copy of requiredCopy) {
@@ -199,10 +199,16 @@ assert.ok(
 );
 
 assert.ok(
-  appIconScrollerStyle.includes("#f8fffd;") &&
-    appIconScrollerStyle.includes("linear-gradient(135deg,rgba(125,211,252,0.18),rgba(20,184,166,0.08))") &&
-    appIconScrollerStyle.includes("overflow-x:auto;"),
-  "App icon scroller should match the light cyan explanation panel and scroll horizontally",
+  !page.includes("              </div>\n\n              <div className={styles.appIconScroller}"),
+  "App icon strip should be grouped inside the app icon system module instead of a separate block",
+);
+
+assert.ok(
+  appIconScrollerStyle.includes("grid-column:1/-1;") &&
+    appIconScrollerStyle.includes("border-top:1pxdashedrgba(14,165,233,0.28);") &&
+    appIconScrollerStyle.includes("overflow-x:auto;") &&
+    !appIconScrollerStyle.includes("background:"),
+  "App icon scroller should sit inside the light cyan module and still scroll horizontally",
 );
 
 assert.ok(
@@ -211,9 +217,9 @@ assert.ok(
 );
 
 assert.ok(
-  appIconTileStyle.includes("flex:00140px;") &&
-    appIconTileMobileStyle.includes("flex-basis:118px;"),
-  "App icon strip images should be slightly smaller on desktop and mobile",
+  appIconTileStyle.includes("flex:00116px;") &&
+    appIconTileMobileStyle.includes("flex-basis:96px;"),
+  "App icon strip images should be compact on desktop and mobile",
 );
 
 assert.equal(
@@ -229,8 +235,8 @@ assert.deepEqual(
 );
 
 assert.ok(
-  /cattle\.png[\s\S]*dog\.png[\s\S]*cat\.png[\s\S]*pig-icon\.png[\s\S]*motor\.png[\s\S]*application\.png[\s\S]*position\.png[\s\S]*electromechanical\.png[\s\S]*teaching-pendant\.png/.test(appIconItemsBlock),
-  "App icon strip should place animal icons before industrial and teaching icons",
+  /cattle\.png[\s\S]*dog\.png[\s\S]*cat\.png[\s\S]*pig-icon\.png[\s\S]*motor\.png[\s\S]*application\.png[\s\S]*position\.png[\s\S]*electromechanical\.png/.test(appIconItemsBlock),
+  "App icon strip should place animal icons before industrial icons",
 );
 
 assert.ok(
@@ -281,6 +287,9 @@ for (const copy of removedBrainHomeShot) {
 const removedCattleStructureShot = [
   "cow-scene-1.webp",
   "cow-scene-2.webp",
+  "dog-layer-overview.webp",
+  "dog-muscle-detail.webp",
+  "vr-education/icons/teaching-pendant.png",
 ];
 
 for (const copy of removedCattleStructureShot) {

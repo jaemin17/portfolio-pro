@@ -782,13 +782,11 @@
 }
 
 .appIconScroller {
-  margin-top: 34px;
-  padding: 28px;
-  border: 1px solid rgba(14, 165, 233, 0.22);
-  border-radius: 12px;
-  background:
-    linear-gradient(135deg, rgba(125, 211, 252, 0.18), rgba(20, 184, 166, 0.08)),
-    #f8fffd;
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin-top: 2px;
+  padding: 24px 0 0;
+  border-top: 1px dashed rgba(14, 165, 233, 0.28);
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scrollbar-color: rgba(14, 165, 233, 0.42) transparent;
@@ -796,13 +794,13 @@
 
 .appIconStrip {
   display: flex;
-  gap: 28px;
+  gap: 26px;
   width: max-content;
   min-width: 100%;
 }
 
 .appIconTile {
-  flex: 0 0 140px;
+  flex: 0 0 116px;
   min-width: 0;
   margin: 0;
 }
@@ -867,7 +865,7 @@
   }
 
   .appIconScroller {
-    padding: 20px;
+    padding-top: 20px;
   }
 
   .appIconStrip {
@@ -875,6 +873,6 @@
   }
 
   .appIconTile {
-    flex-basis: 118px;
+    flex-basis: 96px;
   }
 }
