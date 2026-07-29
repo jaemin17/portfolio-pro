@@ -12,6 +12,13 @@ const backgroundTransferSwitcher = await readFile(
   ),
   "utf8",
 );
+const animalVrAssets = await readFile(
+  new URL(
+    "../src/app/[locale]/projects/biomedical-vr/animalVrAssets.ts",
+    import.meta.url,
+  ),
+  "utf8",
+);
 const smartManufacturingAssets = await readFile(
   new URL(
     "../src/app/[locale]/projects/smart-manufacturing/smartManufacturingAssets.ts",
@@ -19,7 +26,7 @@ const smartManufacturingAssets = await readFile(
   ),
   "utf8",
 );
-const searchablePage = `${page}\n${backgroundTransferSwitcher}`.replace(/\s+/g, "");
+const searchablePage = `${page}\n${backgroundTransferSwitcher}\n${animalVrAssets}`.replace(/\s+/g, "");
 const searchableSmartManufacturingAssets = smartManufacturingAssets.replace(/\s+/g, "");
 
 const requiredCopy = [
@@ -76,6 +83,7 @@ const requiredCopy = [
   "工业空间背景",
   "用抽象厂房空间承接实训场景",
   "industrial-space-background.png",
+  "课程背景的视觉转译流程",
   "空间抽象",
   "保留棚舍的纵深和轮廓",
   "低干扰处理",
@@ -92,6 +100,7 @@ const requiredCopy = [
   "promptKeywordPill",
   "我将首页用于对象识别，子页面用于结构说明和操作反馈",
   "从单一结构展示扩展为完整解剖教学流程",
+  "pig-course-list.png",
 ];
 
 for (const copy of requiredCopy) {
@@ -110,6 +119,35 @@ assert.ok(
   !searchablePage.includes("主线展示牛解剖背景从主题定位到界面应用的闭环"),
   "Removed VR education process summary is still present",
 );
+
+assert.ok(
+  !searchablePage.includes("牛解剖背景探索流程"),
+  "Old cattle-specific background process heading is still present",
+);
+
+const removedBrainHomeShot = [
+  "大脑的秘密",
+  "Secrets of the brain",
+  "brain-home.webp",
+];
+
+for (const copy of removedBrainHomeShot) {
+  assert.ok(
+    !searchablePage.includes(copy.replace(/\s+/g, "")),
+    `Removed brain home shot is still present: ${copy}`,
+  );
+}
+
+const removedCattleStructureShot = [
+  "cow-scene-1.webp",
+];
+
+for (const copy of removedCattleStructureShot) {
+  assert.ok(
+    !searchablePage.includes(copy.replace(/\s+/g, "")),
+    `Removed cattle structure shot is still present: ${copy}`,
+  );
+}
 
 const removedSmartManufacturingShots = [
   "注塑模具装配",

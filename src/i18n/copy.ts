@@ -122,7 +122,7 @@ const toolFrameColors = {
 } as const;
 
 const visualMedia = {
-  manufacturing: "/videos/visual/immersive.mp4",
+  manufacturing: "/videos/visual/home-vr-education.mp4",
   game: "/images/visual/cosmic-blaze-hero.webp",
   arAirbnb: "/images/visual/ar-airbnb-scene-1.webp",
 } as const;

@@ -433,8 +433,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                 <h3 className={styles.backgroundProcessHeading}>
                   {t(
                     locale,
-                    "牛解剖背景探索流程",
-                    "Cattle Anatomy Background Exploration",
+                    "课程背景的视觉转译流程",
+                    "Visual Translation Process for Course Backgrounds",
                   )}
                 </h3>
                 <div className={styles.backgroundProcessGrid}>

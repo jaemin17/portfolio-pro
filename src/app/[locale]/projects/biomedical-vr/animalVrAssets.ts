@@ -18,11 +18,6 @@ export const structureModuleShots: readonly VisualShot[] = [
     ],
   },
   {
-    title: { zh: "大脑的秘密", en: "Secrets of the brain" },
-    subtitle: { zh: "首页展示", en: "Home screen" },
-    src: "/images/visual/animal-vr/brain-home.webp",
-  },
-  {
     title: { zh: "小脑结构", en: "Cerebellum structure" },
     subtitle: { zh: "恢复 / 整体移动", en: "Reset / move as whole" },
     src: "/images/visual/animal-vr/brain-exploded-overview.webp",
@@ -62,17 +57,13 @@ export const anatomyModuleShots: readonly VisualShot[] = [
     carousel: [
       "/images/visual/animal-vr/pig-guide-1.webp",
       "/images/visual/animal-vr/pig-guide-2.webp",
+      "/images/visual/animal-vr/pig-course-list.png",
     ],
   },
   {
     title: { zh: "牛解剖", en: "Cattle anatomy" },
     subtitle: { zh: "交互状态", en: "Interaction states" },
     src: "/images/visual/animal-vr/cow-scene-2.webp",
-  },
-  {
-    title: { zh: "牛解剖", en: "Cattle anatomy" },
-    subtitle: { zh: "结构教学", en: "Structure teaching" },
-    src: "/images/visual/animal-vr/cow-scene-1.webp",
   },
 ];
 
