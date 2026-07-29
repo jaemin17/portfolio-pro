@@ -150,6 +150,45 @@ const backgroundTransferImages = [
   },
 ] as const;
 
+const appIconItems = [
+  {
+    src: "/images/visual/vr-education/icons/cattle.png",
+    label: { zh: "牛", en: "Cattle" },
+  },
+  {
+    src: "/images/visual/vr-education/icons/dog.png",
+    label: { zh: "狗", en: "Dog" },
+  },
+  {
+    src: "/images/visual/vr-education/icons/cat.png",
+    label: { zh: "猫", en: "Cat" },
+  },
+  {
+    src: "/images/visual/vr-education/icons/pig-icon.png",
+    label: { zh: "猪", en: "Pig" },
+  },
+  {
+    src: "/images/visual/vr-education/icons/motor.png",
+    label: { zh: "电机", en: "Motor" },
+  },
+  {
+    src: "/images/visual/vr-education/icons/application.png",
+    label: { zh: "应用", en: "Application" },
+  },
+  {
+    src: "/images/visual/vr-education/icons/position.png",
+    label: { zh: "岗位", en: "Position" },
+  },
+  {
+    src: "/images/visual/vr-education/icons/electromechanical.png",
+    label: { zh: "机电", en: "Mechatronics" },
+  },
+  {
+    src: "/images/visual/vr-education/icons/teaching-pendant.png",
+    label: { zh: "示教", en: "Pendant" },
+  },
+] as const;
+
 export default async function VrEducationPage({ params }: VrEducationPageProps) {
   const { locale: localeParam } = await params;
   if (!isLocale(localeParam)) notFound();
@@ -656,6 +695,107 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     locale={locale}
                   />
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="app-icon-system"
+          className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection} ${styles.chapterAnchor}`}
+          aria-label={tStr(locale, "应用图标系统", "App Icon System")}
+        >
+          <div className={`${styles.positioningSection} ${styles.stackedSection}`}>
+            <div className={styles.positioningInner}>
+              <p className={styles.positioningLabel}>
+                {t(locale, "章节 03", "Chapter 03")}
+              </p>
+              <h2 className={styles.chapterHeading}>
+                {t(locale, "应用图标系统", "App Icon System")}
+              </h2>
+              <p className={styles.chapterLead}>
+                {t(
+                  locale,
+                  "把课程对象转译成可快速识别的 3D 学习入口。图标不只是装饰，而是在学生进入课程前建立学科预期。",
+                  "Translating course subjects into quickly recognizable 3D learning entries. The icons are not decoration; they set subject expectations before students enter a course.",
+                )}
+              </p>
+
+              <div className={styles.appIconSystemHero}>
+                <figure className={styles.appIconFeatureCard}>
+                  {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+                  <img
+                    src={assetPath("/images/visual/vr-education/icons/cat.png")}
+                    alt={tStr(locale, "猫 VR 实训应用图标", "Cat VR training app icon")}
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+                <div className={styles.appIconSystemBody}>
+                  <p>
+                    {t(
+                      locale,
+                      "在 VR 实训软件中，应用图标承担的不只是入口识别，也是在进入课程前建立学科预期。我将每个模块的核心学习对象放在图标中央，用统一的蓝青色空间、圆角容器和右下角课程标签建立系统感。",
+                      "In VR training software, app icons do more than identify entries; they set expectations before the course opens. I placed each module's core learning subject at the center, then used a shared cyan-blue space, rounded container, and lower-right course label to form a coherent system.",
+                    )}
+                  </p>
+                  <div className={styles.appIconDecisionGrid}>
+                    <article className={styles.appIconDecision}>
+                      <h3>{t(locale, "主体模型优先", "Model-first subject")}</h3>
+                      <p>
+                        {t(
+                          locale,
+                          "让 3D 对象占据最大视觉权重，学生先判断课程内容，再阅读文字标签。",
+                          "Let the 3D object carry the strongest visual weight, so students read the subject before the label.",
+                        )}
+                      </p>
+                    </article>
+                    <article className={styles.appIconDecision}>
+                      <h3>{t(locale, "统一容器语言", "Shared container language")}</h3>
+                      <p>
+                        {t(
+                          locale,
+                          "圆角、渐变背景、右下标签区保持一致，降低多模块浏览和切换成本。",
+                          "Rounded corners, gradient backgrounds, and lower-right labels stay consistent to reduce browsing cost across modules.",
+                        )}
+                      </p>
+                    </article>
+                    <article className={styles.appIconDecision}>
+                      <h3>{t(locale, "分类色彩控制", "Category color control")}</h3>
+                      <p>
+                        {t(
+                          locale,
+                          "工业类偏蓝，动物 / 示教类偏青蓝，在统一基底上保留轻微分类差异。",
+                          "Industrial modules lean blue, while animal and teaching modules lean cyan-blue, keeping subtle category differences within one system.",
+                        )}
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.appIconScroller} aria-label={tStr(locale, "VR 实训应用图标横向列表", "VR training app icon horizontal list")}>
+                <div className={styles.appIconStrip}>
+                  {appIconItems.map((item) => (
+                    <figure className={styles.appIconTile} key={item.src}>
+                      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+                      <img
+                        src={assetPath(item.src)}
+                        alt={tStr(
+                          locale,
+                          `${item.label.zh} VR 实训应用图标`,
+                          `${item.label.en} VR training app icon`,
+                        )}
+                        width={1024}
+                        height={1024}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

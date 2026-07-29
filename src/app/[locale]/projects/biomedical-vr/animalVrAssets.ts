@@ -60,11 +60,6 @@ export const anatomyModuleShots: readonly VisualShot[] = [
       "/images/visual/animal-vr/pig-course-list.png",
     ],
   },
-  {
-    title: { zh: "牛解剖", en: "Cattle anatomy" },
-    subtitle: { zh: "交互状态", en: "Interaction states" },
-    src: "/images/visual/animal-vr/cow-scene-2.webp",
-  },
 ];
 
 export const anatomyModuleHero = "/images/visual/animal-vr/dog-anatomy-scene-2.webp";

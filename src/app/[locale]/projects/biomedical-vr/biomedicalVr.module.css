@@ -692,11 +692,115 @@
   max-width: 52ch;
 }
 
+.appIconSystemHero {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.45fr);
+  gap: 32px;
+  align-items: center;
+  margin-top: 38px;
+  padding: 28px;
+  border: 1px solid rgba(14, 165, 233, 0.22);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(125, 211, 252, 0.18), rgba(20, 184, 166, 0.08)),
+    #f8fffd;
+}
+
+.appIconFeatureCard {
+  margin: 0;
+}
+
+.appIconFeatureCard img,
+.appIconTile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.appIconSystemBody {
+  min-width: 0;
+}
+
+.appIconSystemBody > p {
+  margin: 0 0 22px;
+  color: #334155;
+  font-size: var(--fs-body);
+  line-height: 1.75;
+}
+
+.appIconDecisionGrid {
+  display: grid;
+  gap: 12px;
+}
+
+.appIconDecision {
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(3, 105, 161, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.appIconDecision h3 {
+  margin: 0 0 6px;
+  color: #0369a1;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.appIconDecision p {
+  margin: 0;
+  color: #475569;
+  font-size: var(--fs-caption);
+  line-height: 1.65;
+}
+
+.appIconScroller {
+  margin-top: 34px;
+  padding: 28px;
+  border: 1px solid rgba(14, 165, 233, 0.22);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(125, 211, 252, 0.18), rgba(20, 184, 166, 0.08)),
+    #f8fffd;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-color: rgba(14, 165, 233, 0.42) transparent;
+}
+
+.appIconStrip {
+  display: flex;
+  gap: 28px;
+  width: max-content;
+  min-width: 100%;
+}
+
+.appIconTile {
+  flex: 0 0 140px;
+  min-width: 0;
+  margin: 0;
+}
+
 @media (max-width: 860px) {
   .positioningGrid,
   .narrativeGrid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .appIconSystemHero {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .appIconFeatureCard {
+    width: min(320px, 100%);
+    margin: 0 auto;
   }
 
   .positioningHeading,
@@ -735,5 +839,21 @@
 @media (max-width: 640px) {
   .backgroundProcessNotes {
     grid-template-columns: 1fr;
+  }
+
+  .appIconSystemHero {
+    padding: 20px;
+  }
+
+  .appIconScroller {
+    padding: 20px;
+  }
+
+  .appIconStrip {
+    gap: 18px;
+  }
+
+  .appIconTile {
+    flex-basis: 118px;
   }
 }

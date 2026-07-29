@@ -26,8 +26,32 @@ const smartManufacturingAssets = await readFile(
   ),
   "utf8",
 );
+const biomedicalVrStyles = await readFile(
+  new URL(
+    "../src/app/[locale]/projects/biomedical-vr/biomedicalVr.module.css",
+    import.meta.url,
+  ),
+  "utf8",
+);
 const searchablePage = `${page}\n${backgroundTransferSwitcher}\n${animalVrAssets}`.replace(/\s+/g, "");
 const searchableSmartManufacturingAssets = smartManufacturingAssets.replace(/\s+/g, "");
+const searchableBiomedicalVrStyles = biomedicalVrStyles.replace(/\s+/g, "");
+const appIconScrollerStyle = searchableBiomedicalVrStyles.match(
+  /\.appIconScroller\{[^}]+\}/,
+)?.[0] ?? "";
+const appIconStripStyle = searchableBiomedicalVrStyles.match(
+  /\.appIconStrip\{[^}]+\}/,
+)?.[0] ?? "";
+const appIconTileStyle = searchableBiomedicalVrStyles.match(
+  /\.appIconTile\{[^}]+\}/,
+)?.[0] ?? "";
+const appIconTileMobileStyle = searchableBiomedicalVrStyles.match(
+  /@media\(max-width:640px\)\{[\s\S]*?\.appIconTile\{([^}]+)\}/,
+)?.[1]?.replace(/\s+/g, "") ?? "";
+const appIconFeatureImageMatch = page.match(
+  /className=\{styles\.appIconFeatureCard\}[\s\S]*?src=\{assetPath\("([^"]+)"\)\}/,
+);
+const appIconItemsBlock = page.match(/const appIconItems = \[([\s\S]*?)\] as const;/)?.[1] ?? "";
 
 const requiredCopy = [
   "VR",
@@ -99,6 +123,27 @@ const requiredCopy = [
   "promptKeywordPills",
   "promptKeywordPill",
   "我将首页用于对象识别，子页面用于结构说明和操作反馈",
+  "章节 03",
+  "应用图标系统",
+  "把课程对象转译成可快速识别的 3D 学习入口",
+  "应用图标承担的不只是入口识别",
+  "主体模型优先",
+  "让 3D 对象占据最大视觉权重",
+  "统一容器语言",
+  "圆角、渐变背景、右下标签区保持一致",
+  "分类色彩控制",
+  "工业类偏蓝，动物 / 示教类偏青蓝",
+  "appIconScroller",
+  "appIconStrip",
+  "vr-education/icons/motor.png",
+  "vr-education/icons/application.png",
+  "vr-education/icons/cattle.png",
+  "vr-education/icons/position.png",
+  "vr-education/icons/electromechanical.png",
+  "vr-education/icons/teaching-pendant.png",
+  "vr-education/icons/dog.png",
+  "vr-education/icons/cat.png",
+  "vr-education/icons/pig-icon.png",
   "从单一结构展示扩展为完整解剖教学流程",
   "补充 UI 界面",
   "课程列表 / 引导弹窗",
@@ -111,6 +156,65 @@ for (const copy of requiredCopy) {
     `Missing required VR education copy: ${copy}`,
   );
 }
+
+const biomedicalChapterIndex = searchablePage.indexOf("生物医疗VR");
+const appIconChapterIndex = searchablePage.indexOf("应用图标系统");
+const closingIndex = searchablePage.indexOf("感谢你看到这里");
+
+assert.ok(
+  biomedicalChapterIndex !== -1,
+  "Biomedical chapter should still be present",
+);
+
+assert.ok(
+  appIconChapterIndex > biomedicalChapterIndex,
+  "App icon system should be placed after the biomedical chapter",
+);
+
+assert.ok(
+  closingIndex > appIconChapterIndex,
+  "App icon system should remain before the closing section",
+);
+
+assert.ok(
+  appIconScrollerStyle.includes("#f8fffd;") &&
+    appIconScrollerStyle.includes("linear-gradient(135deg,rgba(125,211,252,0.18),rgba(20,184,166,0.08))") &&
+    appIconScrollerStyle.includes("overflow-x:auto;"),
+  "App icon scroller should match the light cyan explanation panel and scroll horizontally",
+);
+
+assert.ok(
+  appIconStripStyle.includes("display:flex;"),
+  "App icon strip should lay icons out in one horizontal row",
+);
+
+assert.ok(
+  appIconTileStyle.includes("flex:00140px;") &&
+    appIconTileMobileStyle.includes("flex-basis:118px;"),
+  "App icon strip images should be slightly smaller on desktop and mobile",
+);
+
+assert.equal(
+  appIconFeatureImageMatch?.[1],
+  "/images/visual/vr-education/icons/cat.png",
+  "App icon feature card should use the cat icon",
+);
+
+assert.ok(
+  /cattle\.png[\s\S]*dog\.png[\s\S]*cat\.png[\s\S]*pig-icon\.png[\s\S]*motor\.png[\s\S]*application\.png[\s\S]*position\.png[\s\S]*electromechanical\.png[\s\S]*teaching-pendant\.png/.test(appIconItemsBlock),
+  "App icon strip should place animal icons before industrial and teaching icons",
+);
+
+assert.ok(
+  !searchablePage.includes("appIconCategories") &&
+    !searchablePage.includes("appIconCategory"),
+  "App icons should no longer be rendered as categorized groups",
+);
+
+assert.ok(
+  !searchablePage.includes("<figcaption>{t(locale, item.label.zh, item.label.en)}</figcaption>"),
+  "App icon strip should not render visible captions",
+);
 
 assert.ok(
   !searchablePage.includes("backgroundProcessOverlay"),
@@ -142,6 +246,7 @@ for (const copy of removedBrainHomeShot) {
 
 const removedCattleStructureShot = [
   "cow-scene-1.webp",
+  "cow-scene-2.webp",
 ];
 
 for (const copy of removedCattleStructureShot) {
