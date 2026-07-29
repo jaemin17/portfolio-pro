@@ -121,25 +121,21 @@ const backgroundTransferImages = [
   {
     src: "/images/visual/vr-education/process/tunnel-background.png",
     label: { zh: "汽车传动背景", en: "Automotive transmission background" },
-    category: { zh: "主题场景", en: "Theme scene" },
     caption: { zh: "用隧道建立机械与交通联想", en: "A tunnel cue suggests mechanics and mobility" },
   },
   {
     src: "/images/visual/vr-education/process/cochlea-background.png",
     label: { zh: "耳部结构背景", en: "Ear anatomy background" },
-    category: { zh: "结构隐喻", en: "Structural metaphor" },
     caption: { zh: "将耳蜗结构转译为空间轮廓", en: "Cochlea forms translated into spatial contours" },
   },
   {
     src: "/images/visual/vr-education/process/injection-background.png",
     label: { zh: "注塑背景", en: "Injection molding background" },
-    category: { zh: "主题场景", en: "Theme scene" },
     caption: { zh: "用模具空间建立工业设备联想", en: "A mold-like space suggests industrial equipment" },
   },
   {
     src: "/images/visual/vr-education/process/animal-cave-background.png",
     label: { zh: "动物洞穴背景", en: "Animal cave background" },
-    category: { zh: "主题场景", en: "Theme scene" },
     caption: { zh: "用洞穴空间建立动物栖息联想", en: "A cave-like space suggests animal habitats" },
   },
 ] as const;
@@ -506,7 +502,6 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     items={backgroundTransferImages.map((image) => ({
                       src: assetPath(image.src),
                       label: tStr(locale, image.label.zh, image.label.en),
-                      category: tStr(locale, image.category.zh, image.category.en),
                       caption: tStr(locale, image.caption.zh, image.caption.en),
                       alt: tStr(locale, image.caption.zh, image.caption.en),
                     }))}
