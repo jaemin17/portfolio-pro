@@ -51,8 +51,8 @@ export const anatomyModuleShots: readonly VisualShot[] = [
     src: "/images/visual/animal-vr/pig-scene-2.webp",
   },
   {
-    title: { zh: "猫解剖", en: "Cat anatomy" },
-    subtitle: { zh: "引导弹窗", en: "Onboarding dialogs" },
+    title: { zh: "补充 UI 界面", en: "Additional UI screens" },
+    subtitle: { zh: "课程列表 / 引导弹窗", en: "Course list / onboarding dialogs" },
     src: "/images/visual/animal-vr/pig-guide-1.webp",
     carousel: [
       "/images/visual/animal-vr/pig-guide-1.webp",

@@ -100,6 +100,8 @@ const requiredCopy = [
   "promptKeywordPill",
   "我将首页用于对象识别，子页面用于结构说明和操作反馈",
   "从单一结构展示扩展为完整解剖教学流程",
+  "补充 UI 界面",
+  "课程列表 / 引导弹窗",
   "pig-course-list.png",
 ];
 
