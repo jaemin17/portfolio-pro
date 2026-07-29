@@ -338,15 +338,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     <p>
                       {t(
                         locale,
-                        "我没有把背景当作装饰图处理，而是根据不同实训内容提取对应的空间隐喻：牛解剖对应牧场与牛舍，汽车传动结构对应隧道空间，耳部结构则转译为类似耳蜗的弧形场景。",
-                        "Instead of treating backgrounds as decoration, I translated each training subject into a restrained spatial metaphor: a barn-like space for cattle anatomy, a tunnel-like scene for automotive transmission, and cochlea-inspired curves for ear anatomy.",
-                      )}
-                    </p>
-                    <p>
-                      {t(
-                        locale,
-                        "经过 AI 关键词探索和 Figma 后期调色，我保留主题联想与空间纵深，同时压低细节、对比和材质干扰，让 3D 模型和教学信息始终成为界面的视觉重点。",
-                        "Through AI prompt exploration and Figma color refinement, I kept the thematic association and depth while reducing detail, contrast, and texture noise, so the 3D model and learning content remained visually dominant.",
+                        "我把课程背景作为学科识别和模型展示的承托层：从实训对象提取空间线索，再转译为低干扰的 3D 场景。牛解剖对应牧场与牛舍，汽车传动结构对应隧道空间，耳部结构则转译为耳蜗式弧形空间。",
+                        "I treated course backgrounds as a support layer for subject identity and model presentation: extracting spatial cues from each training object, then translating them into low-noise 3D scenes. Cattle anatomy maps to a barn-like space, automotive transmission maps to a tunnel, and ear anatomy becomes a cochlea-like curved space.",
                       )}
                     </p>
                     <ul className={styles.processTagList}>
@@ -366,13 +359,13 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
               <section className={styles.promptStrategyBlock}>
                 <div>
                   <p className={styles.promptStrategyKicker}>
-                    {t(locale, "关键词探索", "Keyword Exploration")}
+                    {t(locale, "AI 关键词探索", "AI Keyword Exploration")}
                   </p>
                   <h3 className={styles.promptStrategyHeading}>
                     {t(
                       locale,
-                      "高频关键词如何控制背景",
-                      "How recurring prompts controlled the background",
+                      "为 3D 模型建立低干扰展示空间",
+                      "Building a low-noise display space for 3D models",
                     )}
                   </h3>
                   <p className={styles.promptStrategyLead}>
@@ -479,6 +472,9 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                 <div className={styles.backgroundProcessGrid}>
                   {cattleBackgroundProcessImages.map((image) => (
                     <div className={styles.backgroundProcessCard} key={image.src}>
+                      <span className={styles.backgroundProcessImageNumber} aria-hidden="true">
+                        {image.step}
+                      </span>
                       {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
                       <img
                         src={assetPath(image.src)}

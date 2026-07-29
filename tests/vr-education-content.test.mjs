@@ -48,10 +48,16 @@ const appIconTileStyle = searchableBiomedicalVrStyles.match(
 const appIconTileMobileStyle = searchableBiomedicalVrStyles.match(
   /@media\(max-width:640px\)\{[\s\S]*?\.appIconTile\{([^}]+)\}/,
 )?.[1]?.replace(/\s+/g, "") ?? "";
+const backgroundProcessImageNumberStyle = searchableBiomedicalVrStyles.match(
+  /\.backgroundProcessImageNumber\{[^}]+\}/,
+)?.[0] ?? "";
 const appIconFeatureImageMatch = page.match(
   /className=\{styles\.appIconFeatureCard\}[\s\S]*?src=\{assetPath\("([^"]+)"\)\}/,
 );
 const appIconItemsBlock = page.match(/const appIconItems = \[([\s\S]*?)\] as const;/)?.[1] ?? "";
+const promptStrategyKickerMatch = page.match(
+  /className=\{styles\.promptStrategyKicker\}[\s\S]*?\{t\(locale, "([^"]+)", "([^"]+)"\)\}/,
+);
 
 const requiredCopy = [
   "VR",
@@ -68,7 +74,12 @@ const requiredCopy = [
   "设计策略",
   "从教学对象",
   "提取空间隐喻",
-  "高频关键词如何控制背景",
+  "我把课程背景作为学科识别和模型展示的承托层",
+  "从实训对象提取空间线索",
+  "汽车传动结构对应隧道空间",
+  "耳部结构则转译为耳蜗式弧形空间",
+  "AI 关键词探索",
+  "为 3D 模型建立低干扰展示空间",
   "我先从课程对象提取主题线索",
   "让背景既能指向具体课程",
   "an abstract 3d environment",
@@ -117,6 +128,7 @@ const requiredCopy = [
   "同一套背景方法，迁移到不同课程对象",
   "backgroundProcessNotesPanel",
   "backgroundProcessNotes",
+  "backgroundProcessImageNumber",
   "BackgroundTransferSwitcher",
   "backgroundTransferDots",
   "backgroundTransferOverlay",
@@ -177,6 +189,16 @@ assert.ok(
 );
 
 assert.ok(
+  !searchablePage.includes("我没有把背景当作装饰图处理"),
+  "Old defensive background strategy copy should not be present",
+);
+
+assert.ok(
+  !searchablePage.includes("经过AI关键词探索和Figma后期调色"),
+  "Removed AI keyword and Figma color refinement paragraph should not be present",
+);
+
+assert.ok(
   appIconScrollerStyle.includes("#f8fffd;") &&
     appIconScrollerStyle.includes("linear-gradient(135deg,rgba(125,211,252,0.18),rgba(20,184,166,0.08))") &&
     appIconScrollerStyle.includes("overflow-x:auto;"),
@@ -200,6 +222,12 @@ assert.equal(
   "App icon feature card should use the cat icon",
 );
 
+assert.deepEqual(
+  promptStrategyKickerMatch?.slice(1),
+  ["AI 关键词探索", "AI Keyword Exploration"],
+  "Prompt strategy kicker should explicitly mention AI keyword exploration",
+);
+
 assert.ok(
   /cattle\.png[\s\S]*dog\.png[\s\S]*cat\.png[\s\S]*pig-icon\.png[\s\S]*motor\.png[\s\S]*application\.png[\s\S]*position\.png[\s\S]*electromechanical\.png[\s\S]*teaching-pendant\.png/.test(appIconItemsBlock),
   "App icon strip should place animal icons before industrial and teaching icons",
@@ -219,6 +247,12 @@ assert.ok(
 assert.ok(
   !searchablePage.includes("backgroundProcessOverlay"),
   "Transfer image copy should not be placed over images",
+);
+
+assert.ok(
+  backgroundProcessImageNumberStyle.includes("position:absolute;") &&
+    !backgroundProcessImageNumberStyle.includes("border:"),
+  "Background process image step numbers should render without a thin border",
 );
 
 assert.ok(
