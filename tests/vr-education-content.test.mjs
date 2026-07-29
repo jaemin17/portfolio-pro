@@ -109,15 +109,9 @@ const requiredCopy = [
   "注塑背景",
   "用模具空间建立工业设备联想",
   "injection-background.png",
-  "机器人背景",
-  "用产线空间建立机器人实训联想",
-  "robot-background.png",
   "动物洞穴背景",
   "用洞穴空间建立动物栖息联想",
   "animal-cave-background.png",
-  "工业空间背景",
-  "用抽象厂房空间承接实训场景",
-  "industrial-space-background.png",
   "课程背景的视觉转译流程",
   "空间抽象",
   "保留棚舍的纵深和轮廓",
@@ -132,6 +126,11 @@ const requiredCopy = [
   "BackgroundTransferSwitcher",
   "backgroundTransferDots",
   "backgroundTransferOverlay",
+  "backgroundTransferMeta",
+  "backgroundTransferCategory",
+  "主题场景",
+  "结构隐喻",
+  "低干扰展示",
   "promptKeywordPills",
   "promptKeywordPill",
   "我将首页用于对象识别，子页面用于结构说明和操作反馈",
@@ -160,6 +159,7 @@ const requiredCopy = [
   "课程列表 / 引导弹窗",
   "pig-course-list.png",
   "dog-muscle-highlight.png",
+  "cat-skeleton-system.png",
 ];
 
 for (const copy of requiredCopy) {
@@ -289,6 +289,9 @@ const removedCattleStructureShot = [
   "cow-scene-2.webp",
   "dog-layer-overview.webp",
   "dog-muscle-detail.webp",
+  "pig-scene-2.webp",
+  "robot-background.png",
+  "industrial-space-background.png",
   "vr-education/icons/teaching-pendant.png",
 ];
 

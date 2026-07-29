@@ -6,6 +6,7 @@ import styles from "../biomedical-vr/biomedicalVr.module.css";
 type BackgroundTransferItem = {
   src: string;
   label: string;
+  category: string;
   caption: string;
   alt: string;
 };
@@ -39,7 +40,10 @@ export function BackgroundTransferSwitcher({
           />
         ))}
         <div className={styles.backgroundTransferOverlay}>
-          <span>{activeItem.label}</span>
+          <div className={styles.backgroundTransferMeta}>
+            <span>{activeItem.label}</span>
+            <small className={styles.backgroundTransferCategory}>{activeItem.category}</small>
+          </div>
           <small>{activeItem.caption}</small>
         </div>
       </div>
