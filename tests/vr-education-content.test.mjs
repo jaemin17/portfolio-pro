@@ -5,7 +5,22 @@ const page = await readFile(
   new URL("../src/app/[locale]/projects/vr-education/page.tsx", import.meta.url),
   "utf8",
 );
-const searchablePage = page.replace(/\s+/g, "");
+const backgroundTransferSwitcher = await readFile(
+  new URL(
+    "../src/app/[locale]/projects/vr-education/BackgroundTransferSwitcher.tsx",
+    import.meta.url,
+  ),
+  "utf8",
+);
+const smartManufacturingAssets = await readFile(
+  new URL(
+    "../src/app/[locale]/projects/smart-manufacturing/smartManufacturingAssets.ts",
+    import.meta.url,
+  ),
+  "utf8",
+);
+const searchablePage = `${page}\n${backgroundTransferSwitcher}`.replace(/\s+/g, "");
+const searchableSmartManufacturingAssets = smartManufacturingAssets.replace(/\s+/g, "");
 
 const requiredCopy = [
   "VR",
@@ -49,13 +64,30 @@ const requiredCopy = [
   "耳蜗结构",
   "机械通道",
   "动物栖息空间",
+  "注塑背景",
+  "用模具空间建立工业设备联想",
+  "injection-background.png",
+  "机器人背景",
+  "用产线空间建立机器人实训联想",
+  "robot-background.png",
+  "动物洞穴背景",
+  "用洞穴空间建立动物栖息联想",
+  "animal-cave-background.png",
+  "工业空间背景",
+  "用抽象厂房空间承接实训场景",
+  "industrial-space-background.png",
   "空间抽象",
   "保留棚舍的纵深和轮廓",
   "低干扰处理",
   "统一青蓝色调，压低材质、对比和细节噪音",
   "界面验证",
   "确认模型、标题和入口信息仍然是视觉主位",
+  "同一套背景方法，迁移到不同课程对象",
+  "backgroundProcessNotesPanel",
   "backgroundProcessNotes",
+  "BackgroundTransferSwitcher",
+  "backgroundTransferDots",
+  "backgroundTransferOverlay",
   "promptKeywordPills",
   "promptKeywordPill",
   "我将首页用于对象识别，子页面用于结构说明和操作反馈",
@@ -66,6 +98,29 @@ for (const copy of requiredCopy) {
   assert.ok(
     searchablePage.includes(copy.replace(/\s+/g, "")),
     `Missing required VR education copy: ${copy}`,
+  );
+}
+
+assert.ok(
+  !searchablePage.includes("backgroundProcessOverlay"),
+  "Transfer image copy should not be placed over images",
+);
+
+assert.ok(
+  !searchablePage.includes("主线展示牛解剖背景从主题定位到界面应用的闭环"),
+  "Removed VR education process summary is still present",
+);
+
+const removedSmartManufacturingShots = [
+  "注塑模具装配",
+  "Injection mold assembly",
+  "molding-detail-assembly.png",
+];
+
+for (const copy of removedSmartManufacturingShots) {
+  assert.ok(
+    !searchableSmartManufacturingAssets.includes(copy.replace(/\s+/g, "")),
+    `Removed smart manufacturing shot is still present: ${copy}`,
   );
 }
 

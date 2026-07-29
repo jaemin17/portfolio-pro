@@ -27,9 +27,4 @@ export const equipmentModuleShots: readonly VisualShot[] = [
     subtitle: { zh: "首页展示", en: "Home screen" },
     src: "/images/visual/smart-manufacturing/molding-home.webp",
   },
-  {
-    title: { zh: "注塑模具装配", en: "Injection mold assembly" },
-    subtitle: { zh: "操作子页面", en: "Operation subpage" },
-    src: "/images/visual/smart-manufacturing/molding-detail-assembly.png",
-  },
 ];

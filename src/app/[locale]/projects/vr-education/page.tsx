@@ -18,6 +18,7 @@ import {
   smartManufacturingHero,
   transmissionModuleShots,
 } from "../smart-manufacturing/smartManufacturingAssets";
+import { BackgroundTransferSwitcher } from "./BackgroundTransferSwitcher";
 
 type VrEducationPageProps = {
   params: Promise<{ locale: string }>;
@@ -126,6 +127,26 @@ const backgroundTransferImages = [
     src: "/images/visual/vr-education/process/cochlea-background.png",
     label: { zh: "耳部结构背景", en: "Ear anatomy background" },
     caption: { zh: "将耳蜗结构转译为空间轮廓", en: "Cochlea forms translated into spatial contours" },
+  },
+  {
+    src: "/images/visual/vr-education/process/injection-background.png",
+    label: { zh: "注塑背景", en: "Injection molding background" },
+    caption: { zh: "用模具空间建立工业设备联想", en: "A mold-like space suggests industrial equipment" },
+  },
+  {
+    src: "/images/visual/vr-education/process/robot-background.png",
+    label: { zh: "机器人背景", en: "Robotics background" },
+    caption: { zh: "用产线空间建立机器人实训联想", en: "A production-line space suggests robotics training" },
+  },
+  {
+    src: "/images/visual/vr-education/process/animal-cave-background.png",
+    label: { zh: "动物洞穴背景", en: "Animal cave background" },
+    caption: { zh: "用洞穴空间建立动物栖息联想", en: "A cave-like space suggests animal habitats" },
+  },
+  {
+    src: "/images/visual/vr-education/process/industrial-space-background.png",
+    label: { zh: "工业空间背景", en: "Industrial space background" },
+    caption: { zh: "用抽象厂房空间承接实训场景", en: "An abstract factory space supports training scenarios" },
   },
 ] as const;
 
@@ -431,56 +452,40 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     </div>
                   ))}
                 </div>
-                <div className={styles.backgroundProcessNotes}>
-                  {cattleBackgroundProcessImages.map((image) => (
-                    <article className={styles.backgroundProcessNote} key={`${image.step}-${image.label.zh}`}>
-                      <div className={styles.backgroundProcessStep}>
-                        <span className={styles.backgroundProcessNumber}>
-                          {image.step}
-                        </span>
-                        <span className={styles.backgroundProcessTitle}>
-                          {t(locale, image.label.zh, image.label.en)}
-                        </span>
-                      </div>
-                      <p>{t(locale, image.caption.zh, image.caption.en)}</p>
-                    </article>
-                  ))}
+                <div className={styles.backgroundProcessNotesPanel}>
+                  <div className={styles.backgroundProcessNotes}>
+                    {cattleBackgroundProcessImages.map((image) => (
+                      <article className={styles.backgroundProcessNote} key={`${image.step}-${image.label.zh}`}>
+                        <div className={styles.backgroundProcessStep}>
+                          <span className={styles.backgroundProcessNumber}>
+                            {image.step}
+                          </span>
+                          <span className={styles.backgroundProcessTitle}>
+                            {t(locale, image.label.zh, image.label.en)}
+                          </span>
+                        </div>
+                        <p>{t(locale, image.caption.zh, image.caption.en)}</p>
+                      </article>
+                    ))}
+                  </div>
                 </div>
                 <div className={styles.backgroundTransferBlock}>
                   <p className={styles.backgroundTransferIntro}>
                     {t(
                       locale,
-                      "同一方法也延展到其他课程模块：",
-                      "The same method was extended to other course modules:",
+                      "同一套背景方法，迁移到不同课程对象：",
+                      "The same background method was adapted across course subjects:",
                     )}
                   </p>
-                  <div className={styles.backgroundTransferGrid}>
-                    {backgroundTransferImages.map((image) => (
-                      <div className={styles.backgroundProcessCard} key={image.src}>
-                        {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-                        <img
-                          src={assetPath(image.src)}
-                          alt={tStr(locale, image.caption.zh, image.caption.en)}
-                          width={1920}
-                          height={1080}
-                          loading="lazy"
-                          decoding="async"
-                        />
-                        <div className={styles.backgroundProcessOverlay}>
-                          <span>{t(locale, image.label.zh, image.label.en)}</span>
-                          <p>{t(locale, image.caption.zh, image.caption.en)}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  <BackgroundTransferSwitcher
+                    items={backgroundTransferImages.map((image) => ({
+                      src: assetPath(image.src),
+                      label: tStr(locale, image.label.zh, image.label.en),
+                      caption: tStr(locale, image.caption.zh, image.caption.en),
+                      alt: tStr(locale, image.caption.zh, image.caption.en),
+                    }))}
+                  />
                 </div>
-                <figcaption className={styles.processImagePlaceholderCaption}>
-                  {t(
-                    locale,
-                    "主线展示牛解剖背景从主题定位到界面应用的闭环；补充图说明同一背景方法可迁移到汽车传动与耳部结构模块。",
-                    "The main sequence shows the cattle anatomy background from subject cue to interface application; supporting examples show how the same method transfers to automotive transmission and ear anatomy modules.",
-                  )}
-                </figcaption>
               </figure>
             </div>
           </div>

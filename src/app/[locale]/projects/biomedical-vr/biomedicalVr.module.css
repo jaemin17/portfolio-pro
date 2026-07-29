@@ -404,17 +404,23 @@
   color: rgba(255, 255, 255, 0.82);
 }
 
+.backgroundProcessNotesPanel {
+  margin-top: 18px;
+  padding: 18px 20px 4px;
+  border-top: 1px solid rgba(14, 165, 233, 0.24);
+  background: linear-gradient(180deg, rgba(240, 249, 255, 0.72), rgba(255, 255, 255, 0));
+}
+
 .backgroundProcessNotes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 18px;
-  margin-top: 16px;
 }
 
 .backgroundProcessNote {
   min-width: 0;
-  padding-top: 14px;
-  border-top: 1px solid rgba(14, 165, 233, 0.28);
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(14, 165, 233, 0.18);
 }
 
 .backgroundProcessNote .backgroundProcessStep {
@@ -454,14 +460,111 @@
   line-height: 1.6;
 }
 
-.backgroundTransferGrid {
+.backgroundTransferSwitcher {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
-.backgroundTransferGrid .backgroundProcessCard {
-  border-color: rgba(125, 211, 252, 0.65);
+.backgroundTransferStage {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 3px solid #7dd3fc;
+  border-radius: 12px;
+  background: #0369a1;
+}
+
+.backgroundTransferSlide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+.backgroundTransferSlideActive {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.backgroundTransferOverlay {
+  position: absolute;
+  inset: auto 0 0;
+  display: grid;
+  gap: 4px;
+  box-sizing: border-box;
+  padding: 54px 18px 16px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(3, 37, 45, 0), rgba(3, 37, 45, 0.72));
+  pointer-events: none;
+}
+
+.backgroundTransferOverlay > span {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.backgroundTransferOverlay small {
+  max-width: 42ch;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: var(--fs-caption);
+  line-height: 1.5;
+}
+
+.backgroundTransferControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 2px;
+}
+
+.backgroundTransferArrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(30, 41, 59, 0.72);
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.backgroundTransferArrow:hover {
+  border-color: rgba(15, 23, 42, 0.32);
+  color: rgba(30, 41, 59, 0.92);
+}
+
+.backgroundTransferDots {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.backgroundTransferDot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.18);
+  cursor: pointer;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.backgroundTransferDot[aria-pressed="true"] {
+  background: #14b8a6;
+  transform: scale(1.25);
 }
 
 .processImagePlaceholderFrame {
@@ -610,8 +713,8 @@
     grid-template-columns: 1fr;
   }
 
-  .backgroundTransferGrid {
-    grid-template-columns: 1fr;
+  .backgroundTransferControls {
+    flex-wrap: wrap;
   }
 
   .challengeBlock {
