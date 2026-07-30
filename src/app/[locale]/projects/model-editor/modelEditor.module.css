@@ -467,7 +467,42 @@
   }
 
   .directionCards {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 28px 24px;
+  }
+
+  .directionCard {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .directionCardVisual {
+    width: auto;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 0;
+  }
+
+  .directionIcon {
+    position: static;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    transform: none;
+  }
+
+  .directionCardVisual span {
+    justify-content: flex-start;
+    padding: 0;
+    text-align: left;
+  }
+
+  .directionCard p {
+    width: auto;
+    text-align: left;
   }
 }
 

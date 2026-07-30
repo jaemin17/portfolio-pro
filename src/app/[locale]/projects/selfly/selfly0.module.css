@@ -2261,12 +2261,14 @@
   }
 
   .todayRhythmSystemGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 24px;
     max-width: none;
   }
 
   .todayRhythmSystemPanel {
+    width: 100%;
     gap: 10px;
   }
 
@@ -2286,17 +2288,24 @@
   }
 
   .todayRhythmSystemFigure .todayTop3PhoneBezel {
-    width: min(100%, 140px);
-    max-width: 140px;
-    padding: 0;
-    background: transparent;
+    width: min(100%, 184px);
+    max-width: 184px;
+    padding: 4px;
+    background: #000;
     border-radius: 20px;
     box-shadow: none;
   }
 
   .todayRhythmSystemFigure .todayTop3PhoneFrame {
+    aspect-ratio: 611 / 1319;
     background: transparent;
     border-radius: 16px;
+  }
+
+  .todayRhythmSystemFigure .todayTop3CarouselImage,
+  .todayRhythmSystemFigure .todayTop3PhoneVideo {
+    object-fit: cover;
+    border-radius: 12px;
   }
 
   .todayTaskSemanticFigure {
