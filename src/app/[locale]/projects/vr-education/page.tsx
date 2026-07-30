@@ -361,13 +361,6 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                       "I first extracted subject cues from the course object, then translated them into abstract space. Model display, low-noise backgrounds, and visual texture then controlled the composition, so the background could point to a specific course without competing with the 3D model or learning content.",
                     )}
                   </p>
-                  <p className={styles.promptStrategyLead}>
-                    {t(
-                      locale,
-                      "常用关键词：an abstract 3d environment, Empty space, Sparse backgrounds, Subdued minimalism, Flattened perspective, Flatness of space, expansive spaces, Stage-like environments, Subtle color variations, Realistic lighting, Perspective rendering, Frontal perspective",
-                      "Recurring prompts: an abstract 3d environment, Empty space, Sparse backgrounds, Subdued minimalism, Flattened perspective, Flatness of space, expansive spaces, Stage-like environments, Subtle color variations, Realistic lighting, Perspective rendering, Frontal perspective",
-                    )}
-                  </p>
                 </div>
                 <div className={styles.promptKeywordGrid}>
                   <div className={styles.promptKeywordCard}>

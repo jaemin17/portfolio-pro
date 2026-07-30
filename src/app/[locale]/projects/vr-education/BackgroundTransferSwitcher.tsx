@@ -39,8 +39,8 @@ export function BackgroundTransferSwitcher({
           />
         ))}
         <div className={styles.backgroundTransferOverlay}>
-          <span>{activeItem.label}</span>
-          <small>{activeItem.caption}</small>
+          <strong className={styles.backgroundTransferCaption}>{activeItem.caption}</strong>
+          <span className={styles.backgroundTransferLabel}>{activeItem.label}</span>
         </div>
       </div>
       <div className={styles.backgroundTransferControls}>

@@ -45,6 +45,15 @@ const appIconStripStyle = searchableBiomedicalVrStyles.match(
 const appIconTileStyle = searchableBiomedicalVrStyles.match(
   /\.appIconTile\{[^}]+\}/,
 )?.[0] ?? "";
+const backgroundTransferOverlayStyle = searchableBiomedicalVrStyles.match(
+  /\.backgroundTransferOverlay\{[^}]+\}/,
+)?.[0] ?? "";
+const backgroundTransferCaptionStyle = searchableBiomedicalVrStyles.match(
+  /\.backgroundTransferCaption\{[^}]+\}/,
+)?.[0] ?? "";
+const backgroundTransferLabelStyle = searchableBiomedicalVrStyles.match(
+  /\.backgroundTransferLabel\{[^}]+\}/,
+)?.[0] ?? "";
 const appIconTileMobileStyle = searchableBiomedicalVrStyles.match(
   /@media\(max-width:640px\)\{[\s\S]*?\.appIconTile\{([^}]+)\}/,
 )?.[1]?.replace(/\s+/g, "") ?? "";
@@ -82,18 +91,6 @@ const requiredCopy = [
   "为 3D 模型建立低干扰展示空间",
   "我先从课程对象提取主题线索",
   "让背景既能指向具体课程",
-  "an abstract 3d environment",
-  "Empty space",
-  "Sparse backgrounds",
-  "Subdued minimalism",
-  "Flattened perspective",
-  "Flatness of space",
-  "expansive spaces",
-  "Stage-like environments",
-  "Subtle color variations",
-  "Realistic lighting",
-  "Perspective rendering",
-  "Frontal perspective",
   "抽象空间",
   "抽象 3D 环境",
   "模型展示",
@@ -264,6 +261,36 @@ assert.ok(
 assert.ok(
   !searchablePage.includes("牛解剖背景探索流程"),
   "Old cattle-specific background process heading is still present",
+);
+
+assert.ok(
+  !searchablePage.includes("常用关键词：") &&
+    !searchablePage.includes("Recurringprompts:") &&
+    !searchablePage.includes("anabstract3denvironment"),
+  "Removed recurring prompt keyword paragraph should not be present",
+);
+
+assert.ok(
+  searchablePage.includes("backgroundTransferCaption") &&
+    searchablePage.includes("backgroundTransferLabel") &&
+    searchablePage.indexOf("activeItem.caption") < searchablePage.indexOf("activeItem.label"),
+  "Background transfer overlay should prioritize the caption before the label",
+);
+
+assert.ok(
+  !backgroundTransferOverlayStyle.includes("background:"),
+  "Background transfer overlay text should not sit on a dark background panel",
+);
+
+assert.ok(
+  backgroundTransferCaptionStyle.includes("font-size:var(--fs-title);") &&
+    backgroundTransferCaptionStyle.includes("font-weight:500;"),
+  "Background transfer caption should be larger but lighter than a bold title",
+);
+
+assert.ok(
+  backgroundTransferLabelStyle.includes("font-size:var(--fs-body);"),
+  "Background transfer label should use a readable body-size token",
 );
 
 const removedBrainHomeShot = [
