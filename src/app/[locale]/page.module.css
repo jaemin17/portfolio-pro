@@ -299,6 +299,7 @@
 }
 
 .toolFrame {
+  position: relative;
   overflow: hidden;
   border-radius: 1.25rem;
   border: 1px solid var(--border);
@@ -331,6 +332,39 @@
   background: #fff;
 }
 
+.toolUnavailableOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  background: rgb(0 0 0 / 0.42);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+
+.toolFrameBare ~ .toolUnavailableOverlay {
+  border-radius: 0.75rem;
+}
+
+.toolCardUnavailable:hover .toolUnavailableOverlay,
+.toolCardUnavailable:focus-within .toolUnavailableOverlay {
+  opacity: 1;
+}
+
+.toolUnavailableText {
+  font-size: var(--fs-label);
+  line-height: 1.35;
+  color: #fff;
+}
+
 .toolCaption {
   display: flex;
   flex-direction: column;
@@ -339,10 +373,20 @@
 }
 
 .toolTitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
   margin: 0;
   font-size: var(--fs-label);
   line-height: 1.45;
   color: var(--text-secondary);
+}
+
+@media (hover: none) {
+  .toolCardUnavailable .toolUnavailableOverlay {
+    opacity: 1;
+  }
 }
 
 

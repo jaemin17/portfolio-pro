@@ -23,7 +23,16 @@ function ToolProjectCard({
   className?: string;
   showCaption?: boolean;
 }) {
-  const classes = [styles.toolCard, className].filter(Boolean).join(" ");
+  const unavailable = item.availability === "comingSoon";
+  const unavailableLabel =
+    unavailable && item.statusLabel ? `${item.title}, ${item.statusLabel}` : undefined;
+  const classes = [
+    styles.toolCard,
+    unavailable ? styles.toolCardUnavailable : undefined,
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
   const framed = item.framed !== false;
   const frameClass = framed
     ? styles.toolFrame
@@ -61,16 +70,24 @@ function ToolProjectCard({
       }
     >
       {media}
+      {unavailable ? (
+        <div className={styles.toolUnavailableOverlay} aria-hidden="true">
+          <span className={styles.toolUnavailableText}>{item.statusLabel}</span>
+        </div>
+      ) : null}
     </div>
   );
 
   return (
-    <article className={classes}>
-      {item.href?.startsWith("/") ? (
+    <article
+      className={classes}
+      aria-label={unavailableLabel}
+    >
+      {!unavailable && item.href?.startsWith("/") ? (
         <Link href={localePath(locale, item.href)} className={styles.toolCardLink}>
           {cardBody}
         </Link>
-      ) : item.href ? (
+      ) : !unavailable && item.href ? (
         <a
           className={styles.toolCardLink}
           href={item.href}
@@ -84,7 +101,9 @@ function ToolProjectCard({
       )}
       {showCaption ? (
         <div className={styles.toolCaption}>
-          <p className={styles.toolTitle}>{item.title}</p>
+          <p className={styles.toolTitle}>
+            <span>{item.title}</span>
+          </p>
         </div>
       ) : null}
     </article>

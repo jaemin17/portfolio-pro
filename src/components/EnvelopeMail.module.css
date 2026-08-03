@@ -49,7 +49,7 @@
 
 .letter {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   width: 90.42%;
   height: 103.7%;
   right: -2.4%;
@@ -67,7 +67,8 @@
 
 .envelope:hover .letter,
 .envelope:focus-within .letter {
-  bottom: -12.1%;
+  z-index: 3;
+  bottom: 5%;
   right: -0.9%;
   pointer-events: auto;
 }
@@ -141,7 +142,7 @@
 .flaps {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 4;
   border-radius: inherit;
   overflow: hidden;
   pointer-events: none;
@@ -184,19 +185,19 @@
 }
 
 .flapTopWrap {
-  z-index: 10;
+  z-index: 2;
   top: 0;
   left: 6.75%;
   width: 86.7%;
   height: 53.9%;
   transform-origin: 50% 0%;
-  transform: translateZ(2px) scaleY(1);
+  transform: scaleY(1);
   transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .envelope:hover .flapTopWrap,
 .envelope:focus-within .flapTopWrap {
-  transform: translateZ(2px) translateY(2.25%) scaleY(-1);
+  transform: translateY(2.25%) scaleY(-1);
 }
 
 .flapTop {
@@ -238,7 +239,7 @@
 
   .envelope:hover .letter,
   .envelope:focus-within .letter {
-    bottom: -13.7%;
+    bottom: 1%;
     right: -2.5%;
   }
 }

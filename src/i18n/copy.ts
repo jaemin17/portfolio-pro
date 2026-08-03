@@ -22,6 +22,8 @@ export type ToolProjectItem = {
   title: string;
   description: string;
   href?: string;
+  availability?: "comingSoon";
+  statusLabel?: string;
   videoSrc?: string;
   posterSrc?: string;
   imageSrc?: string;
@@ -188,6 +190,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "XR Interactive Script Engine",
           description: "模型资源浏览与预览",
+          availability: "comingSoon",
+          statusLabel: "暂不开放",
           videoSrc: toolVideos.xrScript,
           posterSrc: toolPosters.xrScript,
           frameColor: toolFrameColors.xrScript,
@@ -195,6 +199,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "XR Courseware",
           description: "3D 内容播放与课件演示",
+          availability: "comingSoon",
+          statusLabel: "暂不开放",
           videoSrc: toolVideos.ppt,
           posterSrc: toolPosters.ppt,
           frameColor: toolFrameColors.ppt,
@@ -202,6 +208,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Sync Space",
           description: "多端课堂协同与设备管理",
+          availability: "comingSoon",
+          statusLabel: "暂不开放",
           videoSrc: toolVideos.syncSpace,
           posterSrc: toolPosters.syncSpace,
           frameColor: toolFrameColors.syncSpace,
@@ -224,6 +232,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "游戏概念",
           description: "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
+          availability: "comingSoon",
+          statusLabel: "暂不开放",
           imageSrc: visualMedia.game,
           imageVariants: [...visualImageVariants.game],
           framed: false,
@@ -232,6 +242,8 @@ const copy: Record<Locale, HomeCopy> = {
           title: "AR Airbnb",
           description:
             "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
+          availability: "comingSoon",
+          statusLabel: "暂不开放",
           imageSrc: visualMedia.arAirbnb,
           imageVariants: [...visualImageVariants.arAirbnb],
           framed: false,
@@ -247,8 +259,8 @@ const copy: Record<Locale, HomeCopy> = {
     },
     envelopeMail: {
       label: "Let's work together",
-      cta: "找我聊聊",
-      copied: "已复制！",
+      cta: "给我写信吧",
+      copied: "邮箱已复制",
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },
@@ -295,6 +307,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "XR Interactive Script Engine",
           description: "Browse and preview model assets",
+          availability: "comingSoon",
+          statusLabel: "Coming soon",
           videoSrc: toolVideos.xrScript,
           posterSrc: toolPosters.xrScript,
           frameColor: toolFrameColors.xrScript,
@@ -302,6 +316,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "XR Courseware",
           description: "3D content playback and course demos",
+          availability: "comingSoon",
+          statusLabel: "Coming soon",
           videoSrc: toolVideos.ppt,
           posterSrc: toolPosters.ppt,
           frameColor: toolFrameColors.ppt,
@@ -309,6 +325,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Sync Space",
           description: "Multi-device classroom collaboration and device management",
+          availability: "comingSoon",
+          statusLabel: "Coming soon",
           videoSrc: toolVideos.syncSpace,
           posterSrc: toolPosters.syncSpace,
           frameColor: toolFrameColors.syncSpace,
@@ -331,6 +349,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Game Concept",
           description: "UI visual design for a VR/AR desk-device experience game.",
+          availability: "comingSoon",
+          statusLabel: "Coming soon",
           imageSrc: visualMedia.game,
           imageVariants: [...visualImageVariants.game],
           framed: false,
@@ -339,6 +359,8 @@ const copy: Record<Locale, HomeCopy> = {
           title: "AR Airbnb",
           description:
             "AR experience design that blends digital information into real lodging spaces.",
+          availability: "comingSoon",
+          statusLabel: "Coming soon",
           imageSrc: visualMedia.arAirbnb,
           imageVariants: [...visualImageVariants.arAirbnb],
           framed: false,
@@ -354,8 +376,8 @@ const copy: Record<Locale, HomeCopy> = {
     },
     envelopeMail: {
       label: "Let's work together",
-      cta: "let's chat",
-      copied: "mail copied!",
+      cta: "write me a letter",
+      copied: "email copied",
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },
