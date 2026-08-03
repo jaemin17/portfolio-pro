@@ -882,4 +882,17 @@
   .appIconTile {
     flex-basis: 96px;
   }
+
+  .backgroundTransferOverlay {
+    gap: 6px;
+    padding: 14px;
+  }
+
+  .backgroundTransferCaption {
+    font-size: var(--fs-subtitle);
+  }
+
+  .backgroundTransferLabel {
+    font-size: var(--fs-caption);
+  }
 }

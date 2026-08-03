@@ -54,6 +54,12 @@ const backgroundTransferCaptionStyle = searchableBiomedicalVrStyles.match(
 const backgroundTransferLabelStyle = searchableBiomedicalVrStyles.match(
   /\.backgroundTransferLabel\{[^}]+\}/,
 )?.[0] ?? "";
+const backgroundTransferCaptionMobileStyle = searchableBiomedicalVrStyles.match(
+  /@media\(max-width:640px\)\{[\s\S]*?\.backgroundTransferCaption\{([^}]+)\}/,
+)?.[1]?.replace(/\s+/g, "") ?? "";
+const backgroundTransferLabelMobileStyle = searchableBiomedicalVrStyles.match(
+  /@media\(max-width:640px\)\{[\s\S]*?\.backgroundTransferLabel\{([^}]+)\}/,
+)?.[1]?.replace(/\s+/g, "") ?? "";
 const appIconTileMobileStyle = searchableBiomedicalVrStyles.match(
   /@media\(max-width:640px\)\{[\s\S]*?\.appIconTile\{([^}]+)\}/,
 )?.[1]?.replace(/\s+/g, "") ?? "";
@@ -291,6 +297,12 @@ assert.ok(
 assert.ok(
   backgroundTransferLabelStyle.includes("font-size:var(--fs-body);"),
   "Background transfer label should use a readable body-size token",
+);
+
+assert.ok(
+  backgroundTransferCaptionMobileStyle.includes("font-size:var(--fs-subtitle);") &&
+    backgroundTransferLabelMobileStyle.includes("font-size:var(--fs-caption);"),
+  "Background transfer text should step down to existing type tokens on small screens",
 );
 
 const removedBrainHomeShot = [
