@@ -47,9 +47,24 @@
   overflow: hidden;
 }
 
+.letterSlot {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.envelope:hover .letterSlot,
+.envelope:focus-within .letterSlot {
+  z-index: 3;
+  overflow: visible;
+  pointer-events: auto;
+}
+
 .letter {
   position: absolute;
-  z-index: 1;
   width: 90.42%;
   height: 103.7%;
   right: -2.4%;
@@ -67,7 +82,6 @@
 
 .envelope:hover .letter,
 .envelope:focus-within .letter {
-  z-index: 3;
   bottom: 5%;
   right: -0.9%;
   pointer-events: auto;

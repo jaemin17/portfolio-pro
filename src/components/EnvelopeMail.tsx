@@ -81,22 +81,24 @@ export function EnvelopeMail({ copy, locale }: EnvelopeMailProps) {
         <div className={styles.envelope} tabIndex={0}>
           <div className={styles.body} />
 
-          <div className={styles.letter}>
-            <div className={styles.letterLines} aria-hidden="true" />
-            <button
-              type="button"
-              className={`${styles.cta} ${locale === "zh" ? styles.ctaZh : ""}`}
-              onClick={handleCopy}
-              aria-label={`${copy.cta}: ${copy.email}`}
-            >
-              <span className={copied ? styles.ctaHidden : undefined}>{copy.cta}</span>
-              <span
-                className={`${styles.ctaCopied} ${copied ? styles.ctaCopiedVisible : ""}`}
-                aria-live="polite"
+          <div className={styles.letterSlot}>
+            <div className={styles.letter}>
+              <div className={styles.letterLines} aria-hidden="true" />
+              <button
+                type="button"
+                className={`${styles.cta} ${locale === "zh" ? styles.ctaZh : ""}`}
+                onClick={handleCopy}
+                aria-label={`${copy.cta}: ${copy.email}`}
               >
-                {copy.copied}
-              </span>
-            </button>
+                <span className={copied ? styles.ctaHidden : undefined}>{copy.cta}</span>
+                <span
+                  className={`${styles.ctaCopied} ${copied ? styles.ctaCopiedVisible : ""}`}
+                  aria-live="polite"
+                >
+                  {copy.copied}
+                </span>
+              </button>
+            </div>
           </div>
 
           <div className={styles.flaps} aria-hidden="true">

@@ -19,6 +19,8 @@ const searchableEnvelopeStyles = envelopeStyles.replace(/\s+/g, "");
 const searchableEnvelopeComponent = envelopeComponent.replace(/\s+/g, "");
 const desktopLetterHoverStyles =
   envelopeStyles.match(/\.envelope:hover \.letter,\n\.envelope:focus-within \.letter \{([\s\S]*?)\n\}/)?.[1] ?? "";
+const letterSlotHoverStyles =
+  envelopeStyles.match(/\.envelope:hover \.letterSlot,\n\.envelope:focus-within \.letterSlot \{([\s\S]*?)\n\}/)?.[1] ?? "";
 const mobileLetterHoverStyles =
   envelopeStyles.match(/@media \(max-width: 809px\) \{[\s\S]*?\.envelope:hover \.letter,\n  \.envelope:focus-within \.letter \{([\s\S]*?)\n  \}/)?.[1] ?? "";
 
@@ -63,13 +65,16 @@ assert.ok(
 
 assert.ok(
   searchableEnvelopeComponent.includes('<divclassName={styles.body}/>') &&
+    searchableEnvelopeComponent.includes('<divclassName={styles.letterSlot}>') &&
     searchableEnvelopeComponent.includes('<divclassName={styles.letter}>'),
-  "Envelope body and letter should be separate layers",
+  "Envelope body and letter should be separate layers with a clipping slot",
 );
 
 assert.ok(
-  searchableEnvelopeStyles.includes(".letter{position:absolute;z-index:1;") &&
-    desktopLetterHoverStyles.includes("z-index: 3;") &&
+    searchableEnvelopeStyles.includes(".letterSlot{position:absolute;inset:0;z-index:-1;") &&
+    searchableEnvelopeStyles.includes("overflow:hidden;") &&
+    letterSlotHoverStyles.includes("z-index: 3;") &&
+    letterSlotHoverStyles.includes("overflow: visible;") &&
     searchableEnvelopeStyles.includes(".flaps{position:absolute;inset:0;z-index:4;") &&
     searchableEnvelopeStyles.includes(".flapTopWrap{z-index:2;") &&
     searchableEnvelopeStyles.includes("transform:scaleY(1);") &&
