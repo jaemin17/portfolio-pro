@@ -630,6 +630,13 @@
   object-fit: cover;
 }
 
+.uiSystemEvidencePlaceholder {
+  aspect-ratio: 16 / 9;
+  border: 3px dashed rgba(125, 211, 252, 0.55);
+  border-radius: 12px;
+  background: rgba(240, 249, 255, 0.55);
+}
+
 .uiSystemClosing {
   margin: 40px 0 0;
   padding: 18px 0 0;

@@ -119,6 +119,11 @@ const cattleBackgroundProcessImages = [
 
 const backgroundTransferImages = [
   {
+    src: "/images/visual/vr-education/process/animal-cave-background.png",
+    label: { zh: "动物洞穴背景", en: "Animal cave background" },
+    caption: { zh: "用洞穴空间建立动物栖息联想", en: "A cave-like space suggests animal habitats" },
+  },
+  {
     src: "/images/visual/vr-education/process/tunnel-background.png",
     label: { zh: "汽车传动背景", en: "Automotive transmission background" },
     caption: { zh: "用隧道建立机械与交通联想", en: "A tunnel cue suggests mechanics and mobility" },
@@ -132,11 +137,6 @@ const backgroundTransferImages = [
     src: "/images/visual/vr-education/process/injection-background.png",
     label: { zh: "注塑背景", en: "Injection molding background" },
     caption: { zh: "用模具空间建立工业设备联想", en: "A mold-like space suggests industrial equipment" },
-  },
-  {
-    src: "/images/visual/vr-education/process/animal-cave-background.png",
-    label: { zh: "动物洞穴背景", en: "Animal cave background" },
-    caption: { zh: "用洞穴空间建立动物栖息联想", en: "A cave-like space suggests animal habitats" },
   },
 ] as const;
 
@@ -509,7 +509,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                 <div className={styles.uiSystemStack}>
                   <article className={styles.uiSystemModule}>
                     <p className={styles.positioningLabel}>
-                      {t(locale, "UI细节", "UI Details")}
+                      {t(locale, "材质与状态", "Material & State")}
                     </p>
                     <div className={styles.uiSystemModuleGrid}>
                       <header className={styles.uiSystemModuleHeader}>
@@ -523,8 +523,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <p className={styles.uiSystemSubtitle}>
                           {t(
                             locale,
-                            "让界面像空间中的信息层一样存在",
-                            "Glass UI designed to blend into 3D space",
+                            "半透明材质与发光状态组成同一套视觉语言",
+                            "Transparency and glow form one visual language",
                           )}
                         </p>
                         <div className={styles.uiSystemGoal}>
@@ -534,8 +534,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           <p className={styles.uiSystemGoalText}>
                             {t(
                               locale,
-                              "让 UI 成为三维空间的一部分，而不是覆盖在三维空间之上的工具。",
-                              "Create an interface that exists within the 3D environment instead of blocking it.",
+                              "让 UI 成为三维空间的一部分，并用光感状态轻轻标出当前选择。",
+                              "Make the UI part of 3D space, and use glow to quietly mark the current selection.",
                             )}
                           </p>
                         </div>
@@ -544,22 +544,15 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <p className={styles.uiSystemBody}>
                           {t(
                             locale,
-                            "在背景承托模型之后，我继续用玻璃态视觉与轻量 HUD 布局建立界面系统，让操作和说明成为空间中的信息层，而不是覆盖在模型之上的平面工具栏。",
-                            "After the background supports the model, I built the interface system with spatial glass visuals and a light HUD layout, so controls and notes act as information layers in space rather than flat toolbars over the model.",
-                          )}
-                        </p>
-                        <p className={styles.uiSystemBody}>
-                          {t(
-                            locale,
-                            "为了适配 VR / 3D 实训环境，我采用透明玻璃态作为核心视觉语言，通过半透明面板、柔和边框和微弱光效，让 UI 像空间中的信息层一样存在，而不是覆盖在模型之上的传统平面界面。",
+                            "为了适配 VR / 3D 实训环境，我采用透明玻璃态作为核心视觉语言。半透明面板、柔和边框和微弱光效，让 UI 像空间中的信息层一样存在，而不是覆盖在模型之上的传统平面界面。",
                             "To fit VR / 3D training environments, I used transparent glass as the core visual language. Semi-transparent panels, soft borders, and quiet light effects let the UI sit as an information layer in space, not as a traditional flat overlay on the model.",
                           )}
                         </p>
                         <p className={styles.uiSystemBody}>
                           {t(
                             locale,
-                            "相比实体化面板，透明材质能够保留背景空间信息，使用户在观察设备结构或解剖模型时仍然保持完整的空间感。低饱和度的蓝绿色视觉体系也与虚拟实训环境保持一致，增强科技感与沉浸感。",
-                            "Compared with solid panels, transparency preserves background spatial cues, so learners keep a full sense of space while inspecting equipment structures or anatomy models. A low-saturation cyan-blue system also stays consistent with the virtual training environment and reinforces immersion.",
+                            "相比实体化面板，透明材质能够保留背景空间信息，使用户在观察设备结构或解剖模型时仍然保持完整的空间感。发光选择态也放在同一套材质逻辑里：不靠高对比色块抢注意力，而是用边框与底光轻轻点亮当前状态，让反馈清晰但不打断沉浸。",
+                            "Compared with solid panels, transparency preserves background spatial cues, so learners keep a full sense of space while inspecting equipment or anatomy. Selection glow stays in the same material system: instead of high-contrast blocks, soft borders and underglow quietly mark the active state, keeping feedback clear without breaking immersion.",
                           )}
                         </p>
                         <p className={styles.uiSystemFocusLabel}>
@@ -583,8 +576,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           <li>
                             {t(
                               locale,
-                              "发光边框强化空间层次和交互状态",
-                              "Glowing borders reinforce spatial depth and interaction states",
+                              "发光边框与底光用于表达选中和激活状态",
+                              "Glowing borders and underglow express selected and active states",
                             )}
                           </li>
                           <li>
@@ -601,13 +594,11 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                       {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
                       <img
                         className={styles.mediaBorder}
-                        src={assetPath(
-                          "/images/visual/smart-manufacturing/transmission-detail-exploded.png",
-                        )}
+                        src={assetPath("/images/visual/animal-vr/dog-muscle-highlight.png")}
                         alt={tStr(
                           locale,
-                          "变速器结构说明界面：玻璃态信息面板与底部悬浮控制栏",
-                          "Transmission structure UI with glass info panel and floating bottom controls",
+                          "犬体结构界面：玻璃态面板与发光选中状态",
+                          "Canine structure UI with glass panels and glowing selection state",
                         )}
                         width={1920}
                         height={1080}
@@ -619,22 +610,22 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
 
                   <article className={styles.uiSystemModule}>
                     <p className={styles.positioningLabel}>
-                      {t(locale, "交互", "Interaction")}
+                      {t(locale, "图标", "Icons")}
                     </p>
                     <div className={styles.uiSystemModuleGrid}>
                       <header className={styles.uiSystemModuleHeader}>
                         <h3 className={styles.uiSystemTitle}>
                           {t(
                             locale,
-                            "面向 3D 模型观察的轻量化交互设计",
-                            "Minimal HUD Interaction",
+                            "轻量线性的功能图标设计",
+                            "Lightweight Linear Icons",
                           )}
                         </h3>
                         <p className={styles.uiSystemSubtitle}>
                           {t(
                             locale,
-                            "围绕观察路径布置轻量控件",
-                            "Lightweight interaction designed for 3D model observation",
+                            "用简洁轮廓完成识别，再用投影补足体积感",
+                            "Clear outlines for recognition, quiet shadows for volume",
                           )}
                         </p>
                         <div className={styles.uiSystemGoal}>
@@ -644,8 +635,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           <p className={styles.uiSystemGoalText}>
                             {t(
                               locale,
-                              "让用户在操作过程中始终保持对 3D 模型的关注。",
-                              "Support interaction without interrupting observation.",
+                              "让功能入口足够轻，也足够好认，不抢走模型的主视觉。",
+                              "Keep action icons light and readable without competing with the model.",
                             )}
                           </p>
                         </div>
@@ -654,22 +645,15 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <p className={styles.uiSystemBody}>
                           {t(
                             locale,
-                            "针对模型需要持续观察和旋转查看的使用场景，界面采用 HUD 式布局，将核心操作集中在用户自然关注的位置，同时减少固定工具栏带来的视觉干扰。",
-                            "Because models need continuous observation and rotation, the interface uses a HUD layout that places core actions where attention naturally settles, while reducing the visual noise of fixed toolbars.",
+                            "实训界面信息密度高，图标需要在很小的面积里快速传达功能。我采用线性视觉风格，用简洁轮廓表达爆炸、隐藏、表皮、肌肉等操作含义，减少复杂装饰，提高识别效率。",
+                            "Training screens are information-dense, so icons need to communicate quickly in a small footprint. I used a linear style with clear outlines for actions like explode, hide, skin, and muscle, reducing decoration to improve recognition.",
                           )}
                         </p>
                         <p className={styles.uiSystemBody}>
                           {t(
                             locale,
-                            "底部控制栏采用悬浮式设计，将爆炸、隐藏等高频操作整合在统一控制区域，使用户能够快速调整模型状态，同时保持中央区域始终留给模型展示。右侧信息卡片则作为辅助信息层，在用户查看目标结构时提供名称与说明，形成“观察模型 → 获取反馈 → 深入理解”的学习流程。",
-                            "The bottom bar floats as a shared control area for frequent actions like explode and hide, so learners can adjust the model quickly while the center stays reserved for display. The right-side info card works as a secondary layer, offering names and notes when a structure is inspected, forming a flow from observe → feedback → deeper understanding.",
-                          )}
-                        </p>
-                        <p className={styles.uiSystemBody}>
-                          {t(
-                            locale,
-                            "图标采用线性风格，通过简洁轮廓表达功能含义，并配合轻微反差投影补足体积与光感，在保持低视觉重量的同时提高识别效率。",
-                            "Icons use a linear style with clear outlines for meaning, plus a quiet contrast shadow for volume and light, keeping visual weight low while improving recognition.",
+                            "同时，纯平面线稿容易显得过薄。我会为图标加入轻微反差色投影，让它在玻璃态底面上仍有体积和光感，既保持低视觉重量，又能被直觉识别为可点击入口。",
+                            "Pure flat linework can feel too thin, so I add a quiet contrast shadow. On the glass surface, icons keep a sense of volume and light while staying low in visual weight, and still read as clickable entries.",
                           )}
                         </p>
                         <p className={styles.uiSystemFocusLabel}>
@@ -679,58 +663,46 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           <li>
                             {t(
                               locale,
-                              "模型区域保持最大视觉权重",
-                              "Keep the model area as the strongest visual weight",
+                              "线性轮廓保证简洁和高识别性",
+                              "Line outlines keep icons simple and recognizable",
                             )}
                           </li>
                           <li>
                             {t(
                               locale,
-                              "控件围绕观察路径进行布局",
-                              "Place controls along the observation path",
+                              "低视觉重量，避免与中央模型竞争",
+                              "Keep visual weight low so the center model stays primary",
                             )}
                           </li>
                           <li>
                             {t(
                               locale,
-                              "信息按重要程度分层展示",
-                              "Layer information by importance",
+                              "反差投影补充体积感与光感",
+                              "Contrast shadows add volume and light",
                             )}
                           </li>
                           <li>
                             {t(
                               locale,
-                              "线性图标保持轻量，并用反差投影传达可操作性",
-                              "Keep icons light with linework, and use contrast shadow for affordance",
+                              "统一线宽和造型语言，跨课程保持一致",
+                              "Shared stroke and form language stay consistent across courses",
                             )}
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <figure className={styles.uiSystemEvidence}>
-                      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
-                      <img
-                        className={styles.mediaBorder}
-                        src={assetPath("/images/visual/animal-vr/dog-muscle-highlight.png")}
-                        alt={tStr(
-                          locale,
-                          "犬体结构界面：玻璃态信息面板与底部 HUD 控制栏",
-                          "Canine structure UI with glass info panel and bottom HUD controls",
-                        )}
-                        width={1920}
-                        height={1080}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </figure>
+                    <figure
+                      className={`${styles.uiSystemEvidence} ${styles.uiSystemEvidencePlaceholder}`}
+                      aria-label={tStr(locale, "图标配图待补充", "Icon evidence image to follow")}
+                    />
                   </article>
                 </div>
 
                 <p className={styles.uiSystemClosing}>
                   {t(
                     locale,
-                    "通过玻璃态视觉、空间化 HUD 布局以及轻量化图标体系，建立了一套适用于三维实训可视化场景的 UI 设计系统。在提供有效交互的同时，让 3D 模型始终保持核心视觉地位。",
-                    "Through glass visuals, spatial HUD layout, and a lightweight icon language, the interface system was designed for 3D training visualization. It supports exploration and learning while keeping the model as the primary focus.",
+                    "通过玻璃态材质、发光选择态和轻量化图标体系，建立了一套适用于三维实训可视化场景的 UI 设计系统。在提供有效反馈的同时，让 3D 模型始终保持核心视觉地位。",
+                    "Through glass materials, glowing selection states, and a lightweight icon language, the interface system was designed for 3D training visualization. It gives clear feedback while keeping the model as the primary focus.",
                   )}
                 </p>
               </section>
