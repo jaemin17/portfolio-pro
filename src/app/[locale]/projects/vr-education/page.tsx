@@ -508,15 +508,15 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
               >
                 <div className={styles.uiSystemStack}>
                   <article className={styles.uiSystemModule}>
+                    <p className={styles.positioningLabel}>
+                      {t(locale, "UI细节", "UI Details")}
+                    </p>
                     <div className={styles.uiSystemModuleGrid}>
                       <header className={styles.uiSystemModuleHeader}>
-                        <p className={styles.uiSystemIndex}>
-                          {t(locale, "视觉", "Visual")}
-                        </p>
                         <h3 className={styles.uiSystemTitle}>
                           {t(
                             locale,
-                            "融入三维空间的玻璃态界面设计",
+                            "融入3D空间的玻璃态UI设计",
                             "Spatial Glass Interface",
                           )}
                         </h3>
@@ -618,11 +618,11 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   </article>
 
                   <article className={styles.uiSystemModule}>
+                    <p className={styles.positioningLabel}>
+                      {t(locale, "交互", "Interaction")}
+                    </p>
                     <div className={styles.uiSystemModuleGrid}>
                       <header className={styles.uiSystemModuleHeader}>
-                        <p className={styles.uiSystemIndex}>
-                          {t(locale, "交互", "Interaction")}
-                        </p>
                         <h3 className={styles.uiSystemTitle}>
                           {t(
                             locale,

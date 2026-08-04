@@ -525,15 +525,6 @@
   align-content: start;
 }
 
-.uiSystemIndex {
-  margin: 0;
-  color: #0ea5e9;
-  font-size: var(--fs-label);
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 .uiSystemTitle {
   margin: 0;
   color: #1a1a1a;

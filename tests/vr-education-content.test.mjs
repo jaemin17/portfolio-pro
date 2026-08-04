@@ -134,7 +134,7 @@ const requiredCopy = [
   "界面系统",
   "在背景承托模型之后，我继续用玻璃态视觉与轻量 HUD 布局建立界面系统",
   "Spatial Glass Interface",
-  "融入三维空间的玻璃态界面设计",
+  "融入3D空间的玻璃态UI设计",
   "半透明背景降低 UI 存在感",
   "Create an interface that exists within the 3D environment instead of blocking it",
   "Minimal HUD Interaction",
