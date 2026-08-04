@@ -474,6 +474,180 @@
   margin-top: 28px;
 }
 
+.uiSystemSection {
+  margin-top: 56px;
+}
+
+.uiSystemIntro {
+  margin: 0 0 40px;
+}
+
+.uiSystemIntro .positioningLabel {
+  margin-bottom: 10px;
+}
+
+.uiSystemHeading {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: var(--fs-title);
+  font-weight: 500;
+  line-height: 1.55;
+  padding-top: 24px;
+}
+
+.uiSystemLead {
+  margin: 0;
+  color: #475569;
+  font-size: var(--fs-body);
+  line-height: 1.75;
+}
+
+.uiSystemStack {
+  display: grid;
+  gap: 56px;
+}
+
+.uiSystemModule {
+  margin: 0;
+}
+
+.uiSystemModuleGrid {
+  display: grid;
+  grid-template-columns: 2.5fr 4fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.uiSystemModuleHeader {
+  display: grid;
+  gap: 8px;
+  padding-top: 24px;
+  align-content: start;
+}
+
+.uiSystemIndex {
+  margin: 0;
+  color: #0ea5e9;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.uiSystemTitle {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: var(--fs-title);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.uiSystemSubtitle {
+  margin: 0;
+  color: #0369a1;
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.uiSystemModuleBody {
+  min-width: 0;
+}
+
+.uiSystemBody {
+  margin: 0 0 16px;
+  color: #444;
+  font-size: var(--fs-body);
+  line-height: 1.75;
+}
+
+.uiSystemBody:first-child {
+  margin-top: 0;
+}
+
+.uiSystemFocusLabel {
+  margin: 22px 0 10px;
+  color: #0369a1;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.uiSystemFocusList {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uiSystemFocusList li {
+  position: relative;
+  padding-left: 14px;
+  color: #334155;
+  font-size: var(--fs-caption);
+  line-height: 1.65;
+}
+
+.uiSystemFocusList li::before {
+  content: "";
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0ea5e9;
+}
+
+.uiSystemGoal {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 105, 161, 0.14);
+  background: rgba(240, 249, 255, 0.72);
+}
+
+.uiSystemGoalLabel {
+  display: block;
+  margin-bottom: 8px;
+  color: #0ea5e9;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.uiSystemGoalText {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.uiSystemEvidence {
+  margin: 28px 0 0;
+}
+
+.uiSystemEvidence img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.uiSystemClosing {
+  margin: 40px 0 0;
+  padding: 18px 0 0;
+  border-top: 1px solid rgba(14, 165, 233, 0.24);
+  color: #475569;
+  font-size: var(--fs-caption);
+  line-height: 1.75;
+}
+
 .backgroundTransferIntro {
   margin: 0 0 12px;
   color: #64748b;
@@ -814,7 +988,8 @@
 
 @media (max-width: 860px) {
   .positioningGrid,
-  .narrativeGrid {
+  .narrativeGrid,
+  .uiSystemModuleGrid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
@@ -830,7 +1005,9 @@
   }
 
   .positioningHeading,
-  .narrativeHeadline {
+  .narrativeHeadline,
+  .uiSystemHeading,
+  .uiSystemModuleHeader {
     padding-top: 0;
   }
 

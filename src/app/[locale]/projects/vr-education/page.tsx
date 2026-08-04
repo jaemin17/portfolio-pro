@@ -501,6 +501,239 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   />
                 </div>
               </figure>
+
+              <section
+                className={styles.uiSystemSection}
+                aria-label={tStr(locale, "界面系统", "Interface System")}
+              >
+                <div className={styles.uiSystemStack}>
+                  <article className={styles.uiSystemModule}>
+                    <div className={styles.uiSystemModuleGrid}>
+                      <header className={styles.uiSystemModuleHeader}>
+                        <p className={styles.uiSystemIndex}>
+                          {t(locale, "视觉", "Visual")}
+                        </p>
+                        <h3 className={styles.uiSystemTitle}>
+                          {t(
+                            locale,
+                            "融入三维空间的玻璃态界面设计",
+                            "Spatial Glass Interface",
+                          )}
+                        </h3>
+                        <p className={styles.uiSystemSubtitle}>
+                          {t(
+                            locale,
+                            "让界面像空间中的信息层一样存在",
+                            "Glass UI designed to blend into 3D space",
+                          )}
+                        </p>
+                        <div className={styles.uiSystemGoal}>
+                          <span className={styles.uiSystemGoalLabel}>
+                            {t(locale, "设计目标", "Design Goal")}
+                          </span>
+                          <p className={styles.uiSystemGoalText}>
+                            {t(
+                              locale,
+                              "让 UI 成为三维空间的一部分，而不是覆盖在三维空间之上的工具。",
+                              "Create an interface that exists within the 3D environment instead of blocking it.",
+                            )}
+                          </p>
+                        </div>
+                      </header>
+                      <div className={styles.uiSystemModuleBody}>
+                        <p className={styles.uiSystemBody}>
+                          {t(
+                            locale,
+                            "在背景承托模型之后，我继续用玻璃态视觉与轻量 HUD 布局建立界面系统，让操作和说明成为空间中的信息层，而不是覆盖在模型之上的平面工具栏。",
+                            "After the background supports the model, I built the interface system with spatial glass visuals and a light HUD layout, so controls and notes act as information layers in space rather than flat toolbars over the model.",
+                          )}
+                        </p>
+                        <p className={styles.uiSystemBody}>
+                          {t(
+                            locale,
+                            "为了适配 VR / 3D 实训环境，我采用透明玻璃态作为核心视觉语言，通过半透明面板、柔和边框和微弱光效，让 UI 像空间中的信息层一样存在，而不是覆盖在模型之上的传统平面界面。",
+                            "To fit VR / 3D training environments, I used transparent glass as the core visual language. Semi-transparent panels, soft borders, and quiet light effects let the UI sit as an information layer in space, not as a traditional flat overlay on the model.",
+                          )}
+                        </p>
+                        <p className={styles.uiSystemBody}>
+                          {t(
+                            locale,
+                            "相比实体化面板，透明材质能够保留背景空间信息，使用户在观察设备结构或解剖模型时仍然保持完整的空间感。低饱和度的蓝绿色视觉体系也与虚拟实训环境保持一致，增强科技感与沉浸感。",
+                            "Compared with solid panels, transparency preserves background spatial cues, so learners keep a full sense of space while inspecting equipment structures or anatomy models. A low-saturation cyan-blue system also stays consistent with the virtual training environment and reinforces immersion.",
+                          )}
+                        </p>
+                        <p className={styles.uiSystemFocusLabel}>
+                          {t(locale, "设计重点", "Design Focus")}
+                        </p>
+                        <ul className={styles.uiSystemFocusList}>
+                          <li>
+                            {t(
+                              locale,
+                              "半透明背景降低 UI 存在感，避免遮挡模型细节",
+                              "Semi-transparent surfaces reduce UI presence and avoid covering model detail",
+                            )}
+                          </li>
+                          <li>
+                            {t(
+                              locale,
+                              "圆角与柔和边缘降低视觉压迫感",
+                              "Rounded, soft edges reduce visual pressure",
+                            )}
+                          </li>
+                          <li>
+                            {t(
+                              locale,
+                              "发光边框强化空间层次和交互状态",
+                              "Glowing borders reinforce spatial depth and interaction states",
+                            )}
+                          </li>
+                          <li>
+                            {t(
+                              locale,
+                              "统一的透明组件体系保证不同界面之间的视觉一致性",
+                              "A shared transparent component system keeps screens visually consistent",
+                            )}
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <figure className={styles.uiSystemEvidence}>
+                      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+                      <img
+                        className={styles.mediaBorder}
+                        src={assetPath(
+                          "/images/visual/smart-manufacturing/transmission-detail-exploded.png",
+                        )}
+                        alt={tStr(
+                          locale,
+                          "变速器结构说明界面：玻璃态信息面板与底部悬浮控制栏",
+                          "Transmission structure UI with glass info panel and floating bottom controls",
+                        )}
+                        width={1920}
+                        height={1080}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                  </article>
+
+                  <article className={styles.uiSystemModule}>
+                    <div className={styles.uiSystemModuleGrid}>
+                      <header className={styles.uiSystemModuleHeader}>
+                        <p className={styles.uiSystemIndex}>
+                          {t(locale, "交互", "Interaction")}
+                        </p>
+                        <h3 className={styles.uiSystemTitle}>
+                          {t(
+                            locale,
+                            "面向 3D 模型观察的轻量化交互设计",
+                            "Minimal HUD Interaction",
+                          )}
+                        </h3>
+                        <p className={styles.uiSystemSubtitle}>
+                          {t(
+                            locale,
+                            "围绕观察路径布置轻量控件",
+                            "Lightweight interaction designed for 3D model observation",
+                          )}
+                        </p>
+                        <div className={styles.uiSystemGoal}>
+                          <span className={styles.uiSystemGoalLabel}>
+                            {t(locale, "设计目标", "Design Goal")}
+                          </span>
+                          <p className={styles.uiSystemGoalText}>
+                            {t(
+                              locale,
+                              "让用户在操作过程中始终保持对 3D 模型的关注。",
+                              "Support interaction without interrupting observation.",
+                            )}
+                          </p>
+                        </div>
+                      </header>
+                      <div className={styles.uiSystemModuleBody}>
+                        <p className={styles.uiSystemBody}>
+                          {t(
+                            locale,
+                            "针对模型需要持续观察和旋转查看的使用场景，界面采用 HUD 式布局，将核心操作集中在用户自然关注的位置，同时减少固定工具栏带来的视觉干扰。",
+                            "Because models need continuous observation and rotation, the interface uses a HUD layout that places core actions where attention naturally settles, while reducing the visual noise of fixed toolbars.",
+                          )}
+                        </p>
+                        <p className={styles.uiSystemBody}>
+                          {t(
+                            locale,
+                            "底部控制栏采用悬浮式设计，将爆炸、隐藏等高频操作整合在统一控制区域，使用户能够快速调整模型状态，同时保持中央区域始终留给模型展示。右侧信息卡片则作为辅助信息层，在用户查看目标结构时提供名称与说明，形成“观察模型 → 获取反馈 → 深入理解”的学习流程。",
+                            "The bottom bar floats as a shared control area for frequent actions like explode and hide, so learners can adjust the model quickly while the center stays reserved for display. The right-side info card works as a secondary layer, offering names and notes when a structure is inspected, forming a flow from observe → feedback → deeper understanding.",
+                          )}
+                        </p>
+                        <p className={styles.uiSystemBody}>
+                          {t(
+                            locale,
+                            "图标采用线性风格，通过简洁轮廓表达功能含义，并配合轻微反差投影补足体积与光感，在保持低视觉重量的同时提高识别效率。",
+                            "Icons use a linear style with clear outlines for meaning, plus a quiet contrast shadow for volume and light, keeping visual weight low while improving recognition.",
+                          )}
+                        </p>
+                        <p className={styles.uiSystemFocusLabel}>
+                          {t(locale, "设计重点", "Design Focus")}
+                        </p>
+                        <ul className={styles.uiSystemFocusList}>
+                          <li>
+                            {t(
+                              locale,
+                              "模型区域保持最大视觉权重",
+                              "Keep the model area as the strongest visual weight",
+                            )}
+                          </li>
+                          <li>
+                            {t(
+                              locale,
+                              "控件围绕观察路径进行布局",
+                              "Place controls along the observation path",
+                            )}
+                          </li>
+                          <li>
+                            {t(
+                              locale,
+                              "信息按重要程度分层展示",
+                              "Layer information by importance",
+                            )}
+                          </li>
+                          <li>
+                            {t(
+                              locale,
+                              "线性图标保持轻量，并用反差投影传达可操作性",
+                              "Keep icons light with linework, and use contrast shadow for affordance",
+                            )}
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <figure className={styles.uiSystemEvidence}>
+                      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+                      <img
+                        className={styles.mediaBorder}
+                        src={assetPath("/images/visual/animal-vr/dog-muscle-highlight.png")}
+                        alt={tStr(
+                          locale,
+                          "犬体结构界面：玻璃态信息面板与底部 HUD 控制栏",
+                          "Canine structure UI with glass info panel and bottom HUD controls",
+                        )}
+                        width={1920}
+                        height={1080}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                  </article>
+                </div>
+
+                <p className={styles.uiSystemClosing}>
+                  {t(
+                    locale,
+                    "通过玻璃态视觉、空间化 HUD 布局以及轻量化图标体系，建立了一套适用于三维实训可视化场景的 UI 设计系统。在提供有效交互的同时，让 3D 模型始终保持核心视觉地位。",
+                    "Through glass visuals, spatial HUD layout, and a lightweight icon language, the interface system was designed for 3D training visualization. It supports exploration and learning while keeping the model as the primary focus.",
+                  )}
+                </p>
+              </section>
             </div>
           </div>
         </section>
