@@ -374,8 +374,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     </p>
                     <KeywordPills
                       locale={locale}
-                      zh={["耳蜗结构", "机械通道", "动物栖息空间"]}
-                      en={["cochlea structure", "mechanical tunnel", "animal habitat"]}
+                      zh={["结构形态", "通道空间", "栖息场域"]}
+                      en={["structural form", "tunnel space", "habitat field"]}
                     />
                   </div>
                   <div className={styles.promptKeywordCard}>
