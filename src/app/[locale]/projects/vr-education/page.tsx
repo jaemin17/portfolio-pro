@@ -516,29 +516,10 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <h3 className={styles.uiSystemTitle}>
                           {t(
                             locale,
-                            "融入3D空间的玻璃态UI设计",
-                            "Spatial Glass Interface",
+                            "玻璃态UI：融入空间，光感标出状态",
+                            "Glass UI: blend into space, mark state with light",
                           )}
                         </h3>
-                        <p className={styles.uiSystemSubtitle}>
-                          {t(
-                            locale,
-                            "半透明材质与发光状态组成同一套视觉语言",
-                            "Transparency and glow form one visual language",
-                          )}
-                        </p>
-                        <div className={styles.uiSystemGoal}>
-                          <span className={styles.uiSystemGoalLabel}>
-                            {t(locale, "设计目标", "Design Goal")}
-                          </span>
-                          <p className={styles.uiSystemGoalText}>
-                            {t(
-                              locale,
-                              "让 UI 成为三维空间的一部分，并用光感状态轻轻标出当前选择。",
-                              "Make the UI part of 3D space, and use glow to quietly mark the current selection.",
-                            )}
-                          </p>
-                        </div>
                       </header>
                       <div className={styles.uiSystemModuleBody}>
                         <p className={styles.uiSystemBody}>
@@ -580,7 +561,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                               <strong className={styles.uiSystemEmphasis}>
                                 既有实体感，又保留科技界面的轻盈
                               </strong>
-                              。
+                              。选中与 hover 也沿用同一套光感逻辑。
                             </>,
                             <>
                               Bottom action buttons intentionally leave the{" "}
@@ -598,7 +579,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                               <strong className={styles.uiSystemEmphasis}>
                                 physical in presence, yet light like a tech interface
                               </strong>
-                              .
+                              . Selected and hover states follow the same light logic.
                             </>,
                           )}
                         </p>
@@ -609,8 +590,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           <li>
                             {t(
                               locale,
-                              "清透UI，融入场景",
-                              "Clear UI that blends into the scene",
+                              "清透UI面板，融入场景",
+                              "Clear UI panels that blend into the scene",
                             )}
                           </li>
                           <li>
@@ -625,6 +606,13 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                               locale,
                               "光影雕刻，轻量实体",
                               "Light-and-shadow carving for light physical presence",
+                            )}
+                          </li>
+                          <li>
+                            {t(
+                              locale,
+                              "蓝黄光感，反馈选中与悬停",
+                              "Blue and yellow light for selected and hover states",
                             )}
                           </li>
                         </ul>
