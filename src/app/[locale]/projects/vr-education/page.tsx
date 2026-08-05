@@ -516,8 +516,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <h3 className={styles.uiSystemTitle}>
                           {t(
                             locale,
-                            "玻璃态UI：融入空间，光感标出状态",
-                            "Glass UI: blend into space, mark state with light",
+                            "融入3D空间的玻璃态与光感UI",
+                            "Glass and light UI integrated into 3D space",
                           )}
                         </h3>
                       </header>
