@@ -544,15 +544,62 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <p className={styles.uiSystemBody}>
                           {t(
                             locale,
-                            "为了适配 VR / 3D 实训环境，我采用透明玻璃态作为核心视觉语言。半透明面板、柔和边框和微弱光效，让 UI 像空间中的信息层一样存在，而不是覆盖在模型之上的传统平面界面。",
-                            "To fit VR / 3D training environments, I used transparent glass as the core visual language. Semi-transparent panels, soft borders, and quiet light effects let the UI sit as an information layer in space, not as a traditional flat overlay on the model.",
+                            <>
+                              采用
+                              <strong className={styles.uiSystemEmphasis}>清透的玻璃质感</strong>
+                              作为核心视觉语言。半透明材质
+                              <strong className={styles.uiSystemEmphasis}>融入背景</strong>
+                              ，配合柔和光效，让 UI 像
+                              <strong className={styles.uiSystemEmphasis}>空间中的信息层</strong>
+                              一样存在，而不是覆盖在模型之上的传统平面界面。
+                            </>,
+                            <>
+                              I used a{" "}
+                              <strong className={styles.uiSystemEmphasis}>clear glass material</strong>{" "}
+                              as the core visual language. Semi-transparent surfaces{" "}
+                              <strong className={styles.uiSystemEmphasis}>blend into the background</strong>
+                              , and soft light effects let the UI sit as an{" "}
+                              <strong className={styles.uiSystemEmphasis}>information layer in space</strong>
+                              , not as a traditional flat overlay on the model.
+                            </>,
                           )}
                         </p>
                         <p className={styles.uiSystemBody}>
                           {t(
                             locale,
-                            "相比实体化面板，透明材质能够保留背景空间信息，使用户在观察设备结构或解剖模型时仍然保持完整的空间感。发光选择态也放在同一套材质逻辑里：不靠高对比色块抢注意力，而是用边框与底光轻轻点亮当前状态，让反馈清晰但不打断沉浸。",
-                            "Compared with solid panels, transparency preserves background spatial cues, so learners keep a full sense of space while inspecting equipment or anatomy. Selection glow stays in the same material system: instead of high-contrast blocks, soft borders and underglow quietly mark the active state, keeping feedback clear without breaking immersion.",
+                            <>
+                              底部功能按钮刻意做成
+                              <strong className={styles.uiSystemEmphasis}>左右开放的边缘</strong>
+                              ，
+                              <strong className={styles.uiSystemEmphasis}>取消完整卡片感</strong>
+                              ，让背景可以连续穿过。同时用
+                              <strong className={styles.uiSystemEmphasis}>上沿光带与雕刻式分割线</strong>
+                              做出
+                              <strong className={styles.uiSystemEmphasis}>微微凸起的实体感</strong>
+                              ，既有可点击的体积，又不显得沉重；再配合轻微倾斜与柔和光感，让整组控件
+                              <strong className={styles.uiSystemEmphasis}>
+                                既有实体感，又保留科技界面的轻盈
+                              </strong>
+                              。
+                            </>,
+                            <>
+                              Bottom action buttons intentionally leave the{" "}
+                              <strong className={styles.uiSystemEmphasis}>left and right edges open</strong>
+                              ,{" "}
+                              <strong className={styles.uiSystemEmphasis}>canceling a full card frame</strong>{" "}
+                              so the background can continue through. A{" "}
+                              <strong className={styles.uiSystemEmphasis}>
+                                top light band and carved dividers
+                              </strong>{" "}
+                              create a{" "}
+                              <strong className={styles.uiSystemEmphasis}>slightly raised physical feel</strong>
+                              —clickable in volume, but not heavy—while a slight tilt and soft light keep the
+                              controls{" "}
+                              <strong className={styles.uiSystemEmphasis}>
+                                physical in presence, yet light like a tech interface
+                              </strong>
+                              .
+                            </>,
                           )}
                         </p>
                         <p className={styles.uiSystemFocusLabel}>
@@ -562,29 +609,22 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           <li>
                             {t(
                               locale,
-                              "半透明背景降低 UI 存在感，避免遮挡模型细节",
-                              "Semi-transparent surfaces reduce UI presence and avoid covering model detail",
+                              "清透UI，融入场景",
+                              "Clear UI that blends into the scene",
                             )}
                           </li>
                           <li>
                             {t(
                               locale,
-                              "圆角与柔和边缘降低视觉压迫感",
-                              "Rounded, soft edges reduce visual pressure",
+                              "开放边缘，取消卡片感",
+                              "Open edges that cancel the card look",
                             )}
                           </li>
                           <li>
                             {t(
                               locale,
-                              "发光边框与底光用于表达选中和激活状态",
-                              "Glowing borders and underglow express selected and active states",
-                            )}
-                          </li>
-                          <li>
-                            {t(
-                              locale,
-                              "统一的透明组件体系保证不同界面之间的视觉一致性",
-                              "A shared transparent component system keeps screens visually consistent",
+                              "光影雕刻，轻量实体",
+                              "Light-and-shadow carving for light physical presence",
                             )}
                           </li>
                         </ul>
@@ -663,29 +703,22 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           <li>
                             {t(
                               locale,
-                              "线性轮廓保证简洁和高识别性",
-                              "Line outlines keep icons simple and recognizable",
+                              "线性轮廓，快速好识别",
+                              "Linear outlines for quick recognition",
                             )}
                           </li>
                           <li>
                             {t(
                               locale,
-                              "低视觉重量，避免与中央模型竞争",
-                              "Keep visual weight low so the center model stays primary",
+                              "视觉轻量，不抢模型",
+                              "Light visual weight that doesn't compete with the model",
                             )}
                           </li>
                           <li>
                             {t(
                               locale,
-                              "反差投影补充体积感与光感",
-                              "Contrast shadows add volume and light",
-                            )}
-                          </li>
-                          <li>
-                            {t(
-                              locale,
-                              "统一线宽和造型语言，跨课程保持一致",
-                              "Shared stroke and form language stay consistent across courses",
+                              "反差投影补体积感与光感",
+                              "Contrast shadows for volume and light",
                             )}
                           </li>
                         </ul>
