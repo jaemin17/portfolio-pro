@@ -716,30 +716,6 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
 
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
-              <p className={styles.positioningLabel}>
-                {t(locale, "机器人与模具", "Robots & Molds")}
-              </p>
-              <div className={styles.narrativeGrid}>
-                <h2 className={styles.narrativeHeadline}>
-                  <span className={styles.narrativeHeadlineLight}>
-                    {t(locale, "从设备首页展示，", "From equipment home screens")}
-                  </span>
-                  <br />
-                  <span className={styles.narrativeHeadlineDark}>
-                    {t(locale, "到教学与操作子页面", "to teaching and operation subpages")}
-                  </span>
-                </h2>
-                <div className={styles.narrativeBody}>
-                  <p>
-                    {t(
-                      locale,
-                      "工业机器人与注塑模具模块需要同时呈现首页导览、机构说明和装配操作。我的处理方式是把可浏览的设备选择、可阅读的结构说明、可执行的装配步骤拆成不同界面状态，并用高亮、面板和底部操作入口建立稳定层级。",
-                      "Robot and mold modules had to present home tours, mechanism notes, and assembly operations together. I separated browsable equipment selection, readable structure notes, and executable assembly steps into distinct UI states, using highlights, panels, and bottom actions as stable hierarchy anchors.",
-                    )}
-                  </p>
-                </div>
-              </div>
-
               <div className={styles.sceneStack}>
                 {equipmentModuleShots.map((shot) => (
                   <VisualSceneBlock
@@ -797,16 +773,12 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
               <p className={styles.positioningLabel}>
-                {t(locale, "动物解剖 VR", "Animal Anatomy VR")}
+                {t(locale, "系列软件03", "Series Software 03")}
               </p>
               <div className={styles.narrativeGrid}>
                 <h2 className={styles.narrativeHeadline}>
-                  <span className={styles.narrativeHeadlineLight}>
-                    {t(locale, "从单一结构展示，", "From single-structure views")}
-                  </span>
-                  <br />
                   <span className={styles.narrativeHeadlineDark}>
-                    {t(locale, "到完整解剖教学流程", "to full anatomy teaching flows")}
+                    {t(locale, "动物解剖 VR", "Animal Anatomy VR")}
                   </span>
                 </h2>
                 <div className={styles.narrativeBody}>

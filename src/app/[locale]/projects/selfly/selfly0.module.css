@@ -2096,7 +2096,8 @@
     content: "Selfly: ";
   }
 
-  :global([data-page="model-editor"]) .projectOneHero .subtitle::before {
+  :global([data-page="model-editor"]) .projectOneHero .subtitle::before,
+  :global([data-page="vr-education"]) .projectOneHero .subtitle::before {
     content: none;
   }
 
