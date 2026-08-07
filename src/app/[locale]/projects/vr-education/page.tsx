@@ -680,7 +680,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
           <div className={`${styles.positioningSection} ${styles.stackedSection}`}>
             <div className={styles.positioningInner}>
               <p className={styles.positioningLabel}>
-                {t(locale, "章节 01", "Chapter 01")}
+                {t(locale, "机械制造类", "Mechanical Manufacturing")}
               </p>
               <h2 className={styles.chapterHeading}>
                 {t(locale, "智能制造 VR", "Smart Manufacturing VR")}
@@ -710,13 +710,6 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                 {transmissionModuleShots.map((shot) => (
                   <VisualSceneBlock key={shot.src} shot={shot} locale={locale} />
                 ))}
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.narrativeSection}>
-            <div className={styles.narrativeInner}>
-              <div className={styles.sceneStack}>
                 {equipmentModuleShots.map((shot) => (
                   <VisualSceneBlock
                     key={`${shot.src}-${shot.subtitle.zh}`}
@@ -737,7 +730,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
           <div className={`${styles.positioningSection} ${styles.stackedSection}`}>
             <div className={styles.positioningInner}>
               <p className={styles.positioningLabel}>
-                {t(locale, "章节 02", "Chapter 02")}
+                {t(locale, "生物医疗类", "Biomedical")}
               </p>
               <h2 className={styles.chapterHeading}>
                 {t(locale, "生物医疗 VR", "Biomedical VR")}
@@ -759,9 +752,6 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                 decoding="async"
               />
 
-              <p className={styles.positioningLabel} style={{ marginTop: 48 }}>
-                {t(locale, "结构训练模块", "Structure Training Modules")}
-              </p>
               <div className={styles.sceneStack}>
                 {structureModuleShots.map((shot) => (
                   <VisualSceneBlock key={shot.src} shot={shot} locale={locale} />
@@ -773,7 +763,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
               <p className={styles.positioningLabel}>
-                {t(locale, "系列软件03", "Series Software 03")}
+                {t(locale, "动物解剖类", "Animal Anatomy")}
               </p>
               <div className={styles.narrativeGrid}>
                 <h2 className={styles.narrativeHeadline}>
@@ -822,7 +812,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
           <div className={`${styles.positioningSection} ${styles.stackedSection}`}>
             <div className={styles.positioningInner}>
               <p className={styles.positioningLabel}>
-                {t(locale, "章节 03", "Chapter 03")}
+                {t(locale, "应用图标设计", "App Icon Design")}
               </p>
               <h2 className={styles.chapterHeading}>
                 {t(locale, "应用图标系统", "App Icon System")}
