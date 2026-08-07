@@ -243,15 +243,10 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
               <div className={styles.positioningGrid}>
                 <h2 className={styles.positioningHeading}>
                   <span className={styles.positioningHeadingLight}>
-                    {t(locale, "让 3D 模型，", "Making 3D models")}
-                  </span>
-                  <br />
+                    {t(locale, "覆盖制造、医疗与解剖的", "Covering manufacturing, medicine, and anatomy—")}
+                  </span>{" "}
                   <span className={styles.positioningHeadingDark}>
-                    {t(
-                      locale,
-                      "在清晰的教学界面中被理解",
-                      "understandable through clear teaching interfaces",
-                    )}
+                    {t(locale, "系列 VR 实训", "a series of VR training modules")}
                   </span>
                 </h2>
                 <div className={styles.positioningBody}>
@@ -672,14 +667,6 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     </figure>
                   </article>
                 </div>
-
-                <p className={styles.uiSystemClosing}>
-                  {t(
-                    locale,
-                    "通过玻璃态材质、发光选择态和轻量化图标体系，建立了一套适用于三维实训可视化场景的 UI 设计系统。在提供有效反馈的同时，让 3D 模型始终保持核心视觉地位。",
-                    "Through glass materials, glowing selection states, and a lightweight icon language, the interface system was designed for 3D training visualization. It gives clear feedback while keeping the model as the primary focus.",
-                  )}
-                </p>
               </section>
             </div>
           </div>
