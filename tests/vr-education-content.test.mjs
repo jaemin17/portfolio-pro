@@ -70,9 +70,6 @@ const appIconFeatureImageMatch = page.match(
   /className=\{styles\.appIconFeatureCard\}[\s\S]*?src=\{assetPath\("([^"]+)"\)\}/,
 );
 const appIconItemsBlock = page.match(/const appIconItems = \[([\s\S]*?)\] as const;/)?.[1] ?? "";
-const promptStrategyKickerMatch = page.match(
-  /className=\{styles\.promptStrategyKicker\}[\s\S]*?\{t\(locale, "([^"]+)", "([^"]+)"\)\}/,
-);
 
 const requiredCopy = [
   "VR",
@@ -86,41 +83,32 @@ const requiredCopy = [
   "保持统一的操作和视觉规则",
   "信息分层",
   "把教学说明、模型观察和实操引导拆出层级",
-  "设计策略",
-  "从教学对象",
-  "提取空间隐喻",
-  "我把课程背景作为学科识别和模型展示的承托层",
+  "空间设计",
+  "为 3D 模型，",
+  "建立低干扰展示空间",
   "从实训对象提取空间线索",
   "汽车传动结构对应隧道空间",
   "耳部结构则转译为耳蜗式弧形空间",
-  "AI 关键词探索",
-  "为 3D 模型建立低干扰展示空间",
-  "我先从课程对象提取主题线索",
-  "让背景既能指向具体课程",
-  "抽象空间",
+  "背景既能指向具体课程，又不会抢走 3D 模型和教学信息的视觉主位",
   "抽象 3D 环境",
   "模型展示",
   "舞台式环境",
-  "低干扰背景",
   "克制的极简感",
-  "视觉质感",
   "透视渲染",
   "主题线索",
   "耳蜗结构",
-  "机械通道",
-  "动物栖息空间",
   "注塑背景",
   "用模具空间建立工业设备联想",
   "injection-background.png",
   "动物洞穴背景",
   "用洞穴空间建立动物栖息联想",
   "animal-cave-background.png",
-  "课程背景的视觉转译流程",
   "空间抽象",
-  "保留棚舍的纵深和轮廓",
-  "低干扰处理",
-  "统一青蓝色调，压低材质、对比和细节噪音",
-  "界面验证",
+  "建立非写实教学空间",
+  "低干扰与质感控制",
+  "减少细节噪音，让背景退后",
+  "控制色彩、光照和空间可信度",
+  "模型展示",
   "确认模型、标题和入口信息仍然是视觉主位",
   "同一套背景方法，迁移到不同课程对象",
   "backgroundProcessNotesPanel",
@@ -137,7 +125,7 @@ const requiredCopy = [
   "清透UI面板，融入场景",
   "开放边缘，取消卡片感",
   "光影雕刻，轻量实体",
-  "光感反馈选中与悬停",
+  "蓝黄光感，反馈选中与悬停",
   "图标",
   "线性图标：轮廓识别，投影补体积",
   "Linear icons: outline recognition, shadow volume",
@@ -243,12 +231,6 @@ assert.equal(
   appIconFeatureImageMatch?.[1],
   "/images/visual/vr-education/icons/cat.png",
   "App icon feature card should use the cat icon",
-);
-
-assert.deepEqual(
-  promptStrategyKickerMatch?.slice(1),
-  ["AI 关键词探索", "AI Keyword Exploration"],
-  "Prompt strategy kicker should explicitly mention AI keyword exploration",
 );
 
 assert.ok(

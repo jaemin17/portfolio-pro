@@ -84,8 +84,8 @@ const cattleBackgroundProcessImages = [
     step: "01",
     label: { zh: "主题线索", en: "Subject cue" },
     caption: {
-      zh: "牛解剖对应牧场 / 牛舍，先确定背景要指向的课程对象。",
-      en: "Cattle anatomy maps to barn-like cues, defining which course subject the background should point to.",
+      zh: "从课程对象提取空间联想。",
+      en: "Extract spatial associations from the course subject.",
     },
   },
   {
@@ -93,26 +93,26 @@ const cattleBackgroundProcessImages = [
     step: "02",
     label: { zh: "空间抽象", en: "Spatial abstraction" },
     caption: {
-      zh: "保留棚舍的纵深和轮廓，但减少写实杂物。",
-      en: "Keep the depth and outline of the barn space while reducing literal clutter.",
+      zh: "建立非写实教学空间。",
+      en: "Create a non-literal teaching space.",
     },
   },
   {
     src: "/images/visual/vr-education/process/cattle-background-final.png",
     step: "03",
-    label: { zh: "低干扰处理", en: "Low-noise treatment" },
+    label: { zh: "低干扰与质感控制", en: "Low-noise & texture control" },
     caption: {
-      zh: "统一青蓝色调，压低材质、对比和细节噪音。",
-      en: "Unify the cyan-blue tone and reduce texture, contrast, and detail noise.",
+      zh: "减少细节噪音，让背景退后。控制色彩、光照和空间可信度。",
+      en: "Reduce detail noise and push the background back. Control color, lighting, and spatial credibility.",
     },
   },
   {
     src: "/images/visual/vr-education/process/cattle-interface-final.png",
     step: "04",
-    label: { zh: "界面验证", en: "Interface validation" },
+    label: { zh: "模型展示", en: "Model display" },
     caption: {
-      zh: "放回实训首页，确认模型、标题和入口信息仍然是视觉主位。",
-      en: "Place the background back into the training home screen and confirm the model, title, and entry points still lead.",
+      zh: "确认模型、标题和入口信息仍然是视觉主位。",
+      en: "Confirm the model, title, and entry points still lead visually.",
     },
   },
 ] as const;
@@ -309,145 +309,43 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                 </div>
               </section>
               <section className={styles.strategySection}>
-                <p className={styles.positioningLabel}>{t(locale, "设计策略", "Design Strategy")}</p>
+                <p className={styles.positioningLabel}>{t(locale, "空间设计", "Spatial Design")}</p>
                 <div className={styles.positioningGrid}>
                   <h2 className={styles.positioningHeading}>
                     <span className={styles.positioningHeadingLight}>
-                      {t(locale, "从教学对象，", "From learning subjects")}
+                      {t(locale, "为 3D 模型，", "For 3D models,")}
                     </span>
                     <br />
                     <span className={styles.positioningHeadingDark}>
-                      {t(locale, "提取空间隐喻", "to spatial metaphors")}
+                      {t(locale, "建立低干扰展示空间", "build a low-noise display space")}
                     </span>
                   </h2>
                   <div className={styles.positioningBody}>
                     <p>
                       {t(
                         locale,
-                        "我把课程背景作为学科识别和模型展示的承托层：从实训对象提取空间线索，再转译为低干扰的 3D 场景。牛解剖对应牧场与牛舍，汽车传动结构对应隧道空间，耳部结构则转译为耳蜗式弧形空间。",
-                        "I treated course backgrounds as a support layer for subject identity and model presentation: extracting spatial cues from each training object, then translating them into low-noise 3D scenes. Cattle anatomy maps to a barn-like space, automotive transmission maps to a tunnel, and ear anatomy becomes a cochlea-like curved space.",
+                        "从实训对象提取空间线索，再转译为低干扰的 3D 场景。牛解剖对应牧场与牛舍，汽车传动结构对应隧道空间，耳部结构则转译为耳蜗式弧形空间。背景既能指向具体课程，又不会抢走 3D 模型和教学信息的视觉主位。",
+                        "Extracting spatial cues from each training object, then translating them into low-noise 3D scenes. Cattle anatomy maps to a barn-like space, automotive transmission maps to a tunnel, and ear anatomy becomes a cochlea-like curved space. The background can point to a specific course without competing with the 3D model or learning content.",
                       )}
                     </p>
-                    <ul className={styles.processTagList}>
-                      <li className={styles.processTag}>
-                        {t(locale, "从对象提取空间隐喻", "Spatial metaphors from subjects")}
+                    <p className={styles.uiSystemFocusLabel}>
+                      {t(locale, "设计重点", "Design Focus")}
+                    </p>
+                    <ul className={styles.uiSystemFocusList}>
+                      <li>
+                        {t(locale, "从教学对象提取空间隐喻", "Spatial metaphors from learning subjects")}
                       </li>
-                      <li className={styles.processTag}>
+                      <li>
                         {t(locale, "主题相关但不直白堆叠", "Relevant without literal clutter")}
                       </li>
-                      <li className={styles.processTag}>
+                      <li>
                         {t(locale, "低干扰地承托模型", "Low-noise support for models")}
                       </li>
                     </ul>
                   </div>
                 </div>
               </section>
-              <section className={styles.promptStrategyBlock}>
-                <div>
-                  <p className={styles.promptStrategyKicker}>
-                    {t(locale, "AI 关键词探索", "AI Keyword Exploration")}
-                  </p>
-                  <h3 className={styles.promptStrategyHeading}>
-                    {t(
-                      locale,
-                      "为 3D 模型建立低干扰展示空间",
-                      "Building a low-noise display space for 3D models",
-                    )}
-                  </h3>
-                  <p className={styles.promptStrategyLead}>
-                    {t(
-                      locale,
-                      "我先从课程对象提取主题线索，再把它转译成抽象空间；随后用模型展示、低干扰背景和视觉质感控制画面，让背景既能指向具体课程，又不会抢走 3D 模型和教学信息的视觉主位。",
-                      "I first extracted subject cues from the course object, then translated them into abstract space. Model display, low-noise backgrounds, and visual texture then controlled the composition, so the background could point to a specific course without competing with the 3D model or learning content.",
-                    )}
-                  </p>
-                </div>
-                <div className={styles.promptKeywordGrid}>
-                  <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "主题线索", "Subject Cues")}</span>
-                    <p className={styles.promptKeywordPurpose}>
-                      {t(
-                        locale,
-                        "从课程对象提取空间联想。",
-                        "Extract spatial associations from the course subject.",
-                      )}
-                    </p>
-                    <KeywordPills
-                      locale={locale}
-                      zh={["结构形态", "通道空间", "栖息场域"]}
-                      en={["structural form", "tunnel space", "habitat field"]}
-                    />
-                  </div>
-                  <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "抽象空间", "Abstract Space")}</span>
-                    <p className={styles.promptKeywordPurpose}>
-                      {t(
-                        locale,
-                        "建立可复用的非写实教学空间。",
-                        "Create reusable, non-literal teaching spaces.",
-                      )}
-                    </p>
-                    <KeywordPills
-                      locale={locale}
-                      zh={["抽象 3D 环境", "扁平化透视", "空间平面感"]}
-                      en={["an abstract 3D environment", "flattened perspective", "flatness of space"]}
-                    />
-                  </div>
-                  <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "模型展示", "Model Display")}</span>
-                    <p className={styles.promptKeywordPurpose}>
-                      {t(
-                        locale,
-                        "为 3D 模型预留清晰展示位置。",
-                        "Reserve clear display space for the 3D model.",
-                      )}
-                    </p>
-                    <KeywordPills
-                      locale={locale}
-                      zh={["留白空间", "开阔空间", "舞台式环境", "正面视角"]}
-                      en={["empty space", "expansive spaces", "stage-like environments", "frontal perspective"]}
-                    />
-                  </div>
-                  <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "低干扰背景", "Low-noise Background")}</span>
-                    <p className={styles.promptKeywordPurpose}>
-                      {t(
-                        locale,
-                        "减少细节噪音，让背景退后。",
-                        "Reduce detail noise and push the background back.",
-                      )}
-                    </p>
-                    <KeywordPills
-                      locale={locale}
-                      zh={["稀疏背景", "克制的极简感", "细微色彩变化"]}
-                      en={["sparse backgrounds", "subdued minimalism", "subtle color variations"]}
-                    />
-                  </div>
-                  <div className={styles.promptKeywordCard}>
-                    <span>{t(locale, "视觉质感", "Visual Texture")}</span>
-                    <p className={styles.promptKeywordPurpose}>
-                      {t(
-                        locale,
-                        "控制色彩、光照和空间可信度。",
-                        "Control color, lighting, and spatial credibility.",
-                      )}
-                    </p>
-                    <KeywordPills
-                      locale={locale}
-                      zh={["真实光照", "透视渲染"]}
-                      en={["realistic lighting", "perspective rendering"]}
-                    />
-                  </div>
-                </div>
-              </section>
               <figure className={styles.processImagePlaceholder}>
-                <h3 className={styles.backgroundProcessHeading}>
-                  {t(
-                    locale,
-                    "课程背景的视觉转译流程",
-                    "Visual Translation Process for Course Backgrounds",
-                  )}
-                </h3>
                 <div className={styles.backgroundProcessGrid}>
                   {cattleBackgroundProcessImages.map((image) => (
                     <div className={styles.backgroundProcessCard} key={image.src}>
@@ -479,6 +377,51 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           </span>
                         </div>
                         <p>{t(locale, image.caption.zh, image.caption.en)}</p>
+                        {image.step === "01" ? (
+                          <KeywordPills
+                            locale={locale}
+                            zh={["结构形态", "通道空间", "栖息场域"]}
+                            en={["structural form", "tunnel space", "habitat field"]}
+                          />
+                        ) : null}
+                        {image.step === "02" ? (
+                          <KeywordPills
+                            locale={locale}
+                            zh={["抽象 3D 环境", "扁平化透视", "空间平面感"]}
+                            en={["an abstract 3D environment", "flattened perspective", "flatness of space"]}
+                          />
+                        ) : null}
+                        {image.step === "03" ? (
+                          <KeywordPills
+                            locale={locale}
+                            zh={[
+                              "稀疏背景",
+                              "克制的极简感",
+                              "细微色彩变化",
+                              "真实光照",
+                              "透视渲染",
+                            ]}
+                            en={[
+                              "sparse backgrounds",
+                              "subdued minimalism",
+                              "subtle color variations",
+                              "realistic lighting",
+                              "perspective rendering",
+                            ]}
+                          />
+                        ) : null}
+                        {image.step === "04" ? (
+                          <KeywordPills
+                            locale={locale}
+                            zh={["留白空间", "开阔空间", "舞台式环境", "正面视角"]}
+                            en={[
+                              "empty space",
+                              "expansive spaces",
+                              "stage-like environments",
+                              "frontal perspective",
+                            ]}
+                          />
+                        ) : null}
                       </article>
                     ))}
                   </div>
