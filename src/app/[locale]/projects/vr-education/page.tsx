@@ -434,8 +434,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     </p>
                     <KeywordPills
                       locale={locale}
-                      zh={["青蓝色", "真实光照", "透视渲染"]}
-                      en={["cyan", "realistic lighting", "perspective rendering"]}
+                      zh={["真实光照", "透视渲染"]}
+                      en={["realistic lighting", "perspective rendering"]}
                     />
                   </div>
                 </div>
@@ -645,43 +645,42 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <h3 className={styles.uiSystemTitle}>
                           {t(
                             locale,
-                            "轻量线性的功能图标设计",
-                            "Lightweight Linear Icons",
+                            "线性图标：轮廓识别，投影补体积",
+                            "Linear icons: outline recognition, shadow volume",
                           )}
                         </h3>
-                        <p className={styles.uiSystemSubtitle}>
-                          {t(
-                            locale,
-                            "用简洁轮廓完成识别，再用投影补足体积感",
-                            "Clear outlines for recognition, quiet shadows for volume",
-                          )}
-                        </p>
-                        <div className={styles.uiSystemGoal}>
-                          <span className={styles.uiSystemGoalLabel}>
-                            {t(locale, "设计目标", "Design Goal")}
-                          </span>
-                          <p className={styles.uiSystemGoalText}>
-                            {t(
-                              locale,
-                              "让功能入口足够轻，也足够好认，不抢走模型的主视觉。",
-                              "Keep action icons light and readable without competing with the model.",
-                            )}
-                          </p>
-                        </div>
                       </header>
                       <div className={styles.uiSystemModuleBody}>
                         <p className={styles.uiSystemBody}>
                           {t(
                             locale,
-                            "实训界面信息密度高，图标需要在很小的面积里快速传达功能。我采用线性视觉风格，用简洁轮廓表达爆炸、隐藏、表皮、肌肉等操作含义，减少复杂装饰，提高识别效率。",
-                            "Training screens are information-dense, so icons need to communicate quickly in a small footprint. I used a linear style with clear outlines for actions like explode, hide, skin, and muscle, reducing decoration to improve recognition.",
+                            <>
+                              针对
+                              <strong className={styles.uiSystemEmphasis}>专业术语与复杂结构</strong>
+                              ，线性图标具有更低的视觉重量，同时保持清晰、高效的信息识别。设计图标过程中，以
+                              <strong className={styles.uiSystemEmphasis}>最少的线条</strong>
+                              建立
+                              <strong className={styles.uiSystemEmphasis}>准确视觉语言</strong>
+                              。
+                            </>,
+                            <>
+                              For{" "}
+                              <strong className={styles.uiSystemEmphasis}>
+                                professional terms and complex structures
+                              </strong>
+                              , linear icons keep lower visual weight while staying clear and
+                              efficient to read. In the icon process, I build an{" "}
+                              <strong className={styles.uiSystemEmphasis}>accurate visual language</strong>{" "}
+                              with the{" "}
+                              <strong className={styles.uiSystemEmphasis}>fewest lines</strong>.
+                            </>,
                           )}
                         </p>
                         <p className={styles.uiSystemBody}>
                           {t(
                             locale,
-                            "同时，纯平面线稿容易显得过薄。我会为图标加入轻微反差色投影，让它在玻璃态底面上仍有体积和光感，既保持低视觉重量，又能被直觉识别为可点击入口。",
-                            "Pure flat linework can feel too thin, so I add a quiet contrast shadow. On the glass surface, icons keep a sense of volume and light while staying low in visual weight, and still read as clickable entries.",
+                            "图标加入轻微反差色投影，让它在玻璃态底面上仍有体积和光感，既保持低视觉重量。",
+                            "Icons get a quiet contrast shadow so they keep volume and light on the glass surface while staying low in visual weight.",
                           )}
                         </p>
                         <p className={styles.uiSystemFocusLabel}>
@@ -691,15 +690,15 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           <li>
                             {t(
                               locale,
-                              "线性轮廓，快速好识别",
-                              "Linear outlines for quick recognition",
+                              "按专业术语定制图标",
+                              "Icons customized for professional terms",
                             )}
                           </li>
                           <li>
                             {t(
                               locale,
-                              "视觉轻量，不抢模型",
-                              "Light visual weight that doesn't compete with the model",
+                              "线性轮廓，轻量好认不抢模型",
+                              "Linear outlines: light, readable, and model-first",
                             )}
                           </li>
                           <li>
@@ -712,10 +711,22 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         </ul>
                       </div>
                     </div>
-                    <figure
-                      className={`${styles.uiSystemEvidence} ${styles.uiSystemEvidencePlaceholder}`}
-                      aria-label={tStr(locale, "图标配图待补充", "Icon evidence image to follow")}
-                    />
+                    <figure className={styles.uiSystemEvidence}>
+                      {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
+                      <img
+                        className={styles.mediaBorder}
+                        src={assetPath("/images/visual/vr-education/icons/linear-icon-system.png")}
+                        alt={tStr(
+                          locale,
+                          "线性功能图标系统：统一线型与反差投影",
+                          "Linear icon system with shared stroke weight and contrast shadow",
+                        )}
+                        width={1920}
+                        height={1080}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
                   </article>
                 </div>
 
