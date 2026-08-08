@@ -25,6 +25,8 @@ const mobileLetterHoverStyles =
   envelopeStyles.match(/@media \(max-width: 809px\) \{[\s\S]*?\.envelope:hover \.letter,\n  \.envelope:focus-within \.letter \{([\s\S]*?)\n  \}/)?.[1] ?? "";
 const letterStyles =
   envelopeStyles.match(/\.letter \{([\s\S]*?)\n\}/)?.[1] ?? "";
+const photoPlaceholderStyles =
+  envelopeStyles.match(/\.photoPlaceholder \{([\s\S]*?)\n\}/)?.[1] ?? "";
 
 const requiredCopy = [
   "Visual Works",
@@ -71,6 +73,18 @@ assert.ok(
     searchableEnvelopeComponent.includes('<divclassName={styles.letterSlot}>') &&
     searchableEnvelopeComponent.includes('<divclassName={styles.letter}>'),
   "Envelope body and letter should be separate layers with a clipping slot",
+);
+
+assert.ok(
+  searchableEnvelopeComponent.includes('<divclassName={styles.photoPlaceholder}aria-hidden="true"/>') &&
+    searchableEnvelopeStyles.includes(".photoPlaceholder{position:absolute;"),
+  "Envelope letter should include a decorative photo placeholder inside the letter",
+);
+
+assert.ok(
+  photoPlaceholderStyles.includes("top: 22%;") &&
+    !photoPlaceholderStyles.includes("bottom:"),
+  "Envelope photo placeholder should sit in the revealed upper half of the letter",
 );
 
 assert.ok(
