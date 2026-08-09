@@ -84,7 +84,6 @@ export function EnvelopeMail({ copy, locale }: EnvelopeMailProps) {
           <div className={styles.letterSlot}>
             <div className={styles.letter}>
               <div className={styles.letterLines} aria-hidden="true" />
-              <div className={styles.photoPlaceholder} aria-hidden="true" />
               <button
                 type="button"
                 className={`${styles.cta} ${locale === "zh" ? styles.ctaZh : ""}`}

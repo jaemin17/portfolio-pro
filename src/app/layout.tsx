@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Caveat, IBM_Plex_Mono, Noto_Sans_SC } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -58,6 +59,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${ibmPlexMono.variable} ${caveat.variable} ${notoSansSC.variable}`}
     >
       <body>
+        <div className="openingLoader" aria-hidden="true">
+          <div className="openingLoaderContent">
+            <Image
+              className="openingLoaderImage"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/opening-loader.gif`}
+              alt=""
+              width={1536}
+              height={2048}
+              priority
+              unoptimized
+            />
+          </div>
+        </div>
         {children}
       </body>
     </html>
