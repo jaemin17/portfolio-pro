@@ -653,14 +653,14 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                       {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
                       <img
                         className={styles.mediaBorder}
-                        src={assetPath("/images/visual/vr-education/icons/linear-icon-system.png")}
+                        src={assetPath("/images/visual/vr-education/icons/cover.png")}
                         alt={tStr(
                           locale,
                           "线性功能图标系统：统一线型与反差投影",
                           "Linear icon system with shared stroke weight and contrast shadow",
                         )}
-                        width={1920}
-                        height={1080}
+                        width={1550}
+                        height={956}
                         loading="lazy"
                         decoding="async"
                       />

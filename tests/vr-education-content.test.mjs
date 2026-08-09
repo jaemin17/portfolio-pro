@@ -138,7 +138,7 @@ const requiredCopy = [
   "最少的线条",
   "准确视觉语言",
   "dog-muscle-highlight.png",
-  "linear-icon-system.png",
+  "cover.png",
   "我将首页用于对象识别，子页面用于结构说明和操作反馈",
   "章节 03",
   "应用图标系统",
