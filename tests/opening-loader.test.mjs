@@ -45,9 +45,15 @@ assert.ok(
   searchableStyles.includes(".openingLoaderImage{") &&
     searchableStyles.includes("width:clamp(160px,16vw,260px);") &&
     searchableStyles.includes("object-fit:contain;") &&
-    searchableStyles.includes("animation:openingLoaderMark1250ms") &&
+    searchableStyles.includes("animation:openingLoaderMark2200ms") &&
     !searchableStyles.includes("filter:invert(1);"),
-  "Opening loader image should play one full GIF loop at a restrained mark size",
+  "Opening loader image should stay visible through the cloud render buffer",
+);
+
+assert.ok(
+  searchableStyles.includes("84%{opacity:1;transform:scale(1);}") &&
+    searchableStyles.includes("100%{opacity:0;transform:scale(1.01);}"),
+  "Opening loader image should fade out with the white layer instead of leaving a blank stage",
 );
 
 assert.ok(
