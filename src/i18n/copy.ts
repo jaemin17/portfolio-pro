@@ -80,6 +80,18 @@ const snapshotPlaceholders: SnapshotItem[] = [
     alt: "Temple ruins portrait",
     imageSrc: "/images/snapshots/snapshot-12.webp",
   },
+  {
+    alt: "Canal view with a passing boat",
+    imageSrc: "/images/snapshots/snapshot-14.webp",
+  },
+  {
+    alt: "Sunset road by the sea",
+    imageSrc: "/images/snapshots/snapshot-15.webp",
+  },
+  {
+    alt: "Pink flowers beside a garden pond",
+    imageSrc: "/images/snapshots/snapshot-16.webp",
+  },
 ];
 
 export type HomeCopy = {
