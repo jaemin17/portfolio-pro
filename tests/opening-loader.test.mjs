@@ -37,8 +37,8 @@ assert.ok(
     searchableStyles.includes(".openingLoader{") &&
     searchableStyles.includes("position:fixed;") &&
     searchableStyles.includes("background:#fff;") &&
-    searchableStyles.includes("animation:openingLoaderFade1600ms"),
-  "Opening loader should cover the viewport through one full GIF loop plus fade-out",
+    searchableStyles.includes("animation:openingLoaderFade2200ms"),
+  "Opening loader should cover the viewport through one full GIF loop, render buffer, and fade-out",
 );
 
 assert.ok(

@@ -80,7 +80,7 @@ button {
   place-items: center;
   background: #fff;
   pointer-events: none;
-  animation: openingLoaderFade 1600ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: openingLoaderFade 2200ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .openingLoaderImage {
@@ -100,7 +100,7 @@ button {
 
 @keyframes openingLoaderFade {
   0%,
-  84% {
+  88% {
     opacity: 1;
     visibility: visible;
   }
