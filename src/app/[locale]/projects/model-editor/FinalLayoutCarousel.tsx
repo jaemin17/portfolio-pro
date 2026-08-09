@@ -18,8 +18,19 @@ function isRow(entry: Entry): entry is Row {
   return "layout" in entry && entry.layout === "row";
 }
 
+function splitCaptionLabel(label: string): { tag: string; summary: string } | null {
+  const separatorIndex = label.search(/[:：]/);
+  if (separatorIndex <= 0) return null;
+
+  return {
+    tag: label.slice(0, separatorIndex).trim(),
+    summary: label.slice(separatorIndex + 1).trim(),
+  };
+}
+
 function SlideFigure({ slide }: { slide: Slide }) {
   const hasCaption = Boolean(slide.label || slide.description);
+  const splitLabel = slide.label ? splitCaptionLabel(slide.label) : null;
 
   return (
     <figure className={styles.item}>
@@ -39,7 +50,14 @@ function SlideFigure({ slide }: { slide: Slide }) {
       </div>
       {hasCaption ? (
         <figcaption className={styles.caption}>
-          {slide.label ? <span className={styles.captionTitle}>{slide.label}</span> : null}
+          {splitLabel ? (
+            <span className={styles.captionTitle}>
+              <span className={styles.captionTag}>{splitLabel.tag}</span>
+              <span className={styles.captionSummary}>{splitLabel.summary}</span>
+            </span>
+          ) : slide.label ? (
+            <span className={styles.captionTitle}>{slide.label}</span>
+          ) : null}
           {slide.description ? (
             <span className={styles.captionDescription}>{slide.description}</span>
           ) : null}

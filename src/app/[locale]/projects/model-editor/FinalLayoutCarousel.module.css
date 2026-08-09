@@ -79,7 +79,7 @@
   font-size: var(--fs-caption);
   font-weight: 500;
   color: rgba(30, 41, 59, 0.55);
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   text-align: center;
   display: grid;
   gap: 4px;
@@ -88,6 +88,35 @@
 .captionTitle,
 .captionDescription {
   display: block;
+}
+
+.captionTitle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.captionTag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 18px;
+  padding: 1px 6px;
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  border-radius: 4px;
+  background: transparent;
+  color: rgba(37, 99, 235, 0.82);
+  font-size: calc(var(--fs-caption) * 0.92);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+.captionSummary {
+  display: inline;
+  color: rgba(30, 41, 59, 0.55);
+  font-weight: 500;
 }
 
 .captionDescription {

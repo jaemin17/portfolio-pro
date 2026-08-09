@@ -6,12 +6,24 @@ const styles = await readFile(
   "utf8",
 );
 
+const carouselStyles = await readFile(
+  new URL("../src/app/[locale]/projects/model-editor/FinalLayoutCarousel.module.css", import.meta.url),
+  "utf8",
+);
+
+const carouselComponent = await readFile(
+  new URL("../src/app/[locale]/projects/model-editor/FinalLayoutCarousel.tsx", import.meta.url),
+  "utf8",
+);
+
 const page = await readFile(
   new URL("../src/app/[locale]/projects/model-editor/page.tsx", import.meta.url),
   "utf8",
 );
 
 const searchableStyles = styles.replace(/\s+/g, "");
+const searchableCarouselStyles = carouselStyles.replace(/\s+/g, "");
+const captionTagStyles = searchableCarouselStyles.match(/\.captionTag\{[^}]+\}/)?.[0] ?? "";
 const mobileStyles = searchableStyles.match(/@media\(max-width:768px\)\{([\s\S]*)\}/)?.[1] ?? "";
 
 assert.ok(
@@ -44,6 +56,23 @@ assert.ok(
   page.includes("调整后: 预览面积增加,分区更清晰") &&
     page.includes("After: Larger preview area, clearer tool zones"),
   "Model editor after caption should use one-line after wording",
+);
+
+assert.ok(
+  carouselComponent.includes("splitCaptionLabel"),
+  "Final layout carousel should split colon captions into a tag and summary",
+);
+
+assert.ok(
+  searchableCarouselStyles.includes(".captionTag{display:inline-flex;") &&
+    searchableCarouselStyles.includes(".captionSummary{display:inline;"),
+  "Final layout carousel should style split caption labels as inline tags",
+);
+
+assert.ok(
+  captionTagStyles.includes("background:transparent;") &&
+    captionTagStyles.includes("font-weight:300;"),
+  "Final layout carousel caption tag should use a transparent background and lighter text weight",
 );
 
 assert.ok(
