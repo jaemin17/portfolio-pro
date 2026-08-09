@@ -81,6 +81,19 @@
   color: rgba(30, 41, 59, 0.55);
   letter-spacing: 0.04em;
   text-align: center;
+  display: grid;
+  gap: 4px;
+}
+
+.captionTitle,
+.captionDescription {
+  display: block;
+}
+
+.captionDescription {
+  font-weight: 400;
+  color: rgba(30, 41, 59, 0.45);
+  letter-spacing: 0;
 }
 
 .stackCaption {

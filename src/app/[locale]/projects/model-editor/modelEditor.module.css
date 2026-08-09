@@ -537,3 +537,9 @@
   height: auto;
   display: block;
 }
+
+@media (max-width: 560px) {
+  .comparisonOnWhite {
+    padding: 14px 12px;
+  }
+}

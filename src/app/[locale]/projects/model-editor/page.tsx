@@ -288,7 +288,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 <FinalLayoutCarousel
                   slides={[
                     {
-                      label: tStr(locale, "空间对比", "Space comparison"),
+                      label: "",
                       content: (
                         <div className={styles.comparisonOnWhite}>
                           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -305,8 +305,8 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         {
                           label: tStr(
                             locale,
-                            "早期原型：面板环绕，预览受挤压",
-                            "Early prototype: panels surround the model, preview is squeezed",
+                            "调整前:面板环绕，预览受挤压",
+                            "Before: Panels surround the model, preview is squeezed",
                           ),
                           content: (
                             <Image
@@ -322,7 +322,11 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         {
                           src: assetPath(modelEditorAssets.previewOverlay),
                           alt: tStr(locale, "3D 教学工坊模型编辑器界面 3", "3D workshop model editor interface 3"),
-                          label: tStr(locale, "调整后", "After"),
+                          label: tStr(
+                            locale,
+                            "调整后: 预览面积增加,分区更清晰",
+                            "After: Larger preview area, clearer tool zones",
+                          ),
                         },
                       ],
                     },

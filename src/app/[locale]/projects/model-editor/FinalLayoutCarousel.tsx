@@ -19,6 +19,8 @@ function isRow(entry: Entry): entry is Row {
 }
 
 function SlideFigure({ slide }: { slide: Slide }) {
+  const hasCaption = Boolean(slide.label || slide.description);
+
   return (
     <figure className={styles.item}>
       <div className={styles.media}>
@@ -35,7 +37,14 @@ function SlideFigure({ slide }: { slide: Slide }) {
           />
         )}
       </div>
-      <figcaption className={styles.caption}>{slide.description ?? slide.label}</figcaption>
+      {hasCaption ? (
+        <figcaption className={styles.caption}>
+          {slide.label ? <span className={styles.captionTitle}>{slide.label}</span> : null}
+          {slide.description ? (
+            <span className={styles.captionDescription}>{slide.description}</span>
+          ) : null}
+        </figcaption>
+      ) : null}
     </figure>
   );
 }
