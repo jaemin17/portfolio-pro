@@ -25,12 +25,12 @@ assert.ok(
 );
 
 assert.ok(
-  searchableHomeStyles.includes(".hero>*{animation:heroReveal0.6scubic-bezier(0.22,1,0.36,1)both;}") &&
-    searchableHomeStyles.includes("animation-delay:1.78s;") &&
-    searchableHomeStyles.includes("animation-delay:1.88s;") &&
-    searchableHomeStyles.includes("animation-delay:1.98s;") &&
-    searchableHomeStyles.includes("animation-delay:2.08s;"),
-  "Hero reveal should begin under the extended loader fade for a softer handoff",
+  searchableHomeStyles.includes(".hero>*{animation:heroReveal0.8scubic-bezier(0.16,1,0.3,1)both;}") &&
+    searchableHomeStyles.includes("animation-delay:2.06s;") &&
+    searchableHomeStyles.includes("animation-delay:2.2s;") &&
+    searchableHomeStyles.includes("animation-delay:2.34s;") &&
+    searchableHomeStyles.includes("animation-delay:2.48s;"),
+  "Hero reveal should begin after the loader fade has exposed the page",
 );
 
 assert.ok(
