@@ -295,7 +295,7 @@ const copy: Record<Locale, HomeCopy> = {
     copyEmail: "Copy email",
     copiedEmail: "Copied",
     currentlyBuilding: {
-      label: "Currently building",
+      label: "Side Projects",
       items: [
         {
           title: "Selfly",

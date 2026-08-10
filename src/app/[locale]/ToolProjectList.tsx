@@ -142,9 +142,14 @@ export function ToolProjectList({
   itemClassName,
 }: ToolProjectListProps) {
   const [expanded, setExpanded] = useState(false);
-  const needsCollapse = Boolean(loadMoreLabel) && items.length > initialCount;
+  const availableItems = items.filter(
+    (item) => item.availability !== "comingSoon",
+  );
+  const collapsedItems = availableItems.slice(0, initialCount);
+  const needsCollapse =
+    Boolean(loadMoreLabel) && items.length > collapsedItems.length;
   const visibleItems =
-    expanded || !needsCollapse ? items : items.slice(0, initialCount);
+    expanded || !needsCollapse ? items : collapsedItems;
 
   return (
     <div className={className}>

@@ -37,6 +37,7 @@ const letterStyles =
   envelopeStyles.match(/\.letter \{([\s\S]*?)\n\}/)?.[1] ?? "";
 
 const requiredCopy = [
+  "Side Projects",
   "Visual Works",
   "VR 教育与实训",
   "/videos/visual/home-vr-education.mp4",
@@ -59,6 +60,11 @@ for (const item of requiredCopy) {
 assert.ok(
   !searchableCopy.includes("/videos/visual/immersive.mp4"),
   "Home Visual Works should not use the old immersive video",
+);
+
+assert.ok(
+  !searchableCopy.includes("Currentlybuilding"),
+  "English side-projects section should not use the old Currently building label",
 );
 
 assert.ok(
@@ -105,6 +111,13 @@ assert.ok(
   searchableToolProjectList.includes("item.preserveImageRatio?styles.toolVideoNaturalRatio:undefined") &&
     searchableToolProjectList.includes("[styles.toolVideo,"),
   "Tool project images should apply a per-item natural-ratio class",
+);
+
+assert.ok(
+  searchableToolProjectList.includes('item.availability!=="comingSoon"') &&
+    searchableToolProjectList.includes("availableItems.slice(0,initialCount)") &&
+    searchableToolProjectList.includes("items.length>collapsedItems.length"),
+  "Collapsed project lists should keep coming-soon items behind Load more",
 );
 
 assert.ok(
