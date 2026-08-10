@@ -315,6 +315,10 @@
   border-radius: 0.75rem;
 }
 
+.toolFrameBare.toolFrameNaturalRatio {
+  height: auto;
+}
+
 .toolVideo {
   display: block;
   width: 100%;
@@ -330,6 +334,11 @@
   object-fit: cover;
   border-radius: 0.75rem;
   background: #fff;
+}
+
+.toolFrameBare .toolVideo.toolVideoNaturalRatio {
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .toolUnavailableOverlay {

@@ -5,6 +5,14 @@ const copy = await readFile(
   new URL("../src/i18n/copy.ts", import.meta.url),
   "utf8",
 );
+const toolProjectList = await readFile(
+  new URL("../src/app/[locale]/ToolProjectList.tsx", import.meta.url),
+  "utf8",
+);
+const homeStyles = await readFile(
+  new URL("../src/app/[locale]/page.module.css", import.meta.url),
+  "utf8",
+);
 const envelopeStyles = await readFile(
   new URL("../src/components/EnvelopeMail.module.css", import.meta.url),
   "utf8",
@@ -15,6 +23,8 @@ const envelopeComponent = await readFile(
 );
 
 const searchableCopy = copy.replace(/\s+/g, "");
+const searchableToolProjectList = toolProjectList.replace(/\s+/g, "");
+const searchableHomeStyles = homeStyles.replace(/\s+/g, "");
 const searchableEnvelopeStyles = envelopeStyles.replace(/\s+/g, "");
 const searchableEnvelopeComponent = envelopeComponent.replace(/\s+/g, "");
 const desktopLetterHoverStyles =
@@ -30,6 +40,9 @@ const requiredCopy = [
   "Visual Works",
   "VR 教育与实训",
   "/videos/visual/home-vr-education.mp4",
+  "New Visual Work",
+  "/images/visual/new-visual-work-home-en.png",
+  "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
   "给我写信吧",
   "write me a letter",
   "邮箱已复制",
@@ -46,6 +59,58 @@ for (const item of requiredCopy) {
 assert.ok(
   !searchableCopy.includes("/videos/visual/immersive.mp4"),
   "Home Visual Works should not use the old immersive video",
+);
+
+assert.ok(
+  searchableCopy.indexOf("VR教育与实训") <
+    searchableCopy.indexOf("NewVisualWork") &&
+    searchableCopy.indexOf("NewVisualWork") <
+      searchableCopy.indexOf("游戏概念"),
+  "New Visual Work should appear as the second Visual Works item before Game Concept",
+);
+
+assert.ok(
+  !searchableCopy.includes("/videos/visual/google-chrome.mp4"),
+  "New Visual Work should use the static screenshot instead of the temporary video",
+);
+
+assert.ok(
+  searchableCopy.includes("preserveImageRatio:true"),
+  "New Visual Work should opt into its natural screenshot ratio",
+);
+
+const newVisualWorkEntries = copy.match(
+  /title: "New Visual Work",[\s\S]*?preserveImageRatio: true,/g,
+) ?? [];
+
+assert.equal(
+  newVisualWorkEntries.length,
+  2,
+  "New Visual Work should exist in both locales",
+);
+
+for (const entry of newVisualWorkEntries) {
+  assert.ok(
+    entry.includes('href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"'),
+    "New Visual Work should link to the Figma prototype",
+  );
+  assert.ok(
+    !entry.includes('availability: "comingSoon"') &&
+      !entry.includes("statusLabel:"),
+    "New Visual Work should be clickable without a coming-soon overlay",
+  );
+}
+
+assert.ok(
+  searchableToolProjectList.includes("item.preserveImageRatio?styles.toolVideoNaturalRatio:undefined") &&
+    searchableToolProjectList.includes("[styles.toolVideo,"),
+  "Tool project images should apply a per-item natural-ratio class",
+);
+
+assert.ok(
+  searchableHomeStyles.includes(".toolFrameBare.toolFrameNaturalRatio{height:auto;}") &&
+    searchableHomeStyles.includes(".toolFrameBare.toolVideo.toolVideoNaturalRatio{aspect-ratio:auto;object-fit:contain;}"),
+  "Natural-ratio visual cards should keep fixed width and derive height from the image",
 );
 
 for (const oldCopy of ["找我聊聊", "let'schat", "mailcopied!"]) {

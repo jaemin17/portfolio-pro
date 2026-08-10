@@ -36,19 +36,31 @@ function ToolProjectCard({
   const framed = item.framed !== false;
   const frameClass = framed
     ? styles.toolFrame
-    : `${styles.toolFrame} ${styles.toolFrameBare}`;
+    : [
+        styles.toolFrame,
+        styles.toolFrameBare,
+        item.preserveImageRatio ? styles.toolFrameNaturalRatio : undefined,
+      ]
+        .filter(Boolean)
+        .join(" ");
+  const mediaClass = [
+    styles.toolVideo,
+    item.preserveImageRatio ? styles.toolVideoNaturalRatio : undefined,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   const media =
     item.videoSrc && item.posterSrc ? (
       <LazyVideo
-        className={styles.toolVideo}
+        className={mediaClass}
         src={assetSrc(item.videoSrc)}
         posterSrc={assetSrc(item.posterSrc)}
         label={item.title}
       />
     ) : item.imageSrc ? (
       <img
-        className={styles.toolVideo}
+        className={mediaClass}
         src={assetSrc(item.imageSrc)}
         srcSet={item.imageVariants
           ?.map((variant) => `${assetSrc(variant.src)} ${variant.width}w`)

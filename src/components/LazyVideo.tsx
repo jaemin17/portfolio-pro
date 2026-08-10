@@ -18,11 +18,8 @@ export function LazyVideo({
 }: LazyVideoProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
-  const [isVideoReady, setIsVideoReady] = useState(false);
-
-  useEffect(() => {
-    setIsVideoReady(false);
-  }, [src]);
+  const [readySrc, setReadySrc] = useState<string | null>(null);
+  const isVideoReady = readySrc === src;
 
   useEffect(() => {
     const element = containerRef.current;
@@ -68,7 +65,7 @@ export function LazyVideo({
           playsInline
           preload="auto"
           aria-label={label}
-          onCanPlay={() => setIsVideoReady(true)}
+          onCanPlay={() => setReadySrc(src)}
         />
       ) : null}
     </div>

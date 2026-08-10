@@ -38,7 +38,11 @@ export function HeroShaderBackground() {
   const [enableShader, setEnableShader] = useState(false);
 
   useEffect(() => {
-    setEnableShader(canUseHeroShader());
+    const frame = globalThis.requestAnimationFrame(() => {
+      setEnableShader(canUseHeroShader());
+    });
+
+    return () => globalThis.cancelAnimationFrame(frame);
   }, []);
 
   return (

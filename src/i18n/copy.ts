@@ -33,6 +33,8 @@ export type ToolProjectItem = {
   frameColor?: string;
   /** When false, media sits flush with no colored frame */
   framed?: boolean;
+  /** When true, image cards keep the source image ratio instead of being cropped */
+  preserveImageRatio?: boolean;
 };
 
 export type ToolProjects = {
@@ -137,6 +139,7 @@ const toolFrameColors = {
 
 const visualMedia = {
   manufacturing: "/videos/visual/home-vr-education.mp4",
+  newVisualWork: "/images/visual/new-visual-work-home-en.png",
   game: "/images/visual/cosmic-blaze-hero.webp",
   arAirbnb: "/images/visual/ar-airbnb-scene-1.webp",
 } as const;
@@ -240,6 +243,14 @@ const copy: Record<Locale, HomeCopy> = {
           videoSrc: visualMedia.manufacturing,
           posterSrc: visualPosters.manufacturing,
           framed: false,
+        },
+        {
+          title: "New Visual Work",
+          description: "临时新增的视觉作品预览。",
+          href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          imageSrc: visualMedia.newVisualWork,
+          framed: false,
+          preserveImageRatio: true,
         },
         {
           title: "游戏概念",
@@ -357,6 +368,14 @@ const copy: Record<Locale, HomeCopy> = {
           videoSrc: visualMedia.manufacturing,
           posterSrc: visualPosters.manufacturing,
           framed: false,
+        },
+        {
+          title: "New Visual Work",
+          description: "Temporary visual work preview.",
+          href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          imageSrc: visualMedia.newVisualWork,
+          framed: false,
+          preserveImageRatio: true,
         },
         {
           title: "Game Concept",
