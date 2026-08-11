@@ -80,7 +80,7 @@ function KeywordPills({
 
 const cattleBackgroundProcessImages = [
   {
-    src: "/images/visual/vr-education/process/barn-exploration.png",
+    src: "/images/visual/vr-education/process/barn-exploration.webp",
     step: "01",
     label: { zh: "主题线索", en: "Subject cue" },
     caption: {
@@ -89,7 +89,7 @@ const cattleBackgroundProcessImages = [
     },
   },
   {
-    src: "/images/visual/vr-education/process/barn-clean-space.png",
+    src: "/images/visual/vr-education/process/barn-clean-space.webp",
     step: "02",
     label: { zh: "空间抽象", en: "Spatial abstraction" },
     caption: {
@@ -98,7 +98,7 @@ const cattleBackgroundProcessImages = [
     },
   },
   {
-    src: "/images/visual/vr-education/process/cattle-background-final.png",
+    src: "/images/visual/vr-education/process/cattle-background-final.webp",
     step: "03",
     label: { zh: "低干扰与质感控制", en: "Low-noise & texture control" },
     caption: {
@@ -107,7 +107,7 @@ const cattleBackgroundProcessImages = [
     },
   },
   {
-    src: "/images/visual/vr-education/process/cattle-interface-final.png",
+    src: "/images/visual/vr-education/process/cattle-interface-final.webp",
     step: "04",
     label: { zh: "模型展示", en: "Model display" },
     caption: {
@@ -119,22 +119,42 @@ const cattleBackgroundProcessImages = [
 
 const backgroundTransferImages = [
   {
-    src: "/images/visual/vr-education/process/animal-cave-background.png",
+    src: "/images/visual/vr-education/process/animal-cave-background.webp",
     label: { zh: "动物洞穴背景", en: "Animal cave background" },
     caption: { zh: "用洞穴空间建立动物栖息联想", en: "A cave-like space suggests animal habitats" },
   },
   {
-    src: "/images/visual/vr-education/process/tunnel-background.png",
+    src: "/images/visual/vr-education/process/husbandry-atmosphere-background.webp",
+    label: { zh: "饲养环境背景", en: "Husbandry environment background" },
+    caption: { zh: "用饲养空间建立动物照护联想", en: "A husbandry space suggests animal care" },
+  },
+  {
+    src: "/images/visual/vr-education/process/tunnel-background.webp",
     label: { zh: "汽车传动背景", en: "Automotive transmission background" },
     caption: { zh: "用隧道建立机械与交通联想", en: "A tunnel cue suggests mechanics and mobility" },
   },
   {
-    src: "/images/visual/vr-education/process/cochlea-background.png",
+    src: "/images/visual/vr-education/process/cochlea-background.webp",
     label: { zh: "耳部结构背景", en: "Ear anatomy background" },
     caption: { zh: "将耳蜗结构转译为空间轮廓", en: "Cochlea forms translated into spatial contours" },
   },
   {
-    src: "/images/visual/vr-education/process/injection-background.png",
+    src: "/images/visual/vr-education/process/medical-lab-background.webp",
+    label: { zh: "医疗实验室背景", en: "Medical lab background" },
+    caption: { zh: "用洁净实验室建立医疗训练联想", en: "A clean lab space suggests medical training" },
+  },
+  {
+    src: "/images/visual/vr-education/process/blue-training-space-background.webp",
+    label: { zh: "蓝色训练空间背景", en: "Blue training space background" },
+    caption: { zh: "用蓝色空间建立通用实训场域", en: "A blue space creates a general training field" },
+  },
+  {
+    src: "/images/visual/vr-education/process/arched-training-space-background.webp",
+    label: { zh: "拱形训练空间背景", en: "Arched training space background" },
+    caption: { zh: "用拱形空间建立沉浸式训练场域", en: "An arched space creates an immersive training field" },
+  },
+  {
+    src: "/images/visual/vr-education/process/injection-background.webp",
     label: { zh: "注塑背景", en: "Injection molding background" },
     caption: { zh: "用模具空间建立工业设备联想", en: "A mold-like space suggests industrial equipment" },
   },

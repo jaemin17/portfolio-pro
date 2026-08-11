@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "convert:vr-webp": "node scripts/convert-vr-education-process-webp.mjs",
     "lint": "eslint"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "sharp": "^0.35.3",
     "typescript": "^5"
   }
 }
