@@ -44,6 +44,9 @@ const requiredCopy = [
   "New Visual Work",
   "/images/visual/new-visual-work-home-en.png",
   "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+  "Vector to 3D Icons",
+  "/images/visual/vector-to-3d-icons-832w.webp",
+  "/images/visual/vector-to-3d-icons.webp",
   "给我写信吧",
   "write me a letter",
   "邮箱已复制",
@@ -71,8 +74,10 @@ assert.ok(
   searchableCopy.indexOf("VR教育与实训") <
     searchableCopy.indexOf("NewVisualWork") &&
     searchableCopy.indexOf("NewVisualWork") <
+      searchableCopy.indexOf("Vectorto3DIcons") &&
+    searchableCopy.indexOf("Vectorto3DIcons") <
       searchableCopy.indexOf("游戏概念"),
-  "New Visual Work should appear as the second Visual Works item before Game Concept",
+  "Vector to 3D Icons should appear as the third Visual Works item before Game Concept",
 );
 
 assert.ok(
@@ -87,6 +92,9 @@ assert.ok(
 
 const newVisualWorkEntries = copy.match(
   /title: "New Visual Work",[\s\S]*?preserveImageRatio: true,/g,
+) ?? [];
+const vectorTo3dEntries = copy.match(
+  /title: "Vector to 3D Icons",[\s\S]*?preserveImageRatio: true,/g,
 ) ?? [];
 
 assert.equal(
@@ -104,6 +112,21 @@ for (const entry of newVisualWorkEntries) {
     !entry.includes('availability: "comingSoon"') &&
       !entry.includes("statusLabel:"),
     "New Visual Work should be clickable without a coming-soon overlay",
+  );
+}
+
+assert.equal(
+  vectorTo3dEntries.length,
+  2,
+  "Vector to 3D Icons should exist in both locales",
+);
+
+for (const entry of vectorTo3dEntries) {
+  assert.ok(
+    entry.includes("imageSrc: visualMedia.vectorTo3dIcons") &&
+      entry.includes("imageVariants: [...visualImageVariants.vectorTo3dIcons]") &&
+      !entry.includes('availability: "comingSoon"'),
+    "Vector to 3D Icons should use responsive image variants and be visible without a coming-soon overlay",
   );
 }
 

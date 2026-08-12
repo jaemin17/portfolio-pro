@@ -140,6 +140,7 @@ const toolFrameColors = {
 const visualMedia = {
   manufacturing: "/videos/visual/home-vr-education.mp4",
   newVisualWork: "/images/visual/new-visual-work-home-en.png",
+  vectorTo3dIcons: "/images/visual/vector-to-3d-icons.webp",
   game: "/images/visual/cosmic-blaze-hero.webp",
   arAirbnb: "/images/visual/ar-airbnb-scene-1.webp",
 } as const;
@@ -147,6 +148,10 @@ const visualMedia = {
 /* Home cards render at ≤416 CSS px (--content-max), so the 832w variant
    covers 2x displays; the 1440w original is only needed beyond that. */
 const visualImageVariants = {
+  vectorTo3dIcons: [
+    { src: "/images/visual/vector-to-3d-icons-832w.webp", width: 832 },
+    { src: "/images/visual/vector-to-3d-icons.webp", width: 1440 },
+  ],
   game: [
     { src: "/images/visual/cosmic-blaze-hero-832w.webp", width: 832 },
     { src: "/images/visual/cosmic-blaze-hero.webp", width: 1440 },
@@ -249,6 +254,14 @@ const copy: Record<Locale, HomeCopy> = {
           description: "临时新增的视觉作品预览。",
           href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
           imageSrc: visualMedia.newVisualWork,
+          framed: false,
+          preserveImageRatio: true,
+        },
+        {
+          title: "Vector to 3D Icons",
+          description: "基于矢量图形制作的 3D 应用图标与视觉资产探索。",
+          imageSrc: visualMedia.vectorTo3dIcons,
+          imageVariants: [...visualImageVariants.vectorTo3dIcons],
           framed: false,
           preserveImageRatio: true,
         },
@@ -374,6 +387,14 @@ const copy: Record<Locale, HomeCopy> = {
           description: "Temporary visual work preview.",
           href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
           imageSrc: visualMedia.newVisualWork,
+          framed: false,
+          preserveImageRatio: true,
+        },
+        {
+          title: "Vector to 3D Icons",
+          description: "Vector-based 3D app icons and visual asset exploration.",
+          imageSrc: visualMedia.vectorTo3dIcons,
+          imageVariants: [...visualImageVariants.vectorTo3dIcons],
           framed: false,
           preserveImageRatio: true,
         },
