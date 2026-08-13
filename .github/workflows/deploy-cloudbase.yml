@@ -46,11 +46,11 @@ jobs:
 
       - name: Login to CloudBase
         run: |
-          npx -y @cloudbase/cli@3.7.2 login \
+          npx -y -p @cloudbase/cli@3.7.2 cloudbase login \
             --cloudbase-api-key "$CLOUDBASE_API_KEY" \
             -e "$CLOUDBASE_ENV_ID"
 
       - name: Deploy to CloudBase hosting
         run: |
-          npx -y @cloudbase/cli@3.7.2 hosting deploy out \
+          npx -y -p @cloudbase/cli@3.7.2 cloudbase hosting deploy out \
             -e "$CLOUDBASE_ENV_ID"
