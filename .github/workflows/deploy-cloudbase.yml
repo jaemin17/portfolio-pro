@@ -1,0 +1,56 @@
+name: Deploy CloudBase
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "cloudbase"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDBASE_ENV_ID: ${{ secrets.CLOUDBASE_ENV_ID }}
+      CLOUDBASE_API_KEY: ${{ secrets.CLOUDBASE_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build static site
+        run: pnpm build
+
+      - name: Check CloudBase secrets
+        run: |
+          test -n "$CLOUDBASE_ENV_ID"
+          test -n "$CLOUDBASE_API_KEY"
+
+      - name: Login to CloudBase
+        run: |
+          npx -y @cloudbase/cli@3.7.2 login \
+            --cloudbase-api-key "$CLOUDBASE_API_KEY" \
+            -e "$CLOUDBASE_ENV_ID"
+
+      - name: Deploy to CloudBase hosting
+        run: |
+          npx -y @cloudbase/cli@3.7.2 hosting deploy out \
+            -e "$CLOUDBASE_ENV_ID"
