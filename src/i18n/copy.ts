@@ -175,7 +175,7 @@ const copy: Record<Locale, HomeCopy> = {
     copyEmail: "复制邮箱",
     copiedEmail: "已复制",
     currentlyBuilding: {
-      label: "Side Projects",
+      label: "0→1 独立开发",
       items: [
         {
           title: "Selfly",
@@ -187,7 +187,7 @@ const copy: Record<Locale, HomeCopy> = {
         },
         {
           title: "Sticky Notes",
-          description: "实验性的便签网站",
+          description: "轻量的便签工具",
           meta: "Web",
           iconSrc: "/sticky-notes-icon.svg",
           iconAlt: "Sticky Notes",
@@ -308,11 +308,11 @@ const copy: Record<Locale, HomeCopy> = {
     copyEmail: "Copy email",
     copiedEmail: "Copied",
     currentlyBuilding: {
-      label: "Side Projects",
+      label: "0→1 Builds",
       items: [
         {
           title: "Selfly",
-          description: "Product in progress",
+          description: "A journal for reflection and self-discovery",
           meta: "iOS",
           iconSrc: "/selfly-icon.webp",
           iconAlt: "Selfly",
@@ -320,7 +320,7 @@ const copy: Record<Locale, HomeCopy> = {
         },
         {
           title: "Sticky Notes",
-          description: "An experimental sticky-notes site",
+          description: "A lightweight sticky-notes tool",
           meta: "Web",
           iconSrc: "/sticky-notes-icon.svg",
           iconAlt: "Sticky Notes",
