@@ -75,7 +75,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
               <span className={styles.metaDot} aria-hidden="true">
                 ·
               </span>
-              <span className={styles.metaItem}>Solo Product Designer & iOS Developer</span>
+              <span className={styles.metaItem}>
+                {t(locale, "独立产品设计与 iOS 开发", "Solo Product Designer & iOS Developer")}
+              </span>
             </div>
             <a
               className="buttonSticker buttonStickerOrange"
