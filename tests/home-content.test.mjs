@@ -48,6 +48,10 @@ const requiredCopy = [
   "/projects/engine-icon",
   "/images/visual/vector-to-3d-icons-832w.webp",
   "/images/visual/vector-to-3d-icons.webp",
+  "云平台",
+  "Cloud Platform",
+  "/images/visual/cloud-platform-832w.webp",
+  "/images/visual/cloud-platform.webp",
   "给我写信吧",
   "write me a letter",
   "邮箱已复制",
@@ -77,8 +81,10 @@ assert.ok(
     searchableCopy.indexOf("NewVisualWork") <
       searchableCopy.indexOf("3DEngineAppIconDesign") &&
     searchableCopy.indexOf("3DEngineAppIconDesign") <
+      searchableCopy.indexOf("云平台") &&
+    searchableCopy.indexOf("云平台") <
       searchableCopy.indexOf("游戏概念"),
-  "3D Engine App Icon Design should appear as the third Visual Works item before Game Concept",
+  "Cloud Platform should appear as the fourth Visual Works item before Game Concept",
 );
 
 assert.ok(
@@ -131,6 +137,37 @@ for (const entry of vectorTo3dEntries) {
     "3D Engine App Icon Design should link to its detail page and stay visible without a coming-soon overlay",
   );
 }
+
+const cloudPlatformEntries = copy.match(
+  /title: "(?:云平台|Cloud Platform)",[\s\S]*?preserveImageRatio: true,/g,
+) ?? [];
+
+assert.equal(
+  cloudPlatformEntries.length,
+  2,
+  "Cloud Platform should exist in both locales",
+);
+
+for (const entry of cloudPlatformEntries) {
+  assert.ok(
+    entry.includes("imageSrc: visualMedia.cloudPlatform") &&
+      entry.includes("imageVariants: [...visualImageVariants.cloudPlatform]") &&
+      entry.includes('availability: "comingSoon"') &&
+      entry.includes("statusLabel:") &&
+      !entry.includes("href:"),
+    "Cloud Platform should use the same coming-soon overlay as other unavailable visual works",
+  );
+}
+
+const homePage = await readFile(
+  new URL("../src/app/[locale]/page.tsx", import.meta.url),
+  "utf8",
+);
+assert.ok(
+  homePage.replace(/\s+/g, "").includes("copy.visualProjects.items") &&
+    homePage.replace(/\s+/g, "").includes("initialCount={3}"),
+  "Visual Works should show the first three available items before Load more",
+);
 
 assert.ok(
   searchableToolProjectList.includes("item.preserveImageRatio?styles.toolVideoNaturalRatio:undefined") &&

@@ -141,6 +141,7 @@ const visualMedia = {
   manufacturing: "/videos/visual/home-vr-education.mp4",
   newVisualWork: "/images/visual/new-visual-work-home-en.png",
   vectorTo3dIcons: "/images/visual/vector-to-3d-icons.webp",
+  cloudPlatform: "/images/visual/cloud-platform.webp",
   game: "/images/visual/cosmic-blaze-hero.webp",
   arAirbnb: "/images/visual/ar-airbnb-scene-1.webp",
 } as const;
@@ -151,6 +152,10 @@ const visualImageVariants = {
   vectorTo3dIcons: [
     { src: "/images/visual/vector-to-3d-icons-832w.webp", width: 832 },
     { src: "/images/visual/vector-to-3d-icons.webp", width: 1440 },
+  ],
+  cloudPlatform: [
+    { src: "/images/visual/cloud-platform-832w.webp", width: 832 },
+    { src: "/images/visual/cloud-platform.webp", width: 1024 },
   ],
   game: [
     { src: "/images/visual/cosmic-blaze-hero-832w.webp", width: 832 },
@@ -263,6 +268,16 @@ const copy: Record<Locale, HomeCopy> = {
           href: "/projects/engine-icon",
           imageSrc: visualMedia.vectorTo3dIcons,
           imageVariants: [...visualImageVariants.vectorTo3dIcons],
+          framed: false,
+          preserveImageRatio: true,
+        },
+        {
+          title: "云平台",
+          description: "面向 VR 与 3D 教学资源的云端资源库界面。",
+          availability: "comingSoon",
+          statusLabel: "暂不开放",
+          imageSrc: visualMedia.cloudPlatform,
+          imageVariants: [...visualImageVariants.cloudPlatform],
           framed: false,
           preserveImageRatio: true,
         },
@@ -397,6 +412,16 @@ const copy: Record<Locale, HomeCopy> = {
           href: "/projects/engine-icon",
           imageSrc: visualMedia.vectorTo3dIcons,
           imageVariants: [...visualImageVariants.vectorTo3dIcons],
+          framed: false,
+          preserveImageRatio: true,
+        },
+        {
+          title: "Cloud Platform",
+          description: "Cloud resource library UI for VR and 3D training assets.",
+          availability: "comingSoon",
+          statusLabel: "Coming soon",
+          imageSrc: visualMedia.cloudPlatform,
+          imageVariants: [...visualImageVariants.cloudPlatform],
           framed: false,
           preserveImageRatio: true,
         },
