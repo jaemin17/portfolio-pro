@@ -258,8 +258,9 @@ const copy: Record<Locale, HomeCopy> = {
           preserveImageRatio: true,
         },
         {
-          title: "Vector to 3D Icons",
-          description: "基于矢量图形制作的 3D 应用图标与视觉资产探索。",
+          title: "3D Engine App Icon Design",
+          description: "将复杂发动机模型转译为可识别的软件入口图标。",
+          href: "/projects/engine-icon",
           imageSrc: visualMedia.vectorTo3dIcons,
           imageVariants: [...visualImageVariants.vectorTo3dIcons],
           framed: false,
@@ -391,8 +392,9 @@ const copy: Record<Locale, HomeCopy> = {
           preserveImageRatio: true,
         },
         {
-          title: "Vector to 3D Icons",
-          description: "Vector-based 3D app icons and visual asset exploration.",
+          title: "3D Engine App Icon Design",
+          description: "Translating a complex engine model into a recognizable app icon.",
+          href: "/projects/engine-icon",
           imageSrc: visualMedia.vectorTo3dIcons,
           imageVariants: [...visualImageVariants.vectorTo3dIcons],
           framed: false,

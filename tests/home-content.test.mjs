@@ -37,14 +37,15 @@ const letterStyles =
   envelopeStyles.match(/\.letter \{([\s\S]*?)\n\}/)?.[1] ?? "";
 
 const requiredCopy = [
-  "Side Projects",
+  "0→1 Builds",
   "Visual Works",
   "VR 教育与实训",
   "/videos/visual/home-vr-education.mp4",
   "New Visual Work",
   "/images/visual/new-visual-work-home-en.png",
   "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
-  "Vector to 3D Icons",
+  "3D Engine App Icon Design",
+  "/projects/engine-icon",
   "/images/visual/vector-to-3d-icons-832w.webp",
   "/images/visual/vector-to-3d-icons.webp",
   "给我写信吧",
@@ -71,13 +72,13 @@ assert.ok(
 );
 
 assert.ok(
-  searchableCopy.indexOf("VR教育与实训") <
+    searchableCopy.indexOf("VR教育与实训") <
     searchableCopy.indexOf("NewVisualWork") &&
     searchableCopy.indexOf("NewVisualWork") <
-      searchableCopy.indexOf("Vectorto3DIcons") &&
-    searchableCopy.indexOf("Vectorto3DIcons") <
+      searchableCopy.indexOf("3DEngineAppIconDesign") &&
+    searchableCopy.indexOf("3DEngineAppIconDesign") <
       searchableCopy.indexOf("游戏概念"),
-  "Vector to 3D Icons should appear as the third Visual Works item before Game Concept",
+  "3D Engine App Icon Design should appear as the third Visual Works item before Game Concept",
 );
 
 assert.ok(
@@ -94,7 +95,7 @@ const newVisualWorkEntries = copy.match(
   /title: "New Visual Work",[\s\S]*?preserveImageRatio: true,/g,
 ) ?? [];
 const vectorTo3dEntries = copy.match(
-  /title: "Vector to 3D Icons",[\s\S]*?preserveImageRatio: true,/g,
+  /title: "3D Engine App Icon Design",[\s\S]*?preserveImageRatio: true,/g,
 ) ?? [];
 
 assert.equal(
@@ -118,15 +119,16 @@ for (const entry of newVisualWorkEntries) {
 assert.equal(
   vectorTo3dEntries.length,
   2,
-  "Vector to 3D Icons should exist in both locales",
+  "3D Engine App Icon Design should exist in both locales",
 );
 
 for (const entry of vectorTo3dEntries) {
   assert.ok(
     entry.includes("imageSrc: visualMedia.vectorTo3dIcons") &&
       entry.includes("imageVariants: [...visualImageVariants.vectorTo3dIcons]") &&
+      entry.includes('href: "/projects/engine-icon"') &&
       !entry.includes('availability: "comingSoon"'),
-    "Vector to 3D Icons should use responsive image variants and be visible without a coming-soon overlay",
+    "3D Engine App Icon Design should link to its detail page and stay visible without a coming-soon overlay",
   );
 }
 
