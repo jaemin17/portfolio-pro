@@ -49,8 +49,8 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
           <p className={selflyStyles.subtitle}>
             {t(
               locale,
-              "为 VR 实训软件设计统一风格的 3D 图标，并将复杂工程对象转译成清晰的软件入口。",
-              "Designing a consistent 3D icon style for VR training simulation software, translating complex engineering objects into clear app entry points.",
+              "用 Vector to 3D 为 VR 实训软件做特定的 3D 应用图标。",
+              "Using Vector to 3D to make specific 3D app icons for VR training software.",
             )}
           </p>
           <div className={selflyStyles.headerCta}>
@@ -125,11 +125,11 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
                 decoding="async"
               />
               <figcaption>
-                <strong>{t(locale, "简化模型", "Simplify the model")}</strong>
+                <strong>{t(locale, "绘制简化模型", "Draw the simplified model")}</strong>
                 {t(
                   locale,
-                  "第一次已经去掉大部分细节。缩小后结构还是偏密，通体同色也让块面更难分开。",
-                  "The first pass already dropped most details. Scaled down, the structure was still too dense, and a single color made the volumes harder to separate.",
+                  "第一次绘制已经去掉大部分细节。缩小后结构还是偏密，通体同色也让块面更难分开。",
+                  "The first drawing already dropped most details. Scaled down, the structure was still too dense, and a single color made the volumes harder to separate.",
                 )}
               </figcaption>
             </figure>
@@ -143,7 +143,7 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
                 decoding="async"
               />
               <figcaption>
-                <strong>{t(locale, "最终优化", "Final optimization")}</strong>
+                <strong>{t(locale, "优化最终效果", "Optimize the final result")}</strong>
                 {t(
                   locale,
                   "减少细节、强化体块和色彩对比，让图标在小尺寸下更清晰。",
@@ -156,12 +156,12 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
 
         <section className={styles.moreIconSection}>
           <div className={styles.moreIconCopy}>
-            <p className={styles.contextLabel}>{t(locale, "更多 3D 图标", "More 3D icons")}</p>
+            <p className={styles.contextLabel}>{t(locale, "同系列 VR 实训软件", "Same-series VR training software")}</p>
             <p>
               {t(
                 locale,
-                "同一套图标语言可以延展到不同设备、能源和实训模块。",
-                "The same icon language extends across different devices, energy objects, and training modules.",
+                "验证风格符合同系列软件应用图标风格。",
+                "Verify the style matches the application icon style of the same software series.",
               )}
             </p>
           </div>

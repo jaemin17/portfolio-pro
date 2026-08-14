@@ -26,10 +26,10 @@ assert.ok(
 
 for (const required of [
   "3D应用图标设计",
-  "为VR实训软件设计统一风格的3D图标",
+  "用Vectorto3D为VR实训软件做特定的3D应用图标",
   "观察参考模型",
-  "简化模型",
-  "最终优化",
+  "绘制简化模型",
+  "优化最终效果",
   "项目目标",
   "这套VR软件面向纯电动汽车拆装教学",
   "入口图标需要快速、准确地说明软件在教什么",
@@ -38,24 +38,24 @@ for (const required of [
   "ThisVRsoftwareteachesEVassemblyanddisassembly",
   "Themostfittingreferenceisakeytrainingmodel",
   "translatedintoadedicatedappicon",
-  "更多3D图标",
-  "同一套图标语言可以延展到不同设备、能源和实训模块",
+  "同系列VR实训软件",
+  "验证风格符合同系列软件应用图标风格",
   "2024",
   "3D图标&视觉设计",
   "辨认主体模块",
   "圆柱壳体、侧边管线、底座",
   "再画平面转3D",
-  "第一次已经去掉大部分细节",
+  "第一次绘制已经去掉大部分细节",
   "缩小后结构还是偏密",
   "通体同色也让块面更难分开",
   "减少细节、强化体块和色彩对比",
   "3DAppIconDesign",
-  "Designingaconsistent3DiconstyleforVRtrainingsimulationsoftware",
+  "UsingVectorto3Dtomakespecific3DappiconsforVRtrainingsoftware",
   "Observethereferencemodel",
-  "Simplifythemodel",
-  "Finaloptimization",
+  "Drawthesimplifiedmodel",
+  "Optimizethefinalresult",
   "Projectgoal",
-  "More3Dicons",
+  "Same-seriesVRtrainingsoftware",
   "3DIcon&VisualDesign",
 ]) {
   assert.ok(searchablePage.includes(required), `Missing engine icon narrative: ${required}`);
@@ -192,7 +192,7 @@ assert.ok(
 
 assert.ok(
   searchablePage.includes("className={styles.sourceModelImage}") &&
-    searchableStyles.includes(".sourceModelImage{background:#030303;"),
+    searchableStyles.includes(".imageStackimg.sourceModelImage{background:#030303;"),
   "Original model process image should use a black background",
 );
 
@@ -221,8 +221,8 @@ assert.ok(
 
 for (const expectedCaption of [
   /<figcaption>[\s\S]*?<strong>\{t\(locale, "观察参考模型", "Observe the reference model"\)\}<\/strong>[\s\S]*?辨认主体模块/,
-  /<figcaption>[\s\S]*?<strong>\{t\(locale, "简化模型", "Simplify the model"\)\}<\/strong>[\s\S]*?第一次已经去掉大部分细节/,
-  /<figcaption>[\s\S]*?<strong>\{t\(locale, "最终优化", "Final optimization"\)\}<\/strong>[\s\S]*?减少细节、强化体块和色彩对比/,
+  /<figcaption>[\s\S]*?<strong>\{t\(locale, "绘制简化模型", "Draw the simplified model"\)\}<\/strong>[\s\S]*?第一次绘制已经去掉大部分细节/,
+  /<figcaption>[\s\S]*?<strong>\{t\(locale, "优化最终效果", "Optimize the final result"\)\}<\/strong>[\s\S]*?减少细节、强化体块和色彩对比/,
 ]) {
   assert.ok(expectedCaption.test(page), `Missing expanded process image caption: ${expectedCaption}`);
 }
