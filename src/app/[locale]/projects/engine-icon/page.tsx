@@ -56,13 +56,16 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
           <div className={selflyStyles.headerCta}>
             <figure className={styles.heroProcessFigure}>
               <div className={styles.heroProcessImageFrame}>
-                <img
-                  src={assetPath("/images/visual/engine-icon/hero-process.webp")}
-                  alt={tStr(locale, "Figma Vector to 3D 插件中的发动机图标生成过程", "Engine icon generated inside the Figma Vector to 3D plugin")}
-                  width={999}
-                  height={640}
-                  loading="eager"
-                  decoding="async"
+                <video
+                  src={assetPath("/videos/visual/engine-icon/hero-process.mp4")}
+                  width={2000}
+                  height={1080}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  aria-label={tStr(locale, "Figma Vector to 3D 插件中的发动机图标生成过程", "Engine icon generated inside the Figma Vector to 3D plugin")}
                 />
               </div>
               <div className={`${selflyStyles.meta} ${styles.heroProcessMeta}`}>
@@ -74,7 +77,6 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
                   {t(locale, "3D 图标 & 视觉设计", "3D Icon & Visual Design")}
                 </span>
               </div>
-              <figcaption>{t(locale, "从矢量结构到 3D 图标的生成过程", "From vector structure to 3D icon rendering")}</figcaption>
             </figure>
           </div>
         </header>
@@ -85,8 +87,8 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
             <p>
               {t(
                 locale,
-                "为中高职 VR 实训软件设计一组模块入口图标，需要在不同实训内容之间保持统一的 3D 视觉语言。",
-                "Designing module entry icons for vocational VR training simulation software, with a shared 3D visual language across different training topics.",
+                "这套 VR 软件面向纯电动汽车拆装教学。系列中的每个软件都对应特定专业内容，入口图标需要快速、准确地说明软件在教什么。最合适的参照是实训里的关键模型。直接缩小几乎没有辨识度，需要把模型转译成专门的应用图标。",
+                "This VR software teaches EV assembly and disassembly. Each app in the series maps to a specific professional subject, so the entry icon has to show the software’s content quickly and accurately. The most fitting reference is a key training model. Scaled down, it barely reads—so the model has to be translated into a dedicated app icon.",
               )}
             </p>
           </div>
@@ -105,11 +107,11 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
                 decoding="async"
               />
               <figcaption>
-                <strong>{t(locale, "观察模型", "Observe the model")}</strong>
+                <strong>{t(locale, "观察参考模型", "Observe the reference model")}</strong>
                 {t(
                   locale,
-                  "从复杂发动机模型中提取最有辨识度的轮廓，而不是复刻全部机械细节。",
-                  "Extracts the most recognizable silhouette from the complex engine model instead of recreating every mechanical detail.",
+                  "辨认主体模块（圆柱壳体、侧边管线、底座），拆成少量关键形状，再画平面转 3D。",
+                  "Identify the main modules (cylindrical housing, side piping, and base), break them into a few key shapes, then draw the flat artwork that becomes 3D.",
                 )}
               </figcaption>
             </figure>
@@ -126,8 +128,8 @@ export default async function EngineIconPage({ params }: EngineIconPageProps) {
                 <strong>{t(locale, "简化模型", "Simplify the model")}</strong>
                 {t(
                   locale,
-                  "保留较多层级和零件关系，验证图标化后是否仍然像一个发动机模块。",
-                  "Keeps more layers and part relationships to test whether the icon still reads as an engine module.",
+                  "第一次已经去掉大部分细节。缩小后结构还是偏密，通体同色也让块面更难分开。",
+                  "The first pass already dropped most details. Scaled down, the structure was still too dense, and a single color made the volumes harder to separate.",
                 )}
               </figcaption>
             </figure>

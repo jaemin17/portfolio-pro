@@ -27,23 +27,31 @@ assert.ok(
 for (const required of [
   "3D应用图标设计",
   "为VR实训软件设计统一风格的3D图标",
-  "从矢量结构到3D图标的生成过程",
-  "观察模型",
+  "观察参考模型",
   "简化模型",
   "最终优化",
   "项目目标",
-  "为中高职VR实训软件设计一组模块入口图标",
+  "这套VR软件面向纯电动汽车拆装教学",
+  "入口图标需要快速、准确地说明软件在教什么",
+  "直接缩小几乎没有辨识度",
+  "需要把模型转译成专门的应用图标",
+  "ThisVRsoftwareteachesEVassemblyanddisassembly",
+  "Themostfittingreferenceisakeytrainingmodel",
+  "translatedintoadedicatedappicon",
   "更多3D图标",
   "同一套图标语言可以延展到不同设备、能源和实训模块",
   "2024",
   "3D图标&视觉设计",
-  "从复杂发动机模型中提取最有辨识度的轮廓",
-  "验证图标化后是否仍然像一个发动机模块",
+  "辨认主体模块",
+  "圆柱壳体、侧边管线、底座",
+  "再画平面转3D",
+  "第一次已经去掉大部分细节",
+  "缩小后结构还是偏密",
+  "通体同色也让块面更难分开",
   "减少细节、强化体块和色彩对比",
   "3DAppIconDesign",
   "Designingaconsistent3DiconstyleforVRtrainingsimulationsoftware",
-  "Fromvectorstructureto3Diconrendering",
-  "Observethemodel",
+  "Observethereferencemodel",
   "Simplifythemodel",
   "Finaloptimization",
   "Projectgoal",
@@ -80,16 +88,24 @@ assert.ok(
 assert.ok(
   searchableStyles.includes(".heroProcessImageFrame{") &&
     searchableStyles.includes("border:3pxsolid#93c5fd;") &&
-    searchableStyles.includes("border-radius:22px;"),
-  "Top process image should use the same framed hero treatment as other project pages",
+    searchableStyles.includes("border-radius:22px;") &&
+    searchableStyles.includes(".heroProcessImageFramevideo{"),
+  "Top process video should use the same framed hero treatment as other project pages",
+);
+
+assert.ok(
+  searchableStyles.includes(".heroProcessFigure,.contextSection,.imageStack,.moreIconSection{width:min(100%-60px,940px);") &&
+    !searchableStyles.includes("max-width:620px;"),
+  "Project goal copy should use the same 940px content width as the rest of the page",
 );
 
 assert.ok(
   searchablePage.includes("styles.heroProcessMeta") &&
     searchableStyles.includes(".heroProcessMeta{justify-content:center;") &&
-    searchableStyles.includes(".heroProcessFigurefigcaption{") &&
-    searchableStyles.includes("text-align:center;"),
-  "Top process image metadata and caption should be centered",
+    !searchableStyles.includes(".heroProcessFigurefigcaption{") &&
+    !searchablePage.includes("从矢量结构到3D图标的生成过程") &&
+    !searchablePage.includes("Fromvectorstructureto3Diconrendering"),
+  "Top process image should keep centered metadata and drop the figure caption",
 );
 
 for (const removed of [
@@ -129,7 +145,7 @@ assert.ok(
 );
 
 for (const asset of [
-  "/images/visual/engine-icon/hero-process.webp",
+  "/videos/visual/engine-icon/hero-process.mp4",
   "/images/visual/engine-icon/source-model.webp",
   "/images/visual/engine-icon/icon-family.webp",
   "/images/visual/engine-icon/render-test-light.webp",
@@ -137,6 +153,12 @@ for (const asset of [
 ]) {
   assert.ok(searchablePage.includes(asset), `Missing engine icon asset: ${asset}`);
 }
+
+assert.ok(
+  searchablePage.includes("<video") &&
+    !searchablePage.includes("/images/visual/engine-icon/hero-process.webp"),
+  "Top process still should stay on disk, but the hero should play the vector-to-3D video",
+);
 
 assert.ok(
   !searchablePage.includes("/images/visual/engine-icon/original-model.png"),
@@ -152,7 +174,7 @@ assert.ok(
     !searchableStyles.includes(".heroImageFrame") &&
     !searchableStyles.includes(".heroImage") &&
     !searchableStyles.includes(".toolFigure"),
-  "Engine icon page should render the processed tool screenshot as the top hero image only",
+  "Engine icon page should render the processed tool video as the top hero only",
 );
 
 assert.ok(
@@ -198,8 +220,8 @@ assert.ok(
 );
 
 for (const expectedCaption of [
-  /<figcaption>[\s\S]*?<strong>\{t\(locale, "观察模型", "Observe the model"\)\}<\/strong>[\s\S]*?从复杂发动机模型中提取最有辨识度的轮廓/,
-  /<figcaption>[\s\S]*?<strong>\{t\(locale, "简化模型", "Simplify the model"\)\}<\/strong>[\s\S]*?验证图标化后是否仍然像一个发动机模块/,
+  /<figcaption>[\s\S]*?<strong>\{t\(locale, "观察参考模型", "Observe the reference model"\)\}<\/strong>[\s\S]*?辨认主体模块/,
+  /<figcaption>[\s\S]*?<strong>\{t\(locale, "简化模型", "Simplify the model"\)\}<\/strong>[\s\S]*?第一次已经去掉大部分细节/,
   /<figcaption>[\s\S]*?<strong>\{t\(locale, "最终优化", "Final optimization"\)\}<\/strong>[\s\S]*?减少细节、强化体块和色彩对比/,
 ]) {
   assert.ok(expectedCaption.test(page), `Missing expanded process image caption: ${expectedCaption}`);
