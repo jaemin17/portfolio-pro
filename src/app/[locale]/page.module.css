@@ -222,7 +222,7 @@
   border: 1px solid var(--border);
   object-fit: contain;
   object-position: center;
-  background: #fff;
+  background: #fff8ec;
 }
 
 .buildingText {

@@ -1,0 +1,343 @@
+.conceptHeadlineEmphasis {
+  font-style: italic;
+  color: #3b82f6;
+}
+
+.heroPlaceholder {
+  width: min(100%, 940px);
+  aspect-ratio: 1440 / 778;
+  border-radius: 22px;
+  border: 3px solid #d1d5db;
+  background: linear-gradient(180deg, #e5e7eb 0%, #d1d5db 100%);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroPlaceholderLabel {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.platformGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.platformCard {
+  border-radius: 18px;
+  border: 1px solid #dbeafe;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  padding: 20px 22px;
+}
+
+.platformCardTag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.platformCardRole {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.platformCardDesc {
+  margin: 0;
+  line-height: 1.65;
+  color: #555;
+  font-size: var(--fs-body);
+}
+
+.designNote {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #444;
+  line-height: 1.75;
+}
+
+.flowList {
+  display: grid;
+  gap: 40px;
+  margin-top: 36px;
+}
+
+.flowItem {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.flowItem:nth-child(even) {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+}
+
+.flowItem:nth-child(even) .flowCopy {
+  order: 2;
+}
+
+.flowItem:nth-child(even) .flowMedia {
+  order: 1;
+}
+
+.flowStep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.flowTitle {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.flowBody {
+  margin: 0;
+  line-height: 1.75;
+  color: #555;
+}
+
+.flowMedia {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #dbeafe;
+  background: #030303;
+}
+
+.flowImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flowImagePortrait {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.xrStack {
+  display: grid;
+  gap: 48px;
+  margin-top: 36px;
+}
+
+.xrBlock {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.xrBlock:nth-child(even) {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+}
+
+.xrBlock:nth-child(even) .xrCopy {
+  order: 2;
+}
+
+.xrBlock:nth-child(even) .xrMedia {
+  order: 1;
+}
+
+.xrTitle {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.xrList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.xrList li {
+  line-height: 1.7;
+  color: #555;
+}
+
+.xrList strong {
+  color: #1a1a1a;
+}
+
+.visualPoints {
+  display: grid;
+  gap: 14px;
+  margin: 28px 0 32px;
+}
+
+.visualPoint {
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  line-height: 1.7;
+  color: #444;
+}
+
+.visualCompare {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.visualCompareItem {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #dbeafe;
+  background: #030303;
+}
+
+.visualCompareLabel {
+  padding: 8px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-top: 1px solid #dbeafe;
+}
+
+.visualCompareImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.visualComparePortrait .visualCompareImage {
+  aspect-ratio: 9 / 16;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.collabTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  font-size: var(--fs-body);
+}
+
+.collabTable th,
+.collabTable td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.65;
+}
+
+.collabTable th {
+  color: #1a1a1a;
+  font-weight: 600;
+  width: 42%;
+}
+
+.collabTable td {
+  color: #555;
+}
+
+.coverageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.coverageItem {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #dbeafe;
+  background: #fff;
+}
+
+.coverageImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.coverageLabel {
+  padding: 8px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #334155;
+  background: #f8fafc;
+}
+
+.coverageNote {
+  margin-top: 16px;
+  color: #666;
+  line-height: 1.7;
+}
+
+.contactAlign {
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .platformGrid,
+  .flowItem,
+  .flowItem:nth-child(even),
+  .xrBlock,
+  .xrBlock:nth-child(even),
+  .visualCompare {
+    grid-template-columns: 1fr;
+  }
+
+  .flowItem:nth-child(even) .flowCopy,
+  .flowItem:nth-child(even) .flowMedia,
+  .xrBlock:nth-child(even) .xrCopy,
+  .xrBlock:nth-child(even) .xrMedia {
+    order: unset;
+  }
+
+  .coverageGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .coverageGrid {
+    grid-template-columns: 1fr;
+  }
+}
