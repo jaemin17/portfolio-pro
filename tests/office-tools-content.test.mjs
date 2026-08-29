@@ -17,10 +17,14 @@ const redirect = readFileSync(
 
 assert.match(copy, /title:\s*"Personal Tools"/);
 assert.match(copy, /href:\s*"\/projects\/personal-tools"/);
+assert.match(copy, /iconSrc:\s*"\/office-tools-icon\.svg"/);
 assert.doesNotMatch(copy, /href:\s*"https:\/\/jaemin17\.github\.io\/sticky-notes\/"/);
 
 assert.match(page, /Sticky Notes/);
+assert.match(page, /coverSrc:\s*"\/images\/tools\/personal-tools-cover\.png"/);
+assert.match(page, /<img[\s\S]*className=\{styles\.toolCoverImage\}/);
 assert.match(page, /Next/);
+assert.match(page, /title:\s*"Next"[\s\S]*coverSrc:\s*"\/images\/tools\/next-cover\.png"/);
 assert.match(page, /T-Day/);
 assert.match(page, /2026/);
 assert.match(page, /Personal Tools/);

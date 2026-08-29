@@ -18,6 +18,7 @@ type ToolCopy = {
   href: string;
   cta: string;
   preview: "notes" | "next" | "tday";
+  coverSrc?: string;
 };
 
 function t(locale: Locale, zh: ReactNode, en: ReactNode): ReactNode {
@@ -28,13 +29,23 @@ function tStr(locale: Locale, zh: string, en: string): string {
   return locale === "en" ? en : zh;
 }
 
-function ToolPreview({ type }: { type: ToolCopy["preview"] }) {
-  if (type === "notes") {
+function ToolPreview({
+  type,
+  coverSrc,
+}: {
+  type: ToolCopy["preview"];
+  coverSrc?: string;
+}) {
+  if (coverSrc) {
     return (
       <div className={styles.notesPreview} aria-hidden="true">
-        <span className={styles.noteYellow} />
-        <span className={styles.noteBlue} />
-        <span className={styles.notePink} />
+        <img
+          className={styles.toolCoverImage}
+          src={coverSrc}
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     );
   }
@@ -88,6 +99,7 @@ export default async function OfficeToolsPage({ params }: OfficeToolsPageProps) 
       href: "https://jaemin17.github.io/sticky-notes/",
       cta: tStr(locale, "打开 Sticky Notes", "Open Sticky Notes"),
       preview: "notes",
+      coverSrc: "/images/tools/personal-tools-cover.png",
     },
     {
       title: "Next",
@@ -100,6 +112,7 @@ export default async function OfficeToolsPage({ params }: OfficeToolsPageProps) 
       href: "https://jaemin17.github.io/plan/",
       cta: tStr(locale, "打开 Next", "Open Next"),
       preview: "next",
+      coverSrc: "/images/tools/next-cover.png",
     },
     {
       title: "T-Day",
@@ -149,7 +162,7 @@ export default async function OfficeToolsPage({ params }: OfficeToolsPageProps) 
               <div className={styles.toolsGrid}>
                 {tools.map((tool) => (
                   <article className={styles.toolCard} key={tool.title}>
-                    <ToolPreview type={tool.preview} />
+                    <ToolPreview type={tool.preview} coverSrc={tool.coverSrc} />
                     <div className={styles.toolBody}>
                       <p className={styles.toolEyebrow}>{tool.eyebrow}</p>
                       <h3>{tool.title}</h3>

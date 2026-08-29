@@ -45,6 +45,14 @@
   background-size: 18px 18px;
 }
 
+.toolCoverImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .notesPreview span {
   position: absolute;
   width: 6.25rem;
