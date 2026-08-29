@@ -37,8 +37,9 @@
 .nextPreview,
 .tdayPreview {
   position: relative;
-  flex: 0 0 9.5rem;
-  height: 9.5rem;
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 5 / 3;
   overflow: hidden;
   background-color: #fff8ec;
   background-image: radial-gradient(rgba(34, 36, 42, 0.14) 1px, transparent 1px);
@@ -232,13 +233,6 @@
 @media (max-width: 760px) {
   .toolsGrid {
     grid-template-columns: 1fr;
-  }
-
-  .notesPreview,
-  .nextPreview,
-  .tdayPreview {
-    flex-basis: 9rem;
-    height: 9rem;
   }
 
   .notesPreview span {

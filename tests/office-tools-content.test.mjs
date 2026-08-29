@@ -43,6 +43,7 @@ assert.match(redirect, /ProjectRedirect/);
 assert.match(redirect, /\/projects\/personal-tools/);
 
 assert.match(css, /\.toolsGrid/);
+assert.match(css, /aspect-ratio:\s*5\s*\/\s*3/);
 assert.match(page, /selflyStyles\.meta/);
 assert.doesNotMatch(page, /headerCta/);
 assert.doesNotMatch(page, /heroIcon/);
