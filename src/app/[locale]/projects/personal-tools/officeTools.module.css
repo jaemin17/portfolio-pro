@@ -1,125 +1,31 @@
-.page {
-  box-sizing: border-box;
-  min-height: 100vh;
-  width: min(1120px, calc(100% - var(--page-gutter) * 2));
-  margin: 0 auto;
-  padding: clamp(5rem, 9vw, 7.5rem) 0 clamp(4rem, 9vw, 7rem);
-  color: var(--text-primary);
+.titleEmphasis {
+  color: #2563eb;
+  font-style: italic;
 }
 
-.hero {
-  display: grid;
-  justify-items: start;
-  max-width: 720px;
-  margin: 0 auto clamp(4rem, 9vw, 7rem);
-  text-align: left;
-}
-
-.heroIcon {
-  width: 3.5rem;
-  height: 3.5rem;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 0.875rem;
-  object-fit: cover;
-  background: #fff8ec;
-}
-
-.kicker,
 .toolEyebrow {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.45rem;
   font-size: var(--fs-caption);
   font-weight: 500;
   line-height: 1.4;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.title {
-  margin: 0;
-  font-size: clamp(2.75rem, 5vw, 4.5rem);
-  font-weight: 500;
-  line-height: 1.06;
-  letter-spacing: 0;
-}
-
-.lead {
-  max-width: 680px;
-  margin: 1.25rem 0 0;
-  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
-  line-height: 1.55;
-  color: var(--text-secondary);
-}
-
-.meta {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 0.45rem;
-  margin-top: 1.25rem;
-  font-size: var(--fs-caption);
-  line-height: 1.5;
-  color: var(--text-muted);
-}
-
-.story {
-  margin-bottom: clamp(3.5rem, 8vw, 6rem);
-  padding-top: clamp(2.25rem, 4vw, 3.5rem);
-  border-top: 1px solid var(--border);
-}
-
-.sectionLabel {
-  margin: 0 0 1.25rem;
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  line-height: 1.4;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.storyGrid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
-  align-items: start;
-}
-
-.story h2 {
-  margin: 0;
-  font-size: clamp(1.75rem, 3vw, 2.6rem);
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
-
-.storyBody {
-  display: grid;
-  gap: 1.2rem;
-}
-
-.storyBody p {
-  margin: 0;
-  font-size: var(--fs-body);
-  line-height: 1.7;
-  color: var(--text-secondary);
-}
-
-.toolsSection {
-  margin-bottom: clamp(3.5rem, 8vw, 6rem);
+  letter-spacing: 0.08em;
 }
 
 .toolsGrid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 19.5rem));
+  justify-content: start;
+  align-items: stretch;
+  gap: 2rem;
+  margin-top: 8px;
 }
 
 .toolCard {
-  display: grid;
-  grid-template-rows: 15rem auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -131,6 +37,8 @@
 .nextPreview,
 .tdayPreview {
   position: relative;
+  flex: 0 0 9.5rem;
+  height: 9.5rem;
   overflow: hidden;
   background-color: #fff8ec;
   background-image: radial-gradient(rgba(34, 36, 42, 0.14) 1px, transparent 1px);
@@ -139,8 +47,8 @@
 
 .notesPreview span {
   position: absolute;
-  width: 8.25rem;
-  height: 7.25rem;
+  width: 6.25rem;
+  height: 5.5rem;
   border: 1px solid rgba(34, 36, 42, 0.1);
   border-radius: 7px;
   box-shadow: 0 18px 36px rgba(34, 36, 42, 0.09);
@@ -178,9 +86,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 6.5rem;
-  height: 2.8rem;
-  padding: 0 1rem;
+  min-width: 4.75rem;
+  height: 2.15rem;
+  padding: 0 0.7rem;
   border: 1px solid rgba(34, 36, 42, 0.12);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
@@ -190,26 +98,26 @@
 }
 
 .planNode:first-child {
-  left: 16%;
-  top: 38%;
+  left: 12%;
+  top: 36%;
 }
 
 .planNode:nth-of-type(3) {
-  right: 18%;
-  top: 38%;
+  right: 12%;
+  top: 36%;
 }
 
 .planNodeMuted {
-  left: 42%;
-  bottom: 18%;
+  left: 38%;
+  bottom: 16%;
   color: var(--text-muted);
 }
 
 .planLine {
   position: absolute;
-  left: 35%;
-  right: 35%;
-  top: calc(38% + 1.4rem);
+  left: 32%;
+  right: 32%;
+  top: calc(36% + 1.2rem);
   height: 1px;
   background: rgba(34, 36, 42, 0.2);
 }
@@ -218,11 +126,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.15rem;
+  gap: 1rem;
 }
 
 .tdayNumber {
-  font-size: 3.25rem;
+  font-size: 2.25rem;
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -261,29 +169,45 @@
 }
 
 .toolBody {
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 1.1rem 1.25rem 1.25rem;
 }
 
-.toolBody h2 {
+.toolBody h3 {
   margin: 0 0 0.75rem;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-size: var(--fs-title);
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 0;
 }
 
 .toolBody p {
   margin: 0;
-  font-size: var(--fs-body);
-  line-height: 1.6;
+  font-size: var(--fs-label);
+  line-height: 1.55;
   color: var(--text-secondary);
+}
+
+.toolBody p:not(.toolEyebrow) {
+  margin-bottom: 1rem;
+}
+
+.toolBody .toolEyebrow {
+  margin-bottom: 0.45rem;
+  font-size: var(--fs-caption);
+  line-height: 1.4;
+  color: var(--text-muted);
 }
 
 .toolLink {
   display: inline-flex;
   align-items: center;
-  min-height: 2.75rem;
-  margin-top: 1.5rem;
+  align-self: flex-start;
+  min-height: 2.5rem;
+  margin-top: auto;
   padding: 0 1rem;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -297,49 +221,24 @@
   background: #f7f7f4;
 }
 
-.footer {
-  padding-top: clamp(2rem, 5vw, 4rem);
-  border-top: 1px solid var(--border);
-}
-
-.footerLink {
-  color: var(--text-secondary);
-  font-size: var(--fs-body);
-  text-decoration: none;
-}
-
-.footerLink:hover {
-  color: var(--text-primary);
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
-}
-
 @media (max-width: 760px) {
-  .page {
-    width: min(100% - 2rem, 1120px);
-    padding-top: 5rem;
-  }
-
-  .storyGrid,
   .toolsGrid {
     grid-template-columns: 1fr;
   }
 
-  .toolCard {
-    grid-template-rows: 12rem auto;
+  .notesPreview,
+  .nextPreview,
+  .tdayPreview {
+    flex-basis: 9rem;
+    height: 9rem;
   }
 
   .notesPreview span {
-    width: 6.5rem;
-    height: 5.75rem;
-  }
-
-  .planNode,
-  .planNodeMuted {
-    min-width: 5.4rem;
+    width: 5.75rem;
+    height: 5rem;
   }
 
   .tdayNumber {
-    font-size: 2.5rem;
+    font-size: var(--fs-display);
   }
 }

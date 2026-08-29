@@ -59,16 +59,8 @@ const snapshotPlaceholders: SnapshotItem[] = [
     imageSrc: "/images/snapshots/snapshot-06.webp",
   },
   {
-    alt: "Illustrated portrait with smile pin",
-    imageSrc: "/images/snapshots/snapshot-07.webp",
-  },
-  {
     alt: "Portrait in orange flowers",
     imageSrc: "/images/snapshots/snapshot-08.webp",
-  },
-  {
-    alt: "Beaded flower bracelets",
-    imageSrc: "/images/snapshots/snapshot-09.webp",
   },
   {
     alt: "Cat portrait",

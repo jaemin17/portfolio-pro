@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
-import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/paths";
+import modelStyles from "../model-editor/modelEditor.module.css";
+import selflyStyles from "../selfly/selfly0.module.css";
 import styles from "./officeTools.module.css";
 
 type OfficeToolsPageProps = {
@@ -115,96 +116,63 @@ export default async function OfficeToolsPage({ params }: OfficeToolsPageProps) 
   ];
 
   return (
-    <main className={styles.page}>
-      <header className={styles.hero}>
-        {/* eslint-disable-next-line @next/next/no-img-element -- simple static SVG asset */}
-        <img
-          className={styles.heroIcon}
-          src={assetPath("/office-tools-icon.svg")}
-          alt=""
-          width={88}
-          height={88}
-          aria-hidden="true"
-        />
-        <p className={styles.kicker}>{t(locale, "0→1 独立开发", "0→1 Build")}</p>
-        <h1 className={styles.title}>Personal Tools</h1>
-        <p className={styles.lead}>
-          {t(
-            locale,
-            "一组为自己日常工作流做的轻量浏览器工具，用来处理计划、记录、倒计时和临时整理。",
-            "A small collection of browser tools I built for my own daily workflow: planning, notes, countdown, and temporary organization.",
-          )}
-        </p>
-        <div className={styles.meta} aria-label={tStr(locale, "项目信息", "Project information")}>
-          <span>2026</span>
-          <span aria-hidden="true">·</span>
-          <span>Personal Workflow</span>
-          <span aria-hidden="true">·</span>
-          <span>Web</span>
-        </div>
-      </header>
-
-      <section className={styles.story} aria-label={tStr(locale, "项目背景", "Project background")}>
-        <p className={styles.sectionLabel}>{t(locale, "项目背景", "Project Background")}</p>
-        <div className={styles.storyGrid}>
-          <h2>
+    <div className={`${selflyStyles.pagePlain} ${selflyStyles.selfly0Page}`} data-page="personal-tools">
+      <main className={selflyStyles.main}>
+        <header className={`${selflyStyles.featuredHero} ${selflyStyles.projectOneHero}`}>
+          <h1 className={selflyStyles.title} aria-label="Personal Tools">
+            Personal <span className={styles.titleEmphasis}>Tools</span>
+          </h1>
+          <p className={selflyStyles.subtitle}>
             {t(
               locale,
-              <>
-                把每天的小摩擦，
-                <br />
-                做成顺手的工具
-              </>,
-              <>
-                Turning daily friction
-                <br />
-                into small useful tools
-              </>,
+              "一组为自己日常工作流做的轻量浏览器工具，用来处理计划、记录、倒计时和临时整理。",
+              "A small collection of browser tools I built for my own daily workflow: planning, notes, countdown, and temporary organization.",
             )}
-          </h2>
-          <div className={styles.storyBody}>
-            <p>
-              {t(
-                locale,
-                "这些工具不是从完整商业需求开始的，而是来自我每天反复遇到的小摩擦：有些内容只需要先记下来，有些任务只需要今天被看见和重新摆放，有些日子只需要被倒计时看见。",
-                "These tools did not start from a full commercial brief. They came from repeated daily friction: some information only needs to be captured quickly, some tasks only need to be visible and movable today, and some dates only need a countdown.",
-              )}
-            </p>
-            <p>
-              {t(
-                locale,
-                "所以它们共同遵循一个原则：打开就能用，不需要账号，不把临时工作流变成更重的系统。",
-                "They share the same principle: open and use immediately, with no account, and without turning temporary workflows into a heavier system.",
-              )}
-            </p>
+          </p>
+          <div className={selflyStyles.meta}>
+            <span className={selflyStyles.metaItem}>2026</span>
+            <span className={selflyStyles.metaDot} aria-hidden="true">
+              ·
+            </span>
+            <span className={selflyStyles.metaItem}>Personal Workflow</span>
+            <span className={selflyStyles.metaDot} aria-hidden="true">
+              ·
+            </span>
+            <span className={selflyStyles.metaItem}>Web</span>
           </div>
-        </div>
-      </section>
+        </header>
 
-      <section className={styles.toolsSection} aria-label={tStr(locale, "工具列表", "Tool list")}>
-        <p className={styles.sectionLabel}>{t(locale, "工具集合", "Tool Collection")}</p>
-        <div className={styles.toolsGrid}>
-          {tools.map((tool) => (
-            <article className={styles.toolCard} key={tool.title}>
-              <ToolPreview type={tool.preview} />
-              <div className={styles.toolBody}>
-                <p className={styles.toolEyebrow}>{tool.eyebrow}</p>
-                <h2>{tool.title}</h2>
-                <p>{tool.body}</p>
-                <a className={styles.toolLink} href={tool.href} target="_blank" rel="noopener noreferrer">
-                  {tool.cta}
-                </a>
+        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+          <div className={modelStyles.positioningSection} aria-label={tStr(locale, "工具列表", "Tool list")}>
+            <div className={modelStyles.positioningInner}>
+              <p className={modelStyles.positioningLabel}>{t(locale, "工具集合", "Tool Collection")}</p>
+              <div className={styles.toolsGrid}>
+                {tools.map((tool) => (
+                  <article className={styles.toolCard} key={tool.title}>
+                    <ToolPreview type={tool.preview} />
+                    <div className={styles.toolBody}>
+                      <p className={styles.toolEyebrow}>{tool.eyebrow}</p>
+                      <h3>{tool.title}</h3>
+                      <p>{tool.body}</p>
+                      <a className={styles.toolLink} href={tool.href} target="_blank" rel="noopener noreferrer">
+                        {tool.cta}
+                      </a>
+                    </div>
+                  </article>
+                ))}
               </div>
-            </article>
-          ))}
-        </div>
-      </section>
+            </div>
+          </div>
+        </section>
 
-      <footer className={styles.footer}>
-        <Link className={styles.footerLink} href={localePath(locale, "/")}>
-          {t(locale, "← 返回首页", "← Back home")}
-        </Link>
-      </footer>
-    </main>
+        <section className={selflyStyles.selfly0ContactSection} aria-label={tStr(locale, "结语", "Closing")}>
+          <div className={`${selflyStyles.selfly0ContactInner} ${modelStyles.contactAlign}`}>
+            <Link className={selflyStyles.selfly0ContactBack} href={localePath(locale, "/")}>
+              {t(locale, "← 返回首页", "← Back to home")}
+            </Link>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
