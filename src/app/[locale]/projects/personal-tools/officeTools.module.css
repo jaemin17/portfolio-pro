@@ -3,20 +3,10 @@
   font-style: italic;
 }
 
-.toolEyebrow {
-  margin: 0 0 0.45rem;
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  line-height: 1.4;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
 .toolsGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 19.5rem));
-  justify-content: start;
+  justify-content: center;
   align-items: stretch;
   gap: 2rem;
   margin-top: 8px;
@@ -31,6 +21,12 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   background: #fff;
+  color: inherit;
+  text-decoration: none;
+}
+
+.toolCard:hover {
+  border-color: rgba(34, 36, 42, 0.28);
 }
 
 .notesPreview,
@@ -198,36 +194,6 @@
   font-size: var(--fs-label);
   line-height: 1.55;
   color: var(--text-secondary);
-}
-
-.toolBody p:not(.toolEyebrow) {
-  margin-bottom: 1rem;
-}
-
-.toolBody .toolEyebrow {
-  margin-bottom: 0.45rem;
-  font-size: var(--fs-caption);
-  line-height: 1.4;
-  color: var(--text-muted);
-}
-
-.toolLink {
-  display: inline-flex;
-  align-items: center;
-  align-self: flex-start;
-  min-height: 2.5rem;
-  margin-top: auto;
-  padding: 0 1rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  color: var(--text-primary);
-  text-decoration: none;
-  background: #fff;
-}
-
-.toolLink:hover {
-  border-color: rgba(34, 36, 42, 0.28);
-  background: #f7f7f4;
 }
 
 @media (max-width: 760px) {
