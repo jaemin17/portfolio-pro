@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/paths";
 import modelStyles from "../model-editor/modelEditor.module.css";
@@ -41,7 +42,7 @@ function ToolPreview({
       <div className={styles.notesPreview} aria-hidden="true">
         <img
           className={styles.toolCoverImage}
-          src={coverSrc}
+          src={assetPath(coverSrc)}
           alt=""
           loading="lazy"
           decoding="async"

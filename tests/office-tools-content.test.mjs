@@ -21,8 +21,9 @@ assert.match(copy, /iconSrc:\s*"\/office-tools-icon\.svg"/);
 assert.doesNotMatch(copy, /href:\s*"https:\/\/jaemin17\.github\.io\/sticky-notes\/"/);
 
 assert.match(page, /Sticky Notes/);
+assert.match(page, /from "@\/i18n\/assets"/);
 assert.match(page, /coverSrc:\s*"\/images\/tools\/personal-tools-cover\.png"/);
-assert.match(page, /<img[\s\S]*className=\{styles\.toolCoverImage\}/);
+assert.match(page, /<img[\s\S]*src=\{assetPath\(coverSrc\)\}/);
 assert.match(page, /Next/);
 assert.match(page, /title:\s*"Next"[\s\S]*coverSrc:\s*"\/images\/tools\/next-cover\.png"/);
 assert.match(page, /T-Day/);
