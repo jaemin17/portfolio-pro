@@ -63,6 +63,7 @@ assert.match(redirect, /ProjectRedirect/);
 assert.match(redirect, /\/projects\/personal-tools/);
 
 assert.match(css, /\.toolsGrid/);
+assert.match(css, /\.toolCard:hover[\s\S]*translate3d\(0,\s*-2px,\s*0\)/);
 assert.match(css, /\.toolsGrid\s*\{[^}]*justify-content:\s*center/);
 assert.match(css, /aspect-ratio:\s*5\s*\/\s*3/);
 assert.match(page, /selflyStyles\.meta/);
