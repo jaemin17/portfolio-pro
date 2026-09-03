@@ -46,6 +46,7 @@ export default async function SyncSpacePage({ params }: SyncSpacePageProps) {
   const { locale: localeParam } = await params;
   if (!isLocale(localeParam)) notFound();
   const locale: Locale = localeParam;
+  notFound();
 
   const platformRoles = [
     {

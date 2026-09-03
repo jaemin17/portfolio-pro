@@ -22,13 +22,32 @@ assert.match(
   "XR Interactive Script Engine should be marked as coming soon",
 );
 
-for (const title of ["Game Concept", "AR Airbnb", "游戏概念"]) {
+for (const title of ["Sync Space", "Game Concept", "AR Airbnb", "游戏概念"]) {
   assert.match(
     copy,
     new RegExp(`title:\\s*"${title}"[\\s\\S]*availability:\\s*"comingSoon"`),
     `${title} should be marked as coming soon`,
   );
 }
+
+assert.ok(
+  !/title:\s*"Sync Space"[\s\S]*?href:\s*"\/projects\/sync-space"/.test(copy),
+  "Sync Space should not link to an unfinished case study",
+);
+
+const syncSpacePage = await readFile(
+  new URL(
+    "../src/app/[locale]/projects/sync-space/page.tsx",
+    import.meta.url,
+  ),
+  "utf8",
+);
+assert.ok(
+  /const locale: Locale = localeParam;\s*notFound\(\);\s*const platformRoles/.test(
+    syncSpacePage,
+  ),
+  "Direct Sync Space project route should terminate before rendering case-study content",
+);
 
 assert.ok(
   copy.includes('statusLabel: "Coming soon"') &&

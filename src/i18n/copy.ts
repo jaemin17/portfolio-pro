@@ -225,7 +225,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Sync Space",
           description: "跨端 VR 课堂协同：头显学习、平板控场、网页管资源",
-          href: "/projects/sync-space",
+          availability: "comingSoon",
+          statusLabel: "暂不开放",
           videoSrc: toolVideos.syncSpace,
           posterSrc: toolPosters.syncSpace,
           frameColor: toolFrameColors.syncSpace,
@@ -368,7 +369,8 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Sync Space",
           description: "Cross-platform VR classroom: headset learning, tablet control, web resource hub",
-          href: "/projects/sync-space",
+          availability: "comingSoon",
+          statusLabel: "Coming soon",
           videoSrc: toolVideos.syncSpace,
           posterSrc: toolPosters.syncSpace,
           frameColor: toolFrameColors.syncSpace,
