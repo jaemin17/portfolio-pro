@@ -7,10 +7,15 @@ type HomeSection = {
 export type CurrentlyBuildingItem = {
   title: string;
   description: string;
-  meta: string;
-  iconSrc: string;
-  iconAlt: string;
+  meta?: string;
+  tags?: string[];
+  categoryIds?: string[];
   href?: string;
+  imageSrc?: string;
+  imageVariants?: { src: string; width: number }[];
+  frameColor?: string;
+  framed?: boolean;
+  preserveImageRatio?: boolean;
 };
 
 export type CurrentlyBuilding = {
@@ -21,6 +26,9 @@ export type CurrentlyBuilding = {
 export type ToolProjectItem = {
   title: string;
   description: string;
+  meta?: string;
+  tags?: string[];
+  categoryIds?: string[];
   href?: string;
   availability?: "comingSoon";
   statusLabel?: string;
@@ -41,6 +49,24 @@ export type ToolProjects = {
   label: string;
   loadMore?: string;
   items: ToolProjectItem[];
+};
+
+export type WorkIndexProject = {
+  title: string;
+  description: string;
+  href?: string;
+};
+
+export type WorkIndexItem = {
+  id: string;
+  label: string;
+  summary: string;
+  projects: WorkIndexProject[];
+};
+
+export type WorkIndex = {
+  label: string;
+  items: WorkIndexItem[];
 };
 
 export type SnapshotItem = {
@@ -95,6 +121,7 @@ export type HomeCopy = {
   email: string;
   copyEmail: string;
   copiedEmail: string;
+  workIndex: WorkIndex;
   currentlyBuilding: CurrentlyBuilding;
   toolProjects: ToolProjects;
   visualProjects: ToolProjects;
@@ -163,6 +190,11 @@ const visualPosters = {
   manufacturing: "/images/posters/visual/immersive.webp",
 } as const;
 
+const buildingMedia = {
+  selfly: "/images/selfly0/hero-750w.webp",
+  personalTools: "/images/tools/personal-tools-cover.png",
+} as const;
+
 const copy: Record<Locale, HomeCopy> = {
   zh: {
     name: "Hey visitor，我是 Jiamin Li。",
@@ -171,24 +203,119 @@ const copy: Record<Locale, HomeCopy> = {
     email: "lijiaemin1993@gmail.com",
     copyEmail: "复制邮箱",
     copiedEmail: "已复制",
+    workIndex: {
+      label: "作品索引",
+      items: [
+        {
+          id: "all",
+          label: "全部",
+          summary: "所有精选项目。",
+          projects: [],
+        },
+        {
+          id: "zero-to-one",
+          label: "0→1 产品",
+          summary: "从真实需求出发，定义产品结构、核心路径与长期使用体验。",
+          projects: [
+            {
+              title: "Selfly",
+              description: "独立开发中的个人记录与反思产品。",
+              href: "/projects/selfly",
+            },
+            {
+              title: "Personal Tools",
+              description: "围绕日常工作流做的小型 Web 工具集合。",
+              href: "/projects/personal-tools",
+            },
+          ],
+        },
+        {
+          id: "product-systems",
+          label: "产品系统",
+          summary: "偏工具、平台与设计系统的项目，强调可用性和持续迭代。",
+          projects: [
+            {
+              title: "Model Editor",
+              description: "材质、颜色和模型结构编辑体验。",
+              href: "/projects/model-editor",
+            },
+            {
+              title: "Personal Tools",
+              description: "轻量浏览器工具与可复用工作流界面。",
+              href: "/projects/personal-tools",
+            },
+            {
+              title: "Sync Space",
+              description: "头显、平板与网页之间的跨端课堂协同。",
+            },
+          ],
+        },
+        {
+          id: "xr-3d",
+          label: "XR / 3D",
+          summary: "3D 内容、VR 训练和多端沉浸式学习体验。",
+          projects: [
+            {
+              title: "VR 教育与实训",
+              description: "工业设备与动物医学方向的 VR 训练体验。",
+              href: "/projects/vr-education",
+            },
+            {
+              title: "Model Editor",
+              description: "服务 3D 课件生产的模型编辑工具。",
+              href: "/projects/model-editor",
+            },
+            {
+              title: "Sync Space",
+              description: "跨端 VR 课堂协同方案。",
+            },
+          ],
+        },
+        {
+          id: "visual-systems",
+          label: "视觉系统",
+          summary: "图标、视觉系统和面向复杂内容的界面表达。",
+          projects: [
+            {
+              title: "3D Engine App Icon Design",
+              description: "将复杂发动机模型转译为软件入口图标。",
+              href: "/projects/engine-icon",
+            },
+            {
+              title: "云平台",
+              description: "面向 VR 与 3D 教学资源的云端资源库界面。",
+            },
+            {
+              title: "New Visual Work",
+              description: "新增视觉作品预览与表达探索。",
+              href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+            },
+          ],
+        },
+      ],
+    },
     currentlyBuilding: {
       label: "0→1 独立开发",
       items: [
         {
           title: "Selfly",
           description: "记录、回看与自我探索",
-          meta: "iOS",
-          iconSrc: "/selfly-icon.webp",
-          iconAlt: "Selfly",
+          meta: "独立产品 · iOS",
+          tags: ["0→1 产品", "iOS UX", "交互设计"],
+          categoryIds: ["zero-to-one"],
           href: "/projects/selfly",
+          imageSrc: buildingMedia.selfly,
+          frameColor: "#fff8ec",
         },
         {
           title: "Personal Tools",
           description: "为自己的日常工作流做的轻量浏览器工具",
-          meta: "Web",
-          iconSrc: "/office-tools-icon.svg",
-          iconAlt: "Personal Tools",
+          meta: "自发工具 · Web",
+          tags: ["Web 工具", "工作流设计", "产品系统"],
+          categoryIds: ["zero-to-one", "product-systems"],
           href: "/projects/personal-tools",
+          imageSrc: buildingMedia.personalTools,
+          frameColor: "#f6f6f6",
         },
       ],
     },
@@ -199,6 +326,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Model Editor",
           description: "材质、颜色和模型结构编辑",
+          meta: "3D 课件工具 · Web",
+          tags: ["Product Design", "3D Tools", "Design Systems"],
+          categoryIds: ["product-systems", "xr-3d"],
           href: "/projects/model-editor",
           videoSrc: toolVideos.model,
           posterSrc: toolPosters.model,
@@ -207,6 +337,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "XR Interactive Script Engine",
           description: "模型资源浏览与预览",
+          meta: "XR 工具 · Web",
+          tags: ["Asset Browser", "XR Workflow", "Interaction"],
+          categoryIds: ["product-systems", "xr-3d"],
           availability: "comingSoon",
           statusLabel: "暂不开放",
           videoSrc: toolVideos.xrScript,
@@ -216,6 +349,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "XR Courseware",
           description: "3D 内容播放与课件演示",
+          meta: "课程工具 · XR",
+          tags: ["Courseware", "3D Playback", "Teaching"],
+          categoryIds: ["product-systems", "xr-3d"],
           availability: "comingSoon",
           statusLabel: "暂不开放",
           videoSrc: toolVideos.ppt,
@@ -225,6 +361,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Sync Space",
           description: "跨端 VR 课堂协同：头显学习、平板控场、网页管资源",
+          meta: "多端协同 · XR",
+          tags: ["Cross-device", "VR Classroom", "Product System"],
+          categoryIds: ["product-systems", "xr-3d"],
           availability: "comingSoon",
           statusLabel: "暂不开放",
           videoSrc: toolVideos.syncSpace,
@@ -241,6 +380,9 @@ const copy: Record<Locale, HomeCopy> = {
           title: "VR 教育与实训",
           description:
             "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          meta: "VR 仿真 · XR",
+          tags: ["VR Simulation", "Training UX", "Visual System"],
+          categoryIds: ["xr-3d", "visual-systems"],
           href: "/projects/vr-education",
           videoSrc: visualMedia.manufacturing,
           posterSrc: visualPosters.manufacturing,
@@ -249,6 +391,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "New Visual Work",
           description: "临时新增的视觉作品预览。",
+          meta: "视觉探索 · Prototype",
+          tags: ["Visual Design", "Prototype", "Interface"],
+          categoryIds: ["visual-systems"],
           href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
           imageSrc: visualMedia.newVisualWork,
           framed: false,
@@ -257,6 +402,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "3D Engine App Icon Design",
           description: "将复杂发动机模型转译为可识别的软件入口图标。",
+          meta: "图标系统 · 3D",
+          tags: ["Icon Design", "3D Rendering", "Visual System"],
+          categoryIds: ["visual-systems", "xr-3d"],
           href: "/projects/engine-icon",
           imageSrc: visualMedia.vectorTo3dIcons,
           imageVariants: [...visualImageVariants.vectorTo3dIcons],
@@ -266,6 +414,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "云平台",
           description: "面向 VR 与 3D 教学资源的云端资源库界面。",
+          meta: "资源平台 · Web",
+          tags: ["Cloud Platform", "Resource Library", "UI System"],
+          categoryIds: ["product-systems", "visual-systems"],
           availability: "comingSoon",
           statusLabel: "暂不开放",
           imageSrc: visualMedia.cloudPlatform,
@@ -276,6 +427,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "游戏概念",
           description: "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
+          meta: "游戏概念 · AR/VR",
+          tags: ["Game UI", "Spatial UX", "Concept"],
+          categoryIds: ["xr-3d", "visual-systems"],
           availability: "comingSoon",
           statusLabel: "暂不开放",
           imageSrc: visualMedia.game,
@@ -286,6 +440,9 @@ const copy: Record<Locale, HomeCopy> = {
           title: "AR Airbnb",
           description:
             "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
+          meta: "住宿体验 · AR",
+          tags: ["AR UX", "Travel", "Spatial Interface"],
+          categoryIds: ["xr-3d", "visual-systems"],
           availability: "comingSoon",
           statusLabel: "暂不开放",
           imageSrc: visualMedia.arAirbnb,
@@ -315,24 +472,123 @@ const copy: Record<Locale, HomeCopy> = {
     email: "lijiaemin1993@gmail.com",
     copyEmail: "Copy email",
     copiedEmail: "Copied",
+    workIndex: {
+      label: "Work Index",
+      items: [
+        {
+          id: "all",
+          label: "All",
+          summary: "All selected projects.",
+          projects: [],
+        },
+        {
+          id: "zero-to-one",
+          label: "0→1 Products",
+          summary:
+            "Product structures, core flows, and long-term use patterns built from real needs.",
+          projects: [
+            {
+              title: "Selfly",
+              description: "An independently built product for reflection and self-discovery.",
+              href: "/projects/selfly",
+            },
+            {
+              title: "Personal Tools",
+              description: "Small Web tools designed around my daily workflow.",
+              href: "/projects/personal-tools",
+            },
+          ],
+        },
+        {
+          id: "product-systems",
+          label: "Product Systems",
+          summary:
+            "Tool, platform, and design-system-oriented work focused on usability and iteration.",
+          projects: [
+            {
+              title: "Model Editor",
+              description: "Editing materials, colors, and model structure for 3D assets.",
+              href: "/projects/model-editor",
+            },
+            {
+              title: "Personal Tools",
+              description: "Lightweight browser tools and reusable workflow interfaces.",
+              href: "/projects/personal-tools",
+            },
+            {
+              title: "Sync Space",
+              description:
+                "Cross-platform classroom collaboration across headset, tablet, and web.",
+            },
+          ],
+        },
+        {
+          id: "xr-3d",
+          label: "XR / 3D",
+          summary: "3D content, VR training, and multi-device immersive learning experiences.",
+          projects: [
+            {
+              title: "VR Education & Training",
+              description: "VR training for industrial equipment and animal medicine scenarios.",
+              href: "/projects/vr-education",
+            },
+            {
+              title: "Model Editor",
+              description: "A model-editing tool for 3D courseware production.",
+              href: "/projects/model-editor",
+            },
+            {
+              title: "Sync Space",
+              description: "A cross-platform VR classroom collaboration concept.",
+            },
+          ],
+        },
+        {
+          id: "visual-systems",
+          label: "Visual Systems",
+          summary:
+            "Icons, visual systems, and interface expression for complex product content.",
+          projects: [
+            {
+              title: "3D Engine App Icon Design",
+              description: "Translating a complex engine model into a software entry icon.",
+              href: "/projects/engine-icon",
+            },
+            {
+              title: "Cloud Platform",
+              description: "Cloud resource library UI for VR and 3D training assets.",
+            },
+            {
+              title: "New Visual Work",
+              description: "A visual work preview and expression study.",
+              href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+            },
+          ],
+        },
+      ],
+    },
     currentlyBuilding: {
       label: "0→1 Builds",
       items: [
         {
           title: "Selfly",
           description: "A journal for reflection and self-discovery",
-          meta: "iOS",
-          iconSrc: "/selfly-icon.webp",
-          iconAlt: "Selfly",
+          meta: "Independent Product · iOS",
+          tags: ["0→1 Product", "iOS UX", "Interaction Design"],
+          categoryIds: ["zero-to-one"],
           href: "/projects/selfly",
+          imageSrc: buildingMedia.selfly,
+          frameColor: "#fff8ec",
         },
         {
           title: "Personal Tools",
           description: "Small browser tools I built for my own daily workflow",
-          meta: "Web",
-          iconSrc: "/office-tools-icon.svg",
-          iconAlt: "Personal Tools",
+          meta: "Self-directed Tools · Web",
+          tags: ["Web Tools", "Workflow Design", "Product Systems"],
+          categoryIds: ["zero-to-one", "product-systems"],
           href: "/projects/personal-tools",
+          imageSrc: buildingMedia.personalTools,
+          frameColor: "#f6f6f6",
         },
       ],
     },
@@ -343,6 +599,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Model Editor",
           description: "Edit materials, colors, and model structure",
+          meta: "3D Courseware Tool · Web",
+          tags: ["Product Design", "3D Tools", "Design Systems"],
+          categoryIds: ["product-systems", "xr-3d"],
           href: "/projects/model-editor",
           videoSrc: toolVideos.model,
           posterSrc: toolPosters.model,
@@ -351,6 +610,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "XR Interactive Script Engine",
           description: "Browse and preview model assets",
+          meta: "XR Tool · Web",
+          tags: ["Asset Browser", "XR Workflow", "Interaction"],
+          categoryIds: ["product-systems", "xr-3d"],
           availability: "comingSoon",
           statusLabel: "Coming soon",
           videoSrc: toolVideos.xrScript,
@@ -360,6 +622,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "XR Courseware",
           description: "3D content playback and course demos",
+          meta: "Course Tool · XR",
+          tags: ["Courseware", "3D Playback", "Teaching"],
+          categoryIds: ["product-systems", "xr-3d"],
           availability: "comingSoon",
           statusLabel: "Coming soon",
           videoSrc: toolVideos.ppt,
@@ -369,6 +634,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Sync Space",
           description: "Cross-platform VR classroom: headset learning, tablet control, web resource hub",
+          meta: "Cross-device System · XR",
+          tags: ["Cross-device", "VR Classroom", "Product System"],
+          categoryIds: ["product-systems", "xr-3d"],
           availability: "comingSoon",
           statusLabel: "Coming soon",
           videoSrc: toolVideos.syncSpace,
@@ -385,6 +653,9 @@ const copy: Record<Locale, HomeCopy> = {
           title: "VR Education & Training",
           description:
             "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          meta: "VR Simulation · XR",
+          tags: ["VR Simulation", "Training UX", "Visual System"],
+          categoryIds: ["xr-3d", "visual-systems"],
           href: "/projects/vr-education",
           videoSrc: visualMedia.manufacturing,
           posterSrc: visualPosters.manufacturing,
@@ -393,6 +664,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "New Visual Work",
           description: "Temporary visual work preview.",
+          meta: "Visual Exploration · Prototype",
+          tags: ["Visual Design", "Prototype", "Interface"],
+          categoryIds: ["visual-systems"],
           href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
           imageSrc: visualMedia.newVisualWork,
           framed: false,
@@ -401,6 +675,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "3D Engine App Icon Design",
           description: "Translating a complex engine model into a recognizable app icon.",
+          meta: "Icon System · 3D",
+          tags: ["Icon Design", "3D Rendering", "Visual System"],
+          categoryIds: ["visual-systems", "xr-3d"],
           href: "/projects/engine-icon",
           imageSrc: visualMedia.vectorTo3dIcons,
           imageVariants: [...visualImageVariants.vectorTo3dIcons],
@@ -410,6 +687,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Cloud Platform",
           description: "Cloud resource library UI for VR and 3D training assets.",
+          meta: "Resource Platform · Web",
+          tags: ["Cloud Platform", "Resource Library", "UI System"],
+          categoryIds: ["product-systems", "visual-systems"],
           availability: "comingSoon",
           statusLabel: "Coming soon",
           imageSrc: visualMedia.cloudPlatform,
@@ -420,6 +700,9 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Game Concept",
           description: "UI visual design for a VR/AR desk-device experience game.",
+          meta: "Game Concept · AR/VR",
+          tags: ["Game UI", "Spatial UX", "Concept"],
+          categoryIds: ["xr-3d", "visual-systems"],
           availability: "comingSoon",
           statusLabel: "Coming soon",
           imageSrc: visualMedia.game,
@@ -430,6 +713,9 @@ const copy: Record<Locale, HomeCopy> = {
           title: "AR Airbnb",
           description:
             "AR experience design that blends digital information into real lodging spaces.",
+          meta: "Lodging Experience · AR",
+          tags: ["AR UX", "Travel", "Spatial Interface"],
+          categoryIds: ["xr-3d", "visual-systems"],
           availability: "comingSoon",
           statusLabel: "Coming soon",
           imageSrc: visualMedia.arAirbnb,

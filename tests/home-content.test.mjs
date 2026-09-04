@@ -35,10 +35,36 @@ const mobileLetterHoverStyles =
   envelopeStyles.match(/@media \(max-width: 809px\) \{[\s\S]*?\.envelope:hover \.letter,\n  \.envelope:focus-within \.letter \{([\s\S]*?)\n  \}/)?.[1] ?? "";
 const letterStyles =
   envelopeStyles.match(/\.letter \{([\s\S]*?)\n\}/)?.[1] ?? "";
+const zhVisualProjectsBlock =
+  copy.match(/visualProjects: \{[\s\S]*?caseStudies:/)?.[0]?.replace(/\s+/g, "") ?? "";
+const visualProjectsBlocks = copy.match(
+  /visualProjects: \{[\s\S]*?caseStudies:/g,
+) ?? [];
 
 const requiredCopy = [
+  "Work Index",
+  "All",
+  "0→1 Products",
+  "Product Systems",
+  "XR / 3D",
+  "Visual Systems",
+  "作品索引",
+  "全部",
+  "0→1 产品",
+  "产品系统",
+  "XR / 3D",
+  "视觉系统",
   "0→1 Builds",
   "Visual Works",
+  "/images/selfly0/hero-750w.webp",
+  "/images/tools/personal-tools-cover.png",
+  "Independent Product · iOS",
+  "Self-directed Tools · Web",
+  "0→1 Product",
+  "iOS UX",
+  "Workflow Design",
+  "Product Systems",
+  "VR Simulation · XR",
   "VR 教育与实训",
   "/videos/visual/home-vr-education.mp4",
   "New Visual Work",
@@ -76,14 +102,14 @@ assert.ok(
 );
 
 assert.ok(
-    searchableCopy.indexOf("VR教育与实训") <
-    searchableCopy.indexOf("NewVisualWork") &&
-    searchableCopy.indexOf("NewVisualWork") <
-      searchableCopy.indexOf("3DEngineAppIconDesign") &&
-    searchableCopy.indexOf("3DEngineAppIconDesign") <
-      searchableCopy.indexOf("云平台") &&
-    searchableCopy.indexOf("云平台") <
-      searchableCopy.indexOf("游戏概念"),
+    zhVisualProjectsBlock.indexOf("VR教育与实训") <
+    zhVisualProjectsBlock.indexOf("NewVisualWork") &&
+    zhVisualProjectsBlock.indexOf("NewVisualWork") <
+      zhVisualProjectsBlock.indexOf("3DEngineAppIconDesign") &&
+    zhVisualProjectsBlock.indexOf("3DEngineAppIconDesign") <
+      zhVisualProjectsBlock.indexOf("云平台") &&
+    zhVisualProjectsBlock.indexOf("云平台") <
+      zhVisualProjectsBlock.indexOf("游戏概念"),
   "Cloud Platform should appear as the fourth Visual Works item before Game Concept",
 );
 
@@ -97,12 +123,16 @@ assert.ok(
   "New Visual Work should opt into its natural screenshot ratio",
 );
 
-const newVisualWorkEntries = copy.match(
-  /title: "New Visual Work",[\s\S]*?preserveImageRatio: true,/g,
-) ?? [];
-const vectorTo3dEntries = copy.match(
-  /title: "3D Engine App Icon Design",[\s\S]*?preserveImageRatio: true,/g,
-) ?? [];
+const newVisualWorkEntries = visualProjectsBlocks.flatMap((block) =>
+  block.match(
+    /title: "New Visual Work",[\s\S]*?imageSrc: visualMedia\.newVisualWork,[\s\S]*?preserveImageRatio: true,/g,
+  ) ?? [],
+);
+const vectorTo3dEntries = visualProjectsBlocks.flatMap((block) =>
+  block.match(
+    /title: "3D Engine App Icon Design",[\s\S]*?imageSrc: visualMedia\.vectorTo3dIcons,[\s\S]*?preserveImageRatio: true,/g,
+  ) ?? [],
+);
 
 assert.equal(
   newVisualWorkEntries.length,
@@ -138,9 +168,11 @@ for (const entry of vectorTo3dEntries) {
   );
 }
 
-const cloudPlatformEntries = copy.match(
-  /title: "(?:云平台|Cloud Platform)",[\s\S]*?preserveImageRatio: true,/g,
-) ?? [];
+const cloudPlatformEntries = visualProjectsBlocks.flatMap((block) =>
+  block.match(
+    /title: "(?:云平台|Cloud Platform)",[\s\S]*?imageSrc: visualMedia\.cloudPlatform,[\s\S]*?preserveImageRatio: true,/g,
+  ) ?? [],
+);
 
 assert.equal(
   cloudPlatformEntries.length,
@@ -164,15 +196,88 @@ const homePage = await readFile(
   "utf8",
 );
 assert.ok(
-  homePage.replace(/\s+/g, "").includes("copy.visualProjects.items") &&
-    homePage.replace(/\s+/g, "").includes("initialCount={3}"),
-  "Visual Works should show the first three available items before Load more",
+  homePage.replace(/\s+/g, "").includes("<WorkIndex") &&
+    homePage.replace(/\s+/g, "").includes("copy.workIndex") &&
+    homePage.replace(/\s+/g, "").includes("items={copy.workIndex.items}") &&
+    homePage.replace(/\s+/g, "").includes("buildingProjects={copy.currentlyBuilding}") &&
+    homePage.replace(/\s+/g, "").includes("toolProjects={copy.toolProjects}") &&
+    homePage.replace(/\s+/g, "").includes("visualProjects={copy.visualProjects}"),
+  "Home page should render a Work Index tab surface before project sections",
+);
+
+assert.ok(
+  !homePage.replace(/\s+/g, "").includes('aria-label={copy.currentlyBuilding.label}') &&
+    !homePage.replace(/\s+/g, "").includes('aria-label={copy.toolProjects.label}') &&
+    !homePage.replace(/\s+/g, "").includes('aria-label={copy.visualProjects.label}'),
+  "Project sections should be rendered through the Work Index filter instead of duplicated below it",
+);
+
+const workIndexComponent = await readFile(
+  new URL("../src/app/[locale]/WorkIndex.tsx", import.meta.url),
+  "utf8",
+);
+const searchableWorkIndexComponent = workIndexComponent.replace(/\s+/g, "");
+
+assert.ok(
+  searchableWorkIndexComponent.includes('"useclient"') &&
+    searchableWorkIndexComponent.includes('role="tablist"') &&
+    searchableWorkIndexComponent.includes('role="tab"') &&
+    searchableWorkIndexComponent.includes('aria-selected={activeId===item.id}') &&
+    searchableWorkIndexComponent.includes("onClick={()=>setActiveId(item.id)}") &&
+    searchableWorkIndexComponent.includes("<ToolProjectList") &&
+    /activeId===["']all["']/.test(searchableWorkIndexComponent) &&
+    searchableWorkIndexComponent.includes("categoryIds?.includes(activeId)"),
+  "Work Index should filter and render the project cards for the active category",
+);
+
+assert.ok(
+  !searchableWorkIndexComponent.includes("activeItem.summary") &&
+    !searchableWorkIndexComponent.includes("workIndexSummary") &&
+    searchableWorkIndexComponent.includes('role="tabpanel"') &&
+    !searchableWorkIndexComponent.includes("activeItem.projects.map") &&
+    !searchableWorkIndexComponent.includes("WorkIndexProjectRow"),
+  "Work Index should not render explanatory copy or text-only project rows beneath the tabs",
 );
 
 assert.ok(
   searchableToolProjectList.includes("item.preserveImageRatio?styles.toolVideoNaturalRatio:undefined") &&
     searchableToolProjectList.includes("[styles.toolVideo,"),
   "Tool project images should apply a per-item natural-ratio class",
+);
+
+assert.ok(
+  searchableToolProjectList.includes("item.meta") &&
+    searchableToolProjectList.includes("item.description") &&
+    searchableToolProjectList.includes("item.tags?.length") &&
+    searchableToolProjectList.includes("item.tags.map") &&
+    searchableToolProjectList.includes("styles.toolCardSurface") &&
+    searchableToolProjectList.includes("styles.toolMeta") &&
+    searchableToolProjectList.includes("styles.toolDescription") &&
+    searchableToolProjectList.includes("styles.toolTag"),
+  "Project-card captions should render title, meta, description, and tags",
+);
+
+assert.ok(
+  searchableToolProjectList.includes("constcardBody=(<>") &&
+    searchableToolProjectList.includes("<divclassName={styles.toolCaption}>") &&
+    searchableToolProjectList.includes("constcardContent=(") &&
+    searchableToolProjectList.includes("className={styles.toolCardSurface}") &&
+    searchableToolProjectList.includes("className={`${styles.toolCardSurface}${styles.toolCardLinkSurface}`}"),
+  "Project card media and caption should live inside one full-card surface",
+);
+
+assert.ok(
+  searchableHomeStyles.includes(".toolCardSurface{") &&
+    searchableHomeStyles.includes("overflow:hidden") &&
+    searchableHomeStyles.includes("border:1pxsolidvar(--border)") &&
+    searchableHomeStyles.includes(".toolCardLinkSurface:hover.toolTitle"),
+  "Project card surface should visually contain media, caption, and hover state",
+);
+
+assert.ok(
+  !homePage.replace(/\s+/g, "").includes("showCaption={false}") &&
+    searchableToolProjectList.includes("showCaption=true"),
+  "Visual Works should use the same structured caption treatment as other project cards",
 );
 
 assert.ok(

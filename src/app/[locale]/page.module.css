@@ -176,6 +176,71 @@
   padding-top: 2rem;
 }
 
+.workIndex {
+  padding-top: 2rem;
+}
+
+.workIndexTabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 0 1.25rem;
+  overflow-x: auto;
+  padding: 0 0 0.35rem;
+  scrollbar-width: none;
+}
+
+.workIndexTabs::-webkit-scrollbar {
+  display: none;
+}
+
+.workIndexTab {
+  flex: 0 0 auto;
+  min-height: 2rem;
+  padding: 0.3rem 0;
+  border: none;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--fs-caption);
+  line-height: 1.35;
+  letter-spacing: 0;
+  white-space: nowrap;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.workIndexTab:focus {
+  outline: none;
+}
+
+.workIndexTab:focus-visible {
+  outline: 1px solid var(--text-primary);
+  outline-offset: 0.25rem;
+}
+
+.workIndexTab + .workIndexTab {
+  margin-left: 0.75rem;
+}
+
+.workIndexTab:hover,
+.workIndexTab[aria-selected="true"] {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.workIndexPanel {
+  padding-top: 2.25rem;
+}
+
+.workIndexList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 /* Match hero → first section rhythm between content sections */
 .section + .section {
   padding-top: calc(clamp(4rem, 12vw, 9rem) + 2rem);
@@ -194,66 +259,7 @@
 .buildingList {
   display: flex;
   flex-direction: column;
-}
-
-.buildingItem {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.25rem 0;
-  text-decoration: none;
-  color: inherit;
-}
-
-.buildingItem + .buildingItem {
-  border-top: 1px solid var(--border);
-}
-
-.buildingItemLink:hover .buildingTitle {
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
-
-.buildingIcon {
-  flex-shrink: 0;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 1.125rem;
-  border: 1px solid var(--border);
-  object-fit: contain;
-  object-position: center;
-  background: #fff8ec;
-}
-
-.buildingText {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  min-width: 0;
-  padding-top: 0.35rem;
-}
-
-.buildingTitle {
-  margin: 0;
-  font-size: var(--fs-body);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1.3;
-  color: var(--text-primary);
-}
-
-.buildingDescription {
-  margin: 0;
-  font-size: var(--fs-caption);
-  line-height: 1.45;
-  color: var(--text-secondary);
-}
-
-.buildingMeta {
-  margin: 0.15rem 0 0;
-  font-size: var(--fs-caption);
-  line-height: 1.4;
-  color: var(--text-muted);
+  gap: 3rem;
 }
 
 .toolList {
@@ -289,20 +295,47 @@
 .toolCard {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
 }
 
-.toolCardLink {
-  display: block;
+.toolCardSurface {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: #fff;
   color: inherit;
   text-decoration: none;
+  transition:
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.toolCardLinkSurface:hover,
+.toolCardLinkSurface:focus-visible {
+  border-color: rgb(0 0 0 / 0.18);
+}
+
+.toolCardLinkSurface:hover .toolTitle,
+.toolCardLinkSurface:focus-visible .toolTitle {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.toolCardLinkSurface:focus {
+  outline: none;
+}
+
+.toolCardLinkSurface:focus-visible {
+  outline: 1px solid var(--text-primary);
+  outline-offset: 0.25rem;
 }
 
 .toolFrame {
   position: relative;
   overflow: hidden;
-  border-radius: 1.25rem;
-  border: 1px solid var(--border);
+  border-radius: 1.25rem 1.25rem 0 0;
+  border: none;
   background: #fff;
   /* Top slightly larger than sides; flush to bottom */
   padding: 1.5rem 1.125rem 0;
@@ -312,7 +345,7 @@
   border: none;
   background: transparent;
   padding: 0;
-  border-radius: 0.75rem;
+  border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .toolFrameBare.toolFrameNaturalRatio {
@@ -332,7 +365,7 @@
   aspect-ratio: 3 / 2;
   height: auto;
   object-fit: cover;
-  border-radius: 0.75rem;
+  border-radius: 1.25rem 1.25rem 0 0;
   background: #fff;
 }
 
@@ -377,8 +410,9 @@
 .toolCaption {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-  padding: 0 0.125rem 0 0.25rem;
+  gap: 0.35rem;
+  padding: 1rem 1.125rem 1.125rem;
+  border-top: 1px solid var(--border);
 }
 
 .toolTitle {
@@ -389,7 +423,39 @@
   margin: 0;
   font-size: var(--fs-label);
   line-height: 1.45;
+  color: var(--text-primary);
+}
+
+.toolMeta {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--fs-caption);
+  line-height: 1.4;
+}
+
+.toolDescription {
+  margin: 0;
   color: var(--text-secondary);
+  font-size: var(--fs-caption);
+  line-height: 1.55;
+}
+
+.toolTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toolTag {
+  padding: 0.18rem 0.45rem 0.2rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: var(--fs-caption);
+  line-height: 1.25;
 }
 
 @media (hover: none) {
@@ -425,6 +491,11 @@
   .hero {
     padding-top: 14rem;
     padding-bottom: 8rem;
+  }
+
+  .workIndexTabs {
+    margin-right: -3rem;
+    padding-right: 3rem;
   }
 
   .lead,

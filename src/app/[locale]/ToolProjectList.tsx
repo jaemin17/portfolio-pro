@@ -73,20 +73,46 @@ function ToolProjectCard({
     ) : null;
 
   const cardBody = (
-    <div
-      className={frameClass}
-      style={
-        framed && item.frameColor
-          ? { backgroundColor: item.frameColor }
-          : undefined
-      }
-    >
-      {media}
-      {unavailable ? (
-        <div className={styles.toolUnavailableOverlay} aria-hidden="true">
-          <span className={styles.toolUnavailableText}>{item.statusLabel}</span>
+    <>
+      <div
+        className={frameClass}
+        style={
+          framed && item.frameColor
+            ? { backgroundColor: item.frameColor }
+            : undefined
+        }
+      >
+        {media}
+        {unavailable ? (
+          <div className={styles.toolUnavailableOverlay} aria-hidden="true">
+            <span className={styles.toolUnavailableText}>{item.statusLabel}</span>
+          </div>
+        ) : null}
+      </div>
+      {showCaption ? (
+        <div className={styles.toolCaption}>
+          <p className={styles.toolTitle}>
+            <span>{item.title}</span>
+          </p>
+          {item.meta ? <p className={styles.toolMeta}>{item.meta}</p> : null}
+          <p className={styles.toolDescription}>{item.description}</p>
+          {item.tags?.length ? (
+            <ul className={styles.toolTags} aria-label={`${item.title} tags`}>
+              {item.tags.map((tag) => (
+                <li key={tag} className={styles.toolTag}>
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
       ) : null}
+    </>
+  );
+
+  const cardContent = (
+    <div className={styles.toolCardSurface}>
+      {cardBody}
     </div>
   );
 
@@ -96,12 +122,15 @@ function ToolProjectCard({
       aria-label={unavailableLabel}
     >
       {!unavailable && item.href?.startsWith("/") ? (
-        <Link href={localePath(locale, item.href)} className={styles.toolCardLink}>
+        <Link
+          href={localePath(locale, item.href)}
+          className={`${styles.toolCardSurface} ${styles.toolCardLinkSurface}`}
+        >
           {cardBody}
         </Link>
       ) : !unavailable && item.href ? (
         <a
-          className={styles.toolCardLink}
+          className={`${styles.toolCardSurface} ${styles.toolCardLinkSurface}`}
           href={item.href}
           target="_blank"
           rel="noopener noreferrer"
@@ -109,15 +138,8 @@ function ToolProjectCard({
           {cardBody}
         </a>
       ) : (
-        cardBody
+        cardContent
       )}
-      {showCaption ? (
-        <div className={styles.toolCaption}>
-          <p className={styles.toolTitle}>
-            <span>{item.title}</span>
-          </p>
-        </div>
-      ) : null}
     </article>
   );
 }

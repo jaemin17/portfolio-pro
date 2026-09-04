@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CopyEmail } from "@/components/CopyEmail";
 import { EnvelopeMail } from "@/components/EnvelopeMail";
@@ -6,85 +5,13 @@ import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { RevealOnView } from "@/components/RevealOnView";
 import { SnapshotMarquee } from "@/components/SnapshotMarquee";
 import { isLocale, type Locale } from "@/i18n/config";
-import {
-  getHomeCopy,
-  type CurrentlyBuildingItem,
-} from "@/i18n/copy";
-import { localePath } from "@/i18n/paths";
-import { ToolProjectList } from "./ToolProjectList";
+import { getHomeCopy } from "@/i18n/copy";
+import { WorkIndex } from "./WorkIndex";
 import styles from "./page.module.css";
 
 type HomePageProps = {
   params: Promise<{ locale: string }>;
 };
-
-const revealDelays = [
-  styles.revealDelay1,
-  styles.revealDelay2,
-  styles.revealDelay3,
-  styles.revealDelay4,
-] as const;
-
-function assetSrc(path: string): string {
-  return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
-}
-
-function BuildingItem({
-  item,
-  locale,
-  className,
-}: {
-  item: CurrentlyBuildingItem;
-  locale: Locale;
-  className?: string;
-}) {
-  const classes = [styles.buildingItem, className].filter(Boolean).join(" ");
-
-  const content = (
-    <>
-      <img
-        className={styles.buildingIcon}
-        src={assetSrc(item.iconSrc)}
-        alt={item.iconAlt}
-        width={72}
-        height={72}
-        loading="lazy"
-        decoding="async"
-      />
-      <div className={styles.buildingText}>
-        <p className={styles.buildingTitle}>{item.title}</p>
-        <p className={styles.buildingDescription}>{item.description}</p>
-        <p className={styles.buildingMeta}>{item.meta}</p>
-      </div>
-    </>
-  );
-
-  if (item.href?.startsWith("/")) {
-    return (
-      <Link
-        className={`${classes} ${styles.buildingItemLink}`}
-        href={localePath(locale, item.href)}
-      >
-        {content}
-      </Link>
-    );
-  }
-
-  if (item.href) {
-    return (
-      <a
-        className={`${classes} ${styles.buildingItemLink}`}
-        href={item.href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {content}
-      </a>
-    );
-  }
-
-  return <div className={classes}>{content}</div>;
-}
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale: localeParam } = await params;
@@ -118,65 +45,17 @@ export default async function HomePage({ params }: HomePageProps) {
         </section>
 
         <div className={styles.contentShell}>
-          <section className={styles.section} aria-label={copy.currentlyBuilding.label}>
-            <RevealOnView className={styles.scrollReveal}>
-              <h2
-                className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
-              >
-                {copy.currentlyBuilding.label}
-              </h2>
-              <div className={styles.buildingList}>
-                {copy.currentlyBuilding.items.map((item, index) => (
-                  <BuildingItem
-                    key={item.title}
-                    item={item}
-                    locale={locale}
-                    className={`${styles.revealItem} ${revealDelays[index + 1] ?? styles.revealDelay4}`}
-                  />
-                ))}
-              </div>
-            </RevealOnView>
-          </section>
-
-          <section
-            className={styles.section}
-            aria-label={copy.toolProjects.label}
-          >
-            <RevealOnView className={styles.scrollReveal}>
-              <h2
-                className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
-              >
-                {copy.toolProjects.label}
-              </h2>
-              <ToolProjectList
-                className={`${styles.toolList} ${styles.revealItem} ${styles.revealDelay2}`}
-                items={copy.toolProjects.items}
-                locale={locale}
-                loadMoreLabel={copy.toolProjects.loadMore}
-              />
-            </RevealOnView>
-          </section>
-
-          <section
-            className={styles.section}
-            aria-label={copy.visualProjects.label}
-          >
-            <RevealOnView className={styles.scrollReveal}>
-              <h2
-                className={`${styles.sectionLabel} ${styles.revealItem} ${styles.revealDelay1}`}
-              >
-                {copy.visualProjects.label}
-              </h2>
-              <ToolProjectList
-                className={`${styles.visualList} ${styles.revealItem} ${styles.revealDelay2}`}
-                items={copy.visualProjects.items}
-                locale={locale}
-                loadMoreLabel={copy.visualProjects.loadMore}
-                initialCount={3}
-                showCaption={false}
-              />
-            </RevealOnView>
-          </section>
+          <RevealOnView className={styles.scrollReveal}>
+            <WorkIndex
+              className={`${styles.workIndex} ${styles.revealItem} ${styles.revealDelay1}`}
+              label={copy.workIndex.label}
+              items={copy.workIndex.items}
+              buildingProjects={copy.currentlyBuilding}
+              toolProjects={copy.toolProjects}
+              visualProjects={copy.visualProjects}
+              locale={locale}
+            />
+          </RevealOnView>
 
           <SnapshotMarquee items={copy.snapshots.items} />
 
