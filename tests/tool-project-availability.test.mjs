@@ -66,7 +66,7 @@ assert.ok(
     component.includes("toolCardUnavailable") &&
     component.includes("aria-label") &&
     component.includes("toolUnavailableOverlay") &&
-    component.includes("{media}\n      {unavailable ? (") &&
+    component.includes("{media}\n        {unavailable ? (") &&
     !component.includes("toolStatus") &&
     !component.includes("toolUnavailableHint") &&
     !component.includes("toolStatusDescription") &&

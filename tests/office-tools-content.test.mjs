@@ -17,7 +17,7 @@ const redirect = readFileSync(
 
 assert.match(copy, /title:\s*"Personal Tools"/);
 assert.match(copy, /href:\s*"\/projects\/personal-tools"/);
-assert.match(copy, /iconSrc:\s*"\/office-tools-icon\.svg"/);
+assert.match(copy, /imageSrc:\s*buildingMedia\.personalTools/);
 assert.doesNotMatch(copy, /href:\s*"https:\/\/jaemin17\.github\.io\/sticky-notes\/"/);
 
 assert.match(page, /Sticky Notes/);
