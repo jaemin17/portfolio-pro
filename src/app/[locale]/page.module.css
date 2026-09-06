@@ -183,10 +183,10 @@
 
 .workIndexTabs {
   display: flex;
-  gap: 0.5rem;
-  margin: 0 0 1.25rem;
+  gap: 0.625rem;
+  margin: 0;
   overflow-x: auto;
-  padding: 0 0 0.35rem;
+  padding: 0 0 0.45rem;
   scrollbar-width: none;
 }
 
@@ -196,19 +196,20 @@
 
 .workIndexTab {
   flex: 0 0 auto;
-  min-height: 2rem;
-  padding: 0.3rem 0;
-  border: none;
-  border-bottom: 1px solid transparent;
+  min-height: 2.25rem;
+  padding: 0.45rem 0.875rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
   background: transparent;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   cursor: pointer;
   font: inherit;
-  font-size: var(--fs-caption);
+  font-size: var(--fs-label);
   line-height: 1.35;
   letter-spacing: 0;
   white-space: nowrap;
   transition:
+    background-color 0.15s ease,
     border-color 0.15s ease,
     color 0.15s ease;
 }
@@ -223,17 +224,31 @@
 }
 
 .workIndexTab + .workIndexTab {
-  margin-left: 0.75rem;
+  margin-left: 0;
 }
 
-.workIndexTab:hover,
-.workIndexTab[aria-selected="true"] {
-  border-color: var(--text-primary);
+.workIndexTab:hover {
+  border-color: rgb(0 0 0 / 0.18);
   color: var(--text-primary);
 }
 
+.workIndexTab[aria-selected="true"] {
+  border-color: var(--text-primary);
+  background: var(--text-primary);
+  color: #fff;
+}
+
+.workIndexRule {
+  width: 100vw;
+  height: 1px;
+  margin: 1.25rem 0 3.25rem;
+  margin-left: calc(50% - 50vw);
+  background: var(--border);
+  pointer-events: none;
+}
+
 .workIndexPanel {
-  padding-top: 2.25rem;
+  padding-top: 0;
 }
 
 .workIndexList {

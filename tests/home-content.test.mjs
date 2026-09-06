@@ -249,6 +249,7 @@ assert.ok(
   !searchableWorkIndexComponent.includes("activeItem.summary") &&
     !searchableWorkIndexComponent.includes("workIndexSummary") &&
     searchableWorkIndexComponent.includes('role="tabpanel"') &&
+    searchableWorkIndexComponent.includes("styles.workIndexRule") &&
     !searchableWorkIndexComponent.includes("activeItem.projects.map") &&
     !searchableWorkIndexComponent.includes("WorkIndexProjectRow") &&
     !searchableWorkIndexComponent.includes("<h2") &&
@@ -275,6 +276,23 @@ assert.ok(
     searchableHomeStyles.includes("@media(min-width:1200px)") &&
     searchableHomeStyles.includes(".workIndexList{grid-template-columns:1fr1fr1fr;"),
   "Home should use the wide page shell, center the intro, and show two then three work-card columns as the screen widens",
+);
+
+assert.ok(
+  /\.workIndexTab\{[^}]*border:1pxsolidvar\(--border\)/.test(searchableHomeStyles) &&
+    /\.workIndexTab\{[^}]*border-radius:999px/.test(searchableHomeStyles) &&
+    /\.workIndexTab\{[^}]*background:transparent/.test(searchableHomeStyles) &&
+    !/\.workIndexTab:hover\{[^}]*background:/.test(searchableHomeStyles) &&
+    /\.workIndexTab\{[^}]*font-size:var\(--fs-label\)/.test(searchableHomeStyles) &&
+    /\.workIndexTab\{[^}]*color:var\(--text-secondary\)/.test(searchableHomeStyles) &&
+    /\.workIndexTab:hover\{[^}]*color:var\(--text-primary\)/.test(searchableHomeStyles) &&
+    /\.workIndexTab\[aria-selected="true"\]\{[^}]*background:var\(--text-primary\)/.test(searchableHomeStyles) &&
+    /\.workIndexTab\[aria-selected="true"\]\{[^}]*color:#fff/.test(searchableHomeStyles) &&
+    searchableHomeStyles.includes(".workIndexRule{") &&
+    searchableHomeStyles.includes("width:100vw") &&
+    searchableHomeStyles.includes("margin-left:calc(50%-50vw)") &&
+    /\.workIndexRule\{[^}]*background:var\(--border\)/.test(searchableHomeStyles),
+  "Work Index tabs should stay unfilled until selected, with label-size secondary-weight idle text",
 );
 
 assert.ok(

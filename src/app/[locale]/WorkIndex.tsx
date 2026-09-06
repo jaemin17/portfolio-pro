@@ -52,6 +52,7 @@ export function WorkIndex({
           </button>
         ))}
       </div>
+      <div className={styles.workIndexRule} aria-hidden="true" />
       <div className={styles.workIndexPanel} role="tabpanel">
         <ToolProjectList
           className={styles.workIndexList}
