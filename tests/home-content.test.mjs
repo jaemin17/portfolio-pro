@@ -21,6 +21,21 @@ const envelopeComponent = await readFile(
   new URL("../src/components/EnvelopeMail.tsx", import.meta.url),
   "utf8",
 );
+const globalStyles = await readFile(
+  new URL("../src/app/globals.css", import.meta.url),
+  "utf8",
+);
+const headerStyles = await readFile(
+  new URL("../src/components/SiteHeader.module.css", import.meta.url),
+  "utf8",
+);
+const aboutStyles = await readFile(
+  new URL("../src/app/[locale]/about/about.module.css", import.meta.url),
+  "utf8",
+);
+const searchableGlobalStyles = globalStyles.replace(/\s+/g, "");
+const searchableHeaderStyles = headerStyles.replace(/\s+/g, "");
+const searchableAboutStyles = aboutStyles.replace(/\s+/g, "");
 
 const searchableCopy = copy.replace(/\s+/g, "");
 const searchableToolProjectList = toolProjectList.replace(/\s+/g, "");
@@ -235,8 +250,45 @@ assert.ok(
     !searchableWorkIndexComponent.includes("workIndexSummary") &&
     searchableWorkIndexComponent.includes('role="tabpanel"') &&
     !searchableWorkIndexComponent.includes("activeItem.projects.map") &&
-    !searchableWorkIndexComponent.includes("WorkIndexProjectRow"),
-  "Work Index should not render explanatory copy or text-only project rows beneath the tabs",
+    !searchableWorkIndexComponent.includes("WorkIndexProjectRow") &&
+    !searchableWorkIndexComponent.includes("<h2") &&
+    !searchableWorkIndexComponent.includes("styles.sectionLabel"),
+  "Work Index should not render explanatory copy, a section heading, or text-only project rows beneath the tabs",
+);
+
+assert.ok(
+  searchableGlobalStyles.includes("--content-max:26rem;") &&
+    searchableGlobalStyles.includes("--page-max:26rem;") &&
+    searchableGlobalStyles.includes("@media(min-width:768px)") &&
+    searchableGlobalStyles.includes("--page-max:72rem;"),
+  "Desktop should widen the page shell to 72rem while keeping the 26rem reading measure",
+);
+
+assert.ok(
+  searchableHomeStyles.includes("width:min(var(--page-max),calc(100%-var(--main-gutter)*2))") &&
+    searchableHomeStyles.includes(".hero{") &&
+    /\.hero\{[^}]*max-width:var\(--content-max\)/.test(searchableHomeStyles) &&
+    /\.hero\{[^}]*margin:0auto/.test(searchableHomeStyles) &&
+    searchableHomeStyles.includes(".workIndexList{display:flex;flex-direction:column;") &&
+    searchableHomeStyles.includes("@media(min-width:768px)") &&
+    searchableHomeStyles.includes(".workIndexList{display:grid;grid-template-columns:1fr1fr;") &&
+    searchableHomeStyles.includes("@media(min-width:1200px)") &&
+    searchableHomeStyles.includes(".workIndexList{grid-template-columns:1fr1fr1fr;"),
+  "Home should use the wide page shell, center the intro, and show two then three work-card columns as the screen widens",
+);
+
+assert.ok(
+  searchableHeaderStyles.includes("justify-content:center") &&
+    searchableHeaderStyles.includes("width:max-content") &&
+    !searchableHeaderStyles.includes("justify-content:flex-start") &&
+    !searchableHeaderStyles.includes("width:min(var(--page-max),100%)"),
+  "Site header nav should stay a compact cluster centered on the screen",
+);
+
+assert.ok(
+  searchableAboutStyles.includes("width:min(var(--page-max),calc(100%-var(--main-gutter)*2))") &&
+    searchableAboutStyles.includes("max-width:var(--content-max)"),
+  "About should use the wide page shell while keeping intro copy at reading width",
 );
 
 assert.ok(

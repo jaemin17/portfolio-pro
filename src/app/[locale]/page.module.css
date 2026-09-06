@@ -22,14 +22,15 @@
   z-index: 1;
   box-sizing: border-box;
   --main-gutter: var(--page-gutter);
-  width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
+  width: min(var(--page-max), calc(100% - var(--main-gutter) * 2));
   margin: 0 auto;
   padding: 0 0 4rem;
 }
 
 .hero {
   /* 文字落在色带下方，与 Abhishek 一致 */
-  margin-bottom: 0;
+  max-width: var(--content-max);
+  margin: 0 auto;
   padding: clamp(8.5rem, 18vw, 13.5rem) 0 clamp(4rem, 12vw, 9rem);
 }
 
@@ -241,19 +242,29 @@
   gap: 3rem;
 }
 
+@media (min-width: 768px) {
+  .workIndexList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 1.5rem;
+    align-items: start;
+  }
+
+  .workIndexList .loadMore {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .workIndexList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* Match hero → first section rhythm between content sections */
 .section + .section {
   padding-top: calc(clamp(4rem, 12vw, 9rem) + 2rem);
-}
-
-.sectionLabel {
-  margin: 0 0 1rem;
-  font-size: var(--fs-caption);
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  word-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--text-secondary);
 }
 
 .buildingList {
@@ -485,7 +496,7 @@
 @media (max-width: 767px) {
   .main {
     --main-gutter: 3rem;
-    width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
+    width: min(var(--page-max), calc(100% - var(--main-gutter) * 2));
   }
 
   .hero {

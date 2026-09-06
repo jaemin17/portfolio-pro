@@ -38,7 +38,6 @@ export function WorkIndex({
 
   return (
     <section className={className} aria-label={label}>
-      <h2 className={styles.sectionLabel}>{label}</h2>
       <div className={styles.workIndexTabs} role="tablist" aria-label={label}>
         {items.map((item) => (
           <button

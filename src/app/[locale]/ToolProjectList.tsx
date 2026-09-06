@@ -65,7 +65,7 @@ function ToolProjectCard({
         srcSet={item.imageVariants
           ?.map((variant) => `${assetSrc(variant.src)} ${variant.width}w`)
           .join(", ")}
-        sizes={item.imageVariants ? "(max-width: 480px) 100vw, 416px" : undefined}
+        sizes={item.imageVariants ? "(max-width: 767px) 100vw, (max-width: 1199px) calc(50vw - 3rem), 368px" : undefined}
         alt={item.title}
         loading="lazy"
         decoding="async"

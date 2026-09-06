@@ -24,9 +24,15 @@
 
 .heroInner {
   box-sizing: border-box;
-  width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
+  width: min(var(--page-max), calc(100% - var(--main-gutter) * 2));
   margin: 0 auto;
   padding: clamp(8.5rem, 18vw, 13.5rem) 0 clamp(1rem, 3vw, 1.5rem);
+}
+
+.greeting,
+.tagline,
+.bioParagraph {
+  max-width: var(--content-max);
 }
 
 .heroInner > * {
@@ -87,7 +93,7 @@
   position: relative;
   z-index: 1;
   box-sizing: border-box;
-  width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
+  width: min(var(--page-max), calc(100% - var(--main-gutter) * 2));
   margin: 0 auto;
   padding: 0 0 5rem;
 }
@@ -194,6 +200,12 @@
   font-size: var(--fs-label);
   line-height: 1.6;
   color: rgb(0 0 0 / 40%);
+}
+
+.workSummary,
+.strengthDescription,
+.closing {
+  max-width: var(--content-max);
 }
 
 .workSummary {

@@ -17,7 +17,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: min(var(--content-max), 100%);
+  width: max-content;
+  max-width: 100%;
   pointer-events: auto;
 }
 

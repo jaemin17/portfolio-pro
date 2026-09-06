@@ -12,6 +12,7 @@
   --accent: #2b7cff;
   --accent-glow: rgba(43, 124, 255, 0.14);
   --content-max: 26rem;
+  --page-max: 26rem;
   --page-gutter: 1.875rem;
 
   /* Type scale — content (prefer these over raw px/rem) */
@@ -161,4 +162,10 @@ button {
 
 .buttonStickerOrange {
   background: #f6682f;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-max: 72rem;
+  }
 }

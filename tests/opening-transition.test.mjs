@@ -13,6 +13,10 @@ const heroBackgroundStyles = await readFile(
   new URL("../src/components/HeroShaderBackground.module.css", import.meta.url),
   "utf8",
 );
+const revealOnView = await readFile(
+  new URL("../src/components/RevealOnView.tsx", import.meta.url),
+  "utf8",
+);
 
 const searchableHomeStyles = homeStyles.replace(/\s+/g, "");
 const searchableGlobalStyles = globalStyles.replace(/\s+/g, "");
@@ -39,6 +43,17 @@ assert.ok(
     searchableHeroBackgroundStyles.includes("from{opacity:0;}") &&
     searchableHeroBackgroundStyles.includes("to{opacity:0.94;}"),
   "Hero shader cloud layer should fade in after its client chunk renders",
+);
+
+assert.ok(
+  /threshold:\s*0(?:\.0+)?(?:\s|,|\})/.test(revealOnView) ||
+    revealOnView.includes("threshold: 0.01"),
+  "RevealOnView should trigger when any part of a tall work section enters the viewport",
+);
+assert.doesNotMatch(
+  revealOnView,
+  /threshold:\s*0\.2/,
+  "A 20% intersection threshold cannot be met by a 2-column work block in a typical viewport",
 );
 
 console.log("Opening transition expectations passed");
