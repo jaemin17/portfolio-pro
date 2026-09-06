@@ -6,6 +6,10 @@ import type { CurrentlyBuilding, ToolProjects, WorkIndexItem } from "@/i18n/copy
 import { ToolProjectList } from "./ToolProjectList";
 import styles from "./page.module.css";
 
+function primaryCategoryId(project: { categoryIds?: string[] }) {
+  return project.categoryIds?.[0];
+}
+
 export function WorkIndex({
   label,
   items,
@@ -29,12 +33,25 @@ export function WorkIndex({
     ...toolProjects.items,
     ...visualProjects.items,
   ];
-  const visibleProjects =
+  const categories = items.filter((item) => item.id !== "all");
+  const groups =
     activeId === "all"
-      ? allProjects
-      : allProjects.filter((project) =>
-          project.categoryIds?.includes(activeId),
-        );
+      ? categories
+          .map((category) => ({
+            ...category,
+            projects: allProjects.filter(
+              (project) => primaryCategoryId(project) === category.id,
+            ),
+          }))
+          .filter((group) => group.projects.length > 0)
+      : [
+          {
+            ...(items.find((item) => item.id === activeId) ?? categories[0]),
+            projects: allProjects.filter((project) =>
+              project.categoryIds?.includes(activeId),
+            ),
+          },
+        ];
 
   return (
     <section className={className} aria-label={label}>
@@ -54,12 +71,19 @@ export function WorkIndex({
       </div>
       <div className={styles.workIndexRule} aria-hidden="true" />
       <div className={styles.workIndexPanel} role="tabpanel">
-        <ToolProjectList
-          className={styles.workIndexList}
-          items={visibleProjects}
-          locale={locale}
-          initialCount={visibleProjects.length}
-        />
+        {groups.map((group) => (
+          <div key={group.id} className={styles.workIndexGroup}>
+            {activeId === "all" ? (
+              <h2 className={styles.workIndexGroupHeading}>{group.label}</h2>
+            ) : null}
+            <ToolProjectList
+              className={styles.workIndexList}
+              items={group.projects}
+              locale={locale}
+              initialCount={group.projects.length}
+            />
+          </div>
+        ))}
       </div>
     </section>
   );

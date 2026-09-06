@@ -271,8 +271,11 @@ assert.ok(
     searchableWorkIndexComponent.includes("onClick={()=>setActiveId(item.id)}") &&
     searchableWorkIndexComponent.includes("<ToolProjectList") &&
     /activeId===["']all["']/.test(searchableWorkIndexComponent) &&
-    searchableWorkIndexComponent.includes("categoryIds?.includes(activeId)"),
-  "Work Index should filter and render the project cards for the active category",
+    searchableWorkIndexComponent.includes("categoryIds?.includes(activeId)") &&
+    searchableWorkIndexComponent.includes("categoryIds?.[0]") &&
+    searchableWorkIndexComponent.includes("styles.workIndexGroup") &&
+    searchableWorkIndexComponent.includes("styles.workIndexGroupHeading"),
+  "Work Index should group All by each card's first category and still filter other tabs by membership",
 );
 
 assert.ok(
@@ -282,9 +285,8 @@ assert.ok(
     searchableWorkIndexComponent.includes("styles.workIndexRule") &&
     !searchableWorkIndexComponent.includes("activeItem.projects.map") &&
     !searchableWorkIndexComponent.includes("WorkIndexProjectRow") &&
-    !searchableWorkIndexComponent.includes("<h2") &&
     !searchableWorkIndexComponent.includes("styles.sectionLabel"),
-  "Work Index should not render explanatory copy, a section heading, or text-only project rows beneath the tabs",
+  "Work Index should not render explanatory copy or text-only project rows beneath the tabs",
 );
 
 assert.ok(
@@ -304,7 +306,10 @@ assert.ok(
     searchableHomeStyles.includes("@media(min-width:768px)") &&
     searchableHomeStyles.includes(".workIndexList{display:grid;grid-template-columns:1fr1fr;") &&
     searchableHomeStyles.includes("@media(min-width:1200px)") &&
-    searchableHomeStyles.includes(".workIndexList{grid-template-columns:1fr1fr1fr;"),
+    searchableHomeStyles.includes(".workIndexList{grid-template-columns:1fr1fr1fr;gap:3rem;") &&
+    searchableHomeStyles.includes(".workIndexGroupHeading{") &&
+    /\.workIndexGroupHeading\{[^}]*font-size:var\(--fs-title\)/.test(searchableHomeStyles) &&
+    /\.workIndexGroupHeading\{[^}]*color:var\(--text-secondary\)/.test(searchableHomeStyles),
   "Home should use the wide page shell, center the intro, and show two then three work-card columns as the screen widens",
 );
 
