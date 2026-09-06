@@ -73,8 +73,15 @@ const requiredCopy = [
   "Visual Works",
   "/images/selfly0/hero-750w.webp",
   "/images/tools/personal-tools-cover.png",
+  "/images/tools/next-cover.png",
+  "/images/tools/tday-cover.png",
+  "Sticky Notes",
+  "T-Day",
+  "https://jaemin17.github.io/sticky-notes/",
+  "https://jaemin17.github.io/plan/",
+  "https://jaemin17.github.io/t-day/",
   "Independent Product · iOS",
-  "Self-directed Tools · Web",
+  "Notes · Web",
   "0→1 Product",
   "iOS UX",
   "Workflow Design",
@@ -136,6 +143,29 @@ assert.ok(
 assert.ok(
   searchableCopy.includes("preserveImageRatio:true"),
   "New Visual Work should opt into its natural screenshot ratio",
+);
+
+const personalToolCardEntries = [
+  ...copy.matchAll(
+    /title: "(?:Sticky Notes|Next|T-Day)",[\s\S]*?imageSrc: buildingMedia\.(?:stickyNotes|next|tday),[\s\S]*?frameColor: "#[0-9a-f]{6}",/g,
+  ),
+].map((match) => match[0]);
+
+assert.equal(
+  personalToolCardEntries.length,
+  6,
+  "Chinese and English home grids should each list Sticky Notes, Next, and T-Day",
+);
+assert.equal(
+  [...copy.matchAll(/imageSrc: buildingMedia\.tday,\s*frameColor: "#f7f8fc",/g)].length,
+  2,
+  "T-Day should use the cool gray from its cover instead of Selfly's warm well",
+);
+assert.ok(
+  !searchableCopy.includes('title:"Personal Tools"') &&
+    !searchableCopy.includes('href:"/projects/personal-tools"') &&
+    !searchableCopy.includes('frameColor:"#f6f6f6"'),
+  "Home should surface the three personal tools instead of a Personal Tools hub card",
 );
 
 const newVisualWorkEntries = visualProjectsBlocks.flatMap((block) =>

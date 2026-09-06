@@ -16,9 +16,9 @@ export default async function OfficeToolsRedirectPage({
   return (
     <ProjectRedirect
       locale={locale}
-      to="/projects/personal-tools"
-      labelZh="前往 Personal Tools"
-      labelEn="Go to Personal Tools"
+      to="/"
+      labelZh="返回首页"
+      labelEn="Back to home"
     />
   );
 }
