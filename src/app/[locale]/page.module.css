@@ -12,9 +12,16 @@
   left: 0;
   z-index: 0;
   width: 100%;
-  /* 背景带高度：略低于原 599px */
-  height: 28rem;
+  height: 42rem;
   overflow: hidden;
+}
+
+.heroBand::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 10rem;
+  background: linear-gradient(to bottom, rgb(255 255 255 / 0), #fff);
 }
 
 .main {
@@ -28,10 +35,10 @@
 }
 
 .hero {
-  /* 文字落在色带下方，与 Abhishek 一致 */
-  max-width: var(--content-max);
+  max-width: 48rem;
   margin: 0 auto;
-  padding: clamp(8.5rem, 18vw, 13.5rem) 0 clamp(4rem, 12vw, 9rem);
+  padding: clamp(7.5rem, 14vw, 11rem) 0 clamp(3.5rem, 8vw, 6rem);
+  text-align: center;
 }
 
 .hero > * {
@@ -122,46 +129,75 @@
 
 .contentShell {
   position: relative;
-  background: #fff;
 }
 
-@media (hover: none) and (pointer: coarse) {
-  .contentShell {
-    isolation: isolate;
-  }
-
-  .contentShell::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    z-index: -1;
-    width: 100vw;
-    transform: translateX(-50%);
-    background: #fff;
-  }
-}
-
-.name {
-  margin: 0 0 2.5rem;
-  font-size: var(--fs-body);
+.greeting {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 0 0 1.25rem;
+  font-size: var(--fs-title);
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 1.35;
+  line-height: 1.15;
 }
 
-.wave {
-  font-size: var(--fs-body);
-  line-height: 1;
+.portraitWrap {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 1.85rem;
+  height: 1.85rem;
+  overflow: hidden;
+  border-radius: 14%;
+  box-shadow:
+    0 0 0 1px #fff,
+    0.12px 0.51px 0.53px -1.08px rgb(25 29 33 / 0.29),
+    0.46px 1.95px 2px -2.17px rgb(25 29 33 / 0.26),
+    2px 8.5px 8.73px -3.25px rgb(25 29 33 / 0.16);
+  transform: rotate(4deg);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portraitWrap:hover {
+  transform: rotate(-6deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portraitWrap,
+  .portraitWrap:hover {
+    transform: none;
+    transition: none;
+  }
 }
 
 .lead {
-  margin: 0 0 0.875rem;
+  margin: 0 auto;
+  max-width: 36rem;
   font-size: var(--fs-body);
   letter-spacing: 0;
-  line-height: 1.65;
+  line-height: 1.75;
   color: var(--text-secondary);
+}
+
+@media (min-width: 768px) {
+  .greeting {
+    gap: 0.85rem;
+    margin-bottom: 1.75rem;
+    font-size: 4.5rem;
+  }
+
+  .portraitWrap {
+    width: 4.75rem;
+    height: 4.75rem;
+  }
 }
 
 .body {
@@ -529,8 +565,8 @@
   }
 
   .hero {
-    padding-top: 14rem;
-    padding-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
   }
 
   .workIndexTabs {

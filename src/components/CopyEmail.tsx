@@ -31,8 +31,8 @@ export function CopyEmail({ email, copyLabel, copiedLabel }: CopyEmailProps) {
     >
       <svg
         className={styles.icon}
-        width="18"
-        height="18"
+        width="16"
+        height="16"
         viewBox="0 0 16 16"
         fill="none"
         aria-hidden="true"

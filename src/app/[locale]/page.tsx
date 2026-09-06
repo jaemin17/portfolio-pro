@@ -1,13 +1,16 @@
 import { notFound } from "next/navigation";
-import { CopyEmail } from "@/components/CopyEmail";
+import Image from "next/image";
 import { EnvelopeMail } from "@/components/EnvelopeMail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { RevealOnView } from "@/components/RevealOnView";
 import { SnapshotMarquee } from "@/components/SnapshotMarquee";
+import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getHomeCopy } from "@/i18n/copy";
 import { WorkIndex } from "./WorkIndex";
 import styles from "./page.module.css";
+
+const heroPortrait = "/images/snapshots/snapshot-08.webp";
 
 type HomePageProps = {
   params: Promise<{ locale: string }>;
@@ -28,20 +31,20 @@ export default async function HomePage({ params }: HomePageProps) {
 
       <main className={styles.main}>
         <section className={styles.hero} aria-label="Intro">
-          <h1 className={styles.name}>
-            <span className={styles.wave} aria-hidden="true">
-              👋
+          <h1 className={styles.greeting}>
+            <span>{copy.greetingHi}</span>
+            <span className={styles.portraitWrap}>
+              <Image
+                className={styles.portrait}
+                src={assetPath(heroPortrait)}
+                alt="Jiamin Li"
+                width={128}
+                height={128}
+              />
             </span>
-            {"\u00A0\u00A0"}
-            {copy.name}
+            <span>{copy.name}</span>
           </h1>
           <p className={styles.lead}>{copy.lead}</p>
-          <p className={styles.body}>{copy.focus}</p>
-          <CopyEmail
-            email={copy.email}
-            copyLabel={copy.copyEmail}
-            copiedLabel={copy.copiedEmail}
-          />
         </section>
 
         <div className={styles.contentShell}>

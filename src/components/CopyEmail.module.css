@@ -7,10 +7,10 @@
   border: 0;
   background: none;
   font: inherit;
-  font-size: var(--fs-body);
-  letter-spacing: 0.04em;
-  line-height: 1.65;
-  color: rgb(0 0 0 / 60%);
+  font-size: var(--fs-label);
+  letter-spacing: 0;
+  line-height: 1.45;
+  color: var(--text-muted);
   cursor: pointer;
   text-align: left;
 }

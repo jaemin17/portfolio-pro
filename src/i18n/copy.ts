@@ -115,6 +115,7 @@ const snapshotPlaceholders: SnapshotItem[] = [
 ];
 
 export type HomeCopy = {
+  greetingHi: string;
   name: string;
   lead: string;
   focus: string;
@@ -199,9 +200,10 @@ const buildingMedia = {
 
 const copy: Record<Locale, HomeCopy> = {
   zh: {
-    name: "Hey visitor，我是 Jiamin Li。",
-    lead: "我设计并持续打磨值得长期使用的产品，专注于 UI/UX 与产品体验。",
-    focus: "最近正在开发 Selfly，并探索 AI 的更多可能。",
+    greetingHi: "Hi,",
+    name: "I'm Jiamin!",
+    lead: "我是产品体验设计师，也独立把产品做出来。曾服务海尔、GE 等品牌，最近在做 Selfly。",
+    focus: "最近在做 Selfly。",
     email: "lijiaemin1993@gmail.com",
     copyEmail: "复制邮箱",
     copiedEmail: "已复制",
@@ -508,9 +510,10 @@ const copy: Record<Locale, HomeCopy> = {
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },
   en: {
-    name: "Hey visitor, I'm Jiamin Li.",
-    lead: "I design and keep refining products worth using for the long term, with a focus on UI/UX and product experience.",
-    focus: "I've been building Selfly lately, and exploring more possibilities with AI.",
+    greetingHi: "Hi,",
+    name: "I'm Jiamin!",
+    lead: "A product experience designer who also builds products — I've designed for brands like Haier and GE, and I'm currently building Selfly.",
+    focus: "I'm currently building Selfly.",
     email: "lijiaemin1993@gmail.com",
     copyEmail: "Copy email",
     copiedEmail: "Copied",
