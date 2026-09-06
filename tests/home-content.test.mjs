@@ -283,6 +283,8 @@ assert.ok(
     /\.workIndexTab\{[^}]*border-radius:999px/.test(searchableHomeStyles) &&
     /\.workIndexTab\{[^}]*background:transparent/.test(searchableHomeStyles) &&
     !/\.workIndexTab:hover\{[^}]*background:/.test(searchableHomeStyles) &&
+    /\.workIndexTab\{[^}]*min-height:2\.5rem/.test(searchableHomeStyles) &&
+    /\.workIndexTab\{[^}]*padding:0\.55rem1\.125rem/.test(searchableHomeStyles) &&
     /\.workIndexTab\{[^}]*font-size:var\(--fs-label\)/.test(searchableHomeStyles) &&
     /\.workIndexTab\{[^}]*color:var\(--text-secondary\)/.test(searchableHomeStyles) &&
     /\.workIndexTab:hover\{[^}]*color:var\(--text-primary\)/.test(searchableHomeStyles) &&
