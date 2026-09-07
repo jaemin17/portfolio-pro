@@ -10,7 +10,7 @@ import { getHomeCopy } from "@/i18n/copy";
 import { WorkIndex } from "./WorkIndex";
 import styles from "./page.module.css";
 
-const heroPortrait = "/images/snapshots/snapshot-08.webp";
+const heroPortrait = "/images/hero-portrait.jpg";
 
 type HomePageProps = {
   params: Promise<{ locale: string }>;
@@ -38,8 +38,8 @@ export default async function HomePage({ params }: HomePageProps) {
                 className={styles.portrait}
                 src={assetPath(heroPortrait)}
                 alt="Jiamin Li"
-                width={128}
-                height={128}
+                width={384}
+                height={384}
               />
             </span>
             <span>{copy.name}</span>
