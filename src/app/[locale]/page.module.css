@@ -37,7 +37,7 @@
 .hero {
   max-width: 56rem;
   margin: 0 auto;
-  padding: clamp(7.5rem, 14vw, 11rem) 0 clamp(3.5rem, 8vw, 6rem);
+  padding: clamp(9.5rem, 18vw, 14rem) 0 clamp(3.5rem, 8vw, 6rem);
   text-align: center;
 }
 
@@ -136,7 +136,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  gap: 0.12em;
+  gap: 0.22em;
   margin: 0 0 1.25rem;
   font-family: var(--font-bricolage-grotesque), sans-serif;
   font-size: 2.25rem;
@@ -153,7 +153,7 @@
   overflow: hidden;
   border-radius: 14%;
   box-shadow:
-    0 0 0 1px #fff,
+    0 0 0 1px rgb(255 255 255 / 0.55),
     0.12px 0.51px 0.53px -1.08px rgb(25 29 33 / 0.29),
     0.46px 1.95px 2px -2.17px rgb(25 29 33 / 0.26),
     2px 8.5px 8.73px -3.25px rgb(25 29 33 / 0.16);
@@ -199,7 +199,7 @@
 
 @media (min-width: 1200px) {
   .greeting {
-    font-size: 6rem;
+    font-size: 5.25rem;
   }
 }
 
@@ -568,7 +568,7 @@
   }
 
   .hero {
-    padding-top: 8rem;
+    padding-top: 10.5rem;
     padding-bottom: 4rem;
   }
 
