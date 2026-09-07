@@ -28,6 +28,18 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
+const bricolageGrotesque = localFont({
+  src: [
+    {
+      path: "../fonts/BricolageGrotesque-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-bricolage-grotesque",
+  display: "swap",
+});
+
 const caveat = Caveat({
   weight: ["400", "500"],
   subsets: ["latin"],
@@ -56,7 +68,7 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={`${geistSans.variable} ${ibmPlexMono.variable} ${caveat.variable} ${notoSansSC.variable}`}
+      className={`${geistSans.variable} ${ibmPlexMono.variable} ${bricolageGrotesque.variable} ${caveat.variable} ${notoSansSC.variable}`}
     >
       <body>
         <div className="openingLoader" aria-hidden="true">
