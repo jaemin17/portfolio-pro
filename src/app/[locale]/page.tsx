@@ -3,7 +3,6 @@ import Image from "next/image";
 import { EnvelopeMail } from "@/components/EnvelopeMail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { RevealOnView } from "@/components/RevealOnView";
-import { SnapshotMarquee } from "@/components/SnapshotMarquee";
 import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getHomeCopy } from "@/i18n/copy";
@@ -59,8 +58,6 @@ export default async function HomePage({ params }: HomePageProps) {
               locale={locale}
             />
           </RevealOnView>
-
-          <SnapshotMarquee items={copy.snapshots.items} />
 
           <RevealOnView className={styles.scrollReveal}>
             <div className={`${styles.revealItem} ${styles.revealDelay1}`}>

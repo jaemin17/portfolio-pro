@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  margin-top: clamp(3.5rem, 10vw, 6.5rem);
+  margin-top: calc(clamp(4rem, 12vw, 9rem) + 4rem);
   margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;

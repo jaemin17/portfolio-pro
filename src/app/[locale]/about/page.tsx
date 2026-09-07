@@ -3,6 +3,7 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { getAboutCopy } from "@/i18n/copy";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { RevealOnView } from "@/components/RevealOnView";
+import { SnapshotMarquee } from "@/components/SnapshotMarquee";
 import styles from "./about.module.css";
 
 type AboutPageProps = {
@@ -95,6 +96,8 @@ export default async function AboutPage({ params }: AboutPageProps) {
           </footer>
         </RevealOnView>
       </div>
+
+      <SnapshotMarquee className={styles.marquee} items={copy.snapshots.items} />
     </main>
   );
 }

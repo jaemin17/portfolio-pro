@@ -37,7 +37,7 @@
 .hero {
   max-width: 56rem;
   margin: 0 auto;
-  padding: clamp(9.5rem, 18vw, 14rem) 0 clamp(3.5rem, 8vw, 6rem);
+  padding: clamp(9.5rem, 18vw, 14rem) 0 clamp(4.75rem, 10vw, 7.5rem);
   text-align: center;
 }
 
@@ -184,7 +184,7 @@
 .lead {
   margin: 0 auto;
   max-width: 36rem;
-  font-size: var(--fs-body);
+  font-size: var(--fs-subtitle);
   letter-spacing: 0;
   line-height: 1.75;
   color: var(--text-secondary);
@@ -217,7 +217,7 @@
 }
 
 .workIndex {
-  padding-top: 2rem;
+  padding-top: 2.5rem;
 }
 
 .workIndexTabs {
@@ -569,7 +569,7 @@
 
   .hero {
     padding-top: 10.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 5.25rem;
   }
 
   .workIndexTabs {
@@ -577,7 +577,6 @@
     padding-right: 3rem;
   }
 
-  .lead,
   .body {
     font-size: var(--fs-body);
   }

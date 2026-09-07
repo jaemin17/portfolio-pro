@@ -24,15 +24,9 @@
 
 .heroInner {
   box-sizing: border-box;
-  width: min(var(--page-max), calc(100% - var(--main-gutter) * 2));
+  width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
   margin: 0 auto;
   padding: clamp(8.5rem, 18vw, 13.5rem) 0 clamp(1rem, 3vw, 1.5rem);
-}
-
-.greeting,
-.tagline,
-.bioParagraph {
-  max-width: var(--content-max);
 }
 
 .heroInner > * {
@@ -93,9 +87,9 @@
   position: relative;
   z-index: 1;
   box-sizing: border-box;
-  width: min(var(--page-max), calc(100% - var(--main-gutter) * 2));
+  width: min(var(--content-max), calc(100% - var(--main-gutter) * 2));
   margin: 0 auto;
-  padding: 0 0 5rem;
+  padding: 0;
 }
 
 .scrollReveal[data-reveal="pending"] {
@@ -202,12 +196,6 @@
   color: rgb(0 0 0 / 40%);
 }
 
-.workSummary,
-.strengthDescription,
-.closing {
-  max-width: var(--content-max);
-}
-
 .workSummary {
   margin: 0 0 1.5rem;
   font-size: var(--fs-body);
@@ -255,6 +243,11 @@
 .footer {
   margin-top: 5rem;
   padding-top: 3rem;
+}
+
+.page .marquee {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .closing {

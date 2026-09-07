@@ -7,6 +7,7 @@ export type SnapshotMarqueeItem = {
 };
 
 type SnapshotMarqueeProps = {
+  className?: string;
   items: SnapshotMarqueeItem[];
 };
 
@@ -75,11 +76,14 @@ function MarqueeGroup({
   );
 }
 
-export function SnapshotMarquee({ items }: SnapshotMarqueeProps) {
+export function SnapshotMarquee({ className, items }: SnapshotMarqueeProps) {
   if (items.length === 0) return null;
 
   return (
-    <section className={styles.section} aria-label="Snapshots">
+    <section
+      className={[styles.section, className].filter(Boolean).join(" ")}
+      aria-label="Snapshots"
+    >
       <div className={styles.viewport}>
         <div
           className={styles.track}

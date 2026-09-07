@@ -19,6 +19,7 @@
   --fs-caption: 0.75rem; /* 12 */
   --fs-label: 0.875rem; /* 14 */
   --fs-body: 1rem; /* 16 */
+  --fs-subtitle: 1.25rem; /* 20 */
   --fs-title: 1.625rem; /* 26 */
   --fs-display: 2.625rem; /* 42 */
 }

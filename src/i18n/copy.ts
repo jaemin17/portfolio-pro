@@ -127,7 +127,6 @@ export type HomeCopy = {
   toolProjects: ToolProjects;
   visualProjects: ToolProjects;
   caseStudies: HomeSection;
-  snapshots: Snapshots;
   envelopeMail: {
     label: string;
     cta: string;
@@ -202,7 +201,7 @@ const copy: Record<Locale, HomeCopy> = {
   zh: {
     greetingHi: "Hi,",
     name: "I'm Jiamin!",
-    lead: "我是产品体验设计师，也独立把产品做出来。曾服务海尔、GE 等品牌，最近在做 Selfly。",
+    lead: "产品体验设计师，习惯从真实问题出发，也自己把产品做出来——把复杂体验做成清楚、自然、愿意长期用的产品。",
     focus: "最近在做 Selfly。",
     email: "lijiaemin1993@gmail.com",
     copyEmail: "复制邮箱",
@@ -498,10 +497,6 @@ const copy: Record<Locale, HomeCopy> = {
     caseStudies: {
       label: "Case Studies",
     },
-    snapshots: {
-      label: "Snapshots",
-      items: snapshotPlaceholders,
-    },
     envelopeMail: {
       label: "Let's work together",
       cta: "给我写信吧",
@@ -512,7 +507,7 @@ const copy: Record<Locale, HomeCopy> = {
   en: {
     greetingHi: "Hi,",
     name: "I'm Jiamin!",
-    lead: "A product experience designer who also builds products — I've designed for brands like Haier and GE, and I'm currently building Selfly.",
+    lead: "A product experience designer who also builds the product — starting from real problems, and making experiences that feel clear, natural, and worth using for the long term.",
     focus: "I'm currently building Selfly.",
     email: "lijiaemin1993@gmail.com",
     copyEmail: "Copy email",
@@ -812,10 +807,6 @@ const copy: Record<Locale, HomeCopy> = {
     caseStudies: {
       label: "Case Studies",
     },
-    snapshots: {
-      label: "Snapshots",
-      items: snapshotPlaceholders,
-    },
     envelopeMail: {
       label: "Let's work together",
       cta: "write me a letter",
@@ -858,6 +849,7 @@ export type AboutCopy = {
     items: AboutWorkItem[];
   };
   closing: string;
+  snapshots: Snapshots;
 };
 
 const aboutCopy: Record<Locale, AboutCopy> = {
@@ -907,6 +899,10 @@ const aboutCopy: Record<Locale, AboutCopy> = {
       ],
     },
     closing: "很高兴认识你 :) ✰",
+    snapshots: {
+      label: "Snapshots",
+      items: snapshotPlaceholders,
+    },
   },
   en: {
     greeting: "About",
@@ -954,6 +950,10 @@ const aboutCopy: Record<Locale, AboutCopy> = {
       ],
     },
     closing: "Nice to meet you :) ✰",
+    snapshots: {
+      label: "Snapshots",
+      items: snapshotPlaceholders,
+    },
   },
 };
 
