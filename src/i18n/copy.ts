@@ -217,8 +217,8 @@ const copy: Record<Locale, HomeCopy> = {
         },
         {
           id: "zero-to-one",
-          label: "0→1 产品",
-          summary: "从真实需求出发，定义产品结构、核心路径与长期使用体验。",
+          label: "AI 共创产品",
+          summary: "个人用 AI 共创并独立推进的产品，从真实需求出发，做出可用的体验。",
           projects: [
             {
               title: "Selfly",
@@ -274,6 +274,12 @@ const copy: Record<Locale, HomeCopy> = {
           ],
         },
         {
+          id: "design-systems",
+          label: "设计系统",
+          summary: "围绕组件、规范和长期一致性的设计系统项目。",
+          projects: [],
+        },
+        {
           id: "xr-3d",
           label: "XR / 3D",
           summary: "3D 内容、VR 训练和多端沉浸式学习体验。",
@@ -324,7 +330,7 @@ const copy: Record<Locale, HomeCopy> = {
           title: "Selfly",
           description: "记录、回看与自我探索",
           meta: "独立产品 · iOS",
-          tags: ["0→1 产品", "iOS UX", "交互设计"],
+          tags: ["AI 共创产品", "iOS UX", "交互设计"],
           categoryIds: ["zero-to-one"],
           href: "/projects/selfly",
           imageSrc: buildingMedia.selfly,
@@ -499,7 +505,7 @@ const copy: Record<Locale, HomeCopy> = {
     },
     envelopeMail: {
       label: "Let's work together",
-      cta: "给我写信吧",
+      cta: "给我写邮件吧",
       copied: "邮箱已复制",
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
@@ -523,9 +529,9 @@ const copy: Record<Locale, HomeCopy> = {
         },
         {
           id: "zero-to-one",
-          label: "0→1 Products",
+          label: "AI-Built Products",
           summary:
-            "Product structures, core flows, and long-term use patterns built from real needs.",
+            "Personal AI-assisted products independently shaped from real needs into usable experiences.",
           projects: [
             {
               title: "Selfly",
@@ -583,6 +589,12 @@ const copy: Record<Locale, HomeCopy> = {
           ],
         },
         {
+          id: "design-systems",
+          label: "Design Systems",
+          summary: "Component, guideline, and consistency-focused design system work.",
+          projects: [],
+        },
+        {
           id: "xr-3d",
           label: "XR / 3D",
           summary: "3D content, VR training, and multi-device immersive learning experiences.",
@@ -628,13 +640,13 @@ const copy: Record<Locale, HomeCopy> = {
       ],
     },
     currentlyBuilding: {
-      label: "0→1 Builds",
+      label: "AI-Built Products",
       items: [
         {
           title: "Selfly",
           description: "A journal for reflection and self-discovery",
           meta: "Independent Product · iOS",
-          tags: ["0→1 Product", "iOS UX", "Interaction Design"],
+          tags: ["AI-Built Product", "iOS UX", "Interaction Design"],
           categoryIds: ["zero-to-one"],
           href: "/projects/selfly",
           imageSrc: buildingMedia.selfly,
@@ -809,8 +821,8 @@ const copy: Record<Locale, HomeCopy> = {
     },
     envelopeMail: {
       label: "Let's work together",
-      cta: "write me a letter",
-      copied: "email copied",
+      cta: "Send me an email",
+      copied: "Email copied",
     },
     footerRole: "Product Designer · UX/UI · Independent Builder",
   },

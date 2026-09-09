@@ -90,7 +90,10 @@ export function EnvelopeMail({ copy, locale }: EnvelopeMailProps) {
                 onClick={handleCopy}
                 aria-label={`${copy.cta}: ${copy.email}`}
               >
-                <span className={copied ? styles.ctaHidden : undefined}>{copy.cta}</span>
+                <span className={copied ? styles.ctaHidden : undefined}>
+                  <span>{copy.cta}</span>
+                  <span className={styles.ctaEmail}>{copy.email}</span>
+                </span>
                 <span
                   className={`${styles.ctaCopied} ${copied ? styles.ctaCopiedVisible : ""}`}
                   aria-live="polite"

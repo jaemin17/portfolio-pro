@@ -55,21 +55,24 @@ const zhVisualProjectsBlock =
 const visualProjectsBlocks = copy.match(
   /visualProjects: \{[\s\S]*?caseStudies:/g,
 ) ?? [];
+const workIndexBlocks = copy.match(/workIndex: \{[\s\S]*?currentlyBuilding:/g) ?? [];
 
 const requiredCopy = [
   "Work Index",
   "All",
-  "0→1 Products",
+  "AI-Built Products",
   "Product Systems",
+  "Design Systems",
   "XR / 3D",
   "Visual Systems",
   "作品索引",
   "全部",
-  "0→1 产品",
+  "AI 共创产品",
   "产品系统",
+  "设计系统",
   "XR / 3D",
   "视觉系统",
-  "0→1 Builds",
+  "AI-Built Products",
   "Visual Works",
   "/images/selfly0/hero-750w.webp",
   "/images/tools/personal-tools-cover.png",
@@ -82,7 +85,7 @@ const requiredCopy = [
   "https://jaemin17.github.io/t-day/",
   "Independent Product · iOS",
   "Notes · Web",
-  "0→1 Product",
+  "AI-Built Product",
   "iOS UX",
   "Workflow Design",
   "Product Systems",
@@ -100,10 +103,11 @@ const requiredCopy = [
   "Cloud Platform",
   "/images/visual/cloud-platform-832w.webp",
   "/images/visual/cloud-platform.webp",
-  "给我写信吧",
-  "write me a letter",
+  "给我写邮件吧",
+  "Send me an email",
+  "lijiaemin1993@gmail.com",
   "邮箱已复制",
-  "email copied",
+  "Email copied",
 ];
 
 for (const item of requiredCopy) {
@@ -118,9 +122,30 @@ assert.ok(
   "Home Visual Works should not use the old immersive video",
 );
 
+assert.equal(
+  workIndexBlocks.length,
+  2,
+  "Home copy should define Work Index categories for both locales",
+);
+
+for (const block of workIndexBlocks) {
+  assert.ok(
+    /id: "design-systems",[\s\S]*?label: "(?:设计系统|Design Systems)",[\s\S]*?projects: \[\]/.test(block),
+    "Work Index should include an empty Design Systems tab in both locales",
+  );
+}
+
 assert.ok(
   !searchableCopy.includes("Currentlybuilding"),
   "English side-projects section should not use the old Currently building label",
+);
+
+assert.ok(
+  /\.stage\{[^}]*width:min\(34rem,100%\)/.test(searchableEnvelopeStyles) &&
+    /\.label\{[^}]*font-size:0\.8125rem/.test(searchableEnvelopeStyles) &&
+    /@media\(max-width:809px\)\{[\s\S]*?\.stage\{[^}]*width:min\(20rem,100%\)/.test(searchableEnvelopeStyles) &&
+    /@media\(max-width:809px\)\{[\s\S]*?\.label\{[^}]*font-size:0\.6875rem/.test(searchableEnvelopeStyles),
+  "Envelope mail should be smaller on desktop while keeping a larger desktop label and compact mobile label",
 );
 
 assert.ok(
@@ -298,9 +323,9 @@ assert.ok(
 );
 
 assert.ok(
-  searchableHomeStyles.includes("width:min(var(--page-max),calc(100%-var(--main-gutter)*2))") &&
+    searchableHomeStyles.includes("width:min(var(--page-max),calc(100%-var(--main-gutter)*2))") &&
     searchableHomeStyles.includes(".hero{") &&
-    /\.hero\{[^}]*max-width:var\(--content-max\)/.test(searchableHomeStyles) &&
+    /\.hero\{[^}]*max-width:56rem/.test(searchableHomeStyles) &&
     /\.hero\{[^}]*margin:0auto/.test(searchableHomeStyles) &&
     searchableHomeStyles.includes(".workIndexList{display:flex;flex-direction:column;") &&
     searchableHomeStyles.includes("@media(min-width:768px)") &&
@@ -326,10 +351,12 @@ assert.ok(
     /\.workIndexTab\[aria-selected="true"\]\{[^}]*background:var\(--text-primary\)/.test(searchableHomeStyles) &&
     /\.workIndexTab\[aria-selected="true"\]\{[^}]*color:#fff/.test(searchableHomeStyles) &&
     searchableHomeStyles.includes(".workIndexRule{") &&
-    searchableHomeStyles.includes("width:100vw") &&
-    searchableHomeStyles.includes("margin-left:calc(50%-50vw)") &&
-    /\.workIndexRule\{[^}]*background:var\(--border\)/.test(searchableHomeStyles),
-  "Work Index tabs should stay unfilled until selected, with label-size secondary-weight idle text",
+    searchableHomeStyles.includes("width:100%") &&
+    !searchableHomeStyles.includes("width:100vw") &&
+    !searchableHomeStyles.includes("margin-left:calc(50%-50vw)") &&
+    /\.workIndexRule\{[^}]*background:var\(--border\)/.test(searchableHomeStyles) &&
+    /\.workIndexRule\{[^}]*opacity:0\.68/.test(searchableHomeStyles),
+  "Work Index tabs should stay unfilled until selected, with a subtle content-width divider",
 );
 
 assert.ok(
@@ -341,9 +368,8 @@ assert.ok(
 );
 
 assert.ok(
-  searchableAboutStyles.includes("width:min(var(--page-max),calc(100%-var(--main-gutter)*2))") &&
-    searchableAboutStyles.includes("max-width:var(--content-max)"),
-  "About should use the wide page shell while keeping intro copy at reading width",
+  searchableAboutStyles.includes("width:min(var(--content-max),calc(100%-var(--main-gutter)*2))"),
+  "About should keep its page content at the reading width",
 );
 
 assert.ok(
@@ -400,7 +426,15 @@ assert.ok(
   "Natural-ratio visual cards should keep fixed width and derive height from the image",
 );
 
-for (const oldCopy of ["找我聊聊", "let'schat", "mailcopied!"]) {
+for (const oldCopy of [
+  "找我聊聊",
+  "let'schat",
+  "mailcopied!",
+  "给我写信吧",
+  "writemealetter",
+  "复制我的邮箱",
+  "Copymyemail",
+]) {
   assert.ok(
     !searchableCopy.includes(oldCopy.replace(/\s+/g, "")),
     `Envelope mail should not use old copy: ${oldCopy}`,
@@ -429,6 +463,18 @@ assert.ok(
   !searchableEnvelopeComponent.includes("photoPlaceholder") &&
     !searchableEnvelopeStyles.includes(".photoPlaceholder"),
   "Envelope letter should not render the reserved photo placeholder",
+);
+
+assert.ok(
+  searchableEnvelopeComponent.includes("className={styles.ctaEmail}") &&
+    searchableEnvelopeComponent.includes("{copy.email}"),
+  "Envelope mail CTA should show the email address as supporting text",
+);
+
+assert.ok(
+  /\.ctaEmail\{[^}]*font-size:1rem/.test(searchableEnvelopeStyles) &&
+    /@media\(max-width:809px\)\{[\s\S]*?\.ctaEmail\{[^}]*font-size:clamp\(0\.6875rem,2\.8vw,0\.8125rem\)/.test(searchableEnvelopeStyles),
+  "Envelope email supporting text should be readable without competing with the handwritten CTA",
 );
 
 assert.ok(
