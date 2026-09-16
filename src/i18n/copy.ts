@@ -274,12 +274,6 @@ const copy: Record<Locale, HomeCopy> = {
           ],
         },
         {
-          id: "design-systems",
-          label: "设计系统",
-          summary: "围绕组件、规范和长期一致性的设计系统项目。",
-          projects: [],
-        },
-        {
           id: "xr-3d",
           label: "XR / 3D",
           summary: "3D 内容、VR 训练和多端沉浸式学习体验。",
@@ -315,8 +309,8 @@ const copy: Record<Locale, HomeCopy> = {
               description: "面向 VR 与 3D 教学资源的云端资源库界面。",
             },
             {
-              title: "New Visual Work",
-              description: "新增视觉作品预览与表达探索。",
+              title: "海外官网",
+              description: "面向海外市场的 XR 教育产品官网表达。",
               href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
             },
           ],
@@ -334,6 +328,7 @@ const copy: Record<Locale, HomeCopy> = {
           categoryIds: ["zero-to-one"],
           href: "/projects/selfly",
           imageSrc: buildingMedia.selfly,
+          framed: false,
           frameColor: "#fff8ec",
         },
         {
@@ -344,6 +339,7 @@ const copy: Record<Locale, HomeCopy> = {
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/sticky-notes/",
           imageSrc: buildingMedia.stickyNotes,
+          framed: false,
           frameColor: "#fff8ec",
         },
         {
@@ -354,6 +350,7 @@ const copy: Record<Locale, HomeCopy> = {
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/plan/",
           imageSrc: buildingMedia.next,
+          framed: false,
           frameColor: "#fff8ec",
         },
         {
@@ -364,6 +361,7 @@ const copy: Record<Locale, HomeCopy> = {
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/t-day/",
           imageSrc: buildingMedia.tday,
+          framed: false,
           frameColor: "#f7f8fc",
         },
       ],
@@ -438,10 +436,10 @@ const copy: Record<Locale, HomeCopy> = {
           framed: false,
         },
         {
-          title: "New Visual Work",
-          description: "临时新增的视觉作品预览。",
-          meta: "视觉探索 · Prototype",
-          tags: ["Visual Design", "Prototype", "Interface"],
+          title: "海外官网",
+          description: "面向海外市场的 XR 教育产品官网表达。",
+          meta: "公司官网 · XR",
+          tags: ["Official Website", "Product Story", "Brand Direction"],
           categoryIds: ["visual-systems"],
           href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
           imageSrc: visualMedia.newVisualWork,
@@ -471,7 +469,6 @@ const copy: Record<Locale, HomeCopy> = {
           imageSrc: visualMedia.cloudPlatform,
           imageVariants: [...visualImageVariants.cloudPlatform],
           framed: false,
-          preserveImageRatio: true,
         },
         {
           title: "游戏概念",
@@ -589,12 +586,6 @@ const copy: Record<Locale, HomeCopy> = {
           ],
         },
         {
-          id: "design-systems",
-          label: "Design Systems",
-          summary: "Component, guideline, and consistency-focused design system work.",
-          projects: [],
-        },
-        {
           id: "xr-3d",
           label: "XR / 3D",
           summary: "3D content, VR training, and multi-device immersive learning experiences.",
@@ -631,8 +622,8 @@ const copy: Record<Locale, HomeCopy> = {
               description: "Cloud resource library UI for VR and 3D training assets.",
             },
             {
-              title: "New Visual Work",
-              description: "A visual work preview and expression study.",
+              title: "Overseas Official Website",
+              description: "Overseas-facing website expression for XR education products.",
               href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
             },
           ],
@@ -650,6 +641,7 @@ const copy: Record<Locale, HomeCopy> = {
           categoryIds: ["zero-to-one"],
           href: "/projects/selfly",
           imageSrc: buildingMedia.selfly,
+          framed: false,
           frameColor: "#fff8ec",
         },
         {
@@ -660,6 +652,7 @@ const copy: Record<Locale, HomeCopy> = {
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/sticky-notes/",
           imageSrc: buildingMedia.stickyNotes,
+          framed: false,
           frameColor: "#fff8ec",
         },
         {
@@ -670,6 +663,7 @@ const copy: Record<Locale, HomeCopy> = {
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/plan/",
           imageSrc: buildingMedia.next,
+          framed: false,
           frameColor: "#fff8ec",
         },
         {
@@ -680,6 +674,7 @@ const copy: Record<Locale, HomeCopy> = {
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/t-day/",
           imageSrc: buildingMedia.tday,
+          framed: false,
           frameColor: "#f7f8fc",
         },
       ],
@@ -754,10 +749,11 @@ const copy: Record<Locale, HomeCopy> = {
           framed: false,
         },
         {
-          title: "New Visual Work",
-          description: "Temporary visual work preview.",
-          meta: "Visual Exploration · Prototype",
-          tags: ["Visual Design", "Prototype", "Interface"],
+          title: "Overseas Official Website",
+          description:
+            "Overseas-facing website expression for XR education products.",
+          meta: "Company Website · XR",
+          tags: ["Official Website", "Product Story", "Brand Direction"],
           categoryIds: ["visual-systems"],
           href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
           imageSrc: visualMedia.newVisualWork,
@@ -787,7 +783,6 @@ const copy: Record<Locale, HomeCopy> = {
           imageSrc: visualMedia.cloudPlatform,
           imageVariants: [...visualImageVariants.cloudPlatform],
           framed: false,
-          preserveImageRatio: true,
         },
         {
           title: "Game Concept",

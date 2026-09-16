@@ -237,7 +237,7 @@
   flex: 0 0 auto;
   min-height: 2.5rem;
   padding: 0.55rem 1.125rem;
-  border: 1px solid rgb(0 0 0 / 0.1);
+  border: 1px solid var(--border);
   border-radius: 999px;
   background: transparent;
   color: var(--text-secondary);
@@ -278,11 +278,11 @@
 }
 
 .workIndexRule {
-  width: 100vw;
+  width: 100%;
   height: 1px;
   margin: 1.25rem 0 3.25rem;
-  margin-left: calc(50% - 50vw);
-  background: rgb(0 0 0 / 0.1);
+  background: var(--border);
+  opacity: 0.68;
   pointer-events: none;
 }
 
@@ -314,7 +314,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem 1.5rem;
-    align-items: start;
+    align-items: stretch;
   }
 
   .workIndexList .loadMore {
@@ -374,11 +374,13 @@
 .toolCard {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .toolCardSurface {
   display: flex;
   flex-direction: column;
+  flex: 1;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 1.25rem;
@@ -449,8 +451,8 @@
 }
 
 .toolFrameBare .toolVideo.toolVideoNaturalRatio {
-  aspect-ratio: auto;
-  object-fit: contain;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
 }
 
 .toolUnavailableOverlay {
@@ -471,8 +473,8 @@
   pointer-events: none;
 }
 
-.toolFrameBare ~ .toolUnavailableOverlay {
-  border-radius: 0.75rem;
+.toolFrameBare .toolUnavailableOverlay {
+  border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .toolCardUnavailable:hover .toolUnavailableOverlay,
@@ -490,6 +492,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+  box-sizing: border-box;
+  min-height: 9.625rem;
   padding: 1rem 1.125rem 1.125rem;
   border-top: 1px solid var(--border);
 }

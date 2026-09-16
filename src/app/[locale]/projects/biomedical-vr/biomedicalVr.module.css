@@ -916,7 +916,7 @@
   line-height: 1.75;
   color: #444;
   font-size: var(--fs-body);
-  max-width: 52ch;
+  max-width: 100%;
 }
 
 .appIconSystemHero {

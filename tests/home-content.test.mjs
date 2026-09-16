@@ -62,14 +62,12 @@ const requiredCopy = [
   "All",
   "AI-Built Products",
   "Product Systems",
-  "Design Systems",
   "XR / 3D",
   "Visual Systems",
   "作品索引",
   "全部",
   "AI 共创产品",
   "产品系统",
-  "设计系统",
   "XR / 3D",
   "视觉系统",
   "AI-Built Products",
@@ -92,7 +90,8 @@ const requiredCopy = [
   "VR Simulation · XR",
   "VR 教育与实训",
   "/videos/visual/home-vr-education.mp4",
-  "New Visual Work",
+  "Overseas Official Website",
+  "海外官网",
   "/images/visual/new-visual-work-home-en.png",
   "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
   "3D Engine App Icon Design",
@@ -130,8 +129,8 @@ assert.equal(
 
 for (const block of workIndexBlocks) {
   assert.ok(
-    /id: "design-systems",[\s\S]*?label: "(?:设计系统|Design Systems)",[\s\S]*?projects: \[\]/.test(block),
-    "Work Index should include an empty Design Systems tab in both locales",
+    !/id: "design-systems",[\s\S]*?label: "(?:设计系统|Design Systems)"/.test(block),
+    "Work Index should hide the Design Systems tab until content is ready",
   );
 }
 
@@ -150,8 +149,8 @@ assert.ok(
 
 assert.ok(
     zhVisualProjectsBlock.indexOf("VR教育与实训") <
-    zhVisualProjectsBlock.indexOf("NewVisualWork") &&
-    zhVisualProjectsBlock.indexOf("NewVisualWork") <
+    zhVisualProjectsBlock.indexOf("海外官网") &&
+    zhVisualProjectsBlock.indexOf("海外官网") <
       zhVisualProjectsBlock.indexOf("3DEngineAppIconDesign") &&
     zhVisualProjectsBlock.indexOf("3DEngineAppIconDesign") <
       zhVisualProjectsBlock.indexOf("云平台") &&
@@ -162,27 +161,27 @@ assert.ok(
 
 assert.ok(
   !searchableCopy.includes("/videos/visual/google-chrome.mp4"),
-  "New Visual Work should use the static screenshot instead of the temporary video",
+  "Overseas Official Website should use the static screenshot instead of the temporary video",
 );
 
 assert.ok(
   searchableCopy.includes("preserveImageRatio:true"),
-  "New Visual Work should opt into its natural screenshot ratio",
+  "Overseas Official Website should opt into its natural screenshot ratio",
 );
 
 const personalToolCardEntries = [
   ...copy.matchAll(
-    /title: "(?:Sticky Notes|Next|T-Day)",[\s\S]*?imageSrc: buildingMedia\.(?:stickyNotes|next|tday),[\s\S]*?frameColor: "#[0-9a-f]{6}",/g,
+    /title: "(?:Selfly|Sticky Notes|Next|T-Day)",[\s\S]*?imageSrc: buildingMedia\.(?:selfly|stickyNotes|next|tday),[\s\S]*?framed: false,[\s\S]*?frameColor: "#[0-9a-f]{6}",/g,
   ),
 ].map((match) => match[0]);
 
 assert.equal(
   personalToolCardEntries.length,
-  6,
-  "Chinese and English home grids should each list Sticky Notes, Next, and T-Day",
+  8,
+  "Chinese and English home grids should each list AI co-creation cards as full-bleed covers",
 );
 assert.equal(
-  [...copy.matchAll(/imageSrc: buildingMedia\.tday,\s*frameColor: "#f7f8fc",/g)].length,
+  [...copy.matchAll(/imageSrc: buildingMedia\.tday,\s*framed: false,\s*frameColor: "#f7f8fc",/g)].length,
   2,
   "T-Day should use the cool gray from its cover instead of Selfly's warm well",
 );
@@ -193,9 +192,9 @@ assert.ok(
   "Home should surface the three personal tools instead of a Personal Tools hub card",
 );
 
-const newVisualWorkEntries = visualProjectsBlocks.flatMap((block) =>
+const overseasWebsiteEntries = visualProjectsBlocks.flatMap((block) =>
   block.match(
-    /title: "New Visual Work",[\s\S]*?imageSrc: visualMedia\.newVisualWork,[\s\S]*?preserveImageRatio: true,/g,
+    /title: "(?:海外官网|Overseas Official Website)",[\s\S]*?imageSrc: visualMedia\.newVisualWork,[\s\S]*?preserveImageRatio: true,/g,
   ) ?? [],
 );
 const vectorTo3dEntries = visualProjectsBlocks.flatMap((block) =>
@@ -205,20 +204,20 @@ const vectorTo3dEntries = visualProjectsBlocks.flatMap((block) =>
 );
 
 assert.equal(
-  newVisualWorkEntries.length,
+  overseasWebsiteEntries.length,
   2,
-  "New Visual Work should exist in both locales",
+  "Overseas Official Website should exist in both locales",
 );
 
-for (const entry of newVisualWorkEntries) {
+for (const entry of overseasWebsiteEntries) {
   assert.ok(
     entry.includes('href: "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1"'),
-    "New Visual Work should link to the Figma prototype",
+    "Overseas Official Website should link to the Figma prototype",
   );
   assert.ok(
     !entry.includes('availability: "comingSoon"') &&
       !entry.includes("statusLabel:"),
-    "New Visual Work should be clickable without a coming-soon overlay",
+    "Overseas Official Website should be clickable without a coming-soon overlay",
   );
 }
 
@@ -240,7 +239,7 @@ for (const entry of vectorTo3dEntries) {
 
 const cloudPlatformEntries = visualProjectsBlocks.flatMap((block) =>
   block.match(
-    /title: "(?:云平台|Cloud Platform)",[\s\S]*?imageSrc: visualMedia\.cloudPlatform,[\s\S]*?preserveImageRatio: true,/g,
+    /title: "(?:云平台|Cloud Platform)",[\s\S]*?imageSrc: visualMedia\.cloudPlatform,[\s\S]*?framed: false,/g,
   ) ?? [],
 );
 
@@ -422,8 +421,8 @@ assert.ok(
 
 assert.ok(
   searchableHomeStyles.includes(".toolFrameBare.toolFrameNaturalRatio{height:auto;}") &&
-    searchableHomeStyles.includes(".toolFrameBare.toolVideo.toolVideoNaturalRatio{aspect-ratio:auto;object-fit:contain;}"),
-  "Natural-ratio visual cards should keep fixed width and derive height from the image",
+    searchableHomeStyles.includes(".toolFrameBare.toolVideo.toolVideoNaturalRatio{aspect-ratio:3/2;object-fit:cover;}"),
+  "Bare visual cards should keep a consistent fixed media ratio",
 );
 
 for (const oldCopy of [
