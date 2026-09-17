@@ -146,7 +146,10 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             <div className={styles.positioningDiagramFlow}>
               <div className={styles.positioningDiagramCol}>
                 <span className={styles.positioningDiagramPhase}>{t(locale, "前期", "Before")}</span>
-                <span className={styles.positioningDiagramCaption}>{t(locale, "固定内容探索", "Preset self-exploration")}</span>
+                <div className={styles.positioningDiagramCopy}>
+                  <p className={styles.positioningDiagramCaption}>{t(locale, "固定内容探索", "Preset self-exploration")}</p>
+                  <p className={styles.positioningDiagramDescription}>{t(locale, "固定 · 单次 · 预设练习", "Fixed · One-off · Preset exercises")}</p>
+                </div>
                 <div className={styles.positioningPhoneFrame}>
                   <Image
                     src={assetPath("/images/selfly0/positioning-phone-1.webp")}
@@ -164,7 +167,10 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
               </div>
               <div className={styles.positioningDiagramCol}>
                 <span className={styles.positioningDiagramPhase}>{t(locale, "后期", "After")}</span>
-                <span className={styles.positioningDiagramCaption}>{t(locale, "长期自我探索", "Long-term self-exploration")}</span>
+                <div className={styles.positioningDiagramCopy}>
+                  <p className={styles.positioningDiagramCaption}>{t(locale, "长期自我探索", "Long-term self-exploration")}</p>
+                  <p className={styles.positioningDiagramDescription}>{t(locale, "自由 · 持续 · 自主记录", "Free-form · Ongoing · Self-directed recording")}</p>
+                </div>
                 <div className={styles.positioningPhoneFrame}>
                   <Image
                     src={assetPath("/images/selfly0/positioning-phone-3.webp")}
@@ -207,7 +213,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
-            <h2 className={styles.selfly0PositioningLabel}>{t(locale, "每日任务节奏", "Daily Task Rhythm")}</h2>
+            <h2 className={styles.selfly0PositioningLabel}>
+              <span className={styles.selfly0ChapterIndex}>01 /</span> {t(locale, "当下", "Today")}
+            </h2>
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>
@@ -261,7 +269,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
-            <h2 className={styles.selfly0PositioningLabel}>{t(locale, "模块化记录", "Modular Recording")}</h2>
+            <h2 className={styles.selfly0PositioningLabel}>
+              <span className={styles.selfly0ChapterIndex}>02.1 /</span> {t(locale, "记录", "Explore")}
+            </h2>
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>
@@ -326,7 +336,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
-            <h2 className={styles.selfly0PositioningLabel}>{t(locale, "优化创建体验", "Optimizing Creation")}</h2>
+            <h2 className={styles.selfly0PositioningLabel}>
+              <span className={styles.selfly0ChapterIndex}>02.2 /</span> {t(locale, "记录", "Explore")}
+            </h2>
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>{t(locale, "用场景启发", "Using scenarios to spark")}</span>
@@ -375,7 +387,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
-            <h2 className={styles.selfly0PositioningLabel}>{t(locale, "体验抛光", "Experience Polish")}</h2>
+            <h2 className={styles.selfly0PositioningLabel}>
+              <span className={styles.selfly0ChapterIndex}>02.3 /</span> {t(locale, "记录", "Explore")}
+            </h2>
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>
@@ -406,7 +420,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
-            <h2 className={styles.selfly0PositioningLabel}>{t(locale, "低压力回顾", "Low-pressure Review")}</h2>
+            <h2 className={styles.selfly0PositioningLabel}>
+              <span className={styles.selfly0ChapterIndex}>03 /</span> {t(locale, "回看", "Review")}
+            </h2>
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>

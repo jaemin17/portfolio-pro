@@ -569,6 +569,13 @@
   margin-bottom: 12px;
 }
 
+.selfly0ChapterIndex {
+  color: #a59f98;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
 .selfly0PositioningGrid {
   display: grid;
   grid-template-columns: 2.5fr 4fr;
