@@ -107,36 +107,33 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   locale,
                   <>
                     <p className={styles.p}>
-                      Selfly 最初是一个帮助用户进行「自我探索」的工具，通过价值观、优势等练习，让人更清晰地认识自己。它来源于我的<strong className={styles.selfly0Emphasis}>个人真实需求</strong>。
+                      Selfly 是一个面向长期使用的
+                      <strong className={styles.selfly0Emphasis}>个人记录工具</strong>，帮助用户通过持续记录、回看与反思，更清晰地理解自己。
                     </p>
                     <p className={styles.p}>
-                      在迭代过程中，我意识到，自我探索并不会在一次测试后结束。人在不同阶段会不断重新理解自己，真正需要的是
+                      在迭代过程中，我意识到，自我探索并不会在一次探索后结束。人在不同阶段会不断重新理解自己，真正需要的是
                       <strong className={styles.selfly0Emphasis}>长期记录、回看与反思</strong>。
                     </p>
                     <p className={styles.p}>
-                      于是，Selfly 从一次性的自我探索工具，转向
-                      <strong className={styles.selfly0Emphasis}>更长期的个人记录空间</strong>
-                      ——从预设练习调整为
+                      因此，我将 Selfly 从以
+                      <strong className={styles.selfly0Emphasis}>价值观、优势等独立预设练习</strong>为主的探索工具，转向更长期的个人记录空间：提供
                       <strong className={styles.selfly0Emphasis}>更自由的记录方式</strong>，并通过
-                      <strong className={styles.selfly0Emphasis}>每日聚焦</strong>与
-                      <strong className={styles.selfly0Emphasis}>回顾机制</strong>，让记录真正进入日常。
+                      <strong className={styles.selfly0Emphasis}>每日聚焦与回顾机制</strong>，让记录真正进入日常。
                     </p>
                   </>,
                   <>
                     <p className={styles.p}>
-                      Selfly started as a tool for &ldquo;self-exploration&rdquo; — helping people understand themselves more clearly through exercises like values and strengths. It grew out of <strong className={styles.selfly0Emphasis}>a real personal need</strong> of my own.
+                      Selfly is a <strong className={styles.selfly0Emphasis}>personal recording tool</strong> designed for long-term use, helping people understand themselves more clearly through ongoing recording, review, and reflection.
                     </p>
                     <p className={styles.p}>
-                      As I iterated, I realized self-exploration doesn&apos;t end after a single test. People keep re-understanding themselves at different life stages — what they really need is{" "}
+                      As I iterated, I realized self-exploration doesn&apos;t end after one round of exploration. People keep re-understanding themselves at different life stages — what they really need is{" "}
                       <strong className={styles.selfly0Emphasis}>long-term recording, review, and reflection</strong>.
                     </p>
                     <p className={styles.p}>
-                      So Selfly evolved from a one-time self-exploration tool into{" "}
-                      <strong className={styles.selfly0Emphasis}>a long-term personal recording space</strong>
-                      {" "}— shifting from preset exercises to{" "}
-                      <strong className={styles.selfly0Emphasis}>a freer way of recording</strong>, and using{" "}
-                      <strong className={styles.selfly0Emphasis}>daily focus</strong> and{" "}
-                      <strong className={styles.selfly0Emphasis}>a review mechanism</strong> to bring journaling into everyday life.
+                      So I evolved Selfly from a self-exploration tool built around{" "}
+                      <strong className={styles.selfly0Emphasis}>separate preset exercises such as values and strengths</strong> into a long-term personal recording space: offering{" "}
+                      <strong className={styles.selfly0Emphasis}>freer ways to record</strong> and using{" "}
+                      <strong className={styles.selfly0Emphasis}>daily focus and review</strong> to bring recording into everyday life.
                     </p>
                   </>,
                 )}
@@ -149,11 +146,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             <div className={styles.positioningDiagramFlow}>
               <div className={styles.positioningDiagramCol}>
                 <span className={styles.positioningDiagramPhase}>{t(locale, "前期", "Before")}</span>
-                <span className={styles.positioningDiagramCaption}>{t(locale, "固定内容入口", "Fixed content entries")}</span>
+                <span className={styles.positioningDiagramCaption}>{t(locale, "固定内容探索", "Preset self-exploration")}</span>
                 <div className={styles.positioningPhoneFrame}>
                   <Image
                     src={assetPath("/images/selfly0/positioning-phone-1.webp")}
-                    alt={tStr(locale, "前期：固定内容入口", "Before: fixed content entries")}
+                    alt={tStr(locale, "前期：固定内容探索", "Before: preset self-exploration")}
                     width={360}
                     height={780}
                     className={styles.positioningDiagramPhone}
@@ -167,11 +164,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
               </div>
               <div className={styles.positioningDiagramCol}>
                 <span className={styles.positioningDiagramPhase}>{t(locale, "后期", "After")}</span>
-                <span className={styles.positioningDiagramCaption}>{t(locale, "个人记录空间", "Personal recording space")}</span>
+                <span className={styles.positioningDiagramCaption}>{t(locale, "长期自我探索", "Long-term self-exploration")}</span>
                 <div className={styles.positioningPhoneFrame}>
                   <Image
                     src={assetPath("/images/selfly0/positioning-phone-3.webp")}
-                    alt={tStr(locale, "后期：个人记录空间", "After: personal recording space")}
+                    alt={tStr(locale, "后期：长期自我探索", "After: long-term self-exploration")}
                     width={360}
                     height={780}
                     className={styles.positioningDiagramPhone}
