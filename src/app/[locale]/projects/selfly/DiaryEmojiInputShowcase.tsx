@@ -91,14 +91,14 @@ export function DiaryEmojiQuickEdit() {
 
 const diaryEmojiInputPolishCopy = {
   zh: {
-    figureLabel: "日记输入：选完表情后自动聚焦文本输入",
+    figureLabel: "日记输入：选择情绪后自动返回文字输入",
     title: "输入连贯性",
-    jumpLabel: "改造后：① 选完表情后自动聚焦 → 直接进入 ③",
+    jumpLabel: "一次自然的输入路径：① 记录入口 → ② 选择情绪 → ③ 继续输入",
   },
   en: {
-    figureLabel: "Diary input: auto-focus on text after picking an emoji",
+    figureLabel: "Diary input: returning to text input after choosing a mood",
     title: "Input continuity",
-    jumpLabel: "After: ① pick a mood → auto-focus → straight to ③",
+    jumpLabel: "One natural input path: ① entry point → ② choose mood → ③ keep writing",
   },
 } as const;
 
