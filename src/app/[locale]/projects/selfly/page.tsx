@@ -230,9 +230,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   locale,
                   <>
                     <p>
-                      我没有把首页设计成可以无限添加的任务列表，而是让用户每天只保留三件最重要的事。
-                      这个限制不是功能缺失，而是刻意把「收集更多任务」转成
-                      <strong className={styles.selfly0Emphasis}>判断今天真正重要的事</strong>。
+                      我为首页设置了 Top 3 的容量限制，让用户每天只保留三件最重要的事。
+                      明确的边界减少了任务不断累积带来的压力，也把注意力从「收集更多任务」转向
+                      <strong className={styles.selfly0Emphasis}>「判断今天真正重要的事」</strong>。
                     </p>
                     <div className={styles.designPoints}>
                       <h4>设计取舍</h4>
@@ -246,8 +246,8 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   </>,
                   <>
                     <p>
-                      I didn&apos;t design the home screen as an endless task list. Instead, users keep only three top priorities each day. This limit isn&apos;t a missing feature — it&apos;s a deliberate shift from &ldquo;collecting more tasks&rdquo; to{" "}
-                      <strong className={styles.selfly0Emphasis}>deciding what actually matters today</strong>.
+                      I set a Top 3 capacity on the home screen so users keep only the three things that matter most each day. A clear boundary reduces the pressure of an ever-growing task list and shifts attention from &ldquo;collecting more tasks&rdquo; to{" "}
+                      <strong className={styles.selfly0Emphasis}>&ldquo;deciding what actually matters today&rdquo;</strong>.
                     </p>
                     <div className={styles.designPoints}>
                       <h4>Design Trade-offs</h4>
@@ -288,9 +288,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   locale,
                   <>
                     <p>
-                      我对原有自我探索功能进行结构重组，把价值观、愿景板、成功日记、优势测试等独立入口，抽象成
+                      原有的价值观、愿景板、成功日记和优势测试以独立功能呈现，入口彼此割裂。为降低理解成本，我按内容形态重新组织这些功能，将它们归纳为
                       <strong className={styles.selfly0Emphasis}>清单、计划、日记和图册四类记录容器</strong>。
-                      这样用户理解的是<strong className={styles.selfly0Emphasis}>记录方式</strong>，而不是一组彼此割裂的工具。
+                      用户理解的不再是一组预设用途的工具，而是不同的<strong className={styles.selfly0Emphasis}>记录方式</strong>。
                     </p>
                     <p>
                       按功能进入会更容易预设用途，<strong className={styles.selfly0Emphasis}>按容器进入能承接自我发现</strong>，同时适配不同人的内容、习惯和状态。
@@ -308,9 +308,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   </>,
                   <>
                     <p>
-                      I restructured the original self-exploration features, turning separate entries like Values, Vision Board, Success Diary, and Strengths Test into{" "}
-                      <strong className={styles.selfly0Emphasis}>four record containers: List, Plan, Journal, and Board</strong>. This way, users understand{" "}
-                      <strong className={styles.selfly0Emphasis}>a way of recording</strong>, not a set of disconnected tools.
+                      Values, Vision Board, Success Diary, and Strengths Test originally appeared as separate features, leaving their entry points fragmented. To reduce cognitive overhead, I reorganized them by content form into{" "}
+                      <strong className={styles.selfly0Emphasis}>four record containers: List, Plan, Journal, and Board</strong>. Users now encounter different{" "}
+                      <strong className={styles.selfly0Emphasis}>ways of recording</strong>, rather than a set of tools with preset purposes.
                     </p>
                     <p>
                       Entering by feature tends to presuppose a fixed purpose; <strong className={styles.selfly0Emphasis}>entering by container leaves room for self-discovery</strong>, while adapting to each person&apos;s content, habits, and state.
@@ -349,8 +349,8 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   locale,
                   <>
                     <p>
-                      我发现高度自定义并不等于容易开始。新用户如果一开始就面对类型、名称、图标和设置，启动成本反而会被提前放大。
-                      因此我把创建模块改成两条路径：熟悉产品的人可以自定义，新用户可以从情绪日记、年度目标、我的边界、理想自我等模板直接开始。
+                      自定义选项越多，新用户在开始记录前需要做的决定也越多。类型、名称、图标和设置等选择，会把注意力从记录内容转移到配置过程。
+                      因此，我将创建流程拆分为两条路径：熟悉产品的用户可以自由配置，新用户则可以从情绪日记、年度目标、我的边界、理想自我等模板直接开始。
                     </p>
                     <div className={styles.designPoints}>
                       <h4>设计要点</h4>
@@ -364,8 +364,8 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   </>,
                   <>
                     <p>
-                      I found that high customizability doesn&apos;t make things easy to start. If new users face type, name, icon, and settings choices right away, the start-up cost only grows.
-                      So I split module creation into two paths: people familiar with the product can customize freely, while new users can start directly from templates like Mood Diary, Annual Goals, My Boundaries, or Ideal Self.
+                      The more customization options users face, the more decisions they must make before they can start recording. Choices about type, name, icon, and settings shift attention from the content itself to configuration.
+                      So I split the creation flow into two paths: users familiar with the product can configure freely, while new users can start directly from templates like Mood Diary, Annual Goals, My Boundaries, or Ideal Self.
                     </p>
                     <div className={styles.designPoints}>
                       <h4>Design Highlights</h4>
@@ -393,22 +393,20 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>
-                  {t(locale, "让「选情绪 + 写文字」", "Making “pick a mood + write”")}
+                  {t(locale, "用情绪图标，", "Using mood icons")}
                 </span>
                 <span className={styles.selfly0PositioningHeadingDark}>
-                  {t(locale, "成为一条连贯路径", "one continuous flow")}
+                  {t(locale, "让文字记录更生动", "to make written entries more vivid")}
                 </span>
               </h3>
               <div className={styles.selfly0Body}>
                 {t(
                   locale,
                   <p>
-                    由于发送按钮始终依附于文本输入区域，用户最终仍需要回到文字输入完成发布。因此，我在表情选择完成后<strong className={styles.selfly0Emphasis}>自动恢复输入框焦点</strong>，让「选情绪 → 写内容 → 发布」能够在同一次输入会话中自然完成，进一步<strong className={styles.selfly0Emphasis}>减少记录过程中的操作摩擦</strong>。
+                    文字能够记录发生了什么，情绪图标则补充当下的感受，让日记在回看时更直观、更有记忆点。由于发布仍需要文字输入，图标选择不应打断后续记录。因此，我在选择完成后<strong className={styles.selfly0Emphasis}>自动恢复输入框焦点</strong>，让「选情绪 → 写内容 → 发布」能够在同一次输入会话中自然完成。
                   </p>,
                   <p>
-                    Since the send button always lives with the text field, users still need to return to text input to publish. So after picking an emoji, I{" "}
-                    <strong className={styles.selfly0Emphasis}>automatically restore focus to the text field</strong>, letting &ldquo;pick a mood → write → publish&rdquo; happen naturally within one input session — further{" "}
-                    <strong className={styles.selfly0Emphasis}>reducing friction during recording</strong>.
+                    Text captures what happened, while mood icons add how it felt, making entries more vivid and easier to recognize when looking back. Because publishing still requires text input, choosing an icon should not interrupt the writing flow. So after an icon is selected, I <strong className={styles.selfly0Emphasis}>automatically restore focus to the text field</strong>, allowing &ldquo;choose a mood → write → publish&rdquo; to unfold naturally within one input session.
                   </p>,
                 )}
               </div>
