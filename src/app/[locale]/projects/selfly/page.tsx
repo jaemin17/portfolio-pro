@@ -476,10 +476,8 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             <h2 className={styles.selfly0PositioningLabel}>{t(locale, "应用图标", "App Icon")}</h2>
             <div className={styles.caseText}>
               <h3 className={styles.selfly0StructureHeading}>
-                <span className={styles.selfly0PositioningHeadingLight}>{t(locale, "围绕", "Built around")}</span>
-                <span className={styles.selfly0PositioningHeadingDark}>{t(locale, "「书」", "“the book”")}</span>
-                <span className={styles.selfly0PositioningHeadingLight}>{t(locale, "与", "and")}</span>
-                <span className={styles.selfly0PositioningHeadingDark}>{t(locale, "「蝴蝶」", "“the butterfly”")}</span>
+                <span className={styles.selfly0PositioningHeadingLight}>{t(locale, "把「记录与成长」", "Distilling “recording and growth”")}</span>
+                <span className={styles.selfly0PositioningHeadingDark}>{t(locale, "凝练成一个图标", "into one icon")}</span>
               </h3>
               <div className={styles.selfly0Body}>
                 {t(
@@ -493,19 +491,19 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   </p>,
                 )}
                 <div className={styles.designPoints}>
-                  <h4>{t(locale, "设计决策", "Design Decisions")}</h4>
+                  <h4>{t(locale, "视觉取舍", "Visual Trade-offs")}</h4>
                   <ul>
                     {t(
                       locale,
                       <>
-                        <li><strong>橙 × 紫的品牌色对比</strong></li>
-                        <li>小尺寸优先：减少线条与细节</li>
-                        <li>双色蝴蝶作为视觉锚点，连接两种主色</li>
+                        <li><strong>橙色书本 × 紫色蝴蝶，建立视觉层级</strong></li>
+                        <li>简化线条，保证小尺寸识别</li>
+                        <li>多显示模式一致性</li>
                       </>,
                       <>
-                        <li><strong>Orange × purple brand color contrast</strong></li>
-                        <li>Small-size first: fewer lines and details</li>
-                        <li>A two-tone butterfly as the visual anchor, bridging both brand colors</li>
+                        <li><strong>Orange book × purple butterfly for clear visual hierarchy</strong></li>
+                        <li>Simplified lines for small-size recognition</li>
+                        <li>Consistency across display modes</li>
                       </>,
                     )}
                   </ul>
@@ -529,11 +527,10 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 {t(
                   locale,
                   <p>
-                    除了体验设计，我也独立完成了 Selfly 的 iOS 实现，包括 SwiftUI 界面、SwiftData
-                    数据模型、iCloud 同步、StoreKit 订阅、多语言和数据重置等能力，让设计方案能够在真实交互和上线环境中成立。
+                    除了体验设计，我也独立完成了 Selfly 的 iOS 开发、上线与持续迭代。从界面实现、数据模型到同步与订阅，我将设计方案推进为真实可用的产品，并在实际使用中不断校准体验。
                   </p>,
                   <p>
-                    Beyond the experience design, I also built the entire iOS implementation myself — SwiftUI interface, SwiftData model, iCloud sync, StoreKit subscriptions, localization, and data reset — so the design would hold up under real interaction and a live release.
+                    Beyond experience design, I independently developed, launched, and continue to iterate on Selfly. From the interface and data model to sync and subscriptions, I turned the design into a working product and keep refining the experience through real-world use.
                   </p>,
                 )}
                 <div className={styles.designPoints}>
@@ -580,24 +577,18 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 locale,
                 <>
                   <p>
-                    Selfly 让我更明确地意识到，产品体验的质量往往来自连续的取舍，而不是单个功能的完成度。面向长期使用的个人工具，需要持续平衡功能完整性、信息密度和情绪负担。
+                    在推进 Selfly 从 0 到 1 的过程中，我逐渐意识到，真正困难的并不是持续增加功能，而是在不断变化的需求中保持产品边界清晰，并判断哪些能力真正支持长期使用。
                   </p>
                   <p>
-                    这个过程也让我意识到，0 到 1 阶段最难的并不是持续增加功能，而是在不断变化的需求中保持产品边界清晰，并判断哪些能力真正支撑长期使用。
-                  </p>
-                  <p>
-                    作为一个独立完成的产品项目，它也训练了我从产品约束、体验判断到真实上线之间建立闭环的能力：设计不只停留在方案层面，也需要在实现、审核和持续迭代中被验证。
+                    独立完成这个项目，也训练了我从产品约束、体验判断到真实上线之间建立闭环的能力。设计不只停留在方案层面，也需要在实现、审核与持续迭代中被验证。
                   </p>
                 </>,
                 <>
                   <p>
-                    Selfly made it clearer to me that the quality of a product experience usually comes from a continuous series of trade-offs, not the completeness of any single feature. Personal tools meant for long-term use need to constantly balance feature completeness, information density, and emotional load.
+                    While taking Selfly from 0 to 1, I gradually realized that the hardest part is not adding more features, but keeping the product&apos;s boundaries clear as needs evolve and deciding which capabilities truly support long-term use.
                   </p>
                   <p>
-                    This process also showed me that the hardest part of going from 0 to 1 isn&apos;t adding more features — it&apos;s keeping the product&apos;s boundaries clear amid ever-changing requirements, and judging which capabilities truly support long-term use.
-                  </p>
-                  <p>
-                    As a project I built entirely on my own, it also trained my ability to close the loop from product constraints and experience judgment all the way to a real launch: design can&apos;t stay at the proposal stage — it has to be validated through implementation, review, and continuous iteration.
+                    Building the project independently also taught me to close the loop between product constraints, experience judgment, and a real launch. Design cannot remain a proposal; it must be validated through implementation, review, and continuous iteration.
                   </p>
                 </>,
               )}
