@@ -525,10 +525,10 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 {t(
                   locale,
                   <p>
-                    除了体验设计，我也独立完成了 Selfly 的 iOS 开发、上线与持续迭代。从界面实现、数据模型到同步与订阅，我将设计方案推进为真实可用的产品，并在实际使用中不断校准体验。
+                    除了体验设计，我也独立完成了 Selfly 的 iOS 开发、上线与持续迭代。从界面实现、数据模型到同步与订阅，我将设计方案推进为真实可用的产品，并<strong className={styles.selfly0Emphasis}>在实际使用中不断校准体验</strong>。
                   </p>,
                   <p>
-                    Beyond experience design, I independently developed, launched, and continue to iterate on Selfly. From the interface and data model to sync and subscriptions, I turned the design into a working product and keep refining the experience through real-world use.
+                    Beyond experience design, I independently developed, launched, and continue to iterate on Selfly. From the interface and data model to sync and subscriptions, I turned the design into a working product and <strong className={styles.selfly0Emphasis}>keep refining the experience through real-world use</strong>.
                   </p>,
                 )}
                 <div className={styles.designPoints}>
@@ -539,12 +539,10 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                       <>
                         <li><strong>从设计方案到 SwiftUI 实现</strong></li>
                         <li>数据模型、同步、订阅与多语言支持</li>
-                        <li>真实使用场景下的体验边界校准</li>
                       </>,
                       <>
                         <li><strong>From design to SwiftUI implementation</strong></li>
                         <li>Data model, sync, subscriptions, and localization</li>
-                        <li>Calibrating experience edge cases against real usage</li>
                       </>,
                     )}
                   </ul>
