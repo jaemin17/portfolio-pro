@@ -534,12 +534,6 @@
   padding-top: 0;
 }
 
-.selfly0ContactClosing {
-  margin: 0 0 1.5rem;
-  color: var(--text-secondary);
-  font-size: var(--fs-body);
-}
-
 .selfly0ContactBack {
   display: inline-flex;
   align-items: center;

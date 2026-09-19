@@ -594,9 +594,8 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             </div>
           </div>
         </section>
-        <section className={styles.selfly0ContactSection} aria-label={tStr(locale, "结语", "Closing")}>
+        <section className={styles.selfly0ContactSection} aria-label={tStr(locale, "页面导航", "Page navigation")}>
           <div className={styles.selfly0ContactInner}>
-            <p className={styles.selfly0ContactClosing}>{t(locale, "感谢你看到这里 :) ✰", "Thanks for reading this far :) ✰")}</p>
             <Link className={styles.selfly0ContactBack} href={localePath(locale, "/")}>
               {t(locale, "← 返回首页", "← Back to home")}
             </Link>
