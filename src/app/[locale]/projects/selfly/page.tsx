@@ -491,17 +491,15 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   </p>,
                 )}
                 <div className={styles.designPoints}>
-                  <h4>{t(locale, "视觉取舍", "Visual Trade-offs")}</h4>
+                  <h4>{t(locale, "图标适配", "Icon Adaptability")}</h4>
                   <ul>
                     {t(
                       locale,
                       <>
-                        <li><strong>橙色书本 × 紫色蝴蝶，建立视觉层级</strong></li>
                         <li>简化线条，保证小尺寸识别</li>
                         <li>多显示模式一致性</li>
                       </>,
                       <>
-                        <li><strong>Orange book × purple butterfly for clear visual hierarchy</strong></li>
                         <li>Simplified lines for small-size recognition</li>
                         <li>Consistency across display modes</li>
                       </>,
