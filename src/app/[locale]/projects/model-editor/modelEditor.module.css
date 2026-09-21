@@ -42,6 +42,70 @@
 .capabilityItem .video {
   margin-top: 0;
 }
+
+.onboardingVideoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 48px;
+  margin-top: 12px;
+}
+
+.onboardingVideoCard {
+  min-width: 0;
+}
+
+.onboardingVideo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  border-radius: 8px;
+  background: #e8eef5;
+  box-sizing: border-box;
+}
+
+.onboardingVideoText {
+  padding: 12px 2px 0;
+}
+
+.onboardingVideoMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
+  margin: 0;
+}
+
+.onboardingVideoTitle {
+  color: #1a1a1a;
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.onboardingVideoTrait {
+  color: #2f7df4;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.onboardingVideoTrait::before {
+  content: "·";
+  margin-right: 6px;
+  color: #9bbcf5;
+}
+
+.onboardingVideoValue {
+  margin: 6px 0 0;
+  color: #555;
+  font-size: var(--fs-label);
+  line-height: 1.55;
+}
+
 .conceptHeadlineEmphasis {
   font-style: italic;
   color: #3b82f6;
@@ -103,8 +167,8 @@
 }
 .positioningGrid {
   display: grid;
-  grid-template-columns: 2.5fr 4fr;
-  gap: 100px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   align-items: start;
 }
 .positioningHeading {
@@ -134,9 +198,23 @@
   margin-bottom: 28px;
   line-height: 1.75;
 }
+.roleBlock {
+  margin-top: 24px;
+}
+.roleBlock p {
+  margin: 0;
+}
 .positioningBody .roleLabel {
-  margin-top: 8px;
-  margin-bottom: 6px;
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  color: #3b82f6;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  margin: 0 0 10px;
 }
 .protoEvidence {
   margin: 40px 0 24px;
@@ -225,7 +303,7 @@
   font-weight: 500;
 }
 .directionPanel {
-  margin-top: 52px;
+  margin-top: 36px;
   text-align: left;
 }
 .directionCards {
@@ -333,6 +411,7 @@
   font-weight: 500;
   line-height: 1.65;
   letter-spacing: -0.01em;
+  padding-top: 24px;
   margin: 0;
 }
 .narrativeHeadlineLight {
@@ -382,6 +461,45 @@
   margin-top: 28px;
 }
 
+.scenarioMatrix {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.scenarioCard {
+  min-width: 0;
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  background: #f8fbff;
+  box-sizing: border-box;
+}
+
+.scenarioTitle {
+  margin: 0 0 10px;
+  color: #1a1a1a;
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.scenarioCriteria {
+  margin: 0;
+  color: #2f7df4;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.scenarioValue {
+  margin: 8px 0 0;
+  color: #555;
+  font-size: var(--fs-label);
+  line-height: 1.55;
+}
+
 .finalLayoutEvidence {
   display: grid;
   gap: 20px;
@@ -425,13 +543,18 @@
     color: #777;
   }
 
+  .roleBlock {
+    margin-top: 24px;
+  }
+
+  .roleBlock p {
+    margin: 0;
+  }
+
   .positioningBody .roleLabel {
-    font-size: var(--fs-caption);
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    color: #4a5568;
-    margin-top: 4px;
-    margin-bottom: 8px;
+    color: #3b82f6;
+    font-size: var(--fs-label);
+    margin: 0 0 10px;
   }
 
   .positioningEmphasis {
@@ -503,6 +626,24 @@
   .directionCard p {
     width: auto;
     text-align: left;
+  }
+
+  .scenarioMatrix {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .scenarioCard {
+    padding: 16px;
+  }
+
+  .onboardingVideoGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .onboardingVideoText {
+    padding: 10px 2px 0;
   }
 }
 
