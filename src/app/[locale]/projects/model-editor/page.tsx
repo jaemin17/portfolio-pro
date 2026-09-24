@@ -7,6 +7,8 @@ import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/paths";
 import { FinalLayoutCarousel } from "./FinalLayoutCarousel";
+import { LayoutExplorationSwitcher } from "./LayoutExplorationSwitcher";
+import { ThemeComparisonSlider } from "./ThemeComparisonSlider";
 import { modelEditorAssets } from "./modelEditorAssets";
 import selflyStyles from "../selfly/selfly0.module.css";
 import styles from "./modelEditor.module.css";
@@ -225,6 +227,68 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                     </div>
                   </div>
                 </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+          <div className={styles.narrativeSection}>
+            <div className={styles.narrativeInner}>
+              <div className={styles.layoutExploration}>
+                <div className={styles.layoutExplorationIntro}>
+                  <p className={styles.layoutExplorationKicker}>
+                    {t(locale, "布局方案探索", "Early layout explorations")}
+                  </p>
+                  <h4>
+                    {t(
+                      locale,
+                      "围绕空间、层级和面板负担做多方向测试",
+                      "Testing directions around space, hierarchy, and panel weight",
+                    )}
+                  </h4>
+                  <p>
+                    {t(
+                      locale,
+                      "并行测试让我发现：顶部入口会持续占用预览高度，也容易让工具层级混在一起，因此后续开始尝试把全局入口转移到侧边。",
+                      "These parallel tests showed that top entries continued to consume preview height and blur tool hierarchy, so I started exploring a side entry for global actions.",
+                    )}
+                  </p>
+                </div>
+                <LayoutExplorationSwitcher
+                  items={[
+                    {
+                      image: assetPath(modelEditorAssets.layoutExploreLegacy),
+                      marker: "A",
+                      label: tStr(locale, "旧方案", "Original layout"),
+                      note: tStr(locale, "顶部入口占高，面板和工具分散", "Top entry takes height while panels and tools feel scattered"),
+                    },
+                    {
+                      image: assetPath(modelEditorAssets.layoutExploreNoTop),
+                      marker: "B",
+                      label: tStr(locale, "方案2 去掉顶部", "Option 2: Remove the top bar"),
+                      note: tStr(locale, "模型空间更完整，但中间入口干扰视线", "The model area opens up, but center controls interrupt focus"),
+                    },
+                    {
+                      image: assetPath(modelEditorAssets.layoutExploreTopHeavy),
+                      marker: "C",
+                      label: tStr(locale, "方案3 全部放在顶部", "Option 3: Move everything to the top"),
+                      note: tStr(locale, "入口集中，但顶部承载过重", "Actions are centralized, but the top area carries too much"),
+                    },
+                    {
+                      image: assetPath(modelEditorAssets.layoutExploreButtonGroup),
+                      marker: "D",
+                      label: tStr(locale, "方案4 顶部按钮组", "Option 4: Top button groups"),
+                      note: tStr(locale, "入口更轻，但横向信息仍然拥挤", "The entry style is lighter, but horizontal density remains high"),
+                    },
+                    {
+                      image: assetPath(modelEditorAssets.layoutExploreSideTopNav),
+                      marker: "E",
+                      label: tStr(locale, "方案5 侧边分类测试", "Option 5: Side category test"),
+                      note: tStr(locale, "分区关系更明显，但仍需验证路径", "Zones read more clearly, but the workflow still needs validation"),
+                    },
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -472,25 +536,15 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                   tone="dark"
                   slides={[
                     {
-                      label: tStr(locale, "放大点击目标", "Larger targets"),
+                      label: tStr(locale, "降低视觉负担", "Reduce visual load"),
                       content: (
                         <div className={styles.carouselSlideFrame}>
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={assetPath(modelEditorAssets.enlargedControls)}
-                            alt={tStr(locale, "放大点击目标控件样式", "Enlarged control styles")}
-                          />
-                        </div>
-                      ),
-                    },
-                    {
-                      label: tStr(locale, "对比深色模式", "Dark mode comparison"),
-                      content: (
-                        <div className={styles.carouselSlideFrame}>
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
+                          <ThemeComparisonSlider
                             src={assetPath(modelEditorAssets.themeCompare)}
-                            alt={tStr(locale, "黑色与白色版本对比", "Light and dark theme comparison")}
+                            beforeLabel={tStr(locale, "调整前", "Before")}
+                            afterLabel={tStr(locale, "调整后", "After")}
+                            alt={tStr(locale, "模型编辑器界面前后视觉对比", "Model editor interface visual comparison")}
+                            controlLabel={tStr(locale, "拖动查看界面调整前后的视觉变化", "Drag to compare the interface before and after")}
                           />
                         </div>
                       ),
