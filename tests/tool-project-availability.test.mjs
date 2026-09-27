@@ -80,6 +80,7 @@ assert.ok(
     styles.includes(".toolFrame {\n  position: relative;") &&
     !styles.includes(".toolCard {\n  position: relative;") &&
     styles.includes("inset: 0;") &&
+    unavailableOverlayStyles.includes("border-radius: 1.25rem 1.25rem 0 0;") &&
     styles.includes("background: rgb(0 0 0 / 0.42);") &&
     styles.includes("color: #fff;") &&
     !unavailableOverlayStyles.includes("transform:") &&

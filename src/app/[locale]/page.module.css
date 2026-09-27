@@ -464,17 +464,13 @@
   justify-content: center;
   gap: 0.35rem;
   padding: 1rem;
-  border-radius: 1.25rem;
+  border-radius: 1.25rem 1.25rem 0 0;
   background: rgb(0 0 0 / 0.42);
   color: #fff;
   text-align: center;
   opacity: 0;
   transition: opacity 0.18s ease;
   pointer-events: none;
-}
-
-.toolFrameBare .toolUnavailableOverlay {
-  border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .toolCardUnavailable:hover .toolUnavailableOverlay,
