@@ -214,8 +214,39 @@ const copy: Record<Locale, HomeCopy> = {
         {
           id: "all",
           label: "全部",
-          summary: "所有精选项目。",
-          projects: [],
+          summary: "所有项目。",
+          projects: [
+            {
+              title: "Selfly",
+              description: "独立产品方向：记录、回看与自我探索。",
+              href: "/projects/selfly",
+            },
+            {
+              title: "Model Editor",
+              description: "工作经验支撑：3D 课件编辑工具。",
+              href: "/projects/model-editor",
+            },
+            {
+              title: "VR 教育与实训",
+              description: "XR 与 3D 训练产品的真实项目经验。",
+              href: "/projects/vr-education",
+            },
+            {
+              title: "Sticky Notes",
+              description: "轻量工具体验与工作流整理。",
+              href: "https://jaemin17.github.io/sticky-notes/",
+            },
+            {
+              title: "Next",
+              description: "空间画布上的想法整理工具。",
+              href: "https://jaemin17.github.io/plan/",
+            },
+            {
+              title: "3D Engine App Icon Design",
+              description: "3D 图标和视觉系统表达。",
+              href: "/projects/engine-icon",
+            },
+          ],
         },
         {
           id: "zero-to-one",
@@ -524,8 +555,39 @@ const copy: Record<Locale, HomeCopy> = {
         {
           id: "all",
           label: "All",
-          summary: "All selected projects.",
-          projects: [],
+          summary: "All projects.",
+          projects: [
+            {
+              title: "Selfly",
+              description: "Independent product direction: journaling, review, and self-discovery.",
+              href: "/projects/selfly",
+            },
+            {
+              title: "Model Editor",
+              description: "Work experience anchor: a 3D courseware editing tool.",
+              href: "/projects/model-editor",
+            },
+            {
+              title: "VR Education & Training",
+              description: "Real project experience across XR and 3D training products.",
+              href: "/projects/vr-education",
+            },
+            {
+              title: "Sticky Notes",
+              description: "A lightweight tool for workflow and temporary notes.",
+              href: "https://jaemin17.github.io/sticky-notes/",
+            },
+            {
+              title: "Next",
+              description: "A spatial canvas for laying out thoughts.",
+              href: "https://jaemin17.github.io/plan/",
+            },
+            {
+              title: "3D Engine App Icon Design",
+              description: "3D icon and visual system expression.",
+              href: "/projects/engine-icon",
+            },
+          ],
         },
         {
           id: "zero-to-one",

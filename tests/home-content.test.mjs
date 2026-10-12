@@ -56,6 +56,8 @@ const visualProjectsBlocks = copy.match(
   /visualProjects: \{[\s\S]*?caseStudies:/g,
 ) ?? [];
 const workIndexBlocks = copy.match(/workIndex: \{[\s\S]*?currentlyBuilding:/g) ?? [];
+const zhWorkIndexBlock = workIndexBlocks[0] ?? "";
+const enWorkIndexBlock = workIndexBlocks[1] ?? "";
 
 const requiredCopy = [
   "Work Index",
@@ -133,6 +135,39 @@ for (const block of workIndexBlocks) {
     "Work Index should hide the Design Systems tab until content is ready",
   );
 }
+
+const zhAllProjectsBlock =
+  zhWorkIndexBlock.match(/id: "all",[\s\S]*?projects: \[([\s\S]*?)\],\n        \},/)?.[1] ?? "";
+const enAllProjectsBlock =
+  enWorkIndexBlock.match(/id: "all",[\s\S]*?projects: \[([\s\S]*?)\],\n        \},/)?.[1] ?? "";
+
+assert.ok(
+  zhAllProjectsBlock.indexOf('title: "Selfly"') <
+    zhAllProjectsBlock.indexOf('title: "Model Editor"') &&
+    zhAllProjectsBlock.indexOf('title: "Model Editor"') <
+      zhAllProjectsBlock.indexOf('title: "VR 教育与实训"') &&
+    zhAllProjectsBlock.indexOf('title: "VR 教育与实训"') <
+      zhAllProjectsBlock.indexOf('title: "Sticky Notes"') &&
+    zhAllProjectsBlock.indexOf('title: "Sticky Notes"') <
+      zhAllProjectsBlock.indexOf('title: "Next"') &&
+    zhAllProjectsBlock.indexOf('title: "Next"') <
+      zhAllProjectsBlock.indexOf('title: "3D Engine App Icon Design"'),
+  "Chinese All tab should define a curated portfolio narrative order",
+);
+
+assert.ok(
+  enAllProjectsBlock.indexOf('title: "Selfly"') <
+    enAllProjectsBlock.indexOf('title: "Model Editor"') &&
+    enAllProjectsBlock.indexOf('title: "Model Editor"') <
+      enAllProjectsBlock.indexOf('title: "VR Education & Training"') &&
+    enAllProjectsBlock.indexOf('title: "VR Education & Training"') <
+      enAllProjectsBlock.indexOf('title: "Sticky Notes"') &&
+    enAllProjectsBlock.indexOf('title: "Sticky Notes"') <
+      enAllProjectsBlock.indexOf('title: "Next"') &&
+    enAllProjectsBlock.indexOf('title: "Next"') <
+      enAllProjectsBlock.indexOf('title: "3D Engine App Icon Design"'),
+  "English All tab should define a curated portfolio narrative order",
+);
 
 assert.ok(
   !searchableCopy.includes("Currentlybuilding"),
@@ -295,11 +330,18 @@ assert.ok(
     searchableWorkIndexComponent.includes("onClick={()=>setActiveId(item.id)}") &&
     searchableWorkIndexComponent.includes("<ToolProjectList") &&
     /activeId===["']all["']/.test(searchableWorkIndexComponent) &&
+    searchableWorkIndexComponent.includes("resolveAllProjects") &&
+    searchableWorkIndexComponent.includes("allItem?.projects") &&
+    searchableWorkIndexComponent.includes("orderedProjectTitles.has(project.title)") &&
+    searchableWorkIndexComponent.includes("...remainingProjects") &&
+    searchableWorkIndexComponent.includes("constallInitialCount=6") &&
+    searchableWorkIndexComponent.includes('locale==="zh"?"更多项目":"Moreprojects"') &&
+    searchableWorkIndexComponent.includes('loadMoreLabel={activeId==="all"?allLoadMoreLabel:undefined}') &&
+    searchableWorkIndexComponent.includes('initialCount={activeId==="all"?allInitialCount:group.projects.length}') &&
     searchableWorkIndexComponent.includes("categoryIds?.includes(activeId)") &&
-    searchableWorkIndexComponent.includes("categoryIds?.[0]") &&
     searchableWorkIndexComponent.includes("styles.workIndexGroup") &&
     searchableWorkIndexComponent.includes("styles.workIndexGroupHeading"),
-  "Work Index should group All by each card's first category and still filter other tabs by membership",
+  "Work Index should render All projects with curated items first, collapse after the first six, and still filter other tabs by membership",
 );
 
 assert.ok(
@@ -356,6 +398,18 @@ assert.ok(
     /\.workIndexRule\{[^}]*background:var\(--border\)/.test(searchableHomeStyles) &&
     /\.workIndexRule\{[^}]*opacity:0\.68/.test(searchableHomeStyles),
   "Work Index tabs should stay unfilled until selected, with a subtle content-width divider",
+);
+
+assert.ok(
+  /\.loadMore\{[^}]*margin:0\.75rem00/.test(searchableHomeStyles) &&
+    /\.loadMore\{[^}]*border:1pxsolidvar\(--border\)/.test(searchableHomeStyles) &&
+    /\.loadMore\{[^}]*border-radius:999px/.test(searchableHomeStyles) &&
+    /\.loadMore\{[^}]*min-height:2\.5rem/.test(searchableHomeStyles) &&
+    /\.loadMore\{[^}]*padding:0\.55rem1\.125rem/.test(searchableHomeStyles) &&
+    /\.loadMore\{[^}]*font-size:var\(--fs-label\)/.test(searchableHomeStyles) &&
+    /\.loadMore:hover\{[^}]*border-color:rgb\(000\/0\.18\)/.test(searchableHomeStyles) &&
+    /\.loadMore:hover\{[^}]*color:var\(--text-primary\)/.test(searchableHomeStyles),
+  "Load more should use the same pill-button treatment as Work Index tabs",
 );
 
 assert.ok(

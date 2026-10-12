@@ -6,8 +6,21 @@ import type { CurrentlyBuilding, ToolProjects, WorkIndexItem } from "@/i18n/copy
 import { ToolProjectList } from "./ToolProjectList";
 import styles from "./page.module.css";
 
-function primaryCategoryId(project: { categoryIds?: string[] }) {
-  return project.categoryIds?.[0];
+function resolveAllProjects<T extends { title: string }>(
+  orderedProjects: { title: string }[],
+  allProjects: T[],
+) {
+  const ordered = orderedProjects
+    .map((orderedProject) =>
+      allProjects.find((project) => project.title === orderedProject.title),
+    )
+    .filter((project): project is T => Boolean(project));
+  const orderedProjectTitles = new Set(ordered.map((project) => project.title));
+  const remainingProjects = allProjects.filter(
+    (project) => !orderedProjectTitles.has(project.title),
+  );
+
+  return [...ordered, ...remainingProjects];
 }
 
 export function WorkIndex({
@@ -33,17 +46,19 @@ export function WorkIndex({
     ...toolProjects.items,
     ...visualProjects.items,
   ];
+  const allItem = items.find((item) => item.id === "all");
   const categories = items.filter((item) => item.id !== "all");
+  const allInitialCount = 6;
+  const allLoadMoreLabel =
+    locale === "zh" ? "更多项目" : "More projects";
   const groups =
     activeId === "all"
-      ? categories
-          .map((category) => ({
-            ...category,
-            projects: allProjects.filter(
-              (project) => primaryCategoryId(project) === category.id,
-            ),
-          }))
-          .filter((group) => group.projects.length > 0)
+      ? [
+          {
+            ...(allItem ?? items[0]),
+            projects: resolveAllProjects(allItem?.projects ?? [], allProjects),
+          },
+        ]
       : [
           {
             ...(items.find((item) => item.id === activeId) ?? categories[0]),
@@ -73,14 +88,19 @@ export function WorkIndex({
       <div className={styles.workIndexPanel} role="tabpanel">
         {groups.map((group) => (
           <div key={group.id} className={styles.workIndexGroup}>
-            {activeId === "all" ? (
+            {activeId !== "all" ? (
               <h2 className={styles.workIndexGroupHeading}>{group.label}</h2>
             ) : null}
             <ToolProjectList
               className={styles.workIndexList}
               items={group.projects}
               locale={locale}
-              initialCount={group.projects.length}
+              loadMoreLabel={
+                activeId === "all" ? allLoadMoreLabel : undefined
+              }
+              initialCount={
+                activeId === "all" ? allInitialCount : group.projects.length
+              }
             />
           </div>
         ))}
