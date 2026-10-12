@@ -46,6 +46,7 @@ function ToolProjectCard({
   const mediaClass = [
     styles.toolVideo,
     item.preserveImageRatio ? styles.toolVideoNaturalRatio : undefined,
+    item.mediaAspect === "tall" ? styles.toolVideoTall : undefined,
   ]
     .filter(Boolean)
     .join(" ");

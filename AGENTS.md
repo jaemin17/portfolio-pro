@@ -37,3 +37,10 @@ terminal-only code inspection, lint run, build run, or file search.
 If no existing in-app browser tab can be reused without changing the UI state,
 stop and tell the user instead of automatically creating a new tab or floating
 window.
+
+## Career and Portfolio Context
+
+For career, portfolio positioning, resume, interview, or design critique
+discussions, consider reading `CAREER_POSITIONING.md` for user context. This is
+optional context for relevant advisory conversations, not a requirement for
+ordinary coding, debugging, or implementation tasks.

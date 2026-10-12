@@ -455,6 +455,10 @@
   object-fit: cover;
 }
 
+.toolFrameBare .toolVideo.toolVideoTall {
+  aspect-ratio: 4 / 3;
+}
+
 .toolUnavailableOverlay {
   position: absolute;
   inset: 0;

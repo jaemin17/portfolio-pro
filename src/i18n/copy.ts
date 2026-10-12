@@ -43,6 +43,8 @@ export type ToolProjectItem = {
   framed?: boolean;
   /** When true, image cards keep the source image ratio instead of being cropped */
   preserveImageRatio?: boolean;
+  /** Optional media ratio override for flush image cards */
+  mediaAspect?: "tall";
 };
 
 export type ToolProjects = {
@@ -201,7 +203,7 @@ const copy: Record<Locale, HomeCopy> = {
   zh: {
     greetingHi: "Hi,",
     name: "I'm Jiamin!",
-    lead: "产品体验设计师，习惯从真实问题出发，也自己把产品做出来——把复杂体验做成清楚、自然、愿意长期用的产品。",
+    lead: "我关注清晰、舒服、有细节的产品体验，让信息、流程和界面变得更自然、更容易使用。",
     focus: "最近在做 Selfly。",
     email: "lijiaemin1993@gmail.com",
     copyEmail: "复制邮箱",
@@ -469,6 +471,7 @@ const copy: Record<Locale, HomeCopy> = {
           imageSrc: visualMedia.cloudPlatform,
           imageVariants: [...visualImageVariants.cloudPlatform],
           framed: false,
+          mediaAspect: "tall",
         },
         {
           title: "游戏概念",
@@ -510,7 +513,7 @@ const copy: Record<Locale, HomeCopy> = {
   en: {
     greetingHi: "Hi,",
     name: "I'm Jiamin!",
-    lead: "A product experience designer who also builds the product — starting from real problems, and making experiences that feel clear, natural, and worth using for the long term.",
+    lead: "I design clear, comfortable product experiences with thoughtful details, making information, flows, and interfaces feel more natural and easier to use.",
     focus: "I'm currently building Selfly.",
     email: "lijiaemin1993@gmail.com",
     copyEmail: "Copy email",
@@ -783,6 +786,7 @@ const copy: Record<Locale, HomeCopy> = {
           imageSrc: visualMedia.cloudPlatform,
           imageVariants: [...visualImageVariants.cloudPlatform],
           framed: false,
+          mediaAspect: "tall",
         },
         {
           title: "Game Concept",
