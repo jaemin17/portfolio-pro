@@ -450,6 +450,36 @@
   border-bottom: 0;
 }
 
+.selfly0IntroSection {
+  margin-bottom: 88px;
+}
+
+.selfly0IntroBody {
+  width: 100%;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+
+.selfly0IntroBody p {
+  margin: 0 0 22px;
+}
+
+.selfly0IntroBody p:last-child {
+  margin-bottom: 0;
+}
+
+.selfly0IntroBody .selfly0Emphasis {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 0.75px;
+  text-underline-offset: 3px;
+}
+
 .selfly0Page {
   --bg: #ffffff;
   --fg: var(--text-primary);

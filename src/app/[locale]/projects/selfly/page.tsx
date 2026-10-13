@@ -89,17 +89,46 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             </a>
           </div>
         </header>
+        <section className={`${styles.caseSection} ${styles.selfly0CaseSection} ${styles.selfly0IntroSection}`}>
+          <div className={styles.selfly0IntroBody}>
+            {t(
+              locale,
+              <>
+                <p className={styles.p}>
+                  Selfly 来自一个<strong className={styles.selfly0Emphasis}>很具体的需求</strong>：我需要一个地方持续整理自己。
+                </p>
+                <p className={styles.p}>
+                  面对阶段性的迷茫，我希望把价值观、优势、目标、成功日记和愿景板这些自我探索内容记录下来，并让它们和<strong className={styles.selfly0Emphasis}>每天真正重要的行动</strong>产生关系。
+                </p>
+                <p className={styles.p}>
+                  这个项目也让我重新以<strong className={styles.selfly0Emphasis}>完整产品 owner</strong> 的方式工作：从产品概念、信息结构、交互与视觉，到 iOS 开发和上线，我独立完成了从个人需求到真实产品的整个过程。
+                </p>
+              </>,
+              <>
+                <p className={styles.p}>
+                  Selfly came from a <strong className={styles.selfly0Emphasis}>very specific need</strong>: I needed a place to keep making sense of myself.
+                </p>
+                <p className={styles.p}>
+                  During a period of uncertainty, I wanted to record self-exploration content such as values, strengths, goals, success journals, and vision boards, then connect those reflections with <strong className={styles.selfly0Emphasis}>the actions that mattered each day</strong>.
+                </p>
+                <p className={styles.p}>
+                  This project also let me work as a <strong className={styles.selfly0Emphasis}>full product owner</strong> again: from product concept, information structure, interaction and visual design, to iOS development and launch, I independently carried the process from personal need to real product.
+                </p>
+              </>,
+            )}
+          </div>
+        </section>
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0PositioningSection}>
             <h2 className={styles.selfly0PositioningLabel}>{t(locale, "产品定位", "Product Positioning")}</h2>
             <div className={styles.selfly0PositioningGrid}>
               <h3 className={styles.selfly0PositioningHeading}>
                 <span className={styles.selfly0PositioningHeadingLight}>
-                  {t(locale, "从独立功能集合，", "From scattered features")}
+                  {t(locale, "让自我记录，", "Making self-recording")}
                 </span>
                 <br className={styles.desktopLineBreak} aria-hidden="true" />
                 <span className={styles.selfly0PositioningHeadingDark}>
-                  {t(locale, "到可持续自我记录系统", "to a sustainable self-recording system")}
+                  {t(locale, "成为可以长期坚持的日常", "a sustainable daily practice")}
                 </span>
               </h3>
               <div className={styles.selfly0PositioningBody}>
@@ -111,12 +140,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                       <strong className={styles.selfly0Emphasis}>个人记录工具</strong>，帮助用户通过持续记录、回看与反思，更清晰地理解自己。
                     </p>
                     <p className={styles.p}>
-                      在前期探索中，我意识到，自我探索并不会在一次探索后结束。人在不同阶段会不断重新理解自己，真正需要的是
+                      Selfly 最初更像一组独立的自我探索练习，但在前期探索中，我意识到，自我探索并不会在一次探索后结束。人在不同阶段会不断重新理解自己，真正需要的是
                       <strong className={styles.selfly0Emphasis}>长期记录、回看与反思</strong>。
                     </p>
                     <p className={styles.p}>
-                      因此，我将 Selfly 从以
-                      <strong className={styles.selfly0Emphasis}>价值观、优势等独立预设练习</strong>为主的探索工具，转向更长期的个人记录空间：提供
+                      因此，我将产品方向转向更长期的个人记录空间：提供
                       <strong className={styles.selfly0Emphasis}>更自由的记录方式</strong>，并通过
                       <strong className={styles.selfly0Emphasis}>每日聚焦与回顾机制</strong>，让记录真正进入日常。
                     </p>
@@ -126,12 +154,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                       Selfly is a <strong className={styles.selfly0Emphasis}>personal recording tool</strong> designed for long-term use, helping people understand themselves more clearly through ongoing recording, review, and reflection.
                     </p>
                     <p className={styles.p}>
-                      In the early exploration, I realized self-exploration doesn&apos;t end after one round of exploration. People keep re-understanding themselves at different life stages — what they really need is{" "}
+                      Selfly initially felt more like a set of separate self-exploration exercises. Through early exploration, I realized self-exploration doesn&apos;t end after one round of exploration. People keep re-understanding themselves at different life stages — what they really need is{" "}
                       <strong className={styles.selfly0Emphasis}>long-term recording, review, and reflection</strong>.
                     </p>
                     <p className={styles.p}>
-                      So I evolved Selfly from a self-exploration tool built around{" "}
-                      <strong className={styles.selfly0Emphasis}>separate preset exercises such as values and strengths</strong> into a long-term personal recording space: offering{" "}
+                      So I shifted the product direction toward a longer-term personal recording space: offering{" "}
                       <strong className={styles.selfly0Emphasis}>freer ways to record</strong> and using{" "}
                       <strong className={styles.selfly0Emphasis}>daily focus and review</strong> to bring recording into everyday life.
                     </p>
