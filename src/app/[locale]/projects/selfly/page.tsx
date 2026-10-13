@@ -111,7 +111,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                       <strong className={styles.selfly0Emphasis}>个人记录工具</strong>，帮助用户通过持续记录、回看与反思，更清晰地理解自己。
                     </p>
                     <p className={styles.p}>
-                      在迭代过程中，我意识到，自我探索并不会在一次探索后结束。人在不同阶段会不断重新理解自己，真正需要的是
+                      在前期探索中，我意识到，自我探索并不会在一次探索后结束。人在不同阶段会不断重新理解自己，真正需要的是
                       <strong className={styles.selfly0Emphasis}>长期记录、回看与反思</strong>。
                     </p>
                     <p className={styles.p}>
@@ -126,7 +126,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                       Selfly is a <strong className={styles.selfly0Emphasis}>personal recording tool</strong> designed for long-term use, helping people understand themselves more clearly through ongoing recording, review, and reflection.
                     </p>
                     <p className={styles.p}>
-                      As I iterated, I realized self-exploration doesn&apos;t end after one round of exploration. People keep re-understanding themselves at different life stages — what they really need is{" "}
+                      In the early exploration, I realized self-exploration doesn&apos;t end after one round of exploration. People keep re-understanding themselves at different life stages — what they really need is{" "}
                       <strong className={styles.selfly0Emphasis}>long-term recording, review, and reflection</strong>.
                     </p>
                     <p className={styles.p}>
@@ -145,7 +145,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
           <div className={`${styles.positioningDiagram} ${styles.positioningPhaseCompare}`}>
             <div className={styles.positioningDiagramFlow}>
               <div className={styles.positioningDiagramCol}>
-                <span className={styles.positioningDiagramPhase}>{t(locale, "前期", "Before")}</span>
+                <span className={styles.positioningDiagramPhase}>{t(locale, "原方向", "Original direction")}</span>
                 <div className={styles.positioningDiagramCopy}>
                   <p className={styles.positioningDiagramCaption}>{t(locale, "固定内容探索", "Preset self-exploration")}</p>
                   <p className={styles.positioningDiagramDescription}>{t(locale, "固定 · 单次 · 预设练习", "Fixed · One-off · Preset exercises")}</p>
@@ -153,7 +153,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 <div className={styles.positioningPhoneFrame}>
                   <Image
                     src={assetPath("/images/selfly0/positioning-phone-1.webp")}
-                    alt={tStr(locale, "前期：固定内容探索", "Before: preset self-exploration")}
+                    alt={tStr(locale, "原方向：固定内容探索", "Original direction: preset self-exploration")}
                     width={360}
                     height={780}
                     className={styles.positioningDiagramPhone}
@@ -166,7 +166,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 </svg>
               </div>
               <div className={styles.positioningDiagramCol}>
-                <span className={styles.positioningDiagramPhase}>{t(locale, "后期", "After")}</span>
+                <span className={styles.positioningDiagramPhase}>{t(locale, "新方向", "New direction")}</span>
                 <div className={styles.positioningDiagramCopy}>
                   <p className={styles.positioningDiagramCaption}>{t(locale, "长期自我探索", "Long-term self-exploration")}</p>
                   <p className={styles.positioningDiagramDescription}>{t(locale, "自由 · 持续 · 自主记录", "Free-form · Ongoing · Self-directed recording")}</p>
@@ -174,7 +174,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 <div className={styles.positioningPhoneFrame}>
                   <Image
                     src={assetPath("/images/selfly0/positioning-phone-3.webp")}
-                    alt={tStr(locale, "后期：长期自我探索", "After: long-term self-exploration")}
+                    alt={tStr(locale, "新方向：长期自我探索", "New direction: long-term self-exploration")}
                     width={360}
                     height={780}
                     className={styles.positioningDiagramPhone}
@@ -349,31 +349,31 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   locale,
                   <>
                     <p>
-                      自定义选项越多，新用户在开始记录前需要做的决定也越多。类型、名称、图标和设置等选择，会把注意力从记录内容转移到配置过程。
-                      因此，我将创建流程拆分为两条路径：熟悉产品的用户可以自由配置，新用户则可以从情绪日记、年度目标、我的边界、理想自我等模板直接开始。
+                      清单、日记、计划和图册提供了自由的记录容器，但对新用户来说，过于抽象的容器也可能带来空白感：知道可以记录，却不知道从哪一件事开始。
+                      因此，我在创建流程中加入场景模板，把「日记、图册、计划」转译成更具体的记录灵感，例如情绪日记、感恩日记、年度目标、梦想的家、理想自我等，让用户可以先从一个熟悉的生活场景进入记录。
                     </p>
                     <div className={styles.designPoints}>
                       <h4>设计要点</h4>
                       <ul>
-                        <li><strong>首次使用路径优化</strong></li>
-                        <li>降低空白页压力</li>
-                        <li>用场景解释模块</li>
-                        <li>创建后直接进入记录</li>
+                        <li><strong>把抽象容器转译成具体场景</strong></li>
+                        <li>降低开始记录的空白感</li>
+                        <li>保留从类型开始的自由配置</li>
+                        <li>选择模板后直接进入记录</li>
                       </ul>
                     </div>
                   </>,
                   <>
                     <p>
-                      The more customization options users face, the more decisions they must make before they can start recording. Choices about type, name, icon, and settings shift attention from the content itself to configuration.
-                      So I split the creation flow into two paths: users familiar with the product can configure freely, while new users can start directly from templates like Mood Diary, Annual Goals, My Boundaries, or Ideal Self.
+                      Lists, journals, plans, and boards provide flexible recording containers, but for new users, overly abstract containers can create a blank-page feeling: they know they can record, but not which concrete thing to start with.
+                      So I added scene templates to the creation flow, translating “journal, board, and plan” into more specific recording prompts, such as Mood Diary, Gratitude Journal, Annual Goals, Dream Home, and Ideal Self, so users can begin from a familiar life scenario.
                     </p>
                     <div className={styles.designPoints}>
                       <h4>Design Highlights</h4>
                       <ul>
-                        <li><strong>Optimized first-time path</strong></li>
-                        <li>Reduces blank-page anxiety</li>
-                        <li>Explains modules through scenarios</li>
-                        <li>Goes straight into recording after creation</li>
+                        <li><strong>Translate abstract containers into scenarios</strong></li>
+                        <li>Reduce blank-page feeling before writing</li>
+                        <li>Keep type-based free setup</li>
+                        <li>Enter recording after template choice</li>
                       </ul>
                     </div>
                   </>,

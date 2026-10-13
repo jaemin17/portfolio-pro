@@ -5,8 +5,13 @@ const styles = await readFile(
   new URL("../src/app/[locale]/projects/selfly/selfly0.module.css", import.meta.url),
   "utf8",
 );
+const page = await readFile(
+  new URL("../src/app/[locale]/projects/selfly/page.tsx", import.meta.url),
+  "utf8",
+);
 
 const searchableStyles = styles.replace(/\s+/g, "");
+const searchablePage = page.replace(/\s+/g, "");
 const mobileStyles = searchableStyles.match(/@media\(max-width:760px\)\{([\s\S]*)\}/)?.[1] ?? "";
 const todayRhythmMediaMobileStyle = mobileStyles.match(
   /\.todayRhythmSystemFigure\.todayTop3CarouselImage,\.todayRhythmSystemFigure\.todayTop3PhoneVideo\{([^}]+)\}/,
@@ -81,6 +86,49 @@ assert.ok(
     phaseComparePhoneMobileStyle.includes("height:100%;") &&
     phaseComparePhoneMobileStyle.includes("object-fit:cover;"),
   "Before and after positioning phone images should fill the closed frame without a bottom gap",
+);
+
+assert.ok(
+  searchablePage.includes("在前期探索中，我意识到") &&
+    searchablePage.includes("Intheearlyexploration,Irealized") &&
+    !searchablePage.includes("在迭代过程中，我意识到") &&
+    !searchablePage.includes("AsIiterated,Irealized"),
+  "Selfly positioning copy should frame the product shift as early exploration instead of mid-iteration",
+);
+
+assert.ok(
+  searchablePage.includes('"原方向","Originaldirection"') &&
+    searchablePage.includes('"新方向","Newdirection"') &&
+    !searchablePage.includes('"前期","Before"') &&
+    !searchablePage.includes('"后期","After"'),
+  "Selfly positioning diagram should label the shift by design direction instead of timeline",
+);
+
+assert.ok(
+  searchablePage.includes("清单、日记、计划和图册提供了自由的记录容器") &&
+    searchablePage.includes("把「日记、图册、计划」转译成更具体的记录灵感") &&
+    searchablePage.includes("情绪日记、感恩日记、年度目标、梦想的家、理想自我") &&
+    searchablePage.includes("Lists,journals,plans,andboardsprovideflexiblerecordingcontainers") &&
+    searchablePage.includes("translating“journal,board,andplan”intomorespecificrecordingprompts") &&
+    !searchablePage.includes("自定义选项越多，新用户在开始记录前需要做的决定也越多") &&
+    !searchablePage.includes("很多用户并不是不知道怎么创建模块") &&
+    !searchablePage.includes("Themorecustomizationoptionsusersface") &&
+    !searchablePage.includes("Manyusersdonotstrugglewithhowtocreateamodule"),
+  "Selfly scene-template copy should translate abstract containers into concrete recording inspiration",
+);
+
+assert.ok(
+  searchablePage.includes("把抽象容器转译成具体场景") &&
+    searchablePage.includes("降低开始记录的空白感") &&
+    searchablePage.includes("保留从类型开始的自由配置") &&
+    searchablePage.includes("选择模板后直接进入记录") &&
+    searchablePage.includes("Translateabstractcontainersintoscenarios") &&
+    searchablePage.includes("Reduceblank-pagefeelingbeforewriting") &&
+    searchablePage.includes("Keeptype-basedfreesetup") &&
+    searchablePage.includes("Enterrecordingaftertemplatechoice") &&
+    !searchablePage.includes("首次使用路径优化") &&
+    !searchablePage.includes("Optimizedfirst-timepath"),
+  "Selfly scene-template design points should match the abstract-container to concrete-scenario design decision",
 );
 
 console.log("Selfly content expectations passed");
