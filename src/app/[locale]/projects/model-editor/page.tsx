@@ -29,28 +29,39 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
   const { locale: localeParam } = await params;
   if (!isLocale(localeParam)) notFound();
   const locale: Locale = localeParam;
+  const caseSections = [
+    { id: "context", label: tStr(locale, "语境", "Context") },
+    { id: "challenge", label: tStr(locale, "挑战", "Challenge") },
+    { id: "exploration", label: tStr(locale, "探索", "Exploration") },
+    { id: "solution", label: tStr(locale, "方案", "Solution") },
+    { id: "onboarding", label: tStr(locale, "指引", "Onboarding") },
+    { id: "reflection", label: tStr(locale, "反思", "Reflection") },
+  ];
 
   return (
     <div className={`${selflyStyles.pagePlain} ${selflyStyles.selfly0Page}`} data-page="model-editor">
       <main className={selflyStyles.main}>
-        <header className={`${selflyStyles.featuredHero} ${selflyStyles.projectOneHero}`}>
+        <header className={`${selflyStyles.featuredHero} ${selflyStyles.projectOneHero} ${styles.modelEditorHero}`}>
           <h1 className={selflyStyles.title}>
             {t(
               locale,
               <>
-                面向教学的{" "}
-                <span className={styles.conceptHeadlineEmphasis}>3D 模型编辑器</span>
+                把复杂 3D 模型整理成
+                <br />
+                <span className={styles.conceptHeadlineEmphasis}>课堂可讲的素材</span>
               </>,
               <>
-                A <span className={styles.conceptHeadlineEmphasis}>3D Model Editor</span> for Teaching
+                Turning complex 3D models into
+                <br />
+                <span className={styles.conceptHeadlineEmphasis}>classroom-ready teaching assets</span>
               </>,
             )}
           </h1>
           <p className={selflyStyles.subtitle}>
             {t(
               locale,
-              "帮助非专业用户完成材质、结构、动画与标注预处理。",
-              "Helping non-expert users preprocess materials, structure, animation, and labels.",
+              "为非专业教师设计的轻量模型整理工具，让材质、结构、动画与标注更适合课堂讲解。",
+              "A lightweight model prep tool for non-expert teachers, making materials, structure, animation, and labels easier to use in class.",
             )}
           </p>
           <div className={selflyStyles.headerCta}>
@@ -71,86 +82,151 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 decoding="async"
               />
             </div>
-            <div className={selflyStyles.meta}>
-              <span className={selflyStyles.metaItem}>2023–2024</span>
-              <span className={selflyStyles.metaDot} aria-hidden="true">
-                ·
-              </span>
-              <span className={selflyStyles.metaItem}>
-                {t(locale, "交互 & 视觉设计", "Interaction & Visual Design")}
-              </span>
-            </div>
           </div>
         </header>
 
-        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+        <div className={styles.caseStudyBody}>
+          <nav className={styles.caseStudyNav} aria-label={tStr(locale, "案例章节导航", "Case study sections")}>
+            <ol>
+              {caseSections.map((section) => (
+                <li key={section.id}>
+                  <a href={`#${section.id}`}>{section.label}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+
+          <div className={styles.caseStudyContent}>
+        <section id="context" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.positioningSection}>
             <div className={styles.positioningInner}>
               <p className={styles.positioningLabel}>{t(locale, "项目背景", "Project Background")}</p>
+              <h2 className={styles.caseOpeningHeading}>
+                {t(
+                  locale,
+                  "为非专业教师减少 3D 课件制作中的模型整理负担",
+                  "Reduce model-prep friction for non-expert teachers creating 3D courseware",
+                )}
+              </h2>
+
+              <div className={styles.caseMetaGrid}>
+                {[
+                  {
+                    label: tStr(locale, "我的角色", "My Role"),
+                    value: tStr(locale, "交互设计 / 视觉设计 / 设计规范", "Interaction / Visual design / Guidelines"),
+                  },
+                  {
+                    label: tStr(locale, "项目类型", "Project Type"),
+                    value: tStr(locale, "3D 教育工具 / 课件编辑器", "3D education tool / Courseware editor"),
+                  },
+                  {
+                    label: tStr(locale, "时间", "Timeline"),
+                    value: "2023–2024",
+                  },
+                  {
+                    label: tStr(locale, "协作对象", "Collaborators"),
+                    value: tStr(locale, "产品 / 前端 / 3D 开发 / 教研", "PM / Front-end / 3D dev / Teaching research"),
+                  },
+                  {
+                    label: tStr(locale, "设计范围", "Design Scope"),
+                    value: tStr(locale, "编辑流程、工具布局、状态反馈、新手指引", "Editing flow, tool layout, states, onboarding"),
+                  },
+                ].map((item) => (
+                  <div key={item.label} className={styles.caseMetaItem}>
+                    <p>{item.label}</p>
+                    <span>{item.value}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className={styles.caseContribution}>
+                <h3>
+                  {t(
+                    locale,
+                    "作为模型编辑器的界面与体验设计负责人，我……",
+                    "As the interface and experience designer for Model Editor, I...",
+                  )}
+                </h3>
+                <ul>
+                  <li>{t(locale, "梳理模型整理流程与核心编辑任务", "Mapped the model-prep flow and core editing tasks")}</li>
+                  <li>
+                    {t(
+                      locale,
+                      "重组编辑入口、工具面板与模型预览之间的空间关系",
+                      "Restructured the spatial relationship between entry points, panels, and model preview",
+                    )}
+                  </li>
+                  <li>
+                    {t(
+                      locale,
+                      "建立按钮、工具、材质球、面板等关键状态规范",
+                      "Defined key states for buttons, tools, material swatches, and panels",
+                    )}
+                  </li>
+                  <li>
+                    {t(
+                      locale,
+                      "为 6 类核心功能设计新手引导与示例模型匹配方式",
+                      "Designed onboarding and model matching for six core feature guides",
+                    )}
+                  </li>
+                </ul>
+              </div>
+
               <div className={styles.positioningGrid}>
-                <h2 className={styles.positioningHeading}>
+                <h3 className={styles.positioningHeading}>
                   <span className={styles.positioningHeadingLight}>
-                    {t(locale, "把 3D 模型整理成", "Turn 3D models into")}
+                    {t(locale, "教师需要的不是建模软件，", "Teachers do not need modeling software,")}
                   </span>
                   <br />
                   <span className={styles.positioningHeadingDark}>
-                    {t(locale, "课堂可讲的素材", "teaching-ready classroom assets")}
+                    {t(locale, "而是课前整理工作台", "but a prep workspace before class")}
                   </span>
-                </h2>
+                </h3>
                 <div className={styles.positioningBody}>
                   <p>
                     {t(
                       locale,
-                      "3D 模型进入课堂前，通常需要根据教学场景进行二次编辑，例如添加部件说明、调整模型结构、设置拆解展示或动画效果。",
-                      "Before a 3D model enters the classroom, it usually needs a second pass for the teaching scenario — adding part labels, adjusting structure, setting up exploded views, or animation.",
+                      "3D 模型进入课堂前，往往还停留在“可查看”的状态：部件关系、内部结构、运动过程和讲解信息没有被整理成适合教学表达的形式。",
+                      "Before entering the classroom, many 3D models are only viewable: part relationships, internal structures, movement, and explanations have not yet been organized for teaching.",
                     )}
                   </p>
                   <p>
                     {t(
                       locale,
                       <>
-                        Model Editor 是一款面向 3D 课件制作的
-                        <strong className={styles.positioningEmphasis}>模型编辑工具</strong>
-                        ，帮助中高职教师快速将模型整理为适合课堂讲解的互动素材。
+                        对中高职教师来说，专业建模软件过重，普通课件工具又无法处理材质、爆炸、透视、动画和标签。Model Editor 的位置介于两者之间：它不是完整建模工具，而是面向 3D 课件制作的
+                        <strong className={styles.positioningEmphasis}>课前模型整理工具</strong>。
                       </>,
                       <>
-                        Model Editor is a{" "}
-                        <strong className={styles.positioningEmphasis}>model editing tool</strong> for 3D
-                        courseware — helping vocational teachers quickly turn models into interactive assets
-                        for classroom explanation.
+                        For vocational teachers, professional modeling software is too heavy, while ordinary
+                        courseware tools cannot handle materials, exploded views, transparency, animation, or
+                        labels. Model Editor sits between the two: not a full modeling tool, but a{" "}
+                        <strong className={styles.positioningEmphasis}>model prep tool</strong> for 3D
+                        courseware.
                       </>,
                     )}
                   </p>
-                  <div className={styles.roleBlock}>
-                    <p className={styles.roleLabel}>{t(locale, "我的角色", "My Role")}</p>
-                    <p>
-                      {t(
-                        locale,
-                        "全流程界面设计 · 设计系统与规范搭建 · 交互体验优化",
-                        "End-to-end interface design · Design system & guidelines · Interaction experience optimization",
-                      )}
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+        <section id="challenge" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
               <p className={styles.positioningLabel}>
-                {t(locale, "设计目标", "Design Goals")}
+                {t(locale, "问题判断", "Problem Framing")}
               </p>
               <div className={styles.narrativeGrid}>
                 <h3 className={styles.narrativeHeadline}>
                   <span className={styles.narrativeHeadlineLight}>
-                    {t(locale, "降低模型处理门槛，", "Lower the model editing threshold,")}
+                    {t(locale, "难点不在功能多少，", "The hard part was not more features,")}
                   </span>
                   <br />
                   <span className={styles.narrativeHeadlineDark}>
-                    {t(locale, "更快完成整理", "finish prep faster")}
+                    {t(locale, "而在编辑能否被看懂", "but whether editing could be understood")}
                   </span>
                 </h3>
                 <div className={styles.narrativeBody}>
@@ -158,19 +234,16 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                     {t(
                       locale,
                       <>
-                        模型编辑器承担的是 3D 模型进入课件前的
-                        <strong className={styles.positioningEmphasis}>轻量处理任务</strong>
-                        ，而不是完整的专业建模流程。因此，设计重点需要从「提供完整工具」转向「
-                        <strong className={styles.positioningEmphasis}>降低理解成本、缩短操作路径</strong>
-                        」，帮助教师更快完成模型整理。
+                        我把设计重点从“补齐编辑能力”转向“帮助教师完成教学表达”。一个方案是否成立，取决于用户能不能快速判断
+                        <strong className={styles.positioningEmphasis}>当前在编辑什么、会影响哪里、修改后是否适合讲课</strong>。
                       </>,
                       <>
-                        The editor handles{" "}
-                        <strong className={styles.positioningEmphasis}>lightweight preprocessing</strong>{" "}
-                        before models enter courseware — not a full professional modeling pipeline. The design
-                        focus shifts from &ldquo;provide every tool&rdquo; to{" "}
+                        I shifted the design focus from &ldquo;complete editing capability&rdquo; to helping
+                        teachers shape a teaching expression. A direction only worked if users could quickly
+                        tell{" "}
                         <strong className={styles.positioningEmphasis}>
-                          lowering cognitive load and shortening the path
+                          what they were editing, where it applied, and whether the result helped classroom
+                          explanation
                         </strong>
                         .
                       </>,
@@ -185,13 +258,13 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <svg className={styles.directionIcon} viewBox="0 0 64 64" aria-hidden="true">
                           <path d="M32 6a26 26 0 1 0 0 52 26 26 0 0 0 0-52Zm0 10a16 16 0 1 1 0 32 16 16 0 0 1 0-32Zm0 10a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z" />
                         </svg>
-                        <span>{t(locale, "更容易理解", "Easier to understand")}</span>
+                        <span>{t(locale, "先看懂编辑对象", "Understand the object first")}</span>
                       </div>
                       <p>
                         {t(
                           locale,
-                          "明确不同功能的作用范围，让用户知道当前在编辑什么、会影响哪里。",
-                          "Clarify what each function affects so users know what they are editing and where changes apply.",
+                          "材质、结构、标签、动画影响的对象不同，界面需要持续说明当前选中了什么、会改到哪里。",
+                          "Materials, structure, labels, and animation affect different objects, so the interface must keep clarifying what is selected and where changes apply.",
                         )}
                       </p>
                     </div>
@@ -200,13 +273,13 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <svg className={styles.directionIcon} viewBox="0 0 64 64" aria-hidden="true">
                           <path d="M19 7c-2.6-1.1-5.4.8-5.4 3.6v37.8c0 3.3 3.8 5.1 6.4 3.1l8.5-6.6 5.4 11.5c1.2 2.5 4.2 3.6 6.8 2.4l3.7-1.8c2.5-1.2 3.6-4.2 2.4-6.8l-5.1-10.8h10.9c3.7 0 5.2-4.8 2.2-6.9L19 7Z" />
                         </svg>
-                        <span>{t(locale, "更容易操作", "Easier to operate")}</span>
+                        <span>{t(locale, "保留模型判断空间", "Keep room for model judgment")}</span>
                       </div>
                       <p>
                         {t(
                           locale,
-                          "放大关键操作入口，减少专业参数和密集控件带来的使用负担。",
-                          "Enlarge key entry points and reduce the burden of dense professional controls.",
+                          "模型预览不是装饰区域，而是用户确认结构、角度和反馈的主要依据，不能被工具面板持续挤压。",
+                          "The model preview is not decoration; it is where users judge structure, angle, and feedback, so panels cannot keep squeezing it.",
                         )}
                       </p>
                     </div>
@@ -215,13 +288,13 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <svg className={styles.directionIcon} viewBox="0 0 64 64" aria-hidden="true">
                           <path d="M32 6c14.4 0 26 11.6 26 26S46.4 58 32 58 6 46.4 6 32 17.6 6 32 6Zm13.7 19.3c1.6-1.6 1.6-4.1 0-5.7s-4.1-1.6-5.7 0L28.8 30.8l-4.6-4.6c-1.6-1.6-4.1-1.6-5.7 0s-1.6 4.1 0 5.7l7.4 7.4c1.6 1.6 4.1 1.6 5.7 0l14.1-14Z" />
                         </svg>
-                        <span>{t(locale, "更快完成编辑任务", "Faster editing tasks")}</span>
+                        <span>{t(locale, "围绕课堂任务收束", "Narrow around teaching tasks")}</span>
                       </div>
                       <p>
                         {t(
                           locale,
-                          "围绕「选择 → 调整 → 预览」组织流程，让用户更快完成模型编辑。",
-                          "Organize the flow around select → adjust → preview so users finish edits faster.",
+                          "流程不追求专业软件的完整度，而是围绕选择对象、调整表达、确认效果来缩短课前整理路径。",
+                          "The flow does not chase professional completeness; it shortens prep around selecting objects, shaping expression, and checking results.",
                         )}
                       </p>
                     </div>
@@ -231,26 +304,26 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           </div>
         </section>
 
-        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+        <section id="exploration" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
               <div className={styles.layoutExploration}>
                 <div className={styles.layoutExplorationIntro}>
                   <p className={styles.layoutExplorationKicker}>
-                    {t(locale, "布局方案探索", "Early layout explorations")}
+                    {t(locale, "方向收束", "Direction Narrowing")}
                   </p>
                   <h4>
                     {t(
                       locale,
-                      "围绕空间、层级和面板负担做多方向测试",
-                      "Testing directions around space, hierarchy, and panel weight",
+                      "先排除会干扰模型判断的布局",
+                      "Ruling out layouts that interfered with model judgment",
                     )}
                   </h4>
                   <p>
                     {t(
                       locale,
-                      "并行测试让我发现：顶部入口会持续占用预览高度，也容易让工具层级混在一起，因此后续开始尝试把全局入口转移到侧边。",
-                      "These parallel tests showed that top entries continued to consume preview height and blur tool hierarchy, so I started exploring a side entry for global actions.",
+                      "我没有把这些方案当成风格选择，而是用来验证空间、层级和操作反馈之间的关系。顶部集中入口看起来直接，但会持续压缩预览高度，也容易把全局动作、内容面板和实时工具混在一起；因此后续方向开始收束到侧边分区与按需展开。",
+                      "I did not treat these as style options, but as tests of space, hierarchy, and feedback. A top-heavy entry felt direct, but it kept taking preview height and mixed global actions, content panels, and live tools together; the direction then narrowed toward side zoning and on-demand panels.",
                     )}
                   </p>
                 </div>
@@ -293,7 +366,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           </div>
         </section>
 
-        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+        <section id="solution" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
               <p className={styles.positioningLabel}>
@@ -314,15 +387,16 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                     {t(
                       locale,
                       <>
-                        网页里预览高度更紧，顶栏等固定区域会进一步挤压模型可视面积。我将全局编辑入口移到左侧，把
+                        核心矛盾是：用户越需要判断模型结构和调整反馈，界面越不能持续占用预览区域。我将全局编辑入口移到左侧，把
                         <strong className={styles.positioningEmphasis}>垂直空间还给预览</strong>
-                        ，横向再承载面板展开。
+                        ，让面板在横向按需展开，避免课前整理过程被固定栏打断。
                       </>,
                       <>
-                        On the web, preview height is tighter, and fixed regions like the top bar squeeze the
-                        model further. I moved global editing entry points to the left to{" "}
+                        The central conflict was that the more users needed to judge model structure and
+                        editing feedback, the less the interface could keep occupying the preview. I moved
+                        global editing entry points to the left to{" "}
                         <strong className={styles.positioningEmphasis}>give vertical space back to the preview</strong>
-                        , using horizontal room for panels.
+                        , letting panels expand horizontally on demand instead of interrupting prep with fixed bars.
                       </>,
                     )}
                   </p>
@@ -556,7 +630,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           </div>
         </section>
 
-        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+        <section id="onboarding" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
               <p className={styles.positioningLabel}>
@@ -727,6 +801,36 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
 	            </div>
 	          </div>
         </section>
+
+        <section id="reflection" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+          <div className={`${styles.narrativeSection} ${styles.reflectionSection}`}>
+            <div className={styles.narrativeInner}>
+              <p className={styles.positioningLabel}>{t(locale, "项目反思", "Reflection")}</p>
+              <div className={styles.narrativeGrid}>
+                <h3 className={styles.narrativeHeadline}>
+                  <span className={styles.narrativeHeadlineLight}>
+                    {t(locale, "工具设计的重点，", "The point of tool design")}
+                  </span>
+                  <br />
+                  <span className={styles.narrativeHeadlineDark}>
+                    {t(locale, "是让判断变轻", "is making judgment feel lighter")}
+                  </span>
+                </h3>
+                <div className={styles.narrativeBody}>
+                  <p>
+                    {t(
+                      locale,
+                      "这个项目让我意识到，复杂工具不一定要通过增加说明来降低门槛。更有效的做法，是让空间分区、状态反馈和操作路径持续帮助用户判断下一步。",
+                      "This project made me realize that complex tools do not always become easier through more instructions. The more useful direction is to let zoning, state feedback, and paths keep helping users judge the next step.",
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          </div>
+        </div>
 
         <section className={selflyStyles.selfly0ContactSection} aria-label={tStr(locale, "页面导航", "Page navigation")}>
           <div className={`${selflyStyles.selfly0ContactInner} ${styles.contactAlign}`}>

@@ -105,30 +105,101 @@ assert.ok(
 );
 
 assert.ok(
-    page.includes("布局方案探索") &&
-    page.includes("围绕空间、层级和面板负担做多方向测试") &&
+    page.includes("问题判断") &&
+    page.includes("难点不在功能多少，") &&
+    page.includes("方向收束") &&
+    page.includes("先排除会干扰模型判断的布局") &&
     page.includes(
-      "并行测试让我发现：顶部入口会持续占用预览高度，也容易让工具层级混在一起，因此后续开始尝试把全局入口转移到侧边。",
+      "我没有把这些方案当成风格选择，而是用来验证空间、层级和操作反馈之间的关系。",
     ) &&
-    page.includes("Early layout explorations") &&
+    page.includes("Direction Narrowing") &&
     page.includes("<LayoutExplorationSwitcher"),
-  "Model editor should include a focused layout exploration switcher",
+  "Model editor should frame layout exploration as a narrowing process after problem framing",
 );
 
 assert.ok(
-  page.indexOf("设计目标") < page.indexOf("布局方案探索") &&
-    page.indexOf("布局方案探索") < page.indexOf("关键设计 01"),
-  "Layout exploration should appear after design goals and before Key Design 01",
+  page.indexOf("问题判断") < page.indexOf("方向收束") &&
+    page.indexOf("方向收束") < page.indexOf("关键设计 01"),
+  "Direction narrowing should appear after problem framing and before Key Design 01",
 );
 
 assert.ok(
-  !page.includes("前期方案尝试") && !page.includes("从多方向尝试中提炼布局判断"),
-  "Layout exploration should be positioned as an independent process section, not a subsection under Key Design 01",
+  page.includes('aria-label={tStr(locale, "案例章节导航", "Case study sections")}') &&
+    page.includes('href={`#${section.id}`}') &&
+    page.includes('id: "context"') &&
+    page.includes('id: "challenge"') &&
+    page.includes('id: "exploration"') &&
+    page.includes('id: "solution"') &&
+    page.includes('id: "onboarding"') &&
+    page.includes('id: "reflection"'),
+  "Model editor should expose a left-side case study section navigation with anchor links",
 );
 
 assert.ok(
-  !page.includes("并行比较不同布局取舍"),
-  "Layout exploration title should avoid the older comparison-heavy wording",
+  page.includes('id="context"') &&
+    page.includes('id="challenge"') &&
+    page.includes('id="exploration"') &&
+    page.includes('id="solution"') &&
+    page.includes('id="onboarding"') &&
+    page.includes('id="reflection"'),
+  "Model editor sections should include stable anchor ids for the case study navigation",
+);
+
+assert.ok(
+  page.includes("为非专业教师减少 3D 课件制作中的模型整理负担") &&
+    page.includes("Reduce model-prep friction for non-expert teachers creating 3D courseware") &&
+    page.includes("项目类型") &&
+    page.includes("协作对象") &&
+    page.includes("设计范围") &&
+    page.includes("caseMetaGrid") &&
+    page.includes("caseContribution"),
+  "Model editor opening should use a result-led title, project meta card, and contribution summary",
+);
+
+assert.ok(
+  !page.includes("交互 & 视觉设计") && !page.includes("Interaction & Visual Design"),
+  "Model editor hero should avoid duplicating role and timeline metadata above the opening meta card",
+);
+
+assert.ok(
+  searchableStyles.includes(".caseStudyBody{position:relative;") &&
+    searchableStyles.includes("grid-template-columns:minmax(64px,76px)minmax(0,1fr);") &&
+    searchableStyles.includes("column-gap:18px;") &&
+    searchableStyles.includes(".caseStudyNav{position:sticky;") &&
+    searchableStyles.includes("top:40px;") &&
+    searchableStyles.includes("font-size:var(--fs-body);") &&
+    mobileStyles.includes(".caseStudyNav{display:none;"),
+  "Model editor should style the section navigation as a narrow sticky desktop rail and hide it on mobile",
+);
+
+assert.ok(
+  searchableStyles.includes(".caseOpeningHeading{") &&
+    searchableStyles.includes("color:#333;") &&
+    searchableStyles.includes("font-size:clamp(1.9rem,2.5vw,2.6rem);") &&
+    searchableStyles.includes("font-weight:500;") &&
+    !searchableStyles.includes("#1f3f36"),
+  "Model editor opening heading should use the site's quieter neutral heading scale and color",
+);
+
+assert.ok(
+  searchableStyles.includes(":global([data-page=\"model-editor\"]).modelEditorHero{padding-bottom:0;") &&
+    searchableStyles.includes(".caseStudyBody{position:relative;"),
+  "Model editor should reduce the blank space between the hero cover and the case content",
+);
+
+assert.ok(
+  !page.includes("设计目标") &&
+    !page.includes("布局方案探索") &&
+    !page.includes("前期方案尝试") &&
+    !page.includes("从多方向尝试中提炼布局判断"),
+  "Model editor narrative should avoid reverting to the older solution-first section labels",
+);
+
+assert.ok(
+  !page.includes("并行比较不同布局取舍") &&
+    !page.includes("围绕空间、层级和面板负担做多方向测试") &&
+    !page.includes("并行测试让我发现：顶部入口会持续占用预览高度"),
+  "Layout exploration title and intro should avoid the older comparison-heavy wording",
 );
 
 assert.ok(
