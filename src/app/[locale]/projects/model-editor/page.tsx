@@ -30,7 +30,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
   if (!isLocale(localeParam)) notFound();
   const locale: Locale = localeParam;
   const caseSections = [
-    { id: "context", label: tStr(locale, "语境", "Context") },
+    { id: "context", label: tStr(locale, "概览", "Overview") },
     { id: "challenge", label: tStr(locale, "挑战", "Challenge") },
     { id: "exploration", label: tStr(locale, "探索", "Exploration") },
     { id: "solution", label: tStr(locale, "方案", "Solution") },
@@ -100,7 +100,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
         <section id="context" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.positioningSection}>
             <div className={styles.positioningInner}>
-              <p className={styles.positioningLabel}>{t(locale, "项目背景", "Project Background")}</p>
+              <p className={styles.positioningLabel}>{t(locale, "概览", "Overview")}</p>
               <h2 className={styles.caseOpeningHeading}>
                 {t(
                   locale,
