@@ -237,7 +237,7 @@
   flex: 0 0 auto;
   min-height: 2.5rem;
   padding: 0.55rem 1.125rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgb(0 0 0 / 0.12);
   border-radius: 999px;
   background: transparent;
   color: var(--text-secondary);
@@ -267,7 +267,7 @@
 }
 
 .workIndexTab:hover {
-  border-color: rgb(0 0 0 / 0.18);
+  border-color: rgb(0 0 0 / 0.22);
   color: var(--text-primary);
 }
 

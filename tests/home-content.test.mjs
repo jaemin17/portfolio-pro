@@ -62,17 +62,17 @@ const enWorkIndexBlock = workIndexBlocks[1] ?? "";
 const requiredCopy = [
   "Work Index",
   "All",
-  "AI-Built Products",
+  "Personal Explorations",
   "Product Systems",
   "XR / 3D",
   "Visual Systems",
   "作品索引",
   "全部",
-  "AI 共创产品",
+  "个人探索",
   "产品系统",
   "XR / 3D",
   "视觉系统",
-  "AI-Built Products",
+  "Personal Explorations",
   "Visual Works",
   "/images/selfly0/hero-750w.webp",
   "/images/tools/personal-tools-cover.png",
@@ -83,9 +83,9 @@ const requiredCopy = [
   "https://jaemin17.github.io/sticky-notes/",
   "https://jaemin17.github.io/plan/",
   "https://jaemin17.github.io/t-day/",
-  "Independent Product · iOS",
-  "Notes · Web",
-  "AI-Built Product",
+  "Independent App · iOS",
+  "Notes Tool · Web",
+  "Independent Design",
   "iOS UX",
   "Workflow Design",
   "Product Systems",
@@ -274,7 +274,7 @@ for (const entry of vectorTo3dEntries) {
 
 const cloudPlatformEntries = visualProjectsBlocks.flatMap((block) =>
   block.match(
-    /title: "(?:云平台|Cloud Platform)",[\s\S]*?imageSrc: visualMedia\.cloudPlatform,[\s\S]*?framed: false,/g,
+    /title: "(?:云平台 · 资源库|Cloud Platform · Resource Library)",[\s\S]*?imageSrc: visualMedia\.cloudPlatform,[\s\S]*?framed: false,/g,
   ) ?? [],
 );
 
@@ -288,10 +288,10 @@ for (const entry of cloudPlatformEntries) {
   assert.ok(
     entry.includes("imageSrc: visualMedia.cloudPlatform") &&
       entry.includes("imageVariants: [...visualImageVariants.cloudPlatform]") &&
-      entry.includes('availability: "comingSoon"') &&
-      entry.includes("statusLabel:") &&
-      !entry.includes("href:"),
-    "Cloud Platform should use the same coming-soon overlay as other unavailable visual works",
+      entry.includes('href: "/projects/resource-library"') &&
+      !entry.includes('availability: "comingSoon"') &&
+      !entry.includes("statusLabel:"),
+    "Resource Library should link to its detail page without a coming-soon overlay",
   );
 }
 
@@ -380,7 +380,7 @@ assert.ok(
 );
 
 assert.ok(
-  /\.workIndexTab\{[^}]*border:1pxsolidvar\(--border\)/.test(searchableHomeStyles) &&
+  /\.workIndexTab\{[^}]*border:1pxsolidrgb\(000\/0\.12\)/.test(searchableHomeStyles) &&
     /\.workIndexTab\{[^}]*border-radius:999px/.test(searchableHomeStyles) &&
     /\.workIndexTab\{[^}]*background:transparent/.test(searchableHomeStyles) &&
     !/\.workIndexTab:hover\{[^}]*background:/.test(searchableHomeStyles) &&

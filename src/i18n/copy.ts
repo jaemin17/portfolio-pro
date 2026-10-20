@@ -249,33 +249,6 @@ const copy: Record<Locale, HomeCopy> = {
           ],
         },
         {
-          id: "zero-to-one",
-          label: "AI 共创产品",
-          summary: "个人用 AI 共创并独立推进的产品，从真实需求出发，做出可用的体验。",
-          projects: [
-            {
-              title: "Selfly",
-              description: "独立开发中的个人记录与反思产品。",
-              href: "/projects/selfly",
-            },
-            {
-              title: "Sticky Notes",
-              description: "先放下临时信息、想法和片段。",
-              href: "https://jaemin17.github.io/sticky-notes/",
-            },
-            {
-              title: "Next",
-              description: "把想法摊开到空间画布上。",
-              href: "https://jaemin17.github.io/plan/",
-            },
-            {
-              title: "T-Day",
-              description: "在截止日期前把任务安排好。",
-              href: "https://jaemin17.github.io/t-day/",
-            },
-          ],
-        },
-        {
           id: "product-systems",
           label: "产品系统",
           summary: "偏工具、平台与设计系统的项目，强调可用性和持续迭代。",
@@ -338,8 +311,9 @@ const copy: Record<Locale, HomeCopy> = {
               href: "/projects/engine-icon",
             },
             {
-              title: "云平台",
-              description: "面向 VR 与 3D 教学资源的云端资源库界面。",
+              title: "云平台 · 资源库",
+              description: "围绕搜索、分类与浏览，重新组织教学资源查找体验。",
+              href: "/projects/resource-library",
             },
             {
               title: "海外官网",
@@ -348,16 +322,43 @@ const copy: Record<Locale, HomeCopy> = {
             },
           ],
         },
+        {
+          id: "zero-to-one",
+          label: "个人探索",
+          summary: "从自己的工作与生活需求出发，把想法做成可用的产品。",
+          projects: [
+            {
+              title: "Selfly",
+              description: "独立开发中的个人记录与反思产品。",
+              href: "/projects/selfly",
+            },
+            {
+              title: "Sticky Notes",
+              description: "先放下临时信息、想法和片段。",
+              href: "https://jaemin17.github.io/sticky-notes/",
+            },
+            {
+              title: "Next",
+              description: "把想法摊开到空间画布上。",
+              href: "https://jaemin17.github.io/plan/",
+            },
+            {
+              title: "T-Day",
+              description: "在截止日期前把任务安排好。",
+              href: "https://jaemin17.github.io/t-day/",
+            },
+          ],
+        },
       ],
     },
     currentlyBuilding: {
-      label: "0→1 独立开发",
+      label: "个人探索",
       items: [
         {
           title: "Selfly",
           description: "记录、回看与自我探索",
-          meta: "独立产品 · iOS",
-          tags: ["AI 共创产品", "iOS UX", "交互设计"],
+          meta: "独立应用 · iOS",
+          tags: ["独立设计", "iOS UX", "交互设计"],
           categoryIds: ["zero-to-one"],
           href: "/projects/selfly",
           imageSrc: buildingMedia.selfly,
@@ -367,7 +368,7 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Sticky Notes",
           description: "先放下临时信息、想法和片段",
-          meta: "便签 · Web",
+          meta: "便签工具 · Web",
           tags: ["Web 工具", "工作流设计", "产品系统"],
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/sticky-notes/",
@@ -389,7 +390,7 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "T-Day",
           description: "在截止日期前把任务安排好",
-          meta: "倒计时 · Web",
+          meta: "任务规划 · Web",
           tags: ["Web 工具", "工作流设计", "产品系统"],
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/t-day/",
@@ -492,13 +493,12 @@ const copy: Record<Locale, HomeCopy> = {
           preserveImageRatio: true,
         },
         {
-          title: "云平台",
-          description: "面向 VR 与 3D 教学资源的云端资源库界面。",
+          title: "云平台 · 资源库",
+          description: "围绕搜索、分类与浏览，重新组织教学资源查找体验。",
           meta: "资源平台 · Web",
           tags: ["Cloud Platform", "Resource Library", "UI System"],
           categoryIds: ["product-systems", "visual-systems"],
-          availability: "comingSoon",
-          statusLabel: "暂不开放",
+          href: "/projects/resource-library",
           imageSrc: visualMedia.cloudPlatform,
           imageVariants: [...visualImageVariants.cloudPlatform],
           framed: false,
@@ -590,34 +590,6 @@ const copy: Record<Locale, HomeCopy> = {
           ],
         },
         {
-          id: "zero-to-one",
-          label: "AI-Built Products",
-          summary:
-            "Personal AI-assisted products independently shaped from real needs into usable experiences.",
-          projects: [
-            {
-              title: "Selfly",
-              description: "An independently built product for reflection and self-discovery.",
-              href: "/projects/selfly",
-            },
-            {
-              title: "Sticky Notes",
-              description: "A place to park temporary notes and fragments.",
-              href: "https://jaemin17.github.io/sticky-notes/",
-            },
-            {
-              title: "Next",
-              description: "A spatial canvas for laying thoughts out.",
-              href: "https://jaemin17.github.io/plan/",
-            },
-            {
-              title: "T-Day",
-              description: "A countdown for lining up tasks before a deadline.",
-              href: "https://jaemin17.github.io/t-day/",
-            },
-          ],
-        },
-        {
           id: "product-systems",
           label: "Product Systems",
           summary:
@@ -683,8 +655,9 @@ const copy: Record<Locale, HomeCopy> = {
               href: "/projects/engine-icon",
             },
             {
-              title: "Cloud Platform",
-              description: "Cloud resource library UI for VR and 3D training assets.",
+              title: "Cloud Platform · Resource Library",
+              description: "Reorganizing search, categories, and browsing for teaching resources.",
+              href: "/projects/resource-library",
             },
             {
               title: "Overseas Official Website",
@@ -693,16 +666,44 @@ const copy: Record<Locale, HomeCopy> = {
             },
           ],
         },
+        {
+          id: "zero-to-one",
+          label: "Personal Explorations",
+          summary:
+            "Turning my own work and everyday needs into usable products.",
+          projects: [
+            {
+              title: "Selfly",
+              description: "An independently built product for reflection and self-discovery.",
+              href: "/projects/selfly",
+            },
+            {
+              title: "Sticky Notes",
+              description: "A place to park temporary notes and fragments.",
+              href: "https://jaemin17.github.io/sticky-notes/",
+            },
+            {
+              title: "Next",
+              description: "A spatial canvas for laying thoughts out.",
+              href: "https://jaemin17.github.io/plan/",
+            },
+            {
+              title: "T-Day",
+              description: "A countdown for lining up tasks before a deadline.",
+              href: "https://jaemin17.github.io/t-day/",
+            },
+          ],
+        },
       ],
     },
     currentlyBuilding: {
-      label: "AI-Built Products",
+      label: "Personal Explorations",
       items: [
         {
           title: "Selfly",
           description: "A journal for reflection and self-discovery",
-          meta: "Independent Product · iOS",
-          tags: ["AI-Built Product", "iOS UX", "Interaction Design"],
+          meta: "Independent App · iOS",
+          tags: ["Independent Design", "iOS UX", "Interaction Design"],
           categoryIds: ["zero-to-one"],
           href: "/projects/selfly",
           imageSrc: buildingMedia.selfly,
@@ -712,7 +713,7 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "Sticky Notes",
           description: "Park temporary notes and fragments",
-          meta: "Notes · Web",
+          meta: "Notes Tool · Web",
           tags: ["Web Tools", "Workflow Design", "Product Systems"],
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/sticky-notes/",
@@ -734,7 +735,7 @@ const copy: Record<Locale, HomeCopy> = {
         {
           title: "T-Day",
           description: "Line up tasks before a deadline",
-          meta: "Countdown · Web",
+          meta: "Task Planning · Web",
           tags: ["Web Tools", "Workflow Design", "Product Systems"],
           categoryIds: ["zero-to-one", "product-systems"],
           href: "https://jaemin17.github.io/t-day/",
@@ -838,13 +839,12 @@ const copy: Record<Locale, HomeCopy> = {
           preserveImageRatio: true,
         },
         {
-          title: "Cloud Platform",
-          description: "Cloud resource library UI for VR and 3D training assets.",
+          title: "Cloud Platform · Resource Library",
+          description: "Reorganizing search, categories, and browsing for teaching resources.",
           meta: "Resource Platform · Web",
           tags: ["Cloud Platform", "Resource Library", "UI System"],
           categoryIds: ["product-systems", "visual-systems"],
-          availability: "comingSoon",
-          statusLabel: "Coming soon",
+          href: "/projects/resource-library",
           imageSrc: visualMedia.cloudPlatform,
           imageVariants: [...visualImageVariants.cloudPlatform],
           framed: false,
