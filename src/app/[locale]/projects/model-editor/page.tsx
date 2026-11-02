@@ -1,3 +1,4 @@
+import { InterfaceComparisonCarousel } from "./InterfaceComparisonCarousel";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -8,7 +9,6 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/paths";
 import { FinalLayoutCarousel } from "./FinalLayoutCarousel";
 import { LayoutExplorationSwitcher } from "./LayoutExplorationSwitcher";
-import { ThemeComparisonSlider } from "./ThemeComparisonSlider";
 import { modelEditorAssets } from "./modelEditorAssets";
 import selflyStyles from "../selfly/selfly0.module.css";
 import styles from "./modelEditor.module.css";
@@ -104,7 +104,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
               <h2 className={styles.caseOpeningHeading}>
                 {t(
                   locale,
-                  "为非专业教师减少 3D 课件制作中的模型整理负担",
+                  "让教师更容易上手 3D 模型编辑",
                   "Reduce model-prep friction for non-expert teachers creating 3D courseware",
                 )}
               </h2>
@@ -113,11 +113,11 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 {[
                   {
                     label: tStr(locale, "我的角色", "My Role"),
-                    value: tStr(locale, "交互设计 / 视觉设计 / 设计规范", "Interaction / Visual design / Guidelines"),
+                    value: tStr(locale, "UI 设计 / 设计规范 / 交互优化", "UI design / Design guidelines / Interaction refinement"),
                   },
                   {
                     label: tStr(locale, "项目类型", "Project Type"),
-                    value: tStr(locale, "3D 教育工具 / 课件编辑器", "3D education tool / Courseware editor"),
+                    value: tStr(locale, "教学用 3D 模型编辑器", "3D education tool / Courseware editor"),
                   },
                   {
                     label: tStr(locale, "时间", "Timeline"),
@@ -125,11 +125,11 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                   },
                   {
                     label: tStr(locale, "协作对象", "Collaborators"),
-                    value: tStr(locale, "产品 / 前端 / 3D 开发 / 教研", "PM / Front-end / 3D dev / Teaching research"),
+                    value: tStr(locale, "产品经理 / 前端开发 / 3D 开发", "Product manager / Front-end developers / 3D developers"),
                   },
                   {
                     label: tStr(locale, "设计范围", "Design Scope"),
-                    value: tStr(locale, "编辑流程、工具布局、状态反馈、新手指引", "Editing flow, tool layout, states, onboarding"),
+                    value: tStr(locale, "全功能界面设计", "UI design for all Model Editor features"),
                   },
                 ].map((item) => (
                   <div key={item.label} className={styles.caseMetaItem}>
@@ -143,12 +143,19 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 <h3>
                   {t(
                     locale,
-                    "作为模型编辑器的界面与体验设计负责人，我……",
-                    "As the interface and experience designer for Model Editor, I...",
+                    "负责全功能 UI 设计与设计规范",
+                    "UI design and guidelines across all features",
                   )}
                 </h3>
+                <p>
+                  {t(
+                    locale,
+                    "负责模型编辑器全部功能的 UI 设计与设计规范，与产品经理协作优化局部交互，并对接前端及 3D 开发推进设计落地。",
+                    "I designed the UI and design guidelines for all Model Editor features, worked with the product manager to refine specific interactions, and coordinated with front-end and 3D developers to bring the designs into production.",
+                  )}
+                </p>
                 <ul>
-                  <li>{t(locale, "梳理模型整理流程与核心编辑任务", "Mapped the model-prep flow and core editing tasks")}</li>
+                  <li>{t(locale, "完成全部功能界面的 UI 设计，统一视觉层级与界面风格", "Designed the UI for all features with consistent visual hierarchy and styling")}</li>
                   <li>
                     {t(
                       locale,
@@ -173,42 +180,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 </ul>
               </div>
 
-              <div className={styles.positioningGrid}>
-                <h3 className={styles.positioningHeading}>
-                  <span className={styles.positioningHeadingLight}>
-                    {t(locale, "教师需要的不是建模软件，", "Teachers do not need modeling software,")}
-                  </span>
-                  <br />
-                  <span className={styles.positioningHeadingDark}>
-                    {t(locale, "而是课前整理工作台", "but a prep workspace before class")}
-                  </span>
-                </h3>
-                <div className={styles.positioningBody}>
-                  <p>
-                    {t(
-                      locale,
-                      "3D 模型进入课堂前，往往还停留在“可查看”的状态：部件关系、内部结构、运动过程和讲解信息没有被整理成适合教学表达的形式。",
-                      "Before entering the classroom, many 3D models are only viewable: part relationships, internal structures, movement, and explanations have not yet been organized for teaching.",
-                    )}
-                  </p>
-                  <p>
-                    {t(
-                      locale,
-                      <>
-                        对中高职教师来说，专业建模软件过重，普通课件工具又无法处理材质、爆炸、透视、动画和标签。Model Editor 的位置介于两者之间：它不是完整建模工具，而是面向 3D 课件制作的
-                        <strong className={styles.positioningEmphasis}>课前模型整理工具</strong>。
-                      </>,
-                      <>
-                        For vocational teachers, professional modeling software is too heavy, while ordinary
-                        courseware tools cannot handle materials, exploded views, transparency, animation, or
-                        labels. Model Editor sits between the two: not a full modeling tool, but a{" "}
-                        <strong className={styles.positioningEmphasis}>model prep tool</strong> for 3D
-                        courseware.
-                      </>,
-                    )}
-                  </p>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
@@ -234,12 +206,12 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                     {t(
                       locale,
                       <>
-                        我把设计重点从“补齐编辑能力”转向“帮助教师完成教学表达”。一个方案是否成立，取决于用户能不能快速判断
-                        <strong className={styles.positioningEmphasis}>当前在编辑什么、会影响哪里、修改后是否适合讲课</strong>。
+                        教师需要在调整模型时，持续确认选中了哪个部件、修改会影响哪里，以及最终的展示效果。因此，我将设计重点放在让
+                        <strong className={styles.positioningEmphasis}>编辑对象、影响范围与结果反馈始终清晰可见</strong>。
                       </>,
                       <>
-                        I shifted the design focus from &ldquo;complete editing capability&rdquo; to helping
-                        teachers shape a teaching expression. A direction only worked if users could quickly
+                        When adjusting a model, teachers need to keep track of the selected part, where
+                        changes apply, and the final visual result. I therefore focused on helping them quickly
                         tell{" "}
                         <strong className={styles.positioningEmphasis}>
                           what they were editing, where it applied, and whether the result helped classroom
@@ -606,22 +578,18 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 </div>
               </div>
               <div className={styles.controlExploration}>
-                <FinalLayoutCarousel
-                  tone="dark"
+                <InterfaceComparisonCarousel
+                  label={tStr(locale, "界面调整前后对比", "Interface before and after")}
                   slides={[
                     {
-                      label: tStr(locale, "降低视觉负担", "Reduce visual load"),
-                      content: (
-                        <div className={styles.carouselSlideFrame}>
-                          <ThemeComparisonSlider
-                            src={assetPath(modelEditorAssets.themeCompare)}
-                            beforeLabel={tStr(locale, "调整前", "Before")}
-                            afterLabel={tStr(locale, "调整后", "After")}
-                            alt={tStr(locale, "模型编辑器界面前后视觉对比", "Model editor interface visual comparison")}
-                            controlLabel={tStr(locale, "拖动查看界面调整前后的视觉变化", "Drag to compare the interface before and after")}
-                          />
-                        </div>
-                      ),
+                      src: assetPath("/images/model-editor/interface-before.png"),
+                      alt: tStr(locale, "调整前的模型编辑器完整界面", "Full Model Editor interface before the redesign"),
+                      label: tStr(locale, "调整前", "Before"),
+                    },
+                    {
+                      src: assetPath("/images/model-editor/interface-after.png"),
+                      alt: tStr(locale, "调整后的模型编辑器完整界面", "Full Model Editor interface after the redesign"),
+                      label: tStr(locale, "调整后", "After"),
                     },
                   ]}
                 />
@@ -806,25 +774,14 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           <div className={`${styles.narrativeSection} ${styles.reflectionSection}`}>
             <div className={styles.narrativeInner}>
               <p className={styles.positioningLabel}>{t(locale, "项目反思", "Reflection")}</p>
-              <div className={styles.narrativeGrid}>
-                <h3 className={styles.narrativeHeadline}>
-                  <span className={styles.narrativeHeadlineLight}>
-                    {t(locale, "工具设计的重点，", "The point of tool design")}
-                  </span>
-                  <br />
-                  <span className={styles.narrativeHeadlineDark}>
-                    {t(locale, "是让判断变轻", "is making judgment feel lighter")}
-                  </span>
-                </h3>
-                <div className={styles.narrativeBody}>
-                  <p>
-                    {t(
-                      locale,
-                      "这个项目让我意识到，复杂工具不一定要通过增加说明来降低门槛。更有效的做法，是让空间分区、状态反馈和操作路径持续帮助用户判断下一步。",
-                      "This project made me realize that complex tools do not always become easier through more instructions. The more useful direction is to let zoning, state feedback, and paths keep helping users judge the next step.",
-                    )}
-                  </p>
-                </div>
+              <div className={styles.narrativeBody}>
+                <p>
+                  {t(
+                    locale,
+                    "项目初期，面对放大功能按钮的建议，我曾因为竞品普遍采用较小的按钮而有所保留。回头看，我过于关注界面是否符合常见做法，忽略了教师缺少 3D 编辑经验，以及产品希望简单易用的出发点。这让我意识到，竞品可以提供参考，但设计取舍仍应以目标用户的实际操作需要为依据。",
+                    "Early in the project, I was hesitant about a suggestion to enlarge the feature buttons because competing products generally used smaller ones. Looking back, I focused too much on familiar interface conventions and overlooked teachers’ limited experience with 3D editing and the product’s goal of being simple to use. This taught me that competitors can offer useful references, but design decisions should be grounded in the practical needs of the intended users.",
+                  )}
+                </p>
               </div>
             </div>
           </div>

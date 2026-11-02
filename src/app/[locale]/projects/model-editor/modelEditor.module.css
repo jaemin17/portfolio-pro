@@ -197,7 +197,7 @@
 
 /* ─── Positioning Section (selfly0-style) ──────────────── */
 .positioningSection {
-  padding: 40px 30px 80px;
+  padding: 40px 30px 32px;
 }
 /* Sections stacked directly under another block (no divider above) — collapse the large top spacing */
 .stackedSection {
@@ -234,7 +234,7 @@
   display: grid;
   grid-template-columns: 1.05fr 1.15fr 0.75fr 1.2fr 1.35fr;
   gap: 24px;
-  margin: 0 0 34px;
+  margin: 0 0 64px;
   padding: 24px 28px;
   border: 2px solid rgba(89, 108, 130, 0.24);
   border-radius: 18px;
@@ -259,7 +259,7 @@
 }
 .caseContribution {
   max-width: 760px;
-  margin: 0 0 56px;
+  margin: 0;
 }
 .caseContribution h3 {
   margin: 0 0 18px;
@@ -798,17 +798,13 @@
   .caseMetaGrid {
     grid-template-columns: 1fr;
     gap: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
     padding: 20px;
     border-radius: 14px;
   }
 
   .caseMetaItem p {
     margin-bottom: 4px;
-  }
-
-  .caseContribution {
-    margin-bottom: 40px;
   }
 
   .caseContribution h3 {
@@ -960,6 +956,53 @@
   display: block;
   object-fit: contain;
   border-radius: 8px;
+}
+
+.interfaceCarousel {
+  padding: 32px;
+  background: #080808;
+  border-radius: 24px;
+}
+
+.interfaceCarouselImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.interfaceCarouselTabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.interfaceCarouselTabs button {
+  padding: 10px 24px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: #aaa;
+  font: inherit;
+  font-size: var(--fs-label);
+  cursor: pointer;
+}
+
+.interfaceCarouselTabs button[aria-selected="true"] {
+  background: #292929;
+  color: #fff;
+  border-color: #444;
+}
+
+.interfaceCarouselTabs button:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+  .interfaceCarousel { padding: 16px; border-radius: 16px; }
+  .interfaceCarouselTabs { margin-top: 16px; }
 }
 
 .themeComparisonShell {
