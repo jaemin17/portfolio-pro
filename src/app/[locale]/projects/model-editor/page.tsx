@@ -45,7 +45,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
             {t(
               locale,
               <>
-                把复杂 3D 模型整理成
+                把复杂 3D 模型变成
                 <br />
                 <span className={styles.conceptHeadlineEmphasis}>课堂可讲的素材</span>
               </>,
@@ -59,8 +59,8 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           <p className={selflyStyles.subtitle}>
             {t(
               locale,
-              "为非专业教师设计的轻量模型整理工具，让材质、结构、动画与标注更适合课堂讲解。",
-              "A lightweight model prep tool for non-expert teachers, making materials, structure, animation, and labels easier to use in class.",
+              "为非专业教师设计的轻量 3D 课堂素材制作工具，让模型更快转化为可讲解的教学内容。",
+              "A lightweight 3D teaching-material tool for non-expert teachers, helping turn models into classroom-ready content faster.",
             )}
           </p>
           <div className={selflyStyles.headerCta}>
@@ -183,7 +183,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
               <p className={styles.positioningLabel}>
-                {t(locale, "问题判断", "Problem Framing")}
+                {t(locale, "设计挑战", "Design Challenges")}
               </p>
               <div className={`${styles.narrativeGrid} ${styles.narrativeGridNoHeadline}`}>
                 <div className={`${styles.narrativeBody} ${styles.challengePoints}`}>
@@ -191,16 +191,16 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                     <span className={styles.challengeStepNumber}>1. </span>
                     {t(
                       locale,
-                      "教师不是专业建模人员，没有足够基础去学习完整的模型编辑逻辑。",
-                      "Teachers are not professional modelers and do not have the foundation to learn a complete model-editing workflow.",
+                      "教师缺少专业 3D 编辑经验，工具需要降低理解门槛。",
+                      "Teachers lack professional 3D editing experience, so the tool needs to lower the barrier to understanding.",
                     )}
                   </p>
                   <p>
                     <span className={styles.challengeStepNumber}>2. </span>
                     {t(
                       locale,
-                      "他们真正需要的是围绕课堂表达的能力，比如标签、简介、透视结构、爆炸结构和动画。",
-                      "What they really need are classroom-oriented ways to explain a model, such as labels, introductions, x-ray views, exploded views, and animation.",
+                      "编辑对象、操作范围和结果反馈容易混在一起，界面需要建立清晰关系。",
+                      "Editing objects, operation scope, and result feedback can easily blur together, so the interface needs clear relationships.",
                     )}
                   </p>
                   <p>
@@ -208,9 +208,9 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                     {t(
                       locale,
                       <>
-                        最终目标不是“编辑出一个更完整的模型”，而是“尽快把现有模型整理成可以讲解的课堂内容”。
+                        课堂需要多种模型表达能力，界面又不能因此变得复杂。
                       </>,
-                      <>The goal is not to edit a more complete model, but to quickly turn an existing model into classroom-ready teaching content.</>,
+                      <>Classroom teaching needs multiple ways to express a model, but the interface cannot become complex as a result.</>,
                     )}
                   </p>
                 </div>
