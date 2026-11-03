@@ -7,6 +7,7 @@ import { LazyAutoVideo } from "@/components/LazyAutoVideo";
 import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/paths";
+import { CaseStudyNav } from "./CaseStudyNav";
 import { FinalLayoutCarousel } from "./FinalLayoutCarousel";
 import { modelEditorAssets } from "./modelEditorAssets";
 import selflyStyles from "../selfly/selfly0.module.css";
@@ -84,15 +85,10 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
         </header>
 
         <div className={styles.caseStudyBody}>
-          <nav className={styles.caseStudyNav} aria-label={tStr(locale, "案例章节导航", "Case study sections")}>
-            <ol>
-              {caseSections.map((section) => (
-                <li key={section.id}>
-                  <a href={`#${section.id}`}>{section.label}</a>
-                </li>
-              ))}
-            </ol>
-          </nav>
+          <CaseStudyNav
+            sections={caseSections}
+            ariaLabel={tStr(locale, "案例章节导航", "Case study sections")}
+          />
 
           <div className={styles.caseStudyContent}>
         <section id="context" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
