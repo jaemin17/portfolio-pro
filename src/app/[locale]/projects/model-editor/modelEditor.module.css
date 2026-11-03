@@ -979,7 +979,17 @@
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 16px;
+}
+
+.interfaceCarouselPanelAfter .interfaceCarouselImage {
+  border: 3px solid #4ade80;
+  box-sizing: border-box;
+}
+
+.interfaceCarouselPanelBefore .interfaceCarouselImage {
+  border: 3px solid #ffb3b3;
+  box-sizing: border-box;
 }
 
 .interfaceCarouselTabs {
@@ -1004,6 +1014,20 @@
   background: #292929;
   color: #fff;
   border-color: #444;
+}
+
+.interfaceCarouselTabs button.interfaceCarouselTabAfter[aria-selected="true"] {
+  background: transparent;
+  color: #00c853;
+  border-color: #00c853;
+  box-shadow: inset 0 0 0 1px #00c853;
+}
+
+.interfaceCarouselTabs button.interfaceCarouselTabBefore[aria-selected="true"] {
+  background: transparent;
+  color: #ff3b30;
+  border-color: #ff3b30;
+  box-shadow: inset 0 0 0 1px #ff3b30;
 }
 
 .interfaceCarouselTabs button:focus-visible {
@@ -1142,15 +1166,13 @@
 
 .comparisonOnWhite {
   width: 100%;
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 20px 16px;
-  box-sizing: border-box;
+  background: transparent;
 }
 
 .comparisonOnWhite img {
-  width: 100%;
+  width: 108%;
+  max-width: none;
+  margin-left: -4%;
   height: auto;
   display: block;
 }
@@ -1173,7 +1195,4 @@
     height: 30px;
   }
 
-  .comparisonOnWhite {
-    padding: 14px 12px;
-  }
 }
