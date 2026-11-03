@@ -979,16 +979,16 @@
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .interfaceCarouselPanelAfter .interfaceCarouselImage {
-  border: 2px solid #00c853;
+  border: 3px solid #4ade80;
   box-sizing: border-box;
 }
 
 .interfaceCarouselPanelBefore .interfaceCarouselImage {
-  border: 2px solid #ff3b30;
+  border: 3px solid #ffb3b3;
   box-sizing: border-box;
 }
 
@@ -1170,7 +1170,9 @@
 }
 
 .comparisonOnWhite img {
-  width: 100%;
+  width: 108%;
+  max-width: none;
+  margin-left: -4%;
   height: auto;
   display: block;
 }
