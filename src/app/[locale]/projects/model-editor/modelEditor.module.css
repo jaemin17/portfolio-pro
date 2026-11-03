@@ -528,6 +528,23 @@
   gap: 40px;
   margin-bottom: 40px;
 }
+.narrativeGridNoHeadline {
+  grid-template-columns: minmax(0, 1fr);
+}
+.challengePoints {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+.narrativeBody.challengePoints p,
+.narrativeBody.challengePoints p + p {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #f8fafc;
+}
 .narrativeHeadline {
   font-size: var(--fs-title);
   font-weight: 500;
@@ -896,6 +913,10 @@
     padding: 28px 24px;
   }
 
+  .challengePoints {
+    grid-template-columns: 1fr;
+  }
+
   .directionCard {
     align-items: flex-start;
     gap: 10px;
@@ -1175,6 +1196,14 @@
   margin-left: -4%;
   height: auto;
   display: block;
+}
+
+.challengeStepNumber {
+  display: inline-block;
+  margin-right: 8px;
+  color: #1677ff;
+  font-style: italic;
+  font-weight: 600;
 }
 
 @media (max-width: 560px) {
