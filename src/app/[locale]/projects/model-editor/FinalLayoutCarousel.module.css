@@ -11,11 +11,11 @@
 
 .stackDark {
   background: #030303;
-  border: 0;
+  border-color: #3b82f6;
 }
 
 .stackDark .media {
-  background: #111;
+  background: transparent;
 }
 
 .stackDark .caption,

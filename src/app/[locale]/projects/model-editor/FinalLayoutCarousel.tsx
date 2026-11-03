@@ -82,7 +82,7 @@ export function FinalLayoutCarousel({
             ))}
           </div>
         ) : (
-          <SlideFigure key={entry.label} slide={entry} />
+          <SlideFigure key={entry.label || `slide-${index}`} slide={entry} />
         ),
       )}
       {caption ? <p className={styles.stackCaption}>{caption}</p> : null}
