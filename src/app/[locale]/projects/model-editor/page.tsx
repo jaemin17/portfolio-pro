@@ -699,8 +699,8 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 <p>
                   {t(
                     locale,
-                    "项目初期，面对放大功能按钮的建议，我曾因为竞品普遍采用较小的按钮而有所保留。回头看，我过于关注界面是否符合常见做法，忽略了教师缺少 3D 编辑经验，以及产品希望简单易用的出发点。这让我意识到，竞品可以提供参考，但设计取舍仍应以目标用户的实际操作需要为依据。",
-                    "Early in the project, I was hesitant about a suggestion to enlarge the feature buttons because competing products generally used smaller ones. Looking back, I focused too much on familiar interface conventions and overlooked teachers’ limited experience with 3D editing and the product’s goal of being simple to use. This taught me that competitors can offer useful references, but design decisions should be grounded in the practical needs of the intended users.",
+                    "项目初期，面对放大功能按钮的建议，我曾因为这个方案明显超出行业常见的 UI 尺寸，也比我过去习惯的界面尺度更大，而对它有所犹豫。我当时更在意界面是否保持熟悉的视觉密度，却忽略了教师缺少 3D 编辑经验，以及产品希望降低使用门槛的出发点。这个项目让我意识到，界面尺度不应只服从行业惯例，也要根据目标用户的识别和操作需求进行调整。",
+                    "Early in the project, I hesitated about enlarging the feature buttons because the proposed scale was noticeably larger than common industry UI dimensions and larger than the interface scale I was used to. I was focused on preserving a familiar visual density, but overlooked teachers’ limited experience with 3D editing and the product’s goal of lowering the barrier to use. This project taught me that interface scale should not simply follow industry conventions; it should also respond to the intended users’ recognition and interaction needs.",
                   )}
                 </p>
               </div>
