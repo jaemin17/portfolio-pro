@@ -622,6 +622,12 @@
   gap: 20px;
 }
 
+.finalLayoutEvidence .interfaceCarousel {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
 .layoutExploration {
   margin-top: 0;
   display: grid;

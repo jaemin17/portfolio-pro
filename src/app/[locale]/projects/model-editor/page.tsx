@@ -1,5 +1,5 @@
-import { InterfaceComparisonCarousel } from "./InterfaceComparisonCarousel";
 import Image from "next/image";
+import { InterfaceComparisonCarousel } from "./InterfaceComparisonCarousel";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
@@ -8,7 +8,6 @@ import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/paths";
 import { FinalLayoutCarousel } from "./FinalLayoutCarousel";
-import { LayoutExplorationSwitcher } from "./LayoutExplorationSwitcher";
 import { modelEditorAssets } from "./modelEditorAssets";
 import selflyStyles from "../selfly/selfly0.module.css";
 import styles from "./modelEditor.module.css";
@@ -32,7 +31,6 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
   const caseSections = [
     { id: "context", label: tStr(locale, "概览", "Overview") },
     { id: "challenge", label: tStr(locale, "挑战", "Challenge") },
-    { id: "exploration", label: tStr(locale, "探索", "Exploration") },
     { id: "solution", label: tStr(locale, "方案", "Solution") },
     { id: "onboarding", label: tStr(locale, "指引", "Onboarding") },
     { id: "reflection", label: tStr(locale, "反思", "Reflection") },
@@ -276,68 +274,6 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
           </div>
         </section>
 
-        <section id="exploration" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
-          <div className={styles.narrativeSection}>
-            <div className={styles.narrativeInner}>
-              <div className={styles.layoutExploration}>
-                <div className={styles.layoutExplorationIntro}>
-                  <p className={styles.layoutExplorationKicker}>
-                    {t(locale, "方向收束", "Direction Narrowing")}
-                  </p>
-                  <h4>
-                    {t(
-                      locale,
-                      "先排除会干扰模型判断的布局",
-                      "Ruling out layouts that interfered with model judgment",
-                    )}
-                  </h4>
-                  <p>
-                    {t(
-                      locale,
-                      "我没有把这些方案当成风格选择，而是用来验证空间、层级和操作反馈之间的关系。顶部集中入口看起来直接，但会持续压缩预览高度，也容易把全局动作、内容面板和实时工具混在一起；因此后续方向开始收束到侧边分区与按需展开。",
-                      "I did not treat these as style options, but as tests of space, hierarchy, and feedback. A top-heavy entry felt direct, but it kept taking preview height and mixed global actions, content panels, and live tools together; the direction then narrowed toward side zoning and on-demand panels.",
-                    )}
-                  </p>
-                </div>
-                <LayoutExplorationSwitcher
-                  items={[
-                    {
-                      image: assetPath(modelEditorAssets.layoutExploreLegacy),
-                      marker: "A",
-                      label: tStr(locale, "旧方案", "Original layout"),
-                      note: tStr(locale, "顶部入口占高，面板和工具分散", "Top entry takes height while panels and tools feel scattered"),
-                    },
-                    {
-                      image: assetPath(modelEditorAssets.layoutExploreNoTop),
-                      marker: "B",
-                      label: tStr(locale, "方案2 去掉顶部", "Option 2: Remove the top bar"),
-                      note: tStr(locale, "模型空间更完整，但中间入口干扰视线", "The model area opens up, but center controls interrupt focus"),
-                    },
-                    {
-                      image: assetPath(modelEditorAssets.layoutExploreTopHeavy),
-                      marker: "C",
-                      label: tStr(locale, "方案3 全部放在顶部", "Option 3: Move everything to the top"),
-                      note: tStr(locale, "入口集中，但顶部承载过重", "Actions are centralized, but the top area carries too much"),
-                    },
-                    {
-                      image: assetPath(modelEditorAssets.layoutExploreButtonGroup),
-                      marker: "D",
-                      label: tStr(locale, "方案4 顶部按钮组", "Option 4: Top button groups"),
-                      note: tStr(locale, "入口更轻，但横向信息仍然拥挤", "The entry style is lighter, but horizontal density remains high"),
-                    },
-                    {
-                      image: assetPath(modelEditorAssets.layoutExploreSideTopNav),
-                      marker: "E",
-                      label: tStr(locale, "方案5 侧边分类测试", "Option 5: Side category test"),
-                      note: tStr(locale, "分区关系更明显，但仍需验证路径", "Zones read more clearly, but the workflow still needs validation"),
-                    },
-                  ]}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="solution" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
@@ -394,6 +330,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
 
               <div className={styles.finalLayoutEvidence}>
                 <FinalLayoutCarousel
+                  tone="dark"
                   slides={[
                     {
                       label: "",
@@ -408,35 +345,24 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                       ),
                     },
                     {
-                      layout: "row",
-                      slides: [
-                        {
-                          label: tStr(
-                            locale,
-                            "调整前:面板环绕，预览受挤压",
-                            "Before: Panels surround the model, preview is squeezed",
-                          ),
-                          content: (
-                            <Image
-                              className={styles.protoEvidenceImage}
-                              src={assetPath(modelEditorAssets.prototype)}
-                              alt={tStr(locale, "Model Editor 开发原型", "Model Editor development prototype")}
-                              width={1440}
-                              height={778}
-                              sizes="(max-width: 840px) 50vw, 420px"
-                            />
-                          ),
-                        },
-                        {
-                          src: assetPath(modelEditorAssets.previewOverlay),
-                          alt: tStr(locale, "3D 教学工坊模型编辑器界面 3", "3D workshop model editor interface 3"),
-                          label: tStr(
-                            locale,
-                            "调整后: 预览面积增加,分区更清晰",
-                            "After: Larger preview area, clearer tool zones",
-                          ),
-                        },
-                      ],
+                      label: "",
+                      content: (
+                        <InterfaceComparisonCarousel
+                          label={tStr(locale, "布局调整前后对比", "Layout before and after")}
+                          slides={[
+                            {
+                              src: assetPath("/images/model-editor/interface-before.png"),
+                              alt: tStr(locale, "调整前：顶部入口占用预览高度", "Before: Top navigation takes up preview height"),
+                              label: tStr(locale, "调整前", "Before"),
+                            },
+                            {
+                              src: assetPath("/images/model-editor/interface-after.png"),
+                              alt: tStr(locale, "调整后：入口移至左侧，释放垂直空间", "After: Navigation moves left, freeing vertical space"),
+                              label: tStr(locale, "调整后", "After"),
+                            },
+                          ]}
+                        />
+                      ),
                     },
                   ]}
                 />
@@ -578,21 +504,16 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 </div>
               </div>
               <div className={styles.controlExploration}>
-                <InterfaceComparisonCarousel
-                  label={tStr(locale, "界面调整前后对比", "Interface before and after")}
-                  slides={[
-                    {
-                      src: assetPath("/images/model-editor/interface-before.png"),
-                      alt: tStr(locale, "调整前的模型编辑器完整界面", "Full Model Editor interface before the redesign"),
-                      label: tStr(locale, "调整前", "Before"),
-                    },
-                    {
-                      src: assetPath("/images/model-editor/interface-after.png"),
-                      alt: tStr(locale, "调整后的模型编辑器完整界面", "Full Model Editor interface after the redesign"),
-                      label: tStr(locale, "调整后", "After"),
-                    },
-                  ]}
-                />
+                <div className={styles.interfaceCarousel}>
+                  <Image
+                    src={assetPath(modelEditorAssets.previewOverlay)}
+                    alt={tStr(locale, "模型编辑器调整后界面：结构标注与材质面板", "Redesigned Model Editor with structure labels and material panel")}
+                    width={1024}
+                    height={596}
+                    sizes="(max-width: 900px) 100vw, 840px"
+                    className={styles.interfaceCarouselImage}
+                  />
+                </div>
               </div>
             </div>
           </div>
