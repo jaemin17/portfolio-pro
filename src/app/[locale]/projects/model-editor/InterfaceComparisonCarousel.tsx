@@ -28,7 +28,20 @@ export function InterfaceComparisonCarousel({ slides, label }: { slides: Slide[]
       }}
     >
       {slides.map((slide, index) => (
-        <div key={slide.src} role="tabpanel" id={`${id}-panel-${index}`} aria-labelledby={`${id}-tab-${index}`} hidden={active !== index}>
+        <div
+          key={slide.src}
+          role="tabpanel"
+          id={`${id}-panel-${index}`}
+          aria-labelledby={`${id}-tab-${index}`}
+          className={
+            index === 0
+              ? styles.interfaceCarouselPanelBefore
+              : index === 1
+                ? styles.interfaceCarouselPanelAfter
+                : undefined
+          }
+          hidden={active !== index}
+        >
           <Image src={slide.src} alt={slide.alt} width={1920} height={1080} sizes="(max-width: 900px) 100vw, 840px" className={styles.interfaceCarouselImage} />
         </div>
       ))}
@@ -41,6 +54,13 @@ export function InterfaceComparisonCarousel({ slides, label }: { slides: Slide[]
             id={`${id}-tab-${index}`}
             aria-controls={`${id}-panel-${index}`}
             aria-selected={active === index}
+            className={
+              index === 0
+                ? styles.interfaceCarouselTabBefore
+                : index === 1
+                  ? styles.interfaceCarouselTabAfter
+                  : undefined
+            }
             onClick={() => setActive(index)}
           >
             {slide.label}
