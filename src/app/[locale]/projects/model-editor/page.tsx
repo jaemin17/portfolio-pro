@@ -98,8 +98,8 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
               <h2 className={styles.caseOpeningHeading}>
                 {t(
                   locale,
-                  "让教师更容易上手 3D 模型编辑",
-                  "Reduce model-prep friction for non-expert teachers creating 3D courseware",
+                  "让教师快速制作 3D 讲解素材",
+                  "Help teachers quickly create 3D teaching materials for classroom explanation",
                 )}
               </h2>
 
@@ -185,38 +185,39 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
               <p className={styles.positioningLabel}>
                 {t(locale, "问题判断", "Problem Framing")}
               </p>
-              <div className={styles.narrativeGrid}>
-                <h3 className={styles.narrativeHeadline}>
-                  <span className={styles.narrativeHeadlineLight}>
-                    {t(locale, "难点不在功能多少，", "The hard part was not more features,")}
-                  </span>
-                  <br />
-                  <span className={styles.narrativeHeadlineDark}>
-                    {t(locale, "而在编辑能否被看懂", "but whether editing could be understood")}
-                  </span>
-                </h3>
-                <div className={styles.narrativeBody}>
+              <div className={`${styles.narrativeGrid} ${styles.narrativeGridNoHeadline}`}>
+                <div className={`${styles.narrativeBody} ${styles.challengePoints}`}>
                   <p>
+                    <span className={styles.challengeStepNumber}>1. </span>
+                    {t(
+                      locale,
+                      "教师不是专业建模人员，没有足够基础去学习完整的模型编辑逻辑。",
+                      "Teachers are not professional modelers and do not have the foundation to learn a complete model-editing workflow.",
+                    )}
+                  </p>
+                  <p>
+                    <span className={styles.challengeStepNumber}>2. </span>
+                    {t(
+                      locale,
+                      "他们真正需要的是围绕课堂表达的能力，比如标签、简介、透视结构、爆炸结构和动画。",
+                      "What they really need are classroom-oriented ways to explain a model, such as labels, introductions, x-ray views, exploded views, and animation.",
+                    )}
+                  </p>
+                  <p>
+                    <span className={styles.challengeStepNumber}>3. </span>
                     {t(
                       locale,
                       <>
-                        教师需要在调整模型时，持续确认选中了哪个部件、修改会影响哪里，以及最终的展示效果。因此，我将设计重点放在让
-                        <strong className={styles.positioningEmphasis}>编辑对象、影响范围与结果反馈始终清晰可见</strong>。
+                        最终目标不是“编辑出一个更完整的模型”，而是“尽快把现有模型整理成可以讲解的课堂内容”。
                       </>,
-                      <>
-                        When adjusting a model, teachers need to keep track of the selected part, where
-                        changes apply, and the final visual result. I therefore focused on helping them quickly
-                        tell{" "}
-                        <strong className={styles.positioningEmphasis}>
-                          what they were editing, where it applied, and whether the result helped classroom
-                          explanation
-                        </strong>
-                        .
-                      </>,
+                      <>The goal is not to edit a more complete model, but to quickly turn an existing model into classroom-ready teaching content.</>,
                     )}
                   </p>
                 </div>
               </div>
+              <p className={styles.positioningLabel}>
+                {t(locale, "设计方向", "Design Direction")}
+              </p>
               <div className={styles.directionPanel}>
                 <div className={styles.directionCards}>
                   <div className={styles.directionCard}>
@@ -224,13 +225,13 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <svg className={styles.directionIcon} viewBox="0 0 64 64" aria-hidden="true">
                           <path d="M32 6a26 26 0 1 0 0 52 26 26 0 0 0 0-52Zm0 10a16 16 0 1 1 0 32 16 16 0 0 1 0-32Zm0 10a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z" />
                         </svg>
-                        <span>{t(locale, "先看懂编辑对象", "Understand the object first")}</span>
+                        <span>{t(locale, "更容易理解", "Easier to understand")}</span>
                       </div>
                       <p>
                         {t(
                           locale,
-                          "材质、结构、标签、动画影响的对象不同，界面需要持续说明当前选中了什么、会改到哪里。",
-                          "Materials, structure, labels, and animation affect different objects, so the interface must keep clarifying what is selected and where changes apply.",
+                          "明确不同功能的作用范围，让用户知道当前在编辑什么、会影响哪里。",
+                          "Clarify what each function affects so users know what they are editing and where changes apply.",
                         )}
                       </p>
                     </div>
@@ -239,13 +240,13 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <svg className={styles.directionIcon} viewBox="0 0 64 64" aria-hidden="true">
                           <path d="M19 7c-2.6-1.1-5.4.8-5.4 3.6v37.8c0 3.3 3.8 5.1 6.4 3.1l8.5-6.6 5.4 11.5c1.2 2.5 4.2 3.6 6.8 2.4l3.7-1.8c2.5-1.2 3.6-4.2 2.4-6.8l-5.1-10.8h10.9c3.7 0 5.2-4.8 2.2-6.9L19 7Z" />
                         </svg>
-                        <span>{t(locale, "保留模型判断空间", "Keep room for model judgment")}</span>
+                        <span>{t(locale, "更容易操作", "Easier to operate")}</span>
                       </div>
                       <p>
                         {t(
                           locale,
-                          "模型预览不是装饰区域，而是用户确认结构、角度和反馈的主要依据，不能被工具面板持续挤压。",
-                          "The model preview is not decoration; it is where users judge structure, angle, and feedback, so panels cannot keep squeezing it.",
+                          "放大关键操作入口，减少专业参数和密集控件带来的使用负担。",
+                          "Enlarge key entry points and reduce the burden of dense professional controls.",
                         )}
                       </p>
                     </div>
@@ -254,13 +255,13 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <svg className={styles.directionIcon} viewBox="0 0 64 64" aria-hidden="true">
                           <path d="M32 6c14.4 0 26 11.6 26 26S46.4 58 32 58 6 46.4 6 32 17.6 6 32 6Zm13.7 19.3c1.6-1.6 1.6-4.1 0-5.7s-4.1-1.6-5.7 0L28.8 30.8l-4.6-4.6c-1.6-1.6-4.1-1.6-5.7 0s-1.6 4.1 0 5.7l7.4 7.4c1.6 1.6 4.1 1.6 5.7 0l14.1-14Z" />
                         </svg>
-                        <span>{t(locale, "围绕课堂任务收束", "Narrow around teaching tasks")}</span>
+                        <span>{t(locale, "更快完成编辑任务", "Faster editing tasks")}</span>
                       </div>
                       <p>
                         {t(
                           locale,
-                          "流程不追求专业软件的完整度，而是围绕选择对象、调整表达、确认效果来缩短课前整理路径。",
-                          "The flow does not chase professional completeness; it shortens prep around selecting objects, shaping expression, and checking results.",
+                          "围绕「选择 → 调整 → 预览」组织流程，让用户更快完成模型编辑。",
+                          "Organize the flow around select → adjust → preview so users finish edits faster.",
                         )}
                       </p>
                     </div>
