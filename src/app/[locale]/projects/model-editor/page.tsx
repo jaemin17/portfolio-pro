@@ -182,6 +182,23 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
         <section id="challenge" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
+              <figure className={styles.earlyVersionEvidence}>
+                <p className={styles.earlyVersionLabel}>{t(locale, "早期版本", "Early version")}</p>
+                <Image
+                  src={assetPath("/images/model-editor/early-editor.png")}
+                  alt={t(locale, "模型编辑器早期版本界面", "Early Model Editor interface")}
+                  width={1920}
+                  height={1079}
+                  sizes="(max-width: 900px) 100vw, 840px"
+                />
+                <figcaption>
+                  {t(
+                    locale,
+                    "专业编辑逻辑占主导，模型预览、结构控制和动画设置同时分布在多个区域。",
+                    "Professional editing logic dominated the interface, with model preview, structure controls, and animation settings spread across multiple areas.",
+                  )}
+                </figcaption>
+              </figure>
               <p className={styles.positioningLabel}>
                 {t(locale, "设计挑战", "Design Challenges")}
               </p>
@@ -345,12 +362,12 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                       label: "",
                       content: (
                         <InterfaceComparisonCarousel
-                          label={tStr(locale, "布局调整前后对比", "Layout before and after")}
+                          label={tStr(locale, "原布局与调整后对比", "Original layout and redesign")}
                           slides={[
                             {
                               src: assetPath("/images/model-editor/interface-before.png"),
-                              alt: tStr(locale, "调整前：顶部入口占用预览高度", "Before: Top navigation takes up preview height"),
-                              label: tStr(locale, "调整前", "Before"),
+                              alt: tStr(locale, "原布局：顶部入口占用预览高度", "Original layout: Top navigation takes up preview height"),
+                              label: tStr(locale, "原布局", "Original layout"),
                             },
                             {
                               src: assetPath("/images/model-editor/interface-after.png"),
