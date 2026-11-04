@@ -51,6 +51,10 @@
   margin-top: 12px;
 }
 
+.onboardingVideoGridInline {
+  margin-top: 48px;
+}
+
 .onboardingVideoCard {
   min-width: 0;
 }
@@ -1204,6 +1208,34 @@
   color: #1677ff;
   font-style: italic;
   font-weight: 600;
+}
+
+.earlyVersionEvidence {
+  margin: 0 0 48px;
+}
+
+.earlyVersionLabel {
+  margin: 0 0 14px;
+  color: #1677ff;
+  font-size: var(--fs-label);
+  font-weight: 500;
+}
+
+.earlyVersionEvidence img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #3b82f6;
+  border-radius: 16px;
+  background: #202126;
+  box-sizing: border-box;
+}
+
+.earlyVersionEvidence figcaption {
+  margin-top: 12px;
+  color: #64748b;
+  font-size: var(--fs-caption);
+  line-height: 1.6;
 }
 
 @media (max-width: 560px) {

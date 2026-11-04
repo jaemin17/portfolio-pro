@@ -182,6 +182,23 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
         <section id="challenge" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.narrativeSection}>
             <div className={styles.narrativeInner}>
+              <figure className={styles.earlyVersionEvidence}>
+                <p className={styles.earlyVersionLabel}>{t(locale, "早期版本", "Early version")}</p>
+                <Image
+                  src={assetPath("/images/model-editor/early-editor.png")}
+                  alt={t(locale, "模型编辑器早期版本界面", "Early Model Editor interface")}
+                  width={1920}
+                  height={1079}
+                  sizes="(max-width: 900px) 100vw, 840px"
+                />
+                <figcaption>
+                  {t(
+                    locale,
+                    "专业编辑逻辑占主导，模型预览、结构控制和动画设置同时分布在多个区域。",
+                    "Professional editing logic dominated the interface, with model preview, structure controls, and animation settings spread across multiple areas.",
+                  )}
+                </figcaption>
+              </figure>
               <p className={styles.positioningLabel}>
                 {t(locale, "设计挑战", "Design Challenges")}
               </p>
@@ -345,12 +362,12 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                       label: "",
                       content: (
                         <InterfaceComparisonCarousel
-                          label={tStr(locale, "布局调整前后对比", "Layout before and after")}
+                          label={tStr(locale, "原布局与调整后对比", "Original layout and redesign")}
                           slides={[
                             {
                               src: assetPath("/images/model-editor/interface-before.png"),
-                              alt: tStr(locale, "调整前：顶部入口占用预览高度", "Before: Top navigation takes up preview height"),
-                              label: tStr(locale, "调整前", "Before"),
+                              alt: tStr(locale, "原布局：顶部入口占用预览高度", "Original layout: Top navigation takes up preview height"),
+                              label: tStr(locale, "原布局", "Original layout"),
                             },
                             {
                               src: assetPath("/images/model-editor/interface-after.png"),
@@ -552,7 +569,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                     <h4>{t(locale, "设计决策", "Design Decisions")}</h4>
                     <ul>
                       <li>
-                        <strong>{t(locale, "先定义功能要被看懂什么", "Define what the feature must make visible")}</strong>
+                        <strong>{t(locale, "明确功能需要传达什么", "Clarify what each feature needs to communicate")}</strong>
                         {t(
                           locale,
                           "：移动、材质、透视、标签、爆炸和动画各自对应不同教学表达",
@@ -583,7 +600,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 {[
                   {
                     title: tStr(locale, "基本控制", "Basic controls"),
-                    criteria: tStr(locale, "前后左右差异明显", "Distinct front, back, and side views"),
+                    criteria: tStr(locale, "多角度结构特征明显", "Distinct features across multiple angles"),
                     value: tStr(locale, "让移动、旋转、缩放的效果更容易被看见", "Makes move, rotate, and zoom effects easy to see"),
                   },
                   {
@@ -619,21 +636,11 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                   </article>
                 ))}
               </div>
-	            </div>
-	          </div>
-	        </section>
-
-        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
-	          <div className={styles.conceptSection}>
-	            <div className={styles.conceptInner}>
-	              <p className={styles.positioningLabel}>
-	                {t(locale, "6 类功能引导", "Six Feature Guides")}
-	              </p>
-	              <div className={styles.onboardingVideoGrid}>
+              <div className={`${styles.onboardingVideoGrid} ${styles.onboardingVideoGridInline}`}>
 	                {[
 	                  {
 	                    title: tStr(locale, "基本控制", "Basic controls"),
-	                    trait: tStr(locale, "前后左右差异明显", "Distinct front, back, and side views"),
+	                    trait: tStr(locale, "多角度结构特征明显", "Distinct features across multiple angles"),
 	                    value: tStr(locale, "看清移动、旋转、缩放带来的视角变化", "Shows how move, rotate, and zoom change the view"),
 	                    video: modelEditorAssets.onboardingBasicControls,
 	                  },
