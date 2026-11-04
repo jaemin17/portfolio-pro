@@ -51,6 +51,10 @@
   margin-top: 12px;
 }
 
+.onboardingVideoGridInline {
+  margin-top: 48px;
+}
+
 .onboardingVideoCard {
   min-width: 0;
 }
