@@ -154,7 +154,7 @@ const toolPosters = {
 const toolFrameColors = {
   model: "#f8f8f8",
   xrScript: "#d7e8ff",
-  ppt: "#efe6ff",
+  ppt: "#eff6ff",
   syncSpace: "#2f2f2f",
 } as const;
 
@@ -429,12 +429,11 @@ const copy: Record<Locale, HomeCopy> = {
         },
         {
           title: "XR Courseware",
-          description: "3D 内容播放与课件演示",
+          description: "选择专业模型，组织可在头盔端查看的教学课件",
           meta: "课程工具 · XR",
           tags: ["Courseware", "3D Playback", "Teaching"],
           categoryIds: ["product-systems", "xr-3d"],
-          availability: "comingSoon",
-          statusLabel: "暂不开放",
+          href: "/projects/xr-courseware",
           videoSrc: toolVideos.ppt,
           posterSrc: toolPosters.ppt,
           frameColor: toolFrameColors.ppt,
@@ -774,12 +773,11 @@ const copy: Record<Locale, HomeCopy> = {
         },
         {
           title: "XR Courseware",
-          description: "3D content playback and course demos",
+          description: "Create lessons with professional 3D models for headset viewing",
           meta: "Course Tool · XR",
           tags: ["Courseware", "3D Playback", "Teaching"],
           categoryIds: ["product-systems", "xr-3d"],
-          availability: "comingSoon",
-          statusLabel: "Coming soon",
+          href: "/projects/xr-courseware",
           videoSrc: toolVideos.ppt,
           posterSrc: toolPosters.ppt,
           frameColor: toolFrameColors.ppt,

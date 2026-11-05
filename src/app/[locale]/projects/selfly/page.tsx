@@ -603,12 +603,18 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     在推进 Selfly 从 0 到 1 的过程中，我逐渐意识到，真正困难的并不是持续增加功能，而是在不断变化的需求中保持产品边界清晰，并判断哪些能力真正支持长期使用。
                   </p>
                   <p>
+                    借助 AI，即使没有编程基础，我也能快速将想法变成可体验的功能，并在验证过程中同步调整设计。这种边做边试的方式，也让我更容易分辨：哪些功能确实回应了实际需求，哪些只是自己一时的想法。
+                  </p>
+                  <p>
                     独立完成这个项目，也训练了我从产品约束、体验判断到真实上线之间建立闭环的能力。设计不只停留在方案层面，也需要在实现、审核与持续迭代中被验证。
                   </p>
                 </>,
                 <>
                   <p>
                     While taking Selfly from 0 to 1, I gradually realized that the hardest part is not adding more features, but keeping the product&apos;s boundaries clear as needs evolve and deciding which capabilities truly support long-term use.
+                  </p>
+                  <p>
+                    With AI, I could quickly turn ideas into working features without a programming background, refining the design as I tested them. Building and trying things out helped me distinguish features that met real needs from ideas that were only passing thoughts.
                   </p>
                   <p>
                     Building the project independently also taught me to close the loop between product constraints, experience judgment, and a real launch. Design cannot remain a proposal; it must be validated through implementation, review, and continuous iteration.
