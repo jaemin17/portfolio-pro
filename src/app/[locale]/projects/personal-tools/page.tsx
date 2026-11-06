@@ -47,10 +47,10 @@ export default async function PersonalToolsPage({
   return (
     <main className={styles.page}>
       <header className={styles.intro}>
-        <h1>{zh ? "个人工具" : "Personal Tools"}</h1>
+        <h1>{zh ? <>把小需要，<span className={styles.titleAccent}>做成小工具</span></> : <>Small needs, <span className={styles.titleAccent}>simple tools</span></>}</h1>
         <p>{zh
-          ? "为自己的日常需要，做了一些简单、顺手的小工具。"
-          : "A few simple tools I built for my own everyday needs."}</p>
+          ? "为自己做的便签、思考画布和任务规划工具，欢迎点击体验。"
+          : "Notes, a thinking canvas, and a task planner I built for myself. Try them below."}</p>
       </header>
       <section className={styles.grid} aria-label={zh ? "工具体验入口" : "Try the tools"}>
         {tools.map((tool) => (
