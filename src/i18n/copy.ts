@@ -12,6 +12,7 @@ export type CurrentlyBuildingItem = {
   categoryIds?: string[];
   href?: string;
   imageSrc?: string;
+  previewImages?: string[];
   imageVariants?: { src: string; width: number }[];
   frameColor?: string;
   framed?: boolean;
@@ -35,6 +36,7 @@ export type ToolProjectItem = {
   videoSrc?: string;
   posterSrc?: string;
   imageSrc?: string;
+  previewImages?: string[];
   /** Optional narrower variants for responsive loading, e.g. [{ src, width }] */
   imageVariants?: { src: string; width: number }[];
   /** Outer frame color behind the media */
@@ -74,6 +76,7 @@ export type WorkIndex = {
 export type SnapshotItem = {
   alt: string;
   imageSrc?: string;
+  previewImages?: string[];
 };
 
 export type Snapshots = {
@@ -232,15 +235,11 @@ const copy: Record<Locale, HomeCopy> = {
               href: "/projects/vr-education",
             },
             {
-              title: "Sticky Notes",
-              description: "轻量工具体验与工作流整理。",
-              href: "https://jaemin17.github.io/sticky-notes/",
+              title: "个人工具",
+              description: "为日常需要做的三个轻量小工具",
+              href: "/projects/personal-tools",
             },
-            {
-              title: "Next",
-              description: "空间画布上的想法整理工具。",
-              href: "https://jaemin17.github.io/plan/",
-            },
+
             {
               title: "3D Engine App Icon Design",
               description: "3D 图标和视觉系统表达。",
@@ -259,20 +258,11 @@ const copy: Record<Locale, HomeCopy> = {
               href: "/projects/model-editor",
             },
             {
-              title: "Sticky Notes",
-              description: "轻量便签，用来接住临时想法。",
-              href: "https://jaemin17.github.io/sticky-notes/",
+              title: "个人工具",
+              description: "为日常需要做的三个轻量小工具",
+              href: "/projects/personal-tools",
             },
-            {
-              title: "Next",
-              description: "空间画布上的思考与整理。",
-              href: "https://jaemin17.github.io/plan/",
-            },
-            {
-              title: "T-Day",
-              description: "面向截止日期的任务安排。",
-              href: "https://jaemin17.github.io/t-day/",
-            },
+
             {
               title: "Sync Space",
               description: "头显、平板与网页之间的跨端课堂协同。",
@@ -333,19 +323,9 @@ const copy: Record<Locale, HomeCopy> = {
               href: "/projects/selfly",
             },
             {
-              title: "Sticky Notes",
-              description: "先放下临时信息、想法和片段。",
-              href: "https://jaemin17.github.io/sticky-notes/",
-            },
-            {
-              title: "Next",
-              description: "把想法摊开到空间画布上。",
-              href: "https://jaemin17.github.io/plan/",
-            },
-            {
-              title: "T-Day",
-              description: "在截止日期前把任务安排好。",
-              href: "https://jaemin17.github.io/t-day/",
+              title: "个人工具",
+              description: "为日常需要做的三个轻量小工具",
+              href: "/projects/personal-tools",
             },
           ],
         },
@@ -366,37 +346,14 @@ const copy: Record<Locale, HomeCopy> = {
           frameColor: "#fff8ec",
         },
         {
-          title: "Sticky Notes",
-          description: "先放下临时信息、想法和片段",
-          meta: "便签工具 · Web",
-          tags: ["Web 工具", "工作流设计", "产品系统"],
+          title: "个人工具",
+          description: "为日常需要做的三个轻量小工具",
+          meta: "独立工具 · Web",
+          tags: ["Web Tools", "Independent Design"],
           categoryIds: ["zero-to-one", "product-systems"],
-          href: "https://jaemin17.github.io/sticky-notes/",
-          imageSrc: buildingMedia.stickyNotes,
+          href: "/projects/personal-tools",
+          previewImages: [buildingMedia.stickyNotes, buildingMedia.next, buildingMedia.tday],
           framed: false,
-          frameColor: "#fff8ec",
-        },
-        {
-          title: "Next",
-          description: "把想法摊开到空间画布上",
-          meta: "空间画布 · Web",
-          tags: ["Web 工具", "工作流设计", "产品系统"],
-          categoryIds: ["zero-to-one", "product-systems"],
-          href: "https://jaemin17.github.io/plan/",
-          imageSrc: buildingMedia.next,
-          framed: false,
-          frameColor: "#fff8ec",
-        },
-        {
-          title: "T-Day",
-          description: "在截止日期前把任务安排好",
-          meta: "任务规划 · Web",
-          tags: ["Web 工具", "工作流设计", "产品系统"],
-          categoryIds: ["zero-to-one", "product-systems"],
-          href: "https://jaemin17.github.io/t-day/",
-          imageSrc: buildingMedia.tday,
-          framed: false,
-          frameColor: "#f7f8fc",
         },
       ],
     },
@@ -572,15 +529,11 @@ const copy: Record<Locale, HomeCopy> = {
               href: "/projects/vr-education",
             },
             {
-              title: "Sticky Notes",
-              description: "A lightweight tool for workflow and temporary notes.",
-              href: "https://jaemin17.github.io/sticky-notes/",
+              title: "Personal Tools",
+              description: "Three small tools for everyday needs",
+              href: "/projects/personal-tools",
             },
-            {
-              title: "Next",
-              description: "A spatial canvas for laying out thoughts.",
-              href: "https://jaemin17.github.io/plan/",
-            },
+
             {
               title: "3D Engine App Icon Design",
               description: "3D icon and visual system expression.",
@@ -600,20 +553,11 @@ const copy: Record<Locale, HomeCopy> = {
               href: "/projects/model-editor",
             },
             {
-              title: "Sticky Notes",
-              description: "Lightweight notes for catching temporary ideas.",
-              href: "https://jaemin17.github.io/sticky-notes/",
+              title: "Personal Tools",
+              description: "Three small tools for everyday needs",
+              href: "/projects/personal-tools",
             },
-            {
-              title: "Next",
-              description: "Thinking and arranging on a spatial canvas.",
-              href: "https://jaemin17.github.io/plan/",
-            },
-            {
-              title: "T-Day",
-              description: "Task planning against a deadline.",
-              href: "https://jaemin17.github.io/t-day/",
-            },
+
             {
               title: "Sync Space",
               description:
@@ -677,19 +621,9 @@ const copy: Record<Locale, HomeCopy> = {
               href: "/projects/selfly",
             },
             {
-              title: "Sticky Notes",
-              description: "A place to park temporary notes and fragments.",
-              href: "https://jaemin17.github.io/sticky-notes/",
-            },
-            {
-              title: "Next",
-              description: "A spatial canvas for laying thoughts out.",
-              href: "https://jaemin17.github.io/plan/",
-            },
-            {
-              title: "T-Day",
-              description: "A countdown for lining up tasks before a deadline.",
-              href: "https://jaemin17.github.io/t-day/",
+              title: "Personal Tools",
+              description: "Three small tools for everyday needs",
+              href: "/projects/personal-tools",
             },
           ],
         },
@@ -710,37 +644,14 @@ const copy: Record<Locale, HomeCopy> = {
           frameColor: "#fff8ec",
         },
         {
-          title: "Sticky Notes",
-          description: "Park temporary notes and fragments",
-          meta: "Notes Tool · Web",
-          tags: ["Web Tools", "Workflow Design", "Product Systems"],
+          title: "Personal Tools",
+          description: "Three small tools for everyday needs",
+          meta: "Independent Tools · Web",
+          tags: ["Web Tools", "Independent Design"],
           categoryIds: ["zero-to-one", "product-systems"],
-          href: "https://jaemin17.github.io/sticky-notes/",
-          imageSrc: buildingMedia.stickyNotes,
+          href: "/projects/personal-tools",
+          previewImages: [buildingMedia.stickyNotes, buildingMedia.next, buildingMedia.tday],
           framed: false,
-          frameColor: "#fff8ec",
-        },
-        {
-          title: "Next",
-          description: "Lay thoughts out on a spatial canvas",
-          meta: "Spatial canvas · Web",
-          tags: ["Web Tools", "Workflow Design", "Product Systems"],
-          categoryIds: ["zero-to-one", "product-systems"],
-          href: "https://jaemin17.github.io/plan/",
-          imageSrc: buildingMedia.next,
-          framed: false,
-          frameColor: "#fff8ec",
-        },
-        {
-          title: "T-Day",
-          description: "Line up tasks before a deadline",
-          meta: "Task Planning · Web",
-          tags: ["Web Tools", "Workflow Design", "Product Systems"],
-          categoryIds: ["zero-to-one", "product-systems"],
-          href: "https://jaemin17.github.io/t-day/",
-          imageSrc: buildingMedia.tday,
-          framed: false,
-          frameColor: "#f7f8fc",
         },
       ],
     },

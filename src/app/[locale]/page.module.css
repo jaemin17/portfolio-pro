@@ -452,6 +452,27 @@
   background: transparent;
 }
 
+.collectionPreview {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: #eff3f7;
+}
+
+.collectionPreview img {
+  position: absolute;
+  width: 66%;
+  height: auto;
+  border: 1px solid rgb(0 0 0 / 6%);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+}
+
+.collectionPreview img:nth-child(1) { top: 9%; left: 7%; transform: rotate(-7deg); }
+.collectionPreview img:nth-child(2) { top: 29%; left: 27%; transform: rotate(5deg); }
+.collectionPreview img:nth-child(3) { top: 49%; left: 12%; transform: rotate(-3deg); }
+
 .toolFrameBare .toolVideo {
   aspect-ratio: 3 / 2;
   height: auto;

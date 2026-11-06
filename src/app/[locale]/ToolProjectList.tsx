@@ -52,7 +52,14 @@ function ToolProjectCard({
     .join(" ");
 
   const media =
-    item.videoSrc && item.posterSrc ? (
+    item.previewImages?.length ? (
+      <div className={styles.collectionPreview} aria-label={item.title}>
+        {item.previewImages.map((src) => (
+          // eslint-disable-next-line @next/next/no-img-element -- reuse static portfolio screenshots
+          <img key={src} src={assetSrc(src)} alt="" loading="lazy" decoding="async" />
+        ))}
+      </div>
+    ) : item.videoSrc && item.posterSrc ? (
       <LazyVideo
         className={mediaClass}
         src={assetSrc(item.videoSrc)}
