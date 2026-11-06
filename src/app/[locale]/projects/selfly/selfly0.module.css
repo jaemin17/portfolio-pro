@@ -426,6 +426,10 @@
   margin-bottom: 30px;
 }
 
+:global([lang="zh"]) .projectOneHero .title {
+  line-height: 1.2;
+}
+
 .projectOneHero .subtitle {
   font-size: var(--fs-body);
   color: var(--text-secondary);

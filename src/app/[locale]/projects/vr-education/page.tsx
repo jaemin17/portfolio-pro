@@ -160,40 +160,78 @@ const backgroundTransferImages = [
   },
 ] as const;
 
-const appIconItems = [
-  {
-    src: "/images/visual/vr-education/icons/cattle.png",
-    label: { zh: "牛", en: "Cattle" },
-  },
-  {
-    src: "/images/visual/vr-education/icons/dog.png",
-    label: { zh: "狗", en: "Dog" },
-  },
-  {
-    src: "/images/visual/vr-education/icons/cat.png",
-    label: { zh: "猫", en: "Cat" },
-  },
-  {
-    src: "/images/visual/vr-education/icons/pig-icon.png",
-    label: { zh: "猪", en: "Pig" },
-  },
+type AppIconItem = {
+  src: string;
+  label: { zh: string; en: string };
+  name?: { zh: string; en: string };
+};
+
+const appIconItems: AppIconItem[] = [
   {
     src: "/images/visual/vr-education/icons/motor.png",
     label: { zh: "电机", en: "Motor" },
+    name: {
+      zh: "工业机器人伺服电机拆装VR教学系统",
+      en: "Industrial Robot Servo Motor Assembly VR Teaching System",
+    },
   },
   {
     src: "/images/visual/vr-education/icons/application.png",
     label: { zh: "应用", en: "Application" },
+    name: {
+      zh: "工业机器人技术应用\nVR实训软件",
+      en: "Industrial Robot Technology Application VR Training Software",
+    },
   },
   {
     src: "/images/visual/vr-education/icons/position.png",
     label: { zh: "岗位", en: "Position" },
+    name: {
+      zh: "工业机器人岗位\nVR实训系统",
+      en: "Industrial Robot Position VR Training System",
+    },
   },
   {
     src: "/images/visual/vr-education/icons/electromechanical.png",
     label: { zh: "机电", en: "Mechatronics" },
+    name: {
+      zh: "机电产品DIY\n智慧课堂实训系统",
+      en: "Mechatronics Product DIY Smart Classroom Training System",
+    },
   },
-] as const;
+  {
+    src: "/images/visual/vr-education/icons/cattle.png",
+    label: { zh: "牛", en: "Cattle" },
+    name: {
+      zh: "牛解剖VR仿真软件",
+      en: "Cattle Anatomy VR Simulation Software",
+    },
+  },
+  {
+    src: "/images/visual/vr-education/icons/dog.png",
+    label: { zh: "狗", en: "Dog" },
+    name: {
+      zh: "狗解剖VR仿真软件",
+      en: "Dog Anatomy VR Simulation Software",
+    },
+  },
+  {
+    src: "/images/visual/vr-education/icons/cat.png",
+    label: { zh: "猫", en: "Cat" },
+    name: {
+      zh: "猫绝育VR仿真软件",
+      en: "Cat Neutering VR Simulation Software",
+    },
+  },
+  {
+    src: "/images/visual/vr-education/icons/pig-icon.png",
+    label: { zh: "猪", en: "Pig" },
+    name: {
+      zh: "猪解剖VR仿真软件",
+      en: "Pig Anatomy VR Simulation Software",
+    },
+  },
+];
 
 export default async function VrEducationPage({ params }: VrEducationPageProps) {
   const { locale: localeParam } = await params;
@@ -849,8 +887,8 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                 <figure className={styles.appIconFeatureCard}>
                   {/* eslint-disable-next-line @next/next/no-img-element -- static export */}
                   <img
-                    src={assetPath("/images/visual/vr-education/icons/cat.png")}
-                    alt={tStr(locale, "猫 VR 实训应用图标", "Cat VR training app icon")}
+                    src={assetPath("/images/visual/vr-education/icons/motor.png")}
+                    alt={tStr(locale, "电机 VR 实训应用图标", "Motor VR training app icon")}
                     width={1024}
                     height={1024}
                     loading="lazy"
@@ -908,14 +946,23 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                           src={assetPath(item.src)}
                           alt={tStr(
                             locale,
-                            `${item.label.zh} VR 实训应用图标`,
-                            `${item.label.en} VR training app icon`,
+                            item.name
+                              ? `${item.name.zh}应用图标`
+                              : `${item.label.zh} VR 实训应用图标`,
+                            item.name
+                              ? `${item.name.en} app icon`
+                              : `${item.label.en} VR training app icon`,
                           )}
                           width={1024}
                           height={1024}
                           loading="lazy"
                           decoding="async"
                         />
+                        {item.name ? (
+                          <figcaption className={styles.appIconName}>
+                            {t(locale, item.name.zh, item.name.en)}
+                          </figcaption>
+                        ) : null}
                       </figure>
                     ))}
                   </div>
