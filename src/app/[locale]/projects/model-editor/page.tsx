@@ -186,7 +186,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                 <p className={styles.earlyVersionLabel}>{t(locale, "早期版本", "Early version")}</p>
                 <Image
                   src={assetPath("/images/model-editor/early-editor.png")}
-                  alt={t(locale, "模型编辑器早期版本界面", "Early Model Editor interface")}
+                  alt={tStr(locale, "模型编辑器早期版本界面", "Early Model Editor interface")}
                   width={1920}
                   height={1079}
                   sizes="(max-width: 900px) 100vw, 840px"
