@@ -147,63 +147,6 @@
   padding-bottom: 0;
 }
 
-.caseStudyBody {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(64px, 76px) minmax(0, 1fr);
-  column-gap: 18px;
-  width: min(100%, 1080px);
-  margin: 0 auto;
-  padding: 0 30px;
-  box-sizing: border-box;
-}
-
-.caseStudyContent {
-  min-width: 0;
-}
-
-.caseStudyContent > section {
-  scroll-margin-top: 32px;
-}
-
-.caseStudyNav {
-  position: sticky;
-  top: 40px;
-  align-self: start;
-  padding-top: 56px;
-  color: #8b8b8b;
-  font-size: var(--fs-body);
-  line-height: 1.5;
-}
-
-.caseStudyNav ol {
-  display: grid;
-  gap: 16px;
-  margin: 0;
-  padding: 0 0 20px;
-  list-style: none;
-}
-
-.caseStudyNav a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 160ms ease;
-}
-
-.caseStudyNav a:hover {
-  color: #333;
-}
-
-.caseStudyNav li:first-child a {
-  color: #333;
-  font-weight: 400;
-}
-
-.caseStudyNav a.caseStudyNavActive {
-  color: #333;
-  font-weight: 400;
-}
-
 /* ─── Positioning Section (selfly0-style) ──────────────── */
 .positioningSection {
   padding: 40px 30px 32px;
@@ -792,16 +735,6 @@
 }
 
 @media (max-width: 768px) {
-  .caseStudyBody {
-    display: block;
-    width: 100%;
-    padding: 0;
-  }
-
-  .caseStudyNav {
-    display: none;
-  }
-
   .narrativeGrid {
     grid-template-columns: 1fr;
   }

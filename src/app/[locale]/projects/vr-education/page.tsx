@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { assetPath } from "@/i18n/assets";
@@ -294,7 +295,18 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
           </div>
         </header>
 
-        <section className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
+        <CaseStudyLayout
+          ariaLabel={tStr(locale, "案例章节导航", "Case study sections")}
+          sections={[
+            { id: "context", label: tStr(locale, "概览", "Overview") },
+            { id: "spatial-design", label: tStr(locale, "空间设计", "Space") },
+            { id: "ui-system", label: tStr(locale, "界面系统", "UI system") },
+            { id: "smart-manufacturing", label: tStr(locale, "智能制造", "Industrial") },
+            { id: "biomedical", label: tStr(locale, "生物医疗", "Biomedical") },
+            { id: "app-icon-system", label: tStr(locale, "应用图标", "App icons") },
+          ]}
+        >
+        <section id="context" className={`${selflyStyles.caseSection} ${selflyStyles.selfly0CaseSection}`}>
           <div className={styles.positioningSection}>
             <div className={styles.positioningInner}>
               <p className={styles.positioningLabel}>{t(locale, "项目背景", "Project Background")}</p>
@@ -361,7 +373,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                   </article>
                 </div>
               </section>
-              <section className={styles.strategySection}>
+              <section id="spatial-design" className={styles.strategySection}>
                 <p className={styles.positioningLabel}>{t(locale, "空间设计", "Spatial Design")}</p>
                 <div className={styles.positioningGrid}>
                   <h2 className={styles.positioningHeading}>
@@ -499,6 +511,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
               </figure>
 
               <section
+                id="ui-system"
                 className={styles.uiSystemSection}
                 aria-label={tStr(locale, "界面系统", "Interface System")}
               >
@@ -972,6 +985,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
           </div>
         </section>
 
+        </CaseStudyLayout>
         <section
           className={selflyStyles.selfly0ContactSection}
           aria-label={tStr(locale, "页面导航", "Page navigation")}

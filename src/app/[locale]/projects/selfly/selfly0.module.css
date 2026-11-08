@@ -2764,3 +2764,26 @@
     font-size: var(--fs-title);
   }
 }
+
+.caseStudyLayout {
+  --case-nav-offset: 16px;
+}
+
+.caseStudyLayout .selfly0StructureHeading,
+.caseStudyLayout .selfly0PositioningHeading {
+  text-wrap: balance;
+}
+
+@media (min-width: 769px) {
+  .caseStudyLayout .caseSection {
+    padding-inline: 30px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .caseStudyLayout .caseText,
+  .caseStudyLayout .selfly0PositioningGrid {
+    gap: 48px;
+  }
+}

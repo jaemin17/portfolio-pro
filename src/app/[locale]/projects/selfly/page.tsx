@@ -1,3 +1,4 @@
+import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { assetPath } from "@/i18n/assets";
 import type { ReactNode } from "react";
 import Image from "next/image";
@@ -89,7 +90,18 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             </a>
           </div>
         </header>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection} ${styles.selfly0IntroSection}`}>
+        <CaseStudyLayout
+          className={styles.caseStudyLayout}
+          ariaLabel={tStr(locale, "案例章节导航", "Case study sections")}
+          sections={[
+            { id: "context", label: tStr(locale, "概览", "Overview") },
+            { id: "today", label: tStr(locale, "体验设计", "UX design") },
+            { id: "app-icon", label: tStr(locale, "图标设计", "App icon") },
+            { id: "launch", label: tStr(locale, "产品落地", "Launch") },
+            { id: "reflection", label: tStr(locale, "反思", "Reflection") },
+          ]}
+        >
+        <section id="context" className={`${styles.caseSection} ${styles.selfly0CaseSection} ${styles.selfly0IntroSection}`}>
           <div className={styles.selfly0IntroBody}>
             {t(
               locale,
@@ -211,7 +223,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             </div>
           </div>
         </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
+        <section id="structure" className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>{t(locale, "产品结构", "Product Structure")}</h2>
             <div className={styles.caseText}>
@@ -238,7 +250,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <TabStructureDiagram locale={locale} />
         </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
+        <section id="today" className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>
               <span className={styles.selfly0ChapterIndex}>01 /</span> {t(locale, "当下", "Today")}
@@ -294,7 +306,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <TodayRhythmSystem locale={locale} />
         </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
+        <section id="explore" className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>
               <span className={styles.selfly0ChapterIndex}>02.1 /</span> {t(locale, "记录", "Explore")}
@@ -443,7 +455,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <DiaryEmojiInputPolish locale={locale} />
         </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
+        <section id="review" className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>
               <span className={styles.selfly0ChapterIndex}>03 /</span> {t(locale, "回看", "Review")}
@@ -498,7 +510,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <ReviewRedistribution locale={locale} />
         </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
+        <section id="app-icon" className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>{t(locale, "应用图标", "App Icon")}</h2>
             <div className={styles.caseText}>
@@ -540,7 +552,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <AppIconDesignShowcase locale={locale} />
         </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
+        <section id="launch" className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>{t(locale, "产品化落地", "Shipping the Product")}</h2>
             <div className={styles.caseText}>
@@ -591,7 +603,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
         <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <ProductLaunchEvidence locale={locale} />
         </section>
-        <section className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
+        <section id="reflection" className={`${styles.caseSection} ${styles.selfly0CaseSection}`}>
           <div className={styles.selfly0StructureSection}>
             <h2 className={styles.selfly0PositioningLabel}>{t(locale, "项目反思", "Project Reflection")}</h2>
             <div className={styles.caseText}>
@@ -625,6 +637,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
             </div>
           </div>
         </section>
+        </CaseStudyLayout>
         <section className={styles.selfly0ContactSection} aria-label={tStr(locale, "页面导航", "Page navigation")}>
           <div className={styles.selfly0ContactInner}>
             <Link className={styles.selfly0ContactBack} href={localePath(locale, "/")}>

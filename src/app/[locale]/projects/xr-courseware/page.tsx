@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
@@ -72,11 +73,10 @@ export default async function XRCoursewarePage({ params }: { params: Promise<{ l
           <Image src={assetPath("/images/xr-courseware/cover.webp")} alt={locale === "zh" ? "XR课件封面：笔记本电脑上的3D课件编辑器" : "XR Courseware cover: the 3D lesson editor on a laptop"} width={1920} height={1063} sizes="(max-width: 980px) 100vw, 940px" preload />
         </div>
       </header>
-      <div className={layout.caseStudyBody}>
-        <nav className={layout.caseStudyNav} aria-label={locale === "zh" ? "案例章节导航" : "Case study sections"}>
-          <ol>{ids.map((id, i) => <li key={id}><a href={`#${id}`}>{c.nav[i]}</a></li>)}</ol>
-        </nav>
-        <div className={layout.caseStudyContent}>
+      <CaseStudyLayout
+        sections={ids.map((id, i) => ({ id, label: c.nav[i] }))}
+        ariaLabel={locale === "zh" ? "案例章节导航" : "Case study sections"}
+      >
           <section id="context" className={sectionClass}>
             <div className={layout.positioningSection}><div className={layout.positioningInner}>
               <p className={styles.kicker}>{c.nav[0]}</p>
@@ -156,8 +156,7 @@ export default async function XRCoursewarePage({ params }: { params: Promise<{ l
               <p className={styles.next}>{c.next}</p>
             </Narrative>
           </section>
-        </div>
-      </div>
+      </CaseStudyLayout>
       <section className={shared.selfly0ContactSection} aria-label={locale === "zh" ? "页面导航" : "Page navigation"}>
         <div className={`${shared.selfly0ContactInner} ${layout.contactAlign}`}>
           <Link className={shared.selfly0ContactBack} href={localePath(locale, "/")}>{c.back}</Link>
