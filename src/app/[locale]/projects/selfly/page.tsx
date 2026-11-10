@@ -1,7 +1,7 @@
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
+import { CroppedPhonePreview } from "@/components/CroppedPhonePreview";
 import { assetPath } from "@/i18n/assets";
 import type { ReactNode } from "react";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/i18n/config";
 import Link from "next/link";
@@ -95,9 +95,9 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
           ariaLabel={tStr(locale, "案例章节导航", "Case study sections")}
           sections={[
             { id: "context", label: tStr(locale, "概览", "Overview") },
-            { id: "today", label: tStr(locale, "体验设计", "UX design") },
-            { id: "app-icon", label: tStr(locale, "图标设计", "App icon") },
-            { id: "launch", label: tStr(locale, "产品落地", "Launch") },
+            { id: "today", label: tStr(locale, "体验", "UX design") },
+            { id: "app-icon", label: tStr(locale, "图标", "App icon") },
+            { id: "launch", label: tStr(locale, "落地", "Launch") },
             { id: "reflection", label: tStr(locale, "反思", "Reflection") },
           ]}
         >
@@ -189,15 +189,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   <p className={styles.positioningDiagramCaption}>{t(locale, "固定内容探索", "Preset self-exploration")}</p>
                   <p className={styles.positioningDiagramDescription}>{t(locale, "固定 · 单次 · 预设练习", "Fixed · One-off · Preset exercises")}</p>
                 </div>
-                <div className={styles.positioningPhoneFrame}>
-                  <Image
+                  <CroppedPhonePreview
                     src={assetPath("/images/selfly0/positioning-phone-1.webp")}
                     alt={tStr(locale, "原方向：固定内容探索", "Original direction: preset self-exploration")}
-                    width={360}
-                    height={780}
-                    className={styles.positioningDiagramPhone}
+                    width={470}
+                    height={1024}
                   />
-                </div>
               </div>
               <div className={styles.positioningDiagramArrow} aria-hidden="true">
                 <svg width="101" height="24" viewBox="0 0 101 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,15 +207,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   <p className={styles.positioningDiagramCaption}>{t(locale, "长期自我探索", "Long-term self-exploration")}</p>
                   <p className={styles.positioningDiagramDescription}>{t(locale, "自由 · 持续 · 自主记录", "Free-form · Ongoing · Self-directed recording")}</p>
                 </div>
-                <div className={styles.positioningPhoneFrame}>
-                  <Image
+                  <CroppedPhonePreview
                     src={assetPath("/images/selfly0/positioning-phone-3.webp")}
                     alt={tStr(locale, "新方向：长期自我探索", "New direction: long-term self-exploration")}
-                    width={360}
-                    height={780}
-                    className={styles.positioningDiagramPhone}
+                    width={470}
+                    height={1024}
                   />
-                </div>
               </div>
             </div>
           </div>

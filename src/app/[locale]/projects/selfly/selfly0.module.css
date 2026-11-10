@@ -245,6 +245,55 @@
   flex-shrink: 0;
 }
 
+/* Share text rows across both columns; screenshots always meet the card bottom.
+   The phone component owns crop/radius/bezel, independently of viewport breakpoints. */
+.positioningDiagram.positioningPhaseCompare {
+  padding: clamp(24px, 7%, 56px) clamp(16px, 6%, 60px) 0;
+}
+
+.positioningPhaseCompare .positioningDiagramFlow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(32px, 0.36fr) minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 10px 4%;
+  align-items: stretch;
+}
+
+.positioningPhaseCompare .positioningDiagramCol {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: 1 / 4;
+  min-width: 0;
+  justify-items: center;
+  align-items: start;
+}
+
+.positioningPhaseCompare .positioningDiagramCol:first-child {
+  grid-column: 1;
+}
+
+.positioningPhaseCompare .positioningDiagramCol:last-child {
+  grid-column: 3;
+}
+
+.positioningPhaseCompare .positioningDiagramCopy {
+  padding: 0;
+}
+
+.positioningPhaseCompare .positioningDiagramArrow {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: center;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.positioningPhaseCompare .positioningDiagramArrow svg {
+  width: 100%;
+  max-width: 80px;
+}
+
 @media (max-width: 760px) {
   .positioningDiagram {
     padding: 32px 20px 0;
@@ -290,43 +339,6 @@
 
   .positioningDiagramArrow svg {
     width: 48px;
-  }
-
-  .positioningPhaseCompare {
-    padding: 16px 16px 0;
-  }
-
-  .positioningPhaseCompare .positioningDiagramFlow {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 48px minmax(0, 1fr);
-    gap: 8px;
-    align-items: center;
-  }
-
-  .positioningPhaseCompare .positioningDiagramCol {
-    width: 100%;
-    min-width: 0;
-    gap: 4px;
-  }
-
-  .positioningPhaseCompare .positioningPhoneFrame {
-    width: 100%;
-    max-width: 136px;
-    aspect-ratio: 470 / 1024;
-    border-bottom: 4px solid #2a2a2a;
-    border-radius: 16px;
-  }
-
-  .positioningPhaseCompare .positioningDiagramPhone {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .positioningPhaseCompare .positioningDiagramArrow {
-    margin-top: 8px;
   }
 
   .todayTop3Carousel {

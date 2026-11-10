@@ -1,0 +1,29 @@
+.phone {
+  width: 100%;
+  max-width: 220px;
+  min-width: 0;
+  justify-self: center;
+  align-self: end;
+  container-type: inline-size;
+}
+
+/* cqw is relative to this phone, so the bezel and both radii scale together. */
+.frame {
+  padding: 2.7cqw 2.7cqw 0;
+  border-radius: 14.5cqw 14.5cqw 0 0;
+  background: #2a2a2a;
+  overflow: hidden;
+}
+
+.crop {
+  aspect-ratio: var(--crop-aspect);
+  border-radius: 11.8cqw 11.8cqw 0 0;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
