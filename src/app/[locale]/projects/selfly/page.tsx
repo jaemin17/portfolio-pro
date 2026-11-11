@@ -148,12 +148,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   locale,
                   <>
                     <p className={styles.p}>
-                      初始设想：围绕一组
+                      初始设想：通过一组
                       <strong className={styles.selfly0Emphasis}>预设的自我探索练习</strong>
-                      ，借助 AI 快速做出可体验的 demo。
+                      ，帮助梳理价值观、优势与目标。
                     </p>
                     <p className={styles.p}>
-                      使用后的发现：实际使用后，我发现体验往往
+                      验证与发现：借助 AI 快速实现早期版本后，我在实际使用中发现，体验往往
                       <strong className={styles.selfly0Emphasis}>停在完成练习的那一刻</strong>
                       。但人在不同阶段会重新理解自己，已有内容也需要持续补充与回看。
                     </p>
