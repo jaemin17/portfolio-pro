@@ -148,17 +148,19 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   locale,
                   <>
                     <p className={styles.p}>
-                      Selfly 是一个面向长期使用的
-                      <strong className={styles.selfly0Emphasis}>个人记录工具</strong>，帮助用户通过持续记录、回看与反思，更清晰地理解自己。
+                      初始设想：围绕一组
+                      <strong className={styles.selfly0Emphasis}>预设的自我探索练习</strong>
+                      ，借助 AI 快速做出可体验的 demo。
                     </p>
                     <p className={styles.p}>
-                      Selfly 最初更像一组独立的自我探索练习，但在前期探索中，我意识到，自我探索并不会在一次探索后结束。人在不同阶段会不断重新理解自己，真正需要的是
-                      <strong className={styles.selfly0Emphasis}>长期记录、回看与反思</strong>。
+                      使用后的发现：实际使用后，我发现体验往往
+                      <strong className={styles.selfly0Emphasis}>停在完成练习的那一刻</strong>
+                      。但人在不同阶段会重新理解自己，已有内容也需要持续补充与回看。
                     </p>
                     <p className={styles.p}>
-                      因此，我将产品方向转向更长期的个人记录空间：提供
-                      <strong className={styles.selfly0Emphasis}>更自由的记录方式</strong>，并通过
-                      <strong className={styles.selfly0Emphasis}>每日聚焦与回顾机制</strong>，让记录真正进入日常。
+                      方向调整：从围绕固定内容的自我探索，转向
+                      <strong className={styles.selfly0Emphasis}>支持持续记录与回顾的个人空间</strong>
+                      ，通过更自由的记录方式、每日聚焦与回顾机制，让自我记录进入日常。
                     </p>
                   </>,
                   <>
