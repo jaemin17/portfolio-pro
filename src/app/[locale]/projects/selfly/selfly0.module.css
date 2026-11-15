@@ -564,15 +564,20 @@
 }
 
 .selfly0ReflectionBody p + p {
-  margin-top: 26px;
+  margin-top: 20px;
 }
 
 .selfly0ReflectionSubheading {
-  margin: 40px 0 14px;
-  color: var(--text-primary);
-  font-size: var(--fs-body);
-  font-weight: 600;
+  margin: 64px 0 24px;
+  color: var(--accentA, #ff6a3d);
+  font-size: clamp(18px, 1.5vw, 21px);
+  font-weight: 500;
   line-height: 1.5;
+}
+
+.caseText .selfly0ReflectionBody p,
+.caseText .selfly0ReflectionBody li {
+  line-height: 1.85;
 }
 
 .selfly0ReflectionBody .selfly0Emphasis {
@@ -583,13 +588,112 @@
   text-underline-offset: 3px;
 }
 
-.caseText .selfly0ReflectionBody ul {
-  margin-bottom: 26px;
+.caseText .selfly0ReflectionBody .selfly0ReflectionCallout {
+  margin: 32px 0;
+  padding: 24px 28px;
+  border-left: 3px solid var(--accentA, #ff6a3d);
+  border-radius: 10px;
+  background: #fff5ed;
+  color: var(--text-primary);
+  font-size: clamp(18px, 1.5vw, 21px);
+  line-height: 1.65;
+  opacity: 1;
+}
+
+.selfly0ReflectionCallout .selfly0Emphasis,
+.selfly0ReflectionConclusion .selfly0Emphasis {
+  text-decoration: none;
+}
+
+.caseText .selfly0ReflectionBenefits {
+  margin: 0;
+  padding: 0 0 0 28px;
+  font-size: var(--fs-body);
+}
+
+.selfly0ReflectionBenefits li {
+  padding-left: 10px;
+  color: var(--text-secondary);
+}
+
+.selfly0ReflectionBenefits li::marker {
+  color: var(--accentA, #ff6a3d);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.selfly0ReflectionBenefits .selfly0Emphasis {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.selfly0ReflectionBenefits li + li {
+  margin-top: 12px;
+}
+
+.selfly0ReflectionJudgment {
+  margin: 64px 0;
+  padding: 28px 32px;
+  border-left: 3px solid var(--accentA, #ff6a3d);
+  border-radius: 12px;
+  background: #fff8f2;
+}
+
+.selfly0ReflectionJudgment .selfly0ReflectionSubheading {
+  margin: 0 0 24px;
+}
+
+.caseText .selfly0ReflectionJudgment ul {
+  margin: 32px 0 0;
+  padding-left: 18px;
+  color: var(--text-secondary);
   font-weight: 400;
 }
 
-.selfly0ReflectionBody li + li {
-  margin-top: 14px;
+.selfly0ReflectionJudgment li {
+  padding-left: 4px;
+}
+
+.selfly0ReflectionJudgment li::marker {
+  color: var(--accentA, #ff6a3d);
+}
+
+.selfly0ReflectionJudgment .selfly0Emphasis {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.selfly0ReflectionJudgment p .selfly0Emphasis {
+  display: inline;
+}
+
+.selfly0ReflectionJudgment li + li {
+  margin-top: 32px;
+}
+
+.caseText .selfly0ReflectionBody .selfly0ReflectionConclusion {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border, #e8e8e8);
+  color: var(--text-primary);
+  font-size: clamp(18px, 1.5vw, 21px);
+  line-height: 1.7;
+  opacity: 1;
+}
+
+.selfly0ReflectionBody .selfly0ReflectionConclusion + p {
+  margin-top: 16px;
+}
+
+@media (max-width: 640px) {
+  .caseText .selfly0ReflectionBody .selfly0ReflectionCallout {
+    padding: 20px;
+  }
+
+  .selfly0ReflectionJudgment {
+    padding: 24px 20px;
+  }
 }
 
 .selfly0ContactSection {

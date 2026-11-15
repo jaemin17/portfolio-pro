@@ -611,7 +611,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   <p>
                     这个项目让我从主要负责设计环节，转向在产品构建过程中持续参与<strong className={styles.selfly0Emphasis}>产品、设计与实现的判断</strong>。
                   </p>
-                  <p>
+                  <p className={styles.selfly0ReflectionCallout}>
                     <strong className={styles.selfly0Emphasis}>AI 降低了实现成本，但没有降低设计判断的要求。</strong>
                   </p>
                   <p>
@@ -628,10 +628,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     设计与实现不再是两个依次完成的阶段，而是在可运行的产品中交替推进：<strong className={styles.selfly0Emphasis}>通过实现验证设计，再根据实际体验调整方案</strong>。
                   </p>
                   <h4 className={styles.selfly0ReflectionSubheading}>这种方式带来的变化</h4>
-                  <ul>
+                  <ol className={styles.selfly0ReflectionBenefits}>
                     <li><strong className={styles.selfly0Emphasis}>反馈更加直接。</strong>设计、实现与验证在同一过程中完成，减少了环节间的交接成本，让问题更早暴露，设计判断也能更快得到验证。</li>
                     <li><strong className={styles.selfly0Emphasis}>设计投入更加灵活。</strong>优先完成核心页面与关键流程，再根据实际体验逐步扩展设计，避免过早投入尚未验证的方案。</li>
-                  </ul>
+                  </ol>
+                  <div className={styles.selfly0ReflectionJudgment}>
                   <h4 className={styles.selfly0ReflectionSubheading}>并行推进，更需要持续判断</h4>
                   <p>当设计与实现不断交替，效率不再只是执行速度，也取决于能否守住<strong className={styles.selfly0Emphasis}>产品方向与体验质量</strong>。</p>
                   <ul>
@@ -639,6 +640,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     <li><strong className={styles.selfly0Emphasis}>局部优化不能牺牲整体一致性。</strong>随着页面和功能增加，需要持续检查产品结构、组件与交互规则，避免局部方案逐渐偏离整体体验。</li>
                     <li><strong className={styles.selfly0Emphasis}>实现受限，不意味着降低设计要求。</strong>当 AI 无法实现预期效果时，需要判断替代方案是否影响体验；如果会，就应该进一步理解问题并寻找解决方式，而不是直接妥协。</li>
                   </ul>
+                  </div>
                   <h4 className={styles.selfly0ReflectionSubheading}>重新理解效率</h4>
                   <p>
                     AI 带来的价值，不只是缩短从设计到实现的时间，更是<strong className={styles.selfly0Emphasis}>降低了从设计判断到实际验证的成本</strong>。
@@ -646,11 +648,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                   <p>
                     但更快得到一个可运行的版本，不等于更高的整体效率。真正需要考虑的，是从构建、调整到长期维护的<strong className={styles.selfly0Emphasis}>综合成本</strong>，而不只是首版交付速度。
                   </p>
-                  <p>
-                    <strong className={styles.selfly0Emphasis}>这次经历让我意识到，设计不必止步于方案交付，而可以持续参与产品的构建与演进。</strong>
+                  <p className={styles.selfly0ReflectionConclusion}>
+                    <strong className={styles.selfly0Emphasis}>独立构建 Selfly，让我开始为设计决定带来的体验、实现与维护成本负责。</strong>
                   </p>
                   <p>
-                    对我而言，AI 带来的重要变化，不是让设计师更快地完成设计，而是让<strong className={styles.selfly0Emphasis}>设计判断能够更直接地进入产品</strong>，并在真实使用中不断得到检验。
+                    <strong className={styles.selfly0Emphasis}>AI 降低了构建门槛，也让我更直接地面对判断的结果，并据此调整方案。</strong>
                   </p>
                 </>,
                 <>
