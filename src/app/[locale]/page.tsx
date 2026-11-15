@@ -77,7 +77,7 @@ export default async function HomePage({ params }: HomePageProps) {
             <footer className={`${styles.footer} ${styles.revealItem} ${styles.revealDelay1}`}>
               <p className={styles.footerRole}>{copy.footerRole}</p>
               <Link className={styles.footerGuideLink} href={localePath(locale, "/style-guide")}>
-                {locale === "zh" ? "视觉规范" : "Visual guidelines"}
+                Visual guidelines
               </Link>
             </footer>
           </RevealOnView>

@@ -596,8 +596,7 @@
 .footerGuideLink {
   font-size: var(--fs-caption);
   color: var(--text-muted);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration: none;
 }
 
 .footerGuideLink:hover {
