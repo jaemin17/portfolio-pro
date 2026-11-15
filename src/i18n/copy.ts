@@ -876,7 +876,7 @@ const aboutCopy: Record<Locale, AboutCopy> = {
       items: [
         { company: "深圳希夷微象科技", role: "产品体验设计师", period: "2023 – 2025" },
         { company: "KMAX 科骏-深圳", role: "产品体验设计师", period: "2019 – 2023" },
-        { company: "VIA 广州威纳", role: "UI 设计师", period: "2017 – 2019" },
+        { company: "广州海纳数智", role: "UI 设计师", period: "2017 – 2019" },
         { company: "ISAR 伊飒尔-广州", role: "UIUE 实验室设计师", period: "2016 – 2017" },
       ],
     },
