@@ -107,13 +107,13 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
               locale,
               <>
                 <p className={styles.p}>
-                  Selfly 来自一个<strong className={styles.selfly0Emphasis}>很具体的需求</strong>：我需要一个地方持续整理自己。
+                  Selfly 的初衷，是提供一个<strong className={styles.selfly0Emphasis}>探索自我、持续记录的空间</strong>。
                 </p>
                 <p className={styles.p}>
-                  面对阶段性的迷茫，我希望把价值观、优势、目标、成功日记和愿景板这些自我探索内容记录下来，并让它们和<strong className={styles.selfly0Emphasis}>每天真正重要的行动</strong>产生关系。
+                  面对阶段性的迷茫，我希望通过记录价值观、优势、目标、成功日记和愿景板，<strong className={styles.selfly0Emphasis}>更清楚地认识自己</strong>。
                 </p>
                 <p className={styles.p}>
-                  这个项目也让我重新以<strong className={styles.selfly0Emphasis}>完整产品 owner</strong> 的方式工作：从产品概念、信息结构、交互与视觉，到 iOS 开发和上线，我独立完成了从个人需求到真实产品的整个过程。
+                  在这个项目中，我独立负责<strong className={styles.selfly0Emphasis}>产品定义、设计与开发</strong>，完成了从个人需求到 iOS 产品上线的整个过程。
                 </p>
               </>,
               <>
@@ -607,14 +607,50 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
               {t(
                 locale,
                 <>
+                  <h3>从完成设计，到持续构建产品</h3>
                   <p>
-                    在推进 Selfly 从 0 到 1 的过程中，我逐渐意识到，真正困难的并不是持续增加功能，而是在不断变化的需求中保持产品边界清晰，并判断哪些能力真正支持长期使用。
+                    这个项目让我从主要负责设计环节，转向在产品构建过程中持续参与<strong className={styles.selfly0Emphasis}>产品、设计与实现的判断</strong>。
                   </p>
                   <p>
-                    借助 AI，即使没有编程基础，我也能快速将想法变成可体验的功能，并在验证过程中同步调整设计。这种边做边试的方式，也让我更容易分辨：哪些功能确实回应了实际需求，哪些只是自己一时的想法。
+                    <strong className={styles.selfly0Emphasis}>AI 降低了实现成本，但没有降低设计判断的要求。</strong>
                   </p>
                   <p>
-                    独立完成这个项目，也训练了我从产品约束、体验判断到真实上线之间建立闭环的能力。设计不只停留在方案层面，也需要在实现、审核与持续迭代中被验证。
+                    从产品方向、功能边界，到交互逻辑与体验取舍，设计师仍然需要做出判断。不同的是，AI 让这些判断更早进入实现过程，也让设计方案能够更快<strong className={styles.selfly0Emphasis}>通过真实运行得到验证</strong>。
+                  </p>
+                  <h4 className={styles.selfly0ReflectionSubheading}>工作方式的变化</h4>
+                  <p>
+                    快速构建产品，不意味着省略前期思考。明确<strong className={styles.selfly0Emphasis}>产品目标、核心路径、功能边界与视觉方向</strong>，依然是构建的基础。否则，实现越容易，产品反而越容易在不断尝试中偏离目标。
+                  </p>
+                  <p>
+                    开发 Selfly 时，我没有等所有页面设计完成，而是先通过核心页面确定产品结构、功能与视觉方向，再进入实际构建。
+                  </p>
+                  <p>
+                    设计与实现不再是两个依次完成的阶段，而是在可运行的产品中交替推进：<strong className={styles.selfly0Emphasis}>通过实现验证设计，再根据实际体验调整方案</strong>。
+                  </p>
+                  <h4 className={styles.selfly0ReflectionSubheading}>这种方式带来的变化</h4>
+                  <ul>
+                    <li><strong className={styles.selfly0Emphasis}>反馈更加直接。</strong>设计、实现与验证在同一过程中完成，减少了环节间的交接成本，让问题更早暴露，设计判断也能更快得到验证。</li>
+                    <li><strong className={styles.selfly0Emphasis}>设计投入更加灵活。</strong>优先完成核心页面与关键流程，再根据实际体验逐步扩展设计，避免过早投入尚未验证的方案。</li>
+                  </ul>
+                  <h4 className={styles.selfly0ReflectionSubheading}>并行推进，更需要持续判断</h4>
+                  <p>当设计与实现不断交替，效率不再只是执行速度，也取决于能否守住<strong className={styles.selfly0Emphasis}>产品方向与体验质量</strong>。</p>
+                  <ul>
+                    <li><strong className={styles.selfly0Emphasis}>实现容易，不代表功能有价值。</strong>每个新增功能都应该回应明确的用户需求，而不是因为容易实现就不断扩大产品范围。</li>
+                    <li><strong className={styles.selfly0Emphasis}>局部优化不能牺牲整体一致性。</strong>随着页面和功能增加，需要持续检查产品结构、组件与交互规则，避免局部方案逐渐偏离整体体验。</li>
+                    <li><strong className={styles.selfly0Emphasis}>实现受限，不意味着降低设计要求。</strong>当 AI 无法实现预期效果时，需要判断替代方案是否影响体验；如果会，就应该进一步理解问题并寻找解决方式，而不是直接妥协。</li>
+                  </ul>
+                  <h4 className={styles.selfly0ReflectionSubheading}>重新理解效率</h4>
+                  <p>
+                    AI 带来的价值，不只是缩短从设计到实现的时间，更是<strong className={styles.selfly0Emphasis}>降低了从设计判断到实际验证的成本</strong>。
+                  </p>
+                  <p>
+                    但更快得到一个可运行的版本，不等于更高的整体效率。真正需要考虑的，是从构建、调整到长期维护的<strong className={styles.selfly0Emphasis}>综合成本</strong>，而不只是首版交付速度。
+                  </p>
+                  <p>
+                    <strong className={styles.selfly0Emphasis}>这次经历让我意识到，设计不必止步于方案交付，而可以持续参与产品的构建与演进。</strong>
+                  </p>
+                  <p>
+                    对我而言，AI 带来的重要变化，不是让设计师更快地完成设计，而是让<strong className={styles.selfly0Emphasis}>设计判断能够更直接地进入产品</strong>，并在真实使用中不断得到检验。
                   </p>
                 </>,
                 <>

@@ -567,6 +567,31 @@
   margin-top: 26px;
 }
 
+.selfly0ReflectionSubheading {
+  margin: 40px 0 14px;
+  color: var(--text-primary);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.selfly0ReflectionBody .selfly0Emphasis {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 0.75px;
+  text-underline-offset: 3px;
+}
+
+.caseText .selfly0ReflectionBody ul {
+  margin-bottom: 26px;
+  font-weight: 400;
+}
+
+.selfly0ReflectionBody li + li {
+  margin-top: 14px;
+}
+
 .selfly0ContactSection {
   width: 100%;
   max-width: 840px;
