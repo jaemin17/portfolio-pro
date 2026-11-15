@@ -593,6 +593,22 @@
   color: var(--text-muted);
 }
 
+.footerGuideLink {
+  font-size: var(--fs-caption);
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footerGuideLink:hover {
+  color: var(--text-secondary);
+}
+
+.footerGuideLink:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 @media (max-width: 767px) {
   .main {
     --main-gutter: 3rem;

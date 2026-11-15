@@ -19,6 +19,9 @@
   --fs-caption: 0.75rem; /* 12 */
   --fs-label: 0.875rem; /* 14 */
   --fs-body: 1rem; /* 16 */
+  --fw-body: 400;
+  --fw-heading: 500;
+  --fw-emphasis: 500;
   --fs-subtitle: 1.25rem; /* 20 */
   --fs-title: 1.625rem; /* 26 */
   --fs-display: 2.625rem; /* 42 */
@@ -41,6 +44,7 @@ body {
     "Microsoft YaHei",
     sans-serif;
   font-size: var(--fs-body);
+  font-weight: var(--fw-body);
   line-height: 1.5;
   color: var(--text-primary);
   background: #fff;
@@ -62,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: var(--fw-heading);
 }
 
 strong,

@@ -1,0 +1,140 @@
+[
+  {
+    "bodySamples": [
+      {
+        "lineHeight": "35px",
+        "size": "20px"
+      },
+      {
+        "lineHeight": "18px",
+        "size": "12px"
+      }
+    ],
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "Hi,I'm Jiamin!",
+    "nav": {
+      "font": "\"IBM Plex Mono\", \"IBM Plex Mono Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", ui-monospace, monospace",
+      "size": "14px"
+    },
+    "url": "http://localhost:3000/zh/"
+  },
+  {
+    "bodySamples": [
+      {
+        "lineHeight": "30.4px",
+        "size": "16px"
+      },
+      {
+        "lineHeight": "30.4px",
+        "size": "16px"
+      },
+      {
+        "lineHeight": "30.4px",
+        "size": "16px"
+      }
+    ],
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "About",
+    "nav": {
+      "font": "\"IBM Plex Mono\", \"IBM Plex Mono Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", ui-monospace, monospace",
+      "size": "14px"
+    },
+    "url": "http://localhost:3000/zh/about/"
+  },
+  {
+    "bodySamples": [
+      {
+        "lineHeight": "24.8px",
+        "size": "16px"
+      },
+      {
+        "lineHeight": "24px",
+        "size": "16px"
+      },
+      {
+        "lineHeight": "28.8px",
+        "size": "16px"
+      }
+    ],
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "把复杂 3D 模型变成课堂可讲的素材",
+    "nav": {
+      "font": "\"IBM Plex Mono\", \"IBM Plex Mono Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", ui-monospace, monospace",
+      "size": "14px"
+    },
+    "url": "http://localhost:3000/zh/projects/model-editor/"
+  },
+  {
+    "bodySamples": [
+      {
+        "lineHeight": "24.8px",
+        "size": "16px"
+      },
+      {
+        "lineHeight": "29.6px",
+        "size": "16px"
+      },
+      {
+        "lineHeight": "29.6px",
+        "size": "16px"
+      }
+    ],
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "把专业 3D 模型，组织成课堂可讲的课件",
+    "nav": {
+      "font": "\"IBM Plex Mono\", \"IBM Plex Mono Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", ui-monospace, monospace",
+      "size": "14px"
+    },
+    "url": "http://localhost:3000/zh/projects/xr-courseware/"
+  },
+  {
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "3D 应用图标设计",
+    "headingSize": "26px",
+    "navSize": "14px",
+    "url": "http://localhost:3000/zh/projects/engine-icon/"
+  },
+  {
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "让教学资源，更容易被找到",
+    "headingSize": "32px",
+    "navSize": "14px",
+    "url": "http://localhost:3000/zh/projects/resource-library/"
+  },
+  {
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "把小需要，做成小工具",
+    "headingSize": "32px",
+    "navSize": "14px",
+    "url": "http://localhost:3000/zh/projects/personal-tools/"
+  },
+  {
+    "url": "http://localhost:3000/zh/projects/sync-space/",
+    "status": 404,
+    "excluded": true,
+    "reason": "page.tsx directly calls notFound() before rendering"
+  },
+  {
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "Selfly：让记录不再变成压力",
+    "headingSize": "26px",
+    "navSize": "14px",
+    "url": "http://localhost:3000/zh/projects/selfly/"
+  },
+  {
+    "bodyWeight": "400",
+    "font": "geistSans, \"geistSans Fallback\", \"Noto Sans SC\", \"Noto Sans SC Fallback\", system-ui, -apple-system, \"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "heading": "VR 实训软件 界面系统设计",
+    "headingSize": "26px",
+    "navSize": "14px",
+    "url": "http://localhost:3000/zh/projects/vr-education/"
+  }
+]

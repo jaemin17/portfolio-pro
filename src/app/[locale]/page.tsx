@@ -1,11 +1,13 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import { EnvelopeMail } from "@/components/EnvelopeMail";
 import { HeroShaderBackground } from "@/components/HeroShaderBackground";
 import { RevealOnView } from "@/components/RevealOnView";
 import { assetPath } from "@/i18n/assets";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getHomeCopy } from "@/i18n/copy";
+import { localePath } from "@/i18n/paths";
 import { WorkIndex } from "./WorkIndex";
 import styles from "./page.module.css";
 
@@ -74,6 +76,9 @@ export default async function HomePage({ params }: HomePageProps) {
           <RevealOnView className={styles.scrollReveal}>
             <footer className={`${styles.footer} ${styles.revealItem} ${styles.revealDelay1}`}>
               <p className={styles.footerRole}>{copy.footerRole}</p>
+              <Link className={styles.footerGuideLink} href={localePath(locale, "/style-guide")}>
+                {locale === "zh" ? "视觉规范" : "Visual guidelines"}
+              </Link>
             </footer>
           </RevealOnView>
         </div>
