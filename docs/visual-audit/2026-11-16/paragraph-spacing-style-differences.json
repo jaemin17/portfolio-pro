@@ -1,0 +1,1344 @@
+[
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "初始设想：通过一组预设的自我探索练习，帮助梳理价值观、优势与目标。",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "0px 0px 20px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "预设的自我探索练习",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "验证与发现：借助 AI 快速实现早期版本后，我在实际使用中发现，体验往往停在完成练习的那一",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "10px 0px 20px",
+        "20px 0px 0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "停在完成练习的那一刻",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "方向调整：从围绕固定内容的自我探索，转向支持持续记录与回顾的个人空间，通过更自由的记录方式",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "10px 0px 20px",
+        "20px 0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "支持持续记录与回顾的个人空间",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Selfly 用 Today / Explore / Review 三个 Tab 建立「当",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "我为首页设置了 Top 3 的容量限制，让用户每天只保留三件最重要的事。 明确的边界减少了",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "「判断今天真正重要的事」",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "原有的价值观、愿景板、成功日记和优势测试以独立功能呈现，入口彼此割裂。为降低理解成本，我按",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "0px 0px 22px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "清单、计划、日记和图册四类记录容器",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "记录方式",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "按功能进入会更容易预设用途，按容器进入能承接自我发现，同时适配不同人的内容、习惯和状态。 ",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "22px 0px",
+        "20px 0px 22px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "按容器进入能承接自我发现",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "选择合适的记录方式",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "清单、日记、计划和图册提供了自由的记录容器，但对新用户来说，过于抽象的容器也可能带来空白感",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "文字能够记录发生了什么，情绪图标则补充当下的感受，让日记在回看时更直观、更有记忆点。由于发",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "自动恢复输入框焦点",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "如果记录只停留在各个模块里，内容分散在不同模块中，回顾依赖用户主动进入。我把回顾设计成一个",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Selfly 的核心是「记录自己、看见变化」。我在图标设计里用打开的书表达记录容器，用蝴蝶",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "打开的书",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "蝴蝶",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "除了体验设计，我也独立完成了 Selfly 的 iOS 开发、上线与持续迭代。从界面实现、",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "在实际使用中不断校准体验",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "初始设想：通过一组预设的自我探索练习，帮助梳理价值观、优势与目标。",
+    "changes": {
+      "margin": [
+        "0px 0px 28px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "验证与发现：借助 AI 快速实现早期版本后，我在实际使用中发现，体验往往停在完成练习的那一",
+    "changes": {
+      "margin": [
+        "10px 0px 28px",
+        "20px 0px 0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "方向调整：从围绕固定内容的自我探索，转向支持持续记录与回顾的个人空间，通过更自由的记录方式",
+    "changes": {
+      "margin": [
+        "10px 0px 28px",
+        "20px 0px 28px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "",
+    "text": "原有的价值观、愿景板、成功日记和优势测试以独立功能呈现，入口彼此割裂。为降低理解成本，我按",
+    "changes": {
+      "margin": [
+        "0px 0px 22px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "",
+    "text": "按功能进入会更容易预设用途，按容器进入能承接自我发现，同时适配不同人的内容、习惯和状态。 ",
+    "changes": {
+      "margin": [
+        "22px 0px",
+        "20px 0px 22px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "初始设想：通过一组预设的自我探索练习，帮助梳理价值观、优势与目标。",
+    "changes": {
+      "margin": [
+        "0px 0px 28px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "验证与发现：借助 AI 快速实现早期版本后，我在实际使用中发现，体验往往停在完成练习的那一",
+    "changes": {
+      "margin": [
+        "10px 0px 28px",
+        "20px 0px 0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "方向调整：从围绕固定内容的自我探索，转向支持持续记录与回顾的个人空间，通过更自由的记录方式",
+    "changes": {
+      "margin": [
+        "10px 0px 28px",
+        "20px 0px 28px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "",
+    "text": "原有的价值观、愿景板、成功日记和优势测试以独立功能呈现，入口彼此割裂。为降低理解成本，我按",
+    "changes": {
+      "margin": [
+        "0px 0px 22px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "",
+    "text": "按功能进入会更容易预设用途，按容器进入能承接自我发现，同时适配不同人的内容、习惯和状态。 ",
+    "changes": {
+      "margin": [
+        "22px 0px",
+        "20px 0px 22px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "Selfly is a personal recording tool designed ",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "0px 0px 20px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "personal recording tool",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "Selfly initially felt more like a set of sepa",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "10px 0px 20px",
+        "20px 0px 0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "long-term recording, review, and reflection",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "So I shifted the product direction toward a l",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "10px 0px 20px",
+        "20px 0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "freer ways to record",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "daily focus and review",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Selfly uses three tabs — Today, Explore, and ",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "I set a Top 3 capacity on the home screen so ",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "“deciding what actually matters today”",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Values, Vision Board, Success Diary, and Stre",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "0px 0px 22px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "four record containers: List, Plan, Journal, ",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "ways of recording",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Entering by feature tends to presuppose a fix",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ],
+      "margin": [
+        "22px 0px",
+        "20px 0px 22px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "entering by container leaves room for self-di",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "choose whichever way of recording fits",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Lists, journals, plans, and boards provide fl",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Text captures what happened, while mood icons",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "automatically restore focus to the text field",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "If entries only lived inside separate modules",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Selfly's core idea is “record yourself, see t",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "an open book",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "a butterfly",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "",
+    "text": "Beyond experience design, I independently dev",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 390,
+    "tag": "STRONG",
+    "class": "selfly0-module__XVLsLq__selfly0Emphasis",
+    "text": "keep refining the experience through real-wor",
+    "changes": {
+      "lineHeight": [
+        "26.4px",
+        "29.6px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "Selfly is a personal recording tool designed ",
+    "changes": {
+      "margin": [
+        "0px 0px 28px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "Selfly initially felt more like a set of sepa",
+    "changes": {
+      "margin": [
+        "10px 0px 28px",
+        "20px 0px 0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "So I shifted the product direction toward a l",
+    "changes": {
+      "margin": [
+        "10px 0px 28px",
+        "20px 0px 28px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "",
+    "text": "Values, Vision Board, Success Diary, and Stre",
+    "changes": {
+      "margin": [
+        "0px 0px 22px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "",
+    "text": "Entering by feature tends to presuppose a fix",
+    "changes": {
+      "margin": [
+        "22px 0px",
+        "20px 0px 22px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "Selfly is a personal recording tool designed ",
+    "changes": {
+      "margin": [
+        "0px 0px 28px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "Selfly initially felt more like a set of sepa",
+    "changes": {
+      "margin": [
+        "10px 0px 28px",
+        "20px 0px 0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "selfly0-module__XVLsLq__p",
+    "text": "So I shifted the product direction toward a l",
+    "changes": {
+      "margin": [
+        "10px 0px 28px",
+        "20px 0px 28px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "",
+    "text": "Values, Vision Board, Success Diary, and Stre",
+    "changes": {
+      "margin": [
+        "0px 0px 22px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "",
+    "text": "Entering by feature tends to presuppose a fix",
+    "changes": {
+      "margin": [
+        "22px 0px",
+        "20px 0px 22px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "采用清透的玻璃质感作为核心视觉语言。半透明材质融入背景，配合柔和光效，让 UI 像空间中的",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "底部功能按钮刻意做成左右开放的边缘，取消完整卡片感，让背景可以连续穿过。同时用上沿光带与雕",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "针对专业术语与复杂结构，线性图标具有更低的视觉重量，同时保持清晰、高效的信息识别。设计图标",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 390,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "图标加入轻微反差色投影，让它在玻璃态底面上仍有体积和光感，既保持低视觉重量。",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "采用清透的玻璃质感作为核心视觉语言。半透明材质融入背景，配合柔和光效，让 UI 像空间中的",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "底部功能按钮刻意做成左右开放的边缘，取消完整卡片感，让背景可以连续穿过。同时用上沿光带与雕",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "针对专业术语与复杂结构，线性图标具有更低的视觉重量，同时保持清晰、高效的信息识别。设计图标",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 768,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "图标加入轻微反差色投影，让它在玻璃态底面上仍有体积和光感，既保持低视觉重量。",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "采用清透的玻璃质感作为核心视觉语言。半透明材质融入背景，配合柔和光效，让 UI 像空间中的",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "底部功能按钮刻意做成左右开放的边缘，取消完整卡片感，让背景可以连续穿过。同时用上沿光带与雕",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "针对专业术语与复杂结构，线性图标具有更低的视觉重量，同时保持清晰、高效的信息识别。设计图标",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "width": 1280,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "图标加入轻微反差色投影，让它在玻璃态底面上仍有体积和光感，既保持低视觉重量。",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "I used a clear glass material as the core vis",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "Bottom action buttons intentionally leave the",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "For professional terms and complex structures",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 390,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "Icons get a quiet contrast shadow so they kee",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "I used a clear glass material as the core vis",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "Bottom action buttons intentionally leave the",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "For professional terms and complex structures",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 768,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "Icons get a quiet contrast shadow so they kee",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "I used a clear glass material as the core vis",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "Bottom action buttons intentionally leave the",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "For professional terms and complex structures",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "0px"
+      ]
+    }
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "width": 1280,
+    "tag": "P",
+    "class": "biomedicalVr-module__CpyBhW__uiSystemBody",
+    "text": "Icons get a quiet contrast shadow so they kee",
+    "changes": {
+      "margin": [
+        "0px 0px 16px",
+        "20px 0px 16px"
+      ]
+    }
+  }
+]

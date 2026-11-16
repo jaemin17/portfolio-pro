@@ -1,0 +1,1358 @@
+[
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#today",
+        "text": "体验",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon",
+        "text": "图标",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#launch",
+        "text": "落地",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 390,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#today",
+        "text": "体验",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon",
+        "text": "图标",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#launch",
+        "text": "落地",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 768,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 768,
+    "navWidth": 0
+  },
+  {
+    "page": "selfly",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "block",
+    "height": 220,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#today",
+        "text": "体验",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon",
+        "text": "图标",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#launch",
+        "text": "落地",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#today",
+        "text": "UX design",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon",
+        "text": "App icon",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#launch",
+        "text": "Launch",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 390,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#today",
+        "text": "UX design",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon",
+        "text": "App icon",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#launch",
+        "text": "Launch",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 768,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 768,
+    "navWidth": 0
+  },
+  {
+    "page": "selfly",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "block",
+    "height": 220,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#today",
+        "text": "UX design",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon",
+        "text": "App icon",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#launch",
+        "text": "Launch",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "model-editor",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "挑战",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#onboarding",
+        "text": "指引",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 390,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "model-editor",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "挑战",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#onboarding",
+        "text": "指引",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 768,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 768,
+    "navWidth": 0
+  },
+  {
+    "page": "model-editor",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "block",
+    "height": 260,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "挑战",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#onboarding",
+        "text": "指引",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "model-editor",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "Challenge",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "Solution",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#onboarding",
+        "text": "Onboarding",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 390,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "model-editor",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "Challenge",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "Solution",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#onboarding",
+        "text": "Onboarding",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 768,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 768,
+    "navWidth": 0
+  },
+  {
+    "page": "model-editor",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "block",
+    "height": 260,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "Challenge",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "Solution",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#onboarding",
+        "text": "Onboarding",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#spatial-design",
+        "text": "空间设计",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#ui-system",
+        "text": "界面系统",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#smart-manufacturing",
+        "text": "智能制造",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#biomedical",
+        "text": "生物医疗",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon-system",
+        "text": "应用图标",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 390,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#spatial-design",
+        "text": "空间设计",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#ui-system",
+        "text": "界面系统",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#smart-manufacturing",
+        "text": "智能制造",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#biomedical",
+        "text": "生物医疗",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon-system",
+        "text": "应用图标",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 768,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 768,
+    "navWidth": 0
+  },
+  {
+    "page": "vr-education",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "block",
+    "height": 300,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#spatial-design",
+        "text": "空间设计",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#ui-system",
+        "text": "界面系统",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#smart-manufacturing",
+        "text": "智能制造",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#biomedical",
+        "text": "生物医疗",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon-system",
+        "text": "应用图标",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#spatial-design",
+        "text": "Space",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#ui-system",
+        "text": "UI system",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#smart-manufacturing",
+        "text": "Industrial",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#biomedical",
+        "text": "Biomedical",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon-system",
+        "text": "App icons",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 390,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#spatial-design",
+        "text": "Space",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#ui-system",
+        "text": "UI system",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#smart-manufacturing",
+        "text": "Industrial",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#biomedical",
+        "text": "Biomedical",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon-system",
+        "text": "App icons",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 768,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 768,
+    "navWidth": 0
+  },
+  {
+    "page": "vr-education",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "block",
+    "height": 300,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#spatial-design",
+        "text": "Space",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#ui-system",
+        "text": "UI system",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#smart-manufacturing",
+        "text": "Industrial",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#biomedical",
+        "text": "Biomedical",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon-system",
+        "text": "App icons",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "问题",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#direction",
+        "text": "方向",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#use",
+        "text": "使用",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "回顾",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 390,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "问题",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#direction",
+        "text": "方向",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#use",
+        "text": "使用",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "回顾",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 768,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 768,
+    "navWidth": 0
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "zh",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "block",
+    "height": 300,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "问题",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#direction",
+        "text": "方向",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#use",
+        "text": "使用",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "回顾",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "Challenge",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#direction",
+        "text": "Direction",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "Solution",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#use",
+        "text": "Use",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 390,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "Challenge",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#direction",
+        "text": "Direction",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "Solution",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#use",
+        "text": "Use",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 768,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 768,
+    "navWidth": 0
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "en",
+    "color": "rgb(139, 139, 139)",
+    "direction": "column",
+    "display": "block",
+    "height": 300,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "Overview",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "Challenge",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#direction",
+        "text": "Direction",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "Solution",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#use",
+        "text": "Use",
+        "valid": true
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "Reflection",
+        "valid": true
+      }
+    ],
+    "position": "sticky",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  }
+]

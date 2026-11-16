@@ -1,0 +1,121 @@
+[
+  {
+    "page": "selfly",
+    "items": [
+      {
+        "gap": 28,
+        "margin": "10px 0px 28px",
+        "parent": "selfly0-module__XVLsLq__selfly0PositioningBody",
+        "previous": "初始设想：通过一组预设的自我探索练习，帮助梳理价值观、优势与目标。",
+        "previousMargin": "0px 0px 28px",
+        "text": "验证与发现：借助 AI 快速实现早期版本后，我在实际使用中发现，体验往往停在完成练习的那一刻。但人在不同阶段会重新理解自己，已有内容也需要持"
+      },
+      {
+        "gap": 28,
+        "margin": "10px 0px 28px",
+        "parent": "selfly0-module__XVLsLq__selfly0PositioningBody",
+        "previous": "验证与发现：借助 AI 快速实现早期版本后，我在实际使用中发现，体验往往停在完成练习的那一刻。但人在不同阶段会重新理解自己，已有内容也需要持",
+        "previousMargin": "10px 0px 28px",
+        "text": "方向调整：从围绕固定内容的自我探索，转向支持持续记录与回顾的个人空间，通过更自由的记录方式、每日聚焦与回顾机制，让自我记录进入日常。"
+      },
+      {
+        "gap": 22,
+        "margin": "22px 0px",
+        "parent": "selfly0-module__XVLsLq__selfly0Body",
+        "previous": "原有的价值观、愿景板、成功日记和优势测试以独立功能呈现，入口彼此割裂。为降低理解成本，我按内容形态重新组织这些功能，将它们归纳为清单、计划、",
+        "previousMargin": "0px 0px 22px",
+        "text": "按功能进入会更容易预设用途，按容器进入能承接自我发现，同时适配不同人的内容、习惯和状态。 用户可以在归纳自己、记录感受、规划行动和想象未来之"
+      },
+      {
+        "gap": 32,
+        "margin": "20px 0px 16px",
+        "parent": "selfly0-module__XVLsLq__selfly0ReflectionBody",
+        "previous": "AI 降低了实现成本，但没有降低设计判断的要求。",
+        "previousMargin": "32px 0px",
+        "text": "从产品方向、功能边界，到交互逻辑与体验取舍，设计师仍然需要做出判断。不同的是，AI 让这些判断更早进入实现过程，也让设计方案能够更快通过真实"
+      },
+      {
+        "gap": 20,
+        "margin": "20px 0px 16px",
+        "parent": "selfly0-module__XVLsLq__selfly0ReflectionBody",
+        "previous": "快速构建产品，不意味着省略前期思考。明确产品目标、核心路径、功能边界与视觉方向，依然是构建的基础。否则，实现越容易，产品反而越容易在不断尝试",
+        "previousMargin": "16px 0px",
+        "text": "开发 Selfly 时，我没有等所有页面设计完成，而是先通过核心页面确定产品结构、功能与视觉方向，再进入实际构建。"
+      },
+      {
+        "gap": 20,
+        "margin": "20px 0px 16px",
+        "parent": "selfly0-module__XVLsLq__selfly0ReflectionBody",
+        "previous": "开发 Selfly 时，我没有等所有页面设计完成，而是先通过核心页面确定产品结构、功能与视觉方向，再进入实际构建。",
+        "previousMargin": "20px 0px 16px",
+        "text": "设计与实现不再是两个依次完成的阶段，而是在可运行的产品中交替推进：通过实现验证设计，再根据实际体验调整方案。"
+      },
+      {
+        "gap": 20,
+        "margin": "20px 0px 16px",
+        "parent": "selfly0-module__XVLsLq__selfly0ReflectionBody",
+        "previous": "AI 带来的价值，不只是缩短从设计到实现的时间，更是降低了从设计判断到实际验证的成本。",
+        "previousMargin": "16px 0px",
+        "text": "但更快得到一个可运行的版本，不等于更高的整体效率。真正需要考虑的，是从构建、调整到长期维护的综合成本，而不只是首版交付速度。"
+      },
+      {
+        "gap": 19.1953125,
+        "margin": "16px 0px",
+        "parent": "selfly0-module__XVLsLq__selfly0ReflectionBody",
+        "previous": "独立构建 Selfly，让我开始为设计决定带来的体验、实现与维护成本负责。",
+        "previousMargin": "40px 0px 19.2px",
+        "text": "AI 降低了构建门槛，也让我更直接地面对判断的结果，并据此调整方案。"
+      }
+    ]
+  },
+  {
+    "page": "model-editor",
+    "items": []
+  },
+  {
+    "page": "vr-education",
+    "items": [
+      {
+        "gap": 16,
+        "margin": "0px 0px 16px",
+        "parent": "biomedicalVr-module__CpyBhW__uiSystemModuleBody",
+        "previous": "采用清透的玻璃质感作为核心视觉语言。半透明材质融入背景，配合柔和光效，让 UI 像空间中的信息层一样存在，而不是覆盖在模型之上的传统平面界面",
+        "previousMargin": "0px 0px 16px",
+        "text": "底部功能按钮刻意做成左右开放的边缘，取消完整卡片感，让背景可以连续穿过。同时用上沿光带与雕刻式分割线做出微微凸起的实体感，既有可点击的体积，"
+      },
+      {
+        "gap": 16,
+        "margin": "0px 0px 16px",
+        "parent": "biomedicalVr-module__CpyBhW__uiSystemModuleBody",
+        "previous": "针对专业术语与复杂结构，线性图标具有更低的视觉重量，同时保持清晰、高效的信息识别。设计图标过程中，以最少的线条建立准确视觉语言。",
+        "previousMargin": "0px 0px 16px",
+        "text": "图标加入轻微反差色投影，让它在玻璃态底面上仍有体积和光感，既保持低视觉重量。"
+      }
+    ]
+  },
+  {
+    "page": "xr-courseware",
+    "items": []
+  },
+  {
+    "page": "engine-icon",
+    "items": [
+      {
+        "gap": 0,
+        "margin": "0px",
+        "parent": "engineIcon-module__7GDqlG__contextCopy",
+        "previous": "项目目标",
+        "previousMargin": "0px",
+        "text": "这套 VR 软件面向纯电动汽车拆装教学。系列中的每个软件都对应特定专业内容，入口图标需要快速、准确地说明软件在教什么。最合适的参照是实训里的"
+      }
+    ]
+  },
+  {
+    "page": "resource-library",
+    "items": []
+  },
+  {
+    "page": "personal-tools",
+    "items": []
+  }
+]

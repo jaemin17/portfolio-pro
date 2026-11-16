@@ -1,0 +1,552 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "cards": [
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR 教育与实训"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "个人工具"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "locale": "zh",
+    "width": 767,
+    "cards": [
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR 教育与实训"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "个人工具"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 767
+  },
+  {
+    "locale": "zh",
+    "width": 768,
+    "cards": [
+      {
+        "bottomSpace": 44.171875,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR 教育与实训"
+      },
+      {
+        "bottomSpace": 37.59375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "个人工具"
+      },
+      {
+        "bottomSpace": 44.171875,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "locale": "zh",
+    "width": 814,
+    "cards": [
+      {
+        "bottomSpace": 46.09375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR 教育与实训"
+      },
+      {
+        "bottomSpace": 37.59375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "个人工具"
+      },
+      {
+        "bottomSpace": 46.09375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 814
+  },
+  {
+    "locale": "zh",
+    "width": 1200,
+    "cards": [
+      {
+        "bottomSpace": 44.734375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 26.140625,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR 教育与实训"
+      },
+      {
+        "bottomSpace": 44.71875,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "个人工具"
+      },
+      {
+        "bottomSpace": 44.703125,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 1200
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "cards": [
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 139.0625,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR Education & Training"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Personal Tools"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "locale": "en",
+    "width": 767,
+    "cards": [
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR Education & Training"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Personal Tools"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 767
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "cards": [
+      {
+        "bottomSpace": 44.171875,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR Education & Training"
+      },
+      {
+        "bottomSpace": 37.59375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Personal Tools"
+      },
+      {
+        "bottomSpace": 44.171875,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "locale": "en",
+    "width": 814,
+    "cards": [
+      {
+        "bottomSpace": 46.09375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR Education & Training"
+      },
+      {
+        "bottomSpace": 37.59375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Personal Tools"
+      },
+      {
+        "bottomSpace": 46.09375,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 814
+  },
+  {
+    "locale": "en",
+    "width": 1200,
+    "cards": [
+      {
+        "bottomSpace": 44.734375,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Selfly"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Model Editor"
+      },
+      {
+        "bottomSpace": 26.140625,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "VR Education & Training"
+      },
+      {
+        "bottomSpace": 63.3125,
+        "clipped": false,
+        "height": 101.875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "Personal Tools"
+      },
+      {
+        "bottomSpace": 44.703125,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "3D Engine App Icon Design"
+      },
+      {
+        "bottomSpace": 19,
+        "clipped": false,
+        "height": 120.46875,
+        "minHeight": "auto",
+        "padding": "16px 18px 18px",
+        "title": "XR Courseware"
+      }
+    ],
+    "scrollWidth": 1200
+  }
+]

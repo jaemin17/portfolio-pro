@@ -1,0 +1,62 @@
+[
+  {
+    "name": "header-about",
+    "url": "http://localhost:3000/en/",
+    "before": {
+      "border": "rgba(0, 0, 0, 0.6)",
+      "color": "rgba(0, 0, 0, 0.6)",
+      "hover": false
+    },
+    "after": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0.9)",
+      "color": "rgba(0, 0, 0, 0.9)",
+      "hover": true
+    }
+  },
+  {
+    "name": "home-filter",
+    "url": "http://localhost:3000/en/",
+    "before": {
+      "border": "rgba(0, 0, 0, 0.12)",
+      "color": "rgba(0, 0, 0, 0.6)",
+      "hover": false
+    },
+    "after": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0.22)",
+      "color": "rgba(0, 0, 0, 0.9)",
+      "hover": true
+    }
+  },
+  {
+    "name": "home-more",
+    "url": "http://localhost:3000/en/",
+    "before": {
+      "border": "rgb(238, 238, 238)",
+      "color": "rgba(0, 0, 0, 0.6)",
+      "hover": false
+    },
+    "after": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "rgba(0, 0, 0, 0.18)",
+      "color": "rgba(0, 0, 0, 0.9)",
+      "hover": true
+    }
+  },
+  {
+    "name": "resource-chapter-card",
+    "url": "http://localhost:3000/en/projects/resource-library/",
+    "before": {
+      "border": "rgb(225, 231, 239)",
+      "color": "rgba(0, 0, 0, 0.9)",
+      "hover": false
+    },
+    "after": {
+      "background": "rgb(255, 255, 255)",
+      "border": "rgb(37, 99, 235)",
+      "color": "rgba(0, 0, 0, 0.9)",
+      "hover": true
+    }
+  }
+]

@@ -1,0 +1,2502 @@
+[
+  {
+    "scrollWidth": 390,
+    "tables": [
+      {
+        "caption": "字体分工",
+        "cells": [
+          {
+            "height": 28.1875,
+            "width": 264,
+            "x": 63,
+            "y": 545.890625
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 586.078125
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 618.46875
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "字重规范",
+        "cells": [
+          {
+            "height": 58.984375,
+            "width": 264,
+            "x": 63,
+            "y": 1092.1875
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 1163.171875
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 1215.953125
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "基础字号",
+        "cells": [
+          {
+            "height": 56.6875,
+            "width": 264,
+            "x": 63,
+            "y": 1773.65625
+          },
+          {
+            "height": 40.78125,
+            "width": 82.65625,
+            "x": 63,
+            "y": 1846.34375
+          },
+          {
+            "height": 40.78125,
+            "width": 165.34375,
+            "x": 161.65625,
+            "y": 1846.34375
+          }
+        ],
+        "columns": "82.6562px 165.344px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": true
+      },
+      {
+        "caption": "常用阅读行高",
+        "cells": [
+          {
+            "height": 52.78125,
+            "width": 264,
+            "x": 63,
+            "y": 2876.953125
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 2941.734375
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 2974.125
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "基础色彩",
+        "cells": [
+          {
+            "height": 106.984375,
+            "width": 264,
+            "x": 63,
+            "y": 3451.671875
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 3570.65625
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 3623.4375
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "共用布局",
+        "cells": [
+          {
+            "height": 27.1875,
+            "width": 264,
+            "x": 63,
+            "y": 4825.65625
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 4864.84375
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 4917.625
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "胶囊形状",
+        "cells": [
+          {
+            "height": 32,
+            "width": 264,
+            "x": 63,
+            "y": 5833.046875
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 5877.046875
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 5909.4375
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "现有控件的用途与状态",
+        "cells": [
+          {
+            "height": 32,
+            "width": 264,
+            "x": 63,
+            "y": 6142.8125
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 6186.8125
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 6219.203125
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "共享导航样式",
+        "cells": [
+          {
+            "height": 27.1875,
+            "width": 264,
+            "x": 63,
+            "y": 7197
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 7236.1875
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 7268.578125
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/zh/style-guide/",
+    "width": 390
+  },
+  {
+    "scrollWidth": 640,
+    "tables": [
+      {
+        "caption": "字体分工",
+        "cells": [
+          {
+            "height": 28.1875,
+            "width": 514,
+            "x": 63,
+            "y": 545.890625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 586.078125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 618.46875
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "字重规范",
+        "cells": [
+          {
+            "height": 58.984375,
+            "width": 514,
+            "x": 63,
+            "y": 1071.796875
+          },
+          {
+            "height": 40.78125,
+            "width": 514,
+            "x": 63,
+            "y": 1142.78125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 1195.5625
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "基础字号",
+        "cells": [
+          {
+            "height": 56.6875,
+            "width": 514,
+            "x": 63,
+            "y": 1753.265625
+          },
+          {
+            "height": 40.78125,
+            "width": 166,
+            "x": 63,
+            "y": 1825.953125
+          },
+          {
+            "height": 40.78125,
+            "width": 332,
+            "x": 245,
+            "y": 1825.953125
+          }
+        ],
+        "columns": "166px 332px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": true
+      },
+      {
+        "caption": "常用阅读行高",
+        "cells": [
+          {
+            "height": 52.78125,
+            "width": 514,
+            "x": 63,
+            "y": 2791.78125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 2856.5625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 2888.953125
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "基础色彩",
+        "cells": [
+          {
+            "height": 58.984375,
+            "width": 514,
+            "x": 63,
+            "y": 3344.90625
+          },
+          {
+            "height": 40.78125,
+            "width": 514,
+            "x": 63,
+            "y": 3415.890625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 3468.671875
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "共用布局",
+        "cells": [
+          {
+            "height": 27.1875,
+            "width": 514,
+            "x": 63,
+            "y": 4487.703125
+          },
+          {
+            "height": 40.78125,
+            "width": 514,
+            "x": 63,
+            "y": 4526.890625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 4579.671875
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "胶囊形状",
+        "cells": [
+          {
+            "height": 32,
+            "width": 514,
+            "x": 63,
+            "y": 5348.75
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 5392.75
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 5425.140625
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "现有控件的用途与状态",
+        "cells": [
+          {
+            "height": 32,
+            "width": 514,
+            "x": 63,
+            "y": 5638.125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 5682.125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 5714.515625
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "共享导航样式",
+        "cells": [
+          {
+            "height": 27.1875,
+            "width": 514,
+            "x": 63,
+            "y": 6545.96875
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 6585.15625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 6617.546875
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/zh/style-guide/",
+    "width": 640
+  },
+  {
+    "scrollWidth": 641,
+    "tables": [
+      {
+        "caption": "字体分工",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 193.1875,
+            "x": 79,
+            "y": 624.890625
+          },
+          {
+            "height": 119.890625,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 624.890625
+          },
+          {
+            "height": 119.890625,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 624.890625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "字重规范",
+        "cells": [
+          {
+            "height": 138.0625,
+            "width": 193.1875,
+            "x": 79,
+            "y": 1101.03125
+          },
+          {
+            "height": 138.0625,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 1101.03125
+          },
+          {
+            "height": 138.0625,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 1101.03125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "基础字号",
+        "cells": [
+          {
+            "height": 161.875,
+            "width": 193.1875,
+            "x": 79,
+            "y": 1665.71875
+          },
+          {
+            "height": 161.875,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 1665.71875
+          },
+          {
+            "height": 161.875,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 1665.71875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": true
+      },
+      {
+        "caption": "常用阅读行高",
+        "cells": [
+          {
+            "height": 101.28125,
+            "width": 193.1875,
+            "x": 79,
+            "y": 2579.625
+          },
+          {
+            "height": 101.28125,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 2579.625
+          },
+          {
+            "height": 101.28125,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 2579.625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "基础色彩",
+        "cells": [
+          {
+            "height": 116.484375,
+            "width": 193.1875,
+            "x": 79,
+            "y": 3066.1875
+          },
+          {
+            "height": 116.484375,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 3066.1875
+          },
+          {
+            "height": 116.484375,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 3066.1875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "共用布局",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 193.1875,
+            "x": 79,
+            "y": 3896.921875
+          },
+          {
+            "height": 119.890625,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 3896.921875
+          },
+          {
+            "height": 119.890625,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 3896.921875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "胶囊形状",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 193.1875,
+            "x": 79,
+            "y": 4763.65625
+          },
+          {
+            "height": 119.890625,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 4763.65625
+          },
+          {
+            "height": 119.890625,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 4763.65625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "现有控件的用途与状态",
+        "cells": [
+          {
+            "height": 143.6875,
+            "width": 193.1875,
+            "x": 79,
+            "y": 5074.640625
+          },
+          {
+            "height": 143.6875,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 5074.640625
+          },
+          {
+            "height": 143.6875,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 5074.640625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "共享导航样式",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 193.1875,
+            "x": 79,
+            "y": 6131.75
+          },
+          {
+            "height": 119.890625,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 6131.75
+          },
+          {
+            "height": 119.890625,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 6131.75
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/zh/style-guide/",
+    "width": 641
+  },
+  {
+    "scrollWidth": 768,
+    "tables": [
+      {
+        "caption": "字体分工",
+        "cells": [
+          {
+            "height": 96.09375,
+            "width": 244,
+            "x": 79,
+            "y": 624.890625
+          },
+          {
+            "height": 96.09375,
+            "width": 158.59375,
+            "x": 323,
+            "y": 624.890625
+          },
+          {
+            "height": 96.09375,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 624.890625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "字重规范",
+        "cells": [
+          {
+            "height": 138.0625,
+            "width": 244,
+            "x": 79,
+            "y": 1043.265625
+          },
+          {
+            "height": 138.0625,
+            "width": 158.59375,
+            "x": 323,
+            "y": 1043.265625
+          },
+          {
+            "height": 138.0625,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 1043.265625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "基础字号",
+        "cells": [
+          {
+            "height": 161.875,
+            "width": 244,
+            "x": 79,
+            "y": 1607.953125
+          },
+          {
+            "height": 161.875,
+            "width": 158.59375,
+            "x": 323,
+            "y": 1607.953125
+          },
+          {
+            "height": 161.875,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 1607.953125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": true
+      },
+      {
+        "caption": "常用阅读行高",
+        "cells": [
+          {
+            "height": 101.28125,
+            "width": 244,
+            "x": 79,
+            "y": 2490.046875
+          },
+          {
+            "height": 101.28125,
+            "width": 158.59375,
+            "x": 323,
+            "y": 2490.046875
+          },
+          {
+            "height": 101.28125,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 2490.046875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "基础色彩",
+        "cells": [
+          {
+            "height": 110.875,
+            "width": 244,
+            "x": 79,
+            "y": 2976.609375
+          },
+          {
+            "height": 110.875,
+            "width": 158.59375,
+            "x": 323,
+            "y": 2976.609375
+          },
+          {
+            "height": 110.875,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 2976.609375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "共用布局",
+        "cells": [
+          {
+            "height": 96.09375,
+            "width": 244,
+            "x": 79,
+            "y": 3768.921875
+          },
+          {
+            "height": 96.09375,
+            "width": 158.59375,
+            "x": 323,
+            "y": 3768.921875
+          },
+          {
+            "height": 96.09375,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 3768.921875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "胶囊形状",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 244,
+            "x": 79,
+            "y": 4566.46875
+          },
+          {
+            "height": 119.890625,
+            "width": 158.59375,
+            "x": 323,
+            "y": 4566.46875
+          },
+          {
+            "height": 119.890625,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 4566.46875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "现有控件的用途与状态",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 244,
+            "x": 79,
+            "y": 4877.453125
+          },
+          {
+            "height": 119.890625,
+            "width": 158.59375,
+            "x": 323,
+            "y": 4877.453125
+          },
+          {
+            "height": 119.890625,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 4877.453125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "共享导航样式",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 244,
+            "x": 79,
+            "y": 5793.984375
+          },
+          {
+            "height": 119.890625,
+            "width": 158.59375,
+            "x": 323,
+            "y": 5793.984375
+          },
+          {
+            "height": 119.890625,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 5793.984375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/zh/style-guide/",
+    "width": 768
+  },
+  {
+    "scrollWidth": 1280,
+    "tables": [
+      {
+        "caption": "字体分工",
+        "cells": [
+          {
+            "height": 96.09375,
+            "width": 325.59375,
+            "x": 317,
+            "y": 542.890625
+          },
+          {
+            "height": 96.09375,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 542.890625
+          },
+          {
+            "height": 96.09375,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 542.890625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "字重规范",
+        "cells": [
+          {
+            "height": 110.875,
+            "width": 325.59375,
+            "x": 317,
+            "y": 961.265625
+          },
+          {
+            "height": 110.875,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 961.265625
+          },
+          {
+            "height": 110.875,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 961.265625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "基础字号",
+        "cells": [
+          {
+            "height": 105.1875,
+            "width": 325.59375,
+            "x": 317,
+            "y": 1444.390625
+          },
+          {
+            "height": 105.1875,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 1444.390625
+          },
+          {
+            "height": 105.1875,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 1444.390625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": true
+      },
+      {
+        "caption": "常用阅读行高",
+        "cells": [
+          {
+            "height": 101.28125,
+            "width": 325.59375,
+            "x": 317,
+            "y": 2269.796875
+          },
+          {
+            "height": 101.28125,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 2269.796875
+          },
+          {
+            "height": 101.28125,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 2269.796875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "基础色彩",
+        "cells": [
+          {
+            "height": 110.875,
+            "width": 325.59375,
+            "x": 317,
+            "y": 2756.359375
+          },
+          {
+            "height": 110.875,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 2756.359375
+          },
+          {
+            "height": 110.875,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 2756.359375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "共用布局",
+        "cells": [
+          {
+            "height": 96.09375,
+            "width": 325.59375,
+            "x": 317,
+            "y": 3545.265625
+          },
+          {
+            "height": 96.09375,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 3545.265625
+          },
+          {
+            "height": 96.09375,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 3545.265625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "胶囊形状",
+        "cells": [
+          {
+            "height": 96.09375,
+            "width": 325.59375,
+            "x": 317,
+            "y": 4271.421875
+          },
+          {
+            "height": 96.09375,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 4271.421875
+          },
+          {
+            "height": 96.09375,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 4271.421875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "现有控件的用途与状态",
+        "cells": [
+          {
+            "height": 96.09375,
+            "width": 325.59375,
+            "x": 317,
+            "y": 4558.609375
+          },
+          {
+            "height": 96.09375,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 4558.609375
+          },
+          {
+            "height": 96.09375,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 4558.609375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "共享导航样式",
+        "cells": [
+          {
+            "height": 96.09375,
+            "width": 325.59375,
+            "x": 317,
+            "y": 5356.15625
+          },
+          {
+            "height": 96.09375,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 5356.15625
+          },
+          {
+            "height": 96.09375,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 5356.15625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/zh/style-guide/",
+    "width": 1280
+  },
+  {
+    "scrollWidth": 390,
+    "tables": [
+      {
+        "caption": "Font families and usage",
+        "cells": [
+          {
+            "height": 28.1875,
+            "width": 264,
+            "x": 63,
+            "y": 607.6875
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 647.875
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 680.265625
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Font weights",
+        "cells": [
+          {
+            "height": 58.984375,
+            "width": 264,
+            "x": 63,
+            "y": 1174.375
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 1245.359375
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 1298.140625
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Base type scale",
+        "cells": [
+          {
+            "height": 56.6875,
+            "width": 264,
+            "x": 63,
+            "y": 1896.625
+          },
+          {
+            "height": 40.78125,
+            "width": 82.65625,
+            "x": 63,
+            "y": 1969.3125
+          },
+          {
+            "height": 40.78125,
+            "width": 165.34375,
+            "x": 161.65625,
+            "y": 1969.3125
+          }
+        ],
+        "columns": "82.6562px 165.344px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": true
+      },
+      {
+        "caption": "Common reading line heights",
+        "cells": [
+          {
+            "height": 52.78125,
+            "width": 264,
+            "x": 63,
+            "y": 3043.109375
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 3107.890625
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 3140.28125
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Base colors",
+        "cells": [
+          {
+            "height": 106.984375,
+            "width": 264,
+            "x": 63,
+            "y": 3680.203125
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 3799.1875
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 3851.96875
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared layout rules",
+        "cells": [
+          {
+            "height": 27.1875,
+            "width": 264,
+            "x": 63,
+            "y": 5117.765625
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 5156.953125
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 5209.734375
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Pill shape",
+        "cells": [
+          {
+            "height": 32,
+            "width": 264,
+            "x": 63,
+            "y": 6209.125
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 6253.125
+          },
+          {
+            "height": 61.171875,
+            "width": 264,
+            "x": 63,
+            "y": 6285.515625
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Existing control roles and states",
+        "cells": [
+          {
+            "height": 32,
+            "width": 264,
+            "x": 63,
+            "y": 6560.875
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 6604.875
+          },
+          {
+            "height": 61.171875,
+            "width": 264,
+            "x": 63,
+            "y": 6637.265625
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared navigation styles",
+        "cells": [
+          {
+            "height": 27.1875,
+            "width": 264,
+            "x": 63,
+            "y": 7739.8125
+          },
+          {
+            "height": 20.390625,
+            "width": 264,
+            "x": 63,
+            "y": 7779
+          },
+          {
+            "height": 40.78125,
+            "width": 264,
+            "x": 63,
+            "y": 7811.390625
+          }
+        ],
+        "columns": "264px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/en/style-guide/",
+    "width": 390
+  },
+  {
+    "scrollWidth": 640,
+    "tables": [
+      {
+        "caption": "Font families and usage",
+        "cells": [
+          {
+            "height": 28.1875,
+            "width": 514,
+            "x": 63,
+            "y": 545.890625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 586.078125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 618.46875
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Font weights",
+        "cells": [
+          {
+            "height": 58.984375,
+            "width": 514,
+            "x": 63,
+            "y": 1071.796875
+          },
+          {
+            "height": 40.78125,
+            "width": 514,
+            "x": 63,
+            "y": 1142.78125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 1195.5625
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Base type scale",
+        "cells": [
+          {
+            "height": 56.6875,
+            "width": 514,
+            "x": 63,
+            "y": 1753.265625
+          },
+          {
+            "height": 40.78125,
+            "width": 166,
+            "x": 63,
+            "y": 1825.953125
+          },
+          {
+            "height": 40.78125,
+            "width": 332,
+            "x": 245,
+            "y": 1825.953125
+          }
+        ],
+        "columns": "166px 332px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": true
+      },
+      {
+        "caption": "Common reading line heights",
+        "cells": [
+          {
+            "height": 52.78125,
+            "width": 514,
+            "x": 63,
+            "y": 2813.375
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 2878.15625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 2910.546875
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Base colors",
+        "cells": [
+          {
+            "height": 58.984375,
+            "width": 514,
+            "x": 63,
+            "y": 3388.09375
+          },
+          {
+            "height": 40.78125,
+            "width": 514,
+            "x": 63,
+            "y": 3459.078125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 3511.859375
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared layout rules",
+        "cells": [
+          {
+            "height": 27.1875,
+            "width": 514,
+            "x": 63,
+            "y": 4530.890625
+          },
+          {
+            "height": 40.78125,
+            "width": 514,
+            "x": 63,
+            "y": 4570.078125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 4622.859375
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Pill shape",
+        "cells": [
+          {
+            "height": 32,
+            "width": 514,
+            "x": 63,
+            "y": 5475.90625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 5519.90625
+          },
+          {
+            "height": 40.78125,
+            "width": 514,
+            "x": 63,
+            "y": 5552.296875
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Existing control roles and states",
+        "cells": [
+          {
+            "height": 32,
+            "width": 514,
+            "x": 63,
+            "y": 5785.671875
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 5829.671875
+          },
+          {
+            "height": 40.78125,
+            "width": 514,
+            "x": 63,
+            "y": 5862.0625
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared navigation styles",
+        "cells": [
+          {
+            "height": 27.1875,
+            "width": 514,
+            "x": 63,
+            "y": 6755.890625
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 6795.078125
+          },
+          {
+            "height": 20.390625,
+            "width": 514,
+            "x": 63,
+            "y": 6827.46875
+          }
+        ],
+        "columns": "514px",
+        "display": "grid",
+        "headerPosition": "absolute",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/en/style-guide/",
+    "width": 640
+  },
+  {
+    "scrollWidth": 641,
+    "tables": [
+      {
+        "caption": "Font families and usage",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 193.1875,
+            "x": 79,
+            "y": 624.890625
+          },
+          {
+            "height": 119.890625,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 624.890625
+          },
+          {
+            "height": 119.890625,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 624.890625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Font weights",
+        "cells": [
+          {
+            "height": 138.0625,
+            "width": 193.1875,
+            "x": 79,
+            "y": 1141.84375
+          },
+          {
+            "height": 138.0625,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 1141.84375
+          },
+          {
+            "height": 138.0625,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 1141.84375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Base type scale",
+        "cells": [
+          {
+            "height": 161.875,
+            "width": 193.1875,
+            "x": 79,
+            "y": 1706.53125
+          },
+          {
+            "height": 161.875,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 1706.53125
+          },
+          {
+            "height": 161.875,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 1706.53125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": true
+      },
+      {
+        "caption": "Common reading line heights",
+        "cells": [
+          {
+            "height": 127.671875,
+            "width": 193.1875,
+            "x": 79,
+            "y": 2665.828125
+          },
+          {
+            "height": 127.671875,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 2665.828125
+          },
+          {
+            "height": 127.671875,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 2665.828125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Base colors",
+        "cells": [
+          {
+            "height": 116.484375,
+            "width": 193.1875,
+            "x": 79,
+            "y": 3229.96875
+          },
+          {
+            "height": 116.484375,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 3229.96875
+          },
+          {
+            "height": 116.484375,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 3229.96875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared layout rules",
+        "cells": [
+          {
+            "height": 143.6875,
+            "width": 193.1875,
+            "x": 79,
+            "y": 4099.5
+          },
+          {
+            "height": 143.6875,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 4099.5
+          },
+          {
+            "height": 143.6875,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 4099.5
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Pill shape",
+        "cells": [
+          {
+            "height": 191.28125,
+            "width": 193.1875,
+            "x": 79,
+            "y": 5130.609375
+          },
+          {
+            "height": 191.28125,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 5130.609375
+          },
+          {
+            "height": 191.28125,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 5130.609375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Existing control roles and states",
+        "cells": [
+          {
+            "height": 191.28125,
+            "width": 193.1875,
+            "x": 79,
+            "y": 5512.984375
+          },
+          {
+            "height": 191.28125,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 5512.984375
+          },
+          {
+            "height": 191.28125,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 5512.984375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared navigation styles",
+        "cells": [
+          {
+            "height": 167.484375,
+            "width": 193.1875,
+            "x": 79,
+            "y": 6782.0625
+          },
+          {
+            "height": 167.484375,
+            "width": 125.578125,
+            "x": 272.1875,
+            "y": 6782.0625
+          },
+          {
+            "height": 167.484375,
+            "width": 164.234375,
+            "x": 397.765625,
+            "y": 6782.0625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/en/style-guide/",
+    "width": 641
+  },
+  {
+    "scrollWidth": 768,
+    "tables": [
+      {
+        "caption": "Font families and usage",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 244,
+            "x": 79,
+            "y": 624.890625
+          },
+          {
+            "height": 119.890625,
+            "width": 158.59375,
+            "x": 323,
+            "y": 624.890625
+          },
+          {
+            "height": 119.890625,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 624.890625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Font weights",
+        "cells": [
+          {
+            "height": 138.0625,
+            "width": 244,
+            "x": 79,
+            "y": 1111.265625
+          },
+          {
+            "height": 138.0625,
+            "width": 158.59375,
+            "x": 323,
+            "y": 1111.265625
+          },
+          {
+            "height": 138.0625,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 1111.265625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Base type scale",
+        "cells": [
+          {
+            "height": 105.1875,
+            "width": 244,
+            "x": 79,
+            "y": 1675.953125
+          },
+          {
+            "height": 105.1875,
+            "width": 158.59375,
+            "x": 323,
+            "y": 1675.953125
+          },
+          {
+            "height": 105.1875,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 1675.953125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": true
+      },
+      {
+        "caption": "Common reading line heights",
+        "cells": [
+          {
+            "height": 101.28125,
+            "width": 244,
+            "x": 79,
+            "y": 2554.765625
+          },
+          {
+            "height": 101.28125,
+            "width": 158.59375,
+            "x": 323,
+            "y": 2554.765625
+          },
+          {
+            "height": 101.28125,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 2554.765625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Base colors",
+        "cells": [
+          {
+            "height": 110.875,
+            "width": 244,
+            "x": 79,
+            "y": 3075.125
+          },
+          {
+            "height": 110.875,
+            "width": 158.59375,
+            "x": 323,
+            "y": 3075.125
+          },
+          {
+            "height": 110.875,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 3075.125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared layout rules",
+        "cells": [
+          {
+            "height": 143.6875,
+            "width": 244,
+            "x": 79,
+            "y": 3889.03125
+          },
+          {
+            "height": 143.6875,
+            "width": 158.59375,
+            "x": 323,
+            "y": 3889.03125
+          },
+          {
+            "height": 143.6875,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 3889.03125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Pill shape",
+        "cells": [
+          {
+            "height": 143.6875,
+            "width": 244,
+            "x": 79,
+            "y": 4803.359375
+          },
+          {
+            "height": 143.6875,
+            "width": 158.59375,
+            "x": 323,
+            "y": 4803.359375
+          },
+          {
+            "height": 143.6875,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 4803.359375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Existing control roles and states",
+        "cells": [
+          {
+            "height": 167.484375,
+            "width": 244,
+            "x": 79,
+            "y": 5138.140625
+          },
+          {
+            "height": 167.484375,
+            "width": 158.59375,
+            "x": 323,
+            "y": 5138.140625
+          },
+          {
+            "height": 167.484375,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 5138.140625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared navigation styles",
+        "cells": [
+          {
+            "height": 143.6875,
+            "width": 244,
+            "x": 79,
+            "y": 6264.4375
+          },
+          {
+            "height": 143.6875,
+            "width": 158.59375,
+            "x": 323,
+            "y": 6264.4375
+          },
+          {
+            "height": 143.6875,
+            "width": 207.40625,
+            "x": 481.59375,
+            "y": 6264.4375
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/en/style-guide/",
+    "width": 768
+  },
+  {
+    "scrollWidth": 1280,
+    "tables": [
+      {
+        "caption": "Font families and usage",
+        "cells": [
+          {
+            "height": 96.09375,
+            "width": 325.59375,
+            "x": 317,
+            "y": 542.890625
+          },
+          {
+            "height": 96.09375,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 542.890625
+          },
+          {
+            "height": 96.09375,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 542.890625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Font weights",
+        "cells": [
+          {
+            "height": 110.875,
+            "width": 325.59375,
+            "x": 317,
+            "y": 961.265625
+          },
+          {
+            "height": 110.875,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 961.265625
+          },
+          {
+            "height": 110.875,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 961.265625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Base type scale",
+        "cells": [
+          {
+            "height": 105.1875,
+            "width": 325.59375,
+            "x": 317,
+            "y": 1444.390625
+          },
+          {
+            "height": 105.1875,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 1444.390625
+          },
+          {
+            "height": 105.1875,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 1444.390625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": true
+      },
+      {
+        "caption": "Common reading line heights",
+        "cells": [
+          {
+            "height": 101.28125,
+            "width": 325.59375,
+            "x": 317,
+            "y": 2273.203125
+          },
+          {
+            "height": 101.28125,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 2273.203125
+          },
+          {
+            "height": 101.28125,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 2273.203125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Base colors",
+        "cells": [
+          {
+            "height": 110.875,
+            "width": 325.59375,
+            "x": 317,
+            "y": 2759.765625
+          },
+          {
+            "height": 110.875,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 2759.765625
+          },
+          {
+            "height": 110.875,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 2759.765625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared layout rules",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 325.59375,
+            "x": 317,
+            "y": 3552.078125
+          },
+          {
+            "height": 119.890625,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 3552.078125
+          },
+          {
+            "height": 119.890625,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 3552.078125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Pill shape",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 325.59375,
+            "x": 317,
+            "y": 4373.421875
+          },
+          {
+            "height": 119.890625,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 4373.421875
+          },
+          {
+            "height": 119.890625,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 4373.421875
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Existing control roles and states",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 325.59375,
+            "x": 317,
+            "y": 4684.40625
+          },
+          {
+            "height": 119.890625,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 4684.40625
+          },
+          {
+            "height": 119.890625,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 4684.40625
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      },
+      {
+        "caption": "Shared navigation styles",
+        "cells": [
+          {
+            "height": 119.890625,
+            "width": 325.59375,
+            "x": 317,
+            "y": 5646.328125
+          },
+          {
+            "height": 119.890625,
+            "width": 211.625,
+            "x": 642.59375,
+            "y": 5646.328125
+          },
+          {
+            "height": 119.890625,
+            "width": 276.78125,
+            "x": 854.21875,
+            "y": 5646.328125
+          }
+        ],
+        "columns": "none",
+        "display": "table-row",
+        "headerPosition": "static",
+        "typeScale": false
+      }
+    ],
+    "url": "http://localhost:3000/en/style-guide/",
+    "width": 1280
+  }
+]

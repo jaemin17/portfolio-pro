@@ -1,0 +1,94 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "firstSelection": [
+      "色彩"
+    ],
+    "before": {
+      "scroll": 6450,
+      "url": "http://localhost:3000/zh/style-guide/#components"
+    },
+    "after": {
+      "scroll": 6450,
+      "scrollWidth": 390,
+      "url": "http://localhost:3000/zh/style-guide/#components"
+    },
+    "buttons": 6,
+    "color": "rgb(51, 51, 51)",
+    "links": 0,
+    "selected": [
+      "布局"
+    ],
+    "size": "16px"
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "firstSelection": [
+      "色彩"
+    ],
+    "before": {
+      "scroll": 4580,
+      "url": "http://localhost:3000/zh/style-guide/#components"
+    },
+    "after": {
+      "scroll": 4580,
+      "scrollWidth": 1280,
+      "url": "http://localhost:3000/zh/style-guide/#components"
+    },
+    "buttons": 6,
+    "color": "rgb(51, 51, 51)",
+    "links": 0,
+    "selected": [
+      "布局"
+    ],
+    "size": "16px"
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "firstSelection": [
+      "Colors"
+    ],
+    "before": {
+      "scroll": 7185,
+      "url": "http://localhost:3000/en/style-guide/#components"
+    },
+    "after": {
+      "scroll": 7185,
+      "scrollWidth": 390,
+      "url": "http://localhost:3000/en/style-guide/#components"
+    },
+    "buttons": 6,
+    "color": "rgb(51, 51, 51)",
+    "links": 0,
+    "selected": [
+      "Layout"
+    ],
+    "size": "16px"
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "firstSelection": [
+      "Colors"
+    ],
+    "before": {
+      "scroll": 4801,
+      "url": "http://localhost:3000/en/style-guide/#components"
+    },
+    "after": {
+      "scroll": 4801,
+      "scrollWidth": 1280,
+      "url": "http://localhost:3000/en/style-guide/#components"
+    },
+    "buttons": 6,
+    "color": "rgb(51, 51, 51)",
+    "links": 0,
+    "selected": [
+      "Layout"
+    ],
+    "size": "16px"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "url": "http://localhost:3000/zh/style-guide/#components",
+    "hasComponent": 1,
+    "heading": "组件",
+    "headingY": 32.46875,
+    "scrollWidth": 390,
+    "underLayout": false
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "url": "http://localhost:3000/zh/style-guide/#components",
+    "hasComponent": 1,
+    "heading": "组件",
+    "headingY": 31.765625,
+    "scrollWidth": 1280,
+    "underLayout": false
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "url": "http://localhost:3000/en/style-guide/#components",
+    "hasComponent": 1,
+    "heading": "Components",
+    "headingY": 32.0625,
+    "scrollWidth": 390,
+    "underLayout": false
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "url": "http://localhost:3000/en/style-guide/#components",
+    "hasComponent": 1,
+    "heading": "Components",
+    "headingY": 31.578125,
+    "scrollWidth": 1280,
+    "underLayout": false
+  }
+]

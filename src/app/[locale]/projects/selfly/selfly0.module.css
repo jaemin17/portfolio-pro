@@ -394,9 +394,9 @@
 }
 
 .p {
-  color: var(--fg);
-  opacity: 0.92;
-  line-height: 1.75;
+  color: var(--text-secondary);
+  opacity: 1;
+  line-height: 1.65;
   margin: 10px 0;
   max-width: 78ch;
 }
@@ -550,10 +550,10 @@
 }
 
 .caseText p {
-  color: var(--fg);
-  opacity: 0.88;
+  color: var(--text-secondary);
+  opacity: 1;
   font-size: var(--fs-body);
-  line-height: 1.65;
+  line-height: 1.85;
   letter-spacing: 0;
   max-width: none;
 }
@@ -578,6 +578,11 @@
 .caseText .selfly0ReflectionBody p,
 .caseText .selfly0ReflectionBody li {
   line-height: 1.85;
+}
+
+.caseText .selfly0ReflectionBody p {
+  color: var(--text-secondary);
+  opacity: 1;
 }
 
 .selfly0ReflectionBody .selfly0Emphasis {
@@ -611,9 +616,10 @@
   font-size: var(--fs-body);
 }
 
-.selfly0ReflectionBenefits li {
+.caseText .selfly0ReflectionBody .selfly0ReflectionBenefits li {
   padding-left: 10px;
   color: var(--text-secondary);
+  line-height: 1.65;
 }
 
 .selfly0ReflectionBenefits li::marker {
@@ -792,18 +798,29 @@
 
 .selfly0PositioningBody p {
   margin-bottom: 28px;
+  line-height: 1.85;
 }
 
 .selfly0Body p {
   margin-top: 22px;
   margin-bottom: 22px;
   font-size: var(--fs-body);
-  line-height: 1.65;
+  line-height: 1.85;
   letter-spacing: 0;
 }
 
 .selfly0Body p:first-child {
   margin-top: 0;
+}
+
+.selfly0PositioningBody p:has(+ p),
+.selfly0Body > p:has(+ p) {
+  margin-bottom: 0;
+}
+
+.selfly0PositioningBody p + p,
+.selfly0Body > p + p {
+  margin-top: 20px;
 }
 
 .selfly0Body strong {
@@ -818,7 +835,7 @@
   text-underline-offset: 4px;
 }
 
-.caseText ul {
+:where(.caseText) ul {
   margin-top: 14px;
   padding-left: 20px;
   color: var(--text-primary);
@@ -2216,18 +2233,14 @@
 }
 
 .designPoints ul {
-  margin: 0;
-  padding-left: 18px;
-  color: var(--text-primary);
-  font-size: var(--fs-body);
-  line-height: 1.75;
-  font-weight: 400;
   max-width: none;
 }
 
 .designPoints strong {
+  color: var(--text-primary);
   font-weight: 500;
 }
+
 
 @media (max-width: 760px) {
   .desktopLineBreak {
@@ -2338,7 +2351,7 @@
 
   .caseText p, .selfly0Body p, .selfly0PositioningBody .p {
     font-size: var(--fs-body);
-    line-height: 1.65;
+    line-height: 1.85;
     letter-spacing: 0;
     color: var(--text-secondary);
     opacity: 1;
@@ -2350,6 +2363,10 @@
 
   .selfly0PositioningBody p {
     margin-bottom: 20px;
+  }
+
+  .selfly0PositioningBody p:has(+ p) {
+    margin-bottom: 0;
   }
 
   .selfly0PositioningBody .selfly0Emphasis, .selfly0Body .selfly0Emphasis {
@@ -2366,10 +2383,7 @@
   }
 
   .selfly0Body .designPoints ul {
-    font-size: var(--fs-label);
-    line-height: 1.65;
-    color: var(--text-primary);
-    font-weight: 400;
+    --design-list-font-size: var(--fs-label);
   }
 
   .selfly0Body .designPoints strong {

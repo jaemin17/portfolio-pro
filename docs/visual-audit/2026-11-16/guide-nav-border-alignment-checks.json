@@ -1,0 +1,112 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "difference": -93,
+    "direction": "row",
+    "margin": "0px 0px 48px",
+    "navTop": 200.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 293.6875,
+    "scrollWidth": 390
+  },
+  {
+    "locale": "zh",
+    "width": 768,
+    "difference": -109,
+    "direction": "row",
+    "margin": "0px 0px 64px",
+    "navTop": 236.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 345.6875,
+    "scrollWidth": 768
+  },
+  {
+    "locale": "zh",
+    "width": 769,
+    "difference": 0,
+    "direction": "column",
+    "margin": "0px",
+    "navTop": 260.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 260.6875,
+    "scrollWidth": 769
+  },
+  {
+    "locale": "zh",
+    "width": 824,
+    "difference": 0,
+    "direction": "column",
+    "margin": "0px",
+    "navTop": 260.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 260.6875,
+    "scrollWidth": 824
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "difference": 0,
+    "direction": "column",
+    "margin": "0px",
+    "navTop": 260.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 260.6875,
+    "scrollWidth": 1280
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "difference": -129,
+    "direction": "row",
+    "margin": "0px 0px 48px",
+    "navTop": 257.375,
+    "padding": "0px 0px 20px",
+    "paperTop": 386.375,
+    "scrollWidth": 390
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "difference": -109,
+    "direction": "row",
+    "margin": "0px 0px 64px",
+    "navTop": 236.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 345.6875,
+    "scrollWidth": 768
+  },
+  {
+    "locale": "en",
+    "width": 769,
+    "difference": 0,
+    "direction": "column",
+    "margin": "0px",
+    "navTop": 260.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 260.6875,
+    "scrollWidth": 769
+  },
+  {
+    "locale": "en",
+    "width": 824,
+    "difference": 0,
+    "direction": "column",
+    "margin": "0px",
+    "navTop": 260.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 260.6875,
+    "scrollWidth": 824
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "difference": 0,
+    "direction": "column",
+    "margin": "0px",
+    "navTop": 260.6875,
+    "padding": "0px 0px 20px",
+    "paperTop": 260.6875,
+    "scrollWidth": 1280
+  }
+]

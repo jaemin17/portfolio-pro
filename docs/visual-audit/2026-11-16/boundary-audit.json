@@ -1,0 +1,162 @@
+[
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 760,
+    "title": "26px",
+    "url": "http://localhost:3000/zh/projects/selfly/",
+    "width": 760
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 761,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/selfly/",
+    "width": 761
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 767,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/selfly/",
+    "width": 767
+  },
+  {
+    "navDisplay": "block",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 769,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/selfly/",
+    "width": 769
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 760,
+    "title": "26px",
+    "url": "http://localhost:3000/zh/projects/model-editor/",
+    "width": 760
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 761,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/model-editor/",
+    "width": 761
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 767,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/model-editor/",
+    "width": 767
+  },
+  {
+    "navDisplay": "block",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 769,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/model-editor/",
+    "width": 769
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 760,
+    "title": "26px",
+    "url": "http://localhost:3000/zh/projects/vr-education/",
+    "width": 760
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 761,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/vr-education/",
+    "width": 761
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 767,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/vr-education/",
+    "width": 767
+  },
+  {
+    "navDisplay": "block",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 769,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/vr-education/",
+    "width": 769
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 760,
+    "title": "26px",
+    "url": "http://localhost:3000/zh/projects/xr-courseware/",
+    "width": 760
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 761,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/xr-courseware/",
+    "width": 761
+  },
+  {
+    "navDisplay": "none",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 767,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/xr-courseware/",
+    "width": 767
+  },
+  {
+    "navDisplay": "block",
+    "navFontSize": "16px",
+    "navGap": "16px",
+    "navTop": "40px",
+    "scrollWidth": 769,
+    "title": "42px",
+    "url": "http://localhost:3000/zh/projects/xr-courseware/",
+    "width": 769
+  }
+]

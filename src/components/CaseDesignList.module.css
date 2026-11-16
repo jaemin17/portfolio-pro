@@ -1,0 +1,14 @@
+.list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0 0 0 var(--design-list-indent, 18px);
+  color: var(--text-secondary);
+  font-size: var(--design-list-font-size, var(--fs-body));
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.list > li {
+  margin: 0;
+}

@@ -4,14 +4,10 @@
   padding: 140px 0 80px;
 }
 .intro { margin-bottom: 40px; }
-.eyebrow { margin: 0 0 16px; color: var(--text-secondary); font-size: var(--fs-caption); letter-spacing: .08em; }
-.intro h1 { margin: 0 0 20px; font-size: var(--fs-title); line-height: 1.35; }
-.description { margin: 0; color: var(--text-secondary); line-height: 1.8; }
+.intro h1 { margin: 0; font-size: var(--fs-display); line-height: 1.35; }
 .content { min-width: 0; border: 1px solid var(--border); background: #fff; }
-.sectionNav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-bottom: 64px; padding-bottom: 20px; border-bottom: 1px solid var(--border); font-size: var(--fs-label); color: var(--text-secondary); }
-.sectionNav a:hover { color: var(--text-primary); }
-.sectionNav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.section h2 { margin: 0 0 28px; font-size: var(--fs-title); scroll-margin-top: 32px; }
+.sectionNav { --section-nav-color: var(--text-secondary); --section-nav-gap: 20px; margin-bottom: 64px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+.section h2 { margin: 0 0 28px; font-size: 32px; scroll-margin-top: 32px; }
 .section h3 { margin: 64px 0 0; font-size: var(--fs-subtitle); }
 .section h2 + h3 { margin-top: 32px; }
 .section { padding: 64px 48px 72px; }
@@ -39,15 +35,15 @@
 .leadingSample { margin: 0; font-weight: var(--fw-body); max-width: 18em; }
 .colorExample { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 12px; align-items: start; }
 .swatch { display: block; width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 6px; }
-.borderExample { display: block; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
 .pill { display: inline-block; padding: 8px 14px; border: 1px solid var(--border); border-radius: 999px; font-size: var(--fs-label); line-height: 1; }
 .note { margin: 20px 0 0; color: var(--text-secondary); font-size: var(--fs-caption); line-height: 1.8; }
+.componentPreview { margin-top: 24px; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 @media (min-width: 769px) {
   .page { width: min(1080px, calc(100% - 2 * var(--page-gutter))); }
   .intro { margin-left: 168px; margin-bottom: 64px; }
   .layout { display: grid; grid-template-columns: 120px minmax(0, 1fr); column-gap: 48px; align-items: start; }
-  .sectionNav { position: sticky; top: 40px; flex-direction: column; align-items: flex-start; flex-wrap: nowrap; gap: 20px; margin: 64px 0 0; padding: 4px 0 20px; border-bottom: none; }
+  .sectionNav { position: sticky; top: 40px; margin: 0; padding: 0 0 20px; border-bottom: none; }
 }
 @media (max-width: 640px) {
   .page { padding-top: 112px; }
@@ -56,15 +52,14 @@
   .section { padding: 48px 32px 56px; }
   .section h3 { margin-top: 48px; }
   .section h2 + h3 { margin-top: 24px; }
-  .table th, .table td { padding: 20px 8px; }
-  .table th:first-child { width: 37%; }
-  .table th:nth-child(2) { width: 28%; }
   .sampleLine { font-size: var(--fs-label); }
   .table td { font-size: var(--fs-caption); }
-  .typeTable thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  .typeTable tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 16px; padding: 24px 0; border-bottom: 1px solid var(--border); }
-  .typeTable tbody th, .typeTable tbody td { width: auto; padding: 0; border: 0; }
-  .typeTable tbody th:first-child { grid-column: 1 / -1; width: auto; }
+  .table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .table tbody tr { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 24px 0; border-bottom: 1px solid var(--border); }
+  .table tbody th, .table tbody td { width: auto; padding: 0; border: 0; }
+  .table tbody th:first-child { width: auto; }
+  .typeTable tbody tr { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 16px; }
+  .typeTable tbody th:first-child { grid-column: 1 / -1; }
 }
 @media (max-width: 440px) {
   .colorExample { grid-template-columns: minmax(0, 1fr); gap: 12px; }

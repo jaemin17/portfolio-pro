@@ -1,0 +1,82 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "before": {
+      "scroll": 6410,
+      "url": "http://localhost:3000/zh/style-guide/#components"
+    },
+    "after": {
+      "scroll": 6410,
+      "scrollWidth": 390,
+      "url": "http://localhost:3000/zh/style-guide/#components"
+    },
+    "preview": {
+      "focusable": 0,
+      "items": 6,
+      "links": 0,
+      "size": "16px"
+    },
+    "liveMenuUrl": "http://localhost:3000/zh/style-guide/#shape"
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "before": {
+      "scroll": 4540,
+      "url": "http://localhost:3000/zh/style-guide/#components"
+    },
+    "after": {
+      "scroll": 4540,
+      "scrollWidth": 1280,
+      "url": "http://localhost:3000/zh/style-guide/#components"
+    },
+    "preview": {
+      "focusable": 0,
+      "items": 6,
+      "links": 0,
+      "size": "16px"
+    },
+    "liveMenuUrl": "http://localhost:3000/zh/style-guide/#shape"
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "before": {
+      "scroll": 7144,
+      "url": "http://localhost:3000/en/style-guide/#components"
+    },
+    "after": {
+      "scroll": 7144,
+      "scrollWidth": 390,
+      "url": "http://localhost:3000/en/style-guide/#components"
+    },
+    "preview": {
+      "focusable": 0,
+      "items": 6,
+      "links": 0,
+      "size": "16px"
+    },
+    "liveMenuUrl": "http://localhost:3000/en/style-guide/#shape"
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "before": {
+      "scroll": 4760,
+      "url": "http://localhost:3000/en/style-guide/#components"
+    },
+    "after": {
+      "scroll": 4760,
+      "scrollWidth": 1280,
+      "url": "http://localhost:3000/en/style-guide/#components"
+    },
+    "preview": {
+      "focusable": 0,
+      "items": 6,
+      "links": 0,
+      "size": "16px"
+    },
+    "liveMenuUrl": "http://localhost:3000/en/style-guide/#shape"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "cases": 42,
+  "readingSamples": 594,
+  "protectedSamples": 1785,
+  "errors": [],
+  "note": "Normal/inline strong may change lineHeight only; other sampled protected roles must remain identical. Hero introductions excluded from two-mode reading scope."
+}

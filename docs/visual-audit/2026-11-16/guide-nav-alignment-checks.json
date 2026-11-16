@@ -1,0 +1,102 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "centerDifference": -154.5,
+    "direction": "row",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "0px 0px 20px",
+    "scrollWidth": 390
+  },
+  {
+    "locale": "zh",
+    "width": 768,
+    "centerDifference": -186.5,
+    "direction": "row",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "0px 0px 20px",
+    "scrollWidth": 768
+  },
+  {
+    "locale": "zh",
+    "width": 769,
+    "centerDifference": 0.5,
+    "direction": "column",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "14px 0px 20px",
+    "scrollWidth": 769
+  },
+  {
+    "locale": "zh",
+    "width": 833,
+    "centerDifference": 0.5,
+    "direction": "column",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "14px 0px 20px",
+    "scrollWidth": 833
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "centerDifference": 0.5,
+    "direction": "column",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "14px 0px 20px",
+    "scrollWidth": 1280
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "centerDifference": -190.5,
+    "direction": "row",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "0px 0px 20px",
+    "scrollWidth": 390
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "centerDifference": -186.5,
+    "direction": "row",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "0px 0px 20px",
+    "scrollWidth": 768
+  },
+  {
+    "locale": "en",
+    "width": 769,
+    "centerDifference": 0.5,
+    "direction": "column",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "14px 0px 20px",
+    "scrollWidth": 769
+  },
+  {
+    "locale": "en",
+    "width": 833,
+    "centerDifference": 0.5,
+    "direction": "column",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "14px 0px 20px",
+    "scrollWidth": 833
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "centerDifference": 0.5,
+    "direction": "column",
+    "headingSize": "32px",
+    "navSize": "16px",
+    "padding": "14px 0px 20px",
+    "scrollWidth": 1280
+  }
+]

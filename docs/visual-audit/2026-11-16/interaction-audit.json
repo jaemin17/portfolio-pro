@@ -1,0 +1,110 @@
+[
+  {
+    "type": "home-filter",
+    "focusText": "产品系统",
+    "focusVisible": true,
+    "heading": "产品系统",
+    "offset": "4px",
+    "outline": "rgba(0, 0, 0, 0.9) solid 1px",
+    "selected": [
+      "产品系统"
+    ]
+  },
+  {
+    "type": "home-more",
+    "projectLinks": [
+      {
+        "href": "/zh/projects/selfly/",
+        "text": "Selfly独立应用 · iOS记录、回看与自我探索独立设计iOS UX交互设计"
+      },
+      {
+        "href": "/zh/projects/model-editor/",
+        "text": "Model Editor3D 课件工具 · Web材质、颜色和模型结构编辑Product Design3D ToolsDesign Syst"
+      },
+      {
+        "href": "/zh/projects/vr-education/",
+        "text": "VR 教育与实训VR 仿真 · XR工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。VR SimulationTraining"
+      },
+      {
+        "href": "/zh/projects/personal-tools/",
+        "text": "个人工具独立工具 · Web为日常需要做的三个轻量小工具Web ToolsIndependent Design"
+      },
+      {
+        "href": "/zh/projects/engine-icon/",
+        "text": "3D Engine App Icon Design图标系统 · 3D将复杂发动机模型转译为可识别的软件入口图标。Icon Design3D "
+      },
+      {
+        "href": "/zh/projects/xr-courseware/",
+        "text": "XR Courseware课程工具 · XR选择专业模型，组织可在头盔端查看的教学课件Courseware3D PlaybackTeachi"
+      },
+      {
+        "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+        "text": "海外官网公司官网 · XR面向海外市场的 XR 教育产品官网表达。Official WebsiteProduct StoryBrand Di"
+      },
+      {
+        "href": "/zh/projects/resource-library/",
+        "text": "云平台 · 资源库资源平台 · Web围绕搜索、分类与浏览，重新组织教学资源查找体验。Cloud PlatformResource Libr"
+      }
+    ]
+  },
+  {
+    "type": "personal-tool-focus",
+    "focusVisible": true,
+    "href": "https://jaemin17.github.io/plan/",
+    "offset": "5px",
+    "outline": "rgba(0, 0, 0, 0.9) solid 2px",
+    "rel": "noopener noreferrer",
+    "target": "_blank",
+    "text": "Next — 打开体验（新标签页）"
+  },
+  {
+    "type": "vr-background-next",
+    "before": "Background 1: 动物洞穴背景",
+    "after": "Background 2: 饲养环境背景"
+  },
+  {
+    "type": "model-comparison",
+    "focus": {
+      "focusVisible": true,
+      "offset": "3px",
+      "outline": "rgb(96, 165, 250) solid 2px",
+      "text": "调整后"
+    },
+    "selected": [
+      "调整后"
+    ],
+    "shownPanels": [
+      "_R_1jnaatpesneknelb_-tab-1"
+    ]
+  },
+  {
+    "type": "guide-anchors",
+    "results": [
+      {
+        "hash": "#typography",
+        "targetExists": true,
+        "top": 31.890625
+      },
+      {
+        "hash": "#colors",
+        "targetExists": true,
+        "top": 32.171875
+      },
+      {
+        "hash": "#layout",
+        "targetExists": true,
+        "top": 32.078125
+      },
+      {
+        "hash": "#shape",
+        "targetExists": true,
+        "top": 32.453125
+      },
+      {
+        "hash": "#navigation",
+        "targetExists": true,
+        "top": 379.640625
+      }
+    ]
+  }
+]

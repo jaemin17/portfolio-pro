@@ -1,3 +1,4 @@
+import { CaseDesignList } from "@/components/CaseDesignList";
 import Link from "next/link";
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { notFound } from "next/navigation";
@@ -396,7 +397,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                     <p className={styles.uiSystemFocusLabel}>
                       {t(locale, "设计重点", "Design Focus")}
                     </p>
-                    <ul className={styles.uiSystemFocusList}>
+                    <CaseDesignList className={styles.uiSystemFocusList}>
                       <li>
                         {t(locale, "从教学对象提取空间隐喻", "Spatial metaphors from learning subjects")}
                       </li>
@@ -406,7 +407,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                       <li>
                         {t(locale, "低干扰地承托模型", "Low-noise support for models")}
                       </li>
-                    </ul>
+                    </CaseDesignList>
                   </div>
                 </div>
               </section>
@@ -595,7 +596,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <p className={styles.uiSystemFocusLabel}>
                           {t(locale, "设计重点", "Design Focus")}
                         </p>
-                        <ul className={styles.uiSystemFocusList}>
+                        <CaseDesignList className={styles.uiSystemFocusList}>
                           <li>
                             {t(
                               locale,
@@ -624,7 +625,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                               "Blue and yellow light for selected and hover states",
                             )}
                           </li>
-                        </ul>
+                        </CaseDesignList>
                       </div>
                     </div>
                     <figure className={styles.uiSystemEvidence}>
@@ -695,7 +696,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                         <p className={styles.uiSystemFocusLabel}>
                           {t(locale, "设计重点", "Design Focus")}
                         </p>
-                        <ul className={styles.uiSystemFocusList}>
+                        <CaseDesignList className={styles.uiSystemFocusList}>
                           <li>
                             {t(
                               locale,
@@ -717,7 +718,7 @@ export default async function VrEducationPage({ params }: VrEducationPageProps) 
                               "Contrast shadows for volume and light",
                             )}
                           </li>
-                        </ul>
+                        </CaseDesignList>
                       </div>
                     </div>
                     <figure className={styles.uiSystemEvidence}>

@@ -1,0 +1,138 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "examples": [
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "主文字"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "次文字"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "弱文字"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "页面背景"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "分隔线"
+      }
+    ],
+    "sampleLines": 0,
+    "scrollWidth": 390,
+    "swatches": 5
+  },
+  {
+    "locale": "zh",
+    "width": 1164,
+    "examples": [
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "主文字"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "次文字"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "弱文字"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "页面背景"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "分隔线"
+      }
+    ],
+    "sampleLines": 0,
+    "scrollWidth": 1164,
+    "swatches": 5
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "examples": [
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Primary text"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Secondary text"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Muted text"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Page background"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Divider"
+      }
+    ],
+    "sampleLines": 0,
+    "scrollWidth": 390,
+    "swatches": 5
+  },
+  {
+    "locale": "en",
+    "width": 1164,
+    "examples": [
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Primary text"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Secondary text"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Muted text"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Page background"
+      },
+      {
+        "children": 2,
+        "lastBorder": "0px",
+        "text": "Divider"
+      }
+    ],
+    "sampleLines": 0,
+    "scrollWidth": 1164,
+    "swatches": 5
+  }
+]

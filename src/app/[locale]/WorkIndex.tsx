@@ -85,12 +85,9 @@ export function WorkIndex({
         ))}
       </div>
       <div className={styles.workIndexRule} aria-hidden="true" />
-      <div className={styles.workIndexPanel} role="tabpanel">
+      <div className={styles.workIndexPanel} role="tabpanel" aria-label={groups[0]?.label}>
         {groups.map((group) => (
           <div key={group.id} className={styles.workIndexGroup}>
-            {activeId !== "all" ? (
-              <h2 className={styles.workIndexGroupHeading}>{group.label}</h2>
-            ) : null}
             <ToolProjectList
               className={styles.workIndexList}
               items={group.projects}

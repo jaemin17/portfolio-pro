@@ -1,0 +1,28 @@
+[
+  {
+    "width": 390,
+    "items": [
+      {
+        "lineHeight": "26.4px",
+        "size": "16px"
+      },
+      {
+        "lineHeight": "26.4px",
+        "size": "16px"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "items": [
+      {
+        "lineHeight": "26.4px",
+        "size": "16px"
+      },
+      {
+        "lineHeight": "26.4px",
+        "size": "16px"
+      }
+    ]
+  }
+]

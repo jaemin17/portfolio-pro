@@ -1,0 +1,517 @@
+[
+  {
+    "asset": "/images/hero-portrait.jpg",
+    "width": 1024,
+    "height": 682
+  },
+  {
+    "asset": "/images/selfly0/hero-750w.webp",
+    "width": 750,
+    "height": 405
+  },
+  {
+    "asset": "/images/posters/tools/model.webp",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "asset": "/images/posters/visual/immersive.webp",
+    "width": 960,
+    "height": 640
+  },
+  {
+    "asset": "/images/tools/tday-cover.png",
+    "width": 1024,
+    "height": 684
+  },
+  {
+    "asset": "/images/tools/next-cover.png",
+    "width": 1024,
+    "height": 617
+  },
+  {
+    "asset": "/images/tools/personal-tools-cover.png",
+    "width": 1407,
+    "height": 786
+  },
+  {
+    "asset": "/images/visual/vector-to-3d-icons-832w.webp",
+    "width": 832,
+    "height": 468
+  },
+  {
+    "asset": "/images/posters/tools/ppt.webp",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "asset": "/images/snapshots/snapshot-06.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "/images/snapshots/snapshot-08.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "/images/snapshots/snapshot-10.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "/images/snapshots/snapshot-11.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "/images/snapshots/snapshot-12.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "/images/snapshots/snapshot-14.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "/images/snapshots/snapshot-15.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "/images/snapshots/snapshot-16.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "/images/selfly0/positioning-phone-1.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/positioning-phone-3.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/jinri.svg",
+    "width": 19,
+    "height": 18
+  },
+  {
+    "asset": "/images/selfly0/tansuo.svg",
+    "width": 23,
+    "height": 25
+  },
+  {
+    "asset": "/images/selfly0/huigu.fill.svg",
+    "width": 23,
+    "height": 23
+  },
+  {
+    "asset": "/images/selfly0/today-rhythm-today-annotated-zh.webp",
+    "width": 611,
+    "height": 1319
+  },
+  {
+    "asset": "/images/selfly0/record-container-list.webp",
+    "width": 600,
+    "height": 1299
+  },
+  {
+    "asset": "/images/selfly0/record-container-journal.webp",
+    "width": 600,
+    "height": 1299
+  },
+  {
+    "asset": "/images/selfly0/record-container-plan.webp",
+    "width": 600,
+    "height": 1299
+  },
+  {
+    "asset": "/images/selfly0/record-container-board.webp",
+    "width": 600,
+    "height": 1299
+  },
+  {
+    "asset": "/images/selfly0/explore-create-before-zh.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/explore-create-inspiration-list-zh.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/explore-create-inspiration-plan-zh.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/explore-create-inspiration-diary-zh.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/diary-input-flow-step-3.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/diary-input-flow-step-2.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/diary-input-flow-step-4.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/icon-design/draft-01-sketch.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/icon-design/final-flat.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/icon-design/final-gradient.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/selfly0/launch-custom-symbols.webp",
+    "width": 1688,
+    "height": 1438
+  },
+  {
+    "asset": "/images/selfly0/hero-1200w.webp",
+    "width": 1200,
+    "height": 648
+  },
+  {
+    "asset": "/images/selfly0/explore-create-after-en.webp",
+    "width": 470,
+    "height": 1024
+  },
+  {
+    "asset": "/images/model-editor/hero-editor-1-750w.webp",
+    "width": 750,
+    "height": 405
+  },
+  {
+    "asset": "/images/model-editor/early-editor.png",
+    "width": 1920,
+    "height": 1079
+  },
+  {
+    "asset": "/images/model-editor/layout-comparison.svg",
+    "width": 1920,
+    "height": 688
+  },
+  {
+    "asset": "/images/model-editor/interface-before.png",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/model-editor/interface-after.png",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/model-editor/3D教学工坊-模型编辑器3.webp",
+    "width": 1024,
+    "height": 596
+  },
+  {
+    "asset": "/images/model-editor/hero-editor-1.webp",
+    "width": 1440,
+    "height": 778
+  },
+  {
+    "asset": "/images/visual/smart-manufacturing/transmission-home.webp",
+    "width": 1680,
+    "height": 945
+  },
+  {
+    "asset": "/images/visual/vr-education/process/barn-exploration.webp",
+    "width": 1456,
+    "height": 816
+  },
+  {
+    "asset": "/images/visual/vr-education/process/barn-clean-space.webp",
+    "width": 1456,
+    "height": 816
+  },
+  {
+    "asset": "/images/visual/vr-education/process/cattle-background-final.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/cattle-interface-final.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/animal-cave-background.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/husbandry-atmosphere-background.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/tunnel-background.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/cochlea-background.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/medical-lab-background.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/blue-training-space-background.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/arched-training-space-background.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/process/injection-background.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/animal-vr/dog-muscle-highlight.png",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/cover.png",
+    "width": 1550,
+    "height": 956
+  },
+  {
+    "asset": "/images/visual/smart-manufacturing/transmission-detail-exploded.png",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/smart-manufacturing/robot-home.webp",
+    "width": 1680,
+    "height": 945
+  },
+  {
+    "asset": "/images/visual/smart-manufacturing/robot-detail-teaching.png",
+    "width": 1920,
+    "height": 1089
+  },
+  {
+    "asset": "/images/visual/smart-manufacturing/molding-home.webp",
+    "width": 1680,
+    "height": 945
+  },
+  {
+    "asset": "/images/visual/animal-vr/hero.webp",
+    "width": 1680,
+    "height": 945
+  },
+  {
+    "asset": "/images/visual/animal-vr/brain-exploded-overview.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/animal-vr/ear-home.webp",
+    "width": 1680,
+    "height": 945
+  },
+  {
+    "asset": "/images/visual/animal-vr/ear-detail-structure.png",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/animal-vr/dog-anatomy-scene-2.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/animal-vr/dog-anatomy-scene-1.webp",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/animal-vr/pig-scene-3.webp",
+    "width": 1680,
+    "height": 945
+  },
+  {
+    "asset": "/images/visual/animal-vr/cat-skeleton-system.png",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/animal-vr/pig-guide-1.webp",
+    "width": 1680,
+    "height": 945
+  },
+  {
+    "asset": "/images/visual/animal-vr/pig-guide-2.webp",
+    "width": 1680,
+    "height": 945
+  },
+  {
+    "asset": "/images/visual/animal-vr/pig-course-list.png",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/motor.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/application.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/position.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/electromechanical.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/cattle.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/dog.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/cat.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/visual/vr-education/icons/pig-icon.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "asset": "/images/xr-courseware/cover.webp",
+    "width": 1920,
+    "height": 1063
+  },
+  {
+    "asset": "/images/xr-courseware/legacy-editor.webp",
+    "width": 1600,
+    "height": 905
+  },
+  {
+    "asset": "/images/xr-courseware/reference-powerpoint.webp",
+    "width": 788,
+    "height": 471
+  },
+  {
+    "asset": "/images/xr-courseware/reference-google-slides.webp",
+    "width": 788,
+    "height": 471
+  },
+  {
+    "asset": "/images/xr-courseware/editor.webp",
+    "width": 1440,
+    "height": 800
+  },
+  {
+    "asset": "/images/xr-courseware/resources.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "asset": "/images/xr-courseware/resources-before.webp",
+    "width": 1102,
+    "height": 612
+  },
+  {
+    "asset": "/images/xr-courseware/resources-after.webp",
+    "width": 1102,
+    "height": 612
+  },
+  {
+    "asset": "/images/xr-courseware/focus-before.webp",
+    "width": 930,
+    "height": 690
+  },
+  {
+    "asset": "/images/xr-courseware/focus-after.webp",
+    "width": 1248,
+    "height": 742
+  },
+  {
+    "asset": "/images/xr-courseware/model-teaching.webp",
+    "width": 2000,
+    "height": 1125
+  },
+  {
+    "asset": "/images/xr-courseware/devices.webp",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "asset": "/images/visual/engine-icon/source-model.webp",
+    "width": 1000,
+    "height": 998
+  },
+  {
+    "asset": "/images/visual/engine-icon/render-test-light.webp",
+    "width": 900,
+    "height": 900
+  },
+  {
+    "asset": "/images/visual/engine-icon/render-test-simplified.webp",
+    "width": 900,
+    "height": 900
+  },
+  {
+    "asset": "/images/visual/engine-icon/icon-family.webp",
+    "width": 1880,
+    "height": 398
+  },
+  {
+    "asset": "/images/resource-library/after.webp",
+    "width": 1920,
+    "height": 1373
+  },
+  {
+    "asset": "/images/resource-library/before.webp",
+    "width": 1920,
+    "height": 2048
+  }
+]

@@ -37,13 +37,21 @@
 }
 
 .contextCopy {
-  color: #5b6472;
+  color: var(--text-secondary);
   font-size: var(--fs-body);
   line-height: 1.75;
 }
 
 .contextCopy p {
   margin: 0;
+}
+
+.contextCopy p:not(.contextLabel) {
+  line-height: 1.85;
+}
+
+.moreIconCopy p:not(.contextLabel) {
+  line-height: 1.65;
 }
 
 .contextLabel {
@@ -84,7 +92,7 @@
 }
 
 .imageStack figcaption {
-  color: #6b7280;
+  color: var(--text-secondary);
   font-size: var(--fs-caption);
   line-height: 1.6;
   margin-top: 10px;
@@ -103,7 +111,7 @@
 }
 
 .moreIconCopy {
-  color: #5b6472;
+  color: var(--text-secondary);
   font-size: var(--fs-body);
   line-height: 1.75;
   margin-bottom: 26px;

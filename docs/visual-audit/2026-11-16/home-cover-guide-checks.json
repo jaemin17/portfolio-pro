@@ -1,0 +1,26 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "hasCoverRule": true,
+    "scrollWidth": 390
+  },
+  {
+    "locale": "zh",
+    "width": 1164,
+    "hasCoverRule": true,
+    "scrollWidth": 1164
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "hasCoverRule": true,
+    "scrollWidth": 390
+  },
+  {
+    "locale": "en",
+    "width": 1164,
+    "hasCoverRule": true,
+    "scrollWidth": 1164
+  }
+]

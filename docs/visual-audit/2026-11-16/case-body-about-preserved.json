@@ -1,0 +1,30 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "colors": [
+      "rgba(0, 0, 0, 0.4)"
+    ]
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "colors": [
+      "rgba(0, 0, 0, 0.4)"
+    ]
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "colors": [
+      "rgba(0, 0, 0, 0.4)"
+    ]
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "colors": [
+      "rgba(0, 0, 0, 0.4)"
+    ]
+  }
+]

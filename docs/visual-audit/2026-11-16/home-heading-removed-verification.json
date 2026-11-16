@@ -1,0 +1,182 @@
+[
+  {
+    "panelHeadings": 0,
+    "panelLabel": "全部",
+    "projectLinks": 6,
+    "scrollWidth": 390,
+    "selected": "全部",
+    "url": "http://localhost:3000/zh/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "产品系统",
+    "projectLinks": 4,
+    "scrollWidth": 390,
+    "selected": "产品系统",
+    "url": "http://localhost:3000/zh/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "XR / 3D",
+    "projectLinks": 4,
+    "scrollWidth": 390,
+    "selected": "XR / 3D",
+    "url": "http://localhost:3000/zh/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "视觉系统",
+    "projectLinks": 4,
+    "scrollWidth": 390,
+    "selected": "视觉系统",
+    "url": "http://localhost:3000/zh/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "个人探索",
+    "projectLinks": 2,
+    "scrollWidth": 390,
+    "selected": "个人探索",
+    "url": "http://localhost:3000/zh/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "全部",
+    "projectLinks": 6,
+    "scrollWidth": 1280,
+    "selected": "全部",
+    "url": "http://localhost:3000/zh/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "产品系统",
+    "projectLinks": 4,
+    "scrollWidth": 1280,
+    "selected": "产品系统",
+    "url": "http://localhost:3000/zh/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "XR / 3D",
+    "projectLinks": 4,
+    "scrollWidth": 1280,
+    "selected": "XR / 3D",
+    "url": "http://localhost:3000/zh/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "视觉系统",
+    "projectLinks": 4,
+    "scrollWidth": 1280,
+    "selected": "视觉系统",
+    "url": "http://localhost:3000/zh/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "个人探索",
+    "projectLinks": 2,
+    "scrollWidth": 1280,
+    "selected": "个人探索",
+    "url": "http://localhost:3000/zh/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "All",
+    "projectLinks": 6,
+    "scrollWidth": 390,
+    "selected": "All",
+    "url": "http://localhost:3000/en/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "Product Systems",
+    "projectLinks": 4,
+    "scrollWidth": 390,
+    "selected": "Product Systems",
+    "url": "http://localhost:3000/en/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "XR / 3D",
+    "projectLinks": 4,
+    "scrollWidth": 390,
+    "selected": "XR / 3D",
+    "url": "http://localhost:3000/en/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "Visual Systems",
+    "projectLinks": 4,
+    "scrollWidth": 390,
+    "selected": "Visual Systems",
+    "url": "http://localhost:3000/en/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "Personal Explorations",
+    "projectLinks": 2,
+    "scrollWidth": 390,
+    "selected": "Personal Explorations",
+    "url": "http://localhost:3000/en/",
+    "width": 390
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "All",
+    "projectLinks": 6,
+    "scrollWidth": 1280,
+    "selected": "All",
+    "url": "http://localhost:3000/en/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "Product Systems",
+    "projectLinks": 4,
+    "scrollWidth": 1280,
+    "selected": "Product Systems",
+    "url": "http://localhost:3000/en/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "XR / 3D",
+    "projectLinks": 4,
+    "scrollWidth": 1280,
+    "selected": "XR / 3D",
+    "url": "http://localhost:3000/en/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "Visual Systems",
+    "projectLinks": 4,
+    "scrollWidth": 1280,
+    "selected": "Visual Systems",
+    "url": "http://localhost:3000/en/",
+    "width": 1280
+  },
+  {
+    "panelHeadings": 0,
+    "panelLabel": "Personal Explorations",
+    "projectLinks": 2,
+    "scrollWidth": 1280,
+    "selected": "Personal Explorations",
+    "url": "http://localhost:3000/en/",
+    "width": 1280
+  }
+]

@@ -1,0 +1,2414 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "cards": [
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Selfly",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          },
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Model Editor",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          },
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "VR 教育与实训",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "个人工具",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          },
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          },
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "XR Courseware",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          },
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Sync Space",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "海外官网",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "云平台 · 资源库",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "游戏概念",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "AR Airbnb",
+        "titleOffset": 212.6640625,
+        "width": 292
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "locale": "zh",
+    "width": 767,
+    "cards": [
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Selfly",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Model Editor",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "VR 教育与实训",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "个人工具",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          },
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          },
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "XR Courseware",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          },
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Sync Space",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "海外官网",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "云平台 · 资源库",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "游戏概念",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "AR Airbnb",
+        "titleOffset": 294,
+        "width": 414
+      }
+    ],
+    "scrollWidth": 767
+  },
+  {
+    "locale": "zh",
+    "width": 768,
+    "cards": [
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Selfly",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Model Editor",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          },
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "VR 教育与实训",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "个人工具",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          },
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          },
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "XR Courseware",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          },
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Sync Space",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "海外官网",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "云平台 · 资源库",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "游戏概念",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "AR Airbnb",
+        "titleOffset": 243.328125,
+        "width": 338
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "locale": "zh",
+    "width": 814,
+    "cards": [
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Selfly",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Model Editor",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          },
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "VR 教育与实训",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "个人工具",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          },
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          },
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "XR Courseware",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          },
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Sync Space",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "海外官网",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "云平台 · 资源库",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "游戏概念",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "AR Airbnb",
+        "titleOffset": 258.6640625,
+        "width": 361
+      }
+    ],
+    "scrollWidth": 814
+  },
+  {
+    "locale": "zh",
+    "width": 1199,
+    "cards": [
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Selfly",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Model Editor",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          },
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "VR 教育与实训",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "个人工具",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          },
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          },
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "XR Courseware",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          },
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Sync Space",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "海外官网",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "云平台 · 资源库",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "游戏概念",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "AR Airbnb",
+        "titleOffset": 387,
+        "width": 553.5
+      }
+    ],
+    "scrollWidth": 1199
+  },
+  {
+    "locale": "zh",
+    "width": 1200,
+    "cards": [
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Selfly",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          },
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Model Editor",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          },
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "VR 教育与实训",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "个人工具",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          },
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          },
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "XR Courseware",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          },
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Sync Space",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "海外官网",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "云平台 · 资源库",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "游戏概念",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "AR Airbnb",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      }
+    ],
+    "scrollWidth": 1200
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "cards": [
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Selfly",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Model Editor",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "VR Education & Training",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Personal Tools",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          },
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          },
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "XR Courseware",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          },
+          {
+            "fit": "contain",
+            "height": 170.6640625,
+            "width": 256
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Sync Space",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Overseas Official Website",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Cloud Platform · Resource Library",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "Game Concept",
+        "titleOffset": 212.6640625,
+        "width": 292
+      },
+      {
+        "height": 194.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 194.6640625,
+            "width": 292
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000200666211825,
+        "title": "AR Airbnb",
+        "titleOffset": 212.6640625,
+        "width": 292
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "locale": "en",
+    "width": 767,
+    "cards": [
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Selfly",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Model Editor",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "VR Education & Training",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Personal Tools",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          },
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          },
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "XR Courseware",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          },
+          {
+            "fit": "contain",
+            "height": 252,
+            "width": 378
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Sync Space",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Overseas Official Website",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Cloud Platform · Resource Library",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Game Concept",
+        "titleOffset": 294,
+        "width": 414
+      },
+      {
+        "height": 276,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 276,
+            "width": 414
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "AR Airbnb",
+        "titleOffset": 294,
+        "width": 414
+      }
+    ],
+    "scrollWidth": 767
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "cards": [
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Selfly",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Model Editor",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          },
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "VR Education & Training",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Personal Tools",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          },
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          },
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "XR Courseware",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          },
+          {
+            "fit": "contain",
+            "height": 201.328125,
+            "width": 302
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Sync Space",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Overseas Official Website",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Cloud Platform · Resource Library",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "Game Concept",
+        "titleOffset": 243.328125,
+        "width": 338
+      },
+      {
+        "height": 225.328125,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 225.328125,
+            "width": 338
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000346716593855,
+        "title": "AR Airbnb",
+        "titleOffset": 243.328125,
+        "width": 338
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "locale": "en",
+    "width": 814,
+    "cards": [
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Selfly",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Model Editor",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          },
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "VR Education & Training",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Personal Tools",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          },
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          },
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "XR Courseware",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          },
+          {
+            "fit": "contain",
+            "height": 216.6640625,
+            "width": 325
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Sync Space",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Overseas Official Website",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Cloud Platform · Resource Library",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "Game Concept",
+        "titleOffset": 258.6640625,
+        "width": 361
+      },
+      {
+        "height": 240.6640625,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 240.6640625,
+            "width": 361
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.50001623113131,
+        "title": "AR Airbnb",
+        "titleOffset": 258.6640625,
+        "width": 361
+      }
+    ],
+    "scrollWidth": 814
+  },
+  {
+    "locale": "en",
+    "width": 1199,
+    "cards": [
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Selfly",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Model Editor",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          },
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "VR Education & Training",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Personal Tools",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          },
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          },
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "XR Courseware",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          },
+          {
+            "fit": "contain",
+            "height": 345,
+            "width": 517.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Sync Space",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Overseas Official Website",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Cloud Platform · Resource Library",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "Game Concept",
+        "titleOffset": 387,
+        "width": 553.5
+      },
+      {
+        "height": 369,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 369,
+            "width": 553.5
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5,
+        "title": "AR Airbnb",
+        "titleOffset": 387,
+        "width": 553.5
+      }
+    ],
+    "scrollWidth": 1199
+  },
+  {
+    "locale": "en",
+    "width": 1200,
+    "cards": [
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Selfly",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          },
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Model Editor",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          },
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "VR Education & Training",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Personal Tools",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "3D Engine App Icon Design",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          },
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "XR Interactive Script Engine",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          },
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "XR Courseware",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          },
+          {
+            "fit": "contain",
+            "height": 205.7734375,
+            "width": 308.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Sync Space",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Overseas Official Website",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "contain",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Cloud Platform · Resource Library",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "Game Concept",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      },
+      {
+        "height": 229.7734375,
+        "mediaFits": [
+          {
+            "fit": "cover",
+            "height": 229.7734375,
+            "width": 344.6640625
+          }
+        ],
+        "minHeight": "auto",
+        "ratio": 1.5000170004420117,
+        "title": "AR Airbnb",
+        "titleOffset": 247.7734375,
+        "width": 344.6640625
+      }
+    ],
+    "scrollWidth": 1200
+  }
+]

@@ -1,0 +1,1040 @@
+[
+  {
+    "page": "xr-courseware",
+    "locale": "zh",
+    "width": 390,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "原有课件编辑界面：左侧集中工具与模型素材，中央用于内容展示。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "课件创作动图：呈现演示文稿式的页面编排与 3D 内容界面。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "编辑器内的专业资源选择：分类、搜索与模型插入集中在课件旁。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "旧方案与调整方案：从遮挡内容的弹窗，转向可调整的并排区域。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "从多次选择与隐藏，到双击聚焦和复位返回。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "模型讲解界面及原项目标注：材质预设、3D讲解录制入口、复位与帮助。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "项目中的多端展示示意：手机、Web 与 VR 场景。"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "zh",
+    "width": 768,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "原有课件编辑界面：左侧集中工具与模型素材，中央用于内容展示。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "课件创作动图：呈现演示文稿式的页面编排与 3D 内容界面。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "编辑器内的专业资源选择：分类、搜索与模型插入集中在课件旁。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "旧方案与调整方案：从遮挡内容的弹窗，转向可调整的并排区域。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "从多次选择与隐藏，到双击聚焦和复位返回。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "模型讲解界面及原项目标注：材质预设、3D讲解录制入口、复位与帮助。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "项目中的多端展示示意：手机、Web 与 VR 场景。"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "zh",
+    "width": 1280,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "原有课件编辑界面：左侧集中工具与模型素材，中央用于内容展示。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "课件创作动图：呈现演示文稿式的页面编排与 3D 内容界面。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "编辑器内的专业资源选择：分类、搜索与模型插入集中在课件旁。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "旧方案与调整方案：从遮挡内容的弹窗，转向可调整的并排区域。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "从多次选择与隐藏，到双击聚焦和复位返回。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "模型讲解界面及原项目标注：材质预设、3D讲解录制入口、复位与帮助。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "项目中的多端展示示意：手机、Web 与 VR 场景。"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "en",
+    "width": 390,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The earlier editor: tools and model resources on the left, with a central conten"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Courseware creation animation showing presentation-style pages and the 3D conten"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Professional resource selection within the editor: categories, search, and model"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Original and revised layouts: an overlay becomes a resizable area alongside the "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "From repeated selection and hiding to double-click focus and reset."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Model explanation interface with original annotations for presets, recording, re"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "A multi-device illustration from the original project: mobile, web, and VR conte"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "en",
+    "width": 768,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The earlier editor: tools and model resources on the left, with a central conten"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Courseware creation animation showing presentation-style pages and the 3D conten"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Professional resource selection within the editor: categories, search, and model"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Original and revised layouts: an overlay becomes a resizable area alongside the "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "From repeated selection and hiding to double-click focus and reset."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Model explanation interface with original annotations for presets, recording, re"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "A multi-device illustration from the original project: mobile, web, and VR conte"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "page": "xr-courseware",
+    "locale": "en",
+    "width": 1280,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The earlier editor: tools and model resources on the left, with a central conten"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Courseware creation animation showing presentation-style pages and the 3D conten"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Professional resource selection within the editor: categories, search, and model"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Original and revised layouts: an overlay becomes a resizable area alongside the "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "From repeated selection and hiding to double-click focus and reset."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Model explanation interface with original annotations for presets, recording, re"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "A multi-device illustration from the original project: mobile, web, and VR conte"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "page": "model-editor",
+    "locale": "zh",
+    "width": 390,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "专业编辑逻辑占主导，模型预览、结构控制和动画设置同时分布在多个区域。"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "page": "model-editor",
+    "locale": "zh",
+    "width": 768,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "专业编辑逻辑占主导，模型预览、结构控制和动画设置同时分布在多个区域。"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "page": "model-editor",
+    "locale": "zh",
+    "width": 1280,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "专业编辑逻辑占主导，模型预览、结构控制和动画设置同时分布在多个区域。"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "page": "model-editor",
+    "locale": "en",
+    "width": 390,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Professional editing logic dominated the interface, with model preview, structur"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "page": "model-editor",
+    "locale": "en",
+    "width": 768,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Professional editing logic dominated the interface, with model preview, structur"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "page": "model-editor",
+    "locale": "en",
+    "width": 1280,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Professional editing logic dominated the interface, with model preview, structur"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "page": "engine-icon",
+    "locale": "zh",
+    "width": 390,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "观察参考模型辨认主体模块（圆柱壳体、侧边管线、底座），拆成少量关键形状，再画平面转 3D。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "绘制简化模型第一次绘制已经去掉大部分细节。缩小后结构还是偏密，通体同色也让块面更难分开。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "优化最终效果减少细节、强化体块和色彩对比，让图标在小尺寸下更清晰。"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "page": "engine-icon",
+    "locale": "zh",
+    "width": 768,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "观察参考模型辨认主体模块（圆柱壳体、侧边管线、底座），拆成少量关键形状，再画平面转 3D。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "绘制简化模型第一次绘制已经去掉大部分细节。缩小后结构还是偏密，通体同色也让块面更难分开。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "优化最终效果减少细节、强化体块和色彩对比，让图标在小尺寸下更清晰。"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "page": "engine-icon",
+    "locale": "zh",
+    "width": 1280,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "观察参考模型辨认主体模块（圆柱壳体、侧边管线、底座），拆成少量关键形状，再画平面转 3D。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "绘制简化模型第一次绘制已经去掉大部分细节。缩小后结构还是偏密，通体同色也让块面更难分开。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "优化最终效果减少细节、强化体块和色彩对比，让图标在小尺寸下更清晰。"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "page": "engine-icon",
+    "locale": "en",
+    "width": 390,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Observe the reference modelIdentify the main modules (cylindrical housing, side "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Draw the simplified modelThe first drawing already dropped most details. Scaled "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Optimize the final resultReduces detail and strengthens volume and color contras"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "page": "engine-icon",
+    "locale": "en",
+    "width": 768,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Observe the reference modelIdentify the main modules (cylindrical housing, side "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Draw the simplified modelThe first drawing already dropped most details. Scaled "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Optimize the final resultReduces detail and strengthens volume and color contras"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "page": "engine-icon",
+    "locale": "en",
+    "width": 1280,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Observe the reference modelIdentify the main modules (cylindrical housing, side "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Draw the simplified modelThe first drawing already dropped most details. Scaled "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [
+          {
+            "color": "rgb(31, 41, 55)",
+            "weight": "500"
+          }
+        ],
+        "lineHeight": "19.2px",
+        "size": "12px",
+        "text": "Optimize the final resultReduces detail and strengthens volume and color contras"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "page": "resource-library",
+    "locale": "zh",
+    "width": 390,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "改版后的资源库：从关键词搜索或专业分类进入，浏览不同形式的教学素材。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "搜索与导航、上传入口并列，视觉优先级较低。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "首屏中央突出搜索，提示可查找 VR 与 3D 资源。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "专业与类型收在下拉菜单中，可选范围需要展开查看。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "专业大类直接展示，下方按类型、精品与排序进一步组织列表。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "页面按推荐、专题分段，图中资源以模型为主。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "统一网格呈现 VR、3D、课件、图片、视频和音频，角标提示内容形式。"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "page": "resource-library",
+    "locale": "zh",
+    "width": 768,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "改版后的资源库：从关键词搜索或专业分类进入，浏览不同形式的教学素材。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "搜索与导航、上传入口并列，视觉优先级较低。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "首屏中央突出搜索，提示可查找 VR 与 3D 资源。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "专业与类型收在下拉菜单中，可选范围需要展开查看。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "专业大类直接展示，下方按类型、精品与排序进一步组织列表。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "页面按推荐、专题分段，图中资源以模型为主。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "统一网格呈现 VR、3D、课件、图片、视频和音频，角标提示内容形式。"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "page": "resource-library",
+    "locale": "zh",
+    "width": 1280,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "改版后的资源库：从关键词搜索或专业分类进入，浏览不同形式的教学素材。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "搜索与导航、上传入口并列，视觉优先级较低。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "首屏中央突出搜索，提示可查找 VR 与 3D 资源。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "专业与类型收在下拉菜单中，可选范围需要展开查看。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "专业大类直接展示，下方按类型、精品与排序进一步组织列表。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "页面按推荐、专题分段，图中资源以模型为主。"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "统一网格呈现 VR、3D、课件、图片、视频和音频，角标提示内容形式。"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "page": "resource-library",
+    "locale": "en",
+    "width": 390,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The redesigned library: start with a keyword or subject, then browse different t"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Search shares attention with navigation and upload controls."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The hero highlights search and explicitly mentions VR and 3D resources."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Subject and type options require opening dropdown menus."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Visible subjects establish context; type, featured, and sorting controls refine "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Recommendations and topics form separate sections, dominated here by models."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "VR, 3D, presentations, images, video, and audio share one grid, with icons ident"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "page": "resource-library",
+    "locale": "en",
+    "width": 768,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The redesigned library: start with a keyword or subject, then browse different t"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Search shares attention with navigation and upload controls."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The hero highlights search and explicitly mentions VR and 3D resources."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Subject and type options require opening dropdown menus."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Visible subjects establish context; type, featured, and sorting controls refine "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Recommendations and topics form separate sections, dominated here by models."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "VR, 3D, presentations, images, video, and audio share one grid, with icons ident"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "page": "resource-library",
+    "locale": "en",
+    "width": 1280,
+    "captions": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The redesigned library: start with a keyword or subject, then browse different t"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Search shares attention with navigation and upload controls."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "The hero highlights search and explicitly mentions VR and 3D resources."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Subject and type options require opening dropdown menus."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Visible subjects establish context; type, featured, and sorting controls refine "
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "Recommendations and topics form separate sections, dominated here by models."
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "headings": [],
+        "lineHeight": "20.4px",
+        "size": "12px",
+        "text": "VR, 3D, presentations, images, video, and audio share one grid, with icons ident"
+      }
+    ],
+    "scrollWidth": 1280
+  }
+]

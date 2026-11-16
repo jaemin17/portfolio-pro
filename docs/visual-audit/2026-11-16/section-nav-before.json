@@ -1,0 +1,488 @@
+[
+  {
+    "page": "selfly",
+    "color": "rgb(139, 139, 139)",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#today",
+        "text": "体验"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon",
+        "text": "图标"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#launch",
+        "text": "落地"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思"
+      }
+    ],
+    "position": "sticky",
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "selfly",
+    "color": "rgb(139, 139, 139)",
+    "display": "block",
+    "height": 220,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#today",
+        "text": "体验"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon",
+        "text": "图标"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#launch",
+        "text": "落地"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思"
+      }
+    ],
+    "position": "sticky",
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "model-editor",
+    "color": "rgb(139, 139, 139)",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "挑战"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#onboarding",
+        "text": "指引"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思"
+      }
+    ],
+    "position": "sticky",
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "model-editor",
+    "color": "rgb(139, 139, 139)",
+    "display": "block",
+    "height": 260,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "挑战"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#onboarding",
+        "text": "指引"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "反思"
+      }
+    ],
+    "position": "sticky",
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "vr-education",
+    "color": "rgb(139, 139, 139)",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#spatial-design",
+        "text": "空间设计"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#ui-system",
+        "text": "界面系统"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#smart-manufacturing",
+        "text": "智能制造"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#biomedical",
+        "text": "生物医疗"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon-system",
+        "text": "应用图标"
+      }
+    ],
+    "position": "sticky",
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "vr-education",
+    "color": "rgb(139, 139, 139)",
+    "display": "block",
+    "height": 300,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#spatial-design",
+        "text": "空间设计"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#ui-system",
+        "text": "界面系统"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#smart-manufacturing",
+        "text": "智能制造"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#biomedical",
+        "text": "生物医疗"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#app-icon-system",
+        "text": "应用图标"
+      }
+    ],
+    "position": "sticky",
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "xr-courseware",
+    "color": "rgb(139, 139, 139)",
+    "display": "none",
+    "height": 0,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "问题"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#direction",
+        "text": "方向"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#use",
+        "text": "使用"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "回顾"
+      }
+    ],
+    "position": "sticky",
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 0
+  },
+  {
+    "page": "xr-courseware",
+    "color": "rgb(139, 139, 139)",
+    "display": "block",
+    "height": 300,
+    "lineHeight": "24px",
+    "links": [
+      {
+        "color": "rgb(51, 51, 51)",
+        "current": "location",
+        "href": "#context",
+        "text": "概览"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#challenge",
+        "text": "问题"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#direction",
+        "text": "方向"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#solution",
+        "text": "方案"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#use",
+        "text": "使用"
+      },
+      {
+        "color": "rgb(139, 139, 139)",
+        "current": null,
+        "href": "#reflection",
+        "text": "回顾"
+      }
+    ],
+    "position": "sticky",
+    "size": "16px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 76
+  },
+  {
+    "page": "style-guide",
+    "color": "rgba(0, 0, 0, 0.6)",
+    "display": "flex",
+    "height": 42,
+    "lineHeight": "21px",
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#typography",
+        "text": "文字"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#colors",
+        "text": "色彩"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#layout",
+        "text": "布局"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#components",
+        "text": "组件"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#shape",
+        "text": "形状"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#navigation",
+        "text": "导航"
+      }
+    ],
+    "position": "static",
+    "size": "14px",
+    "top": "auto",
+    "weight": "400",
+    "viewport": 390,
+    "navWidth": 330
+  },
+  {
+    "page": "style-guide",
+    "color": "rgba(0, 0, 0, 0.6)",
+    "display": "flex",
+    "height": 250,
+    "lineHeight": "21px",
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#typography",
+        "text": "文字"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#colors",
+        "text": "色彩"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#layout",
+        "text": "布局"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#components",
+        "text": "组件"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#shape",
+        "text": "形状"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "current": null,
+        "href": "#navigation",
+        "text": "导航"
+      }
+    ],
+    "position": "sticky",
+    "size": "14px",
+    "top": "40px",
+    "weight": "400",
+    "viewport": 1280,
+    "navWidth": 120
+  }
+]

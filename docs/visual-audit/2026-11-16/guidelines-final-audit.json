@@ -1,0 +1,56 @@
+[
+  {
+    "anchorErrors": [],
+    "content": true,
+    "navPosition": "static",
+    "scrollWidth": 390,
+    "tableCount": 9,
+    "url": "http://localhost:3000/zh/style-guide/",
+    "width": 390
+  },
+  {
+    "anchorErrors": [],
+    "content": true,
+    "navPosition": "static",
+    "scrollWidth": 768,
+    "tableCount": 9,
+    "url": "http://localhost:3000/zh/style-guide/",
+    "width": 768
+  },
+  {
+    "anchorErrors": [],
+    "content": true,
+    "navPosition": "sticky",
+    "scrollWidth": 1280,
+    "tableCount": 9,
+    "url": "http://localhost:3000/zh/style-guide/",
+    "width": 1280
+  },
+  {
+    "anchorErrors": [],
+    "content": true,
+    "navPosition": "static",
+    "scrollWidth": 390,
+    "tableCount": 9,
+    "url": "http://localhost:3000/en/style-guide/",
+    "width": 390
+  },
+  {
+    "anchorErrors": [],
+    "content": true,
+    "navPosition": "static",
+    "scrollWidth": 768,
+    "tableCount": 9,
+    "url": "http://localhost:3000/en/style-guide/",
+    "width": 768
+  },
+  {
+    "anchorErrors": [],
+    "content": true,
+    "navPosition": "sticky",
+    "scrollWidth": 1280,
+    "tableCount": 9,
+    "url": "http://localhost:3000/en/style-guide/",
+    "width": 1280
+  }
+]

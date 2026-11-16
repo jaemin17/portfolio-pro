@@ -1,0 +1,740 @@
+[
+  {
+    "page": "selfly",
+    "width": 390,
+    "lists": [
+      {
+        "fontSize": "14px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "Top 3：限制今日容量，迫使用户做选择"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "Tomorrow：提前准备明日重点，降低第二天启动成本"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "Backlog：承接暂不处理的事项，避免挤占今日注意力"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "完成反馈：保留成就感，但不制造无限待办压力"
+          }
+        ],
+        "text": "Top 3：限制今日容量，迫使用户做选择Tomorrow：提前准备明日重点，降低第二天启动成本Backlog：承接暂不处理的事项，避免挤占今日注意力完成反馈：保留成就感，但不制造无限待办压力"
+      },
+      {
+        "fontSize": "14px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "把功能入口抽象为记录容器"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "减少用户理解成本"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "按内容形态匹配记录方式"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "兼容不同用户的个别记录情况"
+          }
+        ],
+        "text": "把功能入口抽象为记录容器减少用户理解成本按内容形态匹配记录方式兼容不同用户的个别记录情况"
+      },
+      {
+        "fontSize": "14px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "把抽象容器转译成具体场景"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "降低开始记录的空白感"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "保留从类型开始的自由配置"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "选择模板后直接进入记录"
+          }
+        ],
+        "text": "把抽象容器转译成具体场景降低开始记录的空白感保留从类型开始的自由配置选择模板后直接进入记录"
+      },
+      {
+        "fontSize": "14px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "跨模块重新分发内容"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "支持自选回顾范围"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "弱化统计与连续性焦虑"
+          }
+        ],
+        "text": "跨模块重新分发内容支持自选回顾范围弱化统计与连续性焦虑"
+      },
+      {
+        "fontSize": "14px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "简化线条，保证小尺寸识别"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "多显示模式一致性"
+          }
+        ],
+        "text": "简化线条，保证小尺寸识别多显示模式一致性"
+      },
+      {
+        "fontSize": "14px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "从设计方案到 SwiftUI 实现"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "数据模型、同步、订阅与多语言支持"
+          }
+        ],
+        "text": "从设计方案到 SwiftUI 实现数据模型、同步、订阅与多语言支持"
+      }
+    ]
+  },
+  {
+    "page": "selfly",
+    "width": 1280,
+    "lists": [
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "Top 3：限制今日容量，迫使用户做选择"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "Tomorrow：提前准备明日重点，降低第二天启动成本"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "Backlog：承接暂不处理的事项，避免挤占今日注意力"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "完成反馈：保留成就感，但不制造无限待办压力"
+          }
+        ],
+        "text": "Top 3：限制今日容量，迫使用户做选择Tomorrow：提前准备明日重点，降低第二天启动成本Backlog：承接暂不处理的事项，避免挤占今日注意力完成反馈：保留成就感，但不制造无限待办压力"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "把功能入口抽象为记录容器"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "减少用户理解成本"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "按内容形态匹配记录方式"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "兼容不同用户的个别记录情况"
+          }
+        ],
+        "text": "把功能入口抽象为记录容器减少用户理解成本按内容形态匹配记录方式兼容不同用户的个别记录情况"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "把抽象容器转译成具体场景"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "降低开始记录的空白感"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "保留从类型开始的自由配置"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "选择模板后直接进入记录"
+          }
+        ],
+        "text": "把抽象容器转译成具体场景降低开始记录的空白感保留从类型开始的自由配置选择模板后直接进入记录"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "跨模块重新分发内容"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "支持自选回顾范围"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "弱化统计与连续性焦虑"
+          }
+        ],
+        "text": "跨模块重新分发内容支持自选回顾范围弱化统计与连续性焦虑"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "简化线条，保证小尺寸识别"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "多显示模式一致性"
+          }
+        ],
+        "text": "简化线条，保证小尺寸识别多显示模式一致性"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "从设计方案到 SwiftUI 实现"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "数据模型、同步、订阅与多语言支持"
+          }
+        ],
+        "text": "从设计方案到 SwiftUI 实现数据模型、同步、订阅与多语言支持"
+      }
+    ]
+  },
+  {
+    "page": "model-editor",
+    "width": 390,
+    "lists": [
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "固定入口占高度 → 移到左侧"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "面板占空间 → 按需展开、利用横向空间"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "右侧参数浮层 → 不挤压模型画布"
+          }
+        ],
+        "text": "固定入口占高度 → 移到左侧面板占空间 → 按需展开、利用横向空间右侧参数浮层 → 不挤压模型画布"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "左侧固定面板：内容多，部分操作不依赖模型视口"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "右侧浮动工具：需实时观察反馈，浮动保持视口完整"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "顶部全局动作：高频操作，右上角符合使用惯例"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "顶部过程控制：辅助性操作，轻量图标降低视觉权重"
+          }
+        ],
+        "text": "左侧固定面板：内容多，部分操作不依赖模型视口右侧浮动工具：需实时观察反馈，浮动保持视口完整顶部全局动作：高频操作，右上角符合使用惯例顶部过程控制：辅助性操作，轻量图标降低视觉权重"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "关键入口保持可点击：按钮和工具保持足够尺寸，降低点击门槛"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "统一状态层级：默认、悬停、按下、选中、不可用状态有一致反馈"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "隐藏次级说明：默认保持轻量，悬停、右键和快捷键提示补足说明"
+          }
+        ],
+        "text": "关键入口保持可点击：按钮和工具保持足够尺寸，降低点击门槛统一状态层级：默认、悬停、按下、选中、不可用状态有一致反馈隐藏次级说明：默认保持轻量，悬停、右键和快捷键提示补足说明"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "明确功能需要传达什么：移动、材质、透视、标签、爆炸和动画各自对应不同教学表达"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "用模型特征匹配功能场景：外壳与内部结构用于显隐透视，可拆解结构用于爆炸，有运动原理的模型用于动画"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "用引导连接理解与操作：在进入编辑前先解释对象、影响范围和操作结果"
+          }
+        ],
+        "text": "明确功能需要传达什么：移动、材质、透视、标签、爆炸和动画各自对应不同教学表达用模型特征匹配功能场景：外壳与内部结构用于显隐透视，可拆解结构用于爆炸，有运动原理的模型用于动画用引导连接理解与操作：在进入编辑前先解释对象、影响范围和操作结果"
+      }
+    ]
+  },
+  {
+    "page": "model-editor",
+    "width": 1280,
+    "lists": [
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "固定入口占高度 → 移到左侧"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "面板占空间 → 按需展开、利用横向空间"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "右侧参数浮层 → 不挤压模型画布"
+          }
+        ],
+        "text": "固定入口占高度 → 移到左侧面板占空间 → 按需展开、利用横向空间右侧参数浮层 → 不挤压模型画布"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "左侧固定面板：内容多，部分操作不依赖模型视口"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "右侧浮动工具：需实时观察反馈，浮动保持视口完整"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "顶部全局动作：高频操作，右上角符合使用惯例"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "顶部过程控制：辅助性操作，轻量图标降低视觉权重"
+          }
+        ],
+        "text": "左侧固定面板：内容多，部分操作不依赖模型视口右侧浮动工具：需实时观察反馈，浮动保持视口完整顶部全局动作：高频操作，右上角符合使用惯例顶部过程控制：辅助性操作，轻量图标降低视觉权重"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "关键入口保持可点击：按钮和工具保持足够尺寸，降低点击门槛"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "统一状态层级：默认、悬停、按下、选中、不可用状态有一致反馈"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "隐藏次级说明：默认保持轻量，悬停、右键和快捷键提示补足说明"
+          }
+        ],
+        "text": "关键入口保持可点击：按钮和工具保持足够尺寸，降低点击门槛统一状态层级：默认、悬停、按下、选中、不可用状态有一致反馈隐藏次级说明：默认保持轻量，悬停、右键和快捷键提示补足说明"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "normal",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "明确功能需要传达什么：移动、材质、透视、标签、爆炸和动画各自对应不同教学表达"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "用模型特征匹配功能场景：外壳与内部结构用于显隐透视，可拆解结构用于爆炸，有运动原理的模型用于动画"
+          },
+          {
+            "gapBefore": 0,
+            "margin": "0px",
+            "text": "用引导连接理解与操作：在进入编辑前先解释对象、影响范围和操作结果"
+          }
+        ],
+        "text": "明确功能需要传达什么：移动、材质、透视、标签、爆炸和动画各自对应不同教学表达用模型特征匹配功能场景：外壳与内部结构用于显隐透视，可拆解结构用于爆炸，有运动原理的模型用于动画用引导连接理解与操作：在进入编辑前先解释对象、影响范围和操作结果"
+      }
+    ]
+  },
+  {
+    "page": "vr-education",
+    "width": 390,
+    "lists": [
+      {
+        "fontSize": "16px",
+        "gap": "8px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "从教学对象提取空间隐喻"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "主题相关但不直白堆叠"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "低干扰地承托模型"
+          }
+        ],
+        "text": "从教学对象提取空间隐喻主题相关但不直白堆叠低干扰地承托模型"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "8px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "清透UI面板，融入场景"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "开放边缘，取消卡片感"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "光影雕刻，轻量实体"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "蓝黄光感，反馈选中与悬停"
+          }
+        ],
+        "text": "清透UI面板，融入场景开放边缘，取消卡片感光影雕刻，轻量实体蓝黄光感，反馈选中与悬停"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "8px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "按专业术语定制图标"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "线性轮廓，轻量好认不抢模型"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "反差投影补体积感与光感"
+          }
+        ],
+        "text": "按专业术语定制图标线性轮廓，轻量好认不抢模型反差投影补体积感与光感"
+      }
+    ]
+  },
+  {
+    "page": "vr-education",
+    "width": 1280,
+    "lists": [
+      {
+        "fontSize": "16px",
+        "gap": "8px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "从教学对象提取空间隐喻"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "主题相关但不直白堆叠"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "低干扰地承托模型"
+          }
+        ],
+        "text": "从教学对象提取空间隐喻主题相关但不直白堆叠低干扰地承托模型"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "8px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "清透UI面板，融入场景"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "开放边缘，取消卡片感"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "光影雕刻，轻量实体"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "蓝黄光感，反馈选中与悬停"
+          }
+        ],
+        "text": "清透UI面板，融入场景开放边缘，取消卡片感光影雕刻，轻量实体蓝黄光感，反馈选中与悬停"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "8px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "按专业术语定制图标"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "线性轮廓，轻量好认不抢模型"
+          },
+          {
+            "gapBefore": 8,
+            "margin": "0px",
+            "text": "反差投影补体积感与光感"
+          }
+        ],
+        "text": "按专业术语定制图标线性轮廓，轻量好认不抢模型反差投影补体积感与光感"
+      }
+    ]
+  },
+  {
+    "page": "xr-courseware",
+    "width": 390,
+    "lists": [
+      {
+        "fontSize": "16px",
+        "gap": "10px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "弹窗遮挡课件 → 资源与课件并排呈现"
+          },
+          {
+            "gapBefore": 10,
+            "margin": "0px",
+            "text": "需要更多浏览空间 → 拖动调整资源区域"
+          },
+          {
+            "gapBefore": 10,
+            "margin": "0px",
+            "text": "调整入口不明显 → 在窗口边缘提示操作"
+          }
+        ],
+        "text": "弹窗遮挡课件 → 资源与课件并排呈现需要更多浏览空间 → 拖动调整资源区域调整入口不明显 → 在窗口边缘提示操作"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "10px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "双击部件，放大并单独查看"
+          },
+          {
+            "gapBefore": 10,
+            "margin": "0px",
+            "text": "通过复位回到完整模型"
+          },
+          {
+            "gapBefore": 10,
+            "margin": "0px",
+            "text": "爆炸、标签、透视与原理展示继续辅助讲解"
+          }
+        ],
+        "text": "双击部件，放大并单独查看通过复位回到完整模型爆炸、标签、透视与原理展示继续辅助讲解"
+      }
+    ]
+  },
+  {
+    "page": "xr-courseware",
+    "width": 1280,
+    "lists": [
+      {
+        "fontSize": "16px",
+        "gap": "10px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "弹窗遮挡课件 → 资源与课件并排呈现"
+          },
+          {
+            "gapBefore": 10,
+            "margin": "0px",
+            "text": "需要更多浏览空间 → 拖动调整资源区域"
+          },
+          {
+            "gapBefore": 10,
+            "margin": "0px",
+            "text": "调整入口不明显 → 在窗口边缘提示操作"
+          }
+        ],
+        "text": "弹窗遮挡课件 → 资源与课件并排呈现需要更多浏览空间 → 拖动调整资源区域调整入口不明显 → 在窗口边缘提示操作"
+      },
+      {
+        "fontSize": "16px",
+        "gap": "10px",
+        "items": [
+          {
+            "gapBefore": null,
+            "margin": "0px",
+            "text": "双击部件，放大并单独查看"
+          },
+          {
+            "gapBefore": 10,
+            "margin": "0px",
+            "text": "通过复位回到完整模型"
+          },
+          {
+            "gapBefore": 10,
+            "margin": "0px",
+            "text": "爆炸、标签、透视与原理展示继续辅助讲解"
+          }
+        ],
+        "text": "双击部件，放大并单独查看通过复位回到完整模型爆炸、标签、透视与原理展示继续辅助讲解"
+      }
+    ]
+  }
+]

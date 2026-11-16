@@ -70,7 +70,7 @@
 
 .positioningBody {
   line-height: 1.8;
-  color: #444;
+  color: var(--text-secondary);
   font-size: var(--fs-body);
 }
 
@@ -81,6 +81,10 @@
 .positioningBody p {
   margin-bottom: 28px;
   line-height: 1.75;
+}
+
+.positioningBody > p:not(.uiSystemFocusLabel) {
+  line-height: 1.85;
 }
 
 .positioningEmphasis {
@@ -198,13 +202,13 @@
 
 .narrativeBody {
   line-height: 1.8;
-  color: #444;
+  color: var(--text-secondary);
   font-size: var(--fs-body);
 }
 
 .narrativeBody p {
   margin: 0 0 28px;
-  line-height: 1.75;
+  line-height: 1.85;
 }
 
 .processTagList {
@@ -557,13 +561,21 @@
 
 .uiSystemBody {
   margin: 0 0 16px;
-  color: #444;
+  color: var(--text-secondary);
   font-size: var(--fs-body);
-  line-height: 1.75;
+  line-height: 1.85;
 }
 
 .uiSystemBody:first-child {
   margin-top: 0;
+}
+
+.uiSystemBody:has(+ .uiSystemBody) {
+  margin-bottom: 0;
+}
+
+.uiSystemBody + .uiSystemBody {
+  margin-top: 20px;
 }
 
 .uiSystemBody .uiSystemEmphasis {
@@ -593,19 +605,13 @@
 }
 
 .uiSystemFocusList {
-  display: grid;
-  gap: 8px;
-  margin: 0;
-  padding: 0;
+  --design-list-indent: 0px;
   list-style: none;
 }
 
 .uiSystemFocusList li {
   position: relative;
   padding-left: 14px;
-  color: #334155;
-  font-size: var(--fs-body);
-  line-height: 1.75;
 }
 
 .uiSystemFocusList li::before {
@@ -913,8 +919,8 @@
 
 .chapterLead {
   margin: 0 0 32px;
-  line-height: 1.75;
-  color: #444;
+  line-height: 1.65;
+  color: var(--text-secondary);
   font-size: var(--fs-body);
   max-width: 100%;
 }
@@ -952,9 +958,9 @@
 
 .appIconSystemBody > p {
   margin: 0 0 22px;
-  color: #334155;
+  color: var(--text-secondary);
   font-size: var(--fs-body);
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .appIconDecisionGrid {

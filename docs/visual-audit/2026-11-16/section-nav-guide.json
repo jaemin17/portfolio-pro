@@ -1,0 +1,524 @@
+[
+  {
+    "locale": "zh",
+    "viewport": 390,
+    "menus": [
+      {
+        "class": "SectionNav-module__mfbQtG__nav SectionNav-module__mfbQtG__responsive styleGuide-module__DMG6kq__sectionNav",
+        "direction": "row",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "规范目录",
+        "position": "static",
+        "size": "16px",
+        "wrap": "wrap"
+      },
+      {
+        "class": "SectionNav-module__mfbQtG__nav",
+        "direction": "column",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "章节目录示例",
+        "position": "static",
+        "size": "16px",
+        "wrap": "nowrap"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "locale": "zh",
+    "viewport": 768,
+    "menus": [
+      {
+        "class": "SectionNav-module__mfbQtG__nav SectionNav-module__mfbQtG__responsive styleGuide-module__DMG6kq__sectionNav",
+        "direction": "row",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "规范目录",
+        "position": "static",
+        "size": "16px",
+        "wrap": "wrap"
+      },
+      {
+        "class": "SectionNav-module__mfbQtG__nav",
+        "direction": "column",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "章节目录示例",
+        "position": "static",
+        "size": "16px",
+        "wrap": "nowrap"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "locale": "zh",
+    "viewport": 1280,
+    "menus": [
+      {
+        "class": "SectionNav-module__mfbQtG__nav SectionNav-module__mfbQtG__responsive styleGuide-module__DMG6kq__sectionNav",
+        "direction": "column",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "规范目录",
+        "position": "sticky",
+        "size": "16px",
+        "wrap": "nowrap"
+      },
+      {
+        "class": "SectionNav-module__mfbQtG__nav",
+        "direction": "column",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "章节目录示例",
+        "position": "static",
+        "size": "16px",
+        "wrap": "nowrap"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "locale": "en",
+    "viewport": 390,
+    "menus": [
+      {
+        "class": "SectionNav-module__mfbQtG__nav SectionNav-module__mfbQtG__responsive styleGuide-module__DMG6kq__sectionNav",
+        "direction": "row",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "Guideline sections",
+        "position": "static",
+        "size": "16px",
+        "wrap": "wrap"
+      },
+      {
+        "class": "SectionNav-module__mfbQtG__nav",
+        "direction": "column",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "Section navigation example",
+        "position": "static",
+        "size": "16px",
+        "wrap": "nowrap"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "locale": "en",
+    "viewport": 768,
+    "menus": [
+      {
+        "class": "SectionNav-module__mfbQtG__nav SectionNav-module__mfbQtG__responsive styleGuide-module__DMG6kq__sectionNav",
+        "direction": "row",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "Guideline sections",
+        "position": "static",
+        "size": "16px",
+        "wrap": "wrap"
+      },
+      {
+        "class": "SectionNav-module__mfbQtG__nav",
+        "direction": "column",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "Section navigation example",
+        "position": "static",
+        "size": "16px",
+        "wrap": "nowrap"
+      }
+    ],
+    "scrollWidth": 768
+  },
+  {
+    "locale": "en",
+    "viewport": 1280,
+    "menus": [
+      {
+        "class": "SectionNav-module__mfbQtG__nav SectionNav-module__mfbQtG__responsive styleGuide-module__DMG6kq__sectionNav",
+        "direction": "column",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "Guideline sections",
+        "position": "sticky",
+        "size": "16px",
+        "wrap": "nowrap"
+      },
+      {
+        "class": "SectionNav-module__mfbQtG__nav",
+        "direction": "column",
+        "links": [
+          {
+            "current": null,
+            "href": "#typography",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#colors",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#layout",
+            "valid": true
+          },
+          {
+            "current": "location",
+            "href": "#components",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#shape",
+            "valid": true
+          },
+          {
+            "current": null,
+            "href": "#navigation",
+            "valid": true
+          }
+        ],
+        "name": "Section navigation example",
+        "position": "static",
+        "size": "16px",
+        "wrap": "nowrap"
+      }
+    ],
+    "scrollWidth": 1280
+  }
+]

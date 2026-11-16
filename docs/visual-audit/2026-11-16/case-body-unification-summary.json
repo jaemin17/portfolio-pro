@@ -1,0 +1,8 @@
+{
+  "viewports": 42,
+  "normalSamples": 594,
+  "protectedBaselineViewports": 14,
+  "protectedEntriesCompared": 546,
+  "differencesOutsideApprovedColorOpacity": 0,
+  "excludedReadingSelectorMatches": "Engine contextLabel is a protected blue chapter marker, not prose; filtered from both baseline and after normal sets."
+}

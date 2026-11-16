@@ -1,0 +1,206 @@
+[
+  {
+    "type": "vr-background",
+    "locale": "en",
+    "requested": "Background 1: Animal cave background",
+    "selected": "Background 1: Animal cave background"
+  },
+  {
+    "type": "vr-background",
+    "locale": "en",
+    "requested": "Background 2: Husbandry environment background",
+    "selected": "Background 2: Husbandry environment background"
+  },
+  {
+    "type": "vr-background",
+    "locale": "en",
+    "requested": "Background 3: Automotive transmission background",
+    "selected": "Background 3: Automotive transmission background"
+  },
+  {
+    "type": "vr-background",
+    "locale": "en",
+    "requested": "Background 4: Ear anatomy background",
+    "selected": "Background 4: Ear anatomy background"
+  },
+  {
+    "type": "vr-background",
+    "locale": "en",
+    "requested": "Background 5: Medical lab background",
+    "selected": "Background 5: Medical lab background"
+  },
+  {
+    "type": "vr-background",
+    "locale": "en",
+    "requested": "Background 6: Blue training space background",
+    "selected": "Background 6: Blue training space background"
+  },
+  {
+    "type": "vr-background",
+    "locale": "en",
+    "requested": "Background 7: Arched training space background",
+    "selected": "Background 7: Arched training space background"
+  },
+  {
+    "type": "vr-background",
+    "locale": "en",
+    "requested": "Background 8: Injection molding background",
+    "selected": "Background 8: Injection molding background"
+  },
+  {
+    "type": "vr-slide",
+    "locale": "en",
+    "requested": "Slide 1",
+    "selected": "Slide 1"
+  },
+  {
+    "type": "vr-slide",
+    "locale": "en",
+    "requested": "Slide 2",
+    "selected": "Slide 2"
+  },
+  {
+    "type": "vr-slide",
+    "locale": "en",
+    "requested": "Slide 3",
+    "selected": "Slide 3"
+  },
+  {
+    "type": "vr-background",
+    "locale": "zh",
+    "requested": "Background 1: 动物洞穴背景",
+    "selected": "Background 1: 动物洞穴背景"
+  },
+  {
+    "type": "vr-background",
+    "locale": "zh",
+    "requested": "Background 2: 饲养环境背景",
+    "selected": "Background 2: 饲养环境背景"
+  },
+  {
+    "type": "vr-background",
+    "locale": "zh",
+    "requested": "Background 3: 汽车传动背景",
+    "selected": "Background 3: 汽车传动背景"
+  },
+  {
+    "type": "vr-background",
+    "locale": "zh",
+    "requested": "Background 4: 耳部结构背景",
+    "selected": "Background 4: 耳部结构背景"
+  },
+  {
+    "type": "vr-background",
+    "locale": "zh",
+    "requested": "Background 5: 医疗实验室背景",
+    "selected": "Background 5: 医疗实验室背景"
+  },
+  {
+    "type": "vr-background",
+    "locale": "zh",
+    "requested": "Background 6: 蓝色训练空间背景",
+    "selected": "Background 6: 蓝色训练空间背景"
+  },
+  {
+    "type": "vr-background",
+    "locale": "zh",
+    "requested": "Background 7: 拱形训练空间背景",
+    "selected": "Background 7: 拱形训练空间背景"
+  },
+  {
+    "type": "vr-background",
+    "locale": "zh",
+    "requested": "Background 8: 注塑背景",
+    "selected": "Background 8: 注塑背景"
+  },
+  {
+    "type": "vr-slide",
+    "locale": "zh",
+    "requested": "Slide 1",
+    "selected": "Slide 1"
+  },
+  {
+    "type": "vr-slide",
+    "locale": "zh",
+    "requested": "Slide 2",
+    "selected": "Slide 2"
+  },
+  {
+    "type": "vr-slide",
+    "locale": "zh",
+    "requested": "Slide 3",
+    "selected": "Slide 3"
+  },
+  {
+    "type": "xr-demo",
+    "locale": "en",
+    "gifPresent": true,
+    "pressed": "true"
+  },
+  {
+    "type": "xr-demo",
+    "locale": "zh",
+    "gifPresent": true,
+    "pressed": "true"
+  },
+  {
+    "type": "home-category",
+    "locale": "zh",
+    "requested": "全部",
+    "selected": "全部"
+  },
+  {
+    "type": "home-category",
+    "locale": "zh",
+    "requested": "产品系统",
+    "selected": "产品系统"
+  },
+  {
+    "type": "home-category",
+    "locale": "zh",
+    "requested": "XR / 3D",
+    "selected": "XR / 3D"
+  },
+  {
+    "type": "home-category",
+    "locale": "zh",
+    "requested": "视觉系统",
+    "selected": "视觉系统"
+  },
+  {
+    "type": "home-category",
+    "locale": "zh",
+    "requested": "个人探索",
+    "selected": "个人探索"
+  },
+  {
+    "type": "home-category",
+    "locale": "en",
+    "requested": "All",
+    "selected": "All"
+  },
+  {
+    "type": "home-category",
+    "locale": "en",
+    "requested": "Product Systems",
+    "selected": "Product Systems"
+  },
+  {
+    "type": "home-category",
+    "locale": "en",
+    "requested": "XR / 3D",
+    "selected": "XR / 3D"
+  },
+  {
+    "type": "home-category",
+    "locale": "en",
+    "requested": "Visual Systems",
+    "selected": "Visual Systems"
+  },
+  {
+    "type": "home-category",
+    "locale": "en",
+    "requested": "Personal Explorations",
+    "selected": "Personal Explorations"
+  }
+]

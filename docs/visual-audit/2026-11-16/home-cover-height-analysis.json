@@ -1,0 +1,34 @@
+[
+  {
+    "frameHeight": 240.6640625,
+    "frameWidth": 361,
+    "mediaHeight": 240.6640625,
+    "mediaRatio": "3 / 2",
+    "padding": "0px",
+    "title": "Selfly"
+  },
+  {
+    "frameHeight": 267.75,
+    "frameWidth": 361,
+    "mediaHeight": 243.75,
+    "mediaRatio": "auto",
+    "padding": "24px 18px 0px",
+    "title": "Model Editor"
+  },
+  {
+    "frameHeight": 240.6640625,
+    "frameWidth": 361,
+    "mediaHeight": 240.6640625,
+    "mediaRatio": "auto",
+    "padding": "0px",
+    "title": "VR 教育与实训"
+  },
+  {
+    "frameHeight": 240.6640625,
+    "frameWidth": 361,
+    "mediaHeight": 240.6640625,
+    "mediaRatio": "3 / 2",
+    "padding": "0px",
+    "title": "个人工具"
+  }
+]

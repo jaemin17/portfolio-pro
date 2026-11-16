@@ -64,3 +64,16 @@
 .tabLocale:hover {
   color: var(--text-secondary);
 }
+
+.preview {
+  position: static;
+  z-index: auto;
+  padding: 0;
+}
+
+.preview button.tab {
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}

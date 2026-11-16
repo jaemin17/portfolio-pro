@@ -1,3 +1,4 @@
+import { CaseDesignList } from "@/components/CaseDesignList";
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import { CroppedPhonePreview } from "@/components/CroppedPhonePreview";
 import { assetPath } from "@/i18n/assets";
@@ -271,12 +272,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     </p>
                     <div className={styles.designPoints}>
                       <h4>设计取舍</h4>
-                      <ul>
+                      <CaseDesignList>
                         <li><strong>Top 3</strong>：限制今日容量，迫使用户做选择</li>
                         <li><strong>Tomorrow</strong>：提前准备明日重点，降低第二天启动成本</li>
                         <li><strong>Backlog</strong>：承接暂不处理的事项，避免挤占今日注意力</li>
                         <li><strong>完成反馈</strong>：保留成就感，但不制造无限待办压力</li>
-                      </ul>
+                      </CaseDesignList>
                     </div>
                   </>,
                   <>
@@ -286,12 +287,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     </p>
                     <div className={styles.designPoints}>
                       <h4>Design Trade-offs</h4>
-                      <ul>
+                      <CaseDesignList>
                         <li><strong>Top 3</strong>: caps today&apos;s capacity, forcing a choice</li>
                         <li><strong>Tomorrow</strong>: prepares tomorrow&apos;s focus in advance, lowering the next day&apos;s start-up cost</li>
                         <li><strong>Backlog</strong>: holds items not due yet, so they don&apos;t crowd out today&apos;s attention</li>
                         <li><strong>Completion feedback</strong>: keeps a sense of accomplishment without creating endless to-do pressure</li>
-                      </ul>
+                      </CaseDesignList>
                     </div>
                   </>,
                 )}
@@ -333,12 +334,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     </p>
                     <div className={styles.designPoints}>
                       <h4>结构调整</h4>
-                      <ul>
+                      <CaseDesignList>
                         <li><strong>把功能入口抽象为记录容器</strong></li>
                         <li>减少用户理解成本</li>
                         <li>按内容形态匹配记录方式</li>
                         <li>兼容不同用户的个别记录情况</li>
-                      </ul>
+                      </CaseDesignList>
                     </div>
                   </>,
                   <>
@@ -353,12 +354,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     </p>
                     <div className={styles.designPoints}>
                       <h4>Structural Adjustments</h4>
-                      <ul>
+                      <CaseDesignList>
                         <li><strong>Abstracting feature entries into record containers</strong></li>
                         <li>Lowers the cost of understanding for users</li>
                         <li>Matches recording style to content type</li>
                         <li>Accommodates different users&apos; individual recording needs</li>
-                      </ul>
+                      </CaseDesignList>
                     </div>
                   </>,
                 )}
@@ -389,12 +390,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     </p>
                     <div className={styles.designPoints}>
                       <h4>设计要点</h4>
-                      <ul>
+                      <CaseDesignList>
                         <li><strong>把抽象容器转译成具体场景</strong></li>
                         <li>降低开始记录的空白感</li>
                         <li>保留从类型开始的自由配置</li>
                         <li>选择模板后直接进入记录</li>
-                      </ul>
+                      </CaseDesignList>
                     </div>
                   </>,
                   <>
@@ -404,12 +405,12 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     </p>
                     <div className={styles.designPoints}>
                       <h4>Design Highlights</h4>
-                      <ul>
+                      <CaseDesignList>
                         <li><strong>Translate abstract containers into scenarios</strong></li>
                         <li>Reduce blank-page feeling before writing</li>
                         <li>Keep type-based free setup</li>
                         <li>Enter recording after template choice</li>
-                      </ul>
+                      </CaseDesignList>
                     </div>
                   </>,
                 )}
@@ -476,11 +477,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     </p>
                     <div className={styles.designPoints}>
                       <h4>机制设计</h4>
-                      <ul>
+                      <CaseDesignList>
                         <li><strong>跨模块重新分发内容</strong></li>
                         <li>支持自选回顾范围</li>
                         <li>弱化统计与连续性焦虑</li>
-                      </ul>
+                      </CaseDesignList>
                     </div>
                   </>,
                   <>
@@ -491,11 +492,11 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                     </p>
                     <div className={styles.designPoints}>
                       <h4>Mechanism Design</h4>
-                      <ul>
+                      <CaseDesignList>
                         <li><strong>Redistributes content across modules</strong></li>
                         <li>Supports a custom review scope</li>
                         <li>De-emphasizes stats and streak anxiety</li>
-                      </ul>
+                      </CaseDesignList>
                     </div>
                   </>,
                 )}
@@ -527,7 +528,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 )}
                 <div className={styles.designPoints}>
                   <h4>{t(locale, "图标适配", "Icon Adaptability")}</h4>
-                  <ul>
+                  <CaseDesignList>
                     {t(
                       locale,
                       <>
@@ -539,7 +540,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                         <li>Consistency across display modes</li>
                       </>,
                     )}
-                  </ul>
+                  </CaseDesignList>
                 </div>
               </div>
             </div>
@@ -568,7 +569,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                 )}
                 <div className={styles.designPoints}>
                   <h4>{t(locale, "落地能力", "Delivery Capabilities")}</h4>
-                  <ul>
+                  <CaseDesignList>
                     {t(
                       locale,
                       <>
@@ -580,7 +581,7 @@ export default async function Selfly0Page({ params }: Selfly0PageProps) {
                         <li>Data model, sync, subscriptions, and localization</li>
                       </>,
                     )}
-                  </ul>
+                  </CaseDesignList>
                 </div>
                 <div style={{ marginTop: "24px" }}>
                   <a

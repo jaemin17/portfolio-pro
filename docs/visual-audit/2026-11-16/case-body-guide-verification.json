@@ -1,0 +1,26 @@
+[
+  {
+    "roleNote": true,
+    "scrollWidth": 390,
+    "url": "http://localhost:3000/zh/style-guide/#colors",
+    "width": 390
+  },
+  {
+    "roleNote": true,
+    "scrollWidth": 1280,
+    "url": "http://localhost:3000/zh/style-guide/#colors",
+    "width": 1280
+  },
+  {
+    "roleNote": true,
+    "scrollWidth": 390,
+    "url": "http://localhost:3000/en/style-guide/#colors",
+    "width": 390
+  },
+  {
+    "roleNote": true,
+    "scrollWidth": 1280,
+    "url": "http://localhost:3000/en/style-guide/#colors",
+    "width": 1280
+  }
+]

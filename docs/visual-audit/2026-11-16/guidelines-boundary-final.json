@@ -1,0 +1,22 @@
+[
+  {
+    "navPosition": "static",
+    "scrollWidth": 760,
+    "width": 760
+  },
+  {
+    "navPosition": "static",
+    "scrollWidth": 761,
+    "width": 761
+  },
+  {
+    "navPosition": "static",
+    "scrollWidth": 767,
+    "width": 767
+  },
+  {
+    "navPosition": "sticky",
+    "scrollWidth": 769,
+    "width": 769
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "has999": false,
+    "radius": "999px",
+    "scrollWidth": 390,
+    "value": "全圆角"
+  },
+  {
+    "locale": "zh",
+    "width": 1164,
+    "has999": false,
+    "radius": "999px",
+    "scrollWidth": 1164,
+    "value": "全圆角"
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "has999": false,
+    "radius": "999px",
+    "scrollWidth": 390,
+    "value": "Fully rounded"
+  },
+  {
+    "locale": "en",
+    "width": 1164,
+    "has999": false,
+    "radius": "999px",
+    "scrollWidth": 1164,
+    "value": "Fully rounded"
+  }
+]

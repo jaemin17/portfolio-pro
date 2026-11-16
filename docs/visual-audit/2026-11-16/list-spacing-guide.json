@@ -1,0 +1,26 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "hasRule": true,
+    "scrollWidth": 390
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "hasRule": true,
+    "scrollWidth": 1280
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "hasRule": true,
+    "scrollWidth": 390
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "hasRule": true,
+    "scrollWidth": 1280
+  }
+]

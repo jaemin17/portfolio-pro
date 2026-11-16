@@ -1,0 +1,3037 @@
+[
+  {
+    "documentWidth": 390,
+    "height": 3720,
+    "images": [
+      {
+        "alt": "Jiamin Li",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/hero-portrait.jpg"
+      },
+      {
+        "alt": "Selfly",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 750,
+        "src": "http://localhost:3000/images/selfly0/hero-750w.webp"
+      },
+      {
+        "alt": "Model Editor",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 800,
+        "src": "http://localhost:3000/images/posters/tools/model.webp"
+      },
+      {
+        "alt": "VR 教育与实训",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 960,
+        "src": "http://localhost:3000/images/posters/visual/immersive.webp"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/tools/tday-cover.png"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/tools/next-cover.png"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1407,
+        "src": "http://localhost:3000/images/tools/personal-tools-cover.png"
+      },
+      {
+        "alt": "3D Engine App Icon Design",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 389,
+        "src": "http://localhost:3000/images/visual/vector-to-3d-icons-832w.webp"
+      },
+      {
+        "alt": "XR Courseware",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 800,
+        "src": "http://localhost:3000/images/posters/tools/ppt.webp"
+      }
+    ],
+    "scrollY": 2876,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/",
+    "videos": [
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/tools/model.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/visual/home-vr-education.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": false,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/tools/ppt.mp4"
+      }
+    ],
+    "width": 390,
+    "steps": 5,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      2876
+    ],
+    "screenshot": "home-zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 2554,
+    "images": [
+      {
+        "alt": "Jiamin Li",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/hero-portrait.jpg"
+      },
+      {
+        "alt": "Selfly",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 750,
+        "src": "http://localhost:3000/images/selfly0/hero-750w.webp"
+      },
+      {
+        "alt": "Model Editor",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 800,
+        "src": "http://localhost:3000/images/posters/tools/model.webp"
+      },
+      {
+        "alt": "VR Education & Training",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 960,
+        "src": "http://localhost:3000/images/posters/visual/immersive.webp"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/tools/tday-cover.png"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/tools/next-cover.png"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1407,
+        "src": "http://localhost:3000/images/tools/personal-tools-cover.png"
+      },
+      {
+        "alt": "3D Engine App Icon Design",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 352,
+        "src": "http://localhost:3000/images/visual/vector-to-3d-icons-832w.webp"
+      },
+      {
+        "alt": "XR Courseware",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 800,
+        "src": "http://localhost:3000/images/posters/tools/ppt.webp"
+      }
+    ],
+    "scrollY": 1710,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/",
+    "videos": [
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/tools/model.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/visual/home-vr-education.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/tools/ppt.mp4"
+      }
+    ],
+    "width": 1280,
+    "steps": 3,
+    "positions": [
+      0,
+      675,
+      1350,
+      1710
+    ],
+    "screenshot": "home-en-1280-full.jpg"
+  },
+  {
+    "documentWidth": 390,
+    "height": 2463,
+    "images": [
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": false,
+        "loading": "lazy",
+        "naturalWidth": 0,
+        "src": "/images/snapshots/snapshot-16.webp"
+      }
+    ],
+    "scrollY": 1619,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/about/",
+    "videos": [],
+    "width": 390,
+    "steps": 3,
+    "positions": [
+      0,
+      675,
+      1350,
+      1619
+    ],
+    "screenshot": "about--zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 2515,
+    "images": [
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-16.webp"
+      },
+      {
+        "alt": "Photo with flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-06.webp"
+      },
+      {
+        "alt": "Portrait in orange flowers",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-08.webp"
+      },
+      {
+        "alt": "Cat portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-10.webp"
+      },
+      {
+        "alt": "Forest garden path",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-11.webp"
+      },
+      {
+        "alt": "Temple ruins portrait",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-12.webp"
+      },
+      {
+        "alt": "Canal view with a passing boat",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-14.webp"
+      },
+      {
+        "alt": "Sunset road by the sea",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-15.webp"
+      },
+      {
+        "alt": "Pink flowers beside a garden pond",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 256,
+        "src": "http://localhost:3000/images/snapshots/snapshot-16.webp"
+      }
+    ],
+    "scrollY": 1671,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/about/",
+    "videos": [],
+    "width": 1280,
+    "steps": 3,
+    "positions": [
+      0,
+      675,
+      1350,
+      1671
+    ],
+    "screenshot": "about--en-1280-full.jpg"
+  },
+  {
+    "documentWidth": 390,
+    "height": 13153,
+    "images": [
+      {
+        "alt": "Selfly app preview showing Today, My Journal, and Review screens",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 390,
+        "src": "http://localhost:3000/images/selfly0/hero-750w.webp"
+      },
+      {
+        "alt": "原方向：固定内容探索",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/positioning-phone-1.webp"
+      },
+      {
+        "alt": "新方向：长期自我探索",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/positioning-phone-3.webp"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 156,
+        "src": "http://localhost:3000/images/selfly0/jinri.svg"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 135,
+        "src": "http://localhost:3000/images/selfly0/tansuo.svg"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 150,
+        "src": "http://localhost:3000/images/selfly0/huigu.fill.svg"
+      },
+      {
+        "alt": "Selfly 今日重要 Top 3：仅保留今日聚焦",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 611,
+        "src": "http://localhost:3000/images/selfly0/today-rhythm-today-annotated-zh.webp"
+      },
+      {
+        "alt": "Selfly 清单容器界面，展示我的喜好列表",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 600,
+        "src": "http://localhost:3000/images/selfly0/record-container-list.webp"
+      },
+      {
+        "alt": "Selfly 日记容器界面，展示成功日记记录",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 600,
+        "src": "http://localhost:3000/images/selfly0/record-container-journal.webp"
+      },
+      {
+        "alt": "Selfly 计划容器界面，展示年度目标列表",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 600,
+        "src": "http://localhost:3000/images/selfly0/record-container-plan.webp"
+      },
+      {
+        "alt": "Selfly 图册容器界面，展示愿景板图片拼贴",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 600,
+        "src": "http://localhost:3000/images/selfly0/record-container-board.webp"
+      },
+      {
+        "alt": "从类型开始：自定义记录容器时填写标题、说明、图标和数量",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/explore-create-before-zh.webp"
+      },
+      {
+        "alt": "从场景开始：清单模板展示我的价值观、核心优势、喜好、边界等记录灵感",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/explore-create-inspiration-list-zh.webp"
+      },
+      {
+        "alt": "从场景开始：计划模板展示周目标、想去的地方、年度目标、月目标等记录灵感",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/explore-create-inspiration-plan-zh.webp"
+      },
+      {
+        "alt": "从场景开始：日记模板展示幸福日记、情绪日记、灵感日记、感恩日记等记录灵感",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/explore-create-inspiration-diary-zh.webp"
+      },
+      {
+        "alt": "步骤 1：日记输入页的记录入口",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/diary-input-flow-step-3.webp"
+      },
+      {
+        "alt": "步骤 2：在半屏 Sheet 中选择情绪",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/diary-input-flow-step-2.webp"
+      },
+      {
+        "alt": "步骤 3：输入框自动聚焦并展开键盘",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/diary-input-flow-step-4.webp"
+      },
+      {
+        "alt": "Selfly 图标草图：橙色手绘书本与紫色蝴蝶",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/selfly0/icon-design/draft-01-sketch.webp"
+      },
+      {
+        "alt": "Selfly 最终图标：浅色扁平版",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/selfly0/icon-design/final-flat.webp"
+      },
+      {
+        "alt": "Selfly 最终图标：暗黑模式版",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/selfly0/icon-design/final-gradient.webp"
+      },
+      {
+        "alt": "Selfly 自定义 SF Symbol 图标集",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1688,
+        "src": "http://localhost:3000/images/selfly0/launch-custom-symbols.webp"
+      }
+    ],
+    "scrollY": 12309,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/projects/selfly/",
+    "videos": [
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/images/selfly0/today-top3-demo.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/selfly0/review-redistribution.mp4"
+      }
+    ],
+    "width": 390,
+    "steps": 19,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5402,
+      6077,
+      6752,
+      7427,
+      8102,
+      8778,
+      9453,
+      10128,
+      10803,
+      11478,
+      12154,
+      12309
+    ],
+    "screenshot": "projects-selfly--zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 12075,
+    "images": [
+      {
+        "alt": "Selfly app preview showing Today, My Journal, and Review screens",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 940,
+        "src": "http://localhost:3000/images/selfly0/hero-1200w.webp"
+      },
+      {
+        "alt": "Original direction: preset self-exploration",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/positioning-phone-1.webp"
+      },
+      {
+        "alt": "New direction: long-term self-exploration",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/positioning-phone-3.webp"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 156,
+        "src": "http://localhost:3000/images/selfly0/jinri.svg"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 135,
+        "src": "http://localhost:3000/images/selfly0/tansuo.svg"
+      },
+      {
+        "alt": "",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 150,
+        "src": "http://localhost:3000/images/selfly0/huigu.fill.svg"
+      },
+      {
+        "alt": "Selfly Today's Top 3: keeping only today's focus",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 611,
+        "src": "http://localhost:3000/images/selfly0/today-rhythm-today-annotated-zh.webp"
+      },
+      {
+        "alt": "Selfly List container interface, showing a “My Preferences” list",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 600,
+        "src": "http://localhost:3000/images/selfly0/record-container-list.webp"
+      },
+      {
+        "alt": "Selfly Journal container interface, showing a Success Diary entry",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 600,
+        "src": "http://localhost:3000/images/selfly0/record-container-journal.webp"
+      },
+      {
+        "alt": "Selfly Plan container interface, showing an annual goals list",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 600,
+        "src": "http://localhost:3000/images/selfly0/record-container-plan.webp"
+      },
+      {
+        "alt": "Selfly Board container interface, showing a vision-board collage",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 600,
+        "src": "http://localhost:3000/images/selfly0/record-container-board.webp"
+      },
+      {
+        "alt": "Before: create a list by filling title, description, icon, and quantity first",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/explore-create-before-zh.webp"
+      },
+      {
+        "alt": "Start from inspiration templates",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/explore-create-after-en.webp"
+      },
+      {
+        "alt": "Step 1: the entry point on the journal input screen",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/diary-input-flow-step-3.webp"
+      },
+      {
+        "alt": "Step 2: choose a mood in the half-screen sheet",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/diary-input-flow-step-2.webp"
+      },
+      {
+        "alt": "Step 3: the text field regains focus and the keyboard appears",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 470,
+        "src": "http://localhost:3000/images/selfly0/diary-input-flow-step-4.webp"
+      },
+      {
+        "alt": "Selfly icon sketch: hand-drawn orange book and purple butterfly",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/selfly0/icon-design/draft-01-sketch.webp"
+      },
+      {
+        "alt": "Selfly final icon: light flat version",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/selfly0/icon-design/final-flat.webp"
+      },
+      {
+        "alt": "Selfly final icon: dark mode version",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/selfly0/icon-design/final-gradient.webp"
+      },
+      {
+        "alt": "Selfly custom SF Symbol icon set",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1688,
+        "src": "http://localhost:3000/images/selfly0/launch-custom-symbols.webp"
+      }
+    ],
+    "scrollY": 11231,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/projects/selfly/",
+    "videos": [
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/images/selfly0/today-top3-demo.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/selfly0/review-redistribution.mp4"
+      }
+    ],
+    "width": 1280,
+    "steps": 17,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5402,
+      6077,
+      6752,
+      7427,
+      8102,
+      8778,
+      9453,
+      10128,
+      10803,
+      11231
+    ],
+    "screenshot": "projects-selfly--en-1280-full.jpg"
+  },
+  {
+    "documentWidth": 390,
+    "height": 9849,
+    "images": [
+      {
+        "alt": "Model Editor 界面预览",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 390,
+        "src": "http://localhost:3000/images/model-editor/hero-editor-1-750w.webp"
+      },
+      {
+        "alt": "模型编辑器早期版本界面",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/model-editor/early-editor.png"
+      },
+      {
+        "alt": "布局对比示意图",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/model-editor/layout-comparison.svg"
+      },
+      {
+        "alt": "原布局：顶部入口占用预览高度",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/model-editor/interface-before.png"
+      },
+      {
+        "alt": "调整后：入口移至左侧，释放垂直空间",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/model-editor/interface-after.png"
+      },
+      {
+        "alt": "模型编辑器调整后界面：结构标注与材质面板",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/model-editor/3D%E6%95%99%E5%AD%A6%E5%B7%A5%E5%9D%8A-%E6%A8%A1%E5%9E%8B%E7%BC%96%E8%BE%91%E5%99%A83.webp"
+      }
+    ],
+    "scrollY": 9005,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/projects/model-editor/",
+    "videos": [
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/%E6%A8%A1%E5%9E%8B%E7%BC%96%E8%BE%91%E5%99%A8%E7%AB%A0%E8%8A%82%E6%93%8D%E4%BD%9C%E5%BD%92%E5%B1%9E-%E8%A7%86%E9%A2%91.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-basic-controls.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-material-editing.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-visibility-xray.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-notes.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-exploded-view.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": false,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-animation.mp4"
+      }
+    ],
+    "width": 390,
+    "steps": 14,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5402,
+      6077,
+      6752,
+      7427,
+      8102,
+      8778,
+      9005
+    ],
+    "screenshot": "projects-model-editor--zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 9837,
+    "images": [
+      {
+        "alt": "Model Editor interface preview",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 939,
+        "src": "http://localhost:3000/images/model-editor/hero-editor-1.webp"
+      },
+      {
+        "alt": "Early Model Editor interface",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/model-editor/early-editor.png"
+      },
+      {
+        "alt": "Layout comparison diagram",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/model-editor/layout-comparison.svg"
+      },
+      {
+        "alt": "Original layout: Top navigation takes up preview height",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/model-editor/interface-before.png"
+      },
+      {
+        "alt": "After: Navigation moves left, freeing vertical space",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/model-editor/interface-after.png"
+      },
+      {
+        "alt": "Redesigned Model Editor with structure labels and material panel",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/model-editor/3D%E6%95%99%E5%AD%A6%E5%B7%A5%E5%9D%8A-%E6%A8%A1%E5%9E%8B%E7%BC%96%E8%BE%91%E5%99%A83.webp"
+      }
+    ],
+    "scrollY": 8993,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/projects/model-editor/",
+    "videos": [
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/%E6%A8%A1%E5%9E%8B%E7%BC%96%E8%BE%91%E5%99%A8%E7%AB%A0%E8%8A%82%E6%93%8D%E4%BD%9C%E5%BD%92%E5%B1%9E-%E8%A7%86%E9%A2%91.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-basic-controls.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-material-editing.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-visibility-xray.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-notes.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": false,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-exploded-view.mp4"
+      },
+      {
+        "controls": false,
+        "muted": true,
+        "paused": false,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/model-editor/onboarding-animation.mp4"
+      }
+    ],
+    "width": 1280,
+    "steps": 14,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5402,
+      6077,
+      6752,
+      7427,
+      8102,
+      8778,
+      8993
+    ],
+    "screenshot": "projects-model-editor--en-1280-full.jpg"
+  },
+  {
+    "documentWidth": 390,
+    "height": 12340,
+    "images": [
+      {
+        "alt": "智能制造 VR 液力自动变速器首页视觉",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/transmission-home.webp"
+      },
+      {
+        "alt": "从课程对象提取空间联想。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1456,
+        "src": "http://localhost:3000/images/visual/vr-education/process/barn-exploration.webp"
+      },
+      {
+        "alt": "建立非写实教学空间。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1456,
+        "src": "http://localhost:3000/images/visual/vr-education/process/barn-clean-space.webp"
+      },
+      {
+        "alt": "减少细节噪音，让背景退后。控制色彩、光照和空间可信度。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/cattle-background-final.webp"
+      },
+      {
+        "alt": "确认模型、标题和入口信息仍然是视觉主位。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/cattle-interface-final.webp"
+      },
+      {
+        "alt": "用洞穴空间建立动物栖息联想",
+        "complete": true,
+        "loading": "eager",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/animal-cave-background.webp"
+      },
+      {
+        "alt": "用饲养空间建立动物照护联想 (2)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/husbandry-atmosphere-background.webp"
+      },
+      {
+        "alt": "用隧道建立机械与交通联想 (3)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/tunnel-background.webp"
+      },
+      {
+        "alt": "将耳蜗结构转译为空间轮廓 (4)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/cochlea-background.webp"
+      },
+      {
+        "alt": "用洁净实验室建立医疗训练联想 (5)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/medical-lab-background.webp"
+      },
+      {
+        "alt": "用蓝色空间建立通用实训场域 (6)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/blue-training-space-background.webp"
+      },
+      {
+        "alt": "用拱形空间建立沉浸式训练场域 (7)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/arched-training-space-background.webp"
+      },
+      {
+        "alt": "用模具空间建立工业设备联想 (8)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/injection-background.webp"
+      },
+      {
+        "alt": "犬体结构界面：玻璃态面板与发光选中状态",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/dog-muscle-highlight.png"
+      },
+      {
+        "alt": "线性功能图标系统：统一线型与反差投影",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1550,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/cover.png"
+      },
+      {
+        "alt": "智能制造 VR 液力自动变速器首页视觉",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/transmission-home.webp"
+      },
+      {
+        "alt": "变速器结构说明 — 信息面板",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/transmission-detail-exploded.png"
+      },
+      {
+        "alt": "工业机器人 — 首页展示",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/robot-home.webp"
+      },
+      {
+        "alt": "机器人机构说明 — 教学子页面",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/robot-detail-teaching.png"
+      },
+      {
+        "alt": "注塑两板式模具 — 首页展示",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/molding-home.webp"
+      },
+      {
+        "alt": "生物医疗 VR 首页视觉",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/hero.webp"
+      },
+      {
+        "alt": "犬体结构 — 骨骼 / 肌肉 / 外观",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/dog-muscle-highlight.png"
+      },
+      {
+        "alt": "小脑结构 — 恢复 / 整体移动",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/brain-exploded-overview.webp"
+      },
+      {
+        "alt": "耳朵的结构 — 首页展示",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/ear-home.webp"
+      },
+      {
+        "alt": "耳蜗结构 — 结构说明",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/ear-detail-structure.png"
+      },
+      {
+        "alt": "动物解剖 VR 场景概览",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/dog-anatomy-scene-2.webp"
+      },
+      {
+        "alt": "狗解剖 — 结构教学 / 交互状态",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/dog-anatomy-scene-1.webp"
+      },
+      {
+        "alt": "猫解剖 — 交互状态",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/pig-scene-3.webp"
+      },
+      {
+        "alt": "猫解剖 — 结构教学 / 场景概览",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/cat-skeleton-system.png"
+      },
+      {
+        "alt": "补充 UI 界面 — 课程列表 / 引导弹窗",
+        "complete": true,
+        "loading": "eager",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/pig-guide-1.webp"
+      },
+      {
+        "alt": "补充 UI 界面 — 课程列表 / 引导弹窗 (2)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/pig-guide-2.webp"
+      },
+      {
+        "alt": "补充 UI 界面 — 课程列表 / 引导弹窗 (3)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/pig-course-list.png"
+      },
+      {
+        "alt": "电机 VR 实训应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/motor.png"
+      },
+      {
+        "alt": "工业机器人伺服电机拆装VR教学系统应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/motor.png"
+      },
+      {
+        "alt": "工业机器人技术应用\nVR实训软件应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/application.png"
+      },
+      {
+        "alt": "工业机器人岗位\nVR实训系统应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/position.png"
+      },
+      {
+        "alt": "机电产品DIY\n智慧课堂实训系统应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/electromechanical.png"
+      },
+      {
+        "alt": "牛解剖VR仿真软件应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/cattle.png"
+      },
+      {
+        "alt": "狗解剖VR仿真软件应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/dog.png"
+      },
+      {
+        "alt": "猫绝育VR仿真软件应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/cat.png"
+      },
+      {
+        "alt": "猪解剖VR仿真软件应用图标",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/pig-icon.png"
+      }
+    ],
+    "scrollY": 11496,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/projects/vr-education/",
+    "videos": [],
+    "width": 390,
+    "steps": 18,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5402,
+      6077,
+      6752,
+      7427,
+      8102,
+      8778,
+      9453,
+      10128,
+      10803,
+      11478,
+      11496
+    ],
+    "screenshot": "projects-vr-education--zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 16192,
+    "images": [
+      {
+        "alt": "Smart Manufacturing VR hydraulic transmission home screen",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/transmission-home.webp"
+      },
+      {
+        "alt": "Extract spatial associations from the course subject.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1456,
+        "src": "http://localhost:3000/images/visual/vr-education/process/barn-exploration.webp"
+      },
+      {
+        "alt": "Create a non-literal teaching space.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1456,
+        "src": "http://localhost:3000/images/visual/vr-education/process/barn-clean-space.webp"
+      },
+      {
+        "alt": "Reduce detail noise and push the background back. Control color, lighting, and spatial credibility.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/cattle-background-final.webp"
+      },
+      {
+        "alt": "Confirm the model, title, and entry points still lead visually.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/cattle-interface-final.webp"
+      },
+      {
+        "alt": "A cave-like space suggests animal habitats",
+        "complete": true,
+        "loading": "eager",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/animal-cave-background.webp"
+      },
+      {
+        "alt": "A husbandry space suggests animal care (2)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/husbandry-atmosphere-background.webp"
+      },
+      {
+        "alt": "A tunnel cue suggests mechanics and mobility (3)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/tunnel-background.webp"
+      },
+      {
+        "alt": "Cochlea forms translated into spatial contours (4)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/cochlea-background.webp"
+      },
+      {
+        "alt": "A clean lab space suggests medical training (5)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/medical-lab-background.webp"
+      },
+      {
+        "alt": "A blue space creates a general training field (6)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/blue-training-space-background.webp"
+      },
+      {
+        "alt": "An arched space creates an immersive training field (7)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/arched-training-space-background.webp"
+      },
+      {
+        "alt": "A mold-like space suggests industrial equipment (8)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/vr-education/process/injection-background.webp"
+      },
+      {
+        "alt": "Canine structure UI with glass panels and glowing selection state",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/dog-muscle-highlight.png"
+      },
+      {
+        "alt": "Linear icon system with shared stroke weight and contrast shadow",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1550,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/cover.png"
+      },
+      {
+        "alt": "Smart Manufacturing VR hydraulic transmission home screen",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/transmission-home.webp"
+      },
+      {
+        "alt": "Transmission structure — Info panel",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/transmission-detail-exploded.png"
+      },
+      {
+        "alt": "Industrial robot — Home screen",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/robot-home.webp"
+      },
+      {
+        "alt": "Robot mechanism — Teaching subpage",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/robot-detail-teaching.png"
+      },
+      {
+        "alt": "Two-plate injection mold — Home screen",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/smart-manufacturing/molding-home.webp"
+      },
+      {
+        "alt": "Biomedical VR home screen",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/hero.webp"
+      },
+      {
+        "alt": "Canine body structure — Skeleton / muscle / surface",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/dog-muscle-highlight.png"
+      },
+      {
+        "alt": "Cerebellum structure — Reset / move as whole",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/brain-exploded-overview.webp"
+      },
+      {
+        "alt": "Ear structure — Home screen",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/ear-home.webp"
+      },
+      {
+        "alt": "Cochlea structure — Structure overview",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/ear-detail-structure.png"
+      },
+      {
+        "alt": "Animal anatomy VR scene overview",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/dog-anatomy-scene-2.webp"
+      },
+      {
+        "alt": "Dog anatomy — Structure teaching / interaction states",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/dog-anatomy-scene-1.webp"
+      },
+      {
+        "alt": "Cat anatomy — Interaction states",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/pig-scene-3.webp"
+      },
+      {
+        "alt": "Cat anatomy — Structure teaching / scene overview",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/cat-skeleton-system.png"
+      },
+      {
+        "alt": "Additional UI screens — Course list / onboarding dialogs",
+        "complete": true,
+        "loading": "eager",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/pig-guide-1.webp"
+      },
+      {
+        "alt": "Additional UI screens — Course list / onboarding dialogs (2)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1680,
+        "src": "http://localhost:3000/images/visual/animal-vr/pig-guide-2.webp"
+      },
+      {
+        "alt": "Additional UI screens — Course list / onboarding dialogs (3)",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/visual/animal-vr/pig-course-list.png"
+      },
+      {
+        "alt": "Motor VR training app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/motor.png"
+      },
+      {
+        "alt": "Industrial Robot Servo Motor Assembly VR Teaching System app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/motor.png"
+      },
+      {
+        "alt": "Industrial Robot Technology Application VR Training Software app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/application.png"
+      },
+      {
+        "alt": "Industrial Robot Position VR Training System app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/position.png"
+      },
+      {
+        "alt": "Mechatronics Product DIY Smart Classroom Training System app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/electromechanical.png"
+      },
+      {
+        "alt": "Cattle Anatomy VR Simulation Software app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/cattle.png"
+      },
+      {
+        "alt": "Dog Anatomy VR Simulation Software app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/dog.png"
+      },
+      {
+        "alt": "Cat Neutering VR Simulation Software app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/cat.png"
+      },
+      {
+        "alt": "Pig Anatomy VR Simulation Software app icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/visual/vr-education/icons/pig-icon.png"
+      }
+    ],
+    "scrollY": 15348,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/projects/vr-education/",
+    "videos": [],
+    "width": 1280,
+    "steps": 23,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5402,
+      6077,
+      6752,
+      7427,
+      8102,
+      8778,
+      9453,
+      10128,
+      10803,
+      11478,
+      12154,
+      12829,
+      13504,
+      14179,
+      14854,
+      15348
+    ],
+    "screenshot": "projects-vr-education--en-1280-full.jpg"
+  },
+  {
+    "documentWidth": 390,
+    "height": 12376,
+    "images": [
+      {
+        "alt": "XR课件封面：笔记本电脑上的3D课件编辑器",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/xr-courseware/cover.webp"
+      },
+      {
+        "alt": "原有课件编辑界面：左侧集中工具与模型素材，中央用于内容展示。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1600,
+        "src": "http://localhost:3000/images/xr-courseware/legacy-editor.webp"
+      },
+      {
+        "alt": "PowerPoint 当时的界面参考",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 788,
+        "src": "http://localhost:3000/images/xr-courseware/reference-powerpoint.webp"
+      },
+      {
+        "alt": "Google Slides 当时的界面参考",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 788,
+        "src": "http://localhost:3000/images/xr-courseware/reference-google-slides.webp"
+      },
+      {
+        "alt": "XR课件创作演示，包含页面列表、编辑画布与3D内容",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1440,
+        "src": "http://localhost:3000/images/xr-courseware/editor.webp"
+      },
+      {
+        "alt": "编辑器内的专业资源选择：分类、搜索与模型插入集中在课件旁。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1440,
+        "src": "http://localhost:3000/images/xr-courseware/resources.webp"
+      },
+      {
+        "alt": "调整前: 资源弹窗遮挡课件",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1102,
+        "src": "http://localhost:3000/images/xr-courseware/resources-before.webp"
+      },
+      {
+        "alt": "调整后: 资源与课件并排，可拖动调整",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1102,
+        "src": "http://localhost:3000/images/xr-courseware/resources-after.webp"
+      },
+      {
+        "alt": "调整前: 反复选择、隐藏其他部件",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 930,
+        "src": "http://localhost:3000/images/xr-courseware/focus-before.webp"
+      },
+      {
+        "alt": "调整后: 双击聚焦，复位回到整体",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1248,
+        "src": "http://localhost:3000/images/xr-courseware/focus-after.webp"
+      },
+      {
+        "alt": "模型讲解界面及原项目标注：材质预设、3D讲解录制入口、复位与帮助。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 2000,
+        "src": "http://localhost:3000/images/xr-courseware/model-teaching.webp"
+      },
+      {
+        "alt": "项目中的多端展示示意：手机、Web 与 VR 场景。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1600,
+        "src": "http://localhost:3000/images/xr-courseware/devices.webp"
+      }
+    ],
+    "scrollY": 11532,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/projects/xr-courseware/",
+    "videos": [],
+    "width": 390,
+    "steps": 18,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5402,
+      6077,
+      6752,
+      7427,
+      8102,
+      8778,
+      9453,
+      10128,
+      10803,
+      11478,
+      11532
+    ],
+    "screenshot": "projects-xr-courseware--zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 11158,
+    "images": [
+      {
+        "alt": "XR Courseware cover: the 3D lesson editor on a laptop",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/xr-courseware/cover.webp"
+      },
+      {
+        "alt": "The earlier editor: tools and model resources on the left, with a central content area.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1600,
+        "src": "http://localhost:3000/images/xr-courseware/legacy-editor.webp"
+      },
+      {
+        "alt": "PowerPoint interface reference from the original project",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 788,
+        "src": "http://localhost:3000/images/xr-courseware/reference-powerpoint.webp"
+      },
+      {
+        "alt": "Google Slides interface reference from the original project",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 788,
+        "src": "http://localhost:3000/images/xr-courseware/reference-google-slides.webp"
+      },
+      {
+        "alt": "XR courseware creation demo with a slide list, editing canvas, and 3D content",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1440,
+        "src": "http://localhost:3000/images/xr-courseware/editor.webp"
+      },
+      {
+        "alt": "Professional resource selection within the editor: categories, search, and model insertion beside the lesson.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1440,
+        "src": "http://localhost:3000/images/xr-courseware/resources.webp"
+      },
+      {
+        "alt": "Before: The resource dialog covers the lesson",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1102,
+        "src": "http://localhost:3000/images/xr-courseware/resources-before.webp"
+      },
+      {
+        "alt": "After: Resources sit beside the lesson and can be resized",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1102,
+        "src": "http://localhost:3000/images/xr-courseware/resources-after.webp"
+      },
+      {
+        "alt": "Before: Repeatedly select and hide other parts",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 930,
+        "src": "http://localhost:3000/images/xr-courseware/focus-before.webp"
+      },
+      {
+        "alt": "After: Double-click to focus, reset to return",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1248,
+        "src": "http://localhost:3000/images/xr-courseware/focus-after.webp"
+      },
+      {
+        "alt": "Model explanation interface with original annotations for presets, recording, reset, and help.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 2000,
+        "src": "http://localhost:3000/images/xr-courseware/model-teaching.webp"
+      },
+      {
+        "alt": "A multi-device illustration from the original project: mobile, web, and VR contexts.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1600,
+        "src": "http://localhost:3000/images/xr-courseware/devices.webp"
+      }
+    ],
+    "scrollY": 10314,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/projects/xr-courseware/",
+    "videos": [],
+    "width": 1280,
+    "steps": 16,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5402,
+      6077,
+      6752,
+      7427,
+      8102,
+      8778,
+      9453,
+      10128,
+      10314
+    ],
+    "screenshot": "projects-xr-courseware--en-1280-full.jpg"
+  },
+  {
+    "documentWidth": 390,
+    "height": 2480,
+    "images": [
+      {
+        "alt": "复杂发动机原始 3D 模型",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1000,
+        "src": "http://localhost:3000/images/visual/engine-icon/source-model.webp"
+      },
+      {
+        "alt": "发动机图标第一次简化的浅蓝色版本",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 900,
+        "src": "http://localhost:3000/images/visual/engine-icon/render-test-light.webp"
+      },
+      {
+        "alt": "发动机图标简化后的蓝色方向",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 900,
+        "src": "http://localhost:3000/images/visual/engine-icon/render-test-simplified.webp"
+      },
+      {
+        "alt": "同一系列的 3D 软件图标风格",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1880,
+        "src": "http://localhost:3000/images/visual/engine-icon/icon-family.webp"
+      }
+    ],
+    "scrollY": 1636,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/projects/engine-icon/",
+    "videos": [
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/visual/engine-icon/hero-process.mp4"
+      }
+    ],
+    "width": 390,
+    "steps": 3,
+    "positions": [
+      0,
+      675,
+      1350,
+      1636
+    ],
+    "screenshot": "projects-engine-icon--zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 2156,
+    "images": [
+      {
+        "alt": "Complex original 3D engine model",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1000,
+        "src": "http://localhost:3000/images/visual/engine-icon/source-model.webp"
+      },
+      {
+        "alt": "Light-blue first simplification for the engine icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 900,
+        "src": "http://localhost:3000/images/visual/engine-icon/render-test-light.webp"
+      },
+      {
+        "alt": "Simplified blue direction for the engine icon",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 900,
+        "src": "http://localhost:3000/images/visual/engine-icon/render-test-simplified.webp"
+      },
+      {
+        "alt": "3D software icon family style",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1880,
+        "src": "http://localhost:3000/images/visual/engine-icon/icon-family.webp"
+      }
+    ],
+    "scrollY": 1312,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/projects/engine-icon/",
+    "videos": [
+      {
+        "controls": false,
+        "muted": true,
+        "paused": true,
+        "readyState": 4,
+        "src": "http://localhost:3000/videos/visual/engine-icon/hero-process.mp4"
+      }
+    ],
+    "width": 1280,
+    "steps": 2,
+    "positions": [
+      0,
+      675,
+      1312
+    ],
+    "screenshot": "projects-engine-icon--en-1280-full.jpg"
+  },
+  {
+    "documentWidth": 390,
+    "height": 5762,
+    "images": [
+      {
+        "alt": "改版后的资源库：从关键词搜索或专业分类进入，浏览不同形式的教学素材。",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "突出搜索",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "展开分类",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "统一浏览",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "搜索与导航、上传入口并列，视觉优先级较低。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/before.webp"
+      },
+      {
+        "alt": "首屏中央突出搜索，提示可查找 VR 与 3D 资源。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "专业与类型收在下拉菜单中，可选范围需要展开查看。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/before.webp"
+      },
+      {
+        "alt": "专业大类直接展示，下方按类型、精品与排序进一步组织列表。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "页面按推荐、专题分段，图中资源以模型为主。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/before.webp"
+      },
+      {
+        "alt": "统一网格呈现 VR、3D、课件、图片、视频和音频，角标提示内容形式。",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      }
+    ],
+    "scrollY": 4918,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/projects/resource-library/",
+    "videos": [],
+    "width": 390,
+    "steps": 8,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      4918
+    ],
+    "screenshot": "projects-resource-library--zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 6137,
+    "images": [
+      {
+        "alt": "The redesigned library: start with a keyword or subject, then browse different teaching resource formats.",
+        "complete": true,
+        "loading": "auto",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "Prominent search",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "Visible categories",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "Consistent browsing",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "Search shares attention with navigation and upload controls.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/before.webp"
+      },
+      {
+        "alt": "The hero highlights search and explicitly mentions VR and 3D resources.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "Subject and type options require opening dropdown menus.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/before.webp"
+      },
+      {
+        "alt": "Visible subjects establish context; type, featured, and sorting controls refine the list.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      },
+      {
+        "alt": "Recommendations and topics form separate sections, dominated here by models.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/before.webp"
+      },
+      {
+        "alt": "VR, 3D, presentations, images, video, and audio share one grid, with icons identifying formats.",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1920,
+        "src": "http://localhost:3000/images/resource-library/after.webp"
+      }
+    ],
+    "scrollY": 5293,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/projects/resource-library/",
+    "videos": [],
+    "width": 1280,
+    "steps": 8,
+    "positions": [
+      0,
+      675,
+      1350,
+      2026,
+      2701,
+      3376,
+      4051,
+      4726,
+      5293
+    ],
+    "screenshot": "projects-resource-library--en-1280-full.jpg"
+  },
+  {
+    "documentWidth": 390,
+    "height": 1590,
+    "images": [
+      {
+        "alt": "Sticky Notes 界面预览",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1407,
+        "src": "http://localhost:3000/images/tools/personal-tools-cover.png"
+      },
+      {
+        "alt": "Next 界面预览",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/tools/next-cover.png"
+      },
+      {
+        "alt": "T-Day 界面预览",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/tools/tday-cover.png"
+      }
+    ],
+    "scrollY": 746,
+    "textOverflow": [],
+    "url": "http://localhost:3000/zh/projects/personal-tools/",
+    "videos": [],
+    "width": 390,
+    "steps": 2,
+    "positions": [
+      0,
+      675,
+      746
+    ],
+    "screenshot": "projects-personal-tools--zh-390-full.jpg"
+  },
+  {
+    "documentWidth": 1280,
+    "height": 873,
+    "images": [
+      {
+        "alt": "Sticky Notes interface preview",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1407,
+        "src": "http://localhost:3000/images/tools/personal-tools-cover.png"
+      },
+      {
+        "alt": "Next interface preview",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/tools/next-cover.png"
+      },
+      {
+        "alt": "T-Day interface preview",
+        "complete": true,
+        "loading": "lazy",
+        "naturalWidth": 1024,
+        "src": "http://localhost:3000/images/tools/tday-cover.png"
+      }
+    ],
+    "scrollY": 29,
+    "textOverflow": [],
+    "url": "http://localhost:3000/en/projects/personal-tools/",
+    "videos": [],
+    "width": 1280,
+    "steps": 1,
+    "positions": [
+      0,
+      29
+    ],
+    "screenshot": "projects-personal-tools--en-1280-full.jpg"
+  }
+]

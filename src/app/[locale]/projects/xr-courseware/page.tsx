@@ -1,3 +1,4 @@
+import { CaseDesignList } from "@/components/CaseDesignList";
 import Image from "next/image";
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
 import Link from "next/link";
@@ -127,13 +128,13 @@ export default async function XRCoursewarePage({ params }: { params: Promise<{ l
           </section>
           <section className={sectionClass} aria-label={keyDesign("02")}>
             <Narrative label={keyDesign("02")} title={c.layout} body={c.layoutBody}>
-              <div className={styles.decisions}><h3>{c.decision}</h3><ul>{c.layoutPoints.map(p => <li key={p}>{p}</li>)}</ul></div>
+              <div className={styles.decisions}><h3>{c.decision}</h3><CaseDesignList>{c.layoutPoints.map(p => <li key={p}>{p}</li>)}</CaseDesignList></div>
               <Comparison type="resources" locale={locale} caption={c.layoutCaption} />
             </Narrative>
           </section>
           <section className={sectionClass} aria-label={keyDesign("03")}>
             <Narrative label={keyDesign("03")} title={c.focus} body={c.focusBody}>
-              <div className={styles.decisions}><h3>{c.decision}</h3><ul>{c.focusPoints.map(p => <li key={p}>{p}</li>)}</ul></div>
+              <div className={styles.decisions}><h3>{c.decision}</h3><CaseDesignList>{c.focusPoints.map(p => <li key={p}>{p}</li>)}</CaseDesignList></div>
               <Comparison type="focus" locale={locale} caption={c.focusCaption} />
             </Narrative>
           </section>

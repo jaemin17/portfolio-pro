@@ -1,0 +1,2494 @@
+{
+  "categories": [
+    {
+      "locale": "zh",
+      "width": 390,
+      "category": "全部",
+      "cards": [
+        {
+          "description": "记录、回看与自我探索",
+          "href": "/zh/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "独立应用 · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "材质、颜色和模型结构编辑",
+          "href": "/zh/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D 课件工具 · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          "href": "/zh/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR 仿真 · XR",
+          "tags": 0,
+          "title": "VR 教育与实训"
+        },
+        {
+          "description": "为日常需要做的三个轻量小工具",
+          "href": "/zh/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "独立工具 · Web",
+          "tags": 0,
+          "title": "个人工具"
+        },
+        {
+          "description": "将复杂发动机模型转译为可识别的软件入口图标。",
+          "href": "/zh/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "图标系统 · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "选择专业模型，组织可在头盔端查看的教学课件",
+          "href": "/zh/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "课程工具 · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 390,
+      "category": "产品系统",
+      "cards": [
+        {
+          "description": "为日常需要做的三个轻量小工具",
+          "href": "/zh/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "独立工具 · Web",
+          "tags": 0,
+          "title": "个人工具"
+        },
+        {
+          "description": "材质、颜色和模型结构编辑",
+          "href": "/zh/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D 课件工具 · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "模型资源浏览与预览",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            }
+          ],
+          "meta": "XR 工具 · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "选择专业模型，组织可在头盔端查看的教学课件",
+          "href": "/zh/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "课程工具 · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "跨端 VR 课堂协同：头显学习、平板控场、网页管资源",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            }
+          ],
+          "meta": "多端协同 · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "围绕搜索、分类与浏览，重新组织教学资源查找体验。",
+          "href": "/zh/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "资源平台 · Web",
+          "tags": 0,
+          "title": "云平台 · 资源库"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 390,
+      "category": "XR / 3D",
+      "cards": [
+        {
+          "description": "材质、颜色和模型结构编辑",
+          "href": "/zh/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D 课件工具 · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "模型资源浏览与预览",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/xr-script.mp4"
+            }
+          ],
+          "meta": "XR 工具 · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "选择专业模型，组织可在头盔端查看的教学课件",
+          "href": "/zh/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "课程工具 · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "跨端 VR 课堂协同：头显学习、平板控场、网页管资源",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            }
+          ],
+          "meta": "多端协同 · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          "href": "/zh/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR 仿真 · XR",
+          "tags": 0,
+          "title": "VR 教育与实训"
+        },
+        {
+          "description": "将复杂发动机模型转译为可识别的软件入口图标。",
+          "href": "/zh/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "图标系统 · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "游戏概念 · AR/VR",
+          "tags": 0,
+          "title": "游戏概念"
+        },
+        {
+          "description": "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "住宿体验 · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 390,
+      "category": "视觉系统",
+      "cards": [
+        {
+          "description": "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          "href": "/zh/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR 仿真 · XR",
+          "tags": 0,
+          "title": "VR 教育与实训"
+        },
+        {
+          "description": "面向海外市场的 XR 教育产品官网表达。",
+          "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/new-visual-work-home-en.png"
+            }
+          ],
+          "meta": "公司官网 · XR",
+          "tags": 0,
+          "title": "海外官网"
+        },
+        {
+          "description": "将复杂发动机模型转译为可识别的软件入口图标。",
+          "href": "/zh/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "图标系统 · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "围绕搜索、分类与浏览，重新组织教学资源查找体验。",
+          "href": "/zh/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "资源平台 · Web",
+          "tags": 0,
+          "title": "云平台 · 资源库"
+        },
+        {
+          "description": "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "游戏概念 · AR/VR",
+          "tags": 0,
+          "title": "游戏概念"
+        },
+        {
+          "description": "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "住宿体验 · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 390,
+      "category": "个人探索",
+      "cards": [
+        {
+          "description": "记录、回看与自我探索",
+          "href": "/zh/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "独立应用 · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "为日常需要做的三个轻量小工具",
+          "href": "/zh/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "独立工具 · Web",
+          "tags": 0,
+          "title": "个人工具"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 1164,
+      "category": "全部",
+      "cards": [
+        {
+          "description": "记录、回看与自我探索",
+          "href": "/zh/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "独立应用 · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "材质、颜色和模型结构编辑",
+          "href": "/zh/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D 课件工具 · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          "href": "/zh/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR 仿真 · XR",
+          "tags": 0,
+          "title": "VR 教育与实训"
+        },
+        {
+          "description": "为日常需要做的三个轻量小工具",
+          "href": "/zh/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "独立工具 · Web",
+          "tags": 0,
+          "title": "个人工具"
+        },
+        {
+          "description": "将复杂发动机模型转译为可识别的软件入口图标。",
+          "href": "/zh/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "图标系统 · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "选择专业模型，组织可在头盔端查看的教学课件",
+          "href": "/zh/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "课程工具 · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 1164,
+      "category": "产品系统",
+      "cards": [
+        {
+          "description": "为日常需要做的三个轻量小工具",
+          "href": "/zh/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "独立工具 · Web",
+          "tags": 0,
+          "title": "个人工具"
+        },
+        {
+          "description": "材质、颜色和模型结构编辑",
+          "href": "/zh/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D 课件工具 · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "模型资源浏览与预览",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            }
+          ],
+          "meta": "XR 工具 · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "选择专业模型，组织可在头盔端查看的教学课件",
+          "href": "/zh/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "课程工具 · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "跨端 VR 课堂协同：头显学习、平板控场、网页管资源",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            }
+          ],
+          "meta": "多端协同 · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "围绕搜索、分类与浏览，重新组织教学资源查找体验。",
+          "href": "/zh/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "资源平台 · Web",
+          "tags": 0,
+          "title": "云平台 · 资源库"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 1164,
+      "category": "XR / 3D",
+      "cards": [
+        {
+          "description": "材质、颜色和模型结构编辑",
+          "href": "/zh/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D 课件工具 · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "模型资源浏览与预览",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/xr-script.mp4"
+            }
+          ],
+          "meta": "XR 工具 · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "选择专业模型，组织可在头盔端查看的教学课件",
+          "href": "/zh/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "课程工具 · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "跨端 VR 课堂协同：头显学习、平板控场、网页管资源",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            }
+          ],
+          "meta": "多端协同 · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          "href": "/zh/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR 仿真 · XR",
+          "tags": 0,
+          "title": "VR 教育与实训"
+        },
+        {
+          "description": "将复杂发动机模型转译为可识别的软件入口图标。",
+          "href": "/zh/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "图标系统 · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "游戏概念 · AR/VR",
+          "tags": 0,
+          "title": "游戏概念"
+        },
+        {
+          "description": "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "住宿体验 · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 1164,
+      "category": "视觉系统",
+      "cards": [
+        {
+          "description": "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          "href": "/zh/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/visual/home-vr-education.mp4"
+            }
+          ],
+          "meta": "VR 仿真 · XR",
+          "tags": 0,
+          "title": "VR 教育与实训"
+        },
+        {
+          "description": "面向海外市场的 XR 教育产品官网表达。",
+          "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/new-visual-work-home-en.png"
+            }
+          ],
+          "meta": "公司官网 · XR",
+          "tags": 0,
+          "title": "海外官网"
+        },
+        {
+          "description": "将复杂发动机模型转译为可识别的软件入口图标。",
+          "href": "/zh/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "图标系统 · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "围绕搜索、分类与浏览，重新组织教学资源查找体验。",
+          "href": "/zh/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "资源平台 · Web",
+          "tags": 0,
+          "title": "云平台 · 资源库"
+        },
+        {
+          "description": "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "游戏概念 · AR/VR",
+          "tags": 0,
+          "title": "游戏概念"
+        },
+        {
+          "description": "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "住宿体验 · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "zh",
+      "width": 1164,
+      "category": "个人探索",
+      "cards": [
+        {
+          "description": "记录、回看与自我探索",
+          "href": "/zh/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "独立应用 · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "为日常需要做的三个轻量小工具",
+          "href": "/zh/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "独立工具 · Web",
+          "tags": 0,
+          "title": "个人工具"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "category": "All",
+      "cards": [
+        {
+          "description": "A journal for reflection and self-discovery",
+          "href": "/en/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "Independent App · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "Edit materials, colors, and model structure",
+          "href": "/en/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D Courseware Tool · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          "href": "/en/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR Simulation · XR",
+          "tags": 0,
+          "title": "VR Education & Training"
+        },
+        {
+          "description": "Three small tools for everyday needs",
+          "href": "/en/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "Independent Tools · Web",
+          "tags": 0,
+          "title": "Personal Tools"
+        },
+        {
+          "description": "Translating a complex engine model into a recognizable app icon.",
+          "href": "/en/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "Icon System · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "Create lessons with professional 3D models for headset viewing",
+          "href": "/en/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "Course Tool · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "category": "Product Systems",
+      "cards": [
+        {
+          "description": "Three small tools for everyday needs",
+          "href": "/en/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "Independent Tools · Web",
+          "tags": 0,
+          "title": "Personal Tools"
+        },
+        {
+          "description": "Edit materials, colors, and model structure",
+          "href": "/en/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D Courseware Tool · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "Browse and preview model assets",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            }
+          ],
+          "meta": "XR Tool · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "Create lessons with professional 3D models for headset viewing",
+          "href": "/en/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "Course Tool · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "Cross-platform VR classroom: headset learning, tablet control, web resource hub",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            }
+          ],
+          "meta": "Cross-device System · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "Reorganizing search, categories, and browsing for teaching resources.",
+          "href": "/en/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "Resource Platform · Web",
+          "tags": 0,
+          "title": "Cloud Platform · Resource Library"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "category": "XR / 3D",
+      "cards": [
+        {
+          "description": "Edit materials, colors, and model structure",
+          "href": "/en/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D Courseware Tool · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "Browse and preview model assets",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/xr-script.mp4"
+            }
+          ],
+          "meta": "XR Tool · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "Create lessons with professional 3D models for headset viewing",
+          "href": "/en/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "Course Tool · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "Cross-platform VR classroom: headset learning, tablet control, web resource hub",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            }
+          ],
+          "meta": "Cross-device System · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          "href": "/en/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR Simulation · XR",
+          "tags": 0,
+          "title": "VR Education & Training"
+        },
+        {
+          "description": "Translating a complex engine model into a recognizable app icon.",
+          "href": "/en/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "Icon System · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "UI visual design for a VR/AR desk-device experience game.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "Game Concept · AR/VR",
+          "tags": 0,
+          "title": "Game Concept"
+        },
+        {
+          "description": "AR experience design that blends digital information into real lodging spaces.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "Lodging Experience · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "category": "Visual Systems",
+      "cards": [
+        {
+          "description": "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          "href": "/en/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/visual/home-vr-education.mp4"
+            }
+          ],
+          "meta": "VR Simulation · XR",
+          "tags": 0,
+          "title": "VR Education & Training"
+        },
+        {
+          "description": "Overseas-facing website expression for XR education products.",
+          "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/new-visual-work-home-en.png"
+            }
+          ],
+          "meta": "Company Website · XR",
+          "tags": 0,
+          "title": "Overseas Official Website"
+        },
+        {
+          "description": "Translating a complex engine model into a recognizable app icon.",
+          "href": "/en/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "Icon System · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "Reorganizing search, categories, and browsing for teaching resources.",
+          "href": "/en/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "Resource Platform · Web",
+          "tags": 0,
+          "title": "Cloud Platform · Resource Library"
+        },
+        {
+          "description": "UI visual design for a VR/AR desk-device experience game.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "Game Concept · AR/VR",
+          "tags": 0,
+          "title": "Game Concept"
+        },
+        {
+          "description": "AR experience design that blends digital information into real lodging spaces.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "Lodging Experience · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "category": "Personal Explorations",
+      "cards": [
+        {
+          "description": "A journal for reflection and self-discovery",
+          "href": "/en/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "Independent App · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "Three small tools for everyday needs",
+          "href": "/en/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "Independent Tools · Web",
+          "tags": 0,
+          "title": "Personal Tools"
+        }
+      ],
+      "scrollWidth": 390,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 1164,
+      "category": "All",
+      "cards": [
+        {
+          "description": "A journal for reflection and self-discovery",
+          "href": "/en/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "Independent App · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "Edit materials, colors, and model structure",
+          "href": "/en/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D Courseware Tool · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          "href": "/en/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR Simulation · XR",
+          "tags": 0,
+          "title": "VR Education & Training"
+        },
+        {
+          "description": "Three small tools for everyday needs",
+          "href": "/en/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "Independent Tools · Web",
+          "tags": 0,
+          "title": "Personal Tools"
+        },
+        {
+          "description": "Translating a complex engine model into a recognizable app icon.",
+          "href": "/en/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "Icon System · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "Create lessons with professional 3D models for headset viewing",
+          "href": "/en/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "Course Tool · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 1164,
+      "category": "Product Systems",
+      "cards": [
+        {
+          "description": "Three small tools for everyday needs",
+          "href": "/en/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "Independent Tools · Web",
+          "tags": 0,
+          "title": "Personal Tools"
+        },
+        {
+          "description": "Edit materials, colors, and model structure",
+          "href": "/en/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D Courseware Tool · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "Browse and preview model assets",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            }
+          ],
+          "meta": "XR Tool · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "Create lessons with professional 3D models for headset viewing",
+          "href": "/en/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "Course Tool · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "Cross-platform VR classroom: headset learning, tablet control, web resource hub",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            }
+          ],
+          "meta": "Cross-device System · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "Reorganizing search, categories, and browsing for teaching resources.",
+          "href": "/en/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "Resource Platform · Web",
+          "tags": 0,
+          "title": "Cloud Platform · Resource Library"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 1164,
+      "category": "XR / 3D",
+      "cards": [
+        {
+          "description": "Edit materials, colors, and model structure",
+          "href": "/en/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D Courseware Tool · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "Browse and preview model assets",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/xr-script.mp4"
+            }
+          ],
+          "meta": "XR Tool · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "Create lessons with professional 3D models for headset viewing",
+          "href": "/en/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            }
+          ],
+          "meta": "Course Tool · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "Cross-platform VR classroom: headset learning, tablet control, web resource hub",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            }
+          ],
+          "meta": "Cross-device System · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          "href": "/en/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR Simulation · XR",
+          "tags": 0,
+          "title": "VR Education & Training"
+        },
+        {
+          "description": "Translating a complex engine model into a recognizable app icon.",
+          "href": "/en/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "Icon System · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "UI visual design for a VR/AR desk-device experience game.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "Game Concept · AR/VR",
+          "tags": 0,
+          "title": "Game Concept"
+        },
+        {
+          "description": "AR experience design that blends digital information into real lodging spaces.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "Lodging Experience · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 1164,
+      "category": "Visual Systems",
+      "cards": [
+        {
+          "description": "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          "href": "/en/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/visual/home-vr-education.mp4"
+            }
+          ],
+          "meta": "VR Simulation · XR",
+          "tags": 0,
+          "title": "VR Education & Training"
+        },
+        {
+          "description": "Overseas-facing website expression for XR education products.",
+          "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/new-visual-work-home-en.png"
+            }
+          ],
+          "meta": "Company Website · XR",
+          "tags": 0,
+          "title": "Overseas Official Website"
+        },
+        {
+          "description": "Translating a complex engine model into a recognizable app icon.",
+          "href": "/en/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "Icon System · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "Reorganizing search, categories, and browsing for teaching resources.",
+          "href": "/en/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "Resource Platform · Web",
+          "tags": 0,
+          "title": "Cloud Platform · Resource Library"
+        },
+        {
+          "description": "UI visual design for a VR/AR desk-device experience game.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "Game Concept · AR/VR",
+          "tags": 0,
+          "title": "Game Concept"
+        },
+        {
+          "description": "AR experience design that blends digital information into real lodging spaces.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "Lodging Experience · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    },
+    {
+      "locale": "en",
+      "width": 1164,
+      "category": "Personal Explorations",
+      "cards": [
+        {
+          "description": "A journal for reflection and self-discovery",
+          "href": "/en/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "Independent App · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "Three small tools for everyday needs",
+          "href": "/en/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "Independent Tools · Web",
+          "tags": 0,
+          "title": "Personal Tools"
+        }
+      ],
+      "scrollWidth": 1164,
+      "tags": 0
+    }
+  ],
+  "expanded": [
+    {
+      "locale": "zh",
+      "width": 390,
+      "cards": [
+        {
+          "description": "记录、回看与自我探索",
+          "href": "/zh/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "独立应用 · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "材质、颜色和模型结构编辑",
+          "href": "/zh/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D 课件工具 · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          "href": "/zh/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR 仿真 · XR",
+          "tags": 0,
+          "title": "VR 教育与实训"
+        },
+        {
+          "description": "为日常需要做的三个轻量小工具",
+          "href": "/zh/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "独立工具 · Web",
+          "tags": 0,
+          "title": "个人工具"
+        },
+        {
+          "description": "将复杂发动机模型转译为可识别的软件入口图标。",
+          "href": "/zh/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "图标系统 · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "模型资源浏览与预览",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            }
+          ],
+          "meta": "XR 工具 · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "选择专业模型，组织可在头盔端查看的教学课件",
+          "href": "/zh/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/ppt.mp4"
+            }
+          ],
+          "meta": "课程工具 · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "跨端 VR 课堂协同：头显学习、平板控场、网页管资源",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/sync-space.mp4"
+            }
+          ],
+          "meta": "多端协同 · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "面向海外市场的 XR 教育产品官网表达。",
+          "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/new-visual-work-home-en.png"
+            }
+          ],
+          "meta": "公司官网 · XR",
+          "tags": 0,
+          "title": "海外官网"
+        },
+        {
+          "description": "围绕搜索、分类与浏览，重新组织教学资源查找体验。",
+          "href": "/zh/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "资源平台 · Web",
+          "tags": 0,
+          "title": "云平台 · 资源库"
+        },
+        {
+          "description": "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "游戏概念 · AR/VR",
+          "tags": 0,
+          "title": "游戏概念"
+        },
+        {
+          "description": "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "住宿体验 · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ]
+    },
+    {
+      "locale": "zh",
+      "width": 1164,
+      "cards": [
+        {
+          "description": "记录、回看与自我探索",
+          "href": "/zh/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "独立应用 · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "材质、颜色和模型结构编辑",
+          "href": "/zh/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            }
+          ],
+          "meta": "3D 课件工具 · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "工业设备实训与生物医疗解剖等 VR 仿真软件的界面与视觉设计。",
+          "href": "/zh/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR 仿真 · XR",
+          "tags": 0,
+          "title": "VR 教育与实训"
+        },
+        {
+          "description": "为日常需要做的三个轻量小工具",
+          "href": "/zh/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "独立工具 · Web",
+          "tags": 0,
+          "title": "个人工具"
+        },
+        {
+          "description": "将复杂发动机模型转译为可识别的软件入口图标。",
+          "href": "/zh/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "图标系统 · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "模型资源浏览与预览",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/xr-script.mp4"
+            }
+          ],
+          "meta": "XR 工具 · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "选择专业模型，组织可在头盔端查看的教学课件",
+          "href": "/zh/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/ppt.mp4"
+            }
+          ],
+          "meta": "课程工具 · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "跨端 VR 课堂协同：头显学习、平板控场、网页管资源",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/sync-space.mp4"
+            }
+          ],
+          "meta": "多端协同 · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "面向海外市场的 XR 教育产品官网表达。",
+          "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/new-visual-work-home-en.png"
+            }
+          ],
+          "meta": "公司官网 · XR",
+          "tags": 0,
+          "title": "海外官网"
+        },
+        {
+          "description": "围绕搜索、分类与浏览，重新组织教学资源查找体验。",
+          "href": "/zh/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "资源平台 · Web",
+          "tags": 0,
+          "title": "云平台 · 资源库"
+        },
+        {
+          "description": "VR/AR 桌面设备体验游戏的 UI 视觉设计。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "游戏概念 · AR/VR",
+          "tags": 0,
+          "title": "游戏概念"
+        },
+        {
+          "description": "AR 增强现实 Airbnb 体验设计，将数字信息融入真实住宿场景。",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "住宿体验 · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "cards": [
+        {
+          "description": "A journal for reflection and self-discovery",
+          "href": "/en/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "Independent App · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "Edit materials, colors, and model structure",
+          "href": "/en/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            }
+          ],
+          "meta": "3D Courseware Tool · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          "href": "/en/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR Simulation · XR",
+          "tags": 0,
+          "title": "VR Education & Training"
+        },
+        {
+          "description": "Three small tools for everyday needs",
+          "href": "/en/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "Independent Tools · Web",
+          "tags": 0,
+          "title": "Personal Tools"
+        },
+        {
+          "description": "Translating a complex engine model into a recognizable app icon.",
+          "href": "/en/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "Icon System · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "Browse and preview model assets",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            }
+          ],
+          "meta": "XR Tool · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "Create lessons with professional 3D models for headset viewing",
+          "href": "/en/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/ppt.mp4"
+            }
+          ],
+          "meta": "Course Tool · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "Cross-platform VR classroom: headset learning, tablet control, web resource hub",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/sync-space.mp4"
+            }
+          ],
+          "meta": "Cross-device System · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "Overseas-facing website expression for XR education products.",
+          "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/new-visual-work-home-en.png"
+            }
+          ],
+          "meta": "Company Website · XR",
+          "tags": 0,
+          "title": "Overseas Official Website"
+        },
+        {
+          "description": "Reorganizing search, categories, and browsing for teaching resources.",
+          "href": "/en/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "Resource Platform · Web",
+          "tags": 0,
+          "title": "Cloud Platform · Resource Library"
+        },
+        {
+          "description": "UI visual design for a VR/AR desk-device experience game.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "Game Concept · AR/VR",
+          "tags": 0,
+          "title": "Game Concept"
+        },
+        {
+          "description": "AR experience design that blends digital information into real lodging spaces.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "Lodging Experience · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "width": 1164,
+      "cards": [
+        {
+          "description": "A journal for reflection and self-discovery",
+          "href": "/en/projects/selfly/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/selfly0/hero-750w.webp"
+            }
+          ],
+          "meta": "Independent App · iOS",
+          "tags": 0,
+          "title": "Selfly"
+        },
+        {
+          "description": "Edit materials, colors, and model structure",
+          "href": "/en/projects/model-editor/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/model.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/model.mp4"
+            }
+          ],
+          "meta": "3D Courseware Tool · Web",
+          "tags": 0,
+          "title": "Model Editor"
+        },
+        {
+          "description": "UI and visual design for VR simulation software across industrial training and biomedical anatomy.",
+          "href": "/en/projects/vr-education/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/visual/immersive.webp"
+            }
+          ],
+          "meta": "VR Simulation · XR",
+          "tags": 0,
+          "title": "VR Education & Training"
+        },
+        {
+          "description": "Three small tools for everyday needs",
+          "href": "/en/projects/personal-tools/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/tools/tday-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/next-cover.png"
+            },
+            {
+              "poster": null,
+              "src": "/images/tools/personal-tools-cover.png"
+            }
+          ],
+          "meta": "Independent Tools · Web",
+          "tags": 0,
+          "title": "Personal Tools"
+        },
+        {
+          "description": "Translating a complex engine model into a recognizable app icon.",
+          "href": "/en/projects/engine-icon/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/vector-to-3d-icons.webp"
+            }
+          ],
+          "meta": "Icon System · 3D",
+          "tags": 0,
+          "title": "3D Engine App Icon Design"
+        },
+        {
+          "description": "Browse and preview model assets",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/xr-script.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/xr-script.mp4"
+            }
+          ],
+          "meta": "XR Tool · Web",
+          "tags": 0,
+          "title": "XR Interactive Script Engine"
+        },
+        {
+          "description": "Create lessons with professional 3D models for headset viewing",
+          "href": "/en/projects/xr-courseware/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/ppt.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/ppt.mp4"
+            }
+          ],
+          "meta": "Course Tool · XR",
+          "tags": 0,
+          "title": "XR Courseware"
+        },
+        {
+          "description": "Cross-platform VR classroom: headset learning, tablet control, web resource hub",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/posters/tools/sync-space.webp"
+            },
+            {
+              "poster": null,
+              "src": "/videos/tools/sync-space.mp4"
+            }
+          ],
+          "meta": "Cross-device System · XR",
+          "tags": 0,
+          "title": "Sync Space"
+        },
+        {
+          "description": "Overseas-facing website expression for XR education products.",
+          "href": "https://www.figma.com/proto/GJ09IHSaa94p8KQAsRAx0m/Untitled?node-id=1-29&p=f&viewport=471%2C40%2C0.15&t=cQ0YzbifJaUVS61g-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/new-visual-work-home-en.png"
+            }
+          ],
+          "meta": "Company Website · XR",
+          "tags": 0,
+          "title": "Overseas Official Website"
+        },
+        {
+          "description": "Reorganizing search, categories, and browsing for teaching resources.",
+          "href": "/en/projects/resource-library/",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cloud-platform.webp"
+            }
+          ],
+          "meta": "Resource Platform · Web",
+          "tags": 0,
+          "title": "Cloud Platform · Resource Library"
+        },
+        {
+          "description": "UI visual design for a VR/AR desk-device experience game.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/cosmic-blaze-hero.webp"
+            }
+          ],
+          "meta": "Game Concept · AR/VR",
+          "tags": 0,
+          "title": "Game Concept"
+        },
+        {
+          "description": "AR experience design that blends digital information into real lodging spaces.",
+          "media": [
+            {
+              "poster": null,
+              "src": "/images/visual/ar-airbnb-scene-1.webp"
+            }
+          ],
+          "meta": "Lodging Experience · AR",
+          "tags": 0,
+          "title": "AR Airbnb"
+        }
+      ]
+    }
+  ]
+}

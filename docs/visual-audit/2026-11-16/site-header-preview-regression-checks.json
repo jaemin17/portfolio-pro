@@ -1,0 +1,632 @@
+[
+  {
+    "locale": "zh",
+    "route": "",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.9)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "route": "about/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.9)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/about/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "route": "projects/selfly/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/projects/selfly/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "route": "projects/model-editor/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/projects/model-editor/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "route": "projects/vr-education/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/projects/vr-education/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "route": "projects/xr-courseware/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/projects/xr-courseware/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "route": "projects/engine-icon/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/projects/engine-icon/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "route": "projects/resource-library/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/projects/resource-library/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "route": "projects/personal-tools/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/zh/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/en/projects/personal-tools/",
+        "size": "12px",
+        "target": null,
+        "text": "en"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.9)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "about/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.9)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/about/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "projects/selfly/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/projects/selfly/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "projects/model-editor/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/projects/model-editor/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "projects/vr-education/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/projects/vr-education/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "projects/xr-courseware/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/projects/xr-courseware/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "projects/engine-icon/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/projects/engine-icon/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "projects/resource-library/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/projects/resource-library/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "route": "projects/personal-tools/",
+    "buttons": 0,
+    "links": [
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/",
+        "size": "14px",
+        "target": null,
+        "text": "work"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "/en/about/",
+        "size": "14px",
+        "target": null,
+        "text": "about"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.6)",
+        "href": "https://drive.google.com/file/d/1ixfK3WGaswqJQ_xjclbjdxqZvugWPGaf/view",
+        "size": "14px",
+        "target": "_blank",
+        "text": "resume"
+      },
+      {
+        "color": "rgba(0, 0, 0, 0.4)",
+        "href": "/zh/projects/personal-tools/",
+        "size": "12px",
+        "target": null,
+        "text": "中文"
+      }
+    ]
+  }
+]

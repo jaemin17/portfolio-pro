@@ -1,3 +1,4 @@
+import { CaseDesignList } from "@/components/CaseDesignList";
 import Image from "next/image";
 import { InterfaceComparisonCarousel } from "./InterfaceComparisonCarousel";
 import Link from "next/link";
@@ -321,7 +322,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                   </p>
                   <div className={styles.narrativeDesignPoints}>
                     <h4>{t(locale, "设计决策", "Design Decisions")}</h4>
-                    <ul>
+                    <CaseDesignList>
                       <li>
                         <strong>{t(locale, "固定入口占高度", "Fixed entries use height")}</strong> →{" "}
                         {t(locale, "移到左侧", "move to the left")}
@@ -334,7 +335,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <strong>{t(locale, "右侧参数浮层", "Right parameter overlay")}</strong> →{" "}
                         {t(locale, "不挤压模型画布", "does not squeeze the model canvas")}
                       </li>
-                    </ul>
+                    </CaseDesignList>
                   </div>
                 </div>
               </div>
@@ -416,7 +417,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                   </p>
                   <div className={styles.narrativeDesignPoints}>
                     <h4>{t(locale, "设计决策", "Design Decisions")}</h4>
-                    <ul>
+                    <CaseDesignList>
                       <li>
                         <strong>{t(locale, "左侧固定面板", "Left fixed panel")}</strong>
                         {t(locale, "：内容多，部分操作不依赖模型视口", ": rich content, some actions don't need the viewport")}
@@ -433,7 +434,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <strong>{t(locale, "顶部过程控制", "Top process controls")}</strong>
                         {t(locale, "：辅助性操作，轻量图标降低视觉权重", ": secondary actions use light icons to reduce weight")}
                       </li>
-                    </ul>
+                    </CaseDesignList>
                   </div>
                 </div>
               </div>
@@ -493,7 +494,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                   </p>
                   <div className={styles.narrativeDesignPoints}>
                     <h4>{t(locale, "设计决策", "Design Decisions")}</h4>
-                    <ul>
+                    <CaseDesignList>
                       <li>
                         <strong>{t(locale, "关键入口保持可点击", "Key entries stay easy to hit")}</strong>
                         {t(locale, "：按钮和工具保持足够尺寸，降低点击门槛", ": controls stay large enough to tap easily")}
@@ -510,7 +511,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                         <strong>{t(locale, "隐藏次级说明", "Secondary help appears on demand")}</strong>
                         {t(locale, "：默认保持轻量，悬停、右键和快捷键提示补足说明", ": hover, context menus, and shortcuts add detail on demand")}
                       </li>
-                    </ul>
+                    </CaseDesignList>
                   </div>
                 </div>
               </div>
@@ -564,7 +565,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
 	                  </p>
                   <div className={styles.narrativeDesignPoints}>
                     <h4>{t(locale, "设计决策", "Design Decisions")}</h4>
-                    <ul>
+                    <CaseDesignList>
                       <li>
                         <strong>{t(locale, "明确功能需要传达什么", "Clarify what each feature needs to communicate")}</strong>
                         {t(
@@ -589,7 +590,7 @@ export default async function ModelEditorPage({ params }: ModelEditorPageProps) 
                           ": explain the object, scope, and expected result before users start editing",
                         )}
                       </li>
-                    </ul>
+                    </CaseDesignList>
                   </div>
                 </div>
               </div>

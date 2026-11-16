@@ -90,7 +90,7 @@ function ToolProjectCard({
             : undefined
         }
       >
-        {media}
+        <div className={styles.toolMedia}>{media}</div>
         {unavailable ? (
           <div className={styles.toolUnavailableOverlay} aria-hidden="true">
             <span className={styles.toolUnavailableText}>{item.statusLabel}</span>
@@ -104,15 +104,6 @@ function ToolProjectCard({
           </p>
           {item.meta ? <p className={styles.toolMeta}>{item.meta}</p> : null}
           <p className={styles.toolDescription}>{item.description}</p>
-          {item.tags?.length ? (
-            <ul className={styles.toolTags} aria-label={`${item.title} tags`}>
-              {item.tags.map((tag) => (
-                <li key={tag} className={styles.toolTag}>
-                  {tag}
-                </li>
-              ))}
-            </ul>
-          ) : null}
         </div>
       ) : null}
     </>

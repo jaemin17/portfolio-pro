@@ -1,0 +1,338 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "url": "http://localhost:3000/zh/style-guide/#components",
+    "liveLinks": 4,
+    "preview": [
+      {
+        "pressed": "true",
+        "size": "16px",
+        "text": "文字"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "色彩"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "布局"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "组件"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "形状"
+      },
+      {
+        "pressed": "false",
+        "size": "14px",
+        "text": "work"
+      },
+      {
+        "pressed": "true",
+        "size": "14px",
+        "text": "about"
+      },
+      {
+        "pressed": "false",
+        "size": "14px",
+        "text": "resume"
+      },
+      {
+        "pressed": "false",
+        "size": "12px",
+        "text": "en"
+      }
+    ],
+    "scrollWidth": 390,
+    "sections": [
+      "文字",
+      "色彩",
+      "布局",
+      "组件",
+      "形状"
+    ],
+    "siteMenuIds": 1,
+    "toc": [
+      {
+        "text": "文字",
+        "valid": true
+      },
+      {
+        "text": "色彩",
+        "valid": true
+      },
+      {
+        "text": "布局",
+        "valid": true
+      },
+      {
+        "text": "组件",
+        "valid": true
+      },
+      {
+        "text": "形状",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "locale": "zh",
+    "width": 1164,
+    "url": "http://localhost:3000/zh/style-guide/#components",
+    "liveLinks": 4,
+    "preview": [
+      {
+        "pressed": "true",
+        "size": "16px",
+        "text": "文字"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "色彩"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "布局"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "组件"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "形状"
+      },
+      {
+        "pressed": "false",
+        "size": "14px",
+        "text": "work"
+      },
+      {
+        "pressed": "true",
+        "size": "14px",
+        "text": "about"
+      },
+      {
+        "pressed": "false",
+        "size": "14px",
+        "text": "resume"
+      },
+      {
+        "pressed": "false",
+        "size": "12px",
+        "text": "en"
+      }
+    ],
+    "scrollWidth": 1164,
+    "sections": [
+      "文字",
+      "色彩",
+      "布局",
+      "组件",
+      "形状"
+    ],
+    "siteMenuIds": 1,
+    "toc": [
+      {
+        "text": "文字",
+        "valid": true
+      },
+      {
+        "text": "色彩",
+        "valid": true
+      },
+      {
+        "text": "布局",
+        "valid": true
+      },
+      {
+        "text": "组件",
+        "valid": true
+      },
+      {
+        "text": "形状",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "url": "http://localhost:3000/en/style-guide/#components",
+    "liveLinks": 4,
+    "preview": [
+      {
+        "pressed": "true",
+        "size": "16px",
+        "text": "Typography"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "Colors"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "Layout"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "Components"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "Shape"
+      },
+      {
+        "pressed": "false",
+        "size": "14px",
+        "text": "work"
+      },
+      {
+        "pressed": "true",
+        "size": "14px",
+        "text": "about"
+      },
+      {
+        "pressed": "false",
+        "size": "14px",
+        "text": "resume"
+      },
+      {
+        "pressed": "false",
+        "size": "12px",
+        "text": "中文"
+      }
+    ],
+    "scrollWidth": 390,
+    "sections": [
+      "Typography",
+      "Colors",
+      "Layout",
+      "Components",
+      "Shape"
+    ],
+    "siteMenuIds": 1,
+    "toc": [
+      {
+        "text": "Typography",
+        "valid": true
+      },
+      {
+        "text": "Colors",
+        "valid": true
+      },
+      {
+        "text": "Layout",
+        "valid": true
+      },
+      {
+        "text": "Components",
+        "valid": true
+      },
+      {
+        "text": "Shape",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "locale": "en",
+    "width": 1164,
+    "url": "http://localhost:3000/en/style-guide/#components",
+    "liveLinks": 4,
+    "preview": [
+      {
+        "pressed": "true",
+        "size": "16px",
+        "text": "Typography"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "Colors"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "Layout"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "Components"
+      },
+      {
+        "pressed": "false",
+        "size": "16px",
+        "text": "Shape"
+      },
+      {
+        "pressed": "false",
+        "size": "14px",
+        "text": "work"
+      },
+      {
+        "pressed": "true",
+        "size": "14px",
+        "text": "about"
+      },
+      {
+        "pressed": "false",
+        "size": "14px",
+        "text": "resume"
+      },
+      {
+        "pressed": "false",
+        "size": "12px",
+        "text": "中文"
+      }
+    ],
+    "scrollWidth": 1164,
+    "sections": [
+      "Typography",
+      "Colors",
+      "Layout",
+      "Components",
+      "Shape"
+    ],
+    "siteMenuIds": 1,
+    "toc": [
+      {
+        "text": "Typography",
+        "valid": true
+      },
+      {
+        "text": "Colors",
+        "valid": true
+      },
+      {
+        "text": "Layout",
+        "valid": true
+      },
+      {
+        "text": "Components",
+        "valid": true
+      },
+      {
+        "text": "Shape",
+        "valid": true
+      }
+    ]
+  }
+]

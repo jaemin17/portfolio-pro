@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "page": "selfly",
+      "target": "#reflection",
+      "current": [
+        "#reflection"
+      ]
+    },
+    {
+      "page": "model-editor",
+      "target": "#reflection",
+      "current": [
+        "#reflection"
+      ]
+    },
+    {
+      "page": "vr-education",
+      "target": "#app-icon-system",
+      "current": [
+        "#app-icon-system"
+      ]
+    },
+    {
+      "page": "xr-courseware",
+      "target": "#reflection",
+      "current": [
+        "#reflection"
+      ]
+    }
+  ],
+  "focus": {
+    "focusVisible": true,
+    "href": "#components",
+    "offset": "4px",
+    "outline": "rgb(147, 197, 253) solid 2px",
+    "text": "组件"
+  }
+}

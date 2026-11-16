@@ -1,0 +1,56 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "children": 1,
+    "scrollWidth": 390,
+    "size": "42px",
+    "text": "网站视觉规范",
+    "weight": "500"
+  },
+  {
+    "locale": "zh",
+    "width": 768,
+    "children": 1,
+    "scrollWidth": 768,
+    "size": "42px",
+    "text": "网站视觉规范",
+    "weight": "500"
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "children": 1,
+    "scrollWidth": 1280,
+    "size": "42px",
+    "text": "网站视觉规范",
+    "weight": "500"
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "children": 1,
+    "scrollWidth": 390,
+    "size": "42px",
+    "text": "Website visual guidelines",
+    "weight": "500"
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "children": 1,
+    "scrollWidth": 768,
+    "size": "42px",
+    "text": "Website visual guidelines",
+    "weight": "500"
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "children": 1,
+    "scrollWidth": 1280,
+    "size": "42px",
+    "text": "Website visual guidelines",
+    "weight": "500"
+  }
+]

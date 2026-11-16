@@ -1,0 +1,146 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "class": "CaseDesignList-module__IWmkoa__list",
+    "color": "rgba(0, 0, 0, 0.6)",
+    "items": [
+      {
+        "gap": null,
+        "text": "让主要内容更容易识别"
+      },
+      {
+        "gap": 8,
+        "text": "将相关操作放在一起"
+      },
+      {
+        "gap": 8,
+        "text": "在需要时提供清晰反馈"
+      }
+    ],
+    "lineHeight": "26.4px",
+    "scrollWidth": 390,
+    "size": "16px",
+    "y": 0.15625
+  },
+  {
+    "locale": "zh",
+    "width": 768,
+    "class": "CaseDesignList-module__IWmkoa__list",
+    "color": "rgba(0, 0, 0, 0.6)",
+    "items": [
+      {
+        "gap": null,
+        "text": "让主要内容更容易识别"
+      },
+      {
+        "gap": 8,
+        "text": "将相关操作放在一起"
+      },
+      {
+        "gap": 8,
+        "text": "在需要时提供清晰反馈"
+      }
+    ],
+    "lineHeight": "26.4px",
+    "scrollWidth": 768,
+    "size": "16px",
+    "y": 0.1015625
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "class": "CaseDesignList-module__IWmkoa__list",
+    "color": "rgba(0, 0, 0, 0.6)",
+    "items": [
+      {
+        "gap": null,
+        "text": "让主要内容更容易识别"
+      },
+      {
+        "gap": 8,
+        "text": "将相关操作放在一起"
+      },
+      {
+        "gap": 8,
+        "text": "在需要时提供清晰反馈"
+      }
+    ],
+    "lineHeight": "26.4px",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "y": -0.0625
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "class": "CaseDesignList-module__IWmkoa__list",
+    "color": "rgba(0, 0, 0, 0.6)",
+    "items": [
+      {
+        "gap": null,
+        "text": "Make the main content easy to identify"
+      },
+      {
+        "gap": 8,
+        "text": "Keep related actions together"
+      },
+      {
+        "gap": 8,
+        "text": "Provide clear feedback when it is needed"
+      }
+    ],
+    "lineHeight": "26.4px",
+    "scrollWidth": 390,
+    "size": "16px",
+    "y": -0.1484375
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "class": "CaseDesignList-module__IWmkoa__list",
+    "color": "rgba(0, 0, 0, 0.6)",
+    "items": [
+      {
+        "gap": null,
+        "text": "Make the main content easy to identify"
+      },
+      {
+        "gap": 8,
+        "text": "Keep related actions together"
+      },
+      {
+        "gap": 8,
+        "text": "Provide clear feedback when it is needed"
+      }
+    ],
+    "lineHeight": "26.4px",
+    "scrollWidth": 768,
+    "size": "16px",
+    "y": 0.015625
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "class": "CaseDesignList-module__IWmkoa__list",
+    "color": "rgba(0, 0, 0, 0.6)",
+    "items": [
+      {
+        "gap": null,
+        "text": "Make the main content easy to identify"
+      },
+      {
+        "gap": 8,
+        "text": "Keep related actions together"
+      },
+      {
+        "gap": 8,
+        "text": "Provide clear feedback when it is needed"
+      }
+    ],
+    "lineHeight": "26.4px",
+    "scrollWidth": 1280,
+    "size": "16px",
+    "y": 0.203125
+  }
+]

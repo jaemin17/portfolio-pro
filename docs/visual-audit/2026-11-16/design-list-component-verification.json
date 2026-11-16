@@ -1,0 +1,150 @@
+{
+  "afterCases": 24,
+  "beforeComparedCases": 16,
+  "geometryUnchanged": true,
+  "protectedRecordsCompared": 1684,
+  "errors": [],
+  "containerInheritanceOnlyChanges": [
+    [
+      "zh",
+      390,
+      "lineHeight",
+      "28.8px",
+      "26.4px"
+    ],
+    [
+      "zh",
+      390,
+      "color",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 0.6)"
+    ],
+    [
+      "zh",
+      390,
+      "lineHeight",
+      "24px",
+      "26.4px"
+    ],
+    [
+      "zh",
+      390,
+      "color",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 0.6)"
+    ],
+    [
+      "zh",
+      390,
+      "lineHeight",
+      "24px",
+      "26.4px"
+    ],
+    [
+      "zh",
+      1280,
+      "lineHeight",
+      "28.8px",
+      "26.4px"
+    ],
+    [
+      "zh",
+      1280,
+      "color",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 0.6)"
+    ],
+    [
+      "zh",
+      1280,
+      "lineHeight",
+      "24px",
+      "26.4px"
+    ],
+    [
+      "zh",
+      1280,
+      "color",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 0.6)"
+    ],
+    [
+      "zh",
+      1280,
+      "lineHeight",
+      "24px",
+      "26.4px"
+    ],
+    [
+      "en",
+      390,
+      "lineHeight",
+      "28.8px",
+      "26.4px"
+    ],
+    [
+      "en",
+      390,
+      "color",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 0.6)"
+    ],
+    [
+      "en",
+      390,
+      "lineHeight",
+      "24px",
+      "26.4px"
+    ],
+    [
+      "en",
+      390,
+      "color",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 0.6)"
+    ],
+    [
+      "en",
+      390,
+      "lineHeight",
+      "24px",
+      "26.4px"
+    ],
+    [
+      "en",
+      1280,
+      "lineHeight",
+      "28.8px",
+      "26.4px"
+    ],
+    [
+      "en",
+      1280,
+      "color",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 0.6)"
+    ],
+    [
+      "en",
+      1280,
+      "lineHeight",
+      "24px",
+      "26.4px"
+    ],
+    [
+      "en",
+      1280,
+      "color",
+      "rgba(0, 0, 0, 0.9)",
+      "rgba(0, 0, 0, 0.6)"
+    ],
+    [
+      "en",
+      1280,
+      "lineHeight",
+      "24px",
+      "26.4px"
+    ]
+  ],
+  "note": "VR ul defaults now come from the component; every visible li retains its previous computed text style and geometry. Selfly/model li spacing changes from margin to grid gap with identical geometry."
+}

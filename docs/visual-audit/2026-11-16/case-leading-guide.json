@@ -1,0 +1,66 @@
+[
+  {
+    "locale": "zh",
+    "width": 390,
+    "hasRoles": true,
+    "leading": [
+      {
+        "lineHeight": "26.4px",
+        "text": "将信息组织成清晰的层次，让内容更容易阅读。"
+      },
+      {
+        "lineHeight": "29.6px",
+        "text": "将信息组织成清晰的层次，让内容更容易阅读。"
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "locale": "zh",
+    "width": 1280,
+    "hasRoles": true,
+    "leading": [
+      {
+        "lineHeight": "26.4px",
+        "text": "将信息组织成清晰的层次，让内容更容易阅读。"
+      },
+      {
+        "lineHeight": "29.6px",
+        "text": "将信息组织成清晰的层次，让内容更容易阅读。"
+      }
+    ],
+    "scrollWidth": 1280
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "hasRoles": true,
+    "leading": [
+      {
+        "lineHeight": "26.4px",
+        "text": "Clear structure helps readers follow the content."
+      },
+      {
+        "lineHeight": "29.6px",
+        "text": "Clear structure helps readers follow the content."
+      }
+    ],
+    "scrollWidth": 390
+  },
+  {
+    "locale": "en",
+    "width": 1280,
+    "hasRoles": true,
+    "leading": [
+      {
+        "lineHeight": "26.4px",
+        "text": "Clear structure helps readers follow the content."
+      },
+      {
+        "lineHeight": "29.6px",
+        "text": "Clear structure helps readers follow the content."
+      }
+    ],
+    "scrollWidth": 1280
+  }
+]
